@@ -1,0 +1,7 @@
+1) (30) heuristiky špatného znaku a dobrého sufixu, špatný znak popsat, vysvìtlit pøedzpracování + složitost
+2) (30) navrhnout datovou strukturu pro množinu M pøirozených èísel tak, aby libovolná posloupnost operací Insert (vloží èíslo) a Reduce (smaže (horní celou èást) M/2 prvkù) byla v O(n) - dokázat úèty nebo kredity
+3) (40) dynamické programování - "šachovnice" m x n, na každém políèku jsou èísla, najít optimální cestu, tj. cestu, která dá nejvìtší souèet; pohybovat se dá pouze vpravo dolù, dolù a vlevo dolù.
+4) (30) máme graf G a hranu e a máme zjistit, jestli hrana e tvoøí cyklus
+5) (30) datová struktura Union-Find - popsat, co se realizuje + složitosti
+
+bylo potøeba dosáhnout alespoò 80 bodù

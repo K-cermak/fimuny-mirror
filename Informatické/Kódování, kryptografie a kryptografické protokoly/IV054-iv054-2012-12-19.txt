@@ -1,0 +1,5 @@
+1. Dual codes, parity check matrix of linear codes
+2. Fiat-shamir signature scheme
+3. One-way function, one-way trapdoor function
+4. Knapsack problem - design, encryption, decryption
+5. In which case Alice can ask Bob for help with computation of f(x) without revealing x to Bob?

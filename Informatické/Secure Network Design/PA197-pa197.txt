@@ -1,0 +1,9 @@
+- What is service fingerprinting?
+- Compare security features of ZigBee and NFC.
+- Compare advantages and disadvantages of three approaches where cryptographic algorithm can be executed on a sensor node.
+- Compare physical and digital security, their approaches and principles.
+- What is IDS, how it works?
+- What is traffic monitoring, why and how it is used? What do you expect from a traffic monitoring system?
+- What is TOR, its possible problems?
+- TLS: why it is used, how handshake works?
+- What is Resilient Overlay Network?

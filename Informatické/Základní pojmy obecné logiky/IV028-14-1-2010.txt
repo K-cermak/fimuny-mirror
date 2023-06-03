@@ -1,0 +1,13 @@
+﻿IV028 - Základní pojmy obecné logiky
+zkouška 14.1.2010
+
+Otázky:
+1. Zavedení identity "=" do PL1 (co přesně se přidá k abecedě, k axiomům)
+2. Disjunktní normální forma (co to je, jak to vypadá, jak se s tím pracuje, jak vyrobit DNF z funkce - taková ta tabulka)
+Další kolega měl úplnost, bezespornost a rozhodnutelnost.
+
+Průběh zkoušky:
+Ústní, poměrně psychicky náročné, na Filozofické fakultě(!), pořadí studentů se určuje dohodou, kadý trvá asi 10 minut. Lze tedy přijít třeba o hodinu později, pokud víte, že tam aspoň někdo bude včas.
+
+Doporučení: 
+Udělejte si naprosto jasno v tom, co znamenají jednotlivá písmenka: jestli je to proměnná, teorém, predikát, valuace, interpretace, prvek univerza, nebo něco dalšího.

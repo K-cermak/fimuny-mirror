@@ -1,0 +1,10 @@
+﻿1. otypujte funkciu g f . g h
+f  :: (C2 a) => [a] → a
+g :: (a → b) → [a] → [b]
+h :: (C1 a) => Maybe a → [a]
+2. vytvorte funkciu ls :: Int → [String] → String ktora zo zoznamu retazcov zobere vsetky retazce ktorych dlzka je aspon n  a spoji ich do jedneho retazca, napriklad ls 2 [“ab”,””,”c”,”ddd”] sa vyhodnoti na “abddd”
+3. mame data LTree a = Leaf a | Fork (LTree a) (LTree a)
+vytvorte funkciu fringe ktora vracia zoznam hodnot vsetkych listov v poradi v akom su v strome zlava do prava  a napiste jej typ, funkcia musi byt tvaru fringe=... a na pravej strane musi byt vyraz s ffold
+ffold :: (a->b) → (b->b->b) ->LTree a → b
+ffold f g (Leaf x) = f x
+ffold f g ( Folk tl tr) = g (ffold f g tl) (ffold f g tr)

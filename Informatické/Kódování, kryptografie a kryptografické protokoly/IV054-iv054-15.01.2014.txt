@@ -1,0 +1,132 @@
+tip: (8) - num. times question is seen before. Bigger num -> higher P you'll get it.
+
+
+(8) RSA, and proof
+(1) Show that knowledge of least significant bit of plaintext allows to recover whole plaintext encrypted by RSA
+(1) randomized RSA cryptosystems
+
+(8) Knapsack cryptosystem. Design, encryption, decryption. Proof of decoding. Knapsack attacks. 
+(3) McEliece cryptosystem
+
+(4) Digital signatures - requirements and methods. Possible "man-in-the middle" attacks.
+(1) timestamping and digital signatures
+
+(1) Examples of zero-knowledge proofs.
+(3) zero-knowledge proof of discrete logarithm or 3-colorability of graph
+(3) zero-knowledge proof about the age-difference 
+(3) Zero-knoledge proof for graf non-isomorphism
+(3) Zero-knowledge proof for graph isomorphism - completeness and soundness
+(?) Zero-knowledge proof for quadratic residua
+(2) Ane is badly willing to crack some authentisation algorithm, for which she needs to compute a discrete logarithm log_a(x). Bob just bought a new quantum computer and is willing to Ane with anything for just a little love. Ane is attracted by the deal, but she doesn't want Bob to discover x. Provide a method to help Ane and become her hero
+to je zero knowlege discr log. proto - one porssible Schnoor scheme(neni to v prednaskach)
+(1) In which case Alice can ask Bob for help with computation of f(x) without revealing x to Bob?
+
+(3) Secret-key cryptosystems without key distribution.
+
+(2) Group version of ElGamal cryptosystem
+(3) ElGamal cryptosystem and digital signature schemes.
+(1) ElGamal Signature Scheme.
+(1) ElGamal crytosystem
+(1) Let us consider the group version of the ElGamal cryptosystem. Alice chooses the group G to be the multiplicative group of the finite field F2^4. The multiplication will be performed modulo the irreducible 	polynomial f(x). Further, Alice chooses the private key a=7 and computes a public key.
+	  a) Determine f(x)
+	  b) Compute the public key
+	  c) Show both the encryption and the decryption process for the message m=1100
+
+(1) Algorithm p-1 for integer factorization.
+(2) Pollards p-1 integer factorization.
+(1) Show that breaking of Rabin cryptosystem would allow factorization
+(2) Explain quadratic sieve method of factorization
+(2) Factorize n (n and Phi(n) given, both > 80 000 000)
+(1) factoring with elliptic curves
+
+(2) Fiat-shamir signature scheme
+(1) Elementary method of user identification.
+(1) Fiat-Shamir basic and parallel identification.
+(2) Fiat-Shamir identification scheme 
+(2) Fiat-Shamir identification scheme + parallel version
+(1) Schnorr identification scheme
+(1) Shammir identification
+(1) Okamoto identification scheme.
+
+(2) Cyclic codes - algebraic characteristic 
+(2) Basic properites of cyclic code, design of generation matrix 
+(2) basic properties of linear and cyclic codes
+(2) Cyclic codes and their algebraic characterisation
+(2) Linear codes encodingd/decoding + properties, Cyclic codes + properties
+(1) characteric theorem of cyclic codes
+(1) Cyclic codes and their algebraic characterization. Proof of the characterization theorem.
+(1) Show that if C is linear code, then adding parity check bit to the end of all codewords forms another linear code.
+(1) Show that if C is a binary linear code, then the code obtained by adding parity check bits to all words of C is also a linear code.
+(1) rozhodnout který kod je cyklické nebo mu ekvivaletní
+       (0000,1133,3311) nebo (10001,01010,00101) (myslím že tak byli nějak)
+
+(1) DES
+(1) DES cryptosystem, Feistel cryptosystem, Linear feedback shift registers
+(2) Linear feedback shift registers and their cryptoanalysis.
+(1) Shift registers
+(2) AES
+(1) Describe the modes of block ciphers.
+
+(1) Is Caesar cryptosystem closed under composition?
+(2) Diffie-Hellman for three persons
+(1) Authenticated Diffie-Hellman password exchange
+(1) Examples of user authentication protocols
+
+(1) Vigenere chipher
+(2) Popište Kasiskiho a Friedmanovu metodu zjištění délky klíče u šifry Vigenere
+(1) Cryptoanalysis of Vigenere cifertext, proof of cryptoanalytical methods
+(1) When is a cryptosystem perfectly secure
+(1) Perfect secrecy cryptosystem
+
+(1) Bit commitment and oblivious transfer + implementation
+(1) Bit commitment protocols.
+(1) Bit commitment, definition and solutions. Oblivious transfer, definition and solutions.
+
+(1) Dual codes, parity check matrix of linear codes
+(1) Hamming and singleton bound
+(1) Hamming codes, parity checks, Hamming bound, Perfect codes
+
+(2) Eliptic curves
+
+(2) Secret sharing schemes
+
+(1) Hill cryptosystem - you have one word in plaintext and cryptotext and you have to decrypt another cryptotext
+(1) Hill cryptosystem
+
+(1) Schnorr-Shamir-Ong subliminal channel scheme
+
+(1) Security and robustness of stegosystems
+
+(1) Dirac's ket-bra notation, dual vector spaces, dual forms.
+
+(1) Rabin in simple and generalized version
+
+(1) Encrypt with autoclave (key smth like "abasdsa", text "meetmethisevening") 
+
+(1) Bit security of discrete logarithm.
+(1) Coin tossing phone protocol based on discrete logarithm
+(1) coin flipping by phone
+(1) Mental poker by phone
+
+(1) One-way function, one-way trapdoor function
+
+(1) Quantum teleportation.
+(1) Quantum registers, quantum measuring, no-copy theorem
+(1) BB84 is a quantum key distribution scheme developed by Charles Bennett and Gilles Brassard in 1984
+
+(1) design Huffman code for elements x_1 -- x_10 with probabilities 0.4 0.3 0.15
+0.08 0.02 0.02 0.01 0.008 0.007 0.005
+
+Průběh zkoušky:
+Vylosujete si z velké nabídky lísteček, na němž je pětice otázek. Vyberete příslušný počet otázek a na papíře na ně odpovíte. Kdo už je hotový jde si v téže místnosti popovídat s panem Gruskou, jde to dost svižně. Pokud je s papírovou verzí spokojen, moc se neptá, když něco chybí, upřímně se snaží to z vás vytáhnout :-)
+
+Odpozorované známkování:
+A - uspokojivě odpovíte na vámi zvolené otázky a dokážete něco říct i o těch zbývajících.
+B - uspokojivě odpovíte na vámi zvolené otázky, ale o ostatních nevíte vůbec nic
+E - na zvolené otázky odpovíte neuspokojivě
+Fko nedostal z 10 lidí, co přede mnou byli, nikdo.
+
+Doporučení:
+- Zjistěte si předem, kolik otázek máte odpovídat a kolik bodů jste měli ze cvičení.
+- Naučte se zejména často se opakující otázky - RSA, cyklické kódy, ElGamal, zero-knowledge proofs, viz zadání z předchozích let
+- Důležité jsou dovětky k otázkám, např. u cyklických kódů "Characterization theorem for cyclic codes", najděte si přesně ten slajd, který se takhle jmenuje a zkuste ho pochopit, protože přesně to chce slyšet (to samé třeba důkaz korektnosti RSA).

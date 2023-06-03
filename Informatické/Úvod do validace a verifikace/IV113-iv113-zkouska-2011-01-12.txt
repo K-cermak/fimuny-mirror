@@ -1,0 +1,33 @@
+﻿
+=== IV113 - Uvod do validace a verifikace ===
+
+Zkouska ze dne 12.01.2011
+
+2 hodiny
+jednotlive otazky za 20 (u podotazek byl napsany podil bodu)
+100 bodu celkem, potreba je 60 na E
+
+
+
+1. Kombinatoricke testovani
+a) Motivace a princip kombinatoricke metody testovani
+b) definice slabe/silne metody testovani
+
+
+2. Vypsat fundamentalni otazky testovani a ke kazde nejaky popis.
+
+
+3. Kripkeho struktura, LTL, model-checking
+a) Popsat Kripkeho strukturu
+b) Zadefinovat zakladni syntax LTL
+c) Provest redukci "Kripkeho struktura splnuje LTL formuli" na "Detekce pritomnosti akceptujiciho cyklu v grafu".
+
+
+4. Graf X(a), ZBA
+a) Pomoci algoritmu definovaneho na prednasce provest prevod LTL formule "X(a)" na graf
+b) Graf prevest na zobecneny Büchi automat a vypsat ho.
+c) Zadefinovat kdy ZBA akceptuje. Napsat, jaky zpusobem se (obecne) vytvari akceptujici mnozina ZBA pri prevodu LTL na ZBA.
+
+
+5. Popis algoritmu budovani funkce "label" pro CTL formuli EG(phi)
+	

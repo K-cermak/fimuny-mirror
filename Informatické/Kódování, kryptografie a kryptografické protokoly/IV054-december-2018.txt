@@ -1,0 +1,6 @@
+﻿* Zero knowledge age difference
+* Cryptographically secure pseudo-random number generators
+* Relation between integer factorization and Euler totient function
+* Feistel
+* Elliptic curve cryptography
+* Bit commitment, oblivious bit transfer

@@ -1,0 +1,9 @@
+pisemka 15.1.2007
+
+1. definujte podminku nutnou, ne vsak postacujici proto, aby gramatika byla LL(k) a dokazte.
+2. zadan (nekonecny) graf, ukolem bylo popsat ho pomoci BPP
+3. gramatika, napsat prvnich par stavu LR(1) automatu
+4. tablo
+5. zadan jazyk, k nemu napsat Buchiho automat
+6. bisimulace -- definice, co to je bisimulacni ekvivalence, vrstvena bisimulace. Napsat relaci bisimulace takovou, ktera je symetricka, ale neni to ekvivalence
+7. definice DPDA, co to je normalni forma. Napsat jazyk, ktery je CFL, ale neni rozpoznatelny zadnym DPDA + dokazat

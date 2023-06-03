@@ -1,0 +1,11 @@
+1) Definice LL(k) gramatiky, definice levorekurzivni G, dokazte, ze pokud G je
+levorekurzivni, tak neni LL(k)
+2) Pomoci tabla dokazat ekvivalenci
+3) Dokazte, ze dana gramatika je LR(1)
+4) Pro dany graf ukazte bisimulacni kolaps
+5) 
+    a) Urcete podminku, aby nekonecny jazyk L byl akceptoval determ. Buchiho
+automatem
+    b) Popiste vztah mezi determ. a nedeterm. BA, dokazte sva tvrzeni, ktery je
+vetsi.
+

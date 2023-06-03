@@ -1,0 +1,11 @@
+Skúška z modelovania a simulácii, 31.5.2018 (zadania nie sú k dispozícii, takže píšem len čo si pamätám = nie je to kompletné, len na predstavu). Celkovo cca 5 A4 - dosť písania, niektoré veci sa opakovali naprieč otázkami
+
+- Výroky o simulovaní a modeloch, ku každému uviesť či je pravdivý a ak nie tak ho opraviť - napr. "predpovedať klímu ide len max na 10 rokov dopredu", "model lovec/korisť vedie k oscilácii, ktorá je čoraz intezívnejšia", "demografický vývoj sa dá modelovať aj zvrchu (netreba modelovať jednotlivca)", "pri genetickom algoritme sa nepoužívajú náhodne mutácie, pretože len kazia výsledky"...
+- Vymenované oblasti, ku každému uviesť príklad modelu - sociálne vedy, induktívne myslenie, spolupráca, samo-organizácia, model s numerickými výsledkami, genetický algoritmus...
+- Uviesť príklad modelu s logistickým chovaním (systémový model aj s rovnicou, model založený na agentoch)
+- Čo je to bezškálovitá sieť (použiť pri tom pojmy pozitívna spätná väzba, mocninný zákon...)
+- Vysvetliť pojmy - zhlukovanie v komplexných sieťach, umelá neurónová sieť, Polya proces, malý svet...
+- Bunečný automat (CA)
+	- základný popis, mechanika
+	- uviesť jeden netriviálny CA, popis behu aspoň v 4 rokoch
+	- vymenovať 5 rôznych bunečných automatov

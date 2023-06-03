@@ -1,0 +1,58 @@
+IB030 Úvod do poèítaèové lingvistiky (2007j), 2007-06-13
+sestavil Marek Blahuš (uèo 172464), první verzi pøipomínkoval Miloš Jakubíèek (uèo 172962)
+
+== Vzorové vypracování zkouškové písemky z 21.12.2005 [IB030_pisemka_20051221.pdf / pisemkaPR.pdf] ==
+
+1.
+ohýbání (flexe)
+odvozování (derivace)
+skládání (kompozice)
+
+2.
+      hrály
+     /     \
+nástroje  na koncertu
+   |
+  jaké
+
+3.
+pravidla:
+S -> NP VP
+NP -> N
+VP -> V NP
+lexikon:
+N: Karel, knihu
+V: píše
+
+4.
+složková struktura (c-structure) a funkcionální struktura (f-structure)
+projekce fi: {uzly stromu c-struktury} -> {f-struktury}
+
+5.
+        1      2      3      4     5     6
+   1   S,D    S,C    S,D    S,D   S,C   S,D
+   2    A      B     S,A     B     A
+   3    S      -     A,S     -
+   4    B      S      B
+   5    -      B
+   6    S
+
+6.
+Význam tvrzení je funkcí významù (tj. je dán významy) jeho jednotlivých èástí.
+Platnost je omezena u idiomù, ustálených metafor, klišé...
+
+7.
+Výraz reprezentuje pojem.
+Pojem konstruuje objekt.
+Výraz oznaèuje objekt.
+
+8.
+Slovníky uvádìjí informace o významu listémù.
+Encyklopedie uvádìjí informce o jejich denotátech.
+
+9.
+Je to jedna z charakteristik transparentní intenzionální logiky - pro sestup od intenze k extenzi je tøeba dodat funkci intenze parametr v podobì konkrétního svìta (pøíp. èasu).
+
+10.
+metonymie - použití jména jedné vìci pro (èasto zkrácené) oznaèení vìci jiné, tj. pøenesení významu na základì souvislosti; pø. "Ten pstruh na másle na tøináctce si pøeje ještì jedno pivo."
+metafora - použití slova ve významu pøeneseném na základì vnitøní nebo vnìjší podobnosti, èasto používané systematicky; pø. "nepodaøilo se mi zabít ten proces"

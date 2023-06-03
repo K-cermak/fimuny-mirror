@@ -1,0 +1,12 @@
+1.
+Uvažujme permutačné routovanie paketov na mriežke ako bolo na prednáške: máme mriežku nxn, v každém vrcholu je na začiatku 1 paket a do každého vrchola smeruje 1 paket. Pakety sa začnú routovať synchénne, pričom v každom kroku može isť po jednej linke (v jednom smere) najviac 1 paket. Každý paket sa najprv pohybuje každý paket sa najprv pohybuje po riadku až do cielového stlpca a potom v stlpci do ciela. Ak chce isť po jdnej linke viac paketov, prednosť dostane ten, ktorý má pred sebou najdlhšiu cestu. Zmeňme algoritmus tak, že prednosť bude mať paket, ktorý má pred sebou najkratšiu cestu. Ukažte, že takto zmenený algoritmus doroutuje každú permutáciu v O(n) krokoch.
+
+2.
+Rebrík R(n) je graf pozostávajúcí z dvoch cyklov s n vrcholmi, pričom zodpovedajúce vrcholy su spojené priečkami ako na obrázku. Ukážte, že neexistuje algoritmus, ktorý by volil šéfa na rebríkov (v štandartném modeli z prednášky) a použil v najhoršom prípadě O(n * (log n) / (log log n)) správ.
+[pozn: v podstatě žebřík kde vršek žebříku je spojený se spodkem - neboli dva stejné kruhy spojené do dvojic]
+
+3.
+Máme sieť z n procesov spojených do čiary. Procesy majú id, štartujú naraz a komunikácia je asynchrónna. Na začiatku má každý proces i (okrem svojho id) aj vstupnú hodnotu x_i (náleží do) BigSet. Prvky z BigSet majú definovanú operáciu porovnánia, ale do pamäti sa ich zmestí iba konštantne vela (takže napr. koncový vrchol nemože pozbierať všetky hodnoty). Navrhnite algoritmus, ktorý utriedí hodnoty v sieti. Snažte sa dosiahnuť čo najmenšiu komunikačnú zložitosť.
+
+4.
+Majmu anonymnú sieť (tj procesy nemajú id, komunikujú posieláním async spolahlivých správ), v ktorej treba riešiť následovnú úlohu: každý proces musí explicitne terminovať a pri terminácii vedieť počet komunikačných linek v sieti. Uveďte čo najrigoroznejší argument, prečo tato úloha nie je deterministicky riešitelná.

@@ -1,0 +1,23 @@
+1. Analyzujte a dokažte, že z věty
+Tom sbírá staré pohlednice
+vyplývá
+Tom sbírá něco starého.
+
+2. Analyzujte a dokažte, že z věty
+Tom počítá rovnici sin(x) = 1
+vyplývá
+Existuje číslo n takové, že Tom počítá sin(x) = n.
+Nápověda: byla poskytnuta analýza rovnice, bude potřeba použít substituční metodu a funkce Sub a Tr
+
+3.
+a.)
+   Tom ví, že primátorka Brna je právnička.
+   M. Vaňková je primátorka Brna.
+   ----------------------------------------
+   M. Vaňková je právnička.
+b.)
+   Tom si myslí, že primátorka Brna je právnička.
+   M. Vaňková je primátorka Brna.
+   ----------------------------------------
+   M. Vaňková je právnička.
+Který z úsudků je platný a proč?

@@ -1,0 +1,14 @@
+IA006 pisomka 17.12.2007 - predtermin
+
+1. Vymyslite gramatiku G, ktora ja LL(1). Jazyk L(G) ktory generuje nieje regularny.
+Dokazte, ze G je LL(1), L(G) je regularny. Ak si nebudete vediet rady s dokazom regularnosti L(G), uvedte, ako by ste postupovali.
+2. Je dana gramatika G = ({S, A}, {a, b}, P, S), P = {
+1) S -> bAb
+2) S -> Ab
+3) S -> ab
+4) A -> a
+}
+Ukazte, ze gramatika je LALR(1).  Ze nieje SLR(k) pre ziadne k. [mozno miesto SLR(k) tam bolo SLL(k)]
+3. Dokazte (BPA) konstrukciou tabla, ze pre [pravidla] plati nieco ~ nieco_ine. Oproti tomu, co sa robievalo na cviceniach to bolo jednoduche - ziadne vetvenie, viac pouzite REC (ako min. z noriem).
+4. Definujte Buchiho automat. Definujte Mullerov automat. Dokazte, ze kazdy BA je mozne previest na MA.
+5. Dokazte, ze pre kazdy DPDA M = (Q, Sigma, Gama, S, q0, Z0, F) existuje DPDA N = (Q', Sigma', Gama', S', q0, Z0, F) taky, ze pre kazde a: sigma'(q, a, X) = (p, omega) je |omega| <= 2.

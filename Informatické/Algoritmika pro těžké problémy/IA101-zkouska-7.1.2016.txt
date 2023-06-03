@@ -1,0 +1,13 @@
+Zkouška 7.1.2016
+
+1) Definice Las Vegas (s/bez "nevím"), možnost převodu? Jak převod ovlivní složitost a přesnost. (15b.)
+
+2) Napsat 2-aproximativní algor. - máme n intervalů a máme jich vybrat co nejvíce, aby se nepřekrývaly. dokázat časovou složitost a aproximativní poměr. (15b.)
+
+3) Problém výroby produktov. Máme množinu zariadení Z, ktorých inštalácia stojí cenu fi (pre každé i zo Z) a množinu produktov P, ktorých výroba stojí na zariadení i cenu cij (pre každý produkt j z P). Cieľom je určiť množinu I (podmnožina Z) zariadení, ktoré majú byť inštalované a funkciu Φ: P → I, ktorá určí, ktorý výrobky ku strojom. Cena je definovaná ako súčet cien za inštalácie zariadení z I a cena, za ktorú sa výrobky vyrábajú na príslušných strojoch. Cieľ je minimalizácia. (15b.)
+
+4) Problém pokrytí množin, zapsat jako úlohu lineárního programování se zaokrouhlováním - skoro to samé jako ve skriptech. (10b.)
+
+5) Algoritmus lokalneho vyhladavania pre hopfieldovu siet. Popisat + aka je casova zlozitost a dokaz ze to funguje. (15b.)
+
+6) Problém obarvení vrcholů třemi barvami, aby co nejvíce hran mělo vrcholy s různou barvou. Zapsat pomocí randomizovaného algoritmu a poté jej převést na deterministický pomocí derandomizace. Měli jsme dokázat, že náš alg. obarví tak, že "dobrých hran" je alespoň 2/3c*, kde c* je optimum. (20b.)

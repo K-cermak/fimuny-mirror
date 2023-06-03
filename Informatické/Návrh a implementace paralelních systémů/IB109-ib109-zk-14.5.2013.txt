@@ -1,0 +1,11 @@
+Zkouska IB109 14.5.2013
+ne uplne presne zneni, ne uplne presne bodovani
+
+CAS - 10b
+spekulativni dekompozice - 10b
+Volatile - 10b
+Hyper threading - vysvetlit, vyhody nevyhody - 10+10b
+sireni zpravy z jednoho uzlu ve dvojrozmerne mrizce, slozitost tohoto - 10b
+vypocet na zrychleni pri spusteni na 4 jadrovem CPU - 10b
+popsat instrukce POSIX thread - 20b
+typicke chyby pri paralelnim programovani, uvest priklad - 8+2b

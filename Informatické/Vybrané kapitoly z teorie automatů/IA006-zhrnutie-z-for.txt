@@ -1,0 +1,548 @@
+vstup/vystup
+
+
+na uvod, aby bolo jednotlive IO prikazy mozne vyhodnocovat priamov hugse, tak si vytvorte
+subor aa.hs 		a napiste do neho nieco vo forme komentaru 	--obsah suboru a
+subor bb.hs								--obsah suboru b
+budeme potrebovat toUpper a ten sa nachadza v subore Chra, cize treba 				:l Char
+
+
+getLine >>= /n-> readFile(n++".1") >>= print.length 
+--putStr nemoze byt namiesto print z toho dovodu,ze putStr vypise String a length nam da Int, cize tam musi byt print, co nam vypise cokolvek a ohranici ""
+
+
+
+getLine >>= /n-> readFile(n++".hs") >>= print.length >>readFile(n++".hs") >>= print.length 
+getLine >>= \n-> readFile(n++".hs") >>= print.length >> getLine >>= \x->readFile(x++".hs") >>= print.length
+
+do putStr "jm:"
+i <- getLine
+s <- readFile i
+putStr (map toUpper s)
+
+
+----------------------------------------------------------------
+(A) putStr "jm:" >>= \i -> getLine >>= readFile i >> putStr . map toUpper		putStr je typu :: String -> IO (), cize nic vystupom je prazdny pamat spravne by bolo 	
+putStr "jm:" >> getLine >>= readFile  >>= putStr . map toUpper				a teda >>= z nej nic neprecita 
+
+
+
+(B) putStr "jm:" >> getLine >>= \i -> readFile i >>= putStr (map toUpper s)		nespravne v s nemam ulozene nic
+(C) putStr "jm:" >> getLine >>= readFile >>= putStr . map toUpper			spravne
+
+(D) putStr "jm:" >> getLine >>= \i s-> readFile i s >> putStr (map toUpper s)		zle, readFile FP-> IO String teda mu davam iba jeden parameter
+ 
+(E) putStr "jm:" >> getLine i >>= readFile i s >>= putStr (map toUpper s)		zle, getLine i, getLine nacita string zo vstupu a ulozi ho do pamati
+------------------------------------------------------------------	
+
+getLine >>= \ x -> getLine >>= \ y-> putStr (x++y)
+prip. uzatvorkovane
+getLine >>=( \ x -> getLine >>=( \ y-> putStr (x++y)))
+
+
+do cosi
+m <- getline
+n <- getline
+rename m n
+
+do {m <- getLine ; n <- getLine; rename m n} pre vyskusanie namiesto rename pouzite putStr a este jedna vec, rename je typu FP-> FP -> IO (), tede na vstup potrebuje dva parametre, ale putStr je typu String -> IO () teda je potrebna mala uprava na 
+do {m <- getLine ; n <- getLine; putStr (m++n)}
+
+
+do {z <- readFile "aa.hs"; y <- readFile "bb.hs"; print (zip z y)}	zase namiesto print nemoze byt putStr, pretoze zip mi da [(a,b)] a to nieje String
+readFile "aa.hs" >>= \ s -> readFile "bb.hs" >>= \t -> (print . zip s) t
+readFile "aa.hs" >>= \ s -> readFile "bb.hs" >>= \t -> (print . zip s  t) 	POZOR!! toto je chybna interpretacia
+
+
+
+
+
+
+
+getLine >>  getLine >>= putStr
+  aaa	       bbb       vyhodnoti sa na bbb, pretoze sice prvy getLine zapise aaa do pamati,ale pomocou >> ja pamat zmazem a zapisem tam cez getLine bbb
+
+
+getLine >>= \f -> getLine >>= (appendFile f).(++"\n")
+
+
+---------------------------------------------------------------------------------------
+A) f<-getLine >> s<-readFile f >> putStr s >> putStr s				blbost, f <- getLine toto mozem pouzit iba pri do {f <- getLine}
+B) getLine >>= (\s -> readFile >>= putStr >> return s) >>= putStr		nespravne
+ getLine >>= (\s -> readFile S >>= putStr >> return s) >>= putStr
+	spravne		po doplneni s
+
+
+C) getLine >> \f -> readFile f >> (\s ->putStr s >> putStr s)			za getLine nemoze byt >>, iba ak by sme vstup zahadzovali, avsak v dalsom 
+										kroku sa pozaduje ulozenie do f dalej tam chyba >>= za readfile f
+spravne by to bolo 	getLine >>= \f -> readFile f >>= \s ->putStr s >> putStr s	 
+
+D) getLine >>= (\s -> readFile s >>= putStr >> return s) >>=readFile >>= putStr			spravne
+
+
+E) getLine >> readFile >> (\s -> putStr s >>= putStr s)		nespravne, getLine >> readFile >> readFile nema co nacitat z vnutornej pamati, dalej je tam 								zle putStr s >>= putStr => pretoze prvy putStr vyprazdni pamat a druhy nema co vypisat 
+
+e) by bolo spravne v interpretacii:  getLine >>= readFile >>= \s -> putStr s >> putStr s
+------------------------------------------------------------------------------------------------------------------------------------------
+toto je len skopirovane z fora.... 
+
+a) getLine i >>= getline o >>=\ s -> readLine i >>= writeFile o s			špatnì: funkce getLine je nulární, žádný argumenty nemá
+b) getLine >>= getline>>=\ i o -> readLine i >>= writeFile o				rovnako, getLine >>= getLine je chybna
+c) getLine >>= i \ -> getline >>=  readFile i >>= writeFile
+d) getLine >>= i \ -> getline >>= \ o ->  readLine i >>= \ s -> writeFile o s
+e) (getLine >> getLine) >>= \ i o -> readFile i >>= writeFile o
+
+
+
+b) špatnì: opìt, funkce getLine je nulární, nemùžeme jí tedy pøedávat argumenty
+   pomocí >>= (staèí si v Hugsu vyzkoušet zadat "getLine >>= getLine")
+c) (v zápisu má zøejmì být \i -> namísto i \ ->)
+   špatnì: funkce readLine (aspoò tak, jak ji chápu) je unární, funkce
+   readLine i (po explicitním uvedení argumentu) je nulární, proto jí stejnì
+   jako v pøedchozích pøípadech argument pomocí >>= pøedat nesmíme
+d) (v zápisu má zøejmì být \i -> namísto i \ ->)
+   správnì: buï vyluèovací metodou nebo pøímo
+   naèteme øádek do i, druhý do o; ze souboru podle i pøeèteme øádku, kterou
+   uložíme do s; do souboru o zapíšeme s
+e) špatnì: návratová hodnota prvního getLine se nenávratnì ztratí, jakmile za
+   getLine zaøadíme operátor >>
+
+Jaký je rozdíl mezi getLine >>= getLine a getLine >>= \i -> getLine ? V prvním
+pøípadì pøedáváme návratovou hodnotu prvního getLine druhému getLine, tj. typovì
+špatnì. Ve druhým pøípadì pøedáváme návratovou hodnotu pouze do promìnné i a od
+této chvíle je uložená pouze a jenom v i, jinak (napø. pomocí >>= ) se s ní
+pracovat nedá.
+
+
+
+--------------------------------------------------------------
+do
+  n <- getLine
+  s <- readFile n
+  putStr(s++reverse s)
+
+3 spravne riesenia
+do {n <- getLine ; s <- readFile n; putStr (s ++ reverse s)}
+getLine >>= readFile >>= \s -> putStr(s++reverse s)
+getLine >>= \s -> readFile s  >>= \x-> putStr (x ++ reverse x)
+--------------------------------------------------------------
+
+
+
+
+
+putStr "zadejte nazev souboru" >> getLine >>= \f -> readFile f >>= \s -> (putStr. reverse) s
+nebo
+do
+  putStr "zadejte nazev souboru"
+  f<-getLine
+  s<-readFile f
+  putstr.reverse s
+nebo
+do {f <- getLine ; s <- readFile f ; (putStr . reverse) s }
+nebo
+putStr"Zadej nazev" >> getLine >>= readFile >>= putStr.reverse
+ 
+
+
+getLine >>= \f -> getLine >>= (appendFile f). (++"\n")
+
+########################################################################################################
+
+pointwise => pointfree
+http://www.fi.muni.cz/~xsiska1/IB015/cvika/eta_redukce
+
+
+
+a,replicate = repeat.flip(.)take
+b,replicate = (take.).repeat
+c,replciate = flip take.repeat
+d,replciate = take.repeat
+e,replciate = (.take)(.repeat)
+
+
+
+(\x s -> filter (`elem` x) s) [1..10] [1,3..30]
+(filter . flip elem) [1..10] [1,3..30]
+
+
+
+
+
+(\s -> "1" ++ s ) ['a'..'c']
+"1abc" ale len pripoji prvok "1" k "abc"
+########################################################################################################
+
+
+Výraz flip (:) [] je roven
+(A) id (B) ([]:) (C) reverse (D) const [] (E) \x -> [x]
+spravne e
+
+
+(.) :: (a -> b) -> (c -> a) -> c -> b
+			map :: (a -> b) -> [a] -> [b]
+			elem :: Eq a => a -> [a] -> Bool
+
+########################################################################################################
+lambda abstrakcia
+
+(||).not		(pøidáme si parametr)
+\x -> ((||).not) x	(rozbalíme podle (f.g)x=f(g x))
+\x -> (||) (not x)	(pøidáme si parametr, (||) bere dva)
+\x y -> (||) (not x) y	(infix)
+\x y -> not x || y
+
+	
+\t -> map (head t >)				
+
+\x y z -> map (x ==) (foldr (:) y z)		
+
+\xy -> (foldr y) odd x)				
+
+\x -> foldr map (concat x)			
+
+(\ n ->map ((2 *).  (+ 1)))			
+
+map (\y->((y==)1)				
+
+(\x -> map (+x) . filter (<x))
+
+\ x -> break (>(1+x))
+
+map (\x -> (odd . fst) x)
+			
+\x-> map (\y->y==1)x
+
+(\x -> map (+x) . filter (<x))
+
+\ x -> break (>(1+x))
+
+(\x -> map (odd . fst) x)
+
+########################################################################################################
+
+sequence ( map f s )
+(sequence . (map f)) s
+(.) sequence (map f)
+((sequence.) . map) f
+((sequence.). map) 
+
+
+
+no normalne mam strach co napises :) dikes borce cenim si
+
+2)èasová složitost 
+f [] = []
+f [x] = [x]
+f (x:y:s) = y:x:f(s)
+
+složitost f(s) vzhledem k délce seznamu s. linearni
+
+
+[map (^n) m | n <- [1..]] where m = [1..]
+[ n^m | n <- [1..] ] | m <- [1..] ]
+map (flip map [1..] . flip (^)) [1..]
+
+A vyhodnoceni vypada taky jinak:
+[1,2,3] ++ [4,5] ~> 1:([2,3] ++ [4,5]) ~> 1:2:([3] ++ [4,5]) ~>
+1:2:3:([] ++ [4,5]) ~> 1:2:3:[4,5]
+
+
+Takže \(a,b) t -> uncurry (.) (a,b) t
+\(a,b) t ->  (a . b) t
+\(a,b) t ->  a (b t)
+
+Správne?
+
+A konkrétny príklad
+
+uncurry (.) ((4*),(1+)) 2
+(.) (4*)(1+) 2
+((4*).(1+)) 2
+(4*)((1+) 2)
+(4*) 3
+12
+########################################################################################################
+intensionalne zoznamy a klasicke zoznamy
+
+[ n^2 | n <- [0 .. 3] ]
+
+[ (c,k) | c <- "abc", k <- [1,2] ]
+
+[ 3*n | n <- [0 .. 6], odd n ]
+
+[ (m,n) | m <- [1 .. 3], n <- [1 .. 3], n <= m ]
+[(1,1),(2,1),(2,2),(3,1),(3,2),(3,3)]
+
+[ (m,n) | m <- [1 .. 3], n <- [1 .. m] ]
+[(1,1),(2,1),(2,2),(3,1),(3,2),(3,3)]
+
+[ (x,y) | z <- [0 .. 2], x <- [0 .. z], let y = z-x ]
+[(0,0),(0,1),(1,0),(0,2),(1,1),(2,0)]
+
+
+[ replicate n c | c <- "xyz", n <- [2,3] ]
+["xx","xxx","yy","yyy","zz","zzz"]]
+
+[ replicate n c | n <- [2,3], c <- "xyz" ]
+["xx","yy","zz","xxx","yyy","zzz"]
+
+[ x^2 | [x] <- [[],[2,3],[4],[1,1..],[],[7],[0..]] ]
+[16,49,1]
+
+[ 0 | [] <- [[],[2,3],[4],[0..],[],[5]] ]
+[0,0]
+
+[ x^3 | x <- [0..10], odd x ]
+[1,27,125,343,729]
+
+[ x^3 | x <- [0..10], odd x, x < 1 ]
+[]
+
+
+[ (n+m,m,n) | m <- [1..], n <- [1..m] ]
+
+
+[x,m| replicate x m ,x<-[1,3,5..],m=x^2]
+
+
+[x | y <- [1,3..], x <- (replicate (y*y) y)]
+
+
+
+
+[ n | n<-[1..], x<-[1..n^2], (mod) n 2 /= 0]
+
+
+[ (x,y,z) | x <- [0..], y <- [1..], y <= x, let z = x `mod` y ]
+
+
+
+(A) [map (^n) [1..] | n<-[0..] ]
+(B) map (zipWith (^) [1..] . repeat) [0..]
+(C) [ zipWith (^) (repeat n) [0..] | n<-[1..] ]
+(D) map (flip map [1..] . flip(^)) [0..]
+(E) iterate (zipWith (*) [1..] ) (repeat 1)
+########################################################################################################
+
+1. foldr1 (+) (map (*2) [1..10])			ok
+sa vyhodnoti na rovnaku hodnotu ako vyraz:
+
+A) ((map.(*2)) foldr1) (+) [1..10]
+B) ((.map(*2))(.foldr1)) (+) [1..10]
+C) ((.map(*2)).foldr1) (+) [1..10]
+D) ((map.(*2)).foldr1) (+) [1..10]
+E) ziadna z moznosti
+
+
+
+
+f x = flip (.) ((.)g x) h
+f x = flip (.) h ((.)g x)
+f x = (.h) ((.)g x)
+f x = (.) (.h) (.)g x
+f   = (.) (.h) (.)g
+f   = (.) (.h) (g.)
+f   = (.h) . (g.)
+
+
+
+f x y = g x . h y
+f x y = (.) (g x)  (h y)
+f x y = ((g x).)  (h y)
+f x y = (.) ((g x).)  h y
+f x   = (.) ((.) g x)  h
+f x   = flip (.) ((.) g x)  h
+f x   = (.) h ((.) g x) 
+f x   = (h.) ((.) g x)
+f x   = (.) (h.) (.) g x
+f     = (.) h . (.) g
+
+
+A) ((.h) . (g.)) x y
+   = (.h) ((g.) x) y
+   = (.h) (g . x) y
+   = ((g . x) . h) y
+   = (g . x) (h y)
+   = g (x (h y))
+
+B) (g . h) x y
+   = g (h x) y
+
+C) ((.h) . (.) . g) x y
+   = (.h) ((.) (g x)) y
+   = ((.) (g x) . h) y
+   = (.) (g x) (h y)
+   = g x . h y
+
+D) ((g.) . (.h)) x y
+   = (g.) ((.h) x) y
+   = (g.) (x . h) y
+   = (g . (x . h)) y
+   = g (x (h y))
+
+E) ((.) g . (.) h) x y
+   = (.) g ((.) h x) y
+   = g ((.) h x y)
+   = g (h (x y))
+
+
+
+funkce a b = foldr1 a (map b [1..5])
+ktera z nasledujicich moznosti je stejna funkce
+
+a) flip (.map [1..5]).foldr1
+b) (.flip map [1..5]).foldr1			toto je spravne, skuste si previest spat a musi to vyjst
+c) flip ((.map [1..5]).foldr1)
+d) (.flip map [1..5]).foldr1
+e) zadna z moznosti
+
+
+
+
+(.flip map [1..5]).foldr1
+(.flip map [1..5]) (foldr1 a)
+((foldr1 a)  . (flip map [1..5]) )b
+(foldr1 a)     (flip map [1..5] b)
+(foldr1 a)     (map b [1..5])
+
+
+
+#################################################################################x
+datove typy
+
+data Pixel 	= P Int Int
+	deriving Show
+data Shape 	= Line (Pixel,Pixel) |Rec (Pixel,Pixel) |Tri (Pixel,Pixel,Pixel)
+	deriving Show
+type Picture 	= [Shape]
+
+
+-- zhoda v pociatocnych bodoch priamky
+abcX :: Picture -> Picture
+abcX [] = []
+abcX (Line (P x a, P y b):s) = if x == y then Line (P x a, P y b):abcX s else abcX s
+abcX (_:s) = abcX s
+
+
+-- vypise vsetky line 
+abc:: Picture -> Picture 
+abc []	 = []
+abc (Line (P a b,P c d):s) 	= Line (P a b,P c d) : abc s
+abc (_:s)		= abc s
+
+-- vypise vsetky Inty Line
+abcd:: Picture -> [(Pixel,Pixel)]
+abcd []	 = []
+abcd (Line (P a b,P c d):s) 	=  (P a b,P c d) : abcd s
+abcd (_:s)		= abcd s
+
+-- ci sa tam nachadza line (v [Shape])
+--abcde :: [Shape] -> Bool
+abcde []		= False
+abcde (Line(_,_):_)	= True
+abcde (_:s) 		= abcde s
+
+-- kolkokrat sa nachadza Line
+a1 :: [Shape] -> Int
+a1 	[] 	= 0
+a1 	(Line (_,_):s)	= 1 + a1 s
+a1 	(_:s)	= 0 + a1 s 
+
+
+
+
+
+-- vypise vsetky priamky co najde ako opacne
+a3:: Picture -> Picture
+a3 []				= []
+a3 (Line (P a b,P c d):s) 	= Line (P (-a) b,P (-c) d) : a3 s
+a3 (_:s)			= a3 s
+
+
+
+-- mirror
+
+mirror :: Picture -> Picture
+mirror [] = []
+mirror ((Line (P x y, P a b)) : s) = (Line (P (-x) y, P (-a) b)) : (mirror s)
+mirror ((Rec (P x y, P a b)) : s) = (Rec (P (-x) y, P (-a) b)) : (mirror s)
+	
+
+-------------------------------------------------------------------------------------------------------
+armada
+
+
+data Armada 	= Vojak | Velitel [Armada]
+data TopArmada	= BezGenerala [Armada]  | General [Armada]	
+
+
+
+--sila toparmada
+--silaa:: TopArmada -> Int
+silaa (BezGenerala x) 	= sum (map sila x)
+silaa (General 	x)	= 4 +(sum (map sila x))
+	
+
+
+sila :: Armada -> Int
+sila Vojak 		= 1
+sila (Velitel x) 	=  foldr (+) 3 (map sila x)
+
+
+-- pripadne namiesto sum by sme mohli pouzit foldr1 (+)
+-- sila (Velite x) 	= 3 + foldr1 (map sila x)
+-- a pozor na uzatvorkovanie, na sila Velitel x 
+
+
+
+-----------------------------------------------------------------------------------------------------
+hokej
+
+data Forma  	= HotStrike | ColdStrike
+	deriving Show
+type Striedanie = [(String, Forma)]
+	
+
+hraci1 = [("Oveckin", HotStrike),("Malkin",HotStrike),("Zagrapan",ColdStrike)]
+
+-- musime si zadefinovat jednotlive rovnosti, lebo hugs si ich nevie odvodit
+
+eqq :: Forma -> Forma -> Bool
+eqq HotStrike 	HotStrike 	= True
+eqq _ 		HotStrike 	= False
+eqq HotStrike 	_		= False
+eqq ColdStrike 	ColdStrike	= True
+eqq ColdStrike 	_ 		= False
+eqq _		ColdStrike	= False
+
+
+-- vypise hracov majucich HotStrike
+hots :: Striedanie 	-> 	[String]
+hots	[]		= []
+hots ((a,HotStrike):s)	= a : hots s
+hots ((_,ColdStrike):s)	= hots s
+
+
+
+-- hraci s danym typom Forma
+form :: Forma -> Striedanie -> [String]
+form _	[]		= []
+form a ((b,c):s)	= if ( (eqq a c)==True) then b: (form a s)	else form a s
+
+
+
+
+
+
+
+###########################################################################################################
+vsetko je odskusane v hugse (cize by to malo byt funkcne), ak niekde najdete chybu, smerujte ju na diskusne forum a cviciaci vam hadam poradia
+
+
+
+MO
+
+
+
+

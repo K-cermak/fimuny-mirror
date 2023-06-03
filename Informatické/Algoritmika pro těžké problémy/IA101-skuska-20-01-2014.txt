@@ -1,0 +1,22 @@
+1.) Stadartny tvar ulohy LP a k nej dualnu. Podmienky kompelementarity (radsej som napisal aj rozsirene, zadanie nebolo jasne) + Slaba veta o dualite + dokaz slabej vety.(20b)
+	
+	- napisal som co som vedel zo slajdov - mam 15/20
+
+2.) Problem minci. Mame mince s hodnotami (h1..hk) a sumu S. Vyjadrit ako celociselnu ulohu LP. Ci sa da z danych minci tato suma vyskladat a ak ano, minimalizovat pocet minci. (15b)
+	
+	- Minimalizoval som pocet minci -> Zaviedol som mnozinu H = {xi | xi != 0 } pre i=1..k . A minimalizoval jej velkost. xi bola premenna pre kazdu hodnotu/mincu ci ju pouzijem alebo nie. Nadobudala hodnoty (0,hi), Potom som este napisal obmedzenie, ze v sucte to musi dat to S. Mam 7/15.   (Az cestou domov mi napadlo, ze ja som nad tym uvazoval tak, ze z kazdej hodnoty mam iba jednu mincu. Neviem ako to bolo myslene, zo zadania to nebolo jasne.) Ale mojmu rieseniu zjavne nieco chyba.
+
+3.) Toto si uplne nemapatam. 2-aprox. algoritmus pre maximalne parovanie v grafe, minimalizujuci pocet hran. Problem tam bol nadefinovany, uplne som ho nepochopil. Popisal som slovne ako by som to asi riesil. dostal som 4b/10b
+
+4.) Problem rozvrhu ako uloha LP so zaokruhlovanim. Mam pocit, ze sa to mierne lisilo oproti tej v slajdoch, ale naozaj len o chlp. Napisal som tam tu co som vedel zo slajdov. Bolo treba aj napisat aky je (kolko-aproximativny) a zaroven dokazat ze naozaj taky je. Toto som uz nedal, aj napriek tomu ze to v slajdoch je. Mam 5/15b
+
+5.) Algoritmus lokalneho vyhladavania pre hopfieldovu siet. Popisat + aka je casova zlozitost a dokaz ze to funguje.
+	- vsetko je to v slajdoch a myslim ze som to tam aj tak napisal 15/15b. Dokaz stoji na tom ze suma abs. hodnot vah dobrych hran rastie.
+
+6.) 1/2-aprox. algoritmus pre MAX-SAT. Popisat a dokazat ze je 1/2-aprox. 
+	- takisto v slajdoch. Na konci skoro. Hodnoty premennym v klauzalach sa priraduju nahodne s pravdepod. 1/2. V slajdoch je takisto dokaz na 1/2 aproximativitu. Mam 15/15
+
+
+Nie som si uplne isty poradim a tym ktora uloha bola za 10bodov. ALe urcite to bolo takto, prva bola za 20 a potom niektora z (2,3,4) za 10.
+
+Vela stastia! 

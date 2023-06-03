@@ -1,0 +1,42 @@
+Na začátku zkoušky si každý student náhodně vytáhl jeden papírek s pěticí 
+otázek. Z nich si dle vlastního výběru zvolil tři a měl zhruba 40 minut na 
+písemnou přípravu. Pak přišel prof. Gruska a kdo byl s písemnou přípravou hotov, 
+tak k němu mohl jít na ústní část, kde nahlásil, které otázky si vybral 
+a předložil prof. Gruskovi, co si písemně připravil. Prof. Gruska se pak 
+doptával na věci, které v písemné přípravě postrádal, nebo které byly 
+nepřesně/špatně. Ústní část probíhala ve stejné místnosti, takže studenti dosud 
+sedící u písemné přípravy slyšeli jak zkoušení té které otázky probíhá.
+
+Příklad jedné pětice otázek:
+
+1. Chum’s Blinding Protocol
+
+2. Shared Randomness as a Resource – an Example
+
+3. Freivalds Technique
+
+4. Wiring Problem
+
+5. Abundance of Witnesses
+
+(Mimochodem, prof. Gruska se k této pětici vyjádřil ve smyslu, že obsahuje 
+některé těžké otázky, dle všeho měl na mysli zejména první dvě.)
+
+Další otázky (jen přibližně), které jsem u studentů zaslechl a zapamatoval si 
+je:
+
+– Rabin-Miller Primality Testing
+– Randomized Complexity Classes
+– Strings Equality Problem
+– Fingerprinting Method
+– Dinning Cryptographers
+– Randomized Quicksort
+– Cuts in Multigraphs
+– Něco kolem zero-knowledge a (ne)isomorfismu grafů
+– Něco se vzorečky pro výpočet střední hodnoty, rozptylu, standardní odchylky 
+  atd.
+– Něco s oblivious routing (slyšel jsem rozpravu o směrování na hyperkrychli)
+– Něco okolo turnajů a hamiltonovských cest
+
+Některé otázky mělo více lidí, případně různé otázky obsahovaly společné 
+podčásti.

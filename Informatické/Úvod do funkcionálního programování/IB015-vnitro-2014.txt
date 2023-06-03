@@ -1,0 +1,11 @@
+skupina A
+1) Jak se vyhodnotí: foldl1 (curry fst) [1, 3..8]
+2) Definujte funkci f tak, aby se výraz foldr f [] "Heureka" vyhodnotil na [""HH", "ee", "uu", "rr", "ee", "kk", "aa"]
+3) Otypujte výraz \x -> [x, [not]]
+4) Napište funkci (!!) + otypujte (vezme n-ty prvok zo zoznamu)
+
+skupina B
+1) Jak se vyhodnotí: foldr (curry snd) 3 [12,10..4]
+2) Otypujte výraz: \x -> foldr1 x "Dear Mr.president"
+3) Definujte funkci f tak, aby se výraz: foldr f [] [1,2,3] vyhodnotil na [[1,1],[2,2],[3,3]]
+4) Napište funkci replicate (př: replicate 5 "a" = "aaaaa", replicate 3 1 = [1,1,1])

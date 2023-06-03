@@ -1,0 +1,20 @@
+1. Analýza sekvence s využitím teorie informace
+2. Korelované mutace a jejich význam v souvislosti s funkcí a strukturou
+proteinů
+3. Struktura a funkce proteinů, klasifikace struktur
+4. Předpověď struktury proteinů ze sekvence – modelování podle homologů
+5. Předpověď struktury proteinů ze sekvence – navlékání
+6. Předpověď struktury proteinů ze sekvence – fragmentové a ab initio metody
+7. Struktura RNA, algoritmus Nussinové
+8. Odhad Tm u duplexů DNA, programy mfold/UnaFold
+9. Výpočty a nanotechnologie na báze DNA
+10. Online algoritmy pro vyhledávání sekvenčních motivů
+11. Offline algoritmy pro vyhledávání sekvenčních motivů
+12. Tradiční algoritmy pro vyhledávání sekvenčních motivů a podobnosti (BLAST,
+PH, BLAT a pod.)
+13. Sekvenování DNA - historický a technologický přehled
+14. Sekvenování DNA – NGS
+15. Sekvenace DNA – single molecule a nanopórové sekvenování
+16. Sekvenace DNA – formáty a zpracování dat, algoritmy
+17. Metagenomika
+18. Repetitivní sekvence – typy, dynamika, struktura a klasifikace

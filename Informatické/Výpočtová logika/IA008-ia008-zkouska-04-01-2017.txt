@@ -1,0 +1,7 @@
+1. Prevést formuli na množinu klauzulí
+2. Pomocí rezoluce ukázat, že množina klauzulí je nekonzistentní 
+3. dokázat formuli prvního øádu pomocí tableaux
+4. dokázat formuli prvního øádu pomocí pøirozené selekce
+5. dokázat modální formuli pomocí tableaux
+
+tableauxy a pravidla pro pøirozenou selekci byly vytištìné na druhé stranì listù

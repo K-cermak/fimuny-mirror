@@ -1,0 +1,34 @@
+	IV100
+	Paralelni a distribuovane vypocty - podzim 2015
+	Termin: 7.1.2016
+
+1.	======
+	Procesy nevedia nic o sieti (pocet uzlov, topologia), spravy su 
+	asynchronne. Procesy maju unikatne ID a nejaku vstupnu hodnotu.
+	Navrhni a detailne popis algoritmus s explicitnou terminaciou, ktory
+	zrata sucet vstupnych hodnot vsetkych procesov (po skonceni algoritmu
+	kazdy proces pozna sumu vsetkych vrcholov). Aky je pocet sprav v
+	najhorsom pripade v zavislosti na n (pocet procesov)?
+	
+2.	======
+	Model byzantinskych chyb z prednasky: procesy maju identifikatory a
+	mozu posielat spravy vsetkym ostatnym, f procesov su klamari. Proces
+	s najnizsim ID je general (ostatne procesy vedia kto je general). 
+	General ma nejaku vstupnu hodnotu 0 alebo 1. Navrhni taky algoritmus,
+	ze ak je general cestny, vsetky cestne procesy sa zhodnu na jeho 
+	hodnote. Ak je general necestny mozu sa zhodnut na hociakej hodnote,
+	ale musi byt rovnaka hodnota pre vsetky procesy. Kolko moze byt v 
+	navrhnutom maximalne klamarov f v zavislosti na pocte procesom n?
+	
+3.	======
+	Graf s n vrcholmi sa nazyva takmer uplny ak vznikne z uplneho grafu
+	po odobrati maximalne 42 hran. Popis ako by pracoval asymptoticky
+	optimalny algoritmus na volbu sefa v takmer uplnom grafe v zakladnom
+	modeli (asynchronny, procesy maju ID, nemaju orientaciu, ...). 
+	Zdovodni optimalitu.
+	
+4.	======
+	Hirsberg-Sinclair algoritmus z prednasky - volba sefa v obojsmernom 
+	kruhu pomocou dobyjania uzemi. V algoritme je zmena: proces nezabera
+	v k-tom kroku svoje 2^k okolie ale k+1 okolie. Je algoritmus
+	korektny? Bude mat stale najhorsiu narocnost na spravy O(n log n)?

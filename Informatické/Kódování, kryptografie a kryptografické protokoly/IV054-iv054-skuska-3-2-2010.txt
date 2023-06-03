@@ -1,0 +1,5 @@
+﻿1. Show that knowledge of least significant bit of plaintext allows to recover whole plaintext encrypted by RSA
+2. Authenticated Diffie-Hellman password exchange
+3. Group version of ElGamal cryptosystem
+4. Show that breaking of Rabin cryptosystem would allow factorization
+5. Explain quadratic sieve method of factorization

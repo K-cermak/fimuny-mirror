@@ -1,0 +1,24 @@
+IA014 Funkcionalni programovani - predtermin 19.05.2011
+
+1. V lambda kalkule s konstantami if, isempty, 0, succ, add, left, right, Y
+   prepiste funkciu, ktora urcuje pocet uzlov v neohodnotenom binarnom strome:
+   size t = if (isempty t) 0 (succ (add (size (left t)) (size (right t)))
+   pomocou kombinatoru pevneho bodu.
+
+2. Prepiste \x \y. x (\u. y u x) pomocou kombinatorov S, K, I, B, C.
+
+3. Vyjadrite \x \y. y (\z \t. z x (y t)) (\u \v. y u (x v)) (\r \w. x r (y w))
+   pomocou minimalneho poctu superkombinatorov
+
+4. Zavedte unarny typovy konstruktor Tree ako instanciu triedy Applicative a
+   dokazte platnost axiom (4 vymenovane) pre tuto definiciu
+   data Tree a = Empty | Node a (Tree a) (Tree a)
+
+5. Mame jazyk, ktory umoznuje lubovolne zanorenie zoznamov. Ako prvky zoznamov
+   mozu byt zoznamy alebo identifikatory. Napiste parsery atom, nlist, ktore
+   parsuju jednoznakovy identifikator a zoznam. Je mozne pouzivat kombinatory
+   z modulu Parsec
+   data NestedList = Atom Char | NL [NestedList]
+   atom :: Parser NestedList, nlist :: Parser NestedList
+
+bodovanie: 6 6 6 8 8, povolena 1 A4 vlastnorucnych poznamok, 90 minut

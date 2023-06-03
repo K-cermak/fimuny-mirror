@@ -1,0 +1,25 @@
+﻿IV054 Kódování, kryptografie a kryptografické protokoly
+zkouška 3.2.2010
+
+Otázky:
+1. Secret sharing schemes
+2. Basics of Quadratic sieve factorization
+3. ??? (dvě příjmení na M a V, která mi nic neříkají)
+4. Interactive proof of graph non-isomorphism
+5. Show that if C is linear code, then adding parity check bit to the end of all codewords forms another linear code.
+
+Průběh zkoušky:
+Vylosujete si z velké nabídky lísteček, na němž je pětice otázek. Vyberete příslušný počet otázek a na papíře na ně odpovíte. Kdo už je hotový jde si v téže místnosti popovídat s panem Gruskou, jde to dost svižně. Pokud je s papírovou verzí spokojen, moc se neptá, když něco chybí, upřímně se snaží to z vás vytáhnout :-)
+
+Odpozorované známkování:
+A - uspokojivě odpovíte na vámi zvolené otázky a dokážete něco říct i o těch zbývajících.
+B - uspokojivě odpovíte na vámi zvolené otázky, ale o ostatních nevíte vůbec nic
+E - na zvolené otázky odpovíte neuspokojivě
+Fko nedostal z 10 lidí, co přede mnou byli, nikdo.
+
+Doporučení:
+- Zjistěte si předem, kolik otázek máte odpovídat a kolik bodů jste měli ze cvičení.
+- Naučte se zejména často se opakující otázky - RSA, cyklické kódy, ElGamal, zero-knowledge proofs, viz zadání z předchozích let
+- Důležité jsou dovětky k otázkám, např. u cyklických kódů "Characterization theorem for cyclic codes", najděte si přesně ten slajd, který se takhle jmenuje a zkuste ho pochopit, protože přesně to chce slyšet (to samé třeba důkaz korektnosti RSA).
+
+Hodně štěstí :-)

@@ -1,0 +1,7 @@
+Sada otazek z 21.5.2014
+
+1. Find stationary distribution for given (4x4) matrix of Markov chain
+2. Tournaments - number of Hamiltonian paths
+3. Probabilistic method and application
+4. Proof of existence of OR-extractors
+5. Lovász local lemma - proof and example

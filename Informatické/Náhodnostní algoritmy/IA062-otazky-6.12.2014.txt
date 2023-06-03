@@ -1,0 +1,5 @@
+RQuicksort + analyza
+Variance, smerodatna odchylka, momenty - definice, vlastnosti
+Probabilistic method
+Game tree evaluation
+Priklad na podminenou pravdepodobnost (mince)

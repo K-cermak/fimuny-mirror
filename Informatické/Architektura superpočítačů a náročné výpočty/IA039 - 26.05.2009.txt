@@ -1,0 +1,9 @@
+1) CISC, RISC - rozdíly + co má vìtší podporu pøekladaèù
+2) pipelining
+3) ANDES
+4) SIMD, MIMD - popsat, rozdíly + kam zaøadit cluster
+5) zneplatnìní x update - rozdíly
+6) MPI - vlastnosti (zasílání zpráv - možnosti); skupinová komunikace - popsat + øešení v MPI
+7) optimalizace cyklù
+8) schování pomalé pamìti pomocí konzistence
+9) profilery - druhy + co oèekávat

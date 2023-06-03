@@ -1,0 +1,11 @@
+1. Napiš co vypíše program s pøesným poètem mezer (procvièení ukazatelù a globálních deklarace promìnných) pozn. Pøi chybì v jediném èísle ze 4 celý pøíklad ohodnocen 0 body (10b)
+2. Pøepis konstrukci while (alfa) pøíkazy; (zadáno takto obecnì) na konstrukci do - while aby byla funkènì plnì komaptibilní (vyžadováno obecné øešení) (5b)
+3. a) Napiš zadání k uvedenému kódu (jaký problém øeší uvedený kód) - vypisování Pascalova trojúhelníku, funkce na výpoèet dalšího èísla trojúhelníku byla rekurzivní (10b)
+   b) Napiš co vypíše zadaný program když mu pøedáme èíslo n = 5; (tedy prvních 6 øádkù Pascalova trojúhelníka)
+4. Napiš funkci, které jako parametr pøedáme pøirozené èíslo n a která bude vracet souèet cifer tohoto èísla. (pozn. bez využití agregovaných typù) (10b)
+5. Napiš co reprezentují pøi výpisu následující formátové specifikátory: (5b)
+   a) %f
+   b) %x
+   c) %E
+   d) %s
+   e) %d

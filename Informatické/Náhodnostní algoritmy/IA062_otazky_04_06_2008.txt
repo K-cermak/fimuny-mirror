@@ -1,0 +1,8 @@
+Otazky z 2. terminu - 4.6.08
+
+1. Randomized complexity classes and relations between them
+2. Perfect matching algorithm
+3. Von Neumann minimax theorem and Yao's minimax principle
+4. Hamiltonian paths in tournament
+5. Randomized proofs (nevim co presne)
+

@@ -1,0 +1,11 @@
+﻿Zkouska 28. 5. 2013
+
+7 otazek, kazda za 10-20 bodu, max 100 bodu, na E potreba 50
+
+1) problemy spojene s paralelnim programovanim, potiz s jejich odhalovanim (10)
+2) rozhrani podminkovych promennych v POSIX - funkce, funkcionalita, atributy (20)
+3) CAS a garbage collector vs. CAS bez garbage collectoru (20)
+4) nestala promenna, program kde pomuze
+5) centralizovane schema dynamickeho mapovani
+6) E-Cube routing
+7) priklad na efektivitu

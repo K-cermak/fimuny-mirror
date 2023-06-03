@@ -1,0 +1,12 @@
+1) Dokažte, že ke každému PDA M, který akceptuje prázdným zásobníkem, existuje PDA N, který akceptuje tentýž jazyk koncovým stavem (uveďte konstrukci a dokažte její korektnost)
+
+2) Zkonstruujte regulární výrazy popisující následující jazyky
+   a) {w náleží {a,b}* | w neobsahuje podslovo aa}
+   b) {w náleží {a,b,c}* | #b(w) + #c(w) je liché}
+
+3) Navrhněte bezkontextovou gramatiku G v Greibachové normální formě generující jazyk L = {w.c^i.w^R | w náleží {a,b}*, i > 0}
+
+4) a) Dokažte nebo vyvraťte následující implikace:
+      i) bezkontextová gramatika G generuje regulární jazyk => gramatika nemá vlastnost sebevložení
+      ii) R je neprázdný regulární jazyk a L není regulární => R.L není regulární
+   b) Uveďte 4 operace, vůči kterým je uzavřena třída CFL. Jedno z vašich tvrzení dokažte (stačí uvést formální zápis konstrukce bez důkazu korektnosti)

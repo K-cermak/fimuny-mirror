@@ -1,0 +1,5 @@
+Cyclic codes + characterization
+Zero knowledge for graph isomorphism
+Enigma and its structure
+Algorithm to compute discrete logarithm
+Bit commitment and coin tossing schemes

@@ -1,0 +1,10 @@
+1. SMT - Simultanny Multithreading
+2. Proces/Vlakno rozdiely
+3. Kriticka sekcia + podmienky aby sa dala realizovat bit premennou
+4. Deadlock/Starvation rozdiely
+5. int pthread_cond_broadcast (ptrhead_cond t *cond) - opis + zlozitost vzhladom na pocet vlakien (O(n))
+6. Pouzitie CAS v lockfree strukt + aky problem sa s tym viaze (memory leaky)
+7. V OOP existuje zpusob jakym se mutex odemkne bez lokalni zmeny citace (napr. vyjimka), popiste jej (asi lock_guard)
+8. Blokove/Blokovo-cyklicke/Cyklicke mapovanie + vlastnosti
+9. Amdahluv zakon 
+10. MPI_Bcast = napisat paralel.program s aspon 2 procesmi, ktore ju pouzivaju

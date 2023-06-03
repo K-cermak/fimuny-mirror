@@ -1,0 +1,14 @@
+IA039 Architektura superpocitacu.
+Zkouska 23.5.2007. Skupina A
+110 bodu. Kazda otazka za 8-14 bodu.
+
+1) CISC, RISC, rozdily. Ktery znich vyzaduje vetsi podporu prekladace?
+2) Pipelining, co to je, vlastnosti.
+3) Andes - co to je. Jaky problem resi?
+4) SIMD MIMD - popsat, rozdil mezi nimi. Cluster je SIMD nebo MIMD?
+5) Zneplatneni x Update   diskutujte.
+6) Prime a neprime propojeni siti. Porovnat. Jeden priklad ke kazdemu. 
+7) Jak schovat pomalou pamet pomoci konzistence?
+8) Jake jsou moznosti optimalizace cyklu? Jake problemy mohou nastat? A jeste neco o optimalizaci cyklu :)
+9)Profilery. uvest jejich druhy a co byste od kazdeho z techto druhu ocekavali (heslovite)?
+10)MPI jeho vlastnosti hlavne ohledne zasilani zprav. Jake moznosti nabizi pro zasilani zprav. Skupinova komunikace - co to je a jak je v MPI resena.

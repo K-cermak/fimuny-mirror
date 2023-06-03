@@ -1,0 +1,13 @@
+1) Navrhnout datovou strukturu s operací INSERT(S,x) a REDUCE(S) tak, aby amortizovaná složitost n operací byla v O(n). Dokázat metodou úètù nebo potenciálové funkce. (35b.)
+
+2) Johnsonùv algoritmus - formulovat algoritmus a analyzovat jeho složitost. (25b.)
+
+3) Máme posloupnost pozic m øezù na øetìzci o délce n. Cena jednoho rozøezání øetìzce na dvì èásti je rovna délce øetìzce. 
+Pøíklad: Text o délce 20 znakù a posloupnost pozic øezù 3, 10 bude mít cenu 30 nebo 37 podle toho, v jakém poøadí øezy provedeme. 
+Navrhnìte algoritmus pomocí dynamického programování, který urèí nejlevnìjší poøadí provedení øezù. Složitost algoritmu má být polynomiální vzhledem k m, n. (40b.)
+
+4) Máme hranovì ohodnocený orientovaný graf G=(V,H), s je jeden vrchol grafu, w je ohodnocení hran, hrany jsou ohodnoceny reálnými èísly. Známe d(v) pro každý vrchol grafu, což je nejkratší cesta z vrcholu s do vrcholu v. 
+Dále máme podgraf G´(V,H´), kde H´ je podmnožina H. 
+Napište algoritmus, který ovìøí, zda G´ je strom nejkratších cest grafu G. Složitost algoritmu má být v lineární vzhledem k velikosti grafu G. (30b.) 
+
+5. Stromy s kompresí - operace MAKE SET, FIND SET a UNION + složitost. (30b.)

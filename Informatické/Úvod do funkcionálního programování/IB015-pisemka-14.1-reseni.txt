@@ -1,0 +1,29 @@
+data BinTreeLeaf a = Leaf a
+                   | Node1 (BinTreeLeaf a) (BinTreeLeaf a)
+                     deriving Show
+
+evenBintreeSum :: (Integral a) => BinTreeLeaf a -> a
+evenBintreeSum (Leaf x) = if even x then x else 0
+evenBintreeSum (Node1 l r) = (evenBintreeSum l) + (evenBintreeSum r)
+
+data BinTree a = Empty
+               | Node a (BinTree a) (BinTree a)
+                 deriving Show
+
+zipWithTree :: (a -> b -> c) -> BinTree a -> BinTree b -> BinTree c
+zipWithTree x _ Empty = Empty
+zipWithTree x Empty _ = Empty
+zipWithTree x (Node a l1 r1) (Node b l2 r2) =
+        (Node (x a b) (zipWithTree x l1 l2) (zipWithTree x r1 r2))
+
+myConcat :: [[a]] -> [a]
+myConcat x = foldl (++) [] x
+
+f :: (Integral a) => [a] -> a
+f x = last (init x) + last x
+
+myList :: [(Integer, Integer, Integer)]
+myList = [(x,y,z) | x <- [1,2,3,4], let y = x+1, let z = x+y]
+
+-- myLambda :: t -> a -> Int -> [a]
+myLambda = (\x -> flip replicate)

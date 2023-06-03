@@ -1,0 +1,9 @@
+1) Dokazte, ze model-checking LTL je pro petriho site nerozhodnutelny.
+
+2) Jestlize je petriho sit N ziva a hranicena, ma pozitivni T-invariant. Dokazte.
+
+3) Dokazte, nebo uvedte protipriklad:
+  a) Jestlize je petriho sit N pro pocatecni marking M0 neohranicena, pak je neohranicena pro libovolny marking M, M >= M0 (po slozkach).
+  b) Jestlize je petriho sit N ziva pro pocatecni marking M0, pak je ziva pro libovolny marking M, M >= M0 (po slozkach).
+
+4) Neco o urceni horni a dolni hranice slozitosti problemu, jestli je 1-ohranicena petriho sit ziva.. uz si to presne nepamatuju. 

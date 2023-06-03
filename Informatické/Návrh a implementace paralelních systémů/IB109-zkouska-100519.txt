@@ -1,0 +1,11 @@
+IB109 - zkouska z 19. 5. 2010
+celkem 8 otazek, nerovnomerne bodovani, max 100 b.
+
+- Popiste skalovatelnost a efektivitu. Jak spolu souvisi skalovatelnost a izo-efektivita a neco o izo-efektivite
+- Základní myslenka OpenMP, co, proc atd. + napsat program, ktery vypise 7x "Hello World"
+- Bafrovana, nebafrovana, blokujici, neblokujici - popsat je. Popsat vsechny kombinace a vypsat rizika a vyhody. 
+- Rezie interakci + 2 problemy a zpusoby jak je redukujeme.
+- Semantika CAS. Proc je vyhodnejsi pouzivat CAS na systemu s garbage collectorem
+- Mapování. Vztah k dekompozici. Cíle + prostredky. Vypsat ty mapovani zalozene na datech a hruby popis.
+- false sharing, jak, kdy, proc a jak mu muzeme predejit.
+- ?

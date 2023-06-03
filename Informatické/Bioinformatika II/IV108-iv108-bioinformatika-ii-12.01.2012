@@ -1,0 +1,52 @@
+IV108 Bioinformatika II (12.01.2012)
+B otazky za 4b
+C otazky za 15b
+
+
+B1	Techniky zistovania sekvencie DNA, nazov + popis.
+
+B2	cDNA vznika prepisom z mRNA molekul pomocou reverznej transkriptazy. Ako sa bude tato molekula lisit od genomovej DNA a v com bude rovnaka?
+
+B3	Ktore vlastnosti, DNA robia tuto molekulu vhodnu pre DNA vypocty. Ako sa daju pri vypoctoch vyuzit.
+
+B4	Transpozon.
+
+B5	Metagenomika, vyhody, nevyhody oproti klasickym postupom v genomike.
+
+B6	Ake fyzikalne a chemicka postupy su pouzite pri sekvenovani DNA pristrojom od ION Torrent (personal genome machine).
+	V com je tento pristup jedinecny a ktorym existujucim alebo vyvijanym technologiam je podobny a v com.
+
+B7	Zoradte uvedene pary oligonukleotidov podla teploty topenia ich duplexu (Tm).
+	ACGTGTGCGTGCG		ACGTGTGAGTGCG		ACGTGTGAGTGCG
+	TGCACACGCACGC		TGCACACTCACGC		TGCACACCCACGC
+
+B8	Kolko a ake typy nukleotidov sa vyuzivaju v sekvenovani DNA podla Sangera.
+
+B9	Ktore typy sekvenacii DNA su najproblematickejsie z hladiska moznosti sekvenacie.
+
+B10	Ako spocitame podobnost dvoch struktur proteinov pomocou RMSD.
+
+B11	Aka je zozitost vyhladavania sekvencneho vzoru v dlhsej sekvencii pri pouziti nativneho pristupu.
+
+B12	I-Sites
+
+B13	Typy zobrazenia PyMol pre lubovolnu molekulu proteinu z PDB, mozu sa zobrazenia v jednej molekule kombinovat?
+
+B14	Ktore 4 moznosti sa posudzuju v dielcich krokoch Nussinovho algoritmu pre predpoved parovania bazi v RNA.
+
+B15	Fyzikalne alebo chemicky rozne typy kontaktov medzi aminokyselinami ktore su bezne pritomne v proteinoch.
+	Najdolezitejsie parametre z hladiska funkcie a struktury.
+
+
+
+C1	Sekvenovanie DNA od Illumina, princip, odlisnost od Sangerovej metody.
+
+C2	Struktura a vyuzitie GeneOnthology v bioinformatike, ake data obsahuje, ako su ulozene.
+	Priklad aplikacie na konkretny problem.
+
+C3	Zakladne principy vyhladavania sekvencnych vzorov pouzitim suffixovych stromov.
+	Vytvorte suffixovy strom pre acgctacgta.
+	Ake dalsie struktury mozu urychlit vyhladavanie oproti nativnemu a na aky typ uloh su navhodnejsie.
+
+C4	Zostrojte priklad viacnasobneho zarovnania 5 sekvencii o dlzke 7-9 nukleotidov.
+	Konsenzualnu sekvenciu, PSSM alebo PWM, entropiu kazdeho stlpca a nacrtnite sekvencne logo.

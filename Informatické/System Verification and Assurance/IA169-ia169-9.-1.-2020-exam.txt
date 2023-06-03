@@ -1,0 +1,8 @@
+9. 1. 2020 Exam
+
+1. Write formal definition of a Kripke structure; syntax and semantics of LTL (10 pts).
+2. Write two examples of a valid Hoare triple, one of which is an axiom and the other is not (5 pts).
+3. Is a location X in a symbolic execution tree unreachable if the path condition is unsat?
+   Explain your reasoning (5 pts).
+4. What is a role of Oracle in the testing? (5 pts)
+5. What is a difference between transient and recurrent states in a probabilistic long-run? (5 pts)

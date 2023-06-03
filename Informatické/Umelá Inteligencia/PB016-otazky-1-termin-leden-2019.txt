@@ -1,0 +1,28 @@
+1. termin leden 2019 otazky tady zminene + navic:
+
+urcit true/false:
+ramce ukladaji informace pomoci objektu, slatu a hodnost slotu ?
+minimax ma stejne slozitosti (prostor a casove) jako dfs ?
+jednovrsva neuronova sit i rozhodovaci stromu umi vyjadrit libovolnou booleovskou funkci
+v CSP jsou soucasti zadani i domeny jednotlivych promennych
+reseni csp je libovolne konzistentni prirazeni promennych (dal jsem false, chybelo ze musi byt uplne)
+zakladni vlastnosti vyvozovani logickeho agenta je, ze kdykoliv agent dospeje k zaveru z danych informaci -> tento zaver je zarucene spravny, pokud jsou spravne dodane informace (prednaska 8/9)
+efektivni branching faktor spocitame ze skutecne expandovanych uzlu nebo z hloubky reseni
+uceni rozhodovacich stromu i neuronovych siti funguje na principu minimalizace chybove funkce
+uceni rozhodovacich stromu se uci maximalizaci miry informace a neuronka snizovanim poctu skrytych jednotek (ne, neuronka se uci snizovanim chyby upravanim vah, pocet skrytych jednotek je fixnuty)
+v semanticke siti hodnotu atributu urcujeme prochazenim odspodu do nadtrid a prvni hodnota plati (dal jsem ano)
+
+kostka ma na svych stranach cisla 1,2,2,6,6,6. jaka je mira informace obsazena v hodu touto kostkou? (dal jsem -(1/6)*log2(1/6) - (1/3)*log2(1/3)  - (1/2)*log2(1/2) = 1.46bitu)
+
+co je v *zakladnim* Turingove testu?
+jedna odpoved byla NLP, K-Repr., K-reasoning, a ML
+dalsi odpoved byla to same plus ty veci na slajdu v zavorce - computer vision a roboticka manipulace
+v dalsi odpovedi chybely nektery klicovy veci
+
+umet platne definice o vyrocich:
+vyrok je platny <=> ve vsech/nekterych modelech je pravdivy ?
+vyrok je nesplnitelny <=> ve vsech/nekterych je pravdivy ?
+vyrok je splnitelny <=> ve vsech/nekterych modelech je pravdivy ?
+dukaz sporem je forme KB |= alfa  <=>  (KB & !alfa) je nesplnitelny ?
+dukaz sporem je forme KB |= alfa  <=>  (KB => alfa) je nesplnitelny ?
+

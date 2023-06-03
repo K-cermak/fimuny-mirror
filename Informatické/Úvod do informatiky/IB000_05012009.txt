@@ -1,0 +1,26 @@
+Zkouska z IB000 (5.1.2008)
+
+1) f(n+2) = f(n+1) -15f(n) -60    // f(0)=f(1)=...
+
+2) logicky vyraz : ![(x->x) -> !Y] ... tabulka + normalni tvar
+
+3) "A sedi v nektere rade za B" a zaroven " A sedu v posledni rade, kdezto B v posledni rade nesedi"
+
+4) algoritmus
+a=1 , b=9
+r=a-2;
+while 2a+r<3a do
+	if a+b<25 then
+		a=b+5;
+		a=r-2;
+	fi
+	a=a*b;
+done
+r=a-r;
+b=a-r;
+r=2a+5;
+r=a+b*r;
+r=?
+
+5) v deklarativnim jazyce : funkci g(x) - pri zadani cisla odstrani nuly (napr. 103 = 13, 1021 = 121 atd.)
+6) v deklarativnim jazyce : nepamatuju si :(

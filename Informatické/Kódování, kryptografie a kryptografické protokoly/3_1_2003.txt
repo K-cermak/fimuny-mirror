@@ -1,0 +1,13 @@
+Posilam 11 otazek z Kryptografie a protokolu, co mili 2 studenti veera 3.1.2003
+na zkou^Úce.
+1. Perfect secrecy cryptosystem
+2. Proof of correctness of RSA cryptosystem
+3. When is a cryptosystem perfectly secure
+4. Schnorr identification scheme
+5. Interactive proof system for graph isomorphism
+6. Cyclic codes and their algebraic characterisation
+7. Digital signature requirements and methods
+8. Possible \"man in the middle attack\"
+9. Examples of user authentication protocols
+10. Rabin in simple and generalized version
+11. RSA cryptosystem and it\'s correctness

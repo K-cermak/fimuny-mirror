@@ -1,0 +1,33 @@
+ 
+Popsat RISC a proč se přejmenovali registry,
+cache koherence metody,
+co měříme ohledně vlastnosti sítí a vysvětlit co je bisection bandwidth a nakreslit příklad,
+optimalizace přístupu do paměti,
+benchmark SPEC a co to je kernel,
+test_and_set a test_and_test_and_set a algoritmus, jak se dá vyřešit problém těchto instrukcí (asi tím byla myšlena fronta procesů),
+jak se z hlediska paměti liší paralelní systémy se sdílenou pamětí a s distribuovanou pamětí - výhody a nevýhody.
+Co rozumíte pod pojmem zrychlení a přínos.
+MPI a blokující/neblokující volání a závislost s využitím bufferů
+
+
+1. Hlavní rozdíly mezi CISC a RICS, kdo potřebuje větší podporu překladačů
+2. Pipeline
+3. Andes
+4. SIMD MIMD, clustry
+5. Zneplatnění, update
+6. Parametry u sítí + dvourozměrné sítě
+7. Jak ukryjeme zpoždění u propojovacích sítí, nějaká změna modelu nebo co...
+8. optimalizace cyklů + nějaké problémy s tím
+9. Co je to komunikator v MPI a co řeší za problém z PVM
+
+
+19.06.2017:
+1. Popíšte hlavné rysy RISC procesorov. K čomu slúži premenovanie registorov?
+2. čo rozumiete pod pojmom rošíriteľnosž a zrýchlenie?
+3. Popíšte rôzne parametre sietí. čo je bisection width? Vysvetlite a načrtnite príklad na obrázku
+4. Optimalizácia prístupu do pamäte, ako vieme z hľadiska prekladača optimalizovať prístupy?
+5. MPI point-to-point komunikácia, vysvetlite + popisy v závislosti na bufferi
+6. popíšte rozdiel test&set + test&test&set a k čomu slúži + problémy s tým spojené
+7. Vysvetlite k čomu slúžia SPEC kernel a čo to je v kontexte benchmarku
+8. Ako sa líšia systémy so zdieľanou pamäťou vs. distribuovanou, popíšte pre každý nejaký klad aj zápor
+9. čo to je koherence cache a popis rôznych prístupov/riešení s tým spojených

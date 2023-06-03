@@ -1,0 +1,20 @@
+Otazky jak si pamatuju, asi spatne poradi, bodovani uz taky moc nevim. (9.6.2015)
+----------------------------------------------------------------------
+
+1. Rozdil mezi vlakny a procesy OS z pohledu programatora pri psani paralelni aplikace (10)
+Nevim, popsal jsem rozdil mezi vlakny a procesy
+
+2. V OOP existuje zpusob jakym se mutex odemkne bez lokalni zmeny citace (napr. vyjimka), popiste jej
+Nevim co chtel, popsal jsem guard classes
+
+3. Popiste oba obecne zpusoby dekompozice (obecne, ne specificke)
+Nevim co chtel, znam jen specificke. Popsal jsem staticke a dynamicke rozdeleni uloh.
+
+4. Popiste vyhody a nevyhody pouziti spin-locku pro pristup ke kriticke sekci oproti uspavani vlaken 
+
+5. Co je pametovy model procesoru a jaky ma vztah k bariere
+
+6. CAS a kde je problem, kdyz neni GC
+
+7. Napsat MPI program kde dva procesy komunikuji pomoci broadcastu a vysvetlit vektorove komunikacni primitiva (nebo neco takoveho) (20)
+Kokotina, kdo si ma pamatovat cely MPI API, najdu si to, kdyz to budu potrebovat.

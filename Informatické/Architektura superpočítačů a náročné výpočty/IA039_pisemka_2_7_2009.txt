@@ -1,0 +1,11 @@
+skupina F
+1) rozdily mezi CISC a RISC, kde jsou potreba vic prekladace
+2) ANDES - vlastnosti, proc se zavadi
+3) SPMD, MPMD - jake jsou rozdily
+4) hlavni pamet - vlastnosti, struktura, operace nad pameti
+5) rozdil mezi put-through a store-and-forward
+6) profiling - vlastnosti, co se meri, jak se meri..
+8) SPEC benchmark - na co to je, jak to funguje
+9) MPI - vlastnosti, hlavne v oblasti komunikace, priklady prikazu pro zpravy
+
+otazky se opakovaly z predchozich terminu az na 3,5,9 (ty jsem nevidel - mozna si jen nevsiml :)

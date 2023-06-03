@@ -1,0 +1,6 @@
+- napisat pseudokod algoritmu Ant colony pre problem obchodneho cestujuceho
+- popisat co je to bayesovska siet a uplna zdruzena distribucia
+- aky je rozdiel medzi (nejakou) bunkovou dekompoziciou a (nejakou) inou bunkovou dekompoziciou
+- napisat co je to ciastocny plan a nakreslit/navrhnut taky plan kde budu demonstrovane vsetky jeho vlastnosti
+- priklad na planovanie (navrhnut atomy a operatory, napisat minimalny plan pre dany pociatocny a cielovy stav... podobne ako v domacej ulohe c.2 )
+- priklad na riesenie MDP s pomocou Bellmanovej rovnice

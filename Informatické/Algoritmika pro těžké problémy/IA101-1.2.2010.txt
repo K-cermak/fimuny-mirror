@@ -1,0 +1,6 @@
+1) Definujte algoritmus typu Monte Carlo
+2) 2-aproximativni algoritmus pro problém souètu + dùkazy
+3) problém rozvrhu úloh mezi procesory - pøevést na úlohu 0/1-lineárního programování
+4) úplné polynomiální aproximativní schéma pro problém batohu a analyzovat složitost
+5) parametrizovaný algoritmus pro problém vrcholového pokrytí + složitost
+6) metodou derandomizace vytvoøit deterministický algoritmus pro problém 3SAT (s omezením, že každá klauzule obsahuje rùzné literály), zadaný randomizovaný algoritmus pøiøazuje hodnoty promìnným náhodnì

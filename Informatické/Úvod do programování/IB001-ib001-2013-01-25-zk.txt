@@ -1,0 +1,7 @@
+termín 25.1.2013
+
+1, napiste makro pro vypocet obsahu rovnostranneho trojuhelniku - 5
+2, co bude vystupem programu (priklad na pointry), jak to bude naformatovano (printf("%3d",x);) - 10b
+3, co resi tento alg a co bude jeho vystupem (podivny radici alg) - 10b
+4, byla definova struktura zasobnik, ukolem bylo napsat funkci push, ktera prida do zasobniku hodnotu - 10b
+5, rozdil mezi primou a neprimou rekurzi - 5b

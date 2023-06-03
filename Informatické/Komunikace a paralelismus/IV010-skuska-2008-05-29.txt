@@ -1,0 +1,35 @@
+Komunikace a paralelizmus - 29.5.2008:
+
+
+(1)
+Procesy:
+	B = a.t.(b.c.nil + c.b.nil)
+	C = a.(t.b.c.nil + c.b.nil)
+	D = a.(d.b.nil | 'd.c.nil)\d 
+
+a) Definovat silnu bisimulaciu + rozhodnut, ci su jednotlive procesy po dvojiciach bisimulacne silne ekvivalentne alebo nie
+b) Formalne odvodit prve akcie procesu D
+c) Je proces D konecny? Ak ano, previest ho do standartneho tvaru. 
+
+
+(2)
+a) Rozsirenie CCS o sekvenciu. Prve pravidlo bolo uvedene s chybou, bolo treba ho opravit. 
+b) Dokazat, ze P;(Q;R) ~ (P;Q);R 
+
+
+(3) 
+ R a R' jsou libovolne silne bisimulace.
+   a) R1 = {(a.nil,a.nil)}
+   b) R2 = {(a.nil,(nil|a.nil), (nil,(nil|nil)}
+   c) R3 = {(a.P, a.Q) | (P,Q) nalezi do R } sjednoceno R 
+   d) R4 = R prunik R'    
+
+
+(4)
+Bol zadany 'graf' a popis procesu "Protokol", na ktorom bol "Sender", "Receiver" a "Medium". Ulohou bolo proces "Protokol" definovat pomocou CCS.
+
+
+(5)
+Bol nakresleny prechodovy graf procesu a mali sa popisat v jazyku HML nejake 'situacie' (ako napr. "akciu act2 nie je mozne vykonat bezprostredne po akcii act1" a pod.)
+
+

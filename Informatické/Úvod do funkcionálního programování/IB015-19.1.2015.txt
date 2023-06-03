@@ -1,0 +1,32 @@
+1. prepis na pointfree: f x = concat ( map x [1,2,3])
+
+-- dala som: žiadne z uvedených, podľa mňa to malo byť f = concat . (flip map [1,2,3])
+
+2.Ktorý zoznam skončí s výsledkom [36] v konečnom čase
+
+-- tail(take 2 [ 3*x|x <- [1..] , y <- [11,12], x==y])
+
+3. IO výraz, načíta dáta z "old.txt", zapíše ich do "new.txt". POtom vypíše "hotovo"
+
+readFile "old.txt" >>= \file -> writeFile "new.txt" file >> putStr "hotovo"
+
+4. a) N-árny strom: data Ntree a = List [a] | Node [a] [Ntree a] zistť aritu dátových konštruktorov:
+
+--Node - binárny, List - unárny
+ 
+b) funkcia rev, ktorá zmení poradie prvkov v zoznamoch stromu, typ
+
+-- rev :: (NTree a) -> (Ntree a)
+-- rev (List xs) = List (reverse xs)
+-- rev (Node xs nodes) = Node (reverse xs) (map rev nodes)
+
+5. PROLOG: Funkcia Len(Zoznam, Dĺžka), ktorá zisti dĺžku zoznamu bez použitia funkcie length
+
+6. PROLOG: Nakresliť kompletný strom
+
+?- f(U,J), f(J,U),!,g(Z,J)
+f(1,2)
+f(1,1)
+f(2,2)
+-- sorry ďalej si fakt nepamätám
+

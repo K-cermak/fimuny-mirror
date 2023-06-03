@@ -1,0 +1,32 @@
+Teoretická část zkoušky z IB001 (16.01.2007):
+================================================================================
+
+Pozn. zadání není napsáno přesně tak, jak bylo na zkoušce.
+
+1) Byl definován datový typ obdobi:
+
+  type obdobi = (jaro, leto, podzim, zima)
+  
+  a proměnné m a o byly deklarovány takto:
+  
+  var
+    m: integer;
+    o: obdobi;
+  
+  Otázka zněla:
+  Jaké budou hodnoty v proměnných m a o po vykonání těchto příkazů:
+  
+  m := ord(podzim);
+  o := succ(zima);
+  
+2) Napište funkci pro obecný logaritmus o základu z. (logz x)
+Platí tyto podmínky: x>0, z>0, z<>1. Podmínky se nemusely testovat.
+
+3) Zjistit, co dělá zadaný algoritmus.
+
+  Program nalezl všechna celočíselná řešení polynomu o stupni n.
+  
+4) Co to je a k čemu slouží IOResult?
+
+5) Napište funkci pro vypočítání "n nad k". Bylo potřeba TESTOVAT zadané
+podmínky. Už jsi je ale nepamatuju. :(

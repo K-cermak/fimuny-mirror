@@ -1,0 +1,15 @@
+What my "lucky" hand chose on 21st January 2011:
+
+	Fiat-Shamir identification scheme + parallel version
+	// I didn't wrote a word about the "parallel " part, but still I was quite praised by him, so I don't know what it stands for. Maybe the fact that you can compute y_i and later x_i paralelly (that's obvious).
+	
+	Algorithm p-1 for integere factorization.
+	
+	Describe the modes of block ciphers.
+		// I spoke broadly about ECB, CBC and CTR which I saw when working with AES block-crypto in a programming seminary. It seemed to work except I had a verbal description, while Gruska wanted the relations/formulas.
+		
+	"Ane is badly willing to crack some authentisation algorithm, for which she needs to compute a discrete logarithm log_a(x). Bob just bought a new quantum computer and is willing to Ane with anything for just a little love. Ane is attracted by the deal, but she doesn't want Bob to discover x. Provide a method to help Ane and become her hero #2 :D.
+	// The n in which operations whould be conducted was not specified. The names, places or feeling are fictional, the similarities to reality are completely coincidental...
+	
+	Schnorr-Shamir-Ong subliminal channel scheme
+	// Ve skriptech se to nachází pod jménem Ong-Schnorr-Shamir subliminal channel scheme

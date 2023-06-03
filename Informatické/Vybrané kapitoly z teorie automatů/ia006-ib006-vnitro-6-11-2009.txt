@@ -1,0 +1,18 @@
+1. Zkonstuujte LL(2) analyzátor a analyzujte slovo cbbcca: (10 b.)
+S->ABAa
+A->c
+A->cA
+B->bb
+
+2.Definujte (4 b.)
+a) SLL(k)
+b) LR(k)
+
+3. Najdìte gramatiku s následujícímí vlastnostmi: (6 b.)
+a) je SLL(3) a není LL(2)
+b) je LL(2) a není SLL(3)
+c) je LL(1) a není LR(0)
+
+4. Rozhodnìte a dokažte: (5 b.)
+a) L není detCFL => co-L není detCFL
+b) L, R jsou detCFL, je co-(L\R) CFL?

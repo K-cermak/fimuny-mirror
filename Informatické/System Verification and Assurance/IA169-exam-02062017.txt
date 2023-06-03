@@ -1,0 +1,9 @@
+IA169 System Verification and Assurance
+02.06.2017
+==========
+1. Provide skeleton algorithm for BMC and explain at least one termination criterion. (20pts)
+2. In under-approximated model, what can be inferred from positive and negative outcome of verification? (10pts)
+3. Explain CEGAR approach. Can it be used with under-approximation? (10pts)
+4. Explain what is the function of oracle. (10pts)
+5. Describe or draw two main operations performed on inner nodes when converting BDT to BDDs? (10pts)
+6. Explain what are decision points and branching points in context of MC/DC. (10pts)

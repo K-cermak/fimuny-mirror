@@ -1,0 +1,19 @@
+----------------------------------------
+IA101 - Algoritmika pro tìžké problémy
+
+        zkouska 22.1.2009:
+----------------------------------------
+
+1) Definujte algoritmus typu Las Vegas a Las Vegas s odpovedi 'nevim'. Jaky je mezi nimi vztah, daji se mezi sebou provest? Pokud ano, jak?
+
+2) Zformulujte algoritmus pro problem 1,2-OTSP (TSP, ktery je nad orientovanym grafem, jehoz hrany mohou mit ohodnoceni jen 1 a nebo 2). 
+
+3) 
+
+4) Popiste Christofidesuv algoritmus a dokazte jeho 2-aproximativnost.
+
+5) formulujte ulohu linearniho programovani, sestrojte k ni dualni ulohu. Napiste podminky komplementarity. 
+
+6) Zformulujte algoritmus prohledavani okoli pro problem:
+Je zadan graf G = (V, E) a mnozina vrcholu S = {s_1, ... , s_k} a cilem algoritmu je odstranit z grafu hrany tak, aby kazdy vrchol byl v samostatne komponenete souvislosti (jinymi slovy - aby neexistovala cesta mezi jakymikoli s_i a s_j pre i != j ). Hleda se minimalni reseni - cenou reseni je soucet vah odstranenych hran.
+

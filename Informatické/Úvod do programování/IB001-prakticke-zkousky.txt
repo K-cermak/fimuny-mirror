@@ -1,0 +1,33 @@
+Posbírané pøíklady, které se objevily v praktické èásti IB001: 
+
+1/ Naplòtì matici m*n náhodnými èísly ze zadaného rozsahu. Matici vypište.
+   Lexikograficky uspoøádejte její sloupce. Matici vypište.
+
+2/ Máme textový soubor text.txt, který obsahuje znaky malé, velké abecedy a èísla.
+   Napište program, který na spodní øádek displeje vypíše A..Z, a..z, 0..9 a nad
+   tyto znaky vypíše tolik hvìzdièek, kolikrát se v souboru text.txt daný znak objeví.
+
+3/ Na vstup se zadá matematický pøíklad se zadaním +;-;*;/ - napø.: 81/9*3+7*2
+   Vrate výsledek vstupu, dbejte na pøednost '*' a '/' pøed '+' a '-'.
+   Pøi dìlení je výsledek celoèíselný.
+
+4/ Program má pracovat nad dvìma textovými soubory. První obsahuje standardní text,
+   slova a mezery. Druhý je ve tvaru slovo1[mezera]slovo2 (tedy napø.: 'ahoj nazdar').
+   Program v prvním souboru vyhledá první slovo a nahradí ho za slovo druhé.
+
+5/ Napište program, který bude realizovat èinnost násobení polynomù. Polynomy jsou zadané
+   jako stringy, napø.: -5x^9+5x^7-1x^2+8x^7. Stupeò polynomu je 0-9, stupnì nejsou nijak
+   seøazeny a hodnoty jednoho stupnì se mohou vyskytovat vícekrát
+
+6/ Souèet dvou reálných èísel ze souboru. Každé èíslo je na svém øádku a souèet mùže dosahovat
+   až 250ti znakù. 
+
+7/ Uživatel zadá èíslo n (1-80). Program náhodnì vygeneruje n èísel v rozmezí 1-20. Na obrazovce
+   se èíslo zobrazí jako poèet hvìzdièek nad sebou:
+
+   napø.: 3 >  *
+               *
+               *
+  
+   Vygenerovaná èísla se seøadí od nejmenšího po nejvìtší, postup seøazování má být formou "animace"
+   kdy se pøi každém prohození èísel zadá opoždìní 25ms. 

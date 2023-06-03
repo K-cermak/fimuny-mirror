@@ -1,0 +1,17 @@
+1. Write a skeleton of Bounded Model Checking algorithm.
+   Write at least one terminating condition of this algorithm.
+   
+2. What is under-approximation and what does positive and negative
+   result of verification mean? Compare.
+   
+3. Draw CEGAR approach schema. How does it work with respect to 
+   under-approximation
+
+4. What is Oracle in testing?
+
+5. Write two transformations that happen to inner nodes during
+   BDT to BDD transformation algorithm.
+   
+6. Define differences between decision / branching points in
+   Modified Coverage / Decision Coverage.
+   

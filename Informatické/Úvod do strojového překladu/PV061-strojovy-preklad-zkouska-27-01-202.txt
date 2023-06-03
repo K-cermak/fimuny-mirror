@@ -1,0 +1,16 @@
+1. (10b)
+Vysvětlete význam jednojazyčných korpusů při strojovém překladu.
+
+2. (10b)
+Jaký je hlavní rozdíl mezi dopředným a rekurentním neuronovým modelem? 
+
+3. (10b)
+Jaký je rozdíl mezi statistickým a frázovým překladem?
+
+4. (8b)
+Co víte o systému Verbmobile?
+
+5. (12b)
+Vypočtěte BLEU skóre z následujících dat.
+Reference: The quick brown fox jumps over the lazy dog.
+Překlad: The fast brown fox jumps over a dog.

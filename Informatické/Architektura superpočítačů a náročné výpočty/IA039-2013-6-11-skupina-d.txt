@@ -1,0 +1,11 @@
+11.6.2013
+SKUPINA D
+1. superskalarni procesory a VLIW
+2. optimalizace (necyklicke), odstraneni indukcnich zavislosti konkretne
+3. prepinani v paralelnich systemech
+4. PVM a sprava procesu
+5. co je vzajemne vylouceni, co resi
+6. test_and_set, test_and_test_and_set
+7. castecne mapovane adresare
+8. GPU (vs. CPU) reseni latence pameti
+9. SPEC benchmarky

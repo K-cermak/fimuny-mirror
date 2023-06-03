@@ -1,0 +1,11 @@
+1) Dokázat, že množina indexù všech bijektivních funkcí není rekurzivní
+2) Uvést vìtu o numeraci pro standardní numeraci vyèíslitelných funkcí
+3) Formulovat a dokázat 3. Riceovu vìtu
+4) Tøemi zpùsoby definovat m-redukci a dokázat ekvivalenci uvedených definicí
+5) Uvést pøíklad množiny, která není r.e.
+6) Dokázat, že r.e. množina, jejíž numerující funkce je rostoucí v sudých i lichých èíslech, je rekurzivní
+7) Množina programù, které cyklí nad nulovým vstupem - je rekurzivní? je r.e? respektuje funkce? lze použít Riceovy vìty?
+8) Dokázat: f \in o(g) -> g \notin O(f)
+9) Definovat pojem prostorové složitosti Turingova stroje, formulovat a dokázat vìtu o prostorové kompresi TM
+10) Dokázat, že tøída P je uzavøena na sjednocení, doplnìk a zøetìzení
+

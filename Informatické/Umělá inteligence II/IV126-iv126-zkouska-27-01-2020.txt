@@ -1,0 +1,27 @@
+1 demonstrovat souseda v 2-distance a 2-opt na travel salesman ceste A->B->C->D->E->A, jak jsou okolí velka.
+  Jaka dve dalsi okolni znate pro permutacni problemy znate? Ukazte na priklade
+
+2 napiste algoritmus pro konstrukci baysovske site, diskutujte vhodne usporadani uzlu a pridavani hran
+
+3 porovnejte tabu search a search s akceptaci prahem, 2 podobnosti a 2 odlisnosti
+
+4 definujte velké sigma pro klasicke planovaci veci nad jazykem L
+  definice pro: operator, akce, stav, jaka je prechodova funkce, pouzitelna akce
+
+5 napiste algoritmus pro konstrukci grafu viditelnosti
+  jak podle grafu viditelnosti planovat cestu a jake jsou jeji vlastnosti? 
+  porovnejte s veroneho grafem. jak najit cestu a jeji vlastnosti
+
+6 navrhnete klasicke planovani pro situaci:
+  prevazime baliky jednim autem na neorientovanem grafu - ctverci s,a,b,c
+  3 baliky x,y,z - v 1 meste muze byt kolik chce baliku naraz, ale auto muze vest max 1 balik (vahy baliku neuvazujeme)
+  popiste inicialni stav podle slovne popsane situace
+  popiste cil podle slovne popsane situace
+  napiste pro to 1 minimalni plan
+
+7 baysovska sit zadana grafem a tabulkama, podobne jako ve slidech
+  napiste vzorek, pokud budete vybirat vzdy
+    - nejpravdepodobnejsi ohodnoceni
+    - nejmene pravdepodobne ohodnoceni
+  u obou napiste jejich pravdepodobnost, nemusite vycislovat
+  byly by akceptovany u vzorkovani se zamitanim pro dotaz P(... | ...)?

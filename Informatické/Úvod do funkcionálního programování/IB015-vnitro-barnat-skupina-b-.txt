@@ -1,0 +1,8 @@
+1) napsat funkci elem a napsat i jeji typ, ktera urcuje jestli se dany prvek v danem seznamu vyskytuje
+napr. elem `o` "Ahoj" = True
+
+2) vyhodnocovani funkci s foldr, foldr1 (proste akumulacni funkce), ktere se vyhodnoti stejne
+neco na zpusob foldr (-) 3 [-3,4,2,3]
+
+3) otypovat funkci filter snd
+

@@ -1,0 +1,76 @@
+--Vnitro 2015 skupina C--ZADANIE
+--1. Co vypluje: 
+
+--	zipWith (take) [1..5] (repeat(repeat 1)) ->* ?
+
+
+--2. vytvorte alternativnu funkciu pre funkciu pomocou nejakeho fold
+
+	funkcia = map (\x -> 1)
+
+	alternativa = ?
+
+
+--3. otypujte: map (\(x, y) -> snd x)
+
+
+--4. vytvorit all po svojom
+
+
+
+
+
+
+
+
+
+
+---RIESENIA-------
+
+--Vnitro 2015 skupina C--
+--1. Co vypluje: 
+
+--	zipWith (take) [1..5] (repeat(repeat 1)) ->* ?
+
+--             ->* [[1],[1,1],[1,1,1],[1,1,1,1],[1,1,1,1,1]]
+
+-- zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
+-- zoberie binarnu operaciu a aplikuje ju postupne na prve prvky dvoch poli, druhe prvky, ...
+--    take :: Int -> [a] -> [a]
+-- zoberie cislo a vrati pocet prvkov z pola
+--  repeat :: a -> [a]
+-- zoberie prvok a vrati nekonecne pole toho prvku
+
+-- aplikacia zipWith
+
+-- [take 1 (repeat 1), take 2 (repeat 1), take 3 (repeat 1), take 4 (repeat 1), take 5 (repeat 1)]
+
+--vdaka linemu vyhodnocovaniu to skonci v konecnom case
+-- [[1],[1,1],[1,1,1],[1,1,1,1],[1,1,1,1,1]]
+
+--2. vytvorte alternativnu funkciu pre funkciu pomocou nejakeho fold
+
+funkcia = map (\x -> 1)
+
+alternativa =foldr fnbz []
+	where fnbz x xs = 1:[] ++ xs
+
+
+--3. otypujte: map (\(x, y) -> snd x) :: [((a,b),c)] -> [b]
+-- lebo 
+--   map :: (a -> b) -> [a] -> [b]
+-- (x, y) :: (d, c) pricom este d musi byt dvojica lebo snd x
+-- (x, y) :: ((a, b), c)
+--  snd x :: b
+-- funkcia map je ciastocne aplikovana lambda funkciou cize tu cast vyskrtneme
+-- a nechame tam len [(x, y)] -> [snd x]
+
+
+--4. vytvorit all po svojom
+-- all :: (a -> Bool) -> [a] -> Bool
+
+all2 :: (a -> Bool) -> [a] -> Bool
+
+all2 _ [] = True
+all2 f (x:xs) = if (f x) then all2 f xs
+			else False 

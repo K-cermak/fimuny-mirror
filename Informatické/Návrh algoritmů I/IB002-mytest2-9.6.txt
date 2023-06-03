@@ -1,0 +1,39 @@
+
+1) zkonstruujte Red-black tree
+A)
+aby:
+	a)levi uzel od korene byl cerny
+	b)pocet uzlu byl maximalni
+	c)a uzly byly 1,2,4,5,6,7...n-1, tedy bez 3ky
+B)do stromu vlozte uzel s hodnotou 3 a popiste rotace
+
+2) minimalni kostra grafu
+pocet uzlu je 3k, pocet hran je 5k-3
+
+  1 1 1       1
+ .-.-.-. ... .-.
+4| | | |     | |4 
+ .-.-.-. ... .-.   prostredni vodorovne cary jsou 2ky
+4| | | |     | |4
+ .-.-.-. ... .-.
+  3 3 3       3
+
+podle me to vyslo Kna2
+
+3) napsat matici vzdalenosti zadaneho grafu
+-resil sem Floyd-Warshalem
+
+4) posloupnost cisel 1-n kde n je nasobek 2ky ale n je nejmene 128.
+
+a) rozdeli se to na pole po 128 prvcich a mak spojuje merge sortem. NEBO TAK NEJAK
+
+5)navhnete algoritmus ktery overi zda je strom BRAUN. tedy jestli se pocet prvku nalevo nelisi od uzlu napravo o vic nez 1.
+braun vraci 2 hodnoty (n,bool)
+
+isBraun = snd(broun(t))
+braun(t) = ...
+
+6)mame z minimalni binarni haldy odebrat 2. nejmensi prvek.
+metoda HEATIFY slouzi ke slouceni 2 binarnich hald.
+
+hetify - byla zadana

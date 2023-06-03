@@ -1,0 +1,13 @@
+19.1.2009
+
+1. a) Definujte predikat term.
+   b) Co znamena, ze system konci korektne?
+   c) Co je norma vzhledem k predikatu P.
+   d) Dokazte, ze pokud existuje norma vzhledem k p a vypocet je korektni, je P nekdy splneno.
+   e) Jak se posledni fakt vyuziva pri dukazu korektnosti distribuovanych algoritmu.
+2. Algoritmus GHS na hledani minimalni kostry.
+3. Kolik muze byt od zacatku mrtvych procesu tak, aby se dalo dojit k dohode. Algoritmus + slozitost.
+4. Algoritmus Singh pro volbu sefa v uplnem grafu - jak funguje, slozitost.
+5. Dokazte, ze neexistuje deterministicky algoritmus pro vypocet nekonstantni funkce v kruhu o nezname velikosti.
+6. Co znamena ze algorimus k necemu stabilizuje. Popiste/vysvetlete/zduvodnete Dijkstruv algoritmus vzajemneho vylouceni v kruhu.
+7. Algoritmus Netchange - promenne, zpravy, reakce na ne.

@@ -1,0 +1,24 @@
+Vnitrosemestralni pisemka Neimperativni programovani IB015 (haskell)
+Listopad 2015
+
+4 otazky po 6 bodech, celkem 24 bodu. Skupina B.
+
+1. Jaky bude vysledek funkce:
+zipWith replicate [1..5] ['a'..'c']
+Vysledek -- ["a","bb","ccc"]
+
+2. Napiste implementaci funkce concat s vyuzitim funkce fold.
+Vysledek -- concat' = foldl (\init item -> init ++ item) []
+
+3. Otypujte vyraz:
+\x -> unzip (head x) 
+Vysledek -- \x -> unzip (head x) :: [[(a, b)]] -> ([a], [b])
+
+4. Napiste implementaci funkce filter vcetne typu.
+Vysledek:
+
+filter'' :: (a -> Bool) -> [a] -> [a]
+filter'' function [] = []
+filter'' function (x:xs)
+          | (function x) == True = x:filter'' function xs
+          | otherwise = filter'' function xs

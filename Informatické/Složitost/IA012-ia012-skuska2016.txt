@@ -1,0 +1,19 @@
+1. prof. Cerna je mila a velmi ustretova, skusky sa netreba bat, dost mozno dostanete lepsiu znamku nez cakate.
+2. pozera na to kolko bodov mate z uloh, tiez aj na komentare, ktore si k vam napisala.
+3. Otazky su 3: definicia, nieco lahsie, dokaz
+
+Moje otazky:
+-orakulove TS  
+-relativizovane zlozitostne triedy -P^NP, NP^NP, atp. asi aj toto: delta, sigma, phi
+-relativizacia -NP^A /= P^A(jeden z tych lahsich dokazov, ale je tak na 1 stranku) alebo NP^A = P^A (dokaz ma jeden riadok)
+Na A trebalo oba dokazy, inak asi staci ten jednoriadkovy.
+
+dalsie otazky, kt. boli v rovnaky den:
+PTS, vztahy medzi ZPP, BPP, RP, P, NP, PSPACE...taky ten obrazok zo sipkami, medzi tymyto triedami
+ATS
+...
+*asi vsetky okruhy, kt. sa preberali
+
+poznamka: ak aj po mesiaci na tomto predmete ani netusite, tak:
+-nie ste jediny :)
+-po prvej alebo druhej sade sa to zlepsi

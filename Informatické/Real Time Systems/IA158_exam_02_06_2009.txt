@@ -1,0 +1,45 @@
+IA158 Real Time systems, June 2th 2009, Time: 110 minutes
+
+1. (7 points)
+For each of the following categories give one specific example of a system which belongs to the category and one specific example of a system which does not belong to the category.
+Use different examples for each category.
+ * hard real time system
+ * soft real time system
+ * embedded system
+ * safety-critical system
+Briefly describe relations among these concepts.
+
+2. (11 points)
+A) Compare advantages and disandvantages  of EDF and RM algorihms for periodic scheduling.
+B) Consider the following ... of periodic tasks:
+
+    τ_1 τ_2
+C_i  x  4
+T_i 10  7
+
+ * For each of x from {1, 2, 3, 4, 5, 6} determine utilisation factor. Can you determine whether the set is schedulable by EDF/RM without constructing the schedule? Explain.
+ * Take the maximal x such that the set is schedulable. Construct the schedule produced by EDF and RM.
+
+3. (10 points)
+[ process 1 ] ---> [ process 2 ]
+      ^                  |
+      |                  v
+[ process 4 ] <--- [ process 3 ]
+
+Consider simple token based protocol for mutual exclusion:
+ * There are four processes, initially the first process holds the token.
+ * A proces can access critical section only when it holds the token. The process does not need to do so.
+ * Token is passed along a ring (see the picture).
+ * A process can hold the token for at most 3 seconds; passing of a token is instantaneous.
+
+Your task is to:
+ 1. Construct a model of a protocol (use a network of timed automata with communication).
+ 2. Describe a sample run of the model.
+ 3. Determine a bound B such that the following is true: "If a process wants to go into the critical section it will be able to do so within B seconds."
+
+4. [None. Sorry]
+
+5. (6 points)
+Choose a programming language (or choose two programming languages and compare them).
+ 1. How does the programming language support concurrency? What is the structure, level, and granularity of the programming language?
+ 2. What are the advantages and disadvantages of the programming language with aspect to programming real time systems?

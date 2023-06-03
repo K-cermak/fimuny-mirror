@@ -1,0 +1,59 @@
+1.Nahrada_podretezce
+-----------------------
+Sestavte program, ktery nacte na vstupu libovolny retezec w a dale dva dalsi retezce s a t obecne ruzne delky.
+Na vystupu nahradi v retezci w kazdy vyskyt retezce s retezcem t.
+Napoveda :
+    - lze vyuzit standardni funkce a procedury length, concat, insert,copy, delete, pos
+    - algoritmus, ktery se omezi nejvyse na fci length, 
+          prepis znaku pomoci konstrukce w[i]:='z'; 
+          a spojeni retezcu prikazem w:=w+'z'
+          bude hodnocen vyse a je jednodussi
+    - jako vystupni promennou muzete pouzit 
+       -- jak vstupni retezec w, 
+             znaky se budou prepisovat a nakonec pripadne pridavat, 
+             v pripade platnosti nerovnosti length(s)>length(t) bude konec retezce 
+             nahrazen mezerami.
+       -- pripadne dalsi promennou v - znaky se postupne prepisuji z w a t do v
+
+
+2.nasobeni_matice_prvocislem
+-------------------------------
+Napiste program, ktery provede tyto kroky :
+  - nacte libovolnou dimenzi matice m,n a vygeneruje matici A typu [m,n] takovou, ze :
+          A[i,j]=1 pro kazde i=1..m, j=1..n
+  - nacte celocislenou promennou mez, kladneho typu
+  - vynasobi jednotlive radky matice prvnim pocinaje 
+          po sobe jdoucimi, programem prubezne generovanymi prvocisly, 
+          vetsimi nez zadavana mez.
+  - vstupni i vystupni matici vypise na obrazovku
+
+Omezujici podminky
+  - Pro generovani prvocisel nesmite pouzit pole, 
+          ani zadnou jinou strukturovanou promenou vcetne souboru.
+  - Operace pro generovani prvocisel, nacteni, vypis a vynasobeni prvku matice 
+          realizujte pomoci procedur a funkci, s parametry volanymi hodnotou nebo odkazem.
+  - V podprogramech nepouzivejte globalni promenne.
+
+        Priklad :
+
+        Vstupni matice :         Vystupni matice
+        1 1 .. 1                 p1 p1 .. p1
+        1 1 .. 1                 p2 p2 .. p2
+        :                        :
+        1 1 .. 1                 pm pm .. pm  
+
+        kde p1..pm jsou po sobe jdouci prvocisla a p1>mez
+
+
+3.usporadej_radky
+--------------------
+Napiste program, ktery provede tyto kroky :
+  - vygeneruje nahodne celociselnou matici A[m,n], 
+          volitelneho rozsahu mxn, hodnoty m,n jsou nacitane z klavesnice
+  - setridi vzestupne radky matice podle hodnoty prvku v prvnim sloupci,
+          cili a[i,1]<=a[i+1,1] pro vsechna i=1..m-1
+
+Omezujici podminky :
+  - Operace pro nacteni, vypis a setrideni radku matice 
+          realizujte pomoci procedur a funkci, s parametry volanymi hodnotou nebo odkazem.
+  - V podprogramech nepouzivejte globalni promenne.

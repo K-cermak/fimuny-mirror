@@ -1,0 +1,32 @@
+IB015 Úvod do funkcionálního programování, skuska 17.5.2012
+
+Prve 3 priklady boli s moznostami, ich presne zadania si nepamatam. Na konci 
+kazdeho je v hranatych zatvorkach uvedeny mozny pocet bodov (dufam, ze si to 
+pamatam spravne). Napriek neuplnosti a moznym nepresnostiam si myslim, ze 
+toto niekomu pomoze.
+
+1. pointwise –> pointfree (s funkciami aplikovanymi na zoznam)               [-2/0/10]
+
+2. casova zlozitost                                                          [-2/0/10]
+
+3. retazenie IO operacii pomocou >>, >>=, return (s lambdou)                                                  [-2/0/10]
+
+4. otypovanie funkcie                                                        [14]
+
+5. Intenzionalne zapiste zoznam vsetkych kladnych lichych (neparnych) cisel, 
+   kde sa kazde cislo opakuje tolkokrat po sebe, kolko je jeho zvysok po
+   deleni 12.                                                                [14]
+
+6. Mame zadanu stromovu strukturu:
+   data Tree a = Leaf a | Branch [Tree a]   deriving (Show,Eq)
+
+   a) Napiste, ktory je typovy konstruktor a akej je arity.                  [2] 
+        typovy konstruktor: Tree, arita: 1 (unarny)
+        pozn.: „Tree a“ je uz konkretny typ
+
+   b) Napiste hodnotu typu Tree Int, kde vyuzijete vsetky datove
+      konstruktory zo zadania.                                               [4]
+        napriklad Branch [Leaf 3]
+
+   c) Napiste funkciu sucheVetve, ktora urci, kolko ma strom takych
+      vetvi (Branch), ktore obsahuju aspon jeden list (Leaf).                [12]

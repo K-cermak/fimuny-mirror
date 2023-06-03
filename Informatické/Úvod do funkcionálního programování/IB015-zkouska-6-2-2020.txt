@@ -1,0 +1,81 @@
+{-----------------------------------------------------------------------------
+
+                              ZKOUSKA 6.2.2020
+
+-----------------------------------------------------------------------------}
+
+
+-- 1.
+-- funkce f, ktera ponecha vsechny prvky, ktere jsou vetsi nebo rovny
+-- poslednimu prvku
+f :: [Integer] -> [Integer]
+f xs = filter (\ x -> x >= (last xs)) xs
+
+
+-- 2.
+-- na co se vyhodnoti tento vyraz:
+-- (map (\ x -> 16 `div` x). filter (>0)) [1,4,0,8,2,-4] ~>* [16,4,2,8]
+
+
+-- 3.
+-- urcete typ nasledujiciho vyrazu
+lambda :: (a,a) -> Int -> [a]
+lambda = (\ x y -> take y [fst x, snd x])
+
+
+-- 4.
+-- mapFilter f p xs = filter p (map f xs)
+-- za pouziti intenzionalniho seznamu
+mapFilter :: (a -> b) -> (b -> Bool) -> [a] -> [a]  -- nemusi byt
+mapFilter f p xs = [x | x <- xs, p (f x)]
+
+
+-- 5.
+data AExpr a = Constant a
+             | Add (AExpr a) (AExpr a)
+             | Times (AExpr a) (AExpr a)
+-- a
+-- urcete jeden monoformni typ + typovy konstruktor
+-- treba: AExpr Int
+
+-- b
+-- urcete hodnotu typu z a)
+-- treba: Constant 1
+
+-- c
+-- definujte funkci aeval, ktera vyhodnoti hodnotu Constant jako konstantu,
+-- Add jako soucet jeho podvyrazu a Times jako soucin jeho podvyrazu
+aeval :: (Num a) => AExpr a -> a
+aeval (Constant x) = x
+aeval (Add e1 e2) = (aeval e1) + (aeval e2)
+aeval (Times e1 e2) = (aeval e1) * (aeval e2)
+
+
+-- 6.
+-- redefinujte take za pomoci rekurze a bez jinych funkci
+take' :: Int -> [a] -> [a]
+take' _ [] = []
+take' 0 _ = []
+take' amount (x:xs) = x : (take' (amount-1) xs)
+
+------------------------------------------------------------------------------
+
+-- 7. (nevim)
+data RoseTree a = Node a [RoseTree a]
+                  deriving Show
+
+-- mapRoseTree :: (a -> b) -> RoseTree a -> RoseTree b
+-- mapRoseTree f (Node x lst) = (Node (f x) (map mapRoseTree lst))
+
+
+-- 8. (mozna dobre)
+-- Implementujte funkci mapMaybe za pomoci nejake foldovaci funkce
+mapMaybe :: (Eq a) => (a -> Maybe a) -> [a] -> [a]
+mapMaybe f lst = foldr fun [] lst
+    where
+        fun = (\ x y -> if (f x) == Nothing then y else x:y)
+
+
+-- 9.
+-- porovna dva soubory podle radku, vrati pocet radku, ktere se shoduji
+-- v obsahu a v cislu radku

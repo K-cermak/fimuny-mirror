@@ -1,0 +1,21 @@
+IB109
+
+29.5. 2012
+techniky dekompozicie
+super linearne zrychlenie
+skalovatelnost, efektivita, izoefektivita
+kolektivne komunikacne primitiva
+pamatovy model procesoru, nestale premenne
+pseudokod read lock, write lock, unlock - paralelny algoritmus, pristup ku globalne premennej a najdenie minima medzi vlaknami
+typy mutexov v posix thread
+
+12.6.2012
+thread safe, reentrantne procedury
+pruzkumova dekompozice
+zrychlenie, efektivita, ahmadov zakon
+kolektivne komunikacne primitiva, ako sa siri z 1 do 16 vlakien
+preco nestaci volatile, co este pouzivame
+pseudokkod read lock, write lock, unlock - paralelny algoritmus, pristup ku globalne premennej a najdenie minima medzi vlaknami
+typy mutexov v posix thread
+
+bodovanie rozne 10-20 bodov za otazku, plny pocet: 100 b

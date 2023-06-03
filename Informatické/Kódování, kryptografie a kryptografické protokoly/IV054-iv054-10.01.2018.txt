@@ -1,0 +1,5 @@
+1) Hill cryptosystem
+2) A randomize algorithm for detecting a prime number
+3) Cyclic codes and algebraic characteristics
+4) Zero-knowledge isomorphic graph protocol
+5) Stenography - perfect security system

@@ -1,0 +1,97 @@
+1) Napište přesně, co vypíše následující program, včetně správného počtu mezer (hint: jsou tam 4 čísla):
+
+void funkce(int *x, int y) {
+	int b = y;
+	
+	b/=2;
+	*x%=b;
+	printf("%3d%4d\n", b, y);
+	y=*x;
+}
+
+int main(void)
+{
+	int a = 12, b = 27;
+
+	funkce(&b, a);
+	printf("%3d%4d", b, a);
+}
+
+2) Napište definici makra, které pomocí daných odvěsen vypočítá obsah pravoúhlého trojúhelníka.
+
+3) 
+a) Napiště zadání problému, který řeší algoritmus vyjádřený následujícím programem:
+#define MAX 10
+
+int main(void)
+{
+	int x[MAX] = { 5 , 8 , 10 , 7 , 6 , -2 , 4 , 3, 1 , -5 };
+	int n, k, i, j, konec;
+	k = MAX; n = k;
+	while(k>1)
+	{
+		k/=2;
+		do
+		{
+      konec=1;
+			for(j = 0; j<n-k; j++)
+			{
+				i=j+k;
+				if(x[j]<x[i])
+				{
+					x[j]=x[j]+x[i]; x[i]=x[j]-x[i]; x[j]=x[j]-x[i];
+					konec = 0;
+				}
+			}
+		}
+		while(!konec);
+	}
+	
+	for(int i = 0; i < n; i++)
+	{
+		printf("%3d", x[i]);
+	}
+}
+
+b) Napiště, co konkrétně vypíše tento program při svém běhu (nemuseli být striktně mezery):
+
+4) Níže je definován typ zásobníku, napište funkci push, která bude mít jako argument celočíselnou hodnotu, kterou vloží na vrchol zásobníku:
+
+typedef struct {
+	int hodnota;
+	typZasobnik *naslednik;
+} typZasobnik;
+
+typZasobnik *zasob;
+
+5) Jaký je rozdíl mezi přímou a nepřímou rekurzí?
+
+----------------------------------------------------------------------------
+Řešení:
+
+
+
+1)
+␣␣6␣␣12
+␣␣3␣␣12
+
+2)
+#define obsah(x, y) {(x*y)/2}
+
+3)
+a) Zadání problému: Seřadit prvky v poli sestupně podle jejich hodnoty
+b) 10  8  7  6  5  4  3  1 -2 -5
+
+4)
+void push(typZasobnik **z, int h)
+{
+	typZasobnik *p;
+	p = (typZasobnik*)malloc(sizeof(typZasobnik));
+	p->hodnota = h;
+	p->naslednik = *z;
+	*z = p;
+}
+
+5)
+-Přímá rekurze nastává, pokud podprogram volá přímo sám sebe.
+-Nepřímá (vzájemná) rekurze je situace, kdy vzájemné volání podprogramů vytvoří „kruh“. Např. v příkazové části funkce A je volána funkce B, ve funkci B voláme funkci C, která volá funkci A.

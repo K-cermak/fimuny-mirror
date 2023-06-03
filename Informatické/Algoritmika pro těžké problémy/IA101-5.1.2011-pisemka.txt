@@ -1,0 +1,16 @@
+6 úloh, kadá za 15 bodù
+145 minut
+==============================
+
+definovat pseudopolynomiální algoritmus, h-zúení, dokázat, e pokud existuje pseudopolynomiální alg. pro problém A, pak pro kadé h-zúení problému A existuje polynomiální alg., popsat rozdíl mezi pseudopolynomiálním a parametrizovanım alg.
+
+problém pokrytí mnoin - napsat F-aproximativní alg. pomocí redukce na úlohu lin. programování se zaokrouhlováním
+
+problém párování hran - minimální poèet hran, kterı bude splòovat maximální párování (ádné 2 hrany v daném párování nemají spoleènı ani jeden vrchol; neexistuje hrana, která by nebyla zahrnuta do párování a zároveò nemìla s hranama z párování spoleènı ani jeden vrchol) - napsat 2-aprox. alg.
+
+problém váeného párování hran - do lin. programování
+
+Hopfieldova neuronová sí - najde Hopfieldùv alg. vdy optimální konfiguraci grafu? Pokud ano, dokate, pokud ne, najdìte graf, na kterém HS najde pouze lokální optimum, ale ne globální optimum.
+
+Máme x1,...,xn promìnné, které nabıvají hodnot 0/1. Máme konstantu b, která nabıvá hodnot 0/1 a k rovnic tvaru (xi+xj) mod 2 = b. Napsat randomizovanı alg. polynomiální sloitosti s pøedpokládanım poètem splnìnıch rovnic alespoò 1/2c* (kde c* je maximální monı poèet splnìnıch rovnic). Napsat deterministickı alg. s polynomiální sloitostí garantující poèet splnìnıch rovnic aspoò 1/2c*.
+

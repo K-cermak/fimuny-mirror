@@ -1,0 +1,36 @@
+1) Ktera z uvedenych je spravny prepis funkce f x = concat (replicate x [1,2,3]) do pointfree?
+\Reseni: Zadna, Bodovani:[10,0,-5]
+
+2) Ktery z nasledujich vyrazu se vzhodnoti v konecnem case na hodnotu [36] (intensionalni seznamy).
+\Reseni: tail (take 2 [3*x|x<-[1..],y<-[11,12],x==y])
+
+3) Napiste I/O funkci, ktera v mistnim adresari zkopiruje obsah souboru "old.txt" do souboru "new.txt".
+Muzete (nemusite) vyuzit funkce >>=, >>, putStr, readFile, writeFile, kde
+readFile :: FilePath -> IO String
+writeFile :: FilePath -> String -> IO ()
+putStr :: String -> IO ()
+\Reseni: main = readFile "old.txt" >>= \ file -> writeFile "new.txt" file >> PutStr "hotovo"
+
+4) Mate datovou strukturu: data NTree a = Leaf [a] | Node [a] [NTree a].
+Napiste funkci rev, ktera obrati poradi prvku ve vsech seznamech vsech listu i uzlu.
+\Reseni:
+rev :: NTree a -> NTree a
+rev (Leaf a) = (Leaf (reverse a))
+rev (Node a ts) = (Node (reverse a) (map rev ts))
+
+5) Napiste funkci len(S,L) v prologu, ktera pro seznam spocte jeho delku.
+\Reseni:
+len([], 0).
+len([X|XS], L) :- len(XS, N), L is N+1.
+
+6) Nakreslete vypocetni SLD strom pro dotaz ?-f(U,J),f(J,U),!,g(J,Z)
+mame li databazi:
+g(1,2).
+g(1,1).
+f(1,2).
+f(1,1).
+f(2,2).
+\Reseni: Strom v prvni vetvi ve dvou krocich failne, v druhe vetvi sjede az dolu, reseni jsou tedy: U=1, J=1, Z=2 nebo Z=2, treti vetev z korenoveho dotazu je orezana.
+
+
+

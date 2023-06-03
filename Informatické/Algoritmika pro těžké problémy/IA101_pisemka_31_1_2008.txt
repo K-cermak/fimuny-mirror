@@ -1,0 +1,15 @@
+1. definujte pseudopolynomialni algoritmus, h-zuzeni, a dokazte, ze ke kazdemu polynomu h existuje polynomialni algoritmus pro h-zuzeni pseudopolynomialniho
+
+2. do krabic se vkladaji predmety (kapri ci co) tim zpusobem, ze pokud se prekroci vaha H, predmety se zacnou davat do nove krabice. Predmety nejsou nijak usporadane, cilem je pouzit co nejvic krabic. Dokazte, ze algoritmus je 2-aproximativni.
+
+3. Prevedte na formulaci linearniho programovani, napiste i dualni ulohu: Ukolem je vytvorit schema prirazeni uloh k procesorum, pricemz na procesoru i stravi uloha j Aij casu. Nejmensi z techto casu je t. Cilem je minimalizace t.
+
+4. Napiste aproximativni algoritmus pro problem souctu
+
+5. napiste geneticky algoritmus pro problem rozdeleni: mejme vstupni mnozinu S s ciselnymi prvky, hledame rozdeleni na S1 a S2, ktere minimalizuje rozdil souctu cisel v obou mnozinach.
+
+6. popiste klasifikaci randomizovanych algoritmu pro optimalizacni problemy
+
+Definice v 1 a 6 vyzaduje formulovat co nejpresneji, jinak jdou body vyrazne dolu.
+
+Hodne stesti - Kostej

@@ -1,0 +1,12 @@
+Zkouška z Úvodu do logiky 31.5.2018: (cca jak si ji pamatuju...)
+
+-odpovìdníkové otázky (pøevážnì na predikátovou logiku)
+
+-vymyslet formuli obsahující alespoò 2 predikáty(unární a binární), konstantu, volný a vázaný výskyt promìnné,
+   napsat, kdy je pravdivá a kdy ne
+-Hornovy klauzule v predikátové logice + typy a pøíklady
+-interpretace a valuace v predikátové logice
+-term
+-kdy je formule pravdivá(pomocí slov valuace a interpretace)
+-urèit Herbrandovu bázi pro Q(f(x),a)
+...

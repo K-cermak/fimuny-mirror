@@ -1,0 +1,9 @@
+Celkem 75 bodu, 5 prikladu.
+
+1) Napiste gramatiku, ktera je SLL(2), ale neni SLL(1). Sve tvrzeni dokazte. Je generovany jazyk regularni? Dokazte. Pokud nevite, napiste, jak byste postupovali. (20 b)
+2) Dana gramatika, napiste prvnich 5 stavu LR(1) analyzatoru a urcete, zda dojde nekde ke konfliktu ci nikoliv a zduvodnete. (10 b)
+3) Pomoci BPA tabla dokazte, zda jde o bisimulaci. (15 b)
+4) Definujte Buchiho automat (BA) a zobecneny BA. Dokazte, ze zobecneny BA je ekvivalentni BA. (15 b)
+5) Definujte DPDA. Formulujte a dokazte nutnou a postacujici podminku na to, aby zasobnik DPDA pri nejake postupnosti epsilon kroku rostl nad vsechny meze. (15 b)
+
+Bez zaruky :-)

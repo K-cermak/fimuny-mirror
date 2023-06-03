@@ -1,0 +1,23 @@
+
+2. Složitost
+f s = if   null s   then []   else f (tail s ) ++ (head s)
+
+3. IO
+do >> pwd xxx
+     >> ls yyy pwd
+     >> putstr (unlined)
+(zhruba, pøesnì si to nepamatuju)
+
+4. Definovani typu
+(.) . (= =)
+
+5. Seznamy
+Vypsat èísla seøazená do seznamu
+s[n] ... nejdøív èísla z s dìlitelná n, za to seøazená èísla (s mod n=1), potom (s mod n=2), ..., to celé do seznamu a ještì asi dopsat typ celé té funkci.
+
+6. Strom
+Napsat souèet listù stromu jako funkci leafmin. Napsat typ funkce leafmin.
+
+
+1. Pointfree
+fce fce p s = uz nevim

@@ -1,0 +1,32 @@
+IV109 - Modelování a simulace (26.5.2010)
+
+Èas 110 minút, kadá otázka na jednom papieri, take niekde bolo treba popísa veci len struène a heslovite, niekde rozpísa viac. GL!
+
+1. dilema väzòa
+
+a) uveï príklady reálnych situácií, v ktorıch sa vyskytuje dilema väzòa
+b) popíš iterovanú dilemu väzòa a turnaje poèítaèovıch stratégií
+c) uveï rozšírenie modelu dilemy väzòa
+
+
+2. definuj pojmy, popíš model, prípadne dokresli obrázok...
+
+a) generické algoritmy
+b) negatívna spätná väzba
+C) world3
+d) SIR model
+e) Tierra
+f) svet sedmikrások
+g) analıza citlivosti
+
+
+3. Uveï konkrétny model z nasledujúcej oblasti a popíš ho
+
+a) biológia
+b) ekonómia
+c) doprava
+d) poèasie, klíma
+e) sociológia
+
+
+4. vizualizácia modelu, spracovanie vısledkov atï.

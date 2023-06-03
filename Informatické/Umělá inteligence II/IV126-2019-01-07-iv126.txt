@@ -1,0 +1,9 @@
+IV126 7.1.2019
+
+1. Vypsat pokrocile lokalni prohledavani do stromove struktury
+2. Tri typy krizeni binarniho kodovani a demonstrace. Ordered crossover a demonstrace.
+3. Vytvorte reprezentaci pro zadany problem a dejte priklad minimalniho planu
+4. Co je to otevreny cil a jak ho opravit.
+5. Bayesovska sit
+6. Rozdil mezi predikci a filtraci. Vztahy
+7. RRT

@@ -1,0 +1,8 @@
+Termín 9.1.2012
+Definice pseudo-P, h-zúžení a porovnání pseudo-P s parametrizovanými algoritmy.
+Postupovat algoritmem zaokrouhlování relaxované úlohy lineárního programování pro SubsetCoverProblem k dùkazu jeho f-aproximativity, kde f je prvek U s nejvíce výskyty v S_1..n. (tìžké)
+Napsat lineární úlohu pro maximální párování ohodnocených hran
+	(Definice problému byla souèástí zadání, je to (maximální) množina hran bez spoleèných vrcholù.)
+Napsat 2-aproximativní algoritmus pro hledání nejmenšího max. párování hran, byla dána nápovìda, že pro každá 2 max. párování A, B platí |A| <= 2*|B|. Staèil triviální hladový algoritmus.
+Ukázat, kde nebude fungovat (heuristický) alg. lokálního vyhledávání, dokázat nebo _ukázat protipøíklad_ (snadné)
+Napsat randomizovaný algoritmus pro vektor výrazù (x_1 XOR x_2) = b, tak aby Expected(splnìných øádkù) bylo >= øádkù / 2  a derandomizovat jej podle Expected(x).

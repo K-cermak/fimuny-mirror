@@ -1,0 +1,22 @@
+1) máme konstanty 0, succ, pred, iszero, if, Y, Node, Empty
+a datový typ binární strom: 
+data tree = Empty | Node t1 t2     -- t1 - levý podstrom, t2 - pravý 
+
+Pomocí Y vyjádøete funkci fulltree tak, aby (fulltree n) byl dokonale vyvážený 
+binární strom výšky n, tj. takový, který má v každé vìtvi pøesnì n uzlù.
+
+2) superkombinátory
+
+\x y -> (\z -> y z x)(\t -> y x t)()\u -> x u y)
+
+3) SKIBC
+
+\x y z -> x z (y z x)
+
+
+
+4) doimplementovat parser logických výrazù logex
+
+5) odvození typu (doplnìní do stromu)
+
+6) konstrukce tøídy PointedFunctor

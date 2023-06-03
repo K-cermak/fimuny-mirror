@@ -1,0 +1,49 @@
+Které z následujících nejsou hašovací funkce
+*RSA
+*AES
+*RC4
+ MD5
+ SHA-1
+ MD4
+
+Která z následujících tvrzení jsou platná pro protokol SSL/TLS?
+ SSL/TLS protokol nezajišuje dùvìrnost dat.
+*SSL/TLS protokol umoòuje vzájemnou autentizaci serveru a klienta.
+ Implicitnì je autentizace serveru a klienta je povinná.
+*Autentizace komunikujících stran je zaloena na asymetrické kryptografii.
+
+Které z uvedenıch typù karet se pouívají v IT bezpeènosti?
+*Kontaktní karty s èipem.
+ Karty s bezkontaktním magnetickım proukem.
+*SIM karty v mobilních telefonech.
+*Bezkontaktní karty s èipem.
+
+Které z uvedenıch reimù podporuje IPsec:
+*Transportní reim.
+ Pøekladovı reim.
+ Dynamickı virtuální reim.
+*Tunelovací reim.
+
+V dobrıch autentizaèních protokolech se typicky
+*Heslo posílá v hašované podobì
+ Heslo posílá v otevøené podobì
+*Heslo neposílá vùbec
+
+Co je to heslo zaloené na frázi?
+ Heslo zaloené na veøejnì známé frázi, aby si jej všichni snadno zapamatovali
+ Heslo, které obsahuje pouze malá písmena
+*Pomùcka pro zapamatování sloitého hesla
+ Heslo, které lze jednoduše pøeèíst
+
+Digitální podpis mùe vytvoøit
+ Pouze osoba vlastnící sdílenı klíè
+ Pouze osoba vlastnící certifikovanı klíè
+*Pouze osoba vlastnící soukromı klíè
+ Pouze osoba vlastnící veøejnı klíè
+
+Pøi kombinaci šifrování veøejnım klíèem a podpisu dokumentu se doporuèuje operace provést v následujícím poøadí:
+ Na poøadí operací nezáleí
+ Podpis, šifrování, podpis
+ Šifrování, podpis
+*Podpis, šifrování
+ Šifrování, podpis, šifrování

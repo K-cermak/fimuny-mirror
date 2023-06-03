@@ -1,0 +1,19 @@
+forma zkoušky: 
+Každý dostane ústřižek s pěti tématy, tři volně zvolena témata zpracuje. Po cca šedesáti minutách je možné přijít k ústní části. Ta trvá několik minut. Pořadí je dobrovolné a nahodilé - není tedy problém získat více času na zpracování písemné části.
+
+příklady témat:
+Shor discrete logarithm algorithm
+Schröninger equation, quantum evolution and computation
+Bennet theorem on classical reversible computing and garbage removal
+Quantum teleportation and generalized quantum teleportation
+Self-adjoint operators and their properties
+Shor factorization
+Schmidt decompozition theorem
+BB84 protocol
+Stinespringer dilatation theorem and Kraus operators
+Pauli matrices and their properties
+Deutsch problem
+Deutsch-Simon problem and its solution
+Quantum pseudo-telephatic games
+BB92 quantum key generation protocol
+Fourier transform on finite Albelian groups

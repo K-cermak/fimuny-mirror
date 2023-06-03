@@ -1,0 +1,5 @@
+1. McEliece cryptosystem.
+2. Secret-key cryptosystems without key distribution.
+3. ElGamal Signature Scheme.
+4. Examples of zero-knowledge proofs.
+5. Elementary method of user identification.

@@ -1,0 +1,1 @@
+Hierarchie deterministických prostorových složitostních tříd - důkaz formou diagonalizace

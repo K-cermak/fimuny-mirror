@@ -1,0 +1,28 @@
+----------------------------------------------------------------------------------
+
+		IB109 - Navrh a implementace paralelnich systemu
+				Zkouska 01.06.2010
+
+----------------------------------------------------------------------------------
+
+Free-form test, 1:45 casu (po hodine nebylo co psat)
+Celkem 100 bodu, 8 otazek rozdelenych na nekolik casti, kazda par bodu.
+
+----------------------------------------------------------------------------------
+
+- co je mapovani, vztah k dekompozici, ... staticka dekompozice
+
+- (ne)blokujici (ne)bafrovana komunikace, popis, rizika
+
+- nestale promenne, napsat priklad
+
+- faktory ovlivnujici interakci
+
+- skalovatelnost, efektivita, iso-efektivita, kdy rovnice iso-e. existuje,
+  vliv iso-e. na skalovatelnost
+
+- semantika CAS instrukce, proc je CAS vyhodne pro jazyky s garbage collectorem
+
+- dotaz na OpenMP; napiste program, ktery paralelne vypise 7x "Hello World"
+
+----------------------------------------------------------------------------------

@@ -1,0 +1,43 @@
+Sémantiky (IA011), zadání termínu 11. 6. 2012, jak jej mám èerstvì v pamìti.
+
+1. dány wp, popsat odpovídající pøíkaz (program) c \in Expr
+a) šla, hned v tom wp nìco jako x=2,
+b) wp[c, false] = {}
+c) wp[c, true] = { | \sigma(X) < 1) - imho nešlo
+15 bodù
+
+2. Dokažte pomocí Hoare-ova systému (nìco jako)
+{X = 3} while ff do Y:=X {Y = 5} - prý by nešlo vùbec, mìlo se (meta)dokázat, že to v Hoare-ovì systému nelze.
+15 bodù
+
+3. Napište koneèné CPO (D, <=), jež má nejmenší prvek * a spojitou f, jež nemá /nejvìtší/ pevný bod - Prý nešlo, já jsem si vymýšlel, že koneèné CPO (netuším, jestli bylo na pøednáškách definováno) je to, jež nemá nekoneèný øetìz, pak to šlo.
+
+4. while X != Y do X:Y
+\Gamma(\emptyset) = {(\sigma, sigma' | ...)}
+\Gamma^2(\emptyset) = \Gamma(\emptyset) \cup {(\sigma, sigma' | ...)}
+\Gamma^3(\emptyset) = \Gamma^2(\emptyset) \cup {(\sigma, sigma' | ...)}
+
+Napsal jsem
+\sigma = \sigma' = _|_
+\sigma' = \sigma[sigma(Y)/X]
+\sigma' = \sigma[sigma(Y)/X] - tj. beze zmìny, \Gamma^3(\emptyset) = \Gamma^2(\emptyset) 
+
+5. Dokažte nebo vyvrate _na pøíkladu_, že pokud A je invariantem cyklu WHILE b DO c, pak je invariantem i negace(A).
+Psal jsem tam nìjaký rozvoj podle odpovozovacího pravidla pro cyklus (Hoare, strany 56, 57)...
+
+6. V PComm napsat takové c, že \psacíG\psacíF[c] |= X = 3  a  \psacíF\psacíG[c] |!= X = 3
+
+7. Z neformálního popisu for X to n do C, kdy X se nemìní v C a zvyšuje se v nìm hodnota pøi každé iteraci, a pokud X > n (\in \Nats), tak se konèí vytvoøit pravidla pro sémantiku typu 1 (big step). To šlo (pøíjemnì kreativní).
+15 bodù
+
+8. \psacíA[[X * 3]]while ff do X := Y + 2   v \sigma, kde X = 2. Dùležité je napsat správný typ výsledku, je-li to množina èi funkce, v pøípadì funkce též její doménu a obor hodnot.
+	To jsem dosral, protože jsem si to spletl se zápisem wp^I...bacha na to!
+
+Nìkteré pøíklady jsou za 15 bodù, zbylé za 10. Celkovì dost podobné zadání z 6. 6. 2005, nìkteré pøíklady trochu podlé (dokaž, najdi a ono to nejde)
+
+Info z diskuse (https://is.muni.cz/auth/cd/1433/jaro2012/IA011/delka_zkousky/34133813) o pøedchozím termínu:
+Osm pøíkladù celkem za 100 bodù. Mám dojem, že zadání prvního termínu bylo
+identické s nìkterým z loòských. Dokažte tvrzení, Büchiho automaty, denotaèní
+sémantika programu, monotonie a spojitost, nejslabší vstupní podmínka,
+ekvivalence sémantiky pøíkazù, definování formální sémantiky slovnì zadaného
+operátoru, dešifrování výrazu zapsaného pomocí Gödelova predikátu beta.

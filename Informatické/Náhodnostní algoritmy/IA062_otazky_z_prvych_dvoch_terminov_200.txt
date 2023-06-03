@@ -1,0 +1,32 @@
+Po trojiciach, ktore si ludia vybrali a ktore som si zapamatal.
+Ten zhluk na konci neviem ako bol rozdeleny.
+
+
+nadbytok svedkov, priklad (prvocisla)
+najkratsia cesta - dratky
+porovnavanie matic
+
+nahodna prechadzka, priklad
+pattern matching
+schwartz-zippel theorem
+
+Funkcie generujuce nahodnost
+smerovanie na hyperkocke
+algoritmy na generovanie prvocisiel
+
+BPP
+nadbytok svedkov
+smerovanie na hyperkocke
+marcovove retazce
+
+nahodnostne triedy
+algoritmus stabilneho manzelstva
+nahodnostny algoritmus max SAT
+perfect matching, odvovodnenie zlozitosti
+nahodnostne cesty (prechadzka)
+kupon selection
+testovanie prvocisiel
+testovanie polynomov
+rabin-miller - provocisla
+Linearity of expectations
+nadbytok svedkov

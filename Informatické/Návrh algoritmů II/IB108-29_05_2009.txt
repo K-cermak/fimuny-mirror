@@ -1,0 +1,28 @@
+1) 30b
+Formulujte heuristiku spatneho znaku a heuristiku dobreho suffixu algoritmu
+Boyer-Moore. Implementace predvypoctu heuristiky spatneho znaku + analyza
+slozitosti.
+
+2) 30b
+Navrhnete datovou strukturu, ktera reprezentuje mnozinu celych cisel s
+operacemi:
+INSERT(M, x) - vlozi x do mnoziny
+REDUCE(M) - odstrani \ceil{|M|/2} nejvetsich prvku
+takovou, aby posloupnost n techto operaci byla v O(n). Dokazte metodou uctu nebo
+potencialovych funkci.
+
+3) 40b
+Mate tabulku celych cisel o velikosti m radku a n sloupcu. Zacinate v libovolnem
+policku v prvnim radku, muzete se pohnout vzdy o radek niz o jedno doleva,
+rovnou dolu nebo o jedno doprava, dokud nedojdete do spodniho radku. Algoritmus
+vyuzivajici dynamicke programovani, ktery najde cestu s nejvetsim souctem cisel
+na ni.
+
+4) 30b
+Je dany graf (V,H) a hrana e. Navrhnete algoritmus ktery v O(|V|+|H|) urci, zda
+je v grafu cyklus obsahujici hranu e.
+
+5) 30b
+Datova struktura UNION-FIND. Co reprezentuje, jake jsou na ni definovane
+operace, jaky je jejich princip a slozitost.
+

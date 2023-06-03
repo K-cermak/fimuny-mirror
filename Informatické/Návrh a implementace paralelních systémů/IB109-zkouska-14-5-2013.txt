@@ -1,0 +1,11 @@
+﻿IB109 - Navrh a implementace paralelnich systemu
+zkouska 14. 5. 2013
+
+SMT
+problemy spojene s paralelnim programovanim
+CAS
+funkce pro praci s vlakny v POSIX
+nestale promenne
+OTA ve 2D mrizce
+pruzkumova dekompozice
+priklad na efektivitu

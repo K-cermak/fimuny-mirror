@@ -1,0 +1,14 @@
+Termín 2.2.1011
+6 otázek po 15 bodech
+
+1. Monte carlo - definice, co je amplifikace a jestli a jak ji muzeme pouzit na Monte carlo
+
+2. Byla dána lineární úloha. (nebyla ve standartním tvaru) Pøevést ji na duální, urèit co platí mezi pøípustnými øešeními primární a duální úlohy a napsat podmínky komplementarity.
+
+3. Pseudopolynomiální algoritmus pro problém batohu a dùkaz že je pseudopolynomiální.
+
+4. Parametrizovaný algoritmus pro vrcholové pokrytí. Urèit složitost a parametrickou funkci.
+
+5. Napsat 2-aproximativní algoritmus pro problém Obchodního cestujícího s cenami hran 1,2. Urèit složitost. Dùkaz že je 2-aproximativní
+
+6. Nìco s klauzulema - radndomizovaný algoritmus a derandomizace

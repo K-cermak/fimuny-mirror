@@ -1,0 +1,4 @@
+1. nerozhodnutelnost ekvivalencii
+2. redukcia problemu sub-marking reachability na zero reachability
+3. dickson's lemma
+4. nerozhodnutelnost nezivosti free-choice systemov (posledna vec v skriptach od HoHo)

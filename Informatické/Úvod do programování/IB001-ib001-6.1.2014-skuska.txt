@@ -1,0 +1,36 @@
+1. pointeri, formatovanie textu (%5d)
+2. prerobit while (a) na cyklu do while 
+3. algoritmus na pascalov trojuholnik 
+
+int f ( int a, int b)
+{
+    if (b == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return f(a - 1, b - 1)*(a/b);
+    }
+}
+
+int main()
+{
+    int n, i, j;
+    printf ("zadajte n");
+    scanf("%d",&n);
+
+    for (i = 0; i <= n; i++)
+    {
+        for (j = 0; j <= i; j++)
+        {
+            printf("%4d",f(i,j));
+        }
+        puts("\n");
+    }
+
+    return 0;
+}
+
+4. sucet cifier zadaneho cisla bez agregovanych typov
+5. printf %f, %x, %E, %i, %s

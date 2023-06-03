@@ -1,0 +1,22 @@
+IV113: Uvod do validace a verifikace
+Termin: 15-01-2013
+
+1-a: Vysvetlite pojem pokryti. Ako je mozne pokryti vyuzit? (10b)
+1-b: Co je pokryti hran a pokryti podmienok? Vysvetlite ich vztah. (10b)
+
+2-a: Strucne popiste princip domenoveho testovani. (10b)
+2-b: Ake vyhody a nevyhody prinasa tento typ testovani? Co je a co obsahuje hlavny dokument, ktory domenove testovani vyuziva? (10b)
+
+3-a: Definujte Kripkeho strukturu. (5b)
+3-b: Definujte Buchi automat. (5b)
+3-c: Napiste Kripkeho strukturu s 3 stavmi a 2 hranami. (5b)
+3-d: Prevedte danu Kripkeho strukturu na Buchi automat. (5b)
+
+4-a: Urcite operatory a syntax LTL v normalni forme. (10b)
+4-b: Popiste semantiku operatorov, ktore umoznuje definice z a). (5b)
+4-c: Nieco s nejakym prevodom, nepamatam sa - vynechala som :). (5b)
+
+5: Napiste NestedDFS algoritmus v pseudokode: vyuzite v0 ako pociatocny vrchol, funkci Succ(v) pre zistenie priamych naslednikov vrcholu v a funkci IsSucc(v) na overenie, ci je dany vrchol ten hladany. (20b)
+
+Dohromady: 100b
+Na E: 60b

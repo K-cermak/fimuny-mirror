@@ -1,0 +1,14 @@
+Skuska - 5.6.2013 - IA 039 Architektura superpocitacov a intenzivne vypocty
+Skupina C
+
+1. CISC - charakteristika
+	- pouzivanie registrov
+	- praca s datami v pamati
+2. Ako sa vola dekompozicia instrukcii na mensie casti. Vymenovat tieto casti + ich popis. Naco sa to pouziva
+3. Out of order vykonavanie instrukcii
+4. Vyhody a nevyhody metody UPDATE pri cache koherencii u paralelnych pocitacov. Priklad programu, pre ktory je to vyhodne
+5. vseobecne co musi zabezpecovat mechanizmus cache koherencie u paralelnych pocitacov
+6. Je pre MIMD vhodne iba MPMD. Zdovodnite
+7. tri topologie pre prepojovacie siete + popis
+8. Ako sa riesi problem vysokej komunikacnej latencie pri paralelnych pocitacoch
+9. Optimalizacia cyklov. ake zavislosti su nevinne, ake sposobuju neprekonatelny problem.

@@ -1,0 +1,11 @@
+﻿60 minut, 7 otázek za různý počet bodů, dohromady cca 50, od 25 bodů výš je E
+Jako pracovní materiál byl použit "korpus" Krávy - písnička o 8 řádcích a 48 slovech.
+Všechny odpovědi by měly být zdůvodněné.
+
+1. Spočítejte Token/type ratio korpusu Krávy
+2. Sestavte sadu unixových příkazů, kterými ze slovníku slov.txt (vertikální) vyberete slova, která začínají velkým písmenem a zároveň v slovníku není totéž slovo začínající malým písmenem
+3. Nakreslete sufixový strom prvních dvou řádků korpusu Krávy (1 strom pro všechny slova dohromady)
+4. Zadáno bylo slovníkové heslo (tak jak je normálně ve slovníku) a DTD šablona. Úkolem bylo zapsat heslo do XML tak, aby odpovídalo šabloně
+5. Odpovídá korpus Krávy Zipfovu rozložení? Zdůvodněte
+6. Sestavte inverzní index korpusu Krávy, zvolte vhodnou reprezentaci. Kolik bytů bude výsledek zabírat?
+7. Co je to heslová šablona, k čemu se používá?

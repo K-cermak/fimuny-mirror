@@ -1,0 +1,20 @@
+﻿PV056 - Strojové učení a dobývání znalostí
+
+Zkouška 18. 6. 2010: 4 otázky, 3 listy papíru, 75 minut. Oproti očekávání žádný test s možnostmi, jenom písemka.
+
+1.) Průběh data miningu obecně, jaké jsou etapy dolování z dat.
+
+2.) Induktivní logické programování.
+
+3.) Jak se kontrolují a testují výsledky induktivního dotazování, jaká jsou měřítka kvality výsledků.
+
+4.) Povinně-volitelné téma, jedno z:
+DBMiner, description of the method, inductive query language 
+Data mining tools (commercial, except MS SQL Server) Frequent patterns and association rule mining 
+Text mining 
+Mining in geographic data 
+Data mining in bioinformatics 
+Privacy-preserving data mining 
+Swarm intelligence and data mining.
+
+

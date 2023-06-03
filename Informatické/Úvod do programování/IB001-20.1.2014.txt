@@ -1,0 +1,8 @@
+Psano 20.1.2014
+
+1. klasicke spocitani 4 cisel, pointery atd.
+2. rozdil mezi datovymi typy struct a union.
+3. zase klasika, rekni, co program dela a co vypise pri zadani hodnoty 180. (prvociselny rozklad)
+4. napsat funkci pop, ktera z definovane strutury odebere jeden prvek. Kdyz je prazdna, return 0, 
+   kdyz neco odebirate, return 1 a vypsat hodnotu odebiraneho.
+5. neco na zpusob "co se automaticky zapina, kdyz spustite program v C a co obsahuje" (streamy - stderr stdout stdin)

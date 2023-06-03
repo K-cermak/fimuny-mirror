@@ -1,0 +1,7 @@
+1. Definice pseudopolynomiálního algoritmu, h-zùení, dùkaz,
+2. nìco na par-parametrizovanı algoritmus
+3. máme kruhovou sí s body v1,...,vn. máme vytváøet spojení mezi jednotlivımi uzly. Cena je poèet spojení, které teèou pøes jednu spojnici mezi uzly vn,vn+1.
+Navrhnìte 2-aproximativní algoritmus a dokate.
+4. nìjakı úkol na úlohu lineárního programování
+5. 2-aproximativní algoritmus pro metrickı (delta)-Steinerovskı strom
+6. Klasifikace randomizovanıch algoritmù pro optimalizaèní problémy

@@ -1,0 +1,14 @@
+IB109 pøedtermín 16.5.2018
+--------------------------
+70 minut, 10 otázek po 10b, 60b na E
+
+- Flynnova klasifikace, popsat co to je
+- Zamykání, kritická sekce, jak implementovat zámek pomocí bitové promìnné (co k tomu potøebujeme)
+- Jak funguje cache, jaké mùžou nastat problémy
+- Co je race condition
+- pthread_join co dìlá a nakreslit schéma použití
+- OpenMP obecnì použití z pohledu programátora
+- Výhody lock-free oproti POSIXu
+- C++11 atomic<> pøíklad použití, co dìlá memory_order_relaxed, acquire, release
+- Spekulativní dekompozice, popsat vlastnosti (nevýhody)
+- MAP-REDUCE popsat dle principù dekompozice

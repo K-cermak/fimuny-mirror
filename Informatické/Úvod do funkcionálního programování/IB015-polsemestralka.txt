@@ -1,0 +1,13 @@
+1.) Otypujte (\x -> map x)
+
+2.) Napíšte výsledok funkcie: foldr ((:).(+1)) [] [1..5]
+
+3.) Napíšte funkciu "take", ktorá vezme celočíslený argument n, potom vezme zoznam nejakých prvkov, 
+a vratí zoznam, v ktorom je len prvých n prvkov z toho pôvodného zoznamu.
+Túto funkciu aj otypujte.
+
+4.) PutStr [] GetLine [] [______]  :: IO ()
+
+Do prázdnych políčok (tuna znázornené hranatými závorkami) doplnte niektoré z funkcií napísaných dole. Doplnte ich tak, aby to celé dávalo zmysel, šlo zkompilovať a sedel tomu typ.
+
+>>, >>=, \x ->, putStr, putChar, getLine, return, redFile, writeFile

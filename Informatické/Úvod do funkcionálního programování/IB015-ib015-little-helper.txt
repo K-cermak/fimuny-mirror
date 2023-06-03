@@ -1,0 +1,70 @@
+
+\x y z -> takeWhile (<x) (flip (:) y z)
+\x y -> map (concat) [take x (replicate x [x])]
+\x y -> cycle ((y . reverse . x) "Fail then Pass")
+flip (\x y z-> drop z $ zipWith x (cycle ['A'..'Z']) y)
+\x y z -> take (x * 5) (replicate x ((foldl const [y] [error "1", error "2", error "3"]) ++ [z, 'o']))
+\x -> foldr1 x "Dear Mr.president"
+(\x y -> fst $ flip head x y)
+f = flip snd fst
+(\c -> const fst head c)
+(\y -> const flip const)
+(\x -> iterate $ cycle)
+(\x y -> replicate (x y "Hello"))
+(\x y-> head $ replicate y 5)
+(\s -> flip const s flip)
+(map.filter)
+(map.map)
+const last.init.head.tail
+zip.flip take "Mama"
+(\x -> x.zipWith)
+(\x -> flip drop (x++"Fail"))
+(\s -> (map s).zip [1, 2, 3])
+(id const flip)
+(\x y -> replicate (last x) (map (+2) (tail y)))
+(\x y z q-> flip drop (flip take (flip map z q) x) y)
+\x y -> fst . curry x y
+foldl1 (curry fst) [1, 3..8]
+foldr (curry snd) 3 [12,10..4]
+
+
+
+
+flip (++) (drop 4 "come on earth") (take 4 "hello World")
+zipWith (\x y -> "bro") "Pass" "Fail"
+take 4 [if x < 2 then (x, y) else (y, z) | x <- [1..5], z <- [5,4..0], y <- [z-x], z < x]
+zip (cycle [1, 2, 3]) (5:[1, 2, 3])
+take 5 (iterate (^2) 5)
+zipWith replicate [1, 2, 3] "Pass or Fail"
+drop 3 $ replicate (head [2, 3, 4]) (tail ["pass", "fail"])
+const fst [1, 2, 3] $ head [('a', "b"), ('c', "d")]
+concat $ ["ca", "ll ", "me "] ++ (replicate 2 "ma")
+reverse [' ', 'a', 'n', 'n', 'a', 'w'] ++ (head ["hang", "yourself"]) ++ (drop 6 "in and out")
+take 5 [drop 3 x | y <- [2..5],z <- [1..5], x <- [(replicate z y)]]
+take 10 (iterate (+3) 2)
+take 10 (iterate ("A"++) "XXX")
+drop 4 (take 5 (iterate (*2) (10)))
+take 5 (drop 10 (show (cycle ['A'..'Z'])))
+foldr (\x y -> sum (concat(replicate 2 [x,y]))) 2 [1,2,3]
+foldl (\x y -> sum (concat(replicate 2 [x,y]))) 2 [1,2,3]
+foldr (:) [] "Haskell"
+foldl (++) [] ["HelloWorld"]
+zip [(head (tail (init [1,2,3,4,5])))] [1,2,3]
+zip (tail [1,2,3]) (init [1,2,3])
+zipWith (const) (init(tail "BLABLA")) [1,2,3]
+map (even) [head (last [[1,2], [2,1]])]
+foldr (\x y -> or [x,y]) False (map (null) [[],[],[],[], "", "", " ", "    "])
+sum (take 10 (((map (\x -> 6) (repeat 3)) ++ (filter (>10) [1..]))))
+unzip [('H','T'),('e','h'),('l','e'),('l','r'),('o','e')]
+zip (head ["meh", "heh"]) (last [["Failed?"]])
+zipWith (\x y -> (x,y)) "SDE" "AKK"
+zip (head ["meh", "heh"]) (last ["Failed?"])
+dropWhile (\x -> (True || not (odd x))) [1,2,3,4]
+dropWhile (\x -> (not (odd x))) [1,2,3,4]
+dropWhile (\x -> (not (even x))) [1,2,3,4]
+drop 0 (head (tail [1,2]) : [])
+concat (flip (++) [[(toUpper 's'), (head ['t', 'r', 'a', 'b', 'a', 'n', 't']), (last ['U','X','y'])] ++  (init ['l', 'e', 'l']) ++ (tail ['A', 'Z'])] ["Good Job -"])
+
+
+
+gl hf

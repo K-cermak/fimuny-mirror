@@ -1,0 +1,17 @@
+1. Co nejlepsi (nejtesnejsi) horni odhad casove slozitosti permutacniho
+routovani na stromech (grafech, kde je mezi kazdymi dvema vrcholy vzdy prave
+jedna cesta). Routovani je greedy farthest-to-go, model jako na prednasce
+(synchronni, po jedne lince jednim smerem jen jeden paket za krok).
+
+2. Napsat x-traverzovaci algoritmus pro hyperkrychli (tj. takovy, ze v x krocich
+objevi x vrcholu).
+
+3. Rozhodnout, zda jsou nasledujici problemy resitelne, pokud ano, algoritmus,
+pokud ne, zduvodnit. Problem je volba sefa na anonymnim obousmernem kruhu
+(procesory nemaji identifikatory), s tim, ze a) procesy znaji n (pocet procesoru
+v kruhu) a pracuji asynchronne a b) procesy neznaji n a pracuji synchronne.
+
+4. Dokazat tvrzeni: neni pravda, ze existuje algoritmus A a cislo n takove, ze
+algoritmus A resi problem dohody na kruhu o n procesorech (n >= 3) s jednim
+chybnym procesorem - byzantinske chyby. Na prednasce bylo ukazano pro n = 3,
+tady potreba obecne.

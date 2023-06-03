@@ -1,0 +1,91 @@
+Binarni strom na n uzlech prochazime do sirky pres BFS a zaciname u korene. 
+Jak se pritom nejvyse zaplni frontu pouzita v algotmu v zavislosti na n? 
+Tuto maximalni velikost fronty urcete pouze asymptoticky, jako odhadem ve tvaru (theta) (f). 
+Ktery je nejhorsi pripad?
+
+(theta)(n/2) nebo (theta)((n-1)/2)????
+
+Do nevyvazeneho vyhledvavaciho binarniho stromu, ktery je na pocatku prazdny jsou standartnim algoritmem postupne pridavane polozky s klici:
+8,1,7,15,3,9,2,0,14,6,10,12,4,11,5,13
+a) nakreslete jak vypada tento strom po precteni celeho vstupu
+b) ostrante prvek 8 a zase nakreslete...
+
+
+
+-----------------8---------------
+------1----------|--------15-----
+0-----|-----7----|-----9---|-----
+---------3--|----|------- 14-----
+------2--|--6----|-----10--|-----
+----------4-|----|------|---12---
+----------|-5----|-------11-|-13-
+
+nejlevejsi vrchol v pravem podstrome
+
+-----------------11--------------
+------1----------|--------15-----
+0-----|-----7----|-----9---|-----
+---------3--|----|------- 14-----
+------2--|--6----|-----10--|-----
+----------4-|----|------|---12---
+----------|-5----|----------|-13-
+
+
+
+
+
+Je dana maximova z leva zarovnana halda ulozena v globalnim poli A, delky n. 
+Napiste procduru increasekey, ktera zvetsi prvek nachazejici se na zadane pozici 
+a upravi poradi ostatnich prvku, aby zustala zachovana vlastnost maximove haldy.
+Po volani increasekey (i, d) se se prvek A[i] zvetsi o d
+a prvky na vetvi smerem ke korenu se podle potreby popreskladaji. 
+procedura increasekey musi mit nejvyse logaritmickou slozitost, vzhledem k velikosti haldy n (log_2(n)).
+predpokladejte ze cislo d bude vzdy nezaporne.
+
+A: array 1..n of Real
+
+procedure increasekey (i, d);
+{
+	A[i] := A[i] + d;
+	...
+	...
+	...
+}
+
+
+n = velikost pole
+
+function increase key(i, d)
+{
+	A[i] := A[i] + d;
+	while(A[i] > A[i/2])
+	{
+		swap(A[i], A[i/2]);
+		i = i/2;
+	}
+}
+
+
+
+Uvazujme nasledujici algoritmus:
+vstupem je n-prvkova ciselna posloupnost.
+vystupem je posloupnost stejnych cisel, ale vzestupne serazena.
+Algoritmus nacita cisla a postupne je pridava do cernobileho binarniho stromu.
+strom je na pocatku prazdny a uzly se pridavaji standartnim algoritmem, ktery provadi i potrebne vyvazovani.
+Nakonec cely strom v linearnim case projede v poradi in-order a hodnoty uzlu se vypise na vystup.
+urcete casovou slozitost tohoto radiciho algoritmu a zduvodnete.
+
+n*log(n) + n = n*log(n)
+
+
+
+
+Leftmostkey
+najdete ohodnoceni levejsiho uzlu v danem neprazdnem binarnim stromu:
+leftmostkey je hodnota uzlu na konci nejlevejsi vetve tromu T. Doplnte vyraz do definice fce.
+pouzitjte zakladni fce pro bin stromy: rootval, left, right, isempty ...
+a rekurzivni volani fce leftmostkey.
+predpokladejte, ze srtom T bude vzdy neprazdny..
+
+leftmostkey(t) = 
+

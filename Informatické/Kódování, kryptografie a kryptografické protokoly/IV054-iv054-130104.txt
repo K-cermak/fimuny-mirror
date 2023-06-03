@@ -1,0 +1,16 @@
+Some questions from 4.1.2013
+
+1.DES
+2.Shift registers
+3.Knapsack + proof of decoding
+4.El Gamal
+5.Zero knowledge proof of age difference
+6.Zero knowledge proof of coloring graph
+7.Is Caesar cryptosystem closed under composition?
+8.Mental poker by phone
+9.Diffie-Hellman for three persons
+10.Factorize n (n and Phi(n) given, both > 80 000 000)
+11.AES
+12.Bit commitment and oblivious transfer + implementation
+13.Cyclic codes - algebraic characteristic 
+

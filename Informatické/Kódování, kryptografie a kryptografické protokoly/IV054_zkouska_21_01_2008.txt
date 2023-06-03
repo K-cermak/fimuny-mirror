@@ -1,0 +1,5 @@
+1. basic properties of linear and cyclic codes
+2. hill cryptosystem
+3. factoring with elliptic curves
+4. zero-knowledge proof of discrete logarithm or 3-colorability of graph
+5. randomized RSA cryptosystems

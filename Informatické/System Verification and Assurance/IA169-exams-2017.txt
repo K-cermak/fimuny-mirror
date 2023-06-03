@@ -1,0 +1,45 @@
+Some questions from IA169 System Verification and Assurance final exams.
+I kept it in batches of 6, as in exams. They may repeat.
+Test is 70 points, so there is usually one 20 point algorithm question,
+and 5 questions for 10 points - theory, draw schema, draw hierarchy...
+Gathered by Peavey.
+
+
+1. PCTL (probabilistic CTL), how to compute
+2. Draw schema of CEGAR approach, under approximation works?
+3. Given piece of code, draw Symbolic Execution Tree
+4. Multiple condition coverage, draw coverage hierarchy
+5. CBMC algorithm skeleton, 1 terminating condition
+6. Show that AF(AG(q)) in CTL is not <=> with FG(q) in LTL
+   (too complex? At least be able to talk about it)
+
+1. LTL: syntax & semantics (20-25 points!)
+2. role of Oracle in testing
+3. Partial Order Reduction
+4. Reduction of problem Model M |= phi to emptiness of language L(A_sys x A_neg(fi))
+   (Build product automaton, check the automaton for presence of accepting cycle,
+    if there is reachable AC, then M is not modelo of phi. If L is empty lang, M |= phi.)
+5. SymExec: if there is node on location X, and path condition is UNSAT, is X dead code?
+   (no, location X can be present elsewhere)
+6. MC/DC coverage - branching points (check appendix of first lecture)
+
+
+1. Write a skeleton of Bounded Model Checking algorithm.
+   Write at least one terminating condition of this algorithm. (20 points)
+2. What is under-approximation and what does positive and negative
+   result of verification mean? Compare.
+3. Draw CEGAR approach schema. How does it work with respect to 
+   under-approximation
+4. What is Oracle in testing?
+5. Write two transformations that happen to inner nodes during
+   BDT to BDD transformation algorithm.
+6. Define differences between decision / branching points in
+   Modified Coverage / Decision Coverage.
+   
+1. Write how automated test algorithms based on symbolic execution are created
+2. Partial order reduction, what is it's goal, what are conditions of its usage?
+3. CTL* syntax
+4. What is the difference between transient and recurrent states, in context of probabilistic automatons?
+5. Write how Hoare Triple looks like and explain what it means
+6. Who won Moshe Vardi's Branching vs. Linear Time: Final Showdown and why? (check appendix of lecture 7)
+   

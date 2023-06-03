@@ -1,0 +1,49 @@
+Main algorithms to know:
+- MapReduce
+- similarity measures
+- clustering
+- Spearman
+- Kendall Tau
+- PCY
+- stream processing
+- frequent item sets
+- A-Priori
+- Balance
+- PageRank
+- BloomFilter
+- kMeans
+- FGIM
+- flajolet-martin
+
+------------------
+Hello dear friend from a distant future! These questions are from three exam terms in 2019. GLHF!
+------------------
+
+2019 1
+
+- BFR vs kMeans - which sets we keep track of during computation
+- Spearman correlation for R1 = (1,2,3,4,5), R2 = (2,5,4,3,1)
+- Benefits of Topic Specific Pagerank vs PageRank to compute matrix A
+- MapReduce to count total lines across N documents
+- Name and describe 3 types of tasks on data streams
+- Compute Jaccard similarity on document set. Compute document signatures for given document set. Compute Jaccard similarity on document signatures
+
+------------------
+2019 2
+
+- PCY vs A-Priory
+- BloomFilter
+- MapReduce example
+- Pagerank - first iteration
+- Cluster distance in noneuclidian space
+- Nearness (at least 2 approaches)
+
+------------------
+2019 3 (6.6.)
+
+1) Map-Reduce - simple computation on integers [1..8]. Map with 3 transformations: (k+1, v+1), (k, v*2, (k-1, v-1). Reduce as simple sumation for each key
+2) Describe steps of k-means algo
+3) PCY example (support, buckets, pairs)
+4) How DGIM handles 1s?
+5) Define Precision and Recall, which of these is better in case of dataset with 10^8 total (10^3 relevant documents). We want to retrieve the 10 most relevant.
+6) Advertising example (BALANCE): Bidder A with credit 3 and interest in x,y , bidder B with credit 4 and interest in x,z. Compute on xxxyyzz.

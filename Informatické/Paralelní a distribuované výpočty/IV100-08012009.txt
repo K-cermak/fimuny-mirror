@@ -1,0 +1,10 @@
+8.1.2009
+
+1. Definujte predikát term, co znamená, že proces končí korektně, norma, dokažte, že pokud proces končí korektně, tak každé vykonání obsahuje konfiguraci splňující P.
+2. Jaké problémy se vyskytnou při paralelizaci algoritmu Floyd-Warshal a jak je řešit?
+3. Vysvětlete algoritmus na volbu vůdce na kruhu s počtem zpráv N log N, zdůvodněte počet zpráv.
+4. Algoritmus KKM, složitost se zdůvodněním.
+5. Stabilizující algoritmus vzájemného vyloučení na kruhu - Dijkstra, popište a zdůvodněte korektnost.
+6. Algoritmus na přejmenování v přítomnosti t < N/2 fatálních chyb, zdůvodněte korektnost, z jak velké množiny se berou jména a proč?
+7. Úplně přesný detektor fatálních chyb - definice a napište konstrukci takového detektoru když máme horní limit na dobu přenosu zprávy.
+8. ještě něco, ale už nevím, co to bylo :)

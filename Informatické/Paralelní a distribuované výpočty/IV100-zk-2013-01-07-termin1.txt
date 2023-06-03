@@ -1,0 +1,37 @@
+IV100 - Paralelní a distribuované výpoèty - 1. termin 07.01.2013
+
+1. Majme torus [definovane] s rozmermi nxn, kde n > 2 a na nom routovaci
+   algoritmus z prednasky, t.j. paket je najprv najkratsou cestou poslany
+   do spravneho stlpca a nasledne je v danom poslany do cieloveho vrcholu,
+   pricom prednost maju pakety s najdlhsou cestou. Dokazte, ze v pripade
+   permutacneho routovania [definovane] dorazi kazdy paket do ciela
+   v n + O(1) krokoch.
+
+2. Popiste algoritmus pre x-traverzovanie [definovane] torusu nxn s jednym
+   iniciujucim vrcholom. Vrcholy maju zmysel pre orientaciu, ale nepoznaju n.
+
+3. Majme ciaru tvorenu n procesmi, pricom susedne procesy su prepojene. Kazdy
+   proces ma identifikator, vsetky startuju naraz a spravy sa zasielaju
+   asynchronne. Proces P(i) ma navyse vstupnu hodnotu x(i) z BigSet. Proces
+   dokaze porovnavat hodnoty BigSet, ale v pamati dokaze sucasne uchovavat iba
+   konstantny pocet hodnot. Cielom je utriedit hodnoty vo vrcholoch (tak, aby
+   i-ty proces obsahoval i-tu najmensiu hodnotu). Navrhnite co najlepsi
+   algoritmus, ktory ich takto utriedi. Urcte, aku moze mat takyto algoritmus
+   minimalnu komunikacnu a casovu zlozitost (odvodte a zdovodnite optimalnost).
+
+4. Majme problemy dohody so stop chybami [definovane], kde moze dojst najviac
+   k f porucham. Dokazte, ze ziadny algoritmus, ktory by riesil tento problem
+   v najviac f kolach nemoze byt korektny.
+
+5. Majme kruh s n > 2 procesmi spojenymi obojsmernymi linkami. Procesy startuju
+   spolu, nemaju identifikator a na vstupe maju hodnotu 0 alebo 1. Cielom je
+   zistit (s explicitnou terminaciou odpoved ano alebo nie), ci v tomto kruhu
+   existuje proces so vstupnou hodnotou 1. Uvazte tieto dva pripady:
+
+   a) Procesy poznaju n a spravy sa posielaju asynchronne.
+   b) Procesy nepoznaju n a spravy sa posielaju synchronne.
+
+   Analyzujte riesitelnost tychto pripadov. V pripade riesitelnosti navrhnite
+   algoritmus, v opacnom pripade zdovodnite neriesitelnost.
+
+povolene materialy (poznamky, slajdy, knihy), 150 minut

@@ -1,0 +1,9 @@
+Zkouska 3.1.2013 (1. termin). Otazky jsou v nahodnem poradi.
+
+1. Definujte enum pro popis mesicu v roce.
+2. Najdete v (na papire zadanem) programu chyby, ktere ohlasi kompilator (napr. chybejici nebo prebyvajici stredniky, nedefinovane promenne, chybny typ zavorek atd.)
+3. Napiste funkci, ktera prevede vsechna mala pismena v retezci na pismena velka (ostatni znaky nijak nemodifikuje). Funkce bere jako parametr retezec a vraci upraveny retezec. Poznamka: Bylo mozne pouzit knihovni funkce, ale v tom pripade bylo potreba uvest direktivu #include (vc. spravneho hlavickoveho souboru).
+4. Co jsou homogenni a heterogenni datove struktury (hlavne jaky je mezi nimi rozdil)?
+5. Jaka 4 cisla vypise uvedeny program? Priklad hlavne na procviceni ukazatelu (predame funkci ukazatel na promennou definovanou v main(), modifikujeme ve funkci obsah mista, kam ukazatel ukazuje - jak to ovlivni tu promennou v main()?). Poznamka: Bylo nutne mit vsechna 4 cisla spravne, jinak se hodnotilo 0 body.
+
+A jeste jedna organizacni poznamka: Na papir bylo potreba uvest krome jmena jeste e-mailovou adresu (univerzitni, pripadne fakultni), nazev studovaneho oboru a jmeno cviciho (stacilo prijmeni). To me trochu prekvapilo. :-)

@@ -1,0 +1,10 @@
+1. Svet kostek (z prednasky): zpetne planovani, nalezt minimalni plan a napsat, jak se menil cil a plan
+2. Chromozomy 12345678 a 87654321. Ucelova funkce: soucet rozdilu po sobe jdoucich alel a chceme ji maximalizovat. Pro 
+reprodukci pouzivame jen krizeni, body krizeni: po 1. a 4. genu. Rodice pro krizeni: vsechny mozne kombinace
+chromozomu. Do dalsi populace vybirame elitarskym modelem. Kteri jedinci budou ve 3. populaci? 
+3. Rozdily PoP a PSP.
+4. PRM pri polomeru p=3 (byl obrazek a demonstrovat algoritmus).
+5. Jumpstar
+7. Barvime graf (kazdy vrchol ma mit takovou barvu, aby jeho sousedi meli jinou barvu). Navrhnete kodovani pro dany
+problem a ucelovou funkci je minimalizace poctu barev. Jak by se generovalo inicialni reseni, aby bylo konzistentni? 
+Navrhnete lokalni zmenu, ktera zachovava konzistenci. Jak by vypadal prvek tabu seznamu pro tuto lokalni zmenu? 

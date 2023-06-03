@@ -1,0 +1,8 @@
+Jedna z pětic otázek:
+1. Popište Kasiskiho a Friedmanovu metodu zjištění délky klíče u šifry Vigenere .
+2. Secret key communication without the need for key distribution.
+3. McEliece cryptosystem.
+4. Group version of the ElGamal cryptosystem.
+5. Bit commitment protocols.
+
+

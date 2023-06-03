@@ -1,0 +1,19 @@
+
+
+1. Napsat CFG v Greibachové NF k jazyku {a^j b^2n c^j b^2m, j,m,n>0}
+2. Jde o pravou kongruenci nad SIGMA={a,b}? 33 bodù
+    a) u~v <=> |u|<=|v|
+    b) u~v <=> u,v patøí do {a}.SIGMA^+ nebo u,v patøí do {b}.SIGMA^+ nebo u=v
+3. Dána gramatika: 35 bodù
+    S->AaB, Bb, Eps
+    A->cAb, aS, Ab
+    B->Bb, bA
+Napíštì automat pro synt. analızu zhora dolù a proveïte vıpoèet nad slovem bcabb
+
+4. Algoritmus na eliminaci Eps-pravidel 40 bodù
+5. Dokate nebo vyvrate: 16+16 bodù
+    a) L má vlastnost sebevloení => L je nekoneènı
+    b) L je nekoneènı => L má vlastnost sebevloení
+6. Nech A je deterministickı koneènı automat s n stavy (bez zásobníku)
+rozpoznávající L.
+Dokate e L je nekoneènı <=> akceptuje alespò jedno slovo w takové e n<=|w|<2n

@@ -1,0 +1,29 @@
+1a. Historie a zaměření bioinformatiky
+(definice, oblasti, první sbírky sekvencí, první algoritmy, první sekvenace,
+atd.)
+1b. Nekanonické (non-B DNA) struktury DNA a jejich sekvenční podmíněnost
+
+2a. Párové srovnávání sekvencí (algoritmy, význam)
+2b. Identifikace proteinů pomocí hmotnostní spektrometrie (metody, principy)
+
+3a. Offline algoritmy pro vyhledávání sekvenční podobnosti
+3b. Základy struktury a funkce proteinů
+
+4a. Online algoritmy pro vyhledávání sekvenční podobnosti
+4b. Sangerova metoda sekvenování DNA (princip a vlastnosti)
+
+5a. Základní formáty dat v bioinformatice
+5b. Základní laboratorní metody molekulární biologie
+
+6a. Základní zdroje dat v bioinformatice
+6b. Sekvenační metody nové generace (NGS - princip a vlastnosti jednotlivých
+metod/technologií)
+
+7a. Genomové sekvence, anotace genomů, Genome Browser a podobné nástroje
+7b. Základy struktury a funkce nukleových kyselin
+
+8a. Základy tvorby fylogenetických stromů
+8b. Molekulární formy informace v buňce a její transformace, genetický kód
+
+9a. Metody předpovídání stuktury proteinů ze sekvence
+9b. Organizace živé hmoty s důrazem na molekulární stavbu prokaryotů a eukaryotů

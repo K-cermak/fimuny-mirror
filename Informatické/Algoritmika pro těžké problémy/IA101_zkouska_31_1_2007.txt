@@ -1,0 +1,13 @@
+1. popište schéma tvorby aproximativních algoritmù pøevodem na úlohu lineárního programování
+2. navrhnìte pseudopolynomiální algoritmus pro problém dvourozmìrného batohu (stejný jako jednorozmìrný, akorát vstup je {a1,...,an,b1,...,bn,V} a cíl je T náleží do {1,..,n} a SUM(ai)<=V a SUM(bi)<=V)
+Dokažte, že je pseudopolynomiální a rozeberte jeho složitost
+3. napište problém batohu jako úlohu lineárního programování, relaxujte ji a napište duální úlohu
+4. popište christofsenùv algoritmus pro problém obchodního cestujícího, dokažte
+   že je 2-aproximativní
+5. máme n kaprù o váze v1,...,vn. Máme balit kapry do krabic tak, aby každá krabice mìla váhu alespoò V.
+   úkolem je vytvoøit co nejvíce krabic.
+   máme hladový algoritmus, kde bereme kapry (náhodnì za sebou) a pokud poslední krabice není plná, dáme ho tam, jinak do nové krabice. 
+Dokažte, že je algoritmus 2-aproximativní.
+6. Popište algoritmus Las Vegas s odpovìdí "Nevím" a bez odpovìdi "Nevím" a napište vztahy mezi nimi.
+
+Pøesnou formulaci otázek si fakt nepamatuji, tak snad to dává smysl.

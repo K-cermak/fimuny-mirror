@@ -1,0 +1,6 @@
+pseudopoly. problem batohu - co jej cini pseudopolynomialnim
+monte carlo - definice, co je aplifikace, da se pouzit u MC?
+3-aprox. alg. pro 1-3-TSP (bez predpokladani trojuhel. nerovnosti)
+dany 3SAT random. alg., ktery s uniformni prob. 1/2 prirazuje hodnoty; vypocitat E; derandomizovat; odhadnout pocet ok klauzuli u derandomiz.
+vertex cover parametrizovany alg + slozitost + proc je parametrizovany (vlastni parametrizace)
+byl dany lin. program jako ve skriptech (min 7x_1 + ... blah blah, 4 rovnice) - udelat dualni, podminky kompl., vztah mezi resenimi primar a dual

@@ -1,0 +1,40 @@
+6.6.2007 - druhy termin
+
+1. Mame text ulozeny v poli T[1..n] bez mezer a interpunkcnich znamenek. 
+"Toznamenatexttohototypu" Nasim ukolem je rozhodnout, jestli text je 
+"platnym textem", tj. jestli se da rozdelit tak, ze vsechny jeho casti
+jsou existujici slova. To jestli dane slovo je existuje(tj. jestli 
+to neni nesmysl) zjistime pomoci fce dict(w). Ta vrati true, prave
+kdyz slovo existuje. Volani teto fce je ve tride O(1). Navrhnete
+algoritmus slozitosti O(n^2) zalozeny na principu dyn. programovani,
+ktery rozhodne, zda dany text T je platnym textem.
+
+2. Mejme jistou datovou strukturu reprezentujici seznam cisel.
+Mejme nasledujici operace:
+INSERT(x,S)-vlozi prvek na zacatek seznamu seznamu. Slozitost v O(1).
+MIN_ALL(S)-odstrani ze seznamu S vsechny prvky,krome minimalnich.
+Slozitost v O(n), kde n je delka seznamu S.
+MIN_ONE(S)-odstrani ze seznamu S vsechny prvky,krome jednoho minimalniho.
+Slozitost v O(n), kde n je delka seznamu S.
+Na zacatku mame prazdny seznam.
+Ukolem dokazat(nebo vyvratit) pomoci metody kreditu nebo potencialove 
+fce, ze:
+a) provedeni n operaci INSERT a MIN_ALL je v O(n),
+b) provedeni n operaci INSERT a MIN_ONE je v O(n).
+
+
+3. Popiste Johnsonuv alg. a analyzujte jeho slozitost.(35b)
+
+4. Mejme dva nasledujici typy orient. ohodnocenych grafu G=(V,H) a s in V:
+a) jestli (u,v) in H a u <> s pak je w(u,v)>=0. To znamena, ze zaporne
+hrany mohou vychazet pouze z s.
+b) jestli v grafu existuje cyklus, pak je nezaporny.
+Rozhodnete a zduvodnete, jestli Dijkstruv alg. da korektni reseni pro
+tyto grafy.
+
+5. Mejme d druhu pisku. Pro i-ty druh pisku mame jeho cenu c(i) za 1 tunu
+a mnozstvi t(i) tun na sklade. Prijde koren do obchodu a chce nakoupit T
+tun pisku co nejlevnejs. Nepreferuje jeden druh pisku pred jinym. No proste
+je mu to uplne u ... co koupi-chce vedet, kolik jakyho druhu pisku ma 
+koupit. Ukolem je navrhnout hladovy alg. resici tetno problem a 
+zduvodnit jeho korektnost.

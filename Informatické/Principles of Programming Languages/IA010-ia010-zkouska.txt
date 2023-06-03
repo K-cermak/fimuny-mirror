@@ -1,0 +1,20 @@
+Principles of Programming Languages -- Exam 14.6.2016
+
+1.
+a) Name 4 kinds of primitive types and 4 composite ones.
+b) What is a coroutine?
+c) Whait is a monitor?
+d) Name two types of problems commonly arising in concurrent systems.
+e) What are the advantages and disadvantages of using multiple inheritance.
+
+2. Name 5 programming language and state 2 facts about each of them.
+
+3. Similar to question 5 in sample exam (parameter passing).
+
+4. Similar to question 6 in sample exam (static x dynamic scoping).
+
+5. Similar to question 4 in sample exam (unification).
+
+6. Name three forms of polymorphism and explain what they are.
+
+7. Explain how exceptions and exception handling work.

@@ -1,0 +1,45 @@
+IA158 Real Time Systems
+zkouskova pisemka 27.2.2008
+
+
+
+1. 
+	(a) Co je to verifikace a k cemu je dobra 
+	(b) Charakteristiky RT systemu
+	(c) Rozdil mezi RT operacnimi systemy a beznymi operacnimi systemy
+	(d) ___ nepamatuji se ___ (ale otazka mela podobne zamereni jako predchozi tri)
+
+
+2.
+	(a) Co je to "concurrent programming" a jak souvisi s programovanim RT systemu.
+	(b) Jaky je rozdil mezi vlakny a procesy podle POSIX standardu
+	(c) Jakou "structure" a "level" maji jazyky Java, Ada a C+POSIX
+	(d) Jakym zpusobem probiha komunikace mezi procesy (ODPOVED: viz. sdilene promenne, zasilani zprav) 
+
+
+4.	
+	Zadan mutual exclusion algoritmus (velmi jemne modfikovany Petersonuv algoritmus - ovsem tak, aby porusil "absence of starvation"). 
+	(a) Nakreslit model pomoci "(extended ?) finite state machine"
+	(b) Zobrazit "state space" algoritmu (alespon 12 stavu)	 
+	(c) Overit, ze jde skutecne o mutual exclusion algoritmus (neformalne, ktere podminky algoritmus splnuje a pokud nejakou porusuje tak uvest priklad)
+
+
+5.	
+	Zadan "timed automaton" (velmi podobny tomu ve slajdech), ukolem bylo:
+	(a) Definovat stav automatu
+	(b) Zadano nekolik "clock valuations"; ukolem bylo urcit tridy ekvivalence (asi ?)
+	(c) Definovat co je beh a najit takovy beh zadaneho automatu, ktery dosahne ciloveho stavu
+
+
+6.	
+	Zadany dva periodicke a tri aperiodicke tasky, ukolem bylo sestavit rozvrhy pomoci 
+	(a)  Background scheduling
+	(b)  Polling serveru se stredni prioritou (z periodickych tasku)
+	(c)  Slack stealing
+
+	a vypocitat "response times" pro aperiodicke tasky.
+
+
+
+
+! Za chyby nerucim, ihned po zkousce zadani vetsinou zapominam !

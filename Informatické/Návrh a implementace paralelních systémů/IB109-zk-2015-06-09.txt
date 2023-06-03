@@ -1,0 +1,8 @@
+1. co je pamatovy model CPU a ako s nim suvisi, resp. na co sluzi pamatova bariera
+2. ake je uskali CAS bez Garbage Collectoru
+3. opisat 2 obecne delenia dekompozicie
+4. v OO existuje nejaka fintièka s ktorou sa da odomknut mutex pri nelokalnej zmene instrukcii (napr. pri vynimke), opis
+5. aky je rozdiel medzi monitorom a semaforom, mutexom
+6. spin-lock vs uspavanie
+7. procesy vs vlakna
+8. uvedena signatura funkcie MPI_Bcast = napisat paralel.program s aspon 2 procesmi, ktore ju pouzivaju + ako sa lisia vektorove od nevektorovych variant kolektivnych komunikacnych primitiv

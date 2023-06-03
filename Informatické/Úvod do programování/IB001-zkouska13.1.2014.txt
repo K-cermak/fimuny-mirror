@@ -1,0 +1,41 @@
+﻿Zkouska 13.1.2014
+
+1. Neco na zpusob:
+
+void funkce(int *a, int b) {
+        int y = b;
+
+        *a+=y;
+        b=*a+y;
+        printf("%d%5d\n", b, y);
+        y=b+*a;
+
+}
+
+int main(void)
+{
+        int x = 17, y = 7;
+
+        funkce(&y, x/2);
+        printf("%d%5d", x, y);
+}
+
+
+vypsat cislice i se spravnym poctem mezer.
+
+
+2. Charakterizovat skalarni a agregovany datovy typ
+3. Jaky problem popisuje uvedeny algoritmus (nemam)
+4. Napsat funkci, ktera jako parametr dostane nazev souboru a vrati pocet cislic, ktery dany soubor obsahuje.
+	reseni:
+
+	int numOfDigits(FILE *f){
+		int count = 0;
+    		int c;
+    		while(!feof(f)){
+        		c = fgetc(f);
+        		count++;
+    		}
+    	return count;
+	}
+5. Co obsahuje hlavicka funkce?

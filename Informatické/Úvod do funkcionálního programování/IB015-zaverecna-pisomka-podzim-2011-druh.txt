@@ -1,0 +1,3 @@
+1. otypovanie zlozenej funkcie vratane typovych tried, nepamatam si zadanie; pouzite funkcie neboli konkretne, ake pozname, ale mali iba uvedene typy, takze bolo treba pouzit ad-hoc unifikaciu (ako bod 3 @ http://funcko.blogspot.com/2010/11/typ-castecne-aplikace.html)
+2. funkcia [String] -> Int, ktora vrati pocet retazcov takych, ktore obsahuju aspon jeden znak, ktory nie je pismeno
+3. neprazdne n-arne stromy ohodnotene celymi cislami (data ITree = Node Int [Itree]): napisat funkciu, ktora vrati sucet hodnot na vsetkych uzloch stromu + jej typ

@@ -1,0 +1,8 @@
+Petriho site 10.6.2009
+
+1/ Dokazte nerozhodnutelnost model-checkingu pro EF logiku
+2/ Dokazte ze je-li sit (N,M0) ziva a ohranicena, ma take silne souvisly graf.
+3/ Uvedte priklad site (N,M0) ktera je ziva a ohranicena a po odpaleni prvniho prechodu v M0 se M0 stava nedosazitelny.
+   (resit metodou: kdyz by mela sit dosahnout M0, tak rozdvojit tokeny a pak je opet spojit (?))
+4/ Dokazte ze problem zivosti v 1-ohranicene siti je NP tezky
+

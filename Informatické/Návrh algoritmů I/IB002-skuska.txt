@@ -1,0 +1,21 @@
+﻿IB 002 termin 18.6.2015 11:00 D3
+
+1. Navrhnite algoritmus, ktory v strome s ohodnotenymi hranami najde dlzku najdlhsej vetvy v O(n).
+
+2. Naplnte B-strom hodnotami
+
+3. Plati pre spatnu hranu v grafe v.f > u.f?
+
+4. Robime Dijkstru na graf. Mame mnozinu S; ∀x∈S: x.d = δ(s, x), do nej sa vlozilo najprv x a potom y. Plati δ(s, x) < δ(s, y)?
+
+5. Mame algoritmus:
+      * Graf s orientovanymi hranami
+      * Spravime DFS na prvok
+      * Potom na uzly postupne robime DFS podla ich x.f od najvacsieho
+          * Nasli sme tymito DFS stromami silne komponenty grafu?
+
+6. Tabulka zlozitosti
+
+
+
+Otazky si pamatam len zhruba, moze byt ze nieco nie je spravne.

@@ -1,0 +1,108 @@
+List of some of the questions and some of the options (these are NOT the correct answers only):
+
+@ManyToOne default
+  - LAZY
+  - EAGER
+  - no default, has to be set
+
+Spring-WS allows
+  - contract-first
+  - contract-last
+  - none of them
+
+JMS schema strategies (values for hibernate.hbm2ddl.auto)
+  - validate
+  - update
+  - create
+  - create-drop
+  - reset
+
+(piece of code - final class CurrencyConvertorImpl which accepts an implementation of an interface ExchangeRateTable via its constructor and has 1 public method convert)
+(a question with 6 options, 5 of them correct - +20 % for a correct one, -25 % for choosing the incorrect one)
+The design of this component
+  - follows Single Responsibility
+  - is loosely coupled
+  - has good encapsulation
+  - the class is immutable
+  - the class is thread-safe
+  - (one more)
+
+Also there was a question with similar options: What are the properties of a well-designed component?
+  - well testable (and tested)
+  - approved by customer
+
+What does 'git push' do? (1 point)
+  - updates remote refs
+  - is an invalid command
+  - fetches... (something)
+
+class ServiceImpl implements Service {
+  @Inject
+  private ProductDao productDao;
+  
+  public Service() {
+    Product p = new Product();
+    productDao.create(p);
+  }
+}
+Imagine you write tests for a class that injects Service(Impl).
+What happens?
+  - NullPointerException is thrown
+  - private attributes cannot be injected
+  - if everything is setup correctly (including empty Product constructor works), a new Product is created with every run
+
+What is true about the JPA configuration file?
+  - it has to be named persistence.xml
+  - it includes precisely one <persistence-unit>
+  - it includes one or more <persistence-unit>s
+
+What is true about the N+1 problem?
+  - it refers to a piece of code that can produce N+1 SQL queries
+  - it can be solved by using LAZY FETCH
+  - it can be solved by using EAGER FETCH
+
+Which of these mechanisms causes the application not to store passwords at all?
+  - basic auth
+  - login form
+  - X.509 certificates
+  - federated identity
+  - OAuth
+
+Which of these are considered secure for storing passwords?
+  - SHA-512
+  - bcrypt, scrypt, PBKDF2
+  - ...
+
+<bean id="something" class="com.example.Class" scope="ascope">
+  <property name="prop" value="example">
+  </property>
+</bean>
+What is true?
+  - the id has to be unique
+  - this tries to create an instance of type com.example.Class
+  - it creates a property named "prop"
+  - it inserts the value "example" into (existing?) property named "prop"
+  - (something about the scope)
+
+How do you get validation info in a controller?
+  - it is passed in the @Valid annotation
+  - it is passed in a parameter annotated with the @Valid annotation
+  - it is passed in a parameter annotated with the @ModelAttribute annotation
+
+Your colleague wants to use the OPTIONS HTTP method in your REST API. What do you say to him? (...)
+  - There is no OPTIONS method
+  - I would pass info about the methods available on the resource (e.g. Allow: OPTIONS, GET, POST)
+  - I would pass info about the availability of the resource (e.g. at which time it is available)
+
+How is a Spring application contexted determined?
+  - it is annotated by the @Configuration annotation
+
+How are beans configured?
+  - they are annotated by @Component or similar
+  - they are listed as <bean>s in a XML file
+  - they are listed as methods with @Bean annotation in the configuration file
+
+
+All questions have 5 options, the special one has 6.
+In total 18 questions (17 for 2 points and 1 for 1 point), including 1 question with the special marking mentioned earlier.
+For the rest, choosing precisely the correct options = 2 points, otherwise 0 points.

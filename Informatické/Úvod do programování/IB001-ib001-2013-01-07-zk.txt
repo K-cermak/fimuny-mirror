@@ -1,0 +1,7 @@
+2. termín 7.1.2013
+
+1. zisti, aké 4 èísla vypíše program (práca s pointrami) (10b)
+2. prepísa while cyklus na do-while (5b)
+3. zisti akı problém rieši zadanı algoritmus a èo nám program vypíše pri zadanom vstupe (Pascalov trojuholník) (10b)
+4. napísa fuknciu, ktorá zistí súèet cifier zadaného èísla (bez vyuitia agregovanıch typov) (10b)
+5. ako sa naformátuje zadanı vstup pomocou znaèiek %s, %i, %f, %E, %x (5b)

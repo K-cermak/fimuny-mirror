@@ -1,0 +1,7 @@
+5 otazek
+
+1. Metoda nalezeni nejmensiho rezu grafu 
+2. Variace, standardni odchylka, momenty - vlastnosti a vztahy
+3. (?) Derefered decision a jeho ilustrace
+4. Nahodna prochazka - vysvetleni, priklad algoritmu
+5. Fingerprint metoda a priklad

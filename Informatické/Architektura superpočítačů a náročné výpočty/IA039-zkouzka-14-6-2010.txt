@@ -1,0 +1,9 @@
+1. Popsat CISC
+2. K cemu je dekompozice instrukci, vyjmenovat zakladnich 5 a popsat. 
+3. Je MIMD vhodny pouze pro MPMD? Vysvetlete.
+4. Instrukce "out of order execution". Co to je a co to resi.
+5. Efektivita programu - co to je, jake mame nastroje na jeji mereni. Souvisi nejak s vykonem pc?
+6. Problem se zavislosti u optimalizace cyklu. Jake jsou nevinne, jake pusobi neodstranitelny problem.
+7. 3 ruzne druhy propojovacich siti, popsat jejich vlastnosti (vyhody, nevyhody).
+
+Na posledni dve si nevzpomenu.

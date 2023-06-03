@@ -1,0 +1,5 @@
+1) Basic properites of cyclic code, design of generation matrix 
+2) Proof corectness of RSA 
+3) Fiat-Shamir identification scheme 
+4) Encrypt with autoclave (key smth like "abasdsa", text "meetmethisevening") 
+5) Hill cryptosystem - you have one word in plaintext and cryptotext and you have to decrypt another cryptotext

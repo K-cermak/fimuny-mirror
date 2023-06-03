@@ -1,0 +1,54 @@
+1. Asynchronny system, kde pozname ID procesov. Spravy sa dorucuju spolahlivo.
+Topologia systemu je lubovolna, ale kazdy proces pozna svojich susdov- lokalne ocislovanie portov.
+Kazdy proces ma vstupnu hodnotu x_n.
+Napiste algortimus s explicitnou terminaciou, ktory zrata sucet vsetkych procesov a da vediet kazdemu uzlu.
+Aky je pocet sprav v najhorsom pripade?
+
+ODPOVED:
+	pomocou GHS algortimu si vybudujem kostru grafu (strom). Z algoritmu vyplyva, ze najlacnjesia hrana, tora ide z uzlu je hrana na rodica.
+Kazdy uzol caka, kym nedostane k-1 hodnot (kde k je pocet portov pripojenych na uzol). Ked ich obdrzi, scita ich, pripocita vlastnu a posiela rodicovi.
+Takto prebublu hodnoty vyssie a koren nakoniec zrata finalny sucet a zasiela ho spat na potomkov.
+
+pocet sprav je m + n.logn + k   kde m=|E| n=|V| k=pocet hran kostry
+
+2. Byzantynske procesy (klamajuce procesy), Uplny graf, synchronizovany, procesy poznaju ID.
+V systeme moze byt f chybnych procesov.
+Existuje general, ktoreho poznaju vsetky ostatne procesy.
+Ako velke moze byt f aby sme vedeli vyvodit spravnu hodnotu?
+Popiste algritmus, ktory:
+	- ak general neklame, vsetky dobre procesy sa zhodnu na generalovej hodnote (0/1)
+	- ak general klame, vsetky dobre procesy sa zhodnu na akejkolvej rovnakej hodnote (0/1)
+
+ODPOVED: 
+	f musi byt  < 1/3 procesov. 
+pouzitie EIG (Exponential Information Gathering) z prednasky
+Vsetky procesy buduju strom dovery.
+Kedze poznaju ID generala, moze kazdy proces skontrolovat, ci su jeho odpovede konzistentne - ci klame.
+Ak klame, nastavia sa na hocijaku rovnaku hodnotu zo stromu, ak nie, nastavia si generalovu hodnotu.
+
+
+3. Takmer uplny graf je uplny graf, ktoremu odoberieme 42 hran (asynchronny, bez orientacie, procesy poznaju ID).
+Navrhnite asymptoticky optimalny algoritmus na volbu sefa a zdovodnite optimalitu.
+
+ODPOVED: 
+	Pouzitie GHS (Gallager-Humblet-Spira) algoritmu. To ze nie je graf uplny nehra rolu, pretoze algortimus buduje kostru ansledne voli sefa - kostru vybuduje na akomkolvek grafe.
+
+Zlozitost je m + n.logn kde m=|E| n=|V| => asymptoticky optimalny
+
+4. Hirschberg-Sinclair algoritmus z prednasky
+Napisany algoritmus (pseudo kod)
+Bude algoritmus korektny, ak namiesto 2^k pouzijeme k+1?
+Bude asymptoticka zlozitost stale O(n.logn)?
+
+ODPOVED: 
+	Alg bude korektny (akurat mu to bude dlhsie trvat). Namiesto dobyvania uzemia o velkosti 2^k, bude dobyvat uzemie o velkosti k+1.
+
+Zlozitost bude v tomto pripade polynomialna:
+	pri n procesoch mame n/2 levelov
+	
+	a teda n/2*k vrcholov na leveli k
+	pocet zaslanych sprav je stale 2^k =>
+
+	(2^k) * (n/2*k)	= n * (2^(k-1)/k) na level
+
+	n/2 * (n * (2^(k-1)/k)) = n^2 * (2^(k-2)/k)) = O(n^2)

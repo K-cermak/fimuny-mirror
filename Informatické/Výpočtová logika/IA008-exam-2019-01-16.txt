@@ -1,0 +1,125 @@
+IA008 Computational Logic (exam date: 2019-01-16) [Encoding: UTF-8]
+
+The type of the questions seemed to be the same across all exams.
+
+1. Short-answer questions:
+    a) What is the complexity of the satisfiability problem for propositional
+       logic?
+      * Answer: NP-complete
+    b) Let φ be a first-order formula and φ' its Skolemisation. Is it true
+       that, if φ is satisfiable, then φ' is also satisfiable?
+      * Answer: Yes
+    c) Find all consistent sets for the following rules in Default Logic:
+       β  :β
+       -  --
+       α  α
+      * Answer: {α}, {α, β}
+    d) Which two of the following three transition systems are bisimilar?
+
+         1  |        2  |        3  |
+            v           v           v
+           ( )<-+      ( )<-+   +->( )<-+
+            |   |       |   |   |   |   |
+            V   |       V   |   |   V   |
+           ( )  |      ( )  |   |  ( )  |
+            |   |      / \  |   |  / \  |
+            v   |     /   \ |   | /   \ |
+           (*)--+  (*)     (*) (*)     (*)
+      * Answer: 1 and 3
+
+   Questions from other exam: Decidability of SAT for first-order logic
+   (undecidable), whether a resolvent of two clauses is their consequence (yes)
+   and (again) Default Logic and bisimulation.
+
+2. Transform the following formula into a set of clauses:
+                     ∀x∃y∀z[R(x,z) → (P(x,z) ∧ P(f(y),z))]
+                   ∧ ∀x∀y∃z[R(x,y) → (P(x,z) ↔ P(y,z))]
+                   ∧ ∃x∃y∀z[(R(x,y) ∧ R(y,z)) → R(x,z))]
+   Solution (all steps (CNF-ication, Skolemization) needed for full points):
+      {¬R(x,z), P(x,z)},
+      {¬R(x,z), P(f(k(x)),z)},
+      {¬R(x,y), ¬P(x,h(x,y)), P(y,h(x,y))},
+      {¬R(x,y), ¬P(y,h(x,y)), P(x,h(x,y))},
+      {¬R(a,b), ¬R(b,z), R(a,z)}
+      Note: a and b are Skolem constants (from x and y in third conjunct),
+            k(x) and h(x,y) are Skolem functions (from y and z in first and
+            second conjuncts, respectively)
+
+3. Use the resolution method to show that the following set of clauses is
+   inconsistent:
+   {R(x,y), P(y)},           {R(x,y), ¬P(z), Q(y)},  {R(x,f(y)), ¬P(z), ¬Q(z)},
+   {¬R(x,y), P(f(x)), Q(y)}, {¬R(x,y), ¬P(z), Q(y)}, {¬R(x,y), ¬Q(f(x))}.
+
+
+4. Prove the following first-order formula using tableaux:
+                         ¬∀x∃y R(x, y) ↔ ∃x∀y ¬R(x, y)
+   Solution:
+                     ¬∀x∃y R(x, y) ↔ ∃x∀y ¬R(x, y)  false
+                                     ⟋  ⟍
+                                   ⟋      ⟍
+                ¬∀x∃y R(x, y)  true       ¬∀x∃y R(x, y)  false
+                            |                         |
+                ∃x∀y ¬R(x, y)  false      ∃x∀y ¬R(x, y)  true
+                            |                         |
+                 ∀x∃y R(x, y)  false        ∀y ¬R(c, y)  true
+                            |                         |
+                   ∃y R(c, y)  false       ∀x∃y R(x, y)  true
+                            |                         |
+                  ∀y ¬R(c, y)  false         ∃y R(c, y)  true
+                            |                         |
+                     ¬R(c, d)  false            R(c, d)  true
+                            |                         |
+                      R(c, d)  false           ¬R(c, d)  true
+                            |                         |
+                      R(c, d)  true             R(c, d)  false
+
+
+5. Prove the following first-order formula using natural deduction:
+                     ∀x P(x) ∧ ∀x Q(x) → ∀x [P(x) ∧ Q(x)]
+   Solution:
+
+-----------------------------------------(Ax)  -----------------------------------------(Ax)
+ ∀x P(x) ∧ ∀x Q(x)  ⊢  ∀x P(x) ∧ ∀x Q(x)        ∀x P(x) ∧ ∀x Q(x)  ⊢  ∀x P(x) ∧ ∀x Q(x)
+-----------------------------------------(E∧)  -----------------------------------------(E∧)
+          ∀x P(x) ∧ ∀x Q(x)  ⊢  ∀x P(x)             ∀x P(x) ∧ ∀x Q(x)  ⊢  ∀x Q(x)
+         -------------------------------(E∀)     ---------------------------------(E∀)
+             ∀x P(x) ∧ ∀x Q(x)  ⊢  P(c)           ∀x P(x) ∧ ∀x Q(x)  ⊢  Q(c)
+            -----------------------------------------------------------------(I∧)
+                         ∀x P(x) ∧ ∀x Q(x)  ⊢  P(c) ∧ Q(c)
+                     -----------------------------------------(I∀)
+                      ∀x P(x) ∧ ∀x Q(x)  ⊢  ∀x [P(x) ∧ Q(x)]
+                     -----------------------------------------(I→)
+                      ⊢  ∀x P(x) ∧ ∀x Q(x) → ∀x [P(x) ∧ Q(x)]
+
+
+6. Prove the following modal formula using tableaux:
+                  ∃x ◻ [P(x) ∨ Q(x)] → ◻ [∃x P(x) ∨ ∃x Q(x)]
+   Solution:
+                s ⊭  ∃x ◻ [P(x) ∨ Q(x)] → ◻ [∃x P(x) ∨ ∃x Q(x)]
+                                       |
+                            s ⊨  ∃x ◻ [P(x) ∨ Q(x)]
+                                       |
+                          s ⊭  ◻ [∃x P(x) ∨ ∃x Q(x)]
+                                       |
+                             s ⊨  ◻ [P(c) ∨ Q(c)]
+                                       |
+                                     s → t
+                                       |
+                            t ⊭  ∃x P(x) ∨ ∃x Q(x)
+                                       |
+                                 t ⊭  ∃x P(x)
+                                       |
+                                 t ⊭  ∃x Q(x)
+                                       |
+                                   t ⊭  P(c)
+                                       |
+                                   t ⊭  Q(c)
+                                       |
+                               t ⊨  P(c) ∨ Q(c)
+                                     ⟋  ⟍
+                                   ⟋      ⟍
+                            t ⊨  P(c)     t ⊨  Q(c)
+
+
+All tableaux and rules for Natural Deduction were provided with the test, so you
+don't need to memorize them. Good luck!

@@ -1,0 +1,19 @@
+1. definujte parujici funkci a dokazte, ze fce f(i,j)=(2^i)(2j+1)-1 je parujici.
+
+2. uvedte vetu o parametrizaci a pomoci ni dokazte, Phi g(i,j)(x)= Phi i(x)*Phi j(x) kdy dany soucin funkci je definovan pouze kdyz jsou obe funkce definovane.
+
+3. pomoci metody diagonalizace dokazte, ze existuje mnozina, ktera neni rekurzivni.
+
+4. navrhnete efektivni numeraci vycislitelnych funkci odlisnou od standardni. zduvodnete
+
+5. uvedte a dokazte 1. Riceovu vetu.
+
+6. pomoci metody paralelniho zpracovani dokazte, ze mnozina { i | Phi i != epsilon } je r.e.   (epsilon definovana jako prazdna funkce).
+
+7. definujte pojem prostorove slozitosti Turingova stroje, formulovat a dokazat vetu o prostorove kompresi TM.
+
+8. dokazte, ze P=NP prave kdyz existuje NP-uplny problem L takovy, ze L patri do P.
+
+9. PSPACE a NSPACE, definovat, porovnat, zduvodnit.
+
+10. 3SAT, definovat, uvest jeho casovou slozitost (moznost vyuzit faktu, ze SAT je NP-uplny).

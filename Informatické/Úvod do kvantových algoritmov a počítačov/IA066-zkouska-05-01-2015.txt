@@ -1,0 +1,46 @@
+﻿Zkouška 5.1.2015; témata se zřejmě každý rok opakují, ale lístečků je celkem dost (na každém 5 témat).
+
+Shor discrete logarithm algorithm
+Schrödinger equation, quantum evolution and computation
+Bennett theorem on classical reversible computing and garbage removal
+Quantum teleportation and generalized quantum teleportation
+B92 quantum key generation protocol
++
+Shor's factorization algorithm
+Quantum teleportation
+Two-slit experiment
+Quantum tracing out operation
+něco s automaty
+
+=====
+
+Příklady témat z minulých let (soupis z fi.muny + FB):
+
+Shor discrete logarithm algorithm
+Schrödinger equation, quantum evolution and computation
+Bennett theorem on classical reversible computing and garbage removal
+Quantum teleportation and generalized quantum teleportation
+Self-adjoint operators and their properties
+Shor's factorization algorithm
+Schmidt decompozition theorem
+BB84 protocol
+Stinespringer dilatation theorem and Kraus operators
+Pauli matrices and their properties
+Deutsch problem
+Deutsch-Simon problem and its solution
+Quantum pseudo-telephatic games
+B92 quantum key generation protocol
+Fourier transform on finite Albelian groups
+Shor's factorization algorithm
+Quantum teleportation
+Quantum error correcting codes and their properties
+Mixed states, density matrices and their properties
+Quantum tracing out operation
+Stern-Gerlach experiment
+Two-slit experiment
+
+Grover's search algorithm.
+Beam-splitters and Mach-Zehnder interferometer.
+Bell's theorem without inequalities.
+Self-adjoint operators and their properties.
+BB84 QKG.

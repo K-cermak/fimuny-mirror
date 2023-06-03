@@ -1,0 +1,9 @@
+Moja patica otazok (na 3 z nich odpovedat pisomne a reagovat ustne):
+
+1. RQuicksort a analyza
+2. Linearity of expectations a priklad pouzitia
+3. Coupon selection problem - popis a analyza
+4. Náhodnostné algoritmy pre generovanie prvoèísiel
+5. Polynom identity
+
+Pre zaujimavost - Gruska ked videl tie otazky, tak ich oznacil za lahke (resp. mozno len moj vyber prvych troch).

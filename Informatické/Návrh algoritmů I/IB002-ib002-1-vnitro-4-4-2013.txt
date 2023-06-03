@@ -1,0 +1,41 @@
+IB002 Algoritmy a datové struktury I 
+1. polosemestrální test dne 4.4.2013
+Všechna zadání byla stejná, jen poprehazovaná.
+
+
+1.
+Ktera datova struktura je vhodna pro ulozeni posloupnosti dat A1...An s tim, ze
+algoritmus k datum muze pristupovat v libovolnem poradi a posloupnost je predem dana a neni k ni nic doplnovano?
+--------------
+pole (spravne)
+dva seznamy
+fronta
+zasobnik
+binarni halda
+
+2.
+Pro ktery prípad použití front platí popsaná rovnost?
+dequeue(enqueue(x,q)) = enqueue(x,dequeue(q))
+(Zadáním a odpovedmi tohoto príkladu si nejsem zcela jist, otázka smerovala na pochopení funkcí dequeue/enqueue na fronte podle prednášek)
+rovnost plati pro kazdou frontu
+rovnost plati jen pri prazdne fronte jinak ne
+rovnost plati pokud se fronta sklada ze stejnych prvku
+
+3.
+Ktera posloupnost netvori minimovou zleva zarovnanou binarni haldu?
+(V odpovedích bylo pet posloupností císel. Otázka vedla na znalost uložení binární haldy v poli a pravidel haldy.
+Cílem bylo nakreslit si všech pet hald a urcit, která nesplnuje podmínky haldy. Nebylo nutné haldu vybudovat postupným pridáváním, pouze 
+prekreslit ze zápisu v poli.)
+
+4.
+jakym zpusobem ziskame druhy prvek seznamu. Seznam obsahuje minilane dva prvky.
+f(x) o g(x) = f(g(x)) - skládání zobrazení
+(V odpovedích byly kombinace skládání funkcí head a tail z prednášek. Napr head o tail, head o head, tail o head
+Pro rešení bylo nutné znát jak funguje skládání zobrazení)
+Odpoved by mela být head o tail (head po tail).
+
+5.
+Je vytvoren binarni ne nutne zarovnany strom z posloupnosti o "n" prvcich, pomoci opakovaneho volani funkce insert.
+jaka muze byt nejhorsi casova slozitost vytvoreni tohoto stromu?
+(V odpovedích byly ruzné složitosti.)
+Odpoved n2 (n nadruhou) Jde o posloupnost, která se musí vždy projít od zacátku proto není složitost "n".

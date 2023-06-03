@@ -1,0 +1,51 @@
+IA008 exam 2008-06-04
+
+author: lubik
+
+--------------------------------------------------------------------------------------------------------------
+
+1) Prove that A follows from the set of premises expressed in the clausal form:
+
+{ { not B, not D, A, not C }, { B, not D}, { not C, B, not A }, { C, not B }, { C }, { not C, D } }
+
+15 points
+
+--------------------------------------------------------------------------------------------------------------
+
+2) Using tableau prove or reject that phi follow from:
+(All)x(All)y ((Q(x,f(y)) and R(a)) => P(x))
+(All)x(All)y ((R(x) or not Q(x,y)) and (R(x) => P(x)))
+R(f(b))
+(All)x(All)y (Q(x,y) or not P(y))
+
+phi = (Exists)x(Exists)y(Exists)z(P(x) and Q(y,z))
+
+20 points
+
+--------------------------------------------------------------------------------------------------------------
+
+3) Describe the atomic tableaux that are specific for modal logic. Explain when (Square)alpha => alpha holds.
+Build a tableau proof for that formula.
+
+20 points
+
+--------------------------------------------------------------------------------------------------------------
+
+4) Write a specialization tree for last/2.
+
+15 points
+
+Little help handed out on a piece of paper:
+
+last( [X], X ).
+last( [X|Y], Z ) :- last( X, Z ).
+
+--------------------------------------------------------------------------------------------------------------
+
+5) BONUS: what is an inverse resolution? Explain and show an example.
+
+5 points
+
+--------------------------------------------------------------------------------------------------------------
+
+GOOD LUCK!

@@ -1,0 +1,7 @@
+1.	a) R,R' jsou sifon, je i R U R' sifon?
+	b) Q,Q' jsou past, je i Q n Q' past?
+2. charakterizuj a dokaž vlastnost S-invariantu S-systému
+3. model checking pro EF logiku
+4. dùkaz, že dosažitelnost PS je NP-tìžká
+5. ukaž a zdùvodni:	a) PS má 1 T-invariant
+			b) PS má 0 T-invariantù

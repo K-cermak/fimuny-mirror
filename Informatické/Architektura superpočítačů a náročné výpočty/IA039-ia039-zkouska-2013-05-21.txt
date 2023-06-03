@@ -1,0 +1,13 @@
+Zkouška IA039 2013-05-21.
+
+Bylo AFAIK 9 otázek, různě bodované, otevřené odpovědi.
+
+Proč má RISC více registrů, zatímco CISC si vystačí s méně?	
+Rozdíly architektur CPU vs. GPU
+Zvyšování rychlosti procesoru (kromě zvyšování taktu)
+Přepínání v sítích. Liší se nějak od Internetu?
+Vzájemné vyloučení - co to je a k čemu to je dobré
+Popsat instrukce test_and_set a test_and_test_and_set a jejich použití.	
+Na jakém principu stavějí benchmarky SPEC?
+
++ další asi dvě otázky, už si nevzpomínám

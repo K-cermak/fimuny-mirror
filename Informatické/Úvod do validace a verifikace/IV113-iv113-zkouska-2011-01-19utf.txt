@@ -1,0 +1,28 @@
+﻿=== IV113 - Úvod do validace a verifikace ===
+
+Zkouška ze dne 19. 01. 2011
+
+1.
+(10) a) Popište princip funkčního testování
+(5) b) Jmenujte 3 různé rizika/nevýhody FT
+(5) c) Jak souvisí FT s automatizací a regresním testováním
+
+2.
+(10) a) Popište 2 techniky pro realizaci míry splnění testovacího plánu
+(5) b) Proč vznikly tyto techniky
+(5) c) Hlavní nevýhody metrik a jejich dopady
+
+3.
+(5) a) Definujte Kripkeho strukturu a běh.
+(5) b) Definujte základní syntax LTL
+(5) c) Definujte model formule LTL sémantiku příkazu UNTIL
+(5) d) Vyjmenujte jednotlivé kroky redukce problému rozhodnutní LTL formule nad daným modelem na problém detekce akceptujícího cyklu
+
+4
+(5) a) Uveďte LTL formuli vyjadřující vlastnost, že na každém běhu systému nastane nekonečně mnoho okamžiků v kterých platí propozice p
+(5) b) Uvedenou formuli převeďte na základní syntax, pokud v ní není
+(10) c) Ukažte, že CTL formule AF(AG(q)) není ekvivalentní F(G(q))
+
+5 Je dána booleovská funkce f= a<=>b OR c
+(10) a) Pro f zkonstruujte BDT
+(10) b) Pro f zkonstruujte OBDT s uspořádáním a<b<c
