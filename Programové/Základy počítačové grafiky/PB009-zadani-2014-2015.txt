@@ -1,0 +1,31 @@
+Zadání pro jaro 2014:
+
+1) Cohen-Sutherland - algoritmus, kdy pracuje špatne? - nakreslit, 2) rekombinace barevných stimulu, 3) definice prímkové plochy - konstrukce + navázání 2 plátu, 4) konstantní vs hladké stínování, 5) lineární transformace pro otocení objektu okolo roviny dané bodem a 2 vektory
+
+1) blokové schéma, 256/16 mil a paleta, 2) byly hermitovské plášte, jak je vytvoríte a jak spojíte dva pláty, 3) smysl pomocných a normálních hran (nevím to ted presne) ale chtel obrázek a je to jak se pomocá tech normálových vektoru dopocítává barva pixelu, tedy stíny 4) vyjmenujte zobrazovací algoritmy (tak nejak, ale chtel slyšet o tom algoritmu, který vykresluje postupne pixel po pixelu) a k nemu potom ješte nejaký algoritmus 5) transformace bodu Q, které melo být zrcadlove prevrácené podle roviny dané body A,B,C s tím, že A,B,C neleží na prímce.
+
+Co je Binary Space Partition (62)
+Nakreslit B-spline kubiku a prevod na Beziera (36.)
+Phonguv model zrcadlového odrazu (79.)
+Diagram CIE-xy (40.)
+Floyd-Steinbergova algoritmus, porovnání s rozptylovací 
+maticí (90.)
+
+
+První termín 2015 (28.05.2015) byl shodný s prvním termínem lonského roku. Trochu doplním zadání:
+
+1) Cohen-Sutherland - algoritmus, kdy pracuje špatne? - nakreslit; zadán byl obrázek nekonvexního polygonu, který vystupoval z okna a opet se do nej vracel, bylo nutno napsat vstup a výstup vrcholu. Bylo také nutno nakreslit diagram orezávacích jednotek a popsat funkci jedné této jednotky. 
+2) rekombinace barevných stimulu, vznik a dusledky 
+3) definice prímkové plochy - konstrukce, pokud máme zadány dve krivky:
+K1 = P1*(1-u) + P2*u
+K2 = P3*(1-u) + P2*u
+4) konstantní vs hladké stínování - interpolace barvy (Gouraud) a normály (Phong). Popsat, které je které + rozdíly.
+5) lineární transformace pro otocení objektu okolo roviny dané bodem A a 2 lineárne nezávislými vektory u, v okolo osy, která prochází bodem A. Objekt, který otácíme, je kolmo.
+
+
+Doplnek - další vypracované otázky. Jelikož nejsem autorem, nechci je sem nahrávat prímo, ale dám vám sem na ne odkaz. Dostupné k 28.05.2015:
+
+Srozumitelné, ctivé, nekteré nedoplnené: http://is.muni.cz/www/207578/7102949/PB009_98x9.pdf
+
+S komentárem od docenta Sochora až do otázky 28 (potom to vzdal). Nutno otevrít v Adobe readeru, komentáre jsou ve forme poznámek:
+http://www.fi.muni.cz/~sochor/PB009/otazkyKomentar.pdf 

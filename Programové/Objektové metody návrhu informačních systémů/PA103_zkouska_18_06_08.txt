@@ -1,0 +1,21 @@
+1) Byly dane navrhove tridy:
+
++-----+         +-------+
+|House|1------>1|Address|
++-----+         +-------+
+
++-----+         +-------+
+|House|1------>*|Address|
++-----+         +-------+
+
++-----+         +-------+
+|House|*------>*|Address|
++-----+         +-------+
+
+Prvni dve prevest na kod, druhou dekomponovat na navrhove tridy bez relace M:N
+
+2) Co je to zavislost mezi balicky? Popiste jake stereotypy se uplatnuji.
+3) Navrhovy vzor Memento. Aplikovatelnost, dusledky a aplikace.
+4) Neco ve stylu:
+Mame registr vozidel, ktery eviduje automobily a majitele. Ke kazdemu automobilu je vystaven technicky prukaz obsahujici informace o vozidle (typ, barva, datum vyroby) a SPZ. Kazdy automobil ma majitele, jeden majitel muze mit vic automobilu. Automobil si pamatuje i predchozi majitele. Automobily se deli na osobni a nakladni - osobni automobily jsou bud jednostope nebo dvoustope, nakladni jsou vzdycky dvoustope.
+Nakreslete diagram trid v notaci UML a uvedte nezbytne atributy.

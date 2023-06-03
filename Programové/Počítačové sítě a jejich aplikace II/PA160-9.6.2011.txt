@@ -1,0 +1,17 @@
+1. SDL co to je, naco to je vhodne. Nieco v zmysle skusit nakreslit alebo popisat tvorbu protokolu
+
+2. soft state v distribiovanych syst. co to je, kde sa to pouziva
+
+3. RPC co to je, ako to funguje. V com je lepsi RMI co RPC nevie. Ako to je s predavanim referenciou v RMI
+
+4. Migration v dist. Co to je, ake druhy mame a skusit popisat ako sa presunie rozpracovana uloha z A na B
+
+5. Aky je rozdiel medzi sender iniciated policy a receiver iniciated policy
+
+6. Problem zhody, co to je a rozdiel medzi silnou s slabou
+
+7. synchronny a asynchronny dist syst.
+
+8. co su webove sluzby a ake protokoly
+
+9. network managemenst - sprava sieti

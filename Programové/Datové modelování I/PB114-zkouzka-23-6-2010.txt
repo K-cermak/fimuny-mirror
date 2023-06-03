@@ -1,0 +1,16 @@
+15 teoretickych otazek a vytvoreni datoveho modelu. Otazky ramcove (co sem si zapamatoval):
+
+Co je to informace.
+KTO
+Kdy je atribut definovatelny nad mnozinou atributu B1...Bn
+Trivialni odvozeni
+Popsat normalni formy
+Implementace objektu, vztahu a atributu
+Jadro datoveho modelu
+Jak se nazyva princip, podle ktereho rozhodujeme o totoznosti funkci
+Popsat co to dela: lambda(x)lambda(y) [(sinx) = y]
+Lambda abstrakce obecne
+Co je valuace
+Co je mozny svet
+
+na posledni 3 si nevzpomenu.

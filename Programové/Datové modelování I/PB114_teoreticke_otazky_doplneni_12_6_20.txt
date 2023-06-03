@@ -1,0 +1,15 @@
+90 bodù celkem, zkouška za minimálnì 50 bodù
+30 bodù za model
+5 otázek po 6 bodech
+10 otázek po 3 bodech
+
+Co je to informace?
+Jaké znáte normální formy, popište je.
+Kdy je atribut definován nad B+, ..., Bn?
+Co je to typ.
+Definujte jádro datového modelu.
+Jak jsou implementovány objekty, vztahy a <cosi dalšího>?
+Popište konstrukci a napište, co konstruuje.
+Èím je urèen aktuální svìt?
+Co to je kardinalita funkce?
+Jak se jmenuje princip, podle kterého urèujeme identitu funkcí?

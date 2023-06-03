@@ -1,0 +1,13 @@
+Podzim 2016 termín 1
+Bylo 10 otázek celkem za 100 bodů.
+
+1. Jaký algoritmus používají link state algoritmy. Popište ho pseudokódem. Jaká změna je nutná aby algoritmus hledal nejširší cestu?
+2. Jaké algoritmy se používají v nestrukturovaných P2P sítích? Popište algoritmus postupného vnořování a uveďte příklad, kdy selže.
+3. Definujte náhodný graf. Jak se používá k modelování internetu? Jaká je podmínka aby neměl osamocené vrcholy?
+4. Popište Babrasiho model a srovnejte ho s Erdoganovým. Proč byl jeden z nich kritizován? (Jmená si přesně nepamatuju, ale to najdete ve slidech)
+5. Definujte disjunktivní graf. Jaké používá hrany a vrcholy. Napište ukázku grafu a rozvrhu pro 4 úlohy a 4 stroje tak, aby 2 úlohy běžely na 2 strojích a 3 úlohy na 3 strojích. (Je to opačná úloha k vytvoření grafu ze zdání, musíte všechno vymyslet sami.)
+6. Co jsou a kde se používají stromové směrovací struktury. Popište rozdíl mezi BATON a PGRID?
+7. Co to je globální centralita a k čemu se používá?
+8. Popište algoritmus shlukování.
+9. Co musí splňovat graf stromu aby byl binární. Kolik má úplný binární strom vrcholů. Zdůvodněte.
+10. Už si nepamatuju. :-(

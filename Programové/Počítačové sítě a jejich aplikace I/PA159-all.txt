@@ -1,0 +1,61 @@
+I
+Čo je to sieťový protokol? Napíšte definíciu. Ako sú protokoly štandardizované? Pre jednotlivé vrstvy OSI modelu uveďte príklady protokolov.
+Srovnejte TCP/IP a ISO/OSI model, popiste funkce vrstev, protokoly a algoritmy, ktere se zde pouzivaji. Zduvodnete existenci obou modelu.
+Popiste L2 vrstvu ISO OSI modelu, adresaci na teto vrstve, funkci vrstvy, protokoly a pripadne algoritmy, ktere se zde pouzivaji.
+L3 vrstva, účel, funkcie, spôsob adresácie, protokoly, algoritmy protokolov.
+Co je IP multicast, jaky L4 protokol vyuziva; vytvareni multicastovych skupin (+ protokoly).
+
+II
+Bezpečnosť v IPv6, spôsob zabezpečenia, schéma.
+Hlavicky datagramu v IPv6; typy adres. Uvedte priklad IPv6 adresy a pravidla pro zkracovani.
+Aké sú rozdiely medzi tvorbou hlavičiek v IPv4 a IPv6? Ako je v IPv6 riešená v hlavičke fragmentácia datagramu?
+Ako je riešená koexistencia IPv4 a IPv6? Vypíšte tri základné spôsoby jej riešenia a podrobne ich popíšte.
+Jakym zpusobem je v IPv6 resena mobilita? Popiste vcetne schematu.
+Neighbour discovery v IPv6.
+
+III
+Co jsou to Distance Vector smerovaci protokoly? Jak pracuji? Jmenujte 3 zastupce, jednoho z nich popiste detailne.
+Funkcie smerovača, schéma, účel, vplyv CIDR na smerovanie.
+Popíšte fyzické komponenty smerovačov a zakreslite ich do náčrtu.
+RIP vs OSPF - shody, rozdíly.
+Uveďte, čo je Trafic Engineering, ako a kedy sa používa. Aké metódy TE poznáte?
+Protokoly IGRP a EIGRP.
+Co znamena MPLS (Multiprotocol Label Switching) a jak pracuje; pro site jakeho rozsahu je vhodny? Co je to GMPLS?
+Co jsou to autonomni systemy a jakym zpusobem se zde resi smerovani? Proc je vyhodne AS zavadet?
+Jake jsou zakladni typy QoS based smerovacich algoritmu? Alespon jeden popiste podrobneji.
+Klasifikacia paketov a ich filtrovanie.
+
+IV
+TCP, opíšte varianty TCP protokolu pracujúce na L2 vrstve.
+Rizeni toku a zahlceni v TCP. Jak se pocita velikost vysilaciho okna v tradicnich TCP protokolech? Jak to ovlivnuje mnozstvi prenesenych dat na vysokorychlostnich linkach?
+Funkce TCP, faze prenosu, rozepsat Tahoe/Reno/Vegas.
+Popiste protokol RBUDP (Reliable Blast UDP). Do jake skupiny protokolu patri? Kdy ho lze s vyhodou pouzit?
+
+V
+Porovnanie P2P s Client-Server.
+Taxonomie P2P systémů, stručně charakterizovat každou kategorii.
+Co jsou overlay networks a kde se nachazeji.
+Smerovanie CHORD v P2P, popísať ako a kde sa používa. Ako v nej prebieha smerovanie?
+Popiste P2P site vyuzivajici PRR stromy a vyhledavani v nich.
+Popisat Pastry. Rozdiel medzi Tapestry a Pastry u P2P sieti.
+Popiste P2P systemy BATON a P-Grid. Jake grafove struktury vyuzivaji a cim se lisi?
+Popiste heuristicke smnerovaci strategie pouzivane v P2P sitich a alespon jednu z nich podrobneji. Zakladni problem heuristik?
+Vymenuj smerovacie protokoly používané v neštruktúrovaných P2P sieťach, opíš ako pracuje Interests based shortcuts
+CAN
+
+VI
+Čo je to VANET a aké sú rozdiely oproti mobilným ad-hoc sieťam?
+MANET, čo to je, porovnanie s P2P
+Porovnanie reaktivneho a proaktivneho ad-hoc smerovania, priklady protokolov.
+Jak pracuje reaktivni ad-hoc smnerovani (Reactive On demand Ad-hoc Routing)? Uvedte priklady konkretnich protokolu se strucnym popisem.
+Kde se používá a jak pracuje DSR protokol.
+Pristup k mediu pro WSN a Ad-hoc site. Identifikujte hlavni kriterium pouzitelnosti pro tyto protokoly; uvedte jejich klasifikaci a pro kazdou skupinu zastupce.
+
+VII
+Čo sú to multimediálne data a aké typy týchto dat rozlišujeme? Uveďte protokoly, ktoré multimediálne data spracovávajú a v skratke ich popíšte.
+Čo sú multimédiá, hlavné delenie na dve skupiny, komunikačné protokoly pre ich prenos s ohľadom na Realtime prenos.
+Ako prebieha digitalizácia zvuku, 3 formáty zvukového záznamu.
+Popiste prenosove a funkcni pozadavky multimedialnich sitovych aplikaci + protokoly.
+Popsat základní funkce RTP/RTCP/RTSP protokolů. Proč byly zavedeny?
+Jak odstarnit nebo alespon omezit chyby pri prenosu videa. Co to je a jakou ma stim souvislost Interleaving?
+Co to je Backward Error Correction a Forward Error Correction. Vcem se lisi, co z toho pouziva TCP. Uvedte priklad protokolu, ktery pouziva to druhe. Jake druhy potvrzovani paketu znate a jake pouziva TCP.

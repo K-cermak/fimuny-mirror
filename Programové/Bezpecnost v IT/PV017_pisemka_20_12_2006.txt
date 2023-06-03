@@ -1,0 +1,14 @@
+1)	Vyse potencialnich skod na aktivech A,B,C,D je ohodnocena {1,3,2,4}. 
+	Pravdepodobnost utoku {vysoka,stredni,vysoka,nizka}. Obtiznost vyuziti zranitelnych mist 
+	{nizka,stredni,velka,velka}. Seradte aktiva z hlediska vyznamu pro zajisteni bezpecnosti.
+
+2)	Vypiste faze reakce na detekci utoku
+
+3)	Vypiste a charakterizujte role v PKI
+
+4)	Napis obecnou strukturu v SSO (Single Sign-On) a popis role.
+
+5)	Standard ISO 15408
+
+6)	a) Napis cyklicky proces tvorby bezpecnostni politiky
+	b) Napis 6 fazi spravy rizik

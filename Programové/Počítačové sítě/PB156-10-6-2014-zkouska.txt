@@ -1,0 +1,30 @@
+PB156 Počítačové sítě 10.6.2014 zkouška
+Celkem 13 otázek:
+----------------------------------------
+
+1. Popište ad-hoc sítě. Jakým způsobem se vytvářejí. Popište ah-hoc síť Vatens (vehicular ad-hoc net). Čeho lze využít při směrování v této síti? Kde lze najít standardy?
+
+2. Popiště protokol RBUDP, k čemu se používá?
+
+3. Popiště distribuovanou verzi spanning tree algoritmu a kde se používá?
+
+4. Jaké parametry jsou důležité pro zaručení kvality služby, co byste se snažili zaručit?
+
+5. Jakou roli má DNS v internetu a jak funguje? Je nějaký rozdíl v DNS mezi IPv4 a IPv6?
+
+6. Popište relační vrstvu a její služby a napište příklady protokolů.
+
+7. Popište vrstvu datového spoje. Jakou používá adresaci, jaké má služby, jaké protokoly?
+
+8. Co je to komunikační protokol a co přdepisuje?
+
+9. Kde se nachází parametr TTL, jak funguje a jaké má použití?
+
+10. Classful a Classles adresování, jak funguje? Popište CIDR a NAT.
+
+11. Součástí rodiny IP protokolů je i jeden speciální řídící protokol. Napište jeho jméno a k čemu se používá.
+Myslím, že to měl být ICMP, ale kdo ví.
+
+12. Co jsou autonomní systémy a jak se liší směrování uvnitř a zvenku? Jaký je rozdíl mezi Path vector a Distance vector?
+
+13. Otázka o roundtripu.

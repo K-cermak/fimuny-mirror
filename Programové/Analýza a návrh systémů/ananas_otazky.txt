@@ -1,0 +1,12 @@
+Ananas - otázky sk.C, 19.12.2006
+--------------------------------
+
+1) Co to je cyklomatická slo¾itost? Jak se vypoèítá? Jaký má vztah k sw? Jaký má vztah k testování?
+
+2) Co je to transformaèní analýza a k èemu se pou¾ívá? Kdy je vhodné ji pou¾ít?
+
+3) Popi¹te postup analýzy pomocí SSADM.
+
+4) na DFD z obrázku najít v¹echny chybné nebo alespoò podezøelé prvky
+
+5) YMSA model Silvestrovkého inf. systému

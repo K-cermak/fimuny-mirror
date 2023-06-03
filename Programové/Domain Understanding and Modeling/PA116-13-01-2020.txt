@@ -1,0 +1,20 @@
+Písemka trvá 75 minut, obsahuje 5 úkolů (5 x 10 bodů).
+Hodnocení: A: 50 - 45, B: 44 - 40, C: 39 - 35, D: 34 - 30, E: 29 - 25, F: 24 - 0
+
+Popis systému / projektu:
+Informační systém knihovny eviduje čtenáře, knihy, rezervace knih, výpůjčky a všechny další údaje plynoucí z následujícího popisu. Čtenáři si knihy přes systém rezervují, fyzicky knihy vydává čtenáři knihovník. Je možné si rezervovat i knihu, kterou má aktuálně půjčenou jiný čtenář. Systém hlidá doby, kdy má být kniha vrácena a posílá čtenáři upomínky. Pokud kniha není vrácena ani do 5 dnů po zaslání upomínky, vystaví systém čtenáři pokutu.
+
+Pro výše nastíněný projekt vypracujte následující úkoly. Všechny úkoly se vztahují k jednomu projektu, jejich řešení si musí vzájemně odpovídat. Tam, kde umožňuje zadání nějakou volnost, je způsob řešení plně na Vás. Doporučuje se nejdříve si přečíst celé zadání úkolů. Tam, kde budete volit nějaké hodnoty, snažte se jejich vzájemný poměr volit tak, aby odpovídal pokud možno realitě.
+
+Úkoly
+
+Praktická část (vztahuje se k výše uvedenému popisu systému):
+1) Vytvořte datový slovník.
+2) Vytvořte ERD splňující 3. NF.
+3) Vytvořte systémový DFD.
+4) Pro jeden vybraný proces vytvořte minispecifikaci.
+
+Teoretická část (nevztahuje se k výše uvedenému popisu systému):
+1) Uveďte příklad datové položky, která je v 1. NF a současně není ve 2. NF. Uveďte příklad datové položky, která je ve 3. NF a současně není ve 2. NF. Pro obě položky uveďte, v čem spočívá splnění a porušení příslušných NF.
+
+Pište čitelně, na nečitelná řešení nebude brán zřetel.

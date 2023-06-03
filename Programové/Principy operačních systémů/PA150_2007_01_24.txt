@@ -1,0 +1,12 @@
+
+1. Round Robin - procesy P1, P2, P3, P4 s casmi 53, 17, 68, 24, vznikli naraz v case nula, v akom poradi sa ukoncia?
+
+2. strankovanie a segmentacia
+
+3. tranzakcie + ACID
+
+4. uviaznutie - definicia + vsetky 4 podmienky + 3 sposoby riesenia
+
+5. nejaka volba koordinatora medzi procesmi pomocou sprav ELECT, kolko sprav sa odosle
+
+6. producent - konzument, riesenie pomocou semaforu

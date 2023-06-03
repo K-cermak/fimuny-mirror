@@ -1,0 +1,19 @@
+- Describe KISS, example where it is not used and how to fix it
+- Integer overflow code example
+- String manipulation vulnerability code example and fix
+- Defects density, compare vulnerabilities from Coverity report
+- MAC system example
+- Fuzzing, how to generate input
+- Vulnerability of multiple APIs for one device
+- DLL preloading attack
+- TOCTOU example
+- Fortuna PRNG
+- Why is salt used with passwords
+- Bottom up code review
+- Diehard tests
+- DEP
+- Memory protection, how to bypass
+- Difference CppCheck Valgrind
+- Code example of false positive in static analysis
+- Code example of Helgrind detection
+- How to ensure code integrity

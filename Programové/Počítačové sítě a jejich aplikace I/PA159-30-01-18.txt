@@ -1,0 +1,14 @@
+90 minút, pomerne málo èasu ak toho chcete napísa dos. predmet minimálne na 3-4 dni uèenia.
+
+1 dátová vrstva, ako tam funguje adresovanie, aké sú topológie, èo ešte sa tam deje, aké grafové algoritmy sa tam vyuívajú?
+2 ako funguje mobilita v ipv6 + naèrtni schému
+3 security v ipv4 vs ipv6 (tuším e za najmenej bodov, asi 6 alebo 7)
+4 autonómne systémy, nieèo o nich, akı majú identifikátor
+5 ip packet filtering a classification, na èo slúi, aké pouíva algoritmy + opísa ich
+6 MPLS, naèo to je, ako funguje a èo je GMPLS
+7 aké (tuším) systémy vyuívajú viac kanálov naraz, opíš aspoò jeden z nich (asi tie approaches different from tcp)
+8 taxonómia P2P systémov, ku všetkému uveï minimálne vıhody a nevıhody
+9 systém zaloenı na PRR stromoch, opíš 
+10 prístup k médiu vo wsn, aké je delenie, porovnaj BTMA a PCM
+11 proaktívny vs reaktívny ad-hoc routing, akı je v nich rozdiel, uveï príklady protokolov a struène ich opíš
+12 traffic requirement delay, opíš všetky druhy/vplyvy a urèi ktoré môeme ovplyvni

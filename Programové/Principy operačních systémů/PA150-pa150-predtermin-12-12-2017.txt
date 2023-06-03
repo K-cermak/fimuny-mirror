@@ -1,0 +1,10 @@
+PA150 Principy operacnich systemu
+12.12.2017 Predtermin
+90 minut
+
+1. Popiste dvojfazovy zamykaci protokol.
+2. Popiste protokol riadenia subehu transakcii na baze validate.
+3. Popiste priebeh algoritmu Chang-Roberts.
+4. Priklad na bankarov algoritmus, 4 procesy, 4 prostriedky, uvedene matice Max a Allocation a pole Available. Rozhodnut ci sa danemu procesu mozu pridelit dane prostriedky a uviezt preco.
+5. Podmienky uviaznutia nutne a postacujuce + popisat wound-wait algoritmus.
+6. Popiste agoritmus skupinovej komunikacie so zachovanim poradia pomocou FIFO.

@@ -1,0 +1,16 @@
+PB007 - Zkouška 6.1.2011
+
+1. Napište definici 1.NF, 2.NF a 3. NF. 
+2. Jaký je postup metodiky SASS. Jaké používá prostøedky k modelování. 
+3. Co to je Diagram posloupností a jaké má souèásti. 
+4. Co to znamená prvotní DFD v metodice YMSA. Jak se vytváøí a co se s ním potom dìlá.
+
+5. Pohádka o princeznì.
+Úkoly: Sestavte Diagram užití (use-case), Dokumentaci pøípadu užití pro jeden vámi vybraný pøípad užití, 
+Stavovì-pøechodový diagram princezny a Diagram tøíd. 
+
+Sudièka hledá a provìøuje princezny (obvykle je požádá o nìco k snìdku), pokud je princezna dostateènì drzá, tak ji sudièka zakleje. 
+Princ hledá zakleté princezny, jakmile ji nalezne, pokusí se jí vysvobodit polibkem. 
+Než je mu ale umožnìno vykonat polibek, musí zodpovìdìt úkol. Úkoly a správné øešení jsou evidovány.  
+Princ získá za každou jím políbenou princeznu 1 bod. 
+Sudièka získává na konci hry 1 bod za každou jí zakletou princeznu, kterou nepolíbil žádný princ.  

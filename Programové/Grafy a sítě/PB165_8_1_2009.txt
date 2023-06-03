@@ -1,0 +1,25 @@
+1)definuj graf, orientovany graf a multigraf. Snazte sa pouzitr co nejpresnejsie definicie.
+
+2) definujste isomorfizmus grafu. Nakraslite vsetky neizomorfne grafy na 4 vrcholoch.
+
+3) definujte binarny strom. Ake existuju algoritmy prechadzania binarcnych stromov. Jeden popiste. Prechod algoritmu ukazte na priklade.
+
+4) Preco nefunguje dijkstrov algoritmus na grafoch so zapornymi hranami? K akym vysledkom mozme dospiet?
+
+5) Definujte maximalny cas konce uloh (makespan) Cmax a maximalne spzdeni (lateness) Lmax (uvedte formule). Vypocitajde tieto hodnoty pre  dany rozvrh
+
+--------------------------------------------
+Uloha               |1	2   3   4   5   6   
+--------------------------------------------
+Cas startu ulohy    |0	10  1   12  5   8   
+Doba travania	    |1	2   4   1   3   2
+Termin dokoncenia   |4	13  5   14  7   8
+--------------------------------------------
+
+6) Popiste algoritmus farbenia grafov so saturaciou
+
+7) Co je Vyvazovani zataze (Load balancig). Uvedte pri akych typoch uloch sa pouziva
+
+8) Napiste, ktora vlastnost plati pre velkost toku cez rez, ktory oddeluje zdoj od spotrebica. Intuitivne popiste ktorky dokazu vaseho tvdenia.
+
+9) Popiste nahodny orientovany graf a napiste jeho vyuzitie.

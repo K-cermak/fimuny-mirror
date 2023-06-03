@@ -1,0 +1,13 @@
+PA128 zk 4.6.2014
+
+Zadání bylo v angliètinì, jazyk vypracování byl volitelný. Sedìli jsme v konferenèní místnosti G418, všichni u jednoho velkého stolu. Na vypracování bylo 30 minut, ale nebyl problém psát déle, nikoho nehonil. Po vypracování si nás postupnì volal jednoho po druhém k sobì do kabinetu, kde se pøípadnì ještì doptal nebo vysvìtlil nìjaké nepøesnosti a navrhl známku. Kvádro není potøeba, nemìl ho nikdo.
+
+Zadání:
+1. Metrický Prostor: Definice a 3 pøíklady.
+2. Range query, k-NN.
+3. Pivot filtering: Motivace, filtering s 1 pivotem a se 2 pivoty.
+4. Ball partitioning, hyper-plane partitioning.
+5. Vantage Point Tree.
+6. D-index.
+
+Na zkoušce 12.5.2014 byly stejné otázky, jako v souboru PA128-pa128-zk16.5.2012.txt

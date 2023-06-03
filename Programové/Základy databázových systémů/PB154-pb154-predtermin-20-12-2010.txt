@@ -1,0 +1,42 @@
+1) a) jakej znak ma v relacni algebre prirozene spojeni
+   b) definujte prirozene spojeni pomoci elementarnich operaci relacni algebry
+
+2) nakreslete schema zpracovani dotazu (aneb co se deje mezi prikazem SELECT a vracenim vysledku)
+
+3) zapiste vyraz v SQL, ktery vraci pocet zamestnancu v kazdym meste na relaci zamestnanec(_id_,jmeno,prijmeni,mesto,...)
+
+4) a) tri jednotlive kroky pristupu klasickeho pevneho disku k datum (nepresne)
+   b) do jake kategorie pameti patri pevny disk
+
+5) postupne vkladejte asi 7 cisel do B+ stromu s n=4
+
+6) lide
+   ----------------------------------- (nepresne)
+   | _id_ | jmeno | prijmeni | mesto |
+   -----------------------------------
+   |   1  |  Petr |   Novak  |  Brno |
+   |   2  | Tomas |  Vomacka | Praha |
+   -----------------------------------
+
+   a) jaka je domena vyrazu { t | existuje s z lide (s[jmeno]=t[jmeno] ^ s[mesto]='Brno') } ?
+   b) je tento vyraz bezpecny? zduvodnete
+
+7) a) napiste tabulku o aspon 10 radcich odpovidajici relaci student(_uco_,jmeno,prijmeni)
+   b) vysvetlete na klici uco rozdil mezi hustym a ridkym indexem (nepresne)
+
+8) lide(id,jmeno,prijmeni,r.c.,adresa,mesto,psc,...)
+   (pak tam byly jeste jakysi vyplyvajici vztahy ci co... vypadalo to nejak takhle: id -> jmeno,prijmeni,... vubec nevim, co to bylo :))
+   a) urcete primarni klic
+   b) urcete vsechny kandidatni klice
+   c) urcete alespon dva superklice (jine nez v predchozich pripadech)
+
+9) nakreslete E-R model pro knihovnu evidujici knihy(isbn,autor,...), jejich exemplare(stav,datum porizeni) a zakazniky(jmeno,adresa)
+   - jedna kniha muze mit vice exemplaru
+   - zakaznici si pujcuji exemplare
+   - kazdy exemplar muze mit najednou pujceny jen jeden zakaznik
+   - urcete primarni klice a dalsi potrebny klice, pripadne doplnte atributy, aby to slo
+   - urcete nasobnosti vztahu
+   atd. (nepresne)
+
+10) zakaznik(_idzak_,jmeno,prijmeni,...), ucet(_cisloUctu_,zustatek,idzak)
+    v relacni algebre zapiste vyraz, ktery vraci jmeno a prijmeni zakazniku, kteri maji na nekterem ze svych uctu zustatek vetsi nez 2500 Kc

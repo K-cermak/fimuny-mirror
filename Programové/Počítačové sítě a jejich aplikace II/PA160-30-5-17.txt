@@ -1,0 +1,11 @@
+PA160 - 30.5.2017 skupina B (v ten termin pre vsetkych rovnaka)
+
+Principy bezpecnosti v sieti.
+Moznosti autentizacie pri asymetrickom sifrovanie.
+RPC - ake chyby mozu nastat a ako sa riesia?
+Co je a na co sa pouziva XDR?
+Co a naco je IDL a DII?
+Co je Oauth a aky ma suvis s OpenIDConnect?
+Fault tolerance v DS, co je K-fault-tolerant?
+Co je SMI?
+Co sa da robit ak mame popis SDL aj MSC?

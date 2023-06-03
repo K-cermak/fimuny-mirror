@@ -1,0 +1,4 @@
+1) Co je to software a z coho sa sklada
+2) K comu sluzi korekcny faktor pri COCOMO a ako sa vypocita?
+3) Uvedte a popite Putnamovu rovnicu. Vysvetlite na co sluzi.
+4) Ake su hlavne zasady Agilneho programovania?

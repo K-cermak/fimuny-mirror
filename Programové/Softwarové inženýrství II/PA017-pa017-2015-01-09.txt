@@ -1,0 +1,4 @@
+1. Select Perspective, popsat modely a poøadí jejich vytváøení. [SWE2_07, slide 10]
+2. 3 výhody a 2 nevýhody inkrementálního životního cyklu. [SWE2_01; slide 25,26]
+3. Cocomo II, popsat 3 modely. [SWE2_03; slide 9]
+4. Jaké metriky používá Coupling + popsat. [SWE2_09; slide 37,38]

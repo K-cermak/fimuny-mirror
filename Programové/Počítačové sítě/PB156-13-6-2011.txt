@@ -1,0 +1,21 @@
+1.napiste iso/osi model presne jak jdou vrstvy za sebou a napiste na jake se vyuziva CRC.
+
+2. rozdil mezi IPv6 a IPv4 ktere hlavni vyhody povazuji za nejdulezitejsi a proc.
+
+3. popiste protokol UDP. a kde bych ho pouzil.
+
+4. adresovani v external sitich. a protokoly ktere vyuziva
+
+5. popsat 4B5B, a vypsat dalsi typy digitalniho kodovani
+
+6. podepisovani digitalnim podpisem
+
+8. icmp
+ 
+9. centralizovane vs. distribuovane smerovani, ktere znich se pouziva v Internetu jeho vyhody, a kde by sme pouzili to druhe.
+
+10. potvrzeni prijeti paketu v TCP
+11. Source Based Tree
+12. rozdil mezi pozadavky na sit z pohledu prenosu audia vs. videa
+
+13-6-2011

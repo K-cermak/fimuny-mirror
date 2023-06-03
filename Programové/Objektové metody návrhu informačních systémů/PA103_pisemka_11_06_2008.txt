@@ -1,0 +1,6 @@
+11.6.2008 SKUPINA B
+
+1. Asociacni trida - vysvetlit, kde sa pouziva, nacrtnout jednoduchy priklad.
+2. Toky udalosti, kde sa vyuzivaju, aky je rozdiel medzi nimi a scenarom.
+3. Model-Driven Architecture, vysvetlit, ake modely zahrnuje.
+4. Sekvencni diagram.

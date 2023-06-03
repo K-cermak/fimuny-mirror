@@ -1,0 +1,14 @@
+PB154 - predtermin 14.12.2009
+
+1) definujte v relacni algebre operaci vnitrinho spojeni pomoci standardních operací rel. alg.
+2) co je to transakce a vlastnosti
+3) SQL dotaz nad zakaznik(jmeno, mesto, ulice...) - dotaz ma vracet jmena a mesta vsech zakazniku, jejich ulice konci na "horska" napr. "zelenohorska"
+4) tri casove nejnarocnejsi slozky pristupu k datum(tak nìjak)
+5) urcit domenu a zda je bezpecna u vyrazu {t | E z je prvkem zakaznik(t[jmeno]=z[jmeno] && s[mesto="Brno"])} (tak nejak byl ten vyraz priblizne)
+6) vypsat E-R model, konkretne si na priklad nevzpominam
+7) dotaz v relacni algebre vypsat jmena a prijmeni zakazniku, jejichz ucet ma vetsi zustatek nez 2500
+zakaznik(jmeno, prijmeni, id) ucet(zustatek, id_zak)
+8) urcit u relace primarni klic, kandidatni klice a super klice(jine nez dva predchozi)
+9) zkonstrukce B+ stromu - postupnì vkládat do B+ stromu n=4
+vkládalo se asi 6 prvkù..
+10) ???

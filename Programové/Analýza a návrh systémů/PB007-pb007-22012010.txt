@@ -1,0 +1,8 @@
+Písemka z 22.1.2010 (alespoň jak si přibližně pamatuji).
+
+1) Popsat úplnou funkční závislost (2.NF). Ukázat na příkladu, který porušuje 2.NF a převést tak, aby 2.NF neporušoval.
+2) Popsat vyvažování STD a CDFD. Ukázat na příkladu.
+3) Popsat komunikační diagram UML.
+4) Popsat transformační analýzu. Postup. Co je vstupem a co výstupem. Kdy se používá.
+5) Vytvořit kontextový diagram, ERD, prvotní DFD podle YMSA, seznam událostí (alespoň 8). (bylo více skupin, jedna měla i minispecifikaci)
+  Zadání dietní kuchyně ze slaidů s drobnou obměnou. Oddělení objednává jídlo, 4x denně upřesňuje. Lékař svému oddělení předepisuje a edituje diety. "Kuchař" z kuchyně bere objednávky na jídla.

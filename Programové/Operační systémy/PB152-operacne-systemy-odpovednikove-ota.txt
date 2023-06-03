@@ -1,0 +1,92 @@
+Odpovedníkové otázky, bez vyznaèenıch správnych odpovedí, 
+ak máte ïalšie alebo ak poznáte správne odpovede bola by som rada ak by ste pridali dalšie.
+
+1. Jaké existují reimy procesoru a co znamenají?
+	- Uivatelskı (programy) a privilegovanı (jádro)
+	- Offline, normálni (ethernet) a bezdrátovı (pøi pouití WiFi, 3G a pod.)
+	- Reim plánovací (pouitı pro plánovaní procesù) a normální.
+	- Uivatelskı a privilegovanı (pro programy spuštené administrátorem).
+2. Co je blokové zaøízení?
+	- Umoòuje èíst nebo zapisovat posloupnost blokù v pevném poøadí.
+	- Zaøízení, které umoòuje zápis a ètení libovolnì velkıch blokù dat
+	- Je to zaøízení, na kterém lze vytvoøit souborovı systém.
+	- Zaøízení, které je adresováno po blocích variabilní velikosti.
+3. Co je to mutex?
+	- Jeden z implementaèních mechanizmù pro ochranu kritickıch sekcí.
+	- Jinı název pro semafor.
+	- Je to speciálni soubor urèenı k synchronizaci.
+	- Libovolné synchronizaèné zaøízení.
+4. Co je MMU (Memory Management Unit)?
+	- Pøekladová jednotka majíci za úkol spravovat Pamì programu.
+	- Knihovna pro práci s pamìtí.
+	- Èást jádra, která má na starosti správu pamìti.
+	- Provádi pøeklad adres na základe stránkovıch tabulek (page tables).
+5. Co dìlá funkce exec()?
+	- Zabije bìíci proces.
+	- Naète spustitelnı soubor a vytvoøí pro nìj novı proces.
+	- Zjistí, zda je danı soubor spustitelnı.
+	- Naète spustitelnı soubor a zaène jej vykonávat v souèasném procesu.
+6. Jaké sú ulohy operaèního systému?
+	- Všechno z: pøidelování procesoru, správa procesù, vyhodnocováni rizik.
+	- Všechno z: správa software, abstrakce hardware, správa pamìti.
+	- Všechno z: frekvenèní modulace, správa procesù, abstrakce hardware
+	- Všechno z: tvorba diagramù, správa middleware, abstrakce hardware.
+7. Co je uváznutí (deadlock)?
+	- Problém, kde mnoina vláken díky chybì synchronizace nemùe pokraèovat.
+	- Uváznutí nastane kdeykoliv poadované zaøízení není k dispozici.
+	- Je to doèasné zpomalení vıpoètu zpùsobené pøetíením procesoru.
+	- Mùe nastat pouze pøi chybe hardware-u.
+8. Podmínky uváznutí jsou právì tyto:
+	- vzájemné vylouèení (mutual exclusion), cyklické èekání (circular wait),
+	omezení reálného èasu (real-time constraint), èekání v kritické sekci (hold and wait).
+	- neodnímatelnost zdroje (non-preemptability), èekání na zdroje (wait), 
+	vzájemné vylouèení (mutual exclusion), cyklické èekání (circular wait)
+	- cyklické èekání (circular wait), èekání v kritické sekci (hold and wait),
+	neodnímatelnost zdroje (non-preemptability), vzájemné vylouèení (mutual exclusion)
+	- lineární èekání (linear wait), vzájemné vylouèení (mutual exclusion),
+	vylouèení tøetího (excluded middle), neodnímatelnos zdroje (non-preemptability)
+9. Jaké jsou základní komponenty operaèního systému?
+	- Všechno z: systémové sluby (services), jádro (kernel), pøekladaè jazyka C99.
+	- Všechno z: støed (center), jádro (krnel), uivatelské knihovny.
+	- Všechno z: systémové knihovny, jádro (kernel), uivatelské rozhraní.
+	- Všechno z: jádro (kernel), firmware, uivatelské rozhraní.
+10. Co dìlá linker?
+	- Pøekládá zdrojové kódy na spustitelné binárky.
+	- Sestavuje statické knihovny ze spustitelnıch programù.
+	- Pøekládá zdrojové kódy na sdílené knihovny.
+	- Kombinuje objektové soubory a knihovny do spustitelnıch souborù.
+11. Co znamená vstup/ vıstup mapovanı do pamìti (memory-mapped IO)?
+	- Jedná se o kopírování dat mezi diskem a pamìtí funkcemi read() a write().
+	- Vstup nebo vıstup realizovanı instrukcemi ètení/zápisu (virtuální pamìti).
+	- Je to mechanizmus simulace vstupu/vıstupu pro úèely ladìní programù.
+	- Realizace pøístupu do pamìti pomocí funkcí pro zápis a ètení souborù.
+12. Co je jádro (kernel) operaèního systému?
+	- Jádro tvoøí veškerı dodanı software dodanı s operaèním systémem.
+	- Základní software beíci v uivatelském reimu procesoru.
+	- Souèást OS, která zabezpeèuje izolaci a bezpeènost na nejniší úrovni.
+	- Jádro spravuje uivatelské identity.
+13. Co je vstupnì-vıstupní plánovaè (IO scheduler)?
+	- Plánuje pravidelné zálohy souborového systému.
+	- Rozhoduje o poøadí ètení a zápisu na blokovém zaøízení.
+	- Rozhoduje o alokaci volného místa v souborovém systému.
+	- Rozhoduje o pøidelování blokù jednotlivım souborùm.
+14. Co je to race condition?
+	- Situace, kde program nemùe pokraèovat ve vıpoètu.
+	- Situace, kdy více procesù soutìí o omezené zdroje.
+	- Je to sunchronizaèní zaøízení urèené k probouzení spících procesù.
+	- Neèakané seøazení soubìnıch událostí.
+15. Co je to proces?
+	- Metóda kontroly kvality kódu.
+	- Program, kterı aktuálnì není provádìn.
+	- Mechanizmus komunikace jádra s programem.
+	- Virtuální adresní prostor kterı mùe obsahovat jedno nebo více vláken.
+16. Co je to API (Application Programming Interface)?
+	- Konvence, která popisuje vyuití jednotlivıch registrù procesoru.
+	- Programovací rozhraní na úrovni jazyka C.
+	- Seznam poèáteèních adres (entry point) funkcí dané knihovny.
+	- Rozhraní mezi rùznymi operaènímy systémy.
+17. Co je to 'symbol' v objektovém souboru?
+	- Název promìnné nebo funkce.
+	- Obrázek reprezentujíci promìnnou nebo funkci.
+	- Symbol e numerická hodnota náleící virtuálni adrese.
+	- Èíslo, které unikátnì popisuje promìnnou nebo funkci.

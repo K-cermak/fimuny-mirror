@@ -1,0 +1,12 @@
+Termin 22.1.2019
+
+1. Z jakych casti se sklada system strojoveho prekladu zalozen na neuronovych siti? Jednotlive casti popiste.
+2. Co je to pragmatika? Popsat interni vs externi pragmatiku.
+3. Nejcastejsi format pro slovnikova hesla. Popsat vyhody. Existuji standardy pro zapis?
+4. Popsat VerbaLex. Co vsechno obsahuje zaznam?
+5. Semanticke rysy, co to je a jejich nevyhody.
+6. Co jsou korpusy a k cemu jsou? K cemu je diachronni korpus (co muzeme pozorovat konkretne napr. v Corpus of Contemporary American English vydavany od 1990)? Priklad dokumentu pro paralelni korpusy.
+7. Problemy u rozpoznavani pojmenovanych entit. Alespon 2 + priklady.
+8. Jake vyhody prinaseji word embeddings?
+9. Prevest vetu na formuli predikatove logiky: "Petr ma rad vsechny sve spoluzaky."
+10. Slozkovy a zavislostni strom pro vetu "Karel mluvil o sexu s Britney Spears". Bylo jedno jaky vyklad zanalyzujeme, ale oba stromy musely byt stejneho vykladu.

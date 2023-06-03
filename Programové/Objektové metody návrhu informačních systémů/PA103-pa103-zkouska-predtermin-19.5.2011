@@ -1,0 +1,9 @@
+4 otazky, kazda za 10 bodu, 90 minut, bodovani podle prvni prezentace
+
+1. Rozdily mezi agilnim a rigoroznim vyvojem sw, kazdy strucne popsat, jaky maji vztah k pouzivani UML, u kazdeho uvest priklad metodiky, napsat rozdil z pohledu funkcnost-cas-zdroje.
+
+2. Co to znamena, ze je trida abstraktni. Kazdy objekt ma tri charakteristiky - vyjmenovat je, kratce popsat, ktere z nich budou ovlivneny tim, ze je trida abstraktni a jak budou ovlivneny.
+
+3. Navrhovy vzor Strategy - do ktere kategorie patri (bylo na vyber z peti moznosti - architektonicky, analyticky, navrhovy, neco a jiny, mela se zakrouzkovat spravna). Pak tam byl nakresleny, popsany co dela a meli jsme nakreslit sekvencni diagram toho, jak se pouziva (je to v prezentaci).
+
+4. Prakticky ukol - nakreslit analyticky model trid zakladni skupiny MS v hokeji. Zkracene zadani - tymy jsou rozdeleny do skupin, ktere jsou oznaceny pismeny (skupina A atd.). Jednotlive tymy ve skupine mezi sebou hraji utkani v dany cas, poradi ve skupine je dano rozdilem ve skore. Mely byt podchyceny vsechny informace v popisu, vsechny ostatni byly zbytecne. (Zadani neni uplne presne, ale nejak tak to bylo).

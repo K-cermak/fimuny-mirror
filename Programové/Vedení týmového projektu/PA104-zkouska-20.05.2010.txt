@@ -1,0 +1,14 @@
+PA104 Vedení tımového projektu - pøedtermín 20.05.2010
+
+Kadá otázka za 10b., max. 40b. Na Éèko staèí polovina.
+
+Zadání projektu: 
+	Vytvoøte modul pro informaèní systém vysoké školy, pro pøihlašování se na zkoušky (podobnì jako v ISu).
+	Stávající informaèní systém je webová aplikace v Perlu. Vaše firma ma zkušenosti s webovımi aplikacemi, 
+	ale doposud nepracovala s Perlem.
+
+1. Vytvoøte WBS, síovı diagram, ganttùv diagram.
+2. Naleznìte kritickou cestu a vypoèítejte pro ní PERT.
+3. Napište seznam EI, EO, EQ, ILF, EIF, které se nacházejí v tomto projektu a popište, jak byste
+   vypoèítali neupravené a upravené funkèní body.
+4. Navrhnìte plán testování. Popište, co byste v jednotlivıch testech testovali a jakım zpùsobem.

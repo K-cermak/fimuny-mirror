@@ -1,0 +1,15 @@
+programovani numerickych vypoctu 10.6.2014
+
+otazky 1-9 po 1 bod, otazka 10 za 3 body
+
+1.cisla v plovouci radove carce - jake jsou problemy pri scitani,odcitani,nasoveni a deleni
+2.fragment kodu kdyz vim ze x>y pro promenne x a y a zatížené chybou +-0.2%
+3.pro nelinearni rovnici jedne promenne uvest optimalizaci
+4.metoda zlateho rezu -jak funguje,odvodit optimalni rez a separaci
+5.simplexova metoda
+6.proc je vyhodnejsi pro novodobe procesory s rychlou pameti nasobeni matice*matice ney matice*vektor
+7.kde je chyba pri skolni gaussove eliminaci a jak to resit
+8.metoda nejmensich ctvercu-obecne zadan zacatek a ukazat jak by to pokracovalo
+9.popsat rotace ve 3D(eulerovy uhly, 3x3 matice, kvaterniony)-porovnat, vyhody a nevyhody
+10. napsat pseudokod na kyvadlo o nejake delce a hmotnosti tusim, t=0, 0<alfa<pi/2,alfa je uhel pod kterym se kyvadlo hybe a ten pseudokod napsat
+pomoci dopredne a zpetne eulerovy metody(takze dva pseudo kody)

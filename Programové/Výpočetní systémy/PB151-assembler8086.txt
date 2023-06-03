@@ -1,0 +1,766 @@
+78.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+
+	mov dx,mesg
+	mov ah,9
+	int 21h
+	hlt
+
+segment	data
+mesg	db 'Testuji segment','$'
+
+segment	stack
+	resb 6
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+79.
+
+cpu 8086
+segment	code
+..start	mov ax,data
+	mov ds,ax
+	mov ax,stack
+	mov ss,ax
+	mov sp,dno
+	mov bx,XXXXXX
+	mov ax,[bx]
+	mov [XXXXXX],ah
+	
+	hlt
+
+segment	data
+XXXXXX	db ?
+XXXXXX dw 19711
+        db 252
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+80.
+
+cpu 8086
+segment	code
+	resb 256
+..start	mov bx,code
+	mov cs,bx
+	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov bx,excess
+	mov es,bx
+	mov al,[XXXXXX]
+	mov cs:[119],al
+	mov ds:[119],al
+	mov ss:[119],al
+	mov es:[119],al
+	mov al,[XXXXXX]
+	mov bx,[XXXXXX]
+	mov cs:bx,al
+	mov ds:bx,al
+	mov ss:bx,al
+	mov es:bx,al
+	hlt
+
+segment	data
+	resb 256
+XXXXXX	db ? 
+XXXXXX	db ? 
+XXXXXX	dw ?
+
+segment	stack
+	resb 256
+dno:	db ?
+
+segment excess
+	resb 256
+-------------------------------------------------------------------------------------------------
+81.
+
+cpu 8086
+segment tabulka
+	resb 1024
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov bx,tabulka
+	mov es,bx
+	mov word es:[0],XXXXXX
+	mov word es:[2],cs
+	xor ax,ax
+	div al
+	xor ax,ax
+	div al
+	xor ax,ax
+	div al
+XXXXXX	hlt
+XXXXXX	mov dx,mesg
+	mov ah,9
+	int 21h
+	pop ax
+	add ax, 2
+	push ax
+	iret
+	hlt
+
+segment	data
+mesg	db 'Division by zero', 0Dh, 0Ah, '$'
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+82.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov bx,XXXXXX
+	mov cl,[XXXXXX]
+	xor dl,dl
+	smycka:
+	add dl,ds:[bx]
+	inc bx
+	loop smycka
+	hlt
+
+segment	data
+XXXXXX	db 5
+XXXXXX	db 1
+	db 2
+	db 3
+	db 4
+	db 5
+	resb 127
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+83.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov bx,XXXXXX
+	mov cx,[XXXXXX]
+	xor dx,dx
+	smycka:
+	mov al,ds:[bx]
+	cbw
+	add dx,ax
+	inc bx
+	loop smycka
+	hlt
+
+segment	data
+XXXXXX	dw 5
+XXXXXX	db 1
+	db 2
+	db 3
+	db 4
+	db 5
+	resb 1500
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+84.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov bx,XXXXXX
+	mov cx,[XXXXXX]
+	xor dx,dx
+	smycka:
+	add dx,ds:[bx]
+	add bx,2
+	loop smycka
+	hlt
+
+segment	data
+XXXXXX	dw 5
+XXXXXX	dw 1
+	dw 2
+	dw 3
+	dw 4
+	dw 5
+	resb 1500
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+85.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov ax,[XXXXXX]
+	add ax,[XXXXXX]
+	mov [XXXXXX],ax
+	mov ax,[XXXXXX+2]
+	adc ax,[XXXXXX+2]
+	mov [XXXXXX+2],ax
+	hlt
+
+
+segment	data
+XXXXXX dd 1
+XXXXXX	dd 2
+XXXXXX	dd ?
+
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+86.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov ax,[XXXXXX]
+	cwd
+	mov si,ax
+	mov di,dx
+	mov ax,[XXXXXX]
+	cwd
+	add si,ax
+	mov [XXXXXX],si
+	adc di,dx
+	mov [XXXXXX+2],di
+	hlt
+
+
+segment	data
+XXXXXX	dw 1
+XXXXXX	dw 2
+XXXXXX	dd ?
+
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+87.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov bx,XXXXXX
+	mov cx,[XXXXXX]
+	xor ax,ax
+	xor dx,dx
+	xor si,si
+	xor di,di
+    	smycka:
+    	mov ax,ds:[bx]
+    	cwd
+    	add si,ax
+	adc di,dx
+    	add bx,2
+    	loop smycka
+    	mov ax,si
+	mov dx,di
+	hlt
+
+segment	data
+XXXXXX	dw 5
+XXXXXX	dw 1
+	dw 2
+	dw 3
+	dw 4
+	dw 5
+	resb 1500
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+88.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov bx,XXXXXX
+	mov cx,[XXXXXX]
+	xor ax,ax
+	xor dx,dx
+    	smycka:
+    	add ax,ds:[bx]
+	inc bx
+	inc bx
+	adc dx,ds:[bx]
+	add bx,2
+    	loop smycka
+	hlt
+
+segment	data
+XXXXXX	dw 5
+XXXXXX	dd 1
+	dd 2
+	dd 3
+	dd 4
+	dd 5
+	resb 1500
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+89.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov ax,[XXXXXX]
+	mov bx,ax
+	call XXXXXX
+	mov [hexnum+1],bl
+	shr bl,4
+	call XXXXXX
+	mov [hexnum],bl
+	mov ah,9
+	mov dx,hexnum
+	int 21h
+	hlt
+XXXXXX	and bl,0FH
+	cmp bl,9
+	jg XXXXXX
+	add bl,30h
+	jmp done
+XXXXXX	add bl,37h
+done	ret
+
+segment	data
+XXXXXX	db 0
+hexnum	dw 0
+	db 13, 10,'$'
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+90.
+
+cpu 8086
+segment tabulka
+	resb 1024
+	
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov bx,tabulka
+	mov es,bx
+	
+	mov word es:[10h],XXXXXX
+	mov word es:[12h],cs
+	mov cx,[XXXXXX]
+	mov di,0
+	
+	smycka:
+	xor al,al
+	mov al,[XXXXXX+di]
+	add al,[XXXXXX+di]
+	into
+	mov bx,di
+	inc bx
+	mov di,bx
+	loop smycka
+	hlt
+	
+hex	and al,0FH
+	cmp al,9
+	jg XXXXXX
+	add al,30H
+	jmp done
+XXXXXX	add al,37H
+done	ret
+
+XXXXXX 	push cx
+	mov cl,4
+	mov ax,bx
+	call hex
+	mov [kod+3],al
+	shr bx,cl
+	mov ax,bx
+	call hex
+	mov [kod+2],al
+	shr bx,cl
+	mov ax,bx
+	call hex
+	mov [kod+1],al
+	shr bx,cl
+	mov ax,bx
+	call hex
+	mov [kod],al
+	mov ah,9
+	mov dx,mesg
+	int 21h
+	mov ah,9
+	mov dx,kod
+	int 21h
+	pop cx
+	iret
+
+segment	data
+XXXXXX	dw 5
+XXXXXX db -70
+	db -2
+	db 60
+	db -91
+	db 100
+	resb 10000
+XXXXXX db -90
+	db 3
+	db 80
+	db -63
+	db 2
+	resb 10000
+kod    db ?,?,?,?,13,10,'$'
+mesg	db 'overflow',32,'$'
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+91.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov ax,[minbd]
+	mov bx,[maxbd]
+	mov cx,[hodbd]
+	cmp cx,ax
+	jle ano
+	jmp next
+ano	mov dx,msga
+	mov ah,9
+	int 21h
+	hlt
+next	cmp cx,bx
+	jl ne
+	jmp ano
+ne	mov dx,msgn
+	mov ah,9
+	int 21h
+	hlt
+
+segment	data
+hodbd	dw 1
+minbd	dw 2
+maxbd	dw 5
+msga	db 'ano',13,10,'$'
+msgn	db 'ne',13,10,'$'
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+92.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov ax,[XXXXXX]
+	mov bx,[XXXXXX]
+	mov cx,[XXXXXX]
+	cmp cx,ax
+	jbe ano
+	jmp next
+ano	mov dx,msga
+	mov ah,9
+	int 21h
+	hlt
+next	cmp cx,bx
+	jb ne
+	jmp ano
+ne	mov dx,msgn
+	mov ah,9
+	int 21h
+	hlt
+
+segment	data
+XXXXXX	dw 1
+XXXXXX	dw 2
+XXXXXX	dw 5
+msga	db 'ano',13,10,'$'
+msgn	db 'ne',13,10,'$'
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+93.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	push word[XXXXXX]
+	push word[XXXXXX]
+	call XXXXXX
+	hlt
+XXXXXX	mov bp,sp
+	mov ax,[bp+2]
+	add ax,[bp+4]
+	ret 4
+
+segment	data
+XXXXXX	dw 5
+XXXXXX	dw 4
+
+segment	stack
+	resb 64
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+94.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+	mov bp,3633
+	mov bx,XXXXXX
+	push bx
+	mov bx,XXXXXX
+	push bx
+	call XXXXXX
+	hlt
+XXXXXX	push bp
+	mov bp,sp
+	push bx
+	mov bx,[bp+6]
+	mov ax,ds:[bx]
+	add ax,ds:[bx+4]
+	mov dx,ds:[bx+2]
+	adc dx,ds:[bx+6]
+	pop bx
+	pop bp
+	ret 8
+
+segment	data
+XXXXXX	dd 2
+XXXXXX	dd 3
+
+segment	stack
+	resb 64
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+95.
+
+cpu 8086
+segment code
+..start mov bx,code
+        mov cs,bx
+    	mov bx,data
+        mov ds,bx    
+        mov bx,stack
+        mov ss,bx
+        mov bx,bottom
+        mov sp,bx
+    
+        mov bx,end
+        mov ds:XXXXXX,bx
+    
+        mov bx,XXXXXX
+        mov ds:[bx+2],cs
+    
+       	mov bx,XXXXXX
+        mov es,bx
+    
+        mov bx,[XXXXXX]
+        mov es:[bx],word XXXXXX
+
+        mov dx,XXXXXX
+        mov es:[bx+2],dx 
+
+        jmp far [XXXXXX]
+    
+end     hlt
+
+segment data
+XXXXXX  dw XXXXXX
+    	dw XXXXXX
+XXXXXX  dd 0ffffffffh
+    	resb 64
+
+segment stack
+        resb 64
+bottom: db ?
+-------------------------------------------------------------------------------------------------
+96.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+
+	mov dx,[XXXXXX]
+	cmp dx,1
+	jle jedna
+	jmp next
+
+jedna	mov ax,1
+	mov dx,0
+	hlt
+
+next	mov cx,[XXXXXX] 
+	dec cx
+	mov ax,1
+	mov bx,1	
+	smycka:
+	inc bx
+	mul bx
+	loop smycka
+	hlt
+
+segment	data
+XXXXXX	dw 8
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+97.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+
+znak	mov ah,1
+    	int 21h
+	cmp al,0
+	jne prog
+	jz konec
+
+prog	mov bl,al
+	cmp bl,61h
+	jge next
+	jmp pridani
+	
+next   	cmp bl,7ah
+	jle upper
+	jmp pridani
+	
+upper	sub bl,20h
+	jmp pridani
+	
+pridani	mov ah,2
+	mov dl,bl
+    	int 21h
+	jmp znak
+konec	hlt
+
+segment	data
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------
+98.
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+
+radek	mov ah,0x0a
+	mov dx,nacteno
+    	int 21h
+	mov al,[nacteno+1]
+	cmp al,0
+	jne size
+	jz konec
+	
+size	mov bl,[XXXXXX]
+	cmp al,bl
+	jle radek
+	mov [XXXXXX],al
+	jmp radek
+konec	hlt
+
+segment	data
+nacteno	db 255, ?
+	resb 255
+XXXXXX	db 0
+
+segment	stack
+	resb 16
+dno:	db ?
+-------------------------------------------------------------------------------------------------

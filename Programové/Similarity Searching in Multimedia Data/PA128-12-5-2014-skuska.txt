@@ -1,0 +1,14 @@
+pa128 zk 12.5.2014
+
+zadani je v anglicnite, jazyk vypracovani je mozne si zvolit
+
+1. metricky prostor: definice a 3 priklady
+2. vyjmenovat 3 typy dotazu a definovat range query a nearest neighbour query
+3. pivot filtering: motivace, priklad, definice
+4. precision, recall
+5. Burkhard-Keller Tree
+6. m-tree vlastnosti a idea
+
+Na ustnom pohovore sa pytal:
+1. kamosov na Minskeho metriky, konkretne na vzorec na Euklidovsku vzdialenost
+2. mna na rozdiel medzi splitovanim v Slim a M tree, na Jaccardov koeficient

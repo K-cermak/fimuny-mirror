@@ -1,0 +1,7 @@
+1. Ktere diagramy patri mezi UML? (Composite Diagram,Data Flow Diagram, Activity Diagram, Message Sequence Chart, Time Diagram)
+2. Co platí o inkrementálním vývoji? (Patøí k agilním metodám; patøí k waterfall metodì; zákazník dostane celý produkt najednou; zákazník mùže využívat urèitou funkcionalitu produktu i pøedtím než je dokonèen jeho vývoj; menší riziko selhání projektu)
+3. Co plati o model checking? (Je vypocetne nenarocne...)
+4. Co plati o zavislosti (dependency)? (Vyskytuje se vyhradne mezi dvema tridami; Vyskytuje se mezi tridami, baliky, objekty...)
+5. Cim se zabyva testovani komponent (component testing)? (Objekty, interakce mezi komponentami, rozhrani komponent - spravne)
+6. Co to znamená SSADM? (Structured System Analysis and Design Method - spravne)
+7. Jak nazyvame software ktery je pouzivan, ale uz na nem nejsou provadeny zadne upravy? (Serviced, Phase-out -spravne)

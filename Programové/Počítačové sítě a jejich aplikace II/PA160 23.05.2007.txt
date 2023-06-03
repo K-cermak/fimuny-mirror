@@ -1,0 +1,27 @@
+PA160 23.05.2007 skupina A
+
+1. Jakym zpusobem se v IPv6 resi otazka zabezpeceni mobilnich klientu? Co 
+je to return route ability procedure? (16b)
+
+2. TCP a rychle site a velky RTT - problemy a jak resit - 3 zpusoby reseni
+
+3. Popiste WSDL na co je v SOAP, vlastnosti + struktura WSDL
+
+4. Failure Detector - k cemu slouzi, vlastnosti, pouziti? perfektni detektor - pouziva se v praxi?
+
+5. rozdil optickych siti od klasickych, zakladni prvky siti
+
+6. Diskutujte využití anycastu prímo v prostredí sítí IPv6. Proc je využíván? Využití krátce
+srovnejte s tím, jak je analogický problém (existuje-li) rešen v IPv4. 15 bodu
+
+7. java RMI, vlastnosti lokalnich a vzdalenych objektu - rozdil mezi nimi
+
+8. XDR a na co se pouziva v distribuovanych systemech, jak se pouziva a na co?
+
+9. Model RPC (Remote Procedure Call) má charakter klient-server. Jakým zpusobem se
+klient se v tomto prípade klient dozví, který server a jak má použít? Jak vubec naváže
+klient spojení se serverem? 10 bodu
+
+10. Pokuste se spocítat, jak velké congestion window potrebujete pro klasické TCP, abyste
+dostali prumernou rychlost prenosu 8 Gb/s v síti, která má RTT (round trip time) 200 ms
+a velikost paketu je 8000 B. 9 bodu

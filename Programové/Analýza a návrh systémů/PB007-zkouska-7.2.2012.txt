@@ -1,0 +1,12 @@
+PB007 - Analýza a návrh systémù - 7.2.2012
+---------------------------------------------------------------
+1. Vysvìtlete modely systému obsažené ve WebML (popište úèel a nakreslete notaci).
+2. Vysvìtlete, co je matice CRUD a k èemu slouží.
+3. Uveïte 3 shodné a 2 rozdílné vlastnosti YMSA a VPA.
+4. Popište metodiku UP. Uveïte postup, použité modely, hlavní rysy.
+
+5. Podle popisu systému vytvoøte use case diagram (4b.), seznam alespoò osmi událostí klasifikovaných dle YMSA (4b.), prvotní DFD dle YMSA (7b.)
+   a ERD vèetnì všech potøebných atributù splòující 4.NF (5b.). Modely musí být konzistentní (uvnitø i vnì) a musí splòovat všechna pravidla jejich tvorby.
+
+
+   Jachtaøský svaz ze slidù.

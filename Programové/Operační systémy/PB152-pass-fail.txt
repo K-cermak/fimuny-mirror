@@ -1,0 +1,358 @@
+Posbírané otázky z vniter a pass / fail testů. Neručím za správnost odpovědí. Pokud najdete
+chybu tak ji můžete opravit a soubor znovu nahrát :)
+
+
+Co je adresář (directory)?
+- list souborů a jiných adresářů.
+- vnitřně uzly souborového systému.
+- dávají jména souborem
+- mohou být otevřeny stejně jako soubory
+OK - Uzel v souborovém systému, který muže mít potomky (soubory, jiné adresáře a pod.)
+NOK - Datová struktura, kterou jádro používá k plánování vláken a procesu.
+NOK - Opačná struktura ke stránkové tabulce: překládá fyzické adresy na virtuální.
+NOK - Udržuje mapu volného místa (bloku) v souborovém systému.
+
+Co je ARP (Address, Resolution Protocol)?
+- hledá MAC adresu patřící k IP adrese
+- potřebné pro umožnění doručování paketů
+OK - Překlad IP adresy na MAC adresy.
+NOK - Překlad jména (hostname) na IP adresy.
+NOK - Udržuje tabulku přístupných jmen počítačů na lokální síti.
+NOK - Překládá MAC adresy na jména (hostname)
+
+Co je paravirtualizace ?
+OK - Technika virtualizace vyžadující modifikace ve virtualizovaném (guest) OS.
+NOK - Protokol umožňující migraci virtuálních počítačů mezi hostiteli.
+NOK - Technika naprosté izolace virtuálního počítače od reálného prostředí.
+NOK - Tento pojem se v kontextu operačních systému nepoužívá.
+
+Co je to grafický akcelerátor ?
+- umožňuje provádění běžných operací v HW
+- pixely se počítají přímo v video RAM
+- šetří čas CPU
+OK - Periferni zařízeni které zpracovává grafické operace a odlehčuje tím CPU
+NOK - Speciální počítač určený pro práci s grafikou.
+NOK - Systémová knihovna pro rychlé vykreslováni obrazových dat.
+NOK - Součást ovladače grafické karty.
+NOK - Jiný název pro technologii CRT.
+
+Co je TCP (Transmission Control Protocol)?
+- streamovo orientovaný protokol nad IP
+- funguje jako pipe, musí respektovat pořadí doručení a znovu odesílat ztracené pakety
+- musí navázat spojení.
+OK - Protokol pro spolehlivé doručováni dat postavený nad IP.
+NOK - Paketové orientovaný protokol čtvrté vrstvy.
+NOK - Protokol třetí vrstvy určený pro spolehlivé doručováni dat.
+NOK - Spolehlivější verze protokolu IP
+
+Co patří do vrstvy grafického uživatelského rozhraní (GUI stack) v OS?
+OK - Patří sem: ovladač grafické karty, ovládací prvky(tlačítka a pod.) rozvrhováni rozhraní
+NOK - Patří sem: monitor, grafická karta, okenní systém.
+NOK - Patří sem: protokol IP, ovladač grafické karty, rozvrhováni rozhraní.
+NOK - Patří sem: ovládací prvky (tlačítka, a pod.), ovladač grafické karty, aplikace.
+
+Co je to ovladač zařízení (device driver)?
+?OK - Software, typicky součást jádra, která zprostředkuje přístup k HW ostatnímu SW
+OK - Ovladač je SW, který komunikuje s příslušným HW zařízením nebo třídou zařízení.
+NOK - Známy též pod názvem řadič (controller) slouží k ovládáni připojených periferií.
+NOK - Jiný název pro datovou sběrnici tzn. mechanismus propojení různých HW zařízení.
+NOK - Je to software který řídí připojené periferie. Nesmí být za Žádných okolnosti součásti jádra.
+N?K - Proram, který spravuje tiskovou frontu.
+
+Jak probíhá uspáni (suspend) virtuálních strojů (VM)?
+OK - Buffer kam karta ukládá příchozí pakety.
+OK - Virtuální procesor je zastaven a je uložen jeho stav spolu s obrazem paměti (RAM)
+NOK - Stav procesoru a paměti je odeslán na jiný hostitelský počítač.
+NOK - Uspáni provádí virtualizovaný operační systém pomoci ACPI.
+NOK - Užívá se standardní hibernace, podobně jako v přenosných počítačích
+
+Co je to systémová sběrnice (systém bus)?
+OK - Propojuje jednotlivé komponenty počítače.
+NOK - Slouží k přenosu dat mezi jednotlivými částmi procesoru.
+NOK - Sbírá statistické informace o provozu systému.
+NOK - Softwarová konstrukce často užívaná v jádře operačního systému.
+
+Co je příjmová fronta síťové karty (NIC receive queue)?
+OK - Je tvořena pakety, které čekají na přijetí kartou
+NOK - Je tvořena pakety, které nebylo možno přijmout pro nedostatek paměti
+NOK - Neexistuje: síťová karta používá k ukládáni paketu zásobník.
+NOK - Paměť, která slouží k ukládání příchozích paketu.
+NOK - Operační systém do ní ukládá data pro Sitovou kartu.
+NOK - Buffer kam karta ukládá příchozí pakety.
+
+Co je "pískoviště" -- sandbox?
+- tries to limit damage from code execution exploits
+OK - Technika ochrany před útočníkem, kdy se program při startu zbaví většiny svých práv.
+OK - Omezuje možnosti útočníka, který ziská kontrolu nad danou aplikaci.
+NOK - Verze systémové knihovny určená pro nácvik programováni.
+NOK - Režim spuštění aplikace, kdy se po jejím skončení systém Vráti do původního stavu.
+NOK - Jiný název pro kontejnery.
+NOK - Testovací režim jádra operačního systému.
+
+Co je princip nejmenších privilegii (principle of least privilege)?
+- aplikuje se na SW i na uživatele
+- snižuje chybovost
+OK - Pravidlo, že subjekt má k dispozici pouze práva, která skutečně potřebuje.
+NOK - Protokol práv mezi jádrem a systémovými procesy.
+NOK - Mechanismus kontroly práv v operačním systému.
+NOK - Pravidlo, že přístup k danému objektu vyžaduje určitá minimální privilegia.
+
+Co je MMU (Memory management Unit)?
+- subsystém procesoru
+- o mapování se může starat jádro
+OK - Část procesoru, která překládá virtuální adresy na fyzické.
+OK - Provádi překlad adres na základe stránkových tabulek(page tables)
+NOK - Část jádra, která má na starosti správu paměti.
+NOK - Překladová jednotka mající za úkol spravovat paměť programu.
+NOK - Knihovna pro práci s paměti
+
+Co je to mutex?
+OK - Jeden z implementačních mechanismu pro ochranu kritických sekci.
+NOK - Jiný název pro semafor.
+NOK - Libovolné synchronizační zařízení.
+NOK - Je to speciální soubor určený k synchronizaci.
+
+Co je to race condition ?
+- nečekané chování, které závisí na časování.
+?OK - Nečekané chováni programu při souběhu několika vláken.
+OK - Nečekané seřazení souběžných události.
+NOK - Situace, kdy více procesu soutěži o omezené zdroje.
+NOK - Situace, kdy program nemůže pokračovat ve výpočtu.
+NOK - Je to synchronizační zařízení určené k probouzení spících procesu
+N?K - Situace, kdy více programu soutěží o omezené zdroje.
+N?K - Chyba, která muže nastat pouze při souběhu práce se souborovým systémem.
+N?K - Situace, kdy program nemůže pokračovat ve výpočtu.
+
+Co je blokové zařízení?
+OK - Typ zařízení, které souborový systém využívá pro ukládaní dat.
+OK - Je to zařízení, na kterém lze vytvořit souborový systém.
+? - Umožňuje číst nebo zapisovat posloupnost bloku v pevném pořadí.
+NOK - Zařízení, které umožňuje zápis a čtení libovolně velkých bloku dat.
+NOK - Zařízení, které je adresováno po blocích variabilní velikosti.
+NOK - Libovolné zařízení umožňující ukládáni dat.
+
+Co je sdílená knihovna (shared library)?
+- v paměti musí být pouze jednou
+- používá symbolické jména.
+- mohou používat jiné sdílené knihovny (mohou formovat DAG)
+OK - Knihovna, kterou k programu připojí tzv. runtime linker.
+NOK - Je to úložiště dat využívané více než jedním programem.
+NOK - Je to knihovna, ke které jsou k dispozici zdrojové kódy.
+NOK - Je to knihovna, ke které má přístup více uživatelů.
+
+Jaké jsou základní komponenty operačního systému?
+kernel, system libraries, system daemons/services, userinterface, systemutilities
+OK - Všechno z: systémové knihovny, systémové služby (services), jádro (kernel)
+OK - Všechno z: systémové knihovny, jádro(kernel), uživatelské rozhraní.
+NOK - Všechno z: systémové služby(services), jádro(kernel), překladač jazyka C++.
+NOK - Všechno z: jádro(kernel), firmware, uživatelské rozhraní.
+NOK - Všechno z: střed (center), jádro(kernel), systémové knihovny.
+NOK - Všechno z: jádro (kernel), překladač jazyka C++, systémové knihovny.
+NOK - Všechno z: systémoví démoni, systémové utility, hardware.
+NOK - Všechno z: aplikační knihovny, systémové utility, systémové knihovny.
+
+Co je vstupně-výstupní plánovač (IO scheduler)?
+- Čtení / zápis je vyžádáno od uživatele
+- pořadí přístupu je důležité pro mechanický disky
+- NENÍ v FIFO pořadí
+OK - Rozhoduje o pořadí čtení a zápisu na blokovém zařízení.
+NOK - Rozhoduje o přidělováni bloku jednotlivým souborům.
+NOK - Rozhoduje o alokaci volného místa v souborovém systému.
+NOK - Plánuje pravidelné zálohy souborového systému.
+
+Co dělá funkce exec()?
+OK - Načte spustitelný soubor a začne jej vykonávat v současném procesu.
+NOK - Zabije běžící proces.
+NOK - Načte spustitelný soubor a vytvoří pro něj nový proces.
+NOK - Zjistí, zda je daný soubor spustitelný.
+
+Co je to "symbol" v objektovém souboru?
+OK - Název, kterému odpovídá adresa proměnné nebo funkce.
+OK - Název proměnné nebo funkce.
+NOK - Číslo, které unikátně popisuje proměnnou nebo funkci.
+NOK - Symbol je numerická hodnota náležící virtuální adrese.
+NOK - Obrázek reprezentující proměnnou nebo funkci.
+
+Co je to vlákno (thread)?
+- moderní jednotka plánování CPU
+- každé vlákno má vlastní zásobník (stack)
+OK - Vlakna umožňují jednomu programu využit více procesorových jader.
+OK  - Vlákno sekvenčně vykonává instrukce a udržuje vlastní zásobník
+NOK - Aktuálně vykonávaný proces.
+NOK - Vlákno propojuje data a instrukce v programu.
+NOK - Vlákno lze ztotožnit s adresním prostorem.
+
+Jaké existují režimy procesoru a co znamenají?
+OK - Uživatelský (normální) a privilegovaný (běží v něm jádro).
+OK - Uživatelský (programy) a privilegovaný (jádro)
+NOK - Režim plánovací (použitý pro plánováni procesu) a normální.
+NOK - Offline, normální (ethernet) a bezdrátový (při použiti WIFI, 3G apod.).
+NOK - Uživatelský a privilegovaný (pro programy spuštěné administrátorem).
+NOK - Procesor nemá žádné zvláštní režimy/módy.
+NOK - Režim procesní (pro jedno-vláknové programy) a vláknový (pro vícevláknové programy)
+NOK - Privilegoavný (pro systémové knihovny) a uživatelský (pro ostatní knihovny)
+
+Co je uváznutí (deadlock)?
+OK - Situace, kdy diky chybě synchronizace nelze pokračovat ve výpočtu.
+OK - Problém, kde množina vláken díky chybě synchronizace nemůže pokračovat.
+NOK - Uváznutí nastane kdekoliv požadované zařízení není k dispozici.
+NOK - Je to dočasné zpomalení výpočtu způsobené přetížením procesoru.
+NOK - Může nastat pouze při chybě hardware-u.
+NOK - Je to dočasné zpomalení výpočtu způsobené přetížením procesoru.
+NOK - Uváznutí je stav, který nastane při zaseknutí pásky Turingova stroje.
+
+Podmínky uváznutí jsou právě tyto:
+OK - cyklické čekání (circular wait), čekání v kritické sekci (hold and wait), neodnímatelnost zdroje (non-preemptability), vzájemné vyloučení (mutual exclusion)
+NOK - vzájemné vyloučení (mutual exclusion), cyklické čekání (circular wait), omezení reálného času (real-time constraint), čekání v kritické sekci (hold and wait).
+NOK - neodnímatelnost zdroje (non-preemptability), čekání na zdroje (wait),  vzájemné vyloučení (mutual exclusion), cyklické čekání (circular wait)
+NOK - lineární čekání (linear wait), vzájemné vyloučení (mutual exclusion), vyloučení třetího (excluded middle), neodnímatelnost zdroje (non-preemptability)
+
+Co dělá linker?
+OK - Sestavuje programy z objektových souboru.
+OK - Kombinuje objektové soubory a knihovny do spustitelných souborů.
+NOK - Překládá zdrojové kódy na sdílené knihovny.
+NOK - Sestavuje statické knihovny ze spustitelných programu.
+NOK - Překládá zdrojové kódy na spustitelné binárky.
+NOK - Sestavuje objektové soubory z tabulek symbolu.
+NOK - Sestavuje knihovny ze spustitelných souboru.
+
+Co znamená vstup/ výstup mapovaný do paměti (memory-mapped IO)?
+OK - Použití MMU k realizaci vstupu a výstupu prostřednictvím čteni a zápisu do paměti.
+OK - Vstup nebo výstup realizovaný instrukcemi čtení/zápisu (virtuální paměti).
+NOK - Jedná se o kopírováni dat mezi diskem a paměti funkcemi read() a write().
+NOK - Realizace přístupu do paměti pomoci funkcí pro zápis a čtení souboru.
+NOK - Je to mechanismus simulace vstupu/výstupu pro účely ladění programu.
+
+Jaké jsou úlohy operačního systému?
+OK - Všechno z: správa software, abstrakce hardware, správa paměti.
+NOK - Všechno z: frekvenční modulace, správa procesu, abstrakce hardware.
+NOK - Všechno z: přidělování procesoru, správa procesu, vyhodnocováni rizik.
+NOK - Všechno z: tvorba diagramu, správa middleware, abstrakce hardware.
+
+Co je jádro (kernel) operačního systému?
+OK - Nejnižší úroveň operačního systému.
+OK - Součást OS, která zabezpečuje izolaci a bezpečnost na nejnižší úrovni.
+NOK - Jádro tvoří veškerý software dodaný s operačním systémem.
+NOK - Jádro spravuje uživatelské identity.
+NOK - Základní software běžící v uživatelském režimu procesoru.
+NOK - Systémová služba, která se stará o stránkováni.
+
+Co je to proces?
+OK - Základní jednotka přidělováni zdrojů.
+OK - Virtuální adresní prostor který může obsahovat jedno nebo více vláken.
+NOK - Metoda kontroly kvality kódu.
+NOK - Program, který aktuálně není prováděn.
+NOK - Mechanizmus komunikace jádra s programem.
+
+Co je to API (Application Programming interface)?
+OK - Programovací rozhraní na úrovni jazyka C.
+NOK - Seznam počátečních adres (entry point) funkci dané knihovny
+NOK - Konvence, která popisuje využití jednotlivých registru procesoru.
+NOK - Rozhraní mezi různými operačními systémy.
+
+Co je to přerušení (interrupt)?
+- způsob, jak si hardware může vyžádat pozornost
+- přepínač do privilegovaného CPU módu
+OK - Mechanismus, který se někdy využíva pro implementaci systémových voláni.
+NOK - Přerušeni je mechanismus pro ukončováni vláken.
+NOK - Je to mechanismus, kterým si operační systém vynutí pozornost připojení  periferie.
+NOK - Přerušení je mechanismus souborového systému pro vytváření souboru o více Častech.
+NOK - Přerušeni signalizuje ukončení jádra.
+NOK - Přerušeni je návrat z privilegovaného do uživatelského režimu
+
+Co je předmět(object) v kontextu kontroly přístupových práv (access control)?
+OK - Pasivní prvek, ke kterému je kontrolován přístup.
+NOK - Jednotlivé pravidlo v seznamu přístupových práv.
+NOK - Proces nebo jiný aktivní účastník kontroly přístupových práv.
+NOK - Patří sem kupříkladu uživatel, soubor nebo adresář.
+
+Co je hypervizor?
+- dovoluje spuštění více OS
+- je jako jádro, které spouští jádro
+- zlepšuje využití hardwaru
+OK - Jiný název pro monitor virtuálních počítačů (virtual machine monitor).
+NOK - Firmware (BIOS), který běží ve virtuálním počítači.
+NOK - Systém vzdáleného sledováni bezpečnosti.
+NOK - Virtuální jádro (kernel) operačního systému.
+NOK - Mechanismus vzdálené správy počítače.
+
+Co je proměnná prostředí?
+OK - Proměnná, kterou si programy předávají při voláni exec()
+NOK - Proměnná programu, jejíž hodnota závisí na vnějším prostředí.
+NOK - Libovolná proměnná použitá v shellovém skriptu.
+NOK - Jiný název pro obyčejnou globální proměnnou,
+
+Co je uživatel ?
+- původně proxy pro lidi
+OK - Základní jednotka, která jsou přidělena přístupová práva v operačním systému.
+OK - Abstraktní subjekt řízení přístupu v operačním systému.
+NOK - Výlučně reprezentace fyzické osoby v operačním systému.
+NOK - Je konstrukci sloužicí výhradně učelúm autentizace.
+NOK - Aplikace, která používá rozhraní operačního systému.
+
+Co je IP (Internet Protocol)?
+?OK - Protokol, který má na starosti směrování a doručováni paketu v internetu.
+NOK - Starší verze protokolu PPP.
+NOK - Protokol nejnižší (první) vrstvy užívaný v lokálních sítích.
+NOK - Aplikační protokol (7. vrstva) určený pro připojení k internetu.
+
+Co je DNS (Domain Name System)?
+?OK - Protokol pro překlad jmen (hostname) na IP adresy.
+
+Co je kontejner?
+- turbocharged processes
+- NOT a complete virtual computer
+OK - Virtualizace na úrovni podsystému jádra.
+NOK - Aplikační program bez užší návaznosti na operační systém.
+NOK - Znovupoužitelná komponenta operačního systému.
+NOK - Hotový obraz virtuálního počítače.
+
+Co je plánovač (scheduler) vláken/procesu?
+OK - Je to část jádra, která plánuje využiti procesoru spuštěnými vlákny.
+?OK - Řídi přidělování procesoru vláknům a je typicky svázán s přerušením časovače
+NOK - Je to systémová knihovna, která plánuje využití dostupných zdrojů.
+NOK - Plánovač je program, který periodicky spouští naplánované úkoly.
+NOK - Plánovač je součást jádra, která přiděluje vláknum a procesům paměť.
+
+Co znamená substituce proměnné?
+OK - Nahrazení jména proměnné jejím obsahem.
+NOK - Nahrazení konstanty proměnnou.
+NOK - Změna hodnoty proměnné prostředí.
+NOK - Výměna jedné proměnné za jinou stejného typu.
+NOK - Refaktorizace programu tak, aby danou proměnnou vůbec nepoužíval.
+
+Co je to mikrojádro (microkernel)?
+- stará se o ochranu paměti
+?OK - Architektura jádra, která vyčleňuje většinu funkcionality mimo jádro samotné.
+NOK - Počátečně fáze vývoje monolitického jádra.
+NOK-- Architektura jádra, která klade velký důraz na velikost ovladačů.
+NOK-- Jádro zabudované přímo v mikrokódu CPU,
+
+Co je systémové volání (system call)?
+?OK - Přepne procesor do privilegovaného režimu a spustí podprogram jádra.
+N?K - Přepne procesor do privilegovaného režimu a pokračuje ve vykonávání programu.
+N?K - Volací konvence jazyka C používaná v systémových knihovnách.
+N?K - Jedná se o formu IPC (mezi-procesové komunikace) mezi programem a systémovou službou.
+
+Co je shell?
+- nemá typy - je to staticky typování jazyk
+?OK - (!) Systémový programovací jazyk se statickými typy a robustní kontrolou chybě
+? - Grafické uživatelské rozhraní pro správu souboru.
+? - Vrstva která chrání operační systém před útoky zvenčí.
+? - Jednoduchý, netypovaný programovací jazyk s minimální kontrolou chyb.
+
+Co je to DMA (Direct Memory Access)?
+- the most common form of bus mastering
+- the CPU tells the device what and where to write
+- the device then sends data directly to RAM
+- the CPU can work on other things in the meantime
+- completion is signaled via an interrupt
+OK - Umožňuje perifernímu zařízení přímo přistupovat k fyzické paměti.
+NOK - Značí typ přístupu k paměti procesorem bez použití MMU.
+NOK - Je typ instrukce, která kopíruje obsah paměti do registru procesoru.
+NOK - Umožňuje operačnímu systému přistupovat k diskům bez použití řadiče.
+
+Co dělá funkce fork()?
+? - Vyžádá od operačního systému dodatečnou paměť.
+? - Vytvoří nový proces.
+? - Spustí nový program.

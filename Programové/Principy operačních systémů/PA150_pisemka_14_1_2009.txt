@@ -1,0 +1,7 @@
+1. Jak funguje algoritmus vzájemného vylouèení v distribuovaném prostøedí s pomocí distribuované fronty a èasových razítek?
+2. Vysvìtlete princip použití kontrolních bodù (checkpoint) pøi zpracování (obnovì?) transakcí.
+3. Transakce A, B, C mají èasové známky 17, 20, 25. Strategie Wait-Die. Co se stane, když A požaduje zdroj, který drží B? Co se stane když C požaduje zdroj držený transakcí B?
+4. Stránkování, algoritmus LRU, ve fyzické pamìti jsou 4 rámce. Kolik bude výpadkù pøi následující posloupnosti požadovaných stránek:
+7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1
+5. ACID - vyjmenovat a popis.
+6. Dvì základní vlastnosti validních distribuovaných algoritmù a jejich popis.

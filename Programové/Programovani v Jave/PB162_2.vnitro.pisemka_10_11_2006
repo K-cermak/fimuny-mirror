@@ -1,0 +1,129 @@
+Zde jsou tri varianty zadani 2. vnitrosemestralni pisemky z PB162 z semestru podzim 2006. Test probihal tak, ze v presny cas se na ISu zpristupnila slozka se zadanim - BlueJ balik - zadani + testovaci trida. Na test byla +-1 hodina casu.
+
+
+Motorgenerátor
+
+Zadání
+   Vytvoøte abstraktní tøídu cz.muni.fi.pb162.test1.AbstractElectricDevice,
+   která bude implementovat zadané rozhraní
+   cz.muni.fi.pb162.test1.ElectricDevice. Tøída bude mít atribut efficiency
+   typu double, který bude obsahovat úèinnost zaøízení jako èíslo v intervalu
+   <0,1). Dále bude mít chránìný konstruktor s parametrem obsahujícím úèinnost
+   zaøízení a metodu getEfficiency() vracející tuto hodnotu.
+
+   Vytvoøte tøídu cz.muni.fi.pb162.test1.ElectricMotor, která bude
+   reprezentovat elektrický motor. Tøída bude potomkem tøídy
+   cz.muni.fi.pb162.test1.AbstractElectricDevice. Bude mít konstruktor s
+   parametrem obsahujícím úèinnost motoru a metodu toString(), která vrátí
+   øetìzec ve tvaru "[Elektrický motor, úèinnost = <efficiency>]".
+
+   Dále vytvoøte tøídu cz.muni.fi.pb162.test1.ElectricGenerator, která bude
+   reprezentovat elektrický generátor (tj. dynamo nebo alternátor). Tøída bude
+   potomkem tøídy cz.muni.fi.pb162.test1.AbstractElectricDevice. Bude mít
+   konstruktor s parametrem obsahujícím úèinnost generátoru a metodu
+   toString(), která vrátí øetìzec ve tvaru "[Elektrický generátor, úèinnost =
+   <efficiency>]".
+
+   Pokraèujte vytvoøením tøídy cz.muni.fi.pb162.test1.MotorGenerator, která
+   bude reprezentovat motorgenerátor (tj. zaøízení skládající se z elektrického
+   motoru a elektrického generátoru). Tøída bude implementovat rozhraní
+   cz.muni.fi.pb162.test1.ElectricDevice. a bude mít atribut motor typu
+   ElectricMotor a generator typu ElectricGenerator. Tøída bude mít konstruktor
+   s dvìma parametry, obsahujícími motor a generátor a metodu getEfficiency(),
+   která vrátí úèinnost motorgenerátoru (ta se spoèítá jako souèin úèinnosti
+   generátoru a motoru). Dále bude mít metodu toString(), která bude vracet
+   øetìzec ve tvaru "[Motorgenerátor, úèinnost = <efficiency>]".
+
+   Nakonec vytvoøte tøídu cz.muni.fi.pb162.test1.Main, která bude obsahovat
+   statickou metodu main(String[]). Tato metoda vytvoøí motor s úèinností 0,5,
+   generátor s úèinností 0,6 a motorgenerátor skládající se z tìchto dvou
+   elektrických strojù. Potom na standardní výstup pomocí pøíslu¹ných metod
+   toString() vypí¹e informace o v¹ech tøech strojích.
+
+-------------------
+Vláèek
+
+Zadání
+   Vytvoøte abstraktní tøídu cz.muni.fi.pb162.test2.AbstractVehicle, která bude
+   implementovat zadané rozhraní cz.muni.fi.pb162.test2.Vehicle. Tøída bude mít
+   atribut length typu double, který bude obsahovat délku dopravního
+   prostøedku. Dále bude mít chránìný konstruktor s parametrem obsahujícím
+   délku dopravního prostøedku a metodu getLength() vracející tuto hodnotu.
+
+   Vytvoøte tøídu cz.muni.fi.pb162.test2.Locomotive, která bude reprezentovat
+   lokomotivu a která bude potomkem tøídy
+   cz.muni.fi.pb162.test2.AbstractVehicle. Bude mít konstruktor s jedním
+   parametrem, obsahujícím délku lokomotivy, a metodu toString(), která vrátí
+   øetìzec ve tvaru "Locomotive (length: <length>)".
+
+   Dále vytvoøte tøídu cz.muni.fi.pb162.test2.Carriage, která bude
+   reprezentovat ¾eleznièní vagón a která bude potomkem tøídy
+   cz.muni.fi.pb162.test2.AbstractVehicle. Bude mít konstruktor s jedním
+   parametrem, obsahujícím délku vagónu, a metodu toString(), která vrátí
+   øetìzec ve tvaru "Carriage (length: <length>)".
+
+   Pokraèujte vytvoøením tøídy cz.muni.fi.pb162.test2.Train, která bude
+   reprezentovat vlak a která bude implementovat rozhraní
+   cz.muni.fi.pb162.test2.Vehicle. Tøída bude mít atribut locomotive typu
+   Locomotive, carriage typu Carriage a carriagesCount typu int. Tøída bude mít
+   konstruktor s tøemi parametry, obsahujícími inicializaèní hodnoty tìchto
+   atributù. Metoda toString() bude vracet øetìzec ve tvaru "Train (length:
+   <length>) [Locomotive (length: <length>), <carriagesCount> x Carriage
+   (length: <length>)]".
+
+   Nakonec vytvoøte tøídu cz.muni.fi.pb162.test2.Main, která bude obsahovat
+   statickou metodu printInfo(Vehicle vehicle), která na standardní výstup
+   vypí¹e informace o zadaném vozidle. Tøída bude také obsahovat metodu
+   main(String[]), v ní¾ vytvoøíte dvì ma¹inky a dva vagónky s rùznou délkou a
+   slo¾íte z nich dva vláèky, které budou mít rùzný poèet vagónkù. Informace o
+   obou ma¹inkách, vagóncích i vláècích vypí¹ete na standardní výstup pomocí
+   metody printInfo(Vehicle vehicle).
+
+--------------------
+Lokomotiva
+
+Zadání
+   Vytvoøte rozhraní cz.muni.fi.pb162.test2.Engine, která bude reprezentovat
+   nìjaký stroj. Rozhraní bude mít metodu getPower() vracející výkon stroje ve
+   wattech jako èíslo s pohyblivou øádovou èárkou.
+
+   Vytvoøte abstraktní tøídu cz.muni.fi.pb162.test2.AbstractEngine, která bude
+   implementovat rozhraní cz.muni.fi.pb162.test2.Engine. Tøída bude mít atribut
+   power typu double, který bude obsahovat výkon stroje. Dále bude mít
+   chránìný konstruktor s parametrem obsahujícím výkon stroje a metodu
+   getPower() vracející tuto hodnotu.
+
+   Vytvoøte rozhranícz.muni.fi.pb162.test2.Locomotive, která bude reprezentovat
+   lokomotivu a která bude rozšiøovat rozhraní cz.muni.fi.pb162.test2.Engine.
+   Rozhraní bude obsahovat metodu getTraction(), která vrátí druh trakce
+   lokomotivy jako øetìzec ("electric"/"diesel").
+
+   Vytvoøte tøídu cz.muni.fi.pb162.test2.ElectricMotor, která bude
+   reprezentovat elektrický motor a která bude potomkem tøídy
+   cz.muni.fi.pb162.test2.AbstractEngine. Tøída bude mít atribut type typu
+   String. Dále bude mít konstruktor s dvìma parametry, obsahujícími typ motoru
+   a jeho výkon ve Wattech, metodu getPower() vracející výkon ve Wattech a
+   metodu toString(), která vrátí øetìzec ve tvaru "ElectricMotor(type =
+   <type>, power = <power> kW)".
+
+   Vytvoøte tøídu cz.muni.fi.pb162.test2.ElectricLocomotive, která bude
+   reprezentovat elektrickou lokomotivu s uspoøádáním pojezdu typu Bo'Bo' (to
+   mimo jiné znamená, že má ètyøi trakèní motory). Tøída bude implementovat
+   rozhraní cz.muni.fi.pb162.test2.Locomotive a bude mít jeden atribut type
+   typu String a ètyøi atributy motor1 až motor4 typu ElectricMotor. Dále bude
+   mít konstruktor s pìti parametry, obsahujícími inicializaèní hodnoty tìchto
+   atributù, a metodu getPower(), která celkový výkon lokomotivy. Dále doplòte
+   metodu toString(), která vrátí øetìzec ve tvaru "Locomotive (type = <type>,
+   power = <power> kW) [ElectricMotor(type = <type>, power = <power> kW),
+   ElectricMotor(type = <type>, power = <power> kW), ElectricMotor(type =
+   <type>, power = <power> kW), ElectricMotor(type = <type>, power = <power>
+   kW)]".
+
+   Nakonec vytvoøte tøídu cz.muni.fi.pb162.test2.DeiselLocomotive, která bude
+   reprezentovat dieselovou (pøípadnì diesel-elektrickou) lokomotivu. Tøída
+   bude potomkem tøídy cz.muni.fi.pb162.test2.AbstractEngine a bude
+   implementovat rozhraní cz.muni.fi.pb162.test2.Locomotive. Tøída bude mít
+   atribut type typu String. Dále bude mít konstruktor s dvìma parametry,
+   obsahujícími typ lokomotivy a její výkon ve Wattech, metodu getPower()
+   vracející výkon ve Wattech a metodu toString(), která vrátí øetìzec ve tvaru
+   "DeiselLocomotive(type = <type>, power = <power> kW)".

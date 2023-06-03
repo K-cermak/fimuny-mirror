@@ -1,0 +1,23 @@
+2009 B1
+
+parafrazujem otazky:
+1 Co je to costumizacia. je rozumne aby jeden uzivatel sam costumizoval software pre firmu?
+2 Co je to kolalicia, spolocne a rozlicne ciele clenov a mal by byt hlavnym cielom frimy znizovat pocet zamestnancov?
+3 Co je to SWOT a uvedte priklady
+4 Ste firma ktora doposial robila iba male IS projekty pre desiatky ludi, vysoka skola s 1000 studentmi vas ziada o vytvorenie IS.
+    vedienie skoly ale na to dlabe a nevenuje tomu dostatocnu pozornost, prijat alebo neprijat projekt?
+5 co je to RSI  co to sposobuje, priznaky a prevencia
+6 postup privyberovych konaniach a problemy pri vyberovych konaniach +vyhody a nevyhody poradcu
+
+
+C1
+1  nevidel som otazky(bol som ina skupina)
+2  nevidel som otazky(bol som ina skupina)
+3  nevidel som otazky(bol som ina skupina)
+4  typy archytekturnych sluzieb a pouzitie
+5  principy brainstormingu.Aspekty a metoda klobouku
+6  co je pravidlo 80-220 a jak se vyuziva pri vyvoji SW. jake pri tom mohou byt problemy a smoulovu mezi
+    uzitatelem a doavatelem. Jak se da pravidlo 80-20 vyuzit pri vyvoji SW
+
+
+dufam ze Vam to pomoze!!

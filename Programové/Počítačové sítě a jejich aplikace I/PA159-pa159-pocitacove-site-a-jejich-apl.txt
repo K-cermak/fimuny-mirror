@@ -1,0 +1,23 @@
+PA159 Poèítaèové sítì a jejich aplikace I (19.01.2012)
+skupina C
+otazky po 10b
+
+1	Popiste L2 vrstvu ISO OSI modelu, adresaci na teto vrstve, funkci vrstvy, protokoly a pripadne algoritmy, ktere se zde pouzivaji.
+
+2	Jakym zpusobem je v IPv6 resena mobilita? Popiste vcetne schematu.
+
+3	Co jsou to autonomni systemy a jakym zpusobem se zde resi smerovani. Proc je vyhodne AS zavadet.
+
+4	Co znamena MPLS (Multiprotocol Label Switching) a jak pracuje, pro site jakeho rozsahu je vhodny? Co je to GMPLS?
+
+5	Jake jsou zakladni typy QoS based smnerovacich algoritmu? Alespon jeden popiste podrobneji.
+
+6	Popiste protokol RBUDP (Reliable Blast UDP). Do jake skupiny protokolu patri. Kdy ho lze s vyhodou pouzit?
+
+7	Popiste heuristicke smnerovaci strategie pouzivane v P2P sitich a alespon jednu z nich podrobneji.
+
+8	Popiste P2P site vyuzivajici PRR stromy a vyhledavani v nich.
+
+9	Jak pracuje reaktivni ad-hoc smnerovani (Reactive On demand Ad-hoc Routing)? Uvedte priklady konkretnich protokolu se strucnym popisem.
+
+10	Popiste prenosove a funkcni pozadavky multimedialnich sitovych aplikaci.

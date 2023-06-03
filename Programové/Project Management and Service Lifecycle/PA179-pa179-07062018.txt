@@ -1,0 +1,11 @@
+Teoria:
+1. Popis CPM, na co je + vzorce
+2. Co je to alokacny problem + ako ho riesit
+3. Popis skupiny znalosti a skupiny procesov v PMI
+4. Integracia zhora nadol
+
+Prakticka cast:
+Projekt bol novy typ databazy, odbornikov mate, podobny projekt ste nikdy nerobili
+
+5. Vyber zivotny cyklus, sietovy diagram + Gantt
+6. Popis rizika, priority a ako ich znizit

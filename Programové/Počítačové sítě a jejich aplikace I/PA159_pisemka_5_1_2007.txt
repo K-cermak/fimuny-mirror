@@ -1,0 +1,16 @@
+
+Otazky ze zkousky z PA159 Poèítaèové sítì a aplikace I
+ze dne 5.1.2007
+Za kazdou otazku byl ruzny pocet bodu(10 az 18 bodu za otazku) Maximum 150 bodu.
+
+1)H.323 k cemu to je a cemu to je nejvic podobne SIP, H.263 nebo MPEG-2
+2)AES - podrobne
+3)Strucne DiffServ, rozvest jeho variantu Expeditive forwarding
+4)IPsec a jeho vztah k VPN.
+5)GPS(Generalized Processor Sharing) a co je jeho pouzite reseni v reale. Jak by jsme ho implementovali?
+6)SSL
+7)MIB
+8)IPv4 vs IPv6
+9)Jak odstarnit nebo alespon omezit chyby pri prenosu videa. Co to je a jakou ma stim souvislost Interleaving?
+10)Vypocetni slozitost a jeji vztah k mire bezpecnosti. Jak to souvisi s asymetrickou kryptografii.
+11)Co to je Backward Error Correction a Forward Error Correction. Vcem se lisi, co z toho pouziva TCP. Uvedte priklad protokolu, ktery pouziva to druhe. Jake druhy potvrzovani paketu znate a jake pouziva TCP.

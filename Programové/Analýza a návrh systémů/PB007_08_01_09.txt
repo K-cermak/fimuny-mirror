@@ -1,0 +1,15 @@
+8.1.2009
+PB007
+----------------
+
+1) modelovani podle JSP - postup, uvedte priklad notace a modelu
+
+2) definujte 3.NF. a 4.NF.
+
+3) v cem si musi odpovidat CDFD a STD
+
+4) logicke modelovani (Gane a Sarson) uvedte priklad
+
+5) ..Stolarstvi..
+Kontextovy diagram(4b), systemove dfd(4b), specifikace jednoho procesu (4b),
+diagram struktury systemu pomoci transakcni a transformacni analyzy(8b)

@@ -1,0 +1,49 @@
+PA179 Project Management and Service Lifecycle
+
+Zkouška: 11.1.2011
+
+Organizace: Mind mapa formátu A4 se 14 otázkami, jedna otázka pøedepsaná, druhou si student volí sám. Pokud èlovìk pøedepsanou otázku neví, mùže odpovídat na dvì libovolné, v tom pøípadì ale dostane pøinejlepším D.
+
+Otázky: Pamatuji si jen první dvì úrovnì mind mapy, k nìkterým tam byly ještì další podotázky èi upøesnìní, ale podstatu to myslím vystihuje...
+
+1) Service System Lifecycle
+-Diamond of Diamonds, Earned Value Management, Diamond of Business Development
+
+2) Organizing Business Unit as Service System
+- Diamond of Organization, Credit Function, Concept of Flow
+
+3) Service System Reference Model
+- Diamond of Predictive Behavior, Challenge of Service Science
+
+4) Theory of Constraints (TOC)
+- Principals, Critical Chain, Rope and Drum Principle, Double level management
+
+5) PPPM Mind Model
+- Assignment 1 + explain basic relationships
+
+6) Value Proposition
+- Statement of Work, Service System boundaries, Service System Breakdown Structure, VP for Interim Project (Assignment 2)
+
+7) Key Competences of Service System/Science Innovation
+- DELLIISS key competences, T-shape professional, S-R-O-D Scheme
+
+8) Basic Concepts
+- What is Project, Program and Portfolio, What is Service, Service and Service Lifecycle, What are their mutual connections
+
+9) Project Management Standards
+- IPMA characteristics, PMI characteristics, What is ICB, IPMA competences + describe several of them from each category (technical, contextual, behavioral)
+
+10) Project Initiation and Strategy
+- Developed documents and their content, Project Strategy, Main bodies and their functions
+
+11) Project Planning
+- Project Management phases and stages, Differnce between them, What is planning, Particular plans
+
+12) Project Planning Issues
+- WBS + typical mistakes, Gantt chart, What is more important
+
+13) Project Implementation
+- Basics of Project Management, Role of Planning and Controlling Meetings, Double level management structure
+
+14) Obligatory Assignment
+- Articles about SSME/SSMED and Viable Systems, Briefly compare readings with Program Management

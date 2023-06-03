@@ -1,0 +1,14 @@
+10. 1. 2006
+
+1) Celkova bezpecnostni politika vs. systemova bezpecnostni politika
+2) popis + priklady : a) dublovani autorizace   b) separace odpovednosti
+3) rozdil ISO a TR ISO, popis typu TR ISO
+4) Microsoft Passport, namalovat obrazek, prubeh autentizace
+5) zakladni dokumenty certifikacni autority
+6) role a) elektronickeho seku
+        b) intrukce pro banku prijemce o prevodu castky
+        
+   v modelu prijemce - odesilatel - banka prijemce - banka odesilatele
+    
+--
+luk

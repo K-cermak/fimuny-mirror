@@ -1,0 +1,51 @@
+* Plánování Fibers ve Windows -- aplikace si musí plánovat sama
+
+* Algoritmus krátkodobého plánovaèe ve Windows - RR
+
+* MS-DOS -- Pøerušení je "jednou z" mozností jak komunikovat s I/O zaøízeními 
+
+* Zajištìní mutual exclusion -- tady byly zøejmé vìci, jen mì zmátlo, e na semafor nabízel aktivní (busy-wait) i pasivní (zablokování procesu) implementaci. tedy pasivní.
+
+* v jakem stavu muze byt proces v linuxu, spravne odpovedi byly myslim zombie, sleeping a ready to run
+
+* Linux - monolit. jadro+3 monosti, e podporuje overenie integrity, funkènosti alebo nieèoho takého.,
+
+* jak se vytváøí vlákno na Linuxu? Clone nebo pthread
+
+* HARD RT - pøi spuštìní procesu je stanoven èasovı limit OS proces odmítne nebo pøijme
+* SOFT RT - procesy s vyšší prioritou mají pøednost pøed procesy s niší prioritou
+
+* K èemu slouí strace? viz dokument
+
+* Komunikace procesù v FreeBSD? - volani funkce int 0x80 nebo brany call 7:0
+
+* Co zpùsobí RR? - bìící na pøipravenı
+
+* Paralelní vs distribuovanı systém - Sdílejí pamì
+
+* mikrojadro - stabilnìjší, bezpeènìjší, snadná pøenositelnost, zvıšená reie
+
+* IPC - semafor, sdilena pamet, roury
+
+* freeBsd - ukladanie parametrov - na zasobniku, prvni parametr je ukladan posledni, vysledek je v registru EAX
+
+* Windows CreateThread() - vytvoøí vlákno
+
+* Krátkodobı dispeèer - Nahazuje na procesor, Je fakt rychlı
+
+* Dlouhodobı dispeèer - Naèítá z disku do pamìti nové procesy a opaènì
+
+* Vlákna sdílejí - pamì, èíslo procesu a èíslo vlákna
+
+* Plánovací algoritmy na Linuxu? - Noop, Deathlock, Anticipatory, CFQ
+
+* Nutná podmínka uváznutí? - Obsazení zdroje a èekání na pøidìlení dalšího, vzajemne vylouceni, hold and wait, no preemption, circual wait
+ 
+* predavanie argumentov - registr, zasobnik, pointer na strukturu, 
+
+planovac procesov nepreemptivní
+semafor, taskand..., swap
+
+* multitasking vyuzitie - Lepší responzivita, sniení odezvy, pøidìlování CPU jednotlivım úlohám tak, aby CPU byl vyuit (témìø) vdy, sniuje dobu odezvy
+
+* sysenter - rychle sys. volání

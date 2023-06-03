@@ -1,0 +1,17 @@
+PA150 - Principy operacnich systemu
+14-1-2009
+----------------------------------------
+
+1) Popiste a vysvetlete princip vylouceni u distribuovanych procesu v implementaci  distribuovane fronty a predavani si zprav.
+
+2) Vysvetlete princip kontrolnich bodu v implementaci transakci
+ 
+3) Algoritmus LRU - proces bude pozadovat nasledujici seznam stranek, ve FAP mame pouze 4 ramce. Uvedte kolikrat nastane vypadek stranky?
+
+4) Vysvetlete princip Wait-Die. Mame tri transakce kazda s urcitym casovym razitkem (17, 21, 26). 
+Co se stane kdyz bude transakce A zadat o zdroj, ktery drzi transakce B ?
+Co se stane kdyz bude transakce C zadat o zdroj, ktery drzi transakce B ?
+
+5) ACID - zakladni vlastnosti transakci
+
+6) Uvedte a popiste 2 vlastnosti validnich distribuovanych algoritmu.

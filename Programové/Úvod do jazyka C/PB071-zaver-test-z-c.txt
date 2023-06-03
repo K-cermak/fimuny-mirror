@@ -1,0 +1,118 @@
+Zaver. test z Uvodu do C: + moje odpovede. No neboli vsetky dobre :D
+vsetko co si pamatujem
+
+1. ktore z nasledujucich je chybne:
+A je pole intov
+p je ukazatel na int
+
+a) A+3
+*b) A-p
+c) p-2
+d) 3[A]
+e) A+p
+
+2. ktore plati podla normy C99:  (myslim ze to bola norma C99 no niesom isty)
+*a) sizeof(float) < sizeof(double) < sizeof(long double)
+b) sizeof(float) <= sizeof(double) <= sizeof(long double)
+c) sizeof(float)==4 sizeof(double)==8 sizeof(long double)==16
+d) sizeof(float), sizeof(double)=2*sizeof(float), sizeof(long double)=2*sizeof(double)
+
+3. Mame program:
+int prohoz(a,b) {pom = a; a = b; b = pom;}
+in main() {int i=1,j=2; prohoz(i,j); return 0;}
+aku hodnotu bude mat i a j pred prikazom return?
+*a) i=1,j=2 //menia sa len lokalne premenne vo funkcii nie v hlavnej funkcii
+b) i=2,j=1
+c) dalsie odpovede neviem
+
+4. 
+mame pole A[], int pole a pointer: *pointer
+Kde bude ukazovat pointer po nasledujucom kode?
+
+int A[N], pole = 0, *pointer;
+*pointer = pole + 3 alebo nieco take
+Odpovede:
+*a) ukazuje na prvok A[3]
+b) ukazuje na prvok A[2], lebo sa to pocita od prvku A[0]
+c) dalsie odpovede neviem
+
+5. Ktore nieje uzivatelom definovany typ:
+*a) char
+b) enum
+c) struct
+d) union
+e) struktura definovana prikazom typedef
+
+6. Co nieje mozne naprogramovat v C?
+a) nieco s vstupnymi a vystupnymi hodnotami
+*b) praca s grafiku na urovni bitovych map (alebo nieco take s obrazkami)
+c) dalsie neviem
+
+7. Nacitavame retazec pomocou funkcie scanf("%s",text). Co sa zapise do pola text?
+a) vsetko kym nestlacime enter(return);
+b) prikaz ma syntakticku chybu (alebo nieco s tym)
+*c) vsetko po najblizsi biely znak
+d) tolko znakov, kolko sa zmesti do pola text
+e) dalsie odpovede neviem
+
+8. co obsahuje syntakticku chybu:
+a) for(;;) return;
+*b) for(i = 0;i++) return;
+c) for(i = 0;i++;i<=n) return;
+d) for(i = 0;i<n,i--) return;
+e) dalsie odpovede neviem
+
+9. Mame prikaz funkcia{ /* prikazy */} if(premenna =="end") prikazXXX;
+Kedy sa spusti prikaz "prikazXXX"?
+
+a) ak sa v premennej "premenna" vyskytuje 'e' alebo 'n' alebo 'd'
+b) ak sa premenna "premenna" rovna "end"
+c) ani jedno z uvedenych
+d) musime pouzit funkcie aebo nieco take
+e) dalsie neviem
+
+10. Mozme v norme ANSI C alebo C99 pouzit funkcie s rovnakym nazvom? (tzv. bla bla bla)
+a) mozme ak typy parametrov su rozne
+b) mozme ak pocet parametrov je rozny
+c) mozme ak typy parametrov su rozne, ak pocet parametrov je rozny a navratovy typ je rozny
+d) mozme len v C99
+*e) nemoume ani v ANSI C ani v C99 (toto som len tipol)
+
+11. Ako NEMOZME!!! zmenit cisla v stringu na typ cisel?
+a) atoi
+b) atol
+*c) sprintf (tiez viacmenej tip)
+d) sscanf
+e) ani jedno (alebo vsetky, uz neviem)
+
+12. Rozdiel medzi Union a Struct
+a) ziadny. Ide o to iste
+*b) polozky struct sa v programe navzajom nemenia no polozky v unione sa v pameti prekryvaju
+c) dalej neviem
+
+13. Nieco so strukturou "Register", co sa deje ked nemame dostatok registrov pri preklade
+a) program vypise upozornenie
+b) program sa neprelozi
+c) program sa prelozi ale spustime ho len na stroji s dostatkom registrov
+*d) vytvoria sa virtualne registre (viacmenej typ;)
+e) ak je stroj na sieti tak sa pokusa najst stroj s dostatkom registrov
+
+14. Ako oznacujeme komentar v norme ANSI C (alebo to bolo C99 - menej pravdepodobne)
+a) // komentar
+*b) /* komentar */  (viacmenej typ podla polohy hviezd :)
+c) obe odpovede hore su spravne
+d) dalsie neviem (ale myslim ze to boli nejake blbosti)
+
+15. Mame cast programu:
+i=0;
+if (i= 3&5) printf("%d\n",i);		010 = 5 dekad.
+Co sa nam vypise? 		      & 101 = 3 dekad.
+a) 0					001 = 1 dekad.
+*b) 1 	     1. -> True a do i sa vlozi c. 1
+c) -1
+d) neviem co tu bolo
+e) je tu syntakticka chyba
+
+16. mame direktivu #include "..."
+*a) znamena ze vlozi do programu uvedeny standardny subor no najskor ho hlada v aktualnom adresari
+b) dalsie neviem

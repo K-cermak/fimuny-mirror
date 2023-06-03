@@ -1,0 +1,12 @@
+1. Napiste XML dokument, ktery bude obsahovat:
+a)
+b)
+...
+h)
+V dokumentu presne oznacte, ktera jeho cast odpovida, kteremu bodu (a-h
+obsahovalo pojmy jako napr. XML prolog, PI, ...)
+2. Napiste netrivialni XML Schema/RelaxNG schema(7b.) nebo aspon DTD (3b.) k
+uvedenemu dokumentu.
+3. Napiste netrivialni XSL Transformaci dokumentu z otazky 2. na validni XHTML
+1.0 dokument.
+4. Napiste XQuery dotaz, ktery vybere z dokumentu v otazce 2. nejake  uzly.

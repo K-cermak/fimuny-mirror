@@ -1,0 +1,18 @@
+-- PB104 Pisomka 4.6.2008 -- 
+
+# Trvanie: 
+1:15
+
+# Hodnotenie:
+pravdepodobne 10+10+10+10=40b
+pravdepodobne na E => 20b
+
+# Zadani:
+Navrhujeme, implementujeme skladovy IS. Nasazujeme u zakaznika a migrujeme jeho stavajici data na novy server. IS zvlada evidenci materialu, nakup a vyvoz. Obsahuje logisticky modul. Nikdo z nasej firmy nikdy o logistike nic nepocul. Skladove IS sme ale uz robili mnohokrat (37 krat). Technologie mame preskusane a zvladnute.
+
+# Ulohy:
+1. Navrhnite WBS. Navrhnite jednotlive etapy, nakreslite sietovy diagram s casovym ohodnotenim a zavislostami uloh, nakreslite Ganttov diagram.
+2. Odhadnut KSLOC a spocitat pomocou COCOMO I (tabulky intervalov boli prilozene) usili (E) a cas (T) pre semi-detached (bezprostredny) mod.
+3. Vymyslet 4 rizika a jejich expanzi, navrhnout a naplanovat reseni, u 2och urcit ine moznosti rizeni rizik a napsat k nim teorii.
+4. Vymyslet 4 metriky, formalne ich definovat, a potom zdovodnit, preco ich chceme pouzit v nasom projekte.
+

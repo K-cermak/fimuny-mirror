@@ -1,0 +1,16 @@
+Co si pamatuju z otazek:
+
+K cemu slouzi vizualizace. Rozdil vedecka/informacni.
+S jakymi grafickymi symboly se vyzvalizuje a jake jejich vlastnosti se pouzivaji?
+Jedna historicka vizualizace dle vlastniho vyberu, nacrtnout, popis, jak se dana metoda vyvyji nyni?
+Napsat priklad multidimenzionalniho (n>3) datoveho souboru, jak se analyzuje a jak vizulizuje?
+Obrazek nejake vizualizace (ja mel paralerni osy) - co je to, jak to funguje, vyhody a nevyhody.
+Obrazek vizualizace  (treemap) - co je to, jak se to pouziva, vyhody, nevyhody.
+Mozaic plot - co to je, jak se pouziva.
+Obrazek vizualizace - co vyzualizace pouziva ke znazornovani?(ja mel znazorneni grafu: barvy, pozice, velikosti vrcholu,...)
+Obrazek vyzualizace - co je na ni spatne ( ja mel uplne hnusne vypadajici 2D graf ktery se nekdo pokusil zobrazit ve 3D)
+Metoda redukce dimenzi, k cemu to je, napsat alespon 2 metody a jednu blize popsat.
+K cemu je v Processingu setup() a draw()
+Jake 3 zajimave knihovny muzeme pouzit v R.
+Jake metody/knihovny se pouzivaji v Processingu k tvorbe interaktivnich vizualizaci.
+Jak se ve vizualizaci pracuje s barevnymi paletami. K cemu by byla vhodna barevna skala od cervene pres bilou k modre, k cemu by naopak vhodna nebyla?

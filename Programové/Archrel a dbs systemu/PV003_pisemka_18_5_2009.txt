@@ -1,0 +1,10 @@
+6 otázek
+každá za 0-2 body
+11-12:A, 10:B 9:C 8:D 6-7:E
+
+1. vypracování pøíkladu ke zkoušce.
+2. co je INITIALY DEFERRED ?
+3. Pøepište select využívající left outer join (a.id=a.id(+)) bez použití outer join.
+4. Jaké vlastnosti musí mít VIEW, aby šlo použít UPDATE?
+5. DEADLOCK, co to je, kdy k tomu dojde, jak na to Oracle reaguje.
+6. popište nestandardní typy indexování.

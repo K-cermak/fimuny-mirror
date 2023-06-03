@@ -1,0 +1,26 @@
+1. Popište rozdíl mezi silnì a slabì orientovaným grafem.
+   Internet je silnì nebo slavì orientovaný graf?
+2. Diskutujte, jak efektivnì uložit fraf v pamìti poèítaèe.
+   Matice sousednosti je jedna z možností. 
+   - Poznáte podle ní, jestli se jedná o graf èi multigraf?
+   - Dokáže odlištit orientovaný graf od neorientovaného?
+   Jakou reprezentaci uložení do pamìti preferujete pro orientovaný graf?
+3. Definujte strom. 
+   Kolik vrcholù stupnì 1 má každý strom?
+   Kolik hran má strom s n vrcholy?
+   Naznaète konstrukci dùkazu pro obì otázky.
+4. Kolik kružnic bude obsahovat strom, když pøidáte dvì hrany?
+5. Popište job shop problém a všechny jeho parametry.
+6. Pro graf na obrázku uvažujte datové pøenosy pro stream s1 a s2.
+   s1:bandwith(s1) = 10, producer(s1)=P1, consumer(s1)={C1}
+   s2:bandwith(s2) = 10, producer(s2)=P2, consumer(s1)={C2,C3}
+   Jaké promìnné jsou potøeba pøi øešení tohoto problému?
+   Navrhnìte hodnoty tìchto promìnných, abyste optimalizovali celkovou latenci.
+   Jaká je celková latence s tìmito promìnnými?
+7. /Nejsem si jistý/ - Algoritmus shluku pro problém plánování s komunikací.??
+8. Popište rozdíl mezi prohledáváním do šíøky a do hloubky.
+   Uveïte netriviální strom, u kterého je stejný výstup pro prohledávání do šíøky i do hloubky.
+   Dají se zobecnit vlastnosti takového grafu?
+9. Co je øez grafem? 
+   Co je váha øezu v hranièním ohodnocení grafu?
+   Jak váha souvisí s minimálním a maximálním øezem v grafu?

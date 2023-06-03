@@ -1,0 +1,49 @@
+20 otázek, 40 minut. U každé otázky 5 možností, správná odpovìï 2 body, špatná -2 body, žádná -2 body (vyplatí se støílet od boku).
+Test je formou odpovìdníku v ISu, prohlížeè se ale spouští jako unixový skript, aby nebylo možné používat webové materiály. Pøijïte radìji o chvilku døív, je to drobet chaos :-)
+
+Pozor na chytáky!
+
+Tady jsou otázky, na které jsem si vzpomnìla, v pøibližném znìní. První z odpovìdí je vždy správnì:
+
+1. Znaky jsou v C++ kódovány 
+- Obvykle char jako ASCII, wchar_t jako Unicode, norma to ale nepøedepisuje
+- Jako èísla od 0 do 127 (ASCII) plus vyšší èísla jsou vyhrazená národnì specifickým znakùm
+- Pouze v ASCII
+- Norma pøedepisuje kódovat char do ASCII a wchar_t do Unicode
+
+2. Jméno konstruktoru
+- Musí být stejné jako jméno tøídy
+- Staèí když odpovídá obecným podmínkám pro pojmenování metod v C++
+- Zaèíná ~
+- Zaèíná #
+
+3. Rozdíl mezi #include <...> a #include "..."
+- U tvaru "..." se kromì systémových adresáøù prohledává i aktuální adresáø
+- U tvaru <...> se automaticky doplní k názvu .h
+- Jsou zcela zamìnitelné
+
+4. Pro pojmenování promìnných v C++ platí
+- Mùže obsahovat alfanumerické znaky a pomlèku, žádné jiné speciální znaky obsahovat nesmí
+- Pokud obsahuje èíslici, nesmí obsahovt alfaznaky
+- Nesmí konèit èíslicí
+- Mùže obsahovat jakékoli alfanumerické i speciální znaky
+
+5. Øádek cout >> 1/3;
+- Vyhodí syntaktickou chybu (chyták - cout musí mít <<)
+- Vypíše na výstup 0.333333
+- Vypíše na výstup 0
+- Naète do promìnné cout hodnotu 0.333333
+
+6. Jaká bude hodnota a, b na øádku return?
+int prohod (int i, int j) {int pom = i; i = j; j = pom; return 0;}
+int main (void) {int a=1, b=2; prohod(a, b); return 0;}
+- a=1, b=2 (chyták, promìnné a, b jsou funkci prohod pøedávány hodnotou, takže funkce zmìní jen jejich kopie)
+- a=2, b=1
+- a=0, b=0
+- V pøíkladu je syntaktická chyba
+
+7. Binární operátor je
+- Operátor, který pøijímá dva operandy
+- Operátor, který má na vstupu èíslo vyjádøené jako posloupnost bitù
+- ???
+- Rùzní autoøi používají výraz "binární operátor" ve všech výše uvedených významech

@@ -1,0 +1,50 @@
+Zkouška z Rozvrhování 28. 5. 2010
+čas na písemku 1,5 hodiny
+bodování různé za každou úlohu, většinou 14 bodů, celkem za písemku 100 bodů
+celkem bylo 7 otázek (na jednu si nemůžu vzpomenout..)
+
+1) Popište genetický algoritmus pro rozvrhování
+-> křížení, mutace, výběr
+
+2) Jaký je rozdíl mezi curricullum-based timetabling a enrollment-based timetabling?
+-> curricullum = množina předmětů; každý student se zapisuje do 1 či více curricull; cíl je rozvrh všech předmětů každého curriculla bez překryvů (žádné překryvy v rámci jednoho curriculla).
+   enrollment: každý student se zapisuje do různé množiny předmětů; konflikt studenta = překryv dvou studentem zapsaných předmětů; cíl je minimalizovat konflikty studentů při rozvrhování všech předmětů.
+
+3) Jaký je rozdíl mezi statickými a dynamickými řídícími pravidly? K oběma skupinám napište definici jednoho pravidla.
+-> statické - nezávislé na čase, závislé pouze na úloze a/nebo stroji; příklad nejdřívější termín dostupnosti.
+   dynamické - závislé na čase, do výpočtu funkce nutno zahrnout aktuální čas; příklad minimální rezerva: max(dj - pj - t, 0).
+   
+4) Rezerva dvou úloh v kontextu omezujících podmínek.
+-> slack({A,B}) = max(slack(A<<B), slack(B<<A))
+   slack(A<<B) = max(end(B)) - min(start(A)) - p(A) - p(B)
+   |AAAA|-------------------|
+        |<slack for A<<B>|
+     |-------------------|BBBB|
+     
+5) Montážní linka s fixním časem. Cílem je minimalizace celové ceny s využitím heuristiky seskupování a distribuce. 
+    - Pj každé úlohy je 1
+    - aj je atribut úlohy, dj je nejpozdější čas splnění úlohy, wj je váha úlohy
+    - cena za přehození úlohy s ak na al je |ak - al|
+    - penalizace za nedodržení termínu splnění úlohy (dj) je wj*Tj
+
+        úloha | 1 | 2 | 3 | 4 | 5 | 6 | 
+        aj    | 2 | 2 | 5 | 5 | 9 | 9 |
+        dj    | x | 4 | x | x | 3 | x |    ... x .. nekonečno
+        wj    | 0 | 3 | 0 | 0 | 3 | 0 |
+
+-> seskupení úloh se stejným atributem: A: 1,2; B: 3,4; C: 5,6;
+   uspořádání skupin dle minimalizace nákladů na přehození: A,B,C nebo C,B,A s cenou 7  (přehození A<->B cena 3, B<->C cena 4)
+   nutno zahrnout do ceny penalizaci: pro uspořádání úloh 5,6,3,4,2,1 cena penalizace 3 (w2*T2 = 3*(C2-d2) = 3*(5-4) = 3)
+   řešení: uspořádání úloh C,A,B nebo C,B,A s cenou 10 (bez penalizace, ale dražší přehození) a uspořádání 5,6,3,4,2,1 s cenou 10 (přehození 7 + penalizace 3)
+
+6) Heuristika prvního padnoucího koše (FF). Společnost má 50 zaměstnanců, každá úloha trvá 1 den. Cílem je minimalizace počtu dní potřebných na provedení všech úloh.
+   Proveďte výpočet pro FF. Jaká heuristika by dosáhla lepšího výsledku? Napište její výpočet.
+
+        úloha      | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 |
+        pracovníků | 10 | 10 | 10 | 10 | 20 | 20 | 30 | 30 | 40 | 40 |
+        
+-> 1 koš ~ 1 den; Každý koš má kapacitu 50 pracovníků;
+   FF: koš1(úlohy 1,2,3,4), koš2(úlohy 5,6), koš3(úloha 7), koš4(úloha 8), koš5(úloha 9), koš6(úloha 10) => potřeba 6 košů, tedy 6 dní
+   FFD: lepší strategie first fit decreasing, čili uspořádání od největšího po nejmenší
+        koš1(úlohy 10,4), koš2(úlohy 9,3), koš3(úlohy 8,6), koš4(úlohy 7,5), koš5(úlohy 2,1)
+                        

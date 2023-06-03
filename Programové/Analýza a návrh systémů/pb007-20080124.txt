@@ -1,0 +1,9 @@
+PB007 Analıza a návrh systémù - zkoušková písemka 24.1.2008
+
+Bodování: první ètyøi pøíklady po 5 bodech, poslední pøíklad 20 bodù (po 4 za kadı diagram, po 1 bodu dolù za kadou chybu v nìm), celkem 40 bodù, minimálnì 20 bodù na E.
+
+1. Rozdíl mezi DeMarcovou a Yourdonovou metodikou.
+2. Boehmùv spirálovı model vıvoje SW.
+3. Nefunkèní aspekty návrhu. Co je esenciální a implementaèní pamì, jaké jsou vlastnosti pamìti na DFD?
+4. Propojení a koheze modulù.
+5. Pojišovací systém: Kadı obèan si volí pojišovnu a své lékaøe (všeobecnı, zubaø, gynekolog...). "Obèan nemusí obtìovat lékaøe." Lékaøi mají uzavøené smlouvy s nìkterımi pojišovnami. Pojišovnì systém umoòuje kontrolovat, e je kadı její pojištìnec pojištìn nejvıše u jednoho lékaøe od kadého typu. Sestavte kontextovı model, model událostí vèetnì klasifikace podle YMSA (nejménì 6 událostí), systémové DFD, DFD 1. úrovnì pro jeden vybranı proces, ERD.

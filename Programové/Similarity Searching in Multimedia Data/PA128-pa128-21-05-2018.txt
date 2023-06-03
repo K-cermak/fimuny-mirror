@@ -1,0 +1,12 @@
+zkouška 21. 5. 2018
+
+1) Definice metrického prostoru. 3 pøíklady metrik tak, aby se každá používala na jiná data + jejich definice
+2) Definice range query a k-NN query
+3) Pivot filtering – motivace, definice
+4) Definice precision a recall
+5) Bukhard-Keller tree – popis
+6) M-tree – myšlenka, struktura vnitøních a listových uzlù
+
+Na ústním:
+M-stromy – vlastnosti, štìpení uzlù
+

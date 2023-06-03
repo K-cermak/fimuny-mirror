@@ -1,0 +1,16 @@
+﻿PA163 - Programování s omezujícími podmínkami
+zkouška 12. 1. 2016
+
+1) dělení stromových prohledávání (podle slidů) 
+	+ ke každé skupině napsat všechny algoritmy (stačí jméno a zkratka)
+2) rozdíly mezi AC-1 a AC-3 
+	+ detailně ukázat na příkladě (příklad byl zadaný)
+3) definice konzistence po cestě
+	+ napsat příklad konzistetní a nekonzistentní cesty délky 2
+4) jak pracuje left a first-fail
+	+ příklad (příklad jsi musel vymyslet)
+5) napsat algoritmus metody minimalizace konfliktu 
+6) popsat algoritmus AC*
+7) programovací úloha: rozvrhovací problém N úloh na M strojích (každá úloha běžela na x strojích)
+	bylo zapotřebí 'dvar interval ... optional' (v ILOGu)
+	

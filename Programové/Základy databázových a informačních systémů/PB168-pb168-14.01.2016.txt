@@ -1,0 +1,14 @@
+1. Vše o class diagramu (syntax, notace - tzn navigability; multiplicity;vztahy - association, aggregation, dependability;atributy x metody) 
+   Nakreslit smysluplný class diagram s aspoò 3 tøídami a 3 vztahy. [4b]
+
+2. Co jsou události v YMSA [3b]
+
+3. Co je to RAID?(1) Uveï 2 základní dùvody pro používání RAID. (2) Popis RAID0 a RAID1(1) [celkem 4b, rozdìlené mezi podotázky]
+
+4. Co je to transakce? Uveï pøíklad. (1) Uveï podmínky, které musí transakce splòovat. (1) [celkem 2b]
+
+5. Co je to funkèní závislost?(byla uvedena obecnì popsaná relace - R(A,B,C,D,E,F) a funèní závislosti mezi nimi)
+   Vysvìtli a uveï pøíklad funkèní závislosti.(2) Pomocí uvedených funkèních závislostí urèi primární klíè relace (2) [celkem 4 body]
+
+6. Uvedeny 2 relace, pøièemž jedna obsahovala cizí klíè odkazující na druhou relaci. Otázky: 2 SQL dotazy (každý po 1 bodu)
+   Co je to cizí klíè? Vysvìtli a popiš omezení která udìluje. (1) [Celkem 3b]

@@ -1,0 +1,14 @@
+15.5.2012 B1
+znenie otazok je len priblizne, ich poradie moze byt prehodene
+
+1 integracne testovanie
+
+2 inkrementalny a iterativny vyvoj, porovnanie; pre aku filozofiu vyvoju je vhodny inkrementalny vyvoj
+
+3 co je prototyp, vymenujte najcastiejsie typy, nakreslite postup pri vyvoji, ako je to v SOA
+
+4 demokraticky tym, ako inak sa oznacuje, vyhody, nevyhody, kedy je vhodny
+
+5 psychosomaticke choroby, priciny, kto je ohrozena skupina; syndrom vyhorenia, prevencia
+
+6 metody kritickeho retazca 

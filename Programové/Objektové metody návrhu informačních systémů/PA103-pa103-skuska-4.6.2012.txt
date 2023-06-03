@@ -1,0 +1,27 @@
+﻿PRIBLIZNE ZADANIE OTAZOK ZO SKUSKY 4.6.2012:
+
+1. Rozdiel medzi funkcnymi a nefunkcnymi poziadavkami + priklady.
+Metody ziskavania poziadaviek - interview a dotaznik + vyhody a nevyhody.
+
+2. multichoice otazka - vyznacte spravne - pre "bod rozsirenia" plati:
+a) je miesto kde sa vyuziva dedicnost
+b) sa pridava do povodneho (rozsirovaneho) scenaru
+c) je cislovany
+d) sa znaci ako "include"
+e) moze rozsirovat niekolko dalsich bodov rozsirenia
+
+3. Popiste analyticky vzor "quantity" na konkretnom priklade.
+
+4. Usporiadatel futbalovych majstrovstiev rozlosuje futbalove timy do skupin a urci casy zapasov. Po kazdom zapase zanesie do systemu vysledok. Timy ziskavaju body na zaklade vysledkov. Toto vyjadruje nasledujuci diagram tried:
+
+-----------------------------                 ---------
+|Group                      |-----------------|Match  |
+-----------------------------                 |-------|
+|+newMatch(team, team, time)|                 |+points|
+|+recordResult(match, score)|-----|-----|-----|--------
+-----------------------------     |Match|
+                                  |-----|
+                                  |+time|
+                                  -------
+
+Vytvorte komunikacny model, ktory bude modelovat vytvorenie konkretneho zapasu z jednej skupiny a zapisane vysledku do systemu. Na zjednodusenie su v diagrame tried vyznacene hotove metody, ktore mozete pouzivat, ostatne metody si mozete dotvorit podla lubovole.

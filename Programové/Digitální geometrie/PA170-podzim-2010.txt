@@ -1,0 +1,12 @@
+1. Zakreslit digitalizaci primky (plus retezovy kod), Gaussovu, vnitrni a vnejsi Jordanovu digitalizaci na obrazku 9x9 pxl
+2. Rozdelit 9 obrazku podle topologicke ekvivalence
+3. Hausdorffova metrika
+4. Zadany binarni obrazek, urcit vnitrni a vnejsi vzdalenost mezi body A, B
+5. Border tracing
+6. Zadany 3 obrazky a urcit, jestli jsou konvexni mnoziny
+7. Danielsson algorithm
+8. Najit jednoduche body popredi i pozadi na dvou binarnich obrazcich
+9. Dokazat, ze d4 je metrika
+10. Najit eulerovo cislo u dvou binarnich obrazku s dirami
+
+Za kazdou otazku 5 - 20 bodu, na E je treba 50.

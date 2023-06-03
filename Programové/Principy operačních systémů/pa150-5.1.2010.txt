@@ -1,0 +1,7 @@
+1.) Popsat Wound-Wait + pøíklad tøí transakcí, jak se navzájem budou chovat
+2.) Popsat volební distribuovaný algoritmus založený na principu vytváøení seznamù procesù v síti + jeho složitost
+3.) 2PCP - co se stane, když vypadne koordinator
+4.) Popsat distribuovaný algoritmus vzájemného vylouèení na bázi èasových razítek a pøedávání peška + složitost
+- takto byla otázka formulovaná, osobnì si myslím, že jsou myšleny dva algoritmy - algoritmus, který má èasové razítka,
+nepotøebuje peška a naopak - tedy pokud to neslouží k øešení nìjakého problému týkajícího se topologie systému a ne DME
+5.) Popsat, co je kaskádní vracení + nìjaká omáèka kolem

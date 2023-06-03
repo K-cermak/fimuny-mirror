@@ -1,0 +1,8 @@
+﻿Otázky PA150 Principy operačních systémů termín 16.1.2015
+
+1. Popsat distribuovaný algoritmus volby master uzlu Chang, Roberts a určit složitost?
+2. Popsat algoritmus distribuovaného vzájemného vyloučení v obecné topologii Ricard-Agrawala a jeho složitost?
+3. Popsat algoritmus spolehlivého odesílání zpráv všem procesům ve skupině pomocí FIFO řazení zpráv?
+4. Popsat co je to serializovatelný plán a řešení serializovatelnosti pomocí precedenčního grafu
+5. Popsat 2-fázový transakční zamykací protokol a jaká jeho vlastnost brání kaskádnímu vracení?
+6. Popsat nutné a postačující podmínky uváznutí a 3 druhy postupů prevence uváznutí?

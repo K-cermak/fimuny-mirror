@@ -1,0 +1,53 @@
+* AAA 
+* Principy bezpeènosti v síti, co poadujeme? 
+* Integrita spravy co to je ako ju zabezpecit preco nestaci zasifrovat 
+* Monosti Autentizace kdy mám asynchronní šifrování
+* symetrická, asymetrická kryptografia, digitálny podpis, integrita správy
+* Zrovnajte struène princípy symetrickej a asymetrickej  kryptografie. Ktorı systém pouíva dlhšie k¾úèe a preèo (uveïte benú dnes pouívanú ve¾kos k¾úèov u asymetrickej kryptografii)? Ktorı z tıchto systémov je moné poui pre digitálny podpis a na akom princípe digitálny podpis funguje? 
+* SET – popis + aky problem presne riesi
+* Firewally
+
+
+* transparentnos v DS
+* co je DS a jaky znas 
+* synchronny a asynchronny dist syst.
+* Aké vlastnosti v distribuovanom prostredí zaisti (garantova), ak máte k dispozícii synchrónnu komunikáciu? A aké vıhody má naopak asynchrónna komunikácia?
+* Èo je to Remote Procedure Call (RPC)  a ako sa pouíva? Ktoré nedostatky RPC rieši Remote Method Invocation (RMI) v jazyku Java? Ako sa Java RMI vysporiada s predaním ukazate¾ov vzdialenım objektom? Je vôbec moné ukazatele predáva? 
+* Co je Dynamic Invocation Interface (DII) a co dìlá Interface Definition Language (IDL)?
+* Remote Procedure Call (RPC) - chyby a jejich oprava
+* RPC ako sa kontaktuje klient so serverom a ako vie klient ktory server ma kontaktovat
+* Portmapper
+* Popis XDR + kedy a ako sa pouziva
+* Jak se øeší rozdílnost HW a OS v DS
+* Èo si predstavujete pod pojmom soft state v kontexte distribuovanıch systémov? Akı problém sa pouitím soft state rieši?
+
+* Èo rozumiete pod pojmom Webové sluby?  S akımi základnımi protokolmi sa v ich súvislosti môeme stretnú?
+* WSDL a ako suvisi so soap, syntax
+* CORBA, èo je ORB, analógia k IDL ktorá sa pouíva vo webovıch slubách
+* ?WSDL - analógia v CORBE? +ešte nieèo
+* Self schedueling, popis a preco ma problem s kratkymi spravami
+* Popíšte princípy a rozdiely politík transferu úloh v kontexte vyrovnávania záae (Senderinitiated a Receiver-initiated Policies)
+* Aky je rozdiel medzi sender iniciated policy a receiver iniciated policy
+* Diskutujte struène problematiku migrácie – aké typy prístupov poznáte? Popíšte nejakú metódu migrácie beiaceho kódu v distribuovanıch systémoch (teda migrácie u spusteného programu z poèítaèa A na poèítaè B).
+* Migrácia kódu, èo je strong mobilita a weak mobilita
+* rozloenie záae, najznámejšie metódy, uvedenı príklad - ktorú z metód by sme pouili 
+* Co je Fault Tolerance in DS, co znamená kdy je K-fault tolerant?
+
+
+* Èo je cie¾om systémov správy sietí (Network Management)? Èo je v tejto súvislosti zpravidla sledované?
+* Network management, popis a co se sleduje podle OSI
+* network managemenst - sprava sieti
+* FCAPS - vybra 3 a podpísa
+* SNMP a jeho èásti
+* Co je Structure of Management Information (SMI) a co øeší?
+
+
+* K popisu èoho je a èoho nie je vhodné poui Specification Description Language (SDL)? Uveïte príklady a uveïte fázy vıvoja alebo implementáciu komunikaèného protokolu. 
+* Msc – co to je na co sa to pouziva, syntax, obrazok a slovny popis co na obrazku je
+* MSC - na èo sa pouíva, vymyslie príklad a popísa èo modeluje
+* Co lze ?popsat? kdy máme pouitı Specification Description Language (SDL) i Message Sequence Chart (MSC)? 
+* Jak se øeší synchronizace èasu v síti, problémy? 
+
+* Sdn – co to je, motivace, Openflow – co to je a medzi akymi prvkami
+
+* Problem zhody, co to je a rozdiel medzi silnou s slabou

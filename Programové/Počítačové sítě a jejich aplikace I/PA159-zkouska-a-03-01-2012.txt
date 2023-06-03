@@ -1,0 +1,18 @@
+PA159 zkouška 3.1.2012 sk. A (pøibliné zadání, bez poøadí)
+
+10 otázek, kadá 10 bodù
+
+-Funkce protokolu IGRP, EIGRP
+-CHORD v P2P, algoritmy
+-Co je TE, k èemu se pouívá
+-Co je síovı protokol, definice. Jak jsou protokoly standardizovány. Pøíklady protokolù na jednotlivıch vrstvách modelu OSI
+-Digitální zpracování zvuku, tøi formáty pro ukládání
+-Funkce smìrovaèe, vèetnì schématu. Jak to ovlivní CIDR?
+-Multimediální data, popis, klasifikace, pouívané protokoly
+-VANET, vıhoda oproti klasickım mobilním bezdrátovım sítím
+-Tvorba hlavièek v IPv6, rozdíl oproti IPv4. Fragmentace paketù v IPv6
+-souèinnost IPv4 a IPV6, tøi základní monosti
+
+
+
+

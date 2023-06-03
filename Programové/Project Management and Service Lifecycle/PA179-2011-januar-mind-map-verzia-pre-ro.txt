@@ -1,0 +1,13 @@
+-Value Proposition (define, Service System boundaries, dual and coop system, define, assign 2 + service breakdown structure)
+-Popis modelu PPPM (draw basic model od PPPM + describe connections, from Assignment 1)
+-Obligatory Assignment - read about Viable systems and SSME/SSMED and compare to Project management
+-The challenge of Service Science - "Curving of the Cost Line“ (L9)
+-Service System Reference Model - Diamond of Predictive Behavior (function, vertical/horizontal axis)
+-Project DELLIISS
+-Diamond 8 - a Business Development Diamond
+-Project Initiation & Strategy (what document must be created + content of this document, main organisational bodies + their functions)
+-Project Planning (+ difference between Project Phases and Project Stages, WBS + confusion between What/How)
+-Project Implementation (+Two-level management structure?)
+-Standards IPMA/ICB, characteristics, describe couple of competencies from ICB, structure of ICB
+-Project, Program, Portfolio, Service Systems (definitions, dependencies)
+-Theory of Contraints (define, Critical chain, drum-and-rope principle, Double-level management and how it relates to ToC

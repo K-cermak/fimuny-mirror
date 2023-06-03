@@ -1,0 +1,7 @@
+A3B10Letní
+1. Capacity Maturity Model pro SW procesy. Proè je ménì pouitelnı u menších podnikù.
+2. Co je SW proces. ivotní cyklus SW procesu. Proces vıvoje s prototypováním.
+3. Skupiny uivatelù z hlediska jejich pøítupu k zavádìní systému (napø. loudalové). Ve které skupinì hledat spojence pøi zavdìní systému a proè.
+4. Nech a(p) je procento vısledkù dosaené p procenty nejlepších. Co je známo o a(p), jakıch vyıledkù dosahuje 1% nejlepších. Ja tyto poznatky ovlivòují stavbu tımu.
+5. Problémy s pouíváním CPM pøi øízení SW projektù. Jak lze léèit efekty líneho studenta, zpevòov ání norem a multitaskingu. Souvisí to nìjak s tımovou loajalitou?
+6. Vlastnosti dobrého vedoucího. Typy manaerù.

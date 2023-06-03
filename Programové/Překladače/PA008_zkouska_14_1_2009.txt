@@ -1,0 +1,15 @@
+1)Vyjmenujte, popište a porovnejte jednotlivé organizace tabulky symbolů pro jazyk s blokovou strukturou. (100b)
+
+2)Sestrojte atributovou gramatiku pro daný příkaz:
+cycle S1 while E then S2 s takovouto strukturou, uvést a popsat
+případné funkce, které při tvorbě gramatiky použijeme (100b)
+
+        |
+   +-->-S1
+   |    |
+   |    E -- false ->
+   |    |
+   |    S2
+   |    |
+   |-<--+
+Alternativou bylo popsat While E then S jako ve skriptech 

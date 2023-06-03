@@ -1,0 +1,32 @@
+Moje otázky na skúške ( ktoré si pamätám) :
+
+1. obrázok so stránkovaním  pamäti ( 11. slajdy, slajd è. 7) , bolo potrebné doplni tabu¾ku.
+
+2. obrázok RAG grafu bez cyklu, vyberte správnu odpoveï: 
+
+	-RAG bez cyklu, nedošlo k uváznutí
+	-/inıgraf/ bez cyklu, nedošlo k uváznutí
+	-RAG s cyklom, došlo k uváznutí
+	-/inıgraf/ s cyklom, k uviaznutiu došlo
+	-RAG bez cyklu, k uviaznutiu došlo
+správne je A.
+
+3. SYSENTER je : 
+	- rıchle systémové volání
+	- pomalé systémové volání
+	- ádná z odpovìdí
+správne je A.
+
+4. obrázok ( 11. slajdy, slajd è. 5 ), Co je ve sloupci oznaèeném RES a co to znamená ? 
+	- rezidentné bla bla
+	- reštrukturálne bla bla
+	- rezidentná èas, neodswapovaná fyzická pamä, ktorú proces pouil.
+	- bla bla 
+	- bla bla
+správne je C.
+
+5. tabu¾ka s procesmi P1,P2,P3,P4, preemptívny alg. SJF, otázka bola, ktorı proces bude spracovávanı v èase 10.
+
+
+
+Viac si bohuia¾ nepamätám, prajem ve¾a šastia ! 

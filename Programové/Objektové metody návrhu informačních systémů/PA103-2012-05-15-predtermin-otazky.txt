@@ -1,0 +1,9 @@
+4 otazky, kazda za 10 bodu, 90 minut, bodovani podle prvni prezentace
+
+1] Rozdily mezi agilnim a rigoroznim vyvojem sw, kazdy strucne popsat, jaky maji vztah k pouzivani UML, u kazdeho uvest priklad metodiky, napsat rozdil z pohledu funkcnost-cas-zdroje.
+
+2] baliky, zavislosti mezi baliky, cyklicke zavislosti a jak je odstranit, vysvetleni <<access>> a <<import>> mezi baliky
+
+3] identifikace ukazaneho diagramu (jednalo se o sekvencni diagramy) a vyber ktere z diagramu jsou nakreslene zle spolu s vysvetlenim
+
+4] Prakticky ukol - nakreslit analyticky model trid zakladni skupiny MS v fotbalu. Zkracene zadani - tymy jsou rozdeleny do skupin, ktere jsou oznaceny pismeny (skupina A atd.). Jednotlive tymy ve skupine mezi sebou hraji utkani v dany cas, poradi ve skupine je dano body. Mely byt podchyceny vsechny informace v popisu, vsechny ostatni byly zbytecne. (Zadani neni uplne presne, ale nejak tak to bylo).

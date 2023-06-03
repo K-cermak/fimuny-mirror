@@ -1,0 +1,12 @@
+Popisne znenie otazok.
+
+1. Akymi mechanizmami sa v IPv6 sa riesi preklad adries. A ako sa riesi opacny problem - zistenie IP adresy, ked mam L2 adresu.
+2. Logicky cas - definicia, ako sa implementuje, vyuzitie.
+3. Tsunami
+4. Infrastruktura Bluetooth. Preco sa nepouzivaju zakladnove stanice (Access Pointy)
+5. Ake poznate varianty vyrovnavania zataze a popis Semi-staticke.
+6. XDR - k comu sluzi
+7. Popis implementaciu spolahliveho broadcastu.
+8. Ake chyby (pri synchronnej komunikacii) mozu nastat pri RPC a ako sa riesia.
+9. Co je to distribuovany objekt, aky je rozdiel medzi jednoduchou a plnou distribuciou.
+10. Co je to staticke a co je to dynamicke volanie?

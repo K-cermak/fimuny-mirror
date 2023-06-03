@@ -1,0 +1,15 @@
+12 otázek kadá zhruba 10-14 bodù, maximum 150
+
+1)popište vnitøní pamì, jaké má vlastnosti
+2)rasterizace písmen, co to je, jak se to dá zpravit
+3)co je to kernel
+4)vyrovnávací pamì u systému souborù, srovnat ètení a zápis
+5)co sou textury, jaké mají vlastnosti
+6)jakı je rozdíl mezi pollingem a pøerušením, kdy je vıhodnìjší polling, kde se pouívá
+7)asymetrická kryptografie, co to je, jak dlouhé má klíèe, co je to digitální podpis a jak souvisí s 
+  klíèi
+8)co jsou statické algoritmy, jaké jiné typy znáte, jakı typ se pouívı na internetu
+9)jak spravuje OS periferie + dìlení periferií
+10)jakı je vztah mezi vıpoèetní technikou a vìdou
+
+dál u si to nepamatuju

@@ -1,0 +1,6 @@
+1. Udrzba, pracnost udrzby ak celkovo hodnotime projekt 100 bodmi. Co je naplnou udrzby, co sa dokoncuje z vyvoja?
+2. Neformalne role, co to je, priklady pozitivnych a negativnych.
+3. Zasady SW metrik, co zasadne ovplyvnuje kvalitu metrik?
+4. Inspekce, zlozenie tymu, naco je vhodna, ako prebieha
+5. Veduci de-facto, de-jure, ako sa riesi ak v jednom tyme je viac de-facto veducich.
+6. Princip urcovania narocnosti a nakladovosti pomocou COCOMA + funkcne body.

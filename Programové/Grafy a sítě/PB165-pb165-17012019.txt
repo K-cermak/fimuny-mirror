@@ -1,0 +1,13 @@
+1. Co je to sled? Ako suvisi sled so suvislostou? Definujte pojmy slaba a silna suvislost. Ku vsetkym bodov uvedte definicie a priklady.
+2. (bol tam graf uloh a ich casu vykonania) K uvedenemu grafu uvedte:
+	a) grafy kritickych ciest
+	b) ulohy s rezervou a ich rezervu
+	c) najneskorsi cas ukoncenia kazdej ulohy
+3. Napiste algoritmus pre vyfarbenie grafu.
+4. (bol tam stromovy graf - producenti, distributori a konzumenti) Pre zadani pocitacovu siet uvedte zoznam premennych. Uvedte odpovedajuce hodnoty premennych pre znizenie max latencie. Aka je vysledna latencia?
+5. Vysvetlite princip Chord. Vysvetlite algoritmus vyhladavania, spolu so jeho skalovatelnou variantou. Diskutujte o vyhodach a nevyhodach.
+6. Definujte nahodny graf. Co musi platit aby bol graf suvisly? Vysvetlite jeho pouzitie pri modelovani internetu. Uvedte v com je jeho zakladna nevyhoda.
+7. Vysvetlite princip Network coding. Uvedte kodovaci schema.
+8. Definujte pojmy siet a tok. Popiste algoritmus Edmons-Karp. V com sa lisi od Ford-Fulkersonovho algoritmu? Co maju spolocne?
+9. Napiste algoritmus Simulovaneho zihani a tabu. Co maju spolocne?
+10. Popiste funkciu optimalizacie algoritmu, ktory pouzivaju link-state protokoly. Co je treba zmenit aby algoritmus hladal najsirsiu cestu? Je nutna este nejaka zmena?

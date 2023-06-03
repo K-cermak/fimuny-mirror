@@ -1,0 +1,31 @@
+PA152 - 28.5.2018
+Uzavøené otázky:
+1. Které tvrzení neplatí pro pevné schéma -> že neumožòuje použití atributù promìnlivé délky
+2. Pokrývající (covering) index -> index nad nadmnožinou atributù, podle kterých je filtrován dotaz
+3. Co je to hierarchie pamìtí -> kategorizace pamìtí podle parametrù (kapacita, rychlost, cena...)
+4. Kterou informaci nepoužívá optimalizace dotazù -> statistiky o provedených dotazech
+5. Èím se vyznaèují magnetické disky -> pomalý pøístup k bloku dat kvùli mechanickým souèástkám
+6. Který dotaz obsahuje nekorelovaný vnoøený SELECT -> tohle jsem mìl špatnì
+7. Co je fyzický plán dotazu -> strom operací potøebných na získání požadovaných dat s pøiøazenými konkrétnímy algoritmy
+8. Øídký index -> je používán zejména pro primární indexy
+9. Pøi dvoufázovém MergeSort dochází k
+   a) pouze sekvenèní ètení a zápis
+   b) sekvenèní ètení aj zápis, náhodné ètení
+   c) pouze náhodné ètení aj zápis
+   d) sekvenèní ètení aj zápis, stejnì tak náhodné
+   -> oznaèil jsem d) a je to špatnì
+
+Otevøené otázky:
+1. Mìjme 12 identických diskù, každý s kapacitou 2 TiB, diskový aj databázový blok je 4 KiB
+   a. sestavte nad nimi RAID10, popište princip ukládaní dat a znázornìte uložení 24 KiB souboru
+   b. urèete celkovou dostupnou kapacitu pole a poèty operací ètení a zápisu, který je možné zpracovávat v jeden okamžik
+2. Mìjme relaci map(PK id, name, x, y, description) - name je jméno místa na mapì, description je jeho podrobný popis, x a y jsou jeho souøadnice.
+   T(map) = 120000, B(map) = 800, V(map,x) = 600, V(map,y) = 500
+   Nad toute relací mìjme grid-index.
+   a. popište, co je to grid index a odhadnìte jeho prostorové nároky na bloky pro tuto relaci, databázový blok je 8 KiB
+   b. odhadnìte cenu provedení následujúcího dotazu s využítím grid-indexu a bez jeho existence, vše zdùvodnìte
+      SELECT name FROM map WHERE x = 502 AND y = 302
+3. Proveïte obnovu po výpadku podle žurnálu transakcí níže
+   -> uveïte databázi do konzistentního stavu (podle toho aktualizujte hodnoty v databázi)
+   -> pøidejte položky do žurnály transakcí, jestli si to obnova vyžaduje
+   -> všechny kroky komentujte, uveïte, které transakce berete v úvahu

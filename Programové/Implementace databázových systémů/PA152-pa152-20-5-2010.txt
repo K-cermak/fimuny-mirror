@@ -1,0 +1,22 @@
+1) priklad na RAID mel jsi zadany seek time, avg latency a rychlost cteni a mel jsi spocitat dobu precteni 1 bloku (4KB)
+dale urcit kolik minimalne bloku se precte za 1 sekundu
+
+2) prikaz SELECT a FROM table WHERE b='podminka'; prepsat do relacni algebry
+
+a pak uvest transformaci prevest na vyraz, kde projekce je co nejblize relaci
+
+3) navrhnout schema zaznamu vhodne.. a uvest vyhody a nevyhody
+velikost zaznamu <= velikosti bloku, bloky pevne delky
+
+4) nakreslit logicky plan dotazu SELECT jmeno, prijmeni FROM student,zapis WHERE student.uco = zapis.uco AND zapis.predmet='PA152';
+
+pro kazdy plan vypocitat odhadovany pocet zaznamu.
+Zadane bylo T(student), T(Zapis), V(student,uco) V(zapis,uco), V(zapis, predmet)
+
+5) neco s MergeSort 1000 bloku relace, 100 bloku pamet slozitost a jak to funguje..
+
+6) cosi s indexy a jejich pravdepodobnosti u relace z 20 bloku. napsat ceny operaci select a insert.. atd ...
+
+I hope it helps
+Radek
+  

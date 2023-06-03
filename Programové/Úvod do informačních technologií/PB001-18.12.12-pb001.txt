@@ -1,0 +1,12 @@
+procesor - z coho sa sklada, cim ho charakterizujeme
+kernel - na co sluzi
+autorizacia, autentizacia - charakteristika + priklad na autentizaciu
+smerovanie, prepinanie - rozdiely, preco je potrebne routovanie pre Internet
+reprezentacia realnych cisel
+vyuzitie IT vo vede +specificke vyuzitie technologii vo vede, IT ako sucast zivota
+ako sa vykresluje na rastrovom displeji usecka + problemy
+rozdiel medzi prekladacom a interpretom +priklady jazykov, kt. su prekladane; interpretovane
+konstruktivna geometria telies
+prerusenie +alternativy
+virtualna pamat +aku ma spravidla velkost
+certifikacna autorita +s akym sposobom sifrovania suvisi

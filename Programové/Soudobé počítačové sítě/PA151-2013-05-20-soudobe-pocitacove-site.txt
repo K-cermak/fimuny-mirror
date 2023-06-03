@@ -1,0 +1,13 @@
+Zkouška 20.5.2013 12:00
+
+Formát MAC adresy, co je v adrese pri posilani ramce v BSS
+
+Øízení pøístupu k médiu u bluetooth.
+
+Øízení pøístupu k médiu u 802.11 obcházení kolizí.
+
+Princip CSMA bez naléhání.
+
+Proè je EDGE 3x rychlejší než GPRS.
+
+Pøíklad na bitovou rychlost: pásmo 2-3Mhz, 24dB šum + jaka digitalni modulace umožní dosáhnout maximální rychlosti tohoto média.

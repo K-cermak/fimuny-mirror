@@ -1,0 +1,12 @@
+1) Popište adresování na všech úrovních ISO/OSI modelu. Jakým problémem je duplicita adres na L2+L3?
+2) Co je IP multicast, jaky L4 protokol využívá; vytváření multicastových skupin (+ protokoly).
+3) Neighbour discovery v IPv6. Nakreslete schéma. Kde se protokol využívá?
+4) Co znamená MPLS (Multiprotocol Label Switching) a jak pracuje; Jaké jsou jeho výhody? Popište rozdíly proti CIDR.
+5) Popište zabezpečení na IPv6. Porovnejte se zabezpečením u IPv4.
+6) Popište směrovač a nakreslete schéma.
+7) Uveďte, co je Trafic Engineering, jak a kdy se používá. Jaké metody Traffic Engineeringu znáte?
+8) Popište funkce TCP, fáze přenosu, rozepište Tahoe, Reno, Vegas.
+9) Popište heuristické směrovací strategie používané v P2P sítích a alespoň jednu z nich podrobněji. Základní problém heuristik?
+10) Popište směrování Chord v P2P. Popište vyhledání v Chordu a popište škálovatelný vyhledávací algoritmus.
+11) WSN (možná tato otázka: Popište přístup k médiu pro WSN a Ad-hoc sítě. Identifikujte hlavní kritérium použitelnosti pro tyto protokoly; uveďte jejich klasifikaci a pro každou skupinu zástupce.)
+12) Co je to VANET? Jaké jsou rozdíly proti mobilním Ad-Hoc sítím?

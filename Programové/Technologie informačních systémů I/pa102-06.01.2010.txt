@@ -1,0 +1,6 @@
+1. Hlavni duvody uspechu a neuspechu vyvoje IS. Proc firmy neuvadi v teto souvislosti kvalitu vyvojaru?
+2. Uzivatel chce na zacatku uplne vymezit budouci funkce IS a razantne restrukturalizovat podnikove procesy. Zhodnotte rizika a zavery zduvodnete. Jaky je optimalni postup a kdy je zvlaste snsdne ho pouzit?
+3. Co je konsistence, bezrozpornost a vystupovatelnost pozadavku. Uvedte duvody, proc je formulace pozadavku obtizna, a proc neni vhodne aby ji delal uzivatel sam.
+4. Riziko, atributy, typy opatreni pri rizeni.
+5. Zasady ergonomie pracovniho mista a pracovni mistnosti. Skryte ztraty nemoci z povolani.
+6. Co je strategicka mapa a Balanced Score Card. Priklad pouziti.

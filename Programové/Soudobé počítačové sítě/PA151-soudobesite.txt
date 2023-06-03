@@ -1,0 +1,8 @@
+Otazky zo skusky 31.5.2011
+
+1. Vysvetlit riadenie pristupu CSMA/CD
+2. Riadenie pristupu v GSM sietach
+3. 802.11 - Adresovanie MAC
+4. 802.11 - Ako sa zabezpecuje casova synchronizacia
+5. Ako je zabezpecena dovernost dat v GSM sietach
+6. Porovnat satelity podla vzdialenosti orbitu(3 druhy), na co sa jednotlive satelity vyuzivaju

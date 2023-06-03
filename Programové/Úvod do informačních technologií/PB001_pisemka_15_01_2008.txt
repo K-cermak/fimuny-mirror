@@ -1,0 +1,43 @@
+PB001 zkouška 15.1.
+
+2 skupiny, 16 otázek, 150 bodù.
+
+Otázky byly víceménì stejné jako v pøedchozích letech, jen pozor na grafiku, zejména extrudovanımi povrchy byli nìkteøí studenti zaskoèeni :-)
+
+Skupina B:
+- Von Neumannova architektura
+- Rozdíl mezi magnetickou páskou, CD-ROM a pevnım diskem. Proè existují rùzná pamìová média?
+- Paralelní systémy
+- Multicast. Je pouitelnı na Internetu?
+- Rozdíl mezi sítí spojovanou a paketovou. Která z nich je Internet?
+- Rozdíl mezi pøekladaèem a interpretem. Uveï pøíklady jazykù.
+- Jaké jsou typy organizace souborù? Jak je organizováno neobsazené místo na disku? Co jsou i-nodes?
+- Jak si pøedstavujete bezpeènı souborovı systém?
+- Pøerušení
+- OpenGL
+- Jaké problémy øešíme pøi vykreslování úseèky na rastrovém displeji? Souvisí to nìjak s antialiasingem?
+- Co je to vizualizace. V jakıch oblastech se vyuívá?
+- Jaké vlastnosti mají vektorové displeje?
+- Co je to TCP (Transmission Control Protocol)?
+- Kriminalita bílıch límeèkù
+- Reprezentace zápornıch celıch èísel - monosti a která z nich je nejèastìji pouívaná.
+
+Skupina C:
+- vnutorna pamat - vlastnosti a zlozenie
+- reprezentacia realnych cisel v PC
+- extrudovane povrchy
+- staticke smerovacie algoritmy. Su pouzite v Internete?
+- vyrovnavacia pamat - na co sluzi, priklad
+- synchronizacia, aspon 2 priklady
+- kernel
+- co su to periferie
+- vztah vedy a vypocetni techniky
+- co si predstavujete pod pojmem kvalitni sit
+- co je to autorizace
+- vlastnosti rasterovych displeju
+- jak se na rasterovych dispejich vytvari barvy - co je to RGB
+- co jsou to IP adresy, vite jak jsou rozdelene do skupin?
+
+
+
+

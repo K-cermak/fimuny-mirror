@@ -1,0 +1,62 @@
+16 otázek, jedna odpovìd správnì, správná odpovìï +5, špatná -2
+
+
+1. Uvaujme zamykání s vícenásobnou granularitou. Pokud jedna trasakce vlastní na nìjakém elementu zámek IS, pak jiná transakce nemùe stejnı element zamèít zámkem:
+* S
+* X
+* IS
+* SIX 
+
+2. Jakı bude vısledek operace sjednocení R \cup S pøi pouití varianty "SUM"?  R={a,b,c,d}, S={b,b,c,c,c,d,d}
+
+3. Rozvrh a vybrat
+* je acyklickı a má alespoò 5 hran
+* je cyklickı a má alespoò 5 hran
+* je acyklickı a má nejvıše 4 hrany
+* je cyklickı a má nejvıše 4 hrany
+
+4. Co je to WAL
+
+5. Pøedpokládejme pouití algoritmu 2 fázového tøídìní vícecestnım sléváním (TPMMS), kterı v první fázi pouívá pamìt velikosti M. Èasová sloitost algoritmu pro urèitá data je N. Jak se zmìní èasová sloitost T algoritmu, pokud se poèet záznamù je stejnı ale mají polovièní délku
+* Nezmìní se
+* T*2
+* T/2
+* n log n
+
+6. Jakım zpùsobem se provádí index-scan (asi)
+
+7. Co to je souvislı blok(?)?
+
+8. co je špatnì:
+* P(S1) acyklickı => S1 konfliktnì serializovatelnı
+* S1, S2 konfliktnì ekvivalentní => P(S1)=P(S2)
+* P(S1)=P(S2) => S1, S2 konfliktnì ekvivalentní
+* (asi) S1 konfliktnì serializovatelnı => P(S1) acyklickı
+
+9. Nech R(x,y) je relace, x a y jsou celá èísla, kadé má 4 byty. Hlavièka záznamu má 2 byty, kapacita bloku je 1024 bytù a hlavièka bloku ma 24 bytù. Nech T(R)=5000. Jaká je velikost B(R) pøi maximálním obsazení všech blokù?
+* 40
+* 50
+* 5
+* jinak
+
+10. Jak se tvoøí quad strom...
+
+11. B+strom, kde je v nekoøenovıch minimálnì 100 a maximálnì 200 ukazatelù, "data" zùstávají v pamìti, kolik je tøeba pøístupù na disk, jestlie máme 1 000 000 záznamù
+
+12. R(a,b), S(b,c) a vypoèítat odhad T(R x S); zadáno T(R)=50, T(S)=100, V(S,b)=5, V(R,b)=10
+* 5000
+* 1000
+* 500
+* 100
+ 
+13. Co je to BigTable
+
+14. Co je to sekundární index
+
+15. popis a princip míchání záznamù
+
+16. hustı index pouijeme vdy kdy:
+* nemáme setøízená data
+* máme 2 indexy
+* pouíváme jenom jeden index
+* bloky mají víc ne 1 záznam

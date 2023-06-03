@@ -1,0 +1,31 @@
+PV003 - Architektura RDBS - pisemka 28.5.2007
+
+--bylo 9 otazek, tusim za kazdou 3b a na E stacilo 9b :)
+
+
+
+1. Proc je dobre davat index na cizi klice?
+
+2. Ktere prikazy se nesmeji vyskytovat v triggeru?
+
+3. Zakladni vlastnosti transakce
+
+4. Popsat databazovy objekt ROLE
+
+5. Uvest priklad DEADLOCKu
+
+6. Uvest priklad povinne vazby 1:1
+
+7. Jake sloupce muze obsahovat SELECT, ve kterem je klausule GROUP BY?
+
+8. Ceho se tyka klausule ON DELETE CASCADE u integritnich omezeni?
+
+9. Transformujte uvedeny select tak aby nepouzival OUTER JOIN
+
+   CREATE TABLE t1 (i int);
+   CREATE TABLE t2 (i int);
+
+   SELECT t1.i i1, t2.i i2
+   FROM t1, t2
+   WHERE t1.i=t2.i (+)
+

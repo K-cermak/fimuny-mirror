@@ -1,0 +1,17 @@
+﻿PA159 - Počítačové sítě a jejich aplikace I
+Datum: 3.1.2012
+Skupina: A (jiná nebyla), první termín
+Vytvořil: Dejvino
+
+Bylo 10 otázek po řádově 10 bodech, 90 minut času.
+
+1. Co je to síťový komunikační protokol? Udejte základní definici. Uveďte způsob standardizace. Uveďte příklad protokolu pro kažou vrstvu ISO OSI modelu.
+2. Jaký je rozdíl v hlavičkách IPv4 a IPv6? Jak se u IPv6 poznává fragmentace paketu?
+3. Jakou funkci má směrovač, uveďte jeho schéma. Jaký vliv má CIDR na jeho funkcionalitu?
+4. Jakým způsobem je zajištěna koexistence IPv4 a IPv6? Uveďte a popiště 3 základní řešení.
+5. Co jsou to protokoly IGRP a EIGRP, na co se používají?
+6. Jak probíhá digitalizace zvuku? Uveďte příklady alespoň 3 audio formátů.
+7. Co je to Traffic Engineering (TE), jeho popis, k čemu slouží a jaké základní metody používá?
+8. Co jsou to VANETs, jaké jsou výhody oproti obecným mobilním sítím?
+9. Směrování pomocí CHORD v P2P sítích, popis fungování, jaké vyhledávácí protokoly pro tuto metodu znáte?
+10. Co si představujete pod pojmem multimediální data? Jak je můžeme dělit? Jaké komunikační protokoly se používají pro přenos + krátký popis.

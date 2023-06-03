@@ -1,0 +1,9 @@
+princip AAA
+SNMP jak funguje z ceho se sklada
+Autentizace chalange-response
+typy FW
+Co je Distribuovaný System, znáte nìjaký?
+Jak øeší RPC komunikaci mezi jinými platformami.
+Portmapper
+DII a IDL
+Self-scheduling

@@ -1,0 +1,6 @@
+1. HTTP v1.0 resp. v1.1 ukáza na GET poiadavku.
+2. MIME - èo je to za štandard, kde sa pouíva?
+3. Base64 èo je a ako funguje?
+4. farby html css, ako sa dajú urèi a ku kadému typu urèenia príklad.
+5. èo je prepínaè (switch) a ako funguje?
+6. Ako vie IP, ktorı protokol má poui, uvies príklady a ako sa správne priradia

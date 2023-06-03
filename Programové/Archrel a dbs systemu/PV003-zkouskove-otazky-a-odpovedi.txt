@@ -1,0 +1,180 @@
+Tento kompilát obsahuje otázky posbírané ze všech materiálů na stránce fi.muni.org spolu s několika dalšími, na které jsem natrefil u zkoušky (i když překryv s již dostupnými byl 3/5). Ke každé otázce je za symbolem # uvedena odpověď. Za její správnost (až na poslední otázku) ručím :-)
+
+----------------------------------------------------------------------------------------------------
+
+Pri nekonkurentnich sezenich (jste jedine aktivni sezeni) provedete tyto akce:
+	CREATE SEQUENCE s1;
+	SELECT s1.NEXTVAL FROM DUAL;
+	ROLLBACK;
+	SELECT s1.NEXTVAL FROM DUAL;
+	COMMIT;
+	SELECT s1.CURVAL FROM DUAL;
+	jakou hodnotu vrati posledni SELECT?
+# Hodnota sekvence je generovana nezavisle na transakcnim zpracovani. Takže poslední SELECT vrací 3.
+
+
+Charakterizujte rozdily mezi transakcemi typu READ COMMITED a SERIALIZABLE.
+# 
+	READ COMMITED - Pokud 2 transakce zároveň mění řádek, druhá počká, až první skončí (ale může nastat deadlock).
+	SERIALIZABLE - Pokud 2 transakce zároveň mění stejný řádek, druhá z nich skončí s chybou.
+
+
+Uvedte priklad pouziti spojeni tabulek typu outer join
+# Pomocí
+	SELECT ... WHERE t1.i(+) = t2.i; (z t2 se vezmou všechny hodnoty)
+	Pokud chceme FULL OUTER JOIN "plusovým" zápisem, musíme udělat UNION dvou (LEFT a RIGHT) OUTER JOINů.
+	Nebo klíčovým slovem FULL/LEFT/RIGHT OUTER JOIN.
+
+
+Jake sloupce muze obsahovat prikaz SELECT, ve kterem je klauzule typu GROUP BY?
+# Konstanty, sloupce agregačních funkcí (na libovolných sloupcích) a sloupce přímo zmíněné v GROUP BY klauzuli. (+kombinace)
+
+
+Uvedte priklad SQL prikazu jazyka definice dat (DDL), jehoz soucasti je manipulacni prikaz DML.
+# Asi nelze... (v zásadě DDL příkazy manipulují daty (např. DROP TABLE nebo TRUNCATE TABLE), ale neobsahují DML příkazy)
+
+
+Proč mají být na cizích klíčích indexy?
+# Při změně hodnoty sloupce, na který odkazuje jiná tabulka cizím
+	klíčem je kontrolována korektnost této operace, tedy prochází se
+	"detailová" tabulka a kontroluje se výskyt staré hodnoty, v případě
+	jeho nalezení operace končí chybou. Z toho plyne nutnost vytvořit
+	indexy na každý cizí klíč! Podobná situace nastává i při mazání
+	řádků z "hlavní" tabulky.
+
+
+Přepište dotaz bez použití klauzule HAVING
+	SELECT name FROM people GROUP BY name HAVING count(*) > 10;
+# SQL> SELECT name FROM (SELECT name, count(*) c FROM people GROUP BY name) WHERE c>10;
+
+
+Co znamená INITIALLY DEFERRED?
+# Integritní omezení, které se kontroluje až v okamžiku commitu. Například lze tímto vložit data do cyklu FK.
+
+
+Jaké příkazy nesmí obsahovat trigger?
+# Trigger nesmí obsahovat příkazy COMMIT a ROLLBACK (může je obsahovat, ale nesmí se k nim nikdy dostat, tj. provést je).
+
+
+Napište základní syntaxi PL/SQL bloku včetně asynchronního ošetření výjimek.
+# 
+	DECLARE
+		-- deklarace proměnných
+	BEGIN
+		-- příkazy PL/SQL
+	EXCEPTION
+		WHEN <typ výjimky> THEN
+			-- zpracování výjimky
+	END;
+
+
+Zakladni vlastnosti transakce
+# 
+	A - Atomic (Všechny příkazy transakce jsou provedeny "najednou" (a úspěšně), nebo se neprovede žádná část.)
+	C - Consistent (Data jsou po provedení transakce v konsistentním stavu, tj. není porušen žádný CONSTRAINT.)
+	I - Isolated (Operace jsou izolovány od ostatních transakcí)
+	D - Durable (Po skončení transakce jsou data trvale uložena)
+
+
+Popsat databazovy objekt ROLE
+# Objekt, popisující seznam práv. Následně můžou být tato práva přidělena více uživatelům.
+
+
+Uvest priklad povinne vazby 1:1
+# 
+	Obecně by neměla existovat, jedná se o chybu návrhu. 
+	Jinak může existovat například při "kruhových referencích":
+		CREATE TABLE T1 (I INT PRIMARY KEY);
+		CREATE TABLE T2 (I INT PRIMARY KEY);
+		ALTER TABLE T1 ADD CONSTRAINT T1_FK1 FOREIGN KEY (I) REFERENCES T2(I);
+		ALTER TABLE T2 ADD CONSTRAINT T2_FK1 FOREIGN KEY (I) REFERENCES T1(I) INITIALLY DEFERRED;
+	Pak se zde využije při vkládání vlastnosti INITIALLY DEFFERRED (nejdřív se musí vložit řádek do T2).
+
+
+Čeho se týká klausule ON DELETE CASCADE u integritních omezení?
+# Při smazání řádku, na který se odkazuje cizí klíč z jiné tabulky, bude i řádek s tímto klíčem (v jiné tabulce) smazán.
+
+
+Transformujte uvedeny select tak aby nepouzival OUTER JOIN
+	CREATE TABLE t1 (i int);
+	CREATE TABLE t2 (i int);
+	SELECT t1.i i1, t2.i i2 
+	FROM t1, t2
+	WHERE t1.i=t2.i (+)
+# SQL> SELECT * FROM t1,t2 WHERE t1.i=t2.i UNION SELECT t1.i,null FROM t1 WHERE t1.i NOT IN (SELECT * FROM t2);
+
+
+Jaké vlastnosti musí mít VIEW, aby šlo použít UPDATE?
+# Update se musí vztahovat na data z pouze jedné tabulky, která je navíc KEY-PRESERVED. 
+	To znamená, že její klíč je i klíčem celého VIEW.
+
+
+DEADLOCK, co to je, kdy k tomu dojde, jak na to Oracle reaguje.
+# Deadlock může nastat při souběžném zpracování dat jedné tabulky z více sezení, pokud je nastaven typ zpracování
+	READ COMMITED. Například
+
+	CREATE TABLE I1 (cislo INT, slovo VARCHAR2(64), CONSTRAINT I1_PK PRIMARY KEY (cislo));
+	INSERT INTO I1 VALUES (1,'A');
+	INSERT INTO I1 VALUES (2,'B');
+	COMMIT;
+
+	sezení 1 - UPDATE I1 SET slovo='C' WHERE cislo=1;[OK]
+	sezení 2 - UPDATE I1 SET slovo='D' WHERE cislo=2;[OK]
+	sezení 1 - UPDATE I1 SET slovo='E' WHERE cislo=2;[OK - čeká] -- ##
+	sezení 2 - UPDATE I1 SET slovo='F' WHERE cislo=1;[OK - čeká] -- DEADLOCK
+
+	Oracle umí deadlock detekovat a zhruba po vteřině druhou část první transakci zruší (řádek označený
+	komentářem -- ##. Druhá stále čeká. Na první transakci dáme COMMIT, v tabulce jsou (z pohledu 
+	první transakce) data (1,'C'),(2,'B'). Zároveň přestane čekat druhá transakce a provede obě UPDATE. 
+	Pokud řekneme COMMIT ve druhé transakci, data budou aktuální pro všechny zbylé transakce, 
+	tedy (1,'F'), (2,'D').
+
+
+Popište nestandardní typy indexování.
+#
+	FullText - umožňuje efektivní vyhledání řádků podle „volného“ textu, který je obsažen ve sloupci typu CLOB.
+		CREATE TABLE fullword(id INT PRIMARY KEY, sloupec_textu CLOB);
+		CREATE INDEX jmeno_indexu ON fullword(sloupec_textu) INDEXTYPE IS CTXSYS.CONTEXT;
+
+		Obnovení indexu není automatické, je třeba použít klauzuli:
+		EXEC CTX_DDL.SYNC_INDEX('jmeno_indexu');
+	
+	Prostorový index - Slouží k efektivnímu přístupu ke geometrickým datům, používá techniky:
+		- minimálního omezujícího obdélníku (prostor, do kterého se celý geometrický útvar "vejde")
+		- R-tree (modifikace B+tree)
+		
+		Datový typ pro takový index je MDSYS.SDO_GEOMETRY, index potom vytvoříme jako:
+			CREATE INDEX prostorovy_index 
+			ON nazev_tabulky(nazev_sloupce_geom_typu)
+			INDEXTYPE IS MDSYS.SPATIAL_INDEX;
+
+Uveďte, jaké techniky používá databáze ORACLE při spojování tabulek (JOIN) a popište je.
+#
+	Nested loops (vnořené cykly):
+		Prochází se celá "vnější" tabulka a hledá se odpovídající klíč
+		v tabulce "vnitřní". Podle existence indexu ve vnitřní tabulce se
+		hledá odpovídající řádek podle indexu, nebo opět plným průchodem.
+	Sort merge join :
+		Uspořádá obě tabulky (vrácené řádky) podle klíče, kterým tabulky
+		spojujeme, v případě existence indexu použije vhodný index. Poté
+		prochází obě uspořádané tabulky a vrací kombinace řádků se
+		stejnými klíči.
+	Hash join :
+		Pro menší tabulku se z klíčů vytvoří hash tabulka. Poté se prochází
+		větší tabulka a hledá se odpovídající klíč v hash tabulce.
+		Databáze ORACLE se rozhoduje pro strategii na základě naplnění
+		tabulek, frekvence výskytu klíčů.
+
+Uveďte, jaký vztah má příkaz SELECT vzhledem k transakčnímu zpracování.
+#
+	(Tady přesně nevím, co chtěl pan Drášil slyšet, za odpověď níže uvedenou jsem dostal 1 bod ze 2)
+	SELECT sice není transakční příkaz, ale je na transakcích závislý v tom smyslu, že vrací
+	stav dat v určitém okamžiku. Podle nastavení databáze potom může vracet různá data, pokud 
+	souběžně pracující transakce data změní a následně commitne.
+
+
+----------------------------------------------------------------------------------------------------
+
+Sepsáno 24.5.2010. Kódování UTF-8. Windows line ending (achjo).
+
+© Z materiálů veřejně dostupných zpracoval, odpovědi dopsal, o pár otázek rozšířil a hodně štěstí na zkoušce přeje Pavel S. Obohacujte, měňte, využívejte a zdarma rozšiřujte dle libosti.

@@ -1,0 +1,12 @@
+﻿29.06.2016 posledny termin 
+priblizne zadanie
+
+Sdn – co to je, motivace, Openflow – co to je a medzi akymi prvkami
+Integrita spravy co to je ako ju zabezpecit preco nestaci zasifrovat
+Msc – co to je na co sa to pouziva, syntax, obrazok a slovny popis co na obrazku je
+RPC ako sa kontaktuje klient so serverom a ako vie klient ktory server ma kontaktovat
+WSDL a ako suvisi so soap, syntax
+Popis XDR + kedy a ako sa pouziva
+Self schedueling, popis a preco ma problem s kratkymi spravami
+Network management, popis a co se sleduje podle OSI
+SET – popis + aky problem presne riesi

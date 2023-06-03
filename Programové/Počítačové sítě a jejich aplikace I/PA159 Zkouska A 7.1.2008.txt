@@ -1,0 +1,21 @@
+7.1.2008 Skupina A
+
+1 Popiste vztah mezi vypocetni slozitostí a asymetrickou kryptografii. Co o ní víte?
+2 IPv4 vs IPv6
+3 MIB - úèel, vlastnosti, jinı podobnı systém (12 b)
+4 IPsec - vztah k VPN, principy, architektura (16 b)
+5 Popište podrobnì funkci a úèel protokolu Random Early Detection. 
+  Jakım zpùsobem øídí kvalitu sluby zajišované protokolem RTP? (16 b)
+6 Speciálním typem firewallu bıvá aplikaèní brána. 
+  Diskutujte moné zpùsoby èinnosti takové brány, 
+  úèel jejího nasazení a pøípadné problémy, které mùe pøi komunikaci pùsobit. 
+  Pro které aplikace byste povaovali aplikaèní brány za nevhodné? (12 b)
+7 Popište podrobnì algoritmus AES Rijndael a jeho vlastnosti. (18 b)
+8 Backward Error Detection a Forward Erorr Detection. Kterı z nich se pouíva v TCP/IP
+  a kde se pouívá ten druhı. Jaké zanáte typy potvrzování?
+9 Popište principy algoritmu GPS. Kterému skuteènì pouívanému algoritmu odpovídá? 
+  Jaké vlastnosti je moné v algoritmu GPS garantovat? (18 b)
+10 Jakım zpùsobem je mono odstranit nebo alespoò omezit chyby pøi pøenosu videosignálu? 
+   K èemu slouí interleaving? (10 b)
+11 Srovnejte pozitiva a zápory protokolu H.323. Kterému z následujících se nejvíce podobá? 
+   MPEG-2,H.261 a SIP.

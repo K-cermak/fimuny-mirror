@@ -1,0 +1,13 @@
+PA153 Poèítaèové zpracování pøirozeného jazyka, skúška 16.1.2018
+
+Verbalex, co to je, co všechno obsahují rámce, pøíklad
+sémantické rysy, jejich nevýhody
+pojmenované entity, problémy pøi zpracování
+jaké èásti obsahuje statistický strojový pøeklad
+jaké výhody pøináší word embeddings
+kdy je vhodné využít n-fold cross-validation (multiple choice)
+která funkce sketch engine je nejpøínosnìjší pro lexikografii (multiple choice)
+zapsat vìtu ve formalizmu predikátové logiky
+rozdíly mezi monotonním a nemonotonním odvozením, jak se øeší konfliktné poznatky
+Syntaktický strom vìty: "Muž, který se smál, vidìl muže, který plakal"
+1 otázka ???

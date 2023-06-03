@@ -1,0 +1,8 @@
+skuska 20.5 2013
+
+- akym sposobom edge siete 3x navysili rychlost prenosu oproti gprs
+- popisat csma/ca v 802.11
+- popisat nenaliehajuce csma
+- popisat princip sco v Bt a tiez reakcie na chyby
+- popisat mac ramec 802.11 a hodnoty pola pre prenos v ramci bss/ess
+- vyratat max. rychlost a zistit vhodnu dig. modulaciu na priblizenie sa tejto rychlosti, ak pasmo je medzi 2 az 3 MHz, S/N=251.

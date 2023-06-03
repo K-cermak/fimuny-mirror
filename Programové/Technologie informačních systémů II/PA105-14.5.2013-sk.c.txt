@@ -1,0 +1,8 @@
+Priblizne otazky z 14. 5. 2013 pro skupinu C.
+
+1. Demokraticky tym. V jake skupine (-kracii) se vyskytuje. Kde a proc se pouziva? Jake jsou vyhody.
+2. Prace v tymu. Jake ma vyhody a jake ma nevyhody? V cem spociva? Jake jsou role v tymu a co to je? Uved priklady. Jake jsou typy cinnosti v tymu?
+3. Inkrementalni vs. Iterativni vyvoj. Popis je. Kde se ktery pouziva? Ktera architektura napomaha iterativnimu vyvoji?
+4. Co je to SW prototyp. Popis jake druhy prototypu znas. K cemu se prototypy pouzivaji. Lze prototypovat v SOA? Nakresli proces vyvoje s prototypovanim.
+5. PCM. Efekt lineho studenta. Zprisnovani norem a aktivity proti tomu.
+6. Byznys interview. Kdo se ho ucastni? Jak probiha? K cemu je to dobre? Cemu se vyvarovat? Proc je dulezita shoda? Par slov k rizikum interview a k efektivnosti.

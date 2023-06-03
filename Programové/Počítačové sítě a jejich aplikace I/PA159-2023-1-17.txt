@@ -1,0 +1,12 @@
+1. Popíšte vlastnosti ideálnych a reálnych sietí a uveďte aj protokoly/techniky, pomocou ktorých sa reálne siete snažia priblížiť ideálnym.
+2. Popíšte adresáciu v IPv6, aké typy adries tu máme ? Uveďte príklad IPv6 adresy a pravidlá pre skracovanie.
+3. Popíšte Neighbor Discovery Protocol (pre IPv6). Ako pracuje a kde sa využíva ?
+4. Čo sú to Distance Vector smerovacie protokoly ? Podľa čoho sú pomenované ? Vymenujte aspoň 3 zástupcov a jedného z nich popíšte detailnejšie.
+5. Čo je to TE (Traffic Engineering) v IP sieťach. Popíšte základné podmienky a optimalizačnú funkciu pre problém Single Commodity Network Flow a Multicommodity Network Flow.
+6. Popíšte riadenie tokov (Flow Control) a riadenie zahltenia (Congestion Control) v TCP. Akým spôsobom sa robí výpočet veľkosti vysielacieho okna v tradičných TCP protokoloch ? Ako to ovyplyvňuje množstvo prenesených dát na vysokorýchlostných linkách ?
+7. Popíšte protokol RBUDP (Reliable Blast UDP). Do akej skupiny protokolov patrí. Kde ho je možné s výhodou využiť ?
+8. Popíšte heuristické smerovacie stratégie používané v P2P sieťach. Čo je základným problémom v sieťach, ktoré využívajú tieto stratégie ?
+9. Popíšte P2P systém BATON. Aká grafové štruktúry využíva a ako tu prebieha smerovanie dotazov ?
+10. Popíšte prístup k médiu pre WSN a Ad-hoc siete. Identifikujte hlavné kritérium použiteľnosti pre tieto protokoly. Uveďte ich klasifikáciu a pre každú skupinu zástupcu.
+11. Aký je rozdiel medzi reaktívnym a proaktívnym ad-hoc smerovaním (Proactive and Reactive On demand Ad-hoc Routing) ? Uveďte príklady konkrétnych protokolov so stručným popisom.
+12. Aké sú funkčné požiadavky multimediálnych sieťových aplikácií ? Uveďte aj protokoly, ktoré tieto požiadavky riešia vrátane stručného popisu.

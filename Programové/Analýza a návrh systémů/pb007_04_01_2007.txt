@@ -1,0 +1,12 @@
+4.1. 2007
+ANALÝZA A NÁVRH SYSTÉMŮ
+
+Skupina A
+
+Životní cyklus vodopád, jeho etapy a jejich výstupy
+Srovnat SASS a Logické modelování, co mají společného(2 věci) a v čem se liší(3)
+UML notace tříd
+Integrační testování - postupy
+
+Eshop - vytvořit DFD, ERD, seznam událostí, Use case
+

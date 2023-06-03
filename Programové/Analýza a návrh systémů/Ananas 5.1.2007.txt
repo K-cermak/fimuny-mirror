@@ -1,0 +1,9 @@
+1) Lehmanovy zakony
+2) Coad&Yourdon: 5-ti vrstvovy model
+3) Druhy udalosti podle YMSA, popis a uved priklady
+4) SSADM
+5) Vytvor kontext.d. a STD. Podle YMSA definujte min 6. udalosti a podle YMSA popiste
+PRVOTNI CDFD.
+
+Informacni system, kt po zadani vychoziho bodu a konecneho bodu, s datem a casem pozada o penize
+a pote vytiskne na tiskarne zvolene nejblizsi spoje k danemu datu. Pokud uzivatel stiskne tlacitko ZRUS nebo po 10 vterinach neprovede zadnou akci je system vracen do puvodniho stavu.

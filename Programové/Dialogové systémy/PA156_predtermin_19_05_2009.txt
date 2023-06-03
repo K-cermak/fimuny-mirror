@@ -1,0 +1,7 @@
+﻿PA156 - Dialogové systémy
+Zkouška má písemnou (20 minut, 2 otázky) a ústní (0 - 10 minut) část. Na ústní části se dořešují nejasnosti z písemky, pokud je známka jasná, jde to rychle.
+
+Otázky písemné části:
+1. Kooperativní dialog (Griceovy aspekty), kooperativní dialogové strategie (vězňovo dilema atd.)
+2. VoiceXML
+

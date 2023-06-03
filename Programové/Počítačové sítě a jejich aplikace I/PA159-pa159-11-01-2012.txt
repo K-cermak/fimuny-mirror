@@ -1,0 +1,12 @@
+10 otázek, každá za 10 bodů, nutné cca 65 ze 100b.
+
+1) Co je IP multicast, jaký L4 protokol využívá, zákl. přístupy vytváření multicastových skupin (včetně příkladů protokolů).
+2) Neighbour discovery v IPv6.
+3) Principy přechodu z IPv4 na IPv6.
+4) RIP vs OSPF - shody, rozdíly.
+5) Funkce TCP, fáze přenosu, podrobněji rozepsat Tahoe/Reno (shody, rozdíly).
+6) Co jsou overlay networks a kde se nacházejí.
+7) Taxonomie P2P systémů, stručně charakterizovat každou kategorii.
+8) Popsat P2P Pastry, rozdíly oproti Tapestry.
+9) Kde se používá a jak pracuje DSR protokol.
+10) Popsat základní funkce RTP/RTCP/RTSP protokolů. Proč byly zavedeny?

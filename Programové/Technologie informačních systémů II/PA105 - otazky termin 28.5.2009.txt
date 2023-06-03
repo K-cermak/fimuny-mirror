@@ -1,0 +1,11 @@
+1. co je enactment procesu + diagram modelovania procesov
+
+2. co je to usability a ake su jej pozitivne dopady (na produkciu apod.)
+
+3. 3 aspekty tymovej prace a na ktore sa zabuda
+
+4. Vanova krivka chybovosti softver a priznaky, ze softver je opotrebovany
+
+5. Zivotna krivka novej technologie, preco je vysoky extrem v dobe medovych tyzdnov, rizika kupit technologiu uz pocas jej medovych tyzdnov
+
+6. oponetura, ake druhy poznas, preco je dolezite a preco sa vysledky z nej maju uchovavat podobne ako vysledky z testovania

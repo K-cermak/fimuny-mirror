@@ -1,0 +1,17 @@
+PB152 Operacní systémy. Zkouska 27.5.2013
+
+1. Napiste alespon 3 zpusoby predavani parametru mezi procesem a operacnim systemem.
+2. Nakreslete a popiste stavový cyklus procesu.
+3. Napiste spolecne a rozdilne vlastnosti vlaken a procesu.
+4. Popiste reseni kriticke sekce pomoci petersonova reseni a diskutujtee zda toto reseni splnuje vsechny podmínky spravneho reseni kriticke sekce.
+5. Napiste podminky ke vznkiku uvaznuti a popiste alespon 2 zpusoby preventivniho reseni uvaznuti.
+
+6. Spoctete zpomaleni behu systemu.
+Vypadek stranky nastane jednou za 1000 cyklu procesoru, kolikrat se zpomali beh systemu pokud bude muset pokazde pri vypadku kopirovat stranku.
+(Nebo nejak podne, presne si to nepamatuji)
+Bylo zadano:
+Cyklus pameti: 200ns
+Doba kopirovani stranky do pameti RAM (cislo si bohuzel nepamatuji)
+Doba vyberu beziciho procesu (opet si nepamatuji presny udaj)
+
+Jestli, ze vam tyto otazky pomohly, prosim pokuste se priste pridat ty z vaseho terminu. :-)

@@ -1,0 +1,11 @@
+No moc si to už nepamatuju, ale pár snad dám ještì dohromady:
+
+1) definujte graf
+2) definujte náhodný geometrický graf
+3) co nastane pøi spuštìní dijkstrova alg. nad grafem se zápornì ohodnocenými
+hranami
+4) popiš job shop problémy
+5) najdi kritickou cestu v grafu + makespan (ten popiš)
+...
+
+bylo toho víc, ale dùkazy témìø žádné - to by vás snad mohlo uklidnit :-)

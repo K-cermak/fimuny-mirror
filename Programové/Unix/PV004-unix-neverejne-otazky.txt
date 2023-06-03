@@ -1,0 +1,90 @@
+Hvìzdièka mezi expanzními znaky shellu znamená:
+ libovolný poèet opakování libovolných znakù kdekoli v øetìzci 
+*libovolný poèet libovolných znakù na jejím místì 
+ libovolný poèet opakování pøedchozího znaku 
+ libovolný poèet opakování hvìzdièek
+
+
+Jakým pøíkazem nepøedáte na standardní výstup seznam cest k adresáøovým položkám, které
+nejsou ani normální soubor, ani adresáø? Hledejte v bìžném adresáøi a všech jeho podadresáøích.
+find . ! -type f ! -type d -print
+*find . ! \( -type f -a -type d \) -print
+find . ! \( -type f -o -type d \) -print
+
+
+Jakým pøíkazem nepøedáte na standardní výstup seznam cest k adresáøovým položkám, které nejsou ani normální soubor, ani adresáø? Hledejte v bìžném adresáøi a všech jeho podadresáøích.
+find . ! -type f ! -type d -print 
+*find . ! -type f -o ! -type d -print 
+find . ! \( -type f -o -type d \) -print 
+
+
+Mám-li zadání zaèínající "Pøejmenujte všechny soubory bìžného adresáøe ...", jaký pøíkaz pro výbìr souborù použiji?
+rm 
+find 
+*for 
+search
+
+
+Který pøíkaz ukonèí shell, ze kterého je spuštìn seznam:
+( exit; ) 
+*{ exit; } 
+
+
+Který pøíkaz pøedá na standardní výstup øádky v poøadí
+4
+15
+(echo 15; echo 4)|sort 
+*(echo 15; echo 4)|sort -n 
+(echo 15; echo 4)|sort -n -r 
+(echo 4; echo 15)|sort 
+
+
+Co pøedá na standardní výstup pøíkaz
+touch asdf; test -f asdf; echo $?
+Pøedpokládejte, že se vše podaøí tak, jak má.
+*0 
+asdf 
+$? 
+1 
+
+
+Pøíkazem chmod o+r * pøidáme právo ètení pro
+skupinu vlastníkù souboru 
+*ostatní uživatele 
+vlastníka souboru 
+
+
+Co pøedá na standardní výstup pøíkaz
+echo a > b; echo b > a; cp `cat b` `echo c`; cat c
+c 
+a 
+*b 
+nic 
+
+
+Zní-li zadádní "Naleznìte všechny souboury v bežném adresáài a všech jeho podadresáøích, které ...", použiji pro výbìr souboru pøíkaz:
+for
+rm
+search
+*find
+
+
+Jakým pøíkazem pøedáte na standardní výstup èíslo odpovídající poètu souborù v bìžném adresáøi, jejichž jméno konèí na .txt?
+for i in *.txt; do ls $i|wc -l; done 
+*ls *.txt|wc -l 
+find *.txt -exec ls {}|wc -l \; 
+
+
+Jakým substituèním pøíkazem editoru vi zrušíte obsah všech závorek, pokud se kdekoli mezi dvojicí () nachází podøetìzec Brandejs? Rušíte vèetnì závorek. Pokud závorka podøetìzec Brandejs neobsahuje, nesmíte ji zrušit. Používáte základní regulární výrazy.
+1,$s/\([^)]*Brandejs[^(]*\)//g 
+1,$s/(.*Brandejs.*)//g 
+1,$s/\(.*Brandejs.*\)//g 
+*1,$s/([^)]*Brandejs[^(]*)//g 
+
+
+Který z pøíkazù nepøedá na standardní výstup øetìzec Botanická 68a?
+správnì*CIS=68a; echo 'Botanická ${CIS}' 
+CIS=68a; echo Botanická ${CIS} 
+CIS=68a; echo "Botanická $CIS" 
+echo Botanická 68a 
+CIS=68a; echo Botanická $CIS 

@@ -1,0 +1,26 @@
+29.5. 2012 skupina C
+poradie otazok si nepamatam, ani ich presne znenie
+
+1. co je multiplexing, ake pozname typy
+
+2. Classless a Classful adresovanie
+
+3. hop-by-hop, tiez komplementarny pojem, uviest pre kazdy typ vhodnu vlastnost siete
+
+4. relacna vrstva, funkcie, priklady protokolov
+
+5. co je smerovac, na ktorej vrstve pracuje, ake ma funkcie, kde v Internete sa s nim stretneme
+
+6. co znamena "AAA", popiste kazde A
+
+7. popiste mobilitu v IPv6, najdeme ju aj v IPv4?
+
+8. P2P siete vs. client-server, ktore je na co vhodne
+
+9. posielanie elekt. posty, protokoly POP3, SMTP, MIME
+
+10. algoritmy pristupu ku zdielanemu mediu (MAC), tri typy a uviest i priklady
+
+11. kde sa vyuziva planovanie (scheduling), opiste fungovanie Priority Quering a Weighted Fair Quering
+
+12. naco su autonomne systemy, ako je zabezpecene smerovanie

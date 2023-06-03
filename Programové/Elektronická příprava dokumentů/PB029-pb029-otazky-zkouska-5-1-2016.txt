@@ -1,0 +1,31 @@
+PB029 Elektronická příprava dokumentů
+Semestr podzim 2015
+Termín 5.1.2016
+
+Struktura zkoušky:
+Korektura za 10 bodů, text obsahoval 10 typografických chyb. Opravy se vyznačují pomocí korekturních znamének. Text byl na A4 dva sloupce. Výňatek z Malého prince. Za špatnou odpověď se body neodečítaly.
+Test 40 otázek za 40 bodů, špatná odpověď -0,5b správná 1b, žádná 0b.
+
+Tyto jsem si zapamatoval, bohužel bez znění možných odpovědí. Přes to myslím, že mají hodnotu.
+
+Co je střední výška písma?
+Co jsou snížené verzálky?
+Jak se napíše znak rozdělovníku v latexu?
+Co je hlava 42?
+
+/hypenation je příkaz?
+latexu
+texu
+...
+
+/hyphenpenalty má vliv na co?
+/linepenalty má vliv na co?
+Jaký je vztah mezi HTML, XML, SGML, XHTML ve smyslu co bylo před čím?
+Jaká je roztažitelnost $r$
+
+Proč HZ program roztahuje znaky?
+protože to tak dělal Gutenberg
+...
+
+K čemu slouží archová montáž?
+Odpovědi byly jiné, než to co je v souboru otázek na muny.cz. 

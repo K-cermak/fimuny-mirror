@@ -1,0 +1,18 @@
+
+
+Zadání otázek jsou pøibližná berte je s rezervou, ale vystihují tématický okruh ke kterému se vztahují!!
+
+
+1. Vyplatí se studium již existujícího systému, dokumentace a procesù pøi zavádìní nového. Výhody a nevýhody.
+
+2. Dá se upravit prototypování v SOA? Proè to èasto vypadá, že uživatel neví co chce ikdyž tomu tak èasto není.
+
+3. Typy vývoje systému (inkrementální a iterativní). Který se více pro agilní vývoj?
+
+4. Tým. K èemu slouží? Výhody a nevýhody
+
+5. Spolupráce ve dvojici. Výhody a nevýhody
+
+6. Kolik % práce udìlá 1% nejlepších? Matematicky vyjádøit.......
+
+Hodnì štìstí u zkoušky

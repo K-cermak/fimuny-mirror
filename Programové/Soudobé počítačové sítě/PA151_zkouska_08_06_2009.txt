@@ -1,0 +1,6 @@
+1. Popište øízení pøístupu CSMA/CA w RTS/CTS v sítích 802.11
+2. Nakreslete schéma GSM služby, co jsou to telematicke služby.
+3. Co jsou logické a fyzické kanály v sítích GSM, k èemu slouží obecné (common) kanály
+4. Øízení pøístupu Reservation Aloha.
+5. Bluetooth - logický spoj SCO (princip, na co se používá)
+6. Zistìte poèet kódových prvkù signálu pro maximální pøenos v kanálu o šíøce 1 MHz, je-li odstup signálu od šumu 24dB (S/N = 251).

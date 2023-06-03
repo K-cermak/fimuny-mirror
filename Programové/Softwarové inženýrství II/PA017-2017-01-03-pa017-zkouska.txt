@@ -1,0 +1,8 @@
+Co je to software a čím je tvořen
+Iterativní vývoj SW
+Chyby SW
+2 výhody a 3 nevýhody vodopádu
+Co jsou externí vstupy ve výpočtu funkčních bodů
+Modely WebML
+V-procesní model a verifikace softwaru
+(a ještě něco, otázek bylo 8)

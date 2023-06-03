@@ -1,0 +1,14 @@
+PA151 - Soudobé poèítaèové sítì - zkouška ze dne 28.5.2012
+
+
+1. Vysvìtlit pojmy baudová a bitová rychlost
+
+2. Uvést 3 techniky modulace digitálního signálu pomocí analogového nosného signálu.
+
+3. Vysvìtlit princip RTC a CTS a vysvìtlit souvislost se skrytými terminály.
+
+4. Objasnit princip frekvenèního multiplexování.
+
+5. Vysvìtlit princip èasové synchronizace 802.11 v síti ad-hoc.
+
+6. Vysvìtlit MAC adresaci 802.11 v pøípadì adresace dvou stanic ve stejné BSS a také pøi adresaci do jiné DS.

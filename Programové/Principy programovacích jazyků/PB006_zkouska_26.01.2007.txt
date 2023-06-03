@@ -1,0 +1,56 @@
+26.01.2007 - zkouska PB006 - Principy programovacich jazyku
+
+1) Vyber nejspravnejsi tvrzeni:
+	A: Godel je netypovany funkcionalni jazyk
+	B: Kompilatory Javy zpravidla prekladaji do nativniho kodu procesu
+	C: Phyton je jazyk specializovan na sazbu dokumentu
+	D: Cobol zahajil eru objektovyho programovani
+	E: Funkcionalni jazyk Erlang podporuje distributivni spracovani
+
+2) a^b (mocninna funkce) kde a:Real, b:Real nebo b:Int, vysledek a^b vzdy Real. Jde o:
+	A: monomorfizmus 
+	B: inkluzni polymorfizmus
+	C: Kontextove nezavisle pretizeni
+	D: Kontextove zavisle pretizeni
+	E: parametricky polymorfizmus
+
+3) Procedure P(name x:int; ref y:int; out z:int) { 
+	z:=0;
+	while y>0 do {  z:=z+x;
+			y:=y-1;
+		     }
+
+   kde 'x' je volana jmenem, 'y' odkazem, 'z' vysledkem. M,N - globalne propisovatelne promenne, typu int, na zacatku je v 'M' ulozeno 'm', v 'N' ulozeno 'n'. Pri volani P(M+N, M, N) bude v m' a n':
+	A: m'=m; n'
+	B: m'=0, n'= (m*(m+1))/2 + m*n
+	C: m'=0, n'= m*(m+n) (asi blbost)
+	D: m'=0, n'= m*(n-1)/2 + m
+	E: zadna z moznosti neni spravna 
+
+4) Binarni konstruktor P ma 1. parametr kontravariantni a 2. parametr kovariantni, A <: A' <: A''
+	A: P(PAA')A' <: P(PA''A)A''
+	B: P(PA'A')A <: P(PA''A'')A''
+	C: P(PA''A)A'' <: P(PA'A')A''
+	D: ...
+	E: ...
+
+5) while 'e' do 'p'
+   plati ze 'e' muze mit vedlejsi efekt, a M[e]delta=true, M[e]([p]([e]delta))=false, 
+   potom [while 'e' do 'p']delta je rovno:
+	A: [e]([p]([e])delta)
+	B: [p]([e])delta
+	C: [p]delta
+	D: ...
+	E: ...
+
+6) nejaky lexikograficke usporadani, mnozina {a,b}, hornovy klauzule, E-prazdny slovo, A(x) ='a', B(x) ='b', ...
+	Mozny vysledek (z diskuze):
+		lexle(E,A(_)).
+  		lexle(E,B(_)).
+  		lexle(A(_),E). 
+  		lexle(B(_),E).
+  		lexle(A(x),B(y)):-lexle(x,B(y)). 
+  		lexle(A(x),A(y)):-lexle(x,y)).
+  		lexle(B(x),A(y)):-lexle(B(x),y).
+  		lexle(B(x),B(y)):-lexle(x,y).
+		

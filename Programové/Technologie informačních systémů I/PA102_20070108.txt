@@ -1,0 +1,14 @@
+PA102 Technologie informaèních systémù
+8. 1. 2007
+
+1/ architektura klient server, architektura is, tenký klient
+
+2/ koalice skupin v podniku, nasazení IS
+
+3/ SWOT tabulka
+
+4/ zatím jsme øešili projekty pro desítky uživatelù, máme velkou zakázku pro tisíce uživatelù. Máme to vzít?
+
+5/ RSI, pøíèiny, typy, náprava
+
+6/ Výbìrové øízení, jak probíhá, jak spolupracovat s poradci

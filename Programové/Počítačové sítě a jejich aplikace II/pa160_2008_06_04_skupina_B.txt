@@ -1,0 +1,31 @@
+4.6.2008 skupina B
+ 
+ ... zneni otazek je ramcove ...
+
+1. Protokol objevovani okoli v IPv6. K cemu se pouziva a jak? Je tam nekde 
+    vyuzity anycast?
+
+2. Jake vlastnosti mame garantovane, kdyz v distribuovanem systemu pouzivame 
+    synchronni komunikaci? Jake vyhody ma naopak asynchronni komunikace?
+
+3. Co je RPC a jak se pouziva? Ktere problemy z RPC resi Java RMI? Daji se 
+    pouzit reference na objekty?
+
+4. Vypocitej sirku pasma, znas-li vsechno ostatni, co se ma narvat do toho 
+    jedinyho vzorce, ktery je potreba znat.
+
+5. Co jsou webove sluzby? Jake protokoly se pouzivaji?
+
+6. Co je soft state v kontextu distribuovanych systemu? K cemu se pouziva?
+
+7. Self-scheduling v kontextu vyrovnavani zateze? Kdy se vyplati jej pouzit? 
+    Strucne oduvodnete.
+
+8. Uvedte nejaky princip, jakym lze prenest bezici ulohu z jednoho stroje na 
+    druhy v distribuovanem systemu.
+
+9. Bunecna organizace (cells) pristupovych bodu u wifi siti. Jake ma vyhody?
+    Kdy je naopak lepsi pouzit nejakou jinou?
+
+10. Optical Add-Drop Multiplexer. Co to je a na co to je? Co se misto nej 
+    pouziva u standardnich paketovych siti?

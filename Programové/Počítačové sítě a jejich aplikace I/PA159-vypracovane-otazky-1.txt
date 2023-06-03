@@ -1,0 +1,833 @@
+POZNAMKA : Vypracovane otazky pro PA159 Pocitacove site a jejich aplikace I (formatovani pro OS LINUX)
+v1.1 
+ * Prepracovany pouze nektere otazky
+ * Lets improve it! Vyzyvam nasledniky at material dale vylepsuji. 
+------------------------------------------------------------------------------------------------------
+
+
+1. Autorizace - popis, způsoby, podstata "capability based" mechanismu a
+jeho principy (14 b)
+
+ - Následuje autentizaci, je to proces udělení oprávnění využívat určité
+služby nebo zdroje.
+ - Pravomoce závisí na přidělených přístupových právech (ACL – Access
+Control List).
+
+
+2. Bezpečný email - vlastnosti, jaké použít protokoly (16 b)
+
+-> přenos vs. autentizace příjemce i odesílatele (nepopiratelnost), je potřeba zajistit bezpečnost na více vrstvách – více různých požadavků: 
+
+-> Požadavky: 
+ - zabezpečená komunikace (nutné zajistit komunikační kanály)
+  - integrita zpráv (zpráva nebyla na cestě od odesílatele k příjemci změněna), 
+   - Použití hash funkcí pro zajištění integrity
+ 
+ - autentizace odesílatele i příjemce 
+  - Symetrická kryptografie
+  - Asymetrická kryptografie
+
+-> Protokoly :
+ - TLS (Transport Layer Security) resp. jeho predchudce SSL (Secure Socket Layer) - kryptograficky protokol, zabezpečuje bezpecnost a integritu dat. Pracuje na transportní vrstvě - L4 resp. L4.5 (vyuziva TCP protokol).
+ - PGP (Pretty Good Privacy), GPG (GNU Privacy Guard) - aplikace pro sifrovani, desifrovani, a podpisu pošty, je to de-facto standard. Pracuje na aplikacni vrstve - L7.
+ - POP3S, IMAPS, zabezpečené protokoly vyuzivajici SSL. Pracuji na L7.
+ 
+
+3. NAT - vztah k firewallům, NAT v IPv6? (10 b)
+ 
+ - NAT je překladač adres, sám o sobě není firewallem. 
+ - Překládá IP adresy
+paketů, které jím procházejí (maškaráda). 
+ - Vnitřní adresy jsou „neviditelné" na venek. Fakticky rozšiřuje adresní rozsah, původně to
+byla reakce na vyčerpání rozsahu dostupných adres Ipv4. 
+ - Současné pojetí IPv6 NAT vylučuje. IPv6 má dostatečný adresový rozsah,
+aby každý mohl mít svou adresu, tedy NAT nebude potřeba.
+
+
+4. MIB - účel, vlastnosti, jiný podobný systém (12 b)
+
+-> MIB (Management Information Base) – je typ databaze uzivany ke kontrole zarizeni v siti. Udává hierarchickou
+strukturu. Zahrnuje sadu objektu pouzivanych k popisu sitovych entit jako routery, switche apod.
+ - Vysoký stupeň granularity, tzv. „Až kam to půjde"
+ - Umožňuje jednoznačně (teoreticky, prakticky se to nemusí vždy povést)
+definovat jednotlivé entity např. v organizaci v hierarichickém
+stromu.
+ - Každý OID (Object ID) je označen číslem a popisem
+ Př.: Sítě: 1.3, Internet: 1.3.1.6.1, prefixy standardních modulů
+ - Využívá ASN.1 (Abstract Syntax Notation One) resp. její podmnožinu - SMIv2. 
+   - je to norma, definovaná organizací OSI a slouží pro popis komunikačních
+protokolů. 
+   - Na jeho základě můžeme zjistit, zda jsou dva protokoly
+schopny vzájemné komunikace.
+
+
+5. IPsec - vztah k VPN, principy, architektura (16 b)
+
+-> IPsec slouží pro zajištění bezpečnosti na síťové vrstvě - L3, obsažen v
+několika desítkách RFC (vznikaly s jeho vývojem).
+
+-> Základní protokoly (standardy):
+ - IKE, IKEv2 (Internet key exchange) 
+  - tento proces ustavuje logické kanály (SA - security agreements), ty jsou vždy jednosměrné (pro
+duplex je potřeba dve SA) 
+  - zahrnuje vymenu sifrovacich klicu
+ 
+ - Authentication Header (AH) – zajišťuje autentizaci odesílatele a
+příjemce, integritu dat (jen v hlavičce). Data nejsou šifrována.
+
+ - Encapsulation Security Payload (ESP) – autentizace, zajisteni integrity a šifrování paketů
+
+-> Komunikace může být zajištěna pomocí: AH, ESP, nebo AH + ESP
+ - Může fungovat v end-to-end i portal-to-portal módu.
+ - Vyuziva se ve VPN jako tunelovaci protokol, ktery emuluje virtualni site pro
+počítače napříč internetem. Např. i popularni program Hamachi implementuje IPsec.
+
+
+6. MD5 - popis, použití (16 b)
+
+-> MD5 (Message Digest algorithm 5) – hashovací funkce o velikosti 128
+bitů. 
+ - Využívá se např. pro kontrolu integrity souborů nebo ukládání hesel.
+ - Algoritmus MD5 byl vytvořen v roce 1991 (Ronaldem Rivestem), aby
+nahradil dřívější hašovací funkci MD4. 
+ - V roce 1996 byla objevena vada v návrhu MD5, a i když nebyla zásadní, kryptologové začali raději
+doporučovat jiné algoritmy, jako je například SHA-1 (i když ani ten již dnes není považován za bezchybný). 
+ - V roce 2004 byly nalezeny daleko vetší chyby a od použití MD5 v bezpečnostních aplikacích se
+upouští.
+
+7. Bit-round Fair Queuing (BRFQ)- popis, princip, kontext použití,
+nevhodnost použití (14 b)
+
+ - Emuluje Processor Sharing (PS) na úrovni paketů, asymptoticky se mu blíží.
+ - Je to férová fronta (nepodporují prioritu), pakety „nepředbíhají", nerozlišuje se mezi proudy dlouhých a krátkých paketů.
+ - Asymptoticky je paket délky 1 bit.
+ - Pořadí přenosu paketů je různé od PS, ale asymptoticky se chová stejně.
+-> Princip:
+R(t) - hodnota počtu cyklů do času t
+S - hodnota R(t) na začátku přenosu paketu
+F - hodnota R(t) na konci přenosu paketu
+Vybírá se paket s nejnižší hodnotou F
+
+ - Užívá se v aktivních síťových prvcích při řízení toku paketů.
+ - Odstraňuje nevýhody FIFO front. 
+ - Nehodí se, pokud chceme určité pakety priorizovat, znevýhodňuje krátké pakety.
+
+
+8. RTP - popis, řízení, "in-band" či "out-of-band"? (14 b)
+
+-> RTP (Real-time Transport Protocol) – postavený nad UDP protokolem
+ - Nezaručuje kvalitu přenosu, pouze poskytuje prostředky pro zaručení kvality aplikacím - musí být doplněn konkrétní aplikační vrstvou.  
+ - Aplikace uzivajici RTP jsou mene citlive na ztratu paketu ale typicky velmi citlive ke zpozdeni - typicky audio/video streamy.
+ - Sekvenční číslování paketů, časové značky paketů, identifikace obsahu
+ - Určen pro multicast, lze jej využít i v unicastovém prostředí. 
+ - Pouziva se spolu s RTCP (Real-time Transport Control Protocol), ktere je vlastne zpetnou vazbou pro RTP co se tyce :
+  - rizeni QoS, identifikace zdroje, odhad počtu účastníků relace, řízení relací.
+ - Relace jsou definovány :
+  - RTP číslem portu (sudé číslo)
+  - RTCP číslo portu (liché, o 1 větší než RTP)
+  - IP adresy účastníků.
+ - Relace není součástí RTP/RTCP, tu stanovuje aplikace.
+ 
+-> Jedna se o __out-of-band__ rizeni, protoze ridici protokol pro RTP - RTCP, bezi zvlast, na jinem portu.
+
+-> Pokud data nelze doručit přímo, využívá se tzv. Prostředníků:
+ - přenašeče (translators) – mohou měnit formát dat, mohou použít jiné
+protokoly nižších úrovní, určeny pouze pro jeden zdroj dat
+ - spojovače (mixers) – přijímají větší počet vstupních proudů, mohou
+je mixovat a vytvářet jeden a více proudů výstupních, přidává vlastní
+časové známky.
+
+
+9. ATM-ABR - popis, principy, podobny IP transportní protokol (14 b)
+
+-> ATM je sitovy protokol spojove orientovany, uziva uzavrene okruhy pro prepinani paketu(bunek) pevnych delek(53 B).
+
+-> ABR (Available Bit Rate) – je to analogie TCP, uživatel udá minimální a maximální (špičkový) datový tok
+
+-> Základní parametry:
+ - ACR - (allowed cell rate) povolená rychlost, mění se dle aktuálního stavu sítě
+ - MCR - (minimum cell rate) minimální rychlost, definuje spodní hranici, pod níž rychlost nesmí klesnout
+ - PCR - (peak cell rate)– špičková rychlost
+ - ICR -  počáteční rychlost
+Na začátku je ACR = ICR
+
+Řídící buňky :
+ - Každá 32. buňka je tzv. RM (Resource Management), má tři pole:
+  - CI – indikace zahlcení
+  - NI – indikace nezvýšení
+  - ECR – explicitní přenosová rychlost
+ - Zpáteční cesta buňky může jít po stejné cestě případně i jinudy.
+ - Forward RM (FRM) – Z -> P, generovány zdrojem dat, pole modifikována ATM přepínači
+ - Backward RM (BRM) – P -> Z, reakce příjemce na obdrženou FRM, pole opět modifikována přepínači
+ - Snaží se detekovat zahlcení co nejrychleji a nejefektivněji.
+
+ - Ostatni jednotlive tridy(sluzby) ATM:
+  - CBR (Constant Bit Rate) - je dana pevna rychlost (PCR je konstantni)
+  - VBR (Variable Bit Rate) - je dana prumerna rychlost
+  - UBR (Unspecified Bit Rate) - rychlost je takova, jaka dovoluje zatizenost site
+  - ABR (Available Bit Rate) - uživatel udá minimální a maximální (špičkový) datový tok
+
+
+10. Chyby ve videosignálu a jejich omezeni či úplné odstranění (10 b)
+
+-> Chyby :
+ - Chyby zaviněné jitterem – video se „kouše" - řeší se bufferingem na straně klienta
+ - Chyby zaviněné výpadky sítě – dochází k vypadávání obrazové informace kvůli ztrátě paketů při přenosu sítí. 
+
+-> Možná řešení :
+ - FEC (Forward Error Correction)
+  - Je to system pro kontrolu chyb prenosu, kde odesilatel pridava do zpravy redundantni data - error correction code(ECC).
+  - Prijemce diky ECC muze rozpoznat a opravit (coz ma hranice) chyby, bez odesilani pozadavku odesilateli pro opetovne zaslani zpravy.
+ - Zasílání druhého proudu, třeba v nižší kvalitě, paralelně s prvním proudem, nevýhodou jsou vyšší nároky na šířku pásma sítě.
+ - Interleaving – dochází k promíchání jednotlivých snímků do několika paketů. 
+  - Nevýhodou je, že výrazně zvyšujeme latenci, až na 4násobek. 
+  - Obrazová informace je méně důležitá než zvuková, protože oko-mozek je mnohem benevolentnější soustava než ucho-mozek.
+ - Oprava chyb na straně klienta – interpolace, informace z předchozích snímků
+ - (XORování)
+
+
+11. SMIL - ucel, struktura, vlastnosti (14 b)
+
+-> SMIL (Synchronized Multimedia Integration Language) je značkovací jazyk pro vytváření multimediálních prezentací.
+ - Založen na bázi XML, podpora u RealPlayer, QuickTime, Amarok, Totem. 
+ - Má definován layout, synchronizační tagy, události, časové značky, animace, vizuální přechody a další,…
+ - Dokument SMIL ma podobnou strukturu jako HTML, hlavni element je <smil>, ktery je rozdelen na dve casti :
+  - Nepovinny element <head>, obsahuje meta informace, layout informace a autorem definovanou "kontrolu obsahu".
+  - Povinny element <body> , obsahuje informace popisujici konkretni stav dokumentu v case. 
+   - Hraje roli korenoveho elementu v casovem stromu.
+
+
+12. Popište principy autentizace za použití asymetrické kryptografie.
+co rozumíte pod autenticitou a integritou zpráv? (14 b)
+
+-> asymetricka kryptografie :
+ - Různé klíče pro šifrování a dešifrování.
+ - Veřejný klíč – šifrujeme zprávu
+ - Soukromý klíč – dešifrujeme zprávu
+ - Využívá jednosměrné funkce, tj. buď šifrovací funkce nemá inverzi, nebo ta je příliš složitá. Částečně řeší problém s distribucí klíčů
+ - Vyvstává nový problém ověření autenticity klíče (zda daný klíč patří opravdu té osobě, která jej vydává za svůj).
+
+->
+ - Autenticita zpráv – původnost, lze dokázat, kdo zprávu poslal.
+ - Integrita zpráv – zajišťuje, že daná zpráva nebyla během jejího přenosu změněna
+
+
+13. Popište autentizační protokoly PAP a CHAP a srovnejte jejich klady
+a zápory. (14 b)
+
+-> PAP (Password Authentication Protocol) – slaba autentizace, hesla posilana nezasifrovana v plain-textu pres sit.
+ - Puvodně predpoklad, ze se pristupovalo pres telefon primo k autentizačnímu serveru. 
+ - Princip :
+  - Klient posle username a password
+  - Server posle authentication-ack pokud udaje sedi, authentication-nak jinak.
+
+-> CHAP (Challenge-Handshake Authentication Protocol) - neposílá heslo přes síť, obě strany znají
+heslo v otevřené podobě. 
+ - Používá MD5.
+ - Princip : 
+  - požadavek na server od klienta, server generuje číslo, to zahesluje sdíleným heslem a odešel klientovi
+  - ten dešifruje, provede aritmetickou operaci, zašifruje a odešle na server, ten dešifruje a
+ověří platnost
+
+
+14. Popište protokol SNMP. Jakou roli hrají v tomto protokolu
+události, co je jejich obsahem? Mezi kterými komponentami mohou být
+události v rámci SNMPv2 předávány? (14 b)
+
+-> SNMP je nejrozšířenější protokol pro správu sítě. Je nezávislý na
+zařízení/výrobci, je to L7 protokol.
+ - SNMP se vyuziva pri prenosu informaci mezi NMS a Agenty (viz. nize)
+ - SNMP je soucasti internetove sitove management architektury :
+   - Sitove elementy (network elements, managed devices) - hardware zarizeni jako pocitace, routery, switche, IP telefony, tiskarny apod. pripojene do site.
+   - NMS (Network management stations - Manager) - nekdy nazyvane konzole - vetsinou dedikovane PC urcene k ovladani celeho systemu - resp. sledovani sitovych elementu.
+   - Agent - modul sidlici v sitovem elementu, sledujici a sbirajici informace o nem. Komunikuje s NMS.
+   - Managed object - Je to charakteristika neceho, co muze byt "manazovano". Napr. seznam prave aktivnich TCP spojeni. Z toho plyne, ze sitovy element muze obsahovat jeden az N managed objektu.
+     - Managed objekty se lisi promennymi, ktere jsou vlastne jejich instancemi. V nasem pripade je jedna instance jedno TCP spojeni. 
+     - Mohou byt skalarniho typu(jedna instance) nebo slozeneho(vicero zavislych instanci tvori jednu samostatnou instanci).
+
+ - SNMP samotny nedefinuje jake informace (promenne managed objektu - instance) ma mit k dispozici spravce site o systemu. To definuje databaze MIB, pouzivajici notaci ASN.1 resp. jeji podmnozinu SMI (Structure of Management Information).
+   - SMI definuje datové typy, objektový model a pravidla pro práci s informacemi(tak aby se nevyskytovali nejednoznacnosti.)
+   - MIB pouziva hierarchickou strukturu objektu - kazdy objekt resp. instance - promenna - ma sve ID - OID (Object ID), diky nemuz ji SNMP muze identifikovat, cist, menit.
+
+-> SNMPv2 - zavedeny tzv. parties - komponenty (napr. agent, manager)
+ - Komponenty (parties) jsou entity schopne komunikace mezi sebou, zahrnuji :
+   - Unikatni ID
+   - Logicke sitove umisteni
+   - Autentifikacni protokol
+   - Samostatny privatni(duverny) protokol
+
+
+
+-> Udalosti v SNMPv1 :
+
+1. GET REQUEST - used to retrieve a piece of management information.
+2. GETNEXT REQUEST - used iteratively to retrieve sequences of management information.
+3. GET RESPONSE - used by the agent to respond with data to get and set requests from the manager.
+4. SET REQUEST - used to initialize and make a change to a value of the network element.
+5. TRAP - used to report an alert or other asynchronous event about a managed subsystem. In SNMPv1, asynchronous event reports are called traps while they are called notifications in later versions of SNMP. 
+
+-> Pridane udalosti v SNMPv2 :
+
+1. GETBULK REQUEST - a faster iterator used to retrieve sequences of management information.
+2. INFORM - similar to a TRAP but the receiver must respond with an acknowledgement RESPONSE message.
+3. REPORT - definable by an administrative framework.
+
+
+
+
+
+
+
+15. Popište protokol SSL. Jaké má funkce a kde se používá? (14 b)
+
+-> Secure Socket Library – pracuje na transportní vrstvě.
+Poskytuje:
+ - autentizaci serveru
+ - autentizaci klienta
+ - šifrování zpráv (SSL session)
+Je základem pro TLS, zabezpečená cesta (na rozdíl od zabezpečení jednotlivých paketů), ustavuje se session
+Zprávy jsou šifrovány symetrickým klíčem (klíč seance), umožňuje znovupoužití klíče.
+
+Postup SSL handshake:
+1.      prohlížeč pošle číslo SSL verze a preferované šifrovací protokoly
+2.      server pošle číslo SSL verze, preference šifrovacích protokolů a svůj certifikát
+3.      prohlížeč zkontroluje certifikát. Pokud kontrola neproběhne, pak komunikace není autentizována
+4.      prohlížeč generuje symetrický klíč, zašifruje jej a pošle serveru, také pošle zprávu, že šifrovat bude tímto klíčem.
+5.      Server akceptuje klíč a bude jím dále šifrovat.
+Certifikát = (entita, Veřejný klíč).
+
+- Nebezpečí útoku Man-In-The-Middle.
+
+
+16. Speciálním typem firewallu bývá aplikační brána. Diskutujte možné
+způsoby činnosti takové brány, účel jejího nasazení a případné
+problémy, které může při komunikaci působit. Pro které aplikace byste
+považovali aplikační brány za nevhodné? (12 b)
+
+Aplikační brána (pracuje na aplikační vrstvě ISO/OSI modelu),
+kontroluje obsah datagramů, ty zpracovává. Problematická pro šifrovaná
+data (včetně IPsec).
+Fungují na principu prostředníka, kdy se vydávají za druhou stranu.
+Specifické brány pro konkrétní aplikace – web/http, telnet, e-mail
+(kontrola virů, spam filtr),...
+Problémy: nebezpečí chyb, narušení soukromí, falešná detekce virů,...
+Nevhodné pro multimediální aplikace, zejména videokonferencing, jednak
+nemusí být povolené patřičné porty a aplikační brána zvyšuje latenci a
+snižuje rychlost, protože musí zpracovávat jednotlivé pakety.
+
+
+17. Jakou strukturu a roli má DNS v Internetu? V poslední době se
+hovoří o nízkém zajištění DNS - diskutujte problémy a zejména možná
+řešení nejslabších míst. (12 b)
+
+DNS má hierarchickou strukturu. Zajišťuje překlad mezi jménem a IP
+adresou stroje, protože jmenná podoba adresy je pro člověka
+přijatelnější, než IP adresa.
+Vrcholem stromu je kořenová doména, následují domény nejvyšší úrovně
+(.com, .edu, .cz, …), následuje další dělení v „zónách".
+Kromě primárních a sekundárních DNS serverů existují ještě DNS cache,
+tzv. sledovací.
+DNS byla původně vytvořena jako otevřený protokol a je proto vystavena
+možným útokům neoprávněných osob.
+       vysledování údajů
+       útoky typu DoS
+       Změna dat
+       Přesměrování
+Pro zabezpečení se používá DNSSEC protokol, který byl navržen přímo
+pro DNS. Využívá asymetrické kryptografie, kdy primární server
+generuje dvojici klíčů. DNSSEC chrání jen data obsažená v DNS. Nestará
+se o přenosový kanál.
+
+
+18. Popište podrobně funkci a účel protokolu Random Early Detection.
+Jakým způsobem řídí kvalitu služby zajišťované protokolem RTP? (16 b)
+
+Algoritmus RED slouží k zajištění ochrany před zahlcením. Jedná se o
+proaktivní ochranu proti zahlcení.
+RED zahazuje pakety dříve, než je fronta zcela zaplněna.
+Princip:
+1.      pokud je ve frontě dostatek místa, paket je zpracován
+2.      pokud je fronta delší než THmin ale kratší než THmax, pak se nějaké
+pakety zahodí (na základě spočítané pravděpodobnosti)
+3.      Pokud je fronta delší než THmax, pak se zahazuje každý příchozí paket
+Náhodným zahozením paketu se předchází zahlcení. Při zatížení má lepší
+vlastnosti než prosté zahazování paketů při plné frontě.
+Řízení zdrojů:
+       technické předpoklady nestačí
+       je nutné koordinovat požadavky na zdroje
+Nezbytné jsou signalizační/řídící protokoly.
+RTP je vhodný pro soft-real time provoz, tj. Povoluje určitý (malý)
+počet výpadků, k tomu je využíván právě RED protokol.
+
+
+19. Popište protokol RSVP. Jaké jsou jeho základní principy? Proč dle
+vašeho názoru není tento protokol příliš rozšířen? (16 b)
+
+RSVP (Resource reSerVation Protocol) definuje jak jsou rezervovány
+zdroje na aktivních prvcích mezi odesílatelem a příjemcem. Přijat jako
+internetový standard IETF. Nezajišťuje QoS uvnitř sítě. Je to
+signalizační protokol, pomocí něhož se uživatelé dohodnou na realizaci
+QoS. Podporuje unicast i multicast (primárně určen pro multicast).
+Základní principy:
+       jednosměrnost (rezervace se musí provádět pro každý směr zvlášť)
+       rezervaci inicializuje ji příjemce (obojí vychází z multicastu)
+Využívá se Soft stavu – prosředky jsou blokovány jen po určitou dobu,
+pak se buď musí prodloužit blokování, nebo jsou automaticky uvolněny,
+brání se tak nekonečnému blokování prostředků.
+Inicializace: zahájena příjemcem dat, jde proti toku dat až k
+vysílajícímu, požadavky se mohou agregovat (povoluje/zakazuje)
+vysílající. Kombinace s konkrétními protokoly přenosu (mixers v RTP).
+Základní funkcionalita:
+       Toky: základní rezervační jednotka, specifikace toku – třída služby,
+RSpec (požadovaná QoS), TSpec (charakteristika toku). RSpec i TSpec
+jsou pro RSVP transparentní. RSVP se nestará o priorizaci ani
+rezervaci, pouze signalizuje.
+       Relace: zevšeobecnění toku pro multicastovou skupinu. Základní
+atributy: cílová IP adresa (adresa multicastové skupiny), ID použitého
+IP protokolu, cílový port
+       Filtrace: konkretizace práce s tokem/relací, jsou to všechny procesy
+související s prací s tokem/relací. Specifikace: musíme znát cílovou
+IP adresu, zdrojovou adresu a zdrojový port (UDP/TCP). Tři typy
+filtrů: Fixní – explicitní specifikace vysílajícího a současně
+požadavek na oddělenou rezervaci, Explicitně sdílená – specifikace
+vysílajícího, ale rezervace je možné sdílet, Wildcard – vysílající
+není specifikován, ale rezervace je možné sdílet
+Problémů, proč není rozšířený je několik:
+       škálovatelnost – aktivní prvky blízko vysílajícího si musí pamatovat
+příliš mnoho toků (částečně pomoct může sdílení)
+       oboustranná komunikace – je potřeba příliš mnoho rezervací
+       velké rezervace – jedna velká rezervace může blokovat prostředky pro
+ostatní (nebezpečí DoS)
+
+
+20. Uveďte základní formáty kódování audia. K čem by podle Vás mohl
+být vhodný přenos nekomprimovaného audia? A jakou síťovou kapacitu
+byste pro tento přenos očekávali? definujte si sami kvalitu
+přenášeného audia a svůj odhad zdůvodněte. (12 b)
+
+Formáty audia
+PCM – pulsní kódová modulace
+DPCM – diferenční PCM, je to ztrátová komprese, používá 4 bity na
+záznam rozdílů nezávisle na původním kvantování
+ADPCM – adaptivní DPCM, snaží se o prediktivní analýzu potřebného
+počtu bitů v závislosti na složitosti signálu
+[mju:]-Law – (A-Law v Evropě), je to obdoba ADPCM, využívá se v
+telefonech, kvantování pak odpovídá asi 13 bitům
+LPC (Lineární prediktivní kódování) a GSM – optimalizace na hlas
+Nekomprimované audio lze využívat při videokonferencích a
+telekonferencích, výhodou je, že nezvyšujeme latenci jeho kódováním a
+pouštíme jej do sítě „přímo". Je potřeba, dle vzorkovací frekvence od
+64 kbps (zhruba telefonní kvalita) až po 1,41 Mbps.
+Výsledná požadovaná šířka pásma je dána součinem: vzorkovací
+frekvence*počet kanálů*počet bitů na vzorek.
+
+21. Popište podrobně principy MPEG a MJPEG kódování videa (uvědomte
+si, že existuje rodina formátů MPEG). (18 b)
+MPEG využívá 3 typy snímků:
+I – Intrapicture - referenční snímky – ty jsou potřebné, udržují
+informaci o celém obrazu
+P – Predicted – rozdílové snímky – rozdíl oproti předchozímu snímku
+B – Bidirectional - interpolace mezi předchozím a následujícím snímkem
+– obsahují informace o motion vectoru.
+Motion vector je čtveřice – souřadnice makrobloku ve snímku, MV
+vzhledem k předchozímu Iframe, MV vzhledem k následujícímu Iframe, pro
+každý pixel makrobloku jeho změna vzhledem k referenčnímu snímku.
+Motion estimation – mezi dvěma snímky se hledají odpovídající
+makrobloky, určujícím parametrem je jasová složka.
+P snímky nemají smysl bez I snímků a B snímky nemají smysl bez I a P
+snímků. Poměr mezi snímky není definován.
+Obraz se rozloží do makroblolů, v každém bloku se pomocí DCT
+vypočítají frekvenční koeficienty AC a DC, ty se dále kvantují.
+DC – mají velkou váhu, definuje, že musí ve výsledném obrazu zůstat – nemění se
+AC – méně důležité (kvantují se), z výsledného obrazu mohou být vypuštěny
+
+MJPEG – využívá intraframe kompresi, tedy pouze I snímky. Je vhodný
+pro střih a přenos po síti (malé zpoždění). Je to série obrázků
+komprimovaná pomocí JPEGu. Často HW podpora, obvykle nízké rozlišení,
+framerate => bitrate, obvykle ve spojení s obálkovými formáty AVI a
+MOV.
+
+22. Odhadněte (kvantitativně) přenosové nároky nekomprimovaného audia
+(sami zvolte kvalitu přenášeného zvuku). Znáte nějaký důvod, proč
+přenášet sítí přímo nekomprimované audio? (8 b)
+Nekomprimované audio lze využívat při videokonferencích a
+telekonferencích, výhodou je, že nezvyšujeme latenci jeho kódováním a
+pouštíme jej do sítě „přímo". Je potřeba, dle vzorkovací frekvence od
+64 kbps (zhruba telefonní kvalita) až po 1,41 Mbps.
+Výsledná požadovaná šířka pásma je dána součinem: vzorkovací
+frekvence*počet kanálů*počet bitů na vzorek.
+
+23. Popište podrobně algoritmus AES Rijndael a jeho vlastnosti. (18 b)
+AES je blokový algoritmus. Klíče délky 128, 192 a 256 bitů. Standardně
+se využívá bloků délky 128 bitů. 9, 11 nebo 13 průchodů (závisí na
+velikosti bloků). Pracuje po bytech, má vysoce efektivní HW
+implementace. Využívá symetrické šifrování.
+Princip průchodu:
+       dle tabulky klíčů se zamění jednotlivé bity
+       řádky se posunou o n prvků, kde n je 0..n-1, (první řádek zůstává)
+       přes matici opět převedeme položky
+Tím se snažíme rozbít jakoukoliv podobnost s původním obsahem zprávy.
+Toto se provede 9x (pro 128bitové bloky)
+
+25. Uveďte a stručně zdůvodněte možné způsoby využití účtování zdrojů
+(resource accounting), které nejsou přímo spojeny s vystavením
+finančního účtu (tedy vystavení faktury). (10 b)
+Účtování nám dává informace o tom, kdo, co , kdy a v jakém rozsahu
+použil. Vyžaduje autentizaci.
+Kromě skutečného finančního účtování za použití zdrojů lze používat pro:
+       kontrolu (monitoring) – autorizace (záznamy o neoprávněném využití,
+nebo pokusu o zneužití), férovost využítí
+       predikce – kdy hledáme „slepá" nebo „úzká" místa v systému, při
+vhodném účtování můžeme velmi rychle odhalit a reagovat na útoky DoS
+
+27.  Uvádí se, že "úspěšný" virus se dokáže dnešním Internetem šířit
+rychlostí mnoha desítek tisíc počítačů v několika desítkách minut.
+Navrhněte základní komponenty komplexní ochrany (tedy takové, která se
+skládá z více jak jedné součásti). (14 b)
+       výchova uživatelů (počítačová hygiena)
+       je třeba ochrana koncových stanic i serverů.
+       Nezbytné jsou systémy s přístupovými právy
+       proti šíření po síti – vhodná filtrace paketů na branách a aktivních
+prvcích (firewaly)
+       detekce útoků
+
+28. Jakou strukturu a roli má DNS v Internetu. Srovnejte DNS ve verzi
+pro IPv4 a IPv6. V čem jsou největší rozdíly? (12 b)
+DNS má hierarchickou strukturu. Zajišťuje překlad mezi jménem a IP
+adresou stroje, protože jmenná podoba adresy je pro člověka
+přijatelnější, než IP adresa.
+Vrcholem stromu je kořenová doména (in-addr.arpa), následují domény
+nejvyšší úrovně (.com, .edu, .cz, …), následuje další dělení v
+„zónách".
+Kromě primárních a sekundárních DNS serverů existují ještě DNS cache,
+tzv. sledovací.
+DNS byla původně vytvořena jako otevřený protokol a je proto vystavena
+možným útokům neoprávněných osob.
+       vysledování údajů
+       útoky typu DoS
+       Změna dat
+       Přesměrování
+DNS pro IPv4 – využívají se tzv. A-záznamy, dotazy kladeny na in-addr.arpa
+DNS pro IPv6 – využívají se tzv. AAAA-záznamy (obdoba A-záznamů) nebo
+A6 záznamy, dotazy kladeny na ip6.int. Liší se hlavně reverzní
+záznamy.
+
+29. Srovnejte, jakým způsobem zajišťuje TCP (v IP sítích) a ABR (v ATM
+sítích) maximální využití kapacity sítě a současně minimalizujte
+ztráty při přenosu. U kterého z těchto přístupů byste očekávali lepší
+výkon (tedy lepší využití kapacity a menší ztráty)? (16 b)
+
+
+30. Popište principy algoritmu Processor Sharing, včetně základních
+vztahů mezi zpožděním, dobou pobytu ve frontách atd. Víte, jakému
+skutečně používanému algoritmu odpovídá? Jaké vlastnosti je možné v
+algoritmu GPS garantovat? (18 b)
+Processor Sharing je teoretický model, není implementovaný. Řeší
+férovost přístupu. Využívá front jako u FIFO, či spíše Fair Queuing,
+namísto paketů posílá bity. Každá fronta sdílí přesně 1/N celkové
+kapacity.
+Konkrétní implementace PS je Bit-round fair queuing. Ta sice posílá
+pakety místo bitů, ale asymptoticky se blíží PS.
+Definuje virtuální čas (R(t)), ten udává počet cyklů (průchod
+frontami) do času t.
+N(t) – počet neprázdných front v čase t.
+Změna virtuálního času závisí na obsazení front = 1/max(1, N(t))
+Virtuální čas je zaveden proto, že platí: doba přenosu = velikost paketu
+Zpoždění je dáno rozdílem času odchodu z fronty a časem příchodu
+paketu do fronty v závislosti na plnosti fronty
+GPS nám dovoluje garantovat zpoždění (omezení shora), rozšiřuje PS o
+váhu paketů -> váhu toku. Určuje, kolik bitů se má z fronty přenést v
+jednom cyklu.
+
+32. Jakým způsobem je možno odstranit nebo alespoň omezit chyby při
+přenosu videosignálu? K čemu slouží interleaving? (10 b)
+Je to nutné především u zvuku, ale u obrazu se využívá také.
+FEC – Forward Error Correction:
+       XORování
+       posílání druhého streamu v nižší kvalitě
+       prokládání (interleaving), nevýhodou je, že zvyšuje latenci, protože
+na poslání 1 paketu je nutné mít data pro pakety 4. Využívá se toho,
+že do jednoho paketu se umístí informace z paketů následujících, tím
+se zaručí, že při ztrátě jednoho paketu nám vypadne 1 snímek za každý
+paket a ne data, za celý jeden paket = 4 snímky za sebou. Rozloží se
+nám tím ztráta dat.
+       oprava chyb na straně klienta (interpolace, nahrazení dat z
+předchozích paketů)
+       Bufferování
+
+33. Srovnejte pozitiva a zápory protokolů H.323 a SIP. (12 b)
+SIP:
+Session Initiation Protocol. Je to čistě textový protokol, slouží k
+domluvě a navázání komunikace.
+Definován v RFC 3261.
+Entity: klient (UAC) i server (UAS), proxy server, redirect server
+(pouze překládá adresy), Registrar – přebírá registrační funkci
+gatekeeperu v H.323.
+Spojení s přesměrováním – kontaktuje Redirect server, který pošle
+informaci o umístění UAS, UAC naváže spojení přímo s UAS.
+Spojení s proxy – proxy server vytvoří spojení místo UAC, při
+ustavování pošle klientovi adresu UAS, další komunikace může probíhat
+buď přímo, nebo přes proxy
+Zvládá point-to-point i multipoint-to-multipoint
+H.323:
+HW i SW klienti (SW nejsou příliš kompatibilní)
+Brány – přechody mezi sítěmi, konverze dat pro různé sítě
+GateKeepery – starají se o překlad adres, management šířky pásma,
+zajišťují autentizaci, autorizaci a acounting
+MCU – multipoint connections unit – H.323 je ve své podstatě
+point-to-point protokol, MCU přidává podporu pro point-to-multipoint
+
+Jaký cíl má autentizace? Uveďte alespoň jeden možný přístup řešení
+problému autentizace. (10 b)
+Autentizace je proces ověření identity entity. (Ověří, že „já jsem
+já"). Autentizace je zajišťována např. Pomocí sdíleného tajemství
+(hesla), důvěryhodnou třetí stranou (SSO – Single Signed On, př.
+Kerberos), Asymetrické funkce (PKI), delegování pomocí proxy – udělení
+práv pro jistou množinu úkolů
+
+Jaký vztah vidíte mezi účtováním a autentizací? (6 b)
+Autentizace je proces ověření identity entity.
+Účtování nám dává informace o tom, kdo, co , kdy a v jakém rozsahu
+použil. Vyžaduje autentizaci.
+
+Pokuste se vyjmenovat základní vlastnosti, které musí splňovat
+digitální podpis. A jaké vlastnosti musí splňovat použitá
+kryptografická funkce? (11 b)
+Požadujeme:
+       každý se musí umět podepsat
+       každý musí umět snadno ověřit podpis druhého
+       nikdo nemůže druhého snadno podepsat
+Řeší problém autentizace zpráv, ne však problém autentizace obecně.
+Využívá se asymetrické kryptografie – dvojice klíčů soukromý a
+veřejný. Veřejný je dostupný všem, soukromý se musí chránit před
+zneužitím. Využívá se algoritmů RSA (zastaralý) a DSA. Jde vlastně o
+jednosměrnou funkci.
+Veřejný klíč – ověřujeme podpis
+Soukromý klíč – podepisujeme
+
+Popište základy algoritmu DES. Co je 3DES? (10 b)
+Jde o symetrický blokový algoritmus. Data se zpracovávají po blocích
+délky 64 bitů za pomoci klíče o stejné velikosti (64 b, reálně však
+pouze 56 b + 8 bitů liché parity). Je postačující pro zprávy o
+velikosti < 64 bitů. Pak dochází k opakování klíče => větší riziko
+proražení.
+Algoritmus:
+       vstupní permutace IP (ztížení analýzy textu)
+       vlastní šifrování
+       výstupní permutace IP^-1
+Šifrování:
+       16 identických průchodů
+       32 „pravých" bitů je posunuto vlevo
+       samostatné klíče o velikosti 48 b odvozeny z původního klíče pro každý průchod
+       všech 64 b transformováno (expanze, XOR, substituce, XOR) na 32
+bitů, ty jsou pravými bity výsledku
+3DES – Tripple DES – postupná aplikace DES se třemi klíči
+
+Jaké jsou základní předpoklady asymetrické kryptografie? Srovnejte se
+symetrickou kryptografií. Co podle Vás přispělo k zájmu o asymetrickou
+kryptografii a co jsou nezbytné podmínky, aby se ujala? (12 b)
+Různé klíče pro šifrování i dešifrování, řeší částečně problém
+distribuce klíčů. Využívá jednosměrné funkce, tj. Buď šifrovací funkce
+nemá inverzi, nebo inverze je příliš časově i výpočetně náročná.
+K zájmu – bezpečnost, protože zprávy šifrované současnými algoritmy
+nelze v polynomiálním čase dešifrovat, řeší poměrně uspokojivým
+způsobem problém distribuce klíčů.
+
+Znáte nějaké autentizační služby? Co dělají a jaký je princip alespoň
+jedné z nich? (8 b)
+Služby pro autentizaci (a následnou autorizaci) přístupu, původně
+určeny pro přístup do sítě:
+TACACS – původně pro autentizaci volaných modemů. Autentizaci
+neprovádí terminální server, ale autentizační server, uživatel přímo s
+autentizačním serverem nekomunikuje. Zahrnuje i autorizaci. Klient
+používá pro komunikaci UDP/49 nebo lokálně dohodnutý TCP port. Je
+analogií PAP protokolu pro vlastní autentizaci.
+RADIUS – postaven na principu challange-response (integrovaný i s PAP,
+kde login/heslo je požadované „response"). Má hierarchickou strukturu
+(jako klient může využít další RADIUS servery). Využívá UDP –
+transakční protokol, zajištění ve vyšších vrstvách, možnost používat
+záložní servery, jednodušší implementace. RADIUS je rozšiřitelný
+protokol s podoporou mobility (př. EDUROAM)
+
+Popište základní architekturu správy sítí. Znáte příklad nějakého
+systému? (10 b)
+Tři hlavní položky:
+       Správce (řídící entita) – typicky aplikace + člověk, centralizovaná správa
+       Spravované (řízené) zařízení – aktivní i pasivní prvky sítě
+(routery, switche, tiskárny), ale i služby (SSH démon), jedno zařízení
+může sdružovat více objektů (např. Switch – jednotlivé porty), Využívá
+se MIB (Management Information Base) – identifikace zařízení,
+informace o jeho stavu, Agent správy sítě – lokální proces s lokální
+působností (čte data, modifikuje konfiguraci,...)
+       Protokoly správy sítě (např. SNMP, dnes ve verzi 3) – zajišťuje
+komunikaci mezi správcem a spravovanými objekty, zajišťuje
+oboustrannou komunikaci (příkazy agentům, přenos monitorovaných dat,
+předávání událostí,...)
+
+Jaké funkce byste očekávali od firewallu? Občas se používá pojem
+„packet filter". Je to synonymum pro firewall nebo se něčím liší? (12
+b)
+V podstatě logicky odděluje lokální síť od Internetu. Povoluje jen
+určité služby, a to oboustranně (oboustranný blok).
+Firewall může být tvořen např. Kombinací NATu, packet filteru a
+aplikační brány. Každý sám o sobě není firewall, ale dohromady jej
+mohou tvořit.
+NAT – překladač adres (maškaráda), umožňuje ukrýt lokální síť za jednu
+adresu. Původně vytvořen jako reakce na vyčerpání prostoru adres v
+IPv4.
+Packet filter – analyzuje hlavičky každého datagramu. Kontroluje
+zpravidla: IP adresu odesílatele a příjemce, protokol a port, řídící
+data (ICMP, TCP SYN a ACK,...)
+Aplikační brána – kontroluje obsah datagramů.
+
+Co je to DDoS? Proč je nebezpečný? Znáte nějaký způsob ochrany? (10 b)
+Synchronizovaný útok z více míst za účelem znepřístupnění služby. Je
+těžko rozpoznatelný, univerzální ochrana neexistuje. Zastavení
+vyžaduje spolupráci v rámci sítě.
+Ochrana v aktivní síti je možná, je potřeba odspodu identifikovat
+všechny uzly, které se na DDoS podílí a postupně zasílat požadavky na
+zastavení odspoda nahoru. Nelze zastavit na nejbližším aktivním prvku,
+protože bysme akorát DDoS odsunuli, ale nezlikvidovali.
+
+Čím se liší OSPF a BGP směrovací protokoly? Který z nich je používán v
+Internetu a proč? (12 b)
+OSPF:
+       je implementací Link State, nejpoužívanější protokol LS, využívá
+Dijkstrův algoritmus pro hledání minimální cesty. Pracuje nad UDP.
+       Rozšíření o autentizaci zpráv, směrovací oblasti (další úroveň
+hierarchie), vyvažování zátěže (load balancing): více cest se stejnou
+cenou umí využít zároveň
+       zná defaultní cesty k uzlům
+BGP:
+       založen na Path vector směrování (obdoba Distance vector), možnost
+definice oplitik směrování, šření informace pracuje nad TCP. Používá
+CIDR.
+       Path vector – posílá celé cesty (nejen koncové uzly), lepší detekce
+cyklů, implicitně preferuje kratší cesty, pouze dostupnost, žádná
+další metrika.
+       Využívá se pro zasílání informací mezi AS, nezná defaultní cesty,
+zná všechny cesty k sítím. Umí pecifikovat, kudy půjdou data do
+dalších oblastí
+
+Čím se liší FIFO fronta od Fair Queuing? Jaké jsou výhody a nedostatky
+těchto přístupů? Znáte spravedlivější přístup, než Fair Queuing? (12
+b)
+FIFO – nejjednodušší uspořádání, model FCFS, jedna fronta pro každý
+výstupní port.
+       nevýhody: žádná podpora priorit, obecně větší průměrné zpoždění
+paketů, agresivní TCP proudy jsou zvýhodněny.
+Fair Queuing – vícenásobné fronty pro každý výstupní port, rozdělení
+dle vstupních portů. Každý příslušný paket umístěn do příslušné
+fronty. Fronty obsluhovány po řadě vždy po jednom paketu (Round
+Robin), tím je zajištěna férovost. Prázdná fronta se přeskakuje.
+Odstraňuje většinu nevýhod FIFO. Nevýhoda: penalizuje krátké pakety.
+Processor sharing je teoretický model fronty, není implementovaný, ale
+poskytuje nejvyšší férovost, protože posílá data z front po bitu. Jeho
+implementace, která se mu asymptoticky blíží je Bit-Round Fair
+Queuing.
+
+Dokážete napsat, resp. Odvodit vztah mezi zpožděním i-tého paketu a
+rychlosti přitékání tokenů v token-bucket implementaci GPS? Jak se
+tento vztah změní, když vezmeme do úvahy, že paktey přenášíme celé
+(přinejmenším diskutujte, zda se zpoždění zachová, zmenší či zvětší a
+alespoň kvalitativně jak)? (14 b)
+Uvažujme několik toků, které jsou dostatečně dlouho nečinné, takže
+všechny buckety jsou plné.
+Poté všechny toky začnou vysílat maximlní povolenou rychlostí. Síť
+musí být konfigurována tak, že je schopna těmto kombinovaným
+požadavkům vyhovět (garance QoS pro každý tok). To znamená, že každý
+garantovaný tok je Ri. Tokeny do bucketů jsou přidávány stejnou
+rychlostí, jakou jsou z nich odebírány, tj. Délka fronty není větší
+než velikost bucketu.
+Maximální zpoždění je tak podíl velikosti bucketu (Bi) a rychlosti
+toku. Di<(Bi/Ri).
+Efektivní délka paketu je normalizována faktorem 1/fi^alfa,větší váha
+tedy „zkracuje" pakety.
+Při větších paketech se jich do fronty vleze méně, ale
+
+Čím se liší RSVP od DiffServ? Kde a k jakým účelům se tyto protokoly
+používají? (10 b)
+RSVP:
+ustavuje spojení/rezervaci přes každý tok, je problematicky
+škálovatelné (aktivní prvky blízko zdroje si musí pamatovat mnoho
+informací), částečně může pomoct sdílení. Problém s oboustrannou
+komunikací (je potřeba příliš mnoho rezervací). Je vyvinut primárně
+pro multicast. Stavové informace jsou v aktivních prvcích.
+DiffServ:
+Flexibilní, škálovatelný. Nedefinuje třídy služeb pouze předdefinované
+prioritní třídy s různou rezervací zdrojů. Poskytuje rámec (funkční
+komponenty) z nichž je možné flexibilní službu sestavit – hraniční
+funkce a funkce jádra. Stará se primárně o datový tok. Vnitřní
+směrovače znají jen několik tříd a jejich prioritu. Hraniční směrovače
+řadí příchozí pakety do konkrétních tříd. Jádro prioritizuje pakety
+podle návěstí toku. Jediná stavová informace je držena na vstupním
+hraničním směrovači (nemusí být držena celou cestu).
+Protokoly slouží pro zajištění kvality služeb na síti
+
+Čím se liší vzorkování a kvantování signálu. A jakou mají funkci? (8 b)
+Vzorkování – odebírání vzorku signálu v definovaných časových intervalech
+Definovaný interval = vzorkovací frekvence. Je to převod spojitého signálu na
+diskrétní reprezentaci. Typicky 8kHz – telefon, 11 – řeč, 22 – audiokazeta,
+44.1 – CD, od 48 – DVD. Obrázek – vzorkovací bod, původní signál a
+rekonstruovaný signál, Nyquistův teorém /od 44.1, podvzorkování
+Kvantování – diskrétní reprezentace hodnoty intenzity signálu, 1 bit = 6dB
+typicky 8b – telefon, 16b – CD, 24b – DVD, 64b na vzorek – sonar
+Chyby – kvantovací šum (několik hodnot signálu reprezentovaných
+stejnou hodnotou), řeší se Ditheringem či Nelineárním kvantováním
+(zhuštění úrovní tam, kde je třeba, u zvukovky je třeba jemně
+rozlišovat v oblasti nízkých kmitočtů)
+
+Jaký smysl má a kde lze použít nelineární kvantování? Znáte nějakou
+alternativní metodu
+odstranění/snížení chyb kvantování? (10 b)
+Nelineárním kvantováním se snažíme omezit chyby při kvantování.
+Využívá se toho, že lidské ucho má logaritmické vnímání zvuku. Jde o
+zhuštění úrovní tam, kde je třeba, u zvuku je třeba jemně rozlišovat v
+oblasti nízkých kmitočtů protože ucho je v této oblasti citlivější na
+šum.
+Další možné způsoby eliminace chyb při kvantování je dithering, kdy se
+snažíme doplnit chybějící informaci ze znalosti okolních údajů, které
+máme k dispozici
+
+
+Co je to MP3? Popište základní principy. (10 b)
+MP3 je formát pro audio. Je to ztrátový formát využívající
+psychoakustických modelů. Signál je dělen na frekvenční pásma
+(subbands).
+Proces:
+Vstupem je digitalizovaný akustický signál: MDCT -> Kvantování ->
+Huffmanovo kódování
+Layer I – 384 kbps – 4:1
+Layer II – 192 kbps – 8:1
+Layer III – 128 kbps – 12:1
+
+Co je to formát MPEG-7 a čím se liší od MPEG-21? (10 b)
+Pro popis multimédií, tyto standardy slouží pro popis metadat, jsou na
+bázi XML, dokáží popsat poměrně přesně obraz (např. co se odehrává na
+snímku), dokáží klasifikovat obsah, mohou obsahovat i odkazy na další
+zdroje a širší kontext pořízení záznamu, MPEG-21 zavádí ještě správu
+digitálních práv
+
+Čím se podle vás liší vzorkování 4:2:2, 4:1:1 a 4:2:0? Proč se
+používají různé formáty? (10 b)
+4:2:2 – na dva body obrazu je pro každý bod jedna informace o jasové
+složce a jedna informace o barvě pro oba
+4:1:1 – na čtyři body je to pro každý bod jedna informace o jasové
+složce a jedna informace o barevné složce pro všechny čtyři body
+4:2:0 – čtyři body ve čtverci, pro každý bod jedna informace o jasové
+složce a pro všechny čtyři dvě informace o složce barevné
+Různé formáty se používají kvůli různým nárokům na přenos závisí také
+na vlastnostech sítě.
+
+Víte, co je to formát/protokol H.323? Jaké má základní vlastnosti a
+kde se používá? (10 b)
+Protokol pro videokonference.
+HW i SW klienti (SW nejsou příliš kompatibilní)
+Brány – přechody mezi sítěmi, konverze dat pro různé sítě
+GateKeepery – starají se o překlad adres, management šířky pásma,
+zajišťují autentizaci, autorizaci a acounting
+MCU – multipoint connections unit – H.323 je ve své podstatě
+point-to-point protokol, MCU přidává podporu pro point-to-multipoint
+Při komunikaci nejprve probíhá tzv. Signalizační část (domluva
+spojení, nad TCP) následuje hovorové spojení (probíhá už nad UDP za
+použití RTP+RTCP protokolu)

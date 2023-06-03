@@ -1,0 +1,92 @@
+Pisemka vypadala tak, ze kazdy si z ISu stahl zip s BlueJ projektem s jednou z variant zadani a  navic uvnitr projektu byla testovaci trida.
+Na pisemku bylo 60 min.
+
+Varianta 1. - Motorgenerátor
+
+Zadání
+   Vytvoøte tøídu cz.muni.fi.pb162.test1.ElectricMotor, která bude
+   reprezentovat elektrický motor. Tøída bude mít atribut efficiency typu
+   double, který bude obsahovat úèinnost motoru jako èíslo v intervalu <0,1).
+   Dále bude mít konstruktor s parametrem obsahujícím úèinnost motoru, metodu
+   getEfficiency() vracející tuto hodnotu a metodu toString(), která vrátí
+   øetìzec ve tvaru "[Elektrický motor, úèinnost = <efficiency>]".
+
+   Dále vytvoøte tøídu cz.muni.fi.pb162.test1.ElectricGenerator, která bude
+   reprezentovat elektrický generátor (tj. dynamo nebo alternátor). Tøída bude
+   témìø stejná jako tøída cz.muni.fi.pb162.test1.ElectricMotor a kromì svého
+   názvu se bude se lišit pouze metodou toString(), která bude vracet øetìzec
+   ve tvaru "[Elektrický generátor, úèinnost = <efficiency>]".
+
+   Pokraèujte vytvoøením tøídy cz.muni.fi.pb162.test1.MotorGenerator, která
+   bude reprezentovat motorgenerátor (tj. zaøízení skládající se z elektrického
+   motoru a elektrického generátoru). Tøída bude mít atribut motor typu
+   ElectricMotor a generator typu ElectricGenerator. Tøída bude mít konstruktor
+   s dvìma parametry, obsahujícími motor a generátor a metodu getEfficiency(),
+   která vrátí úèinnost motorgenerátoru (ta se spoèítá jako souèin úèinnosti
+   generátoru a motoru). Dále bude mít metodu toString(), která bude vracet
+   øetìzec ve tvaru "[Motorgenerátor, úèinnost = <efficiency>]".
+
+   Nakonec vytvoøte tøídu cz.muni.fi.pb162.test1.Main, která bude obsahovat
+   statickou metodu main(String[]). Tato metoda vytvoøí motor s úèinností 0,5,
+   generátor s úèinností 0,6 a motorgenerátor skládající se z tìchto dvou
+   elektrických strojù. Potom na standardní výstup pomocí pøíslušných metod
+   toString() vypíše informace o všech tøech strojích.
+
+---------------------
+
+Varianta 2. - Vláèek
+Zadání
+   Vytvoøte tøídu cz.muni.fi.pb162.test1.Locomotive, která bude reprezentovat
+   lokomotivu. Tøída bude mít atribut length typu double, který bude obsahovat
+   délku lokomotivy. Dále bude mít konstruktor s jedním parametrem, obsahujícím
+   délku lokomotivy, a metodu getLength(), která vrátí délku lokomotivy. Dále
+   doplòte metodu toString(), která vrátí øetìzec ve tvaru "Locomotive (length:
+   <length>)".
+
+   Dále vytvoøte tøídu cz.muni.fi.pb162.test1.Carriage, která bude
+   reprezentovat železnièní vagón. Tøída bude velmi podobná pøedchozí tøídì.
+   Bude mít atribut length typu double, který bude obsahovat délku vagónu. Dále
+   bude mít konstruktor s jedním parametrem, obsahujícím délku vagónu, a metodu
+   getLength(), která vrátí délku vagónu. Dále doplòte metodu toString(),
+   která vrátí øetìzec ve tvaru "Carriage (length: <length>)".
+
+   Pokraèujte vytvoøením tøídy cz.muni.fi.pb162.test1.Train, která bude
+   reprezentovat vlak. Tøída bude mít atribut locomotive typu Locomotive,
+   carriage typu Carriage a carriagesCount typu int. Tøída bude mít konstruktor
+   s tøemi parametry, obsahujícími inicializaèní hodnoty tìchto atributù. Dále
+   bude mít metodu getLength(), která vrátí délku celého vlaku a metodu
+   toString(), která bude vracet øetìzec ve tvaru "Train (length: <length>)
+   [Locomotive (length: <length>), <carriagesCount> x Carriage (length:
+   <length>)]".
+
+   Nakonec vytvoøte tøídu cz.muni.fi.pb162.test1.Main, která bude obsahovat
+   statickou metodu main(String[]). Vytvoøte si dvì mašinky a dva vagónky s
+   rùznou délkou a složte z nich dva vláèky, které budou mít rùzný poèet
+   vagónkù. Na standardní výstup s využitím pøíslušných metod toString()
+   vypište informace o obou mašinkách, vagóncích i vláècích.
+
+------------------
+
+Varianta 3. - Kurzy
+
+Zadání
+   Vytvoøte tøídu cz.muni.fi.pb162.test1.Teacher, která bude reprezentovat
+   uèitele. Tøída bude mít atribut name typu String, který bude obsahovat jméno
+   uèitele, a atribut department typu String, který bude reprezentovat katedru,
+   na ní¾ uèitel pùsobí. Dále bude mít konstruktor s dvìma parametry,
+   obsahujícími inicializaèní hodnoty tìchto atributù. Dále doplòte metodu
+   toString(), která vrátí øetìzec ve tvaru "<name> (<department>)".
+
+   Dále vytvoøte tøídu cz.muni.fi.pb162.test1.Course, která bude reprezentovat
+   nìjaký pøedmìt. Tøída bude mít atribut code (kód pøedmìtu) typu String,
+   atribut name (jméno pøedmìtu) typu String a teacher (uèitel) typu Teacher.
+   Tøída bude mít konstruktor s tøemi parametry, obsahujícími inicializaèní
+   hodnoty tìchto atributù. Dále bude mít metodu toString(), která bude vracet
+   øetìzec ve tvaru "Course: <code> - <name>, Teacher: <name> (<department>)".
+
+   Nakonec vytvoøte tøídu cz.muni.fi.pb162.test1.Main, která bude obsahovat
+   statickou metodu main(String[]). Vyberte si dva libovolné uèitele z na¹í
+   fakulty a vytvoøte k nim pøíslu¹né instance tøídy Teacher. Dále pro ka¾dého
+   uèitele vytvoøte alespoò dva pøedmìty, které dotyèný uèitel uèí. Na
+   standardní výstup s vyu¾itím pøíslu¹ných metod toString() vypi¹te informace
+   o obou uèitelích i jejich pøedmìtech.

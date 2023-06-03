@@ -1,0 +1,26 @@
+Statistika I
+1.
+Definujte jevové pole a uveïte nìjaký pøíklad jevového pole. Vyberte nìjaký jev z vámi uvedeného pøíkladu a slovnì jej interpretujte
+
+2.
+Definujte lineární regresní model pro obecnou regresní pøímku. Napište matici plánu a soustavu normálních rovníc, které se øeší pøi odhadech neznámých parametrù
+
+3.
+Mame dopravny podnik, ktory tvrdi, ze 25% ludi su poctivi a kupuju si listky na 90% ciest. 70% ludi si stredne poctivy. Sanca, ze nemaju listok je 50%. Potom su notoricki znami cierni pasazieri, ktori su nikdy nekupuju listok.
+(a) Definujte kolko percent ludi si kupuje listok
+(b) Aka je pravdepodobnost, je pasazier cierny pasazier ak vieme, ze nema listok
+(c) Aka je pravdepodonost, ze pasazier nie je cierny pasazier ak vieme, ze nemal listok
+(d) Mame javy "pasazier nema listek" a "ak pasazier nema listek, je cierny pasazier". Urcite, ci su zavisle a zdovodnite.
+
+4.
+Mame studentov, ktori maju maximalne 3 pokusy na uspesne ukoncenie predmetu. Ak student uspesne zlozi predmet, tak na dalsi pokus uz nejde. Nahodna velicina X znaci POCET POKUSOV, ktore student absolvuje.
+(a) Urcite rozdelenie pravdepodobnosti pre nahodnu velicinu X
+(b) Definujte distribucnu funkciu, nakreslite a urcite median
+(c) Spocitajte pravdepodobnost P(1 <= X <= 2,5)
+
+5.
+Mame postupnost priemernych vah balicku (niecoho), ktore sme namerali u jednej spolocnosti a to (130, 130, 130, 130, 128, 126, 124, 122, 120, 120).
+(a) Vypocitajte strednu hodnotu, smerodatnu odchylku, median
+(b) Napiste distribucnu funkciu a jej graf
+(c) Odvodte 95% interval spolahlivosti pre STREDNU vahu a vypocitajte konkretne hodnoty
+(d) Obsah balicku tvrdi, ze ma mat 125mg. Ludia tomu vsak neveria, skuste napisat hypotezu, ci to potvrdzuje slova predavajuceho.

@@ -1,0 +1,45 @@
+PA150: suhrn otazok zo vsetkych skusok z FI MUNY do datumu 16.12.2014
+
+1) Popíšte základní požadované vlastnosti transakce. Jaká část systemu tuto vlastnost zajišťuje?
+2) Napsat algoritmus s automatickými zámky operace write v datovou položku která již má sdílený zámek, s ohledem na to, že algoritmus bude zvyšovat zámek do exclusive. Nějak tak.
+3) Vysvětlete využití checkpointů při implementaci transakcí.
+4) Co je to serializovatelny plan. Kolik je seriovych planu pri realizaci 4 transakci?
+5) Kaskadni vraceni
+
+6) cile planovace soubeznosti transakci s ohledem na plan provadeni transakci
+7) Stromovy protokol riadenia behu T
+8) popiste validacni protokol
+9) charakterizujte obnovu podle deniku pri okamzitem zapisu dat
+10) zduvodnete, proc je 1-fazovy potvrzovaci protokol nedostatecny a je nutne pouzivat 2-fazovy
+
+11) 2PCP - co se stane, kdyz vypadne koordinator
+12) Majoritny zamykaci protokol
+13) Nutné podmínky pro uváznuti (3+1). Postupy řešení.
+14) 3 vlastnosti kriticke sekce.
+15) Paměť má velikost 1GB. Máme procesy A,B,C,D, které mají přiděleno 100MB, 100MB, 200MB a 400MB. Maximálně mohou žádat 400MB, 500MB, 500MB, 600MB. Správa paměti se dělá pomocí bankéřova algoritmu. Proces B žádá o přidělení 100MB. Bude jeho požadavku vyhověno? Zdůvodněte!
+
+16) Popsat Wound-Wait a Wait-Die.
+17) Máme 3 transakce s časovými razítky: A-17, B-20, C-25. Mechanismus řízení souběžnosti je Wait-Die. Co se stane, pokud si A vyžádá zámek držený B? Co se stane, pokud si C vyžádá zámek držený B?
+18) Wound-wait schema a priklad: procesy A B C, s casovymi razitky postupn� 1, 2, 3. a) B drzi zdroj a zada o nej A. b) A drzi zdroj a zada o nej C.
+19) Proč 3 generály nedosáhnou dohody o vystupné hodnotě, když jeden děla byzantinskou chybu.
+20) Suzuki-Kasami a určit složitost.
+
+21) Popište 2 základní vlastnosti validních distribuovaných algoritmů.
+22) Bully algolithm a slozitost.
+23) Volba koordinatora medzi procesmi pomocou sprav ELECT, kolko sprav sa odosle
+24) Popsat volebni algo zalozen na vytvareni seznamu procesu v siti + jeho slozitost
+25) Distribuovany system se 3 pocitaci v kruhu. Kolik zprav se musi poslat pro volbu noveho sefa a nakresli topologii chodu zprav.
+
+26) Popište mechanismus vzájemného vyloučení v distribuovaném systému, implementovaný pomocí plně distribuované fronty a časových razítek.
+27) DME predavanim peska.
+28) popiste distribuovany algoritmus volby hlavniho (master) uzlu na kruhu (Chang, Roberts) a urcete jeho slozitost
+29) popiste plne distribuovanou detekci uvaznuti v distribuovanem systemu
+
+PA150: termín 16.12.2014
+
+1) Falošné cykly vo wait-for grafe: čo to je, prečo a ako vznikajú.
+2) DME posielaním tokenu po kruhu.
+3) 3 + 1 podmienka uviaznutia. Metódy detekcie uviaznutia.
+4) Implementácia totálneho radenia multicastových správ cez sequencer.
+5) Čo je to plán / serializovateľný plán. Stromový protokol riešenia súbežných transakcií.
+6) Charakteristika denníka transakcií, jeho význam, použité dátové štruktúry a ako s ním TPM manipuluje pri obnove.

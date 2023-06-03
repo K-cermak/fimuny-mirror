@@ -1,0 +1,25 @@
+Za každou otázku 0 - 2 body.
+12-11 A
+10 B
+9 C
+8 D
+7-6 E
+
+1) Uveïte vlastnosti integritních omezení typu INITIALY DEFERRED
+
+2) Transformujte uvedeny select tak aby nepouzival OUTER JOIN
+
+   CREATE TABLE t1 (i int);
+   CREATE TABLE t2 (i int);
+
+   SELECT t1.i i1, t2.i i2
+   FROM t1, t2
+   WHERE t1.i=t2.i (+)
+
+3) Jaké vlastnosti musí mít VIEW/sloupec VIEW, aby na nìm byl použitelný pøíkaz UPDATE?
+
+4) Popište stav DB v deaedlocku, uveïte pøíklad, jak jej vyprovokovat a chování databáze (ORACLE) pøi jeho detekci.
+
+5) Uveïte typy a použití nestandardních indexù v databázi (ORACLE)
+
+6) Pøíklad ve studijních materiálech na "chytré" hledání adres (možno vypracovat pozdìji)

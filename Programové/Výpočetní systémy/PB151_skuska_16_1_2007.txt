@@ -1,0 +1,257 @@
+gl hf hosi holky
+
+nezabudnite:
+http://www.fi.muni.cz/usr/brandejs/AP/
+http://en.wikipedia.org/wiki/IEEE_754
+
+rad
+
+
+
+1.Nejmenší záporné císlo (nejvetší v absolutní hodnote; císlo na levé hranici rozsahu zobrazení) v IEEE 754 má
+znaménko mantisy 1, nulový exponent.
+*znaménko mantisy 1, nejvetší kladné zobrazitelné císlo v exponentu.
+znaménko mantisy 1, nejmenší záporné zobrazitelné císlo v exponentu.
+znaménko mantisy 0.
+
+2.Co není správne?
+Boolova algebra užívá tri základní operace
+*Boolova algebra je vybudována na operaci negovaného logického soucinu
+Boolova algebra je nauka o operacích na dvouprvkové množine
+
+3.Konec rádku v textovém souboru operacního systému UNIX se oznacuje kombinací rídicích znaku:
+CR+LF
+CR+DEL
+CR+NUL
+BS+CR
+*LF
+
+4.Který procesor má více ruzných instrukcí pracujících s operandy v pameti?
+RISC
+*CISC
+
+5.Registry jsou typicky konstruovány z
+*klopného obvodu D
+klopného obvodu RS
+poloscítacky
+úplné scítacky
+klopného obvodu JK
+
+6.K obecnému mechanismu algoritmu LRU: K úplnému ošetrení šesti položek algoritmem LRU (pomocí neúplné matice) bychom potrebovali kolik bitu v neúplné matici?
+*15
+8
+28
+16
+21
+
+7.Kolik rádku má Interrupt Descriptor Table (IDT) procesoru 80286?
+64
+24
+8192
+*256
+128
+
+8.Reálný režim se používá u procesoru
+386
+486
+286
+x86-64
+*všech vyjmenovaných
+
+9.Jaký je správný prevod císla
+01000001101001000000000000000000 z IEEE 754 (exponent má 8 bitu)
+2.15
+2.5
+2.25
+*20.5
+25.1
+
+10.Kolik bajtu maximálne zabírá jeden znak v kódování UTF-8?
+8
+2
+*6
+1
+4
+
+11.Jaký je správný prevod císla -5.125 do IEEE 754 (exponent má 8 bitu)
+11000001101010000000000000000000
+11000001101001000000000000000000
+11000001010010000000000000000000
+*11000000101001000000000000000000
+11000000110010000000000000000000
+
+12.Pro mikroinstrukci výber operacního znaku neplatí
+je soucástí napr. instrukce LDA
+je vždy 1. fází instrukce
+*cílem je vložit do datového registru data
+cílem je vložit do instrukcního registru instrukci
+
+13.Které z konstatování vztahujících se k okamžiku prerušení procesu je nesprávné?
+Prerušit nelze behem provádení instrukce.
+Prerušit nelze bezprostredne po zahájení obsluhy prerušení.
+Prerušit lze pouze tehdy, je-li to povoleno (nejde-li o nemaskovatelné prerušení).
+*Prerušení nastane ihned po žádosti signálem INTERRUPT.
+
+14.Procesor Intel 80386 pracuje s temito možnými adresami
+*48bitovou logickou adresou, 32bitovou lineární adresou a 32bitovou fyzickou adresou
+64bitovou logickou adresou, 48bitovou lineární adresou a 32bitovou fyzickou adresou
+48bitovou logickou adresou, 48bitovou lineární adresou a 32bitovou fyzickou adresou
+
+15.Výstupy z eventuální scítacky Modulo 4 mohou nabývat hodnoty
+0, 1, 2, 3, 4
+0, 1
+*0, 1, 2, 3
+0, 1, 2
+
+16.Ztrojení
+umožnuje detekovat 3 chyby, ale pouze 2 opravit
+uloží hodnotu trí bitu na jeden bit
+je príkladem vnejšího kódu
+*je príkladem opravného kódu
+
+17.Obsah adresového registru pameti se na výber jednoho z výberových (adresových) vodicu prevádí
+*dekodérem 1 z N.
+scítackou 1 plus N.
+multiplexorem 1 z N.
+
+18.Pro adresaci 4 MB pameti potrebuji adresu širokou
+16 bitu
+*22 bitu
+20 bitu
+18 bitu
+24 bitu
+
+19.Negaci bitu provádí:
+multiplexor
+*invertor
+dekodér
+logický obvod AND
+logický obvod OR
+
+20.Pojem 'time-out' pri provádení V/V operací znamená, že napr.
+*zahájená výstupní operace neodpovedela 'hotovo' do definované doby.
+mezi výstupní a vstupní operací musí být prodleva definované doby.
+pred zahájením vstupní operace lze signál 'start' poslat ne dríve než uplyne definovaná doba.
+
+21.Registr PC procesoru naplníme instrukcí
+*JMP
+LDA
+žádnou z uvedených
+STA
+
+22.Procesor 80486 se od procesoru 80386 neliší v
+interní vyrovnávací pameti
+*velikosti vnejších sbernic
+jednotce operací v pohyblivé rádové cárce
+nové technologii, která se blíží k RISCovým procesorum
+
+23.Nepovolená instrukce v procesoru 8086 je
+MOV ES,...
+*MOV CS,...
+MOV DS,...
+MOV SS,...
+
+24.Jak je v UTF-8 binárne zobrazen znak 'R' U+0158 ?
+1110 0101  1010 1010
+*1100 0101  1001 1000
+1011 1011  1001 1100
+1100 0011  1100 1100
+1110 0011  1010 1000
+
+25.Ve kterém vnejším kódování nejsou ceská písmena s diakritikou?
+*ASCII
+UNICODE
+ISO-8859-2
+Windows-1250
+
+26.Rozhraní RS-232C: Jaké zapojení nulmodemu je nesmyslné?
+SG--SG, TxD--RxD, RxD--TxD
+*SG--SG, TxD--TxD, RxD--RxD
+SG--SG, TxD--RxD, RxD--TxD, RTS+CTS--DCD, DCD--RTS+CTS
+
+27.Co znamená použití poradí Little-Endian?
+Všechny bity (krome znaménkového) se scítají stejne.
+Bajt nejnižšího rádu je uložen na nejvyšší adrese.
+Bajt nejvyššího rádu je uložen na nejnižší adrese.
+*Bajt nejnižšího rádu je uložen na nejnižší adrese.
+
+28.Která posloupnost instrukcí je nekorektní?
+PUSH AX
+POPF
+*PUSH CX
+POP CS
+PUSHF
+POP DX
+
+29.Všechny odkazy na zásobník procesoru 8086 jsou segmentovány pres registr
+*SS (Stack segment)
+CS (Code segment)
+ES (Extra segment)
+DS (Data segment)
+
+30.Rámec je
+menší než stránka
+*stejne velký jako stránka
+vetší než stránka
+
+31.Dekodér, který má 4 vstupy, má
+8 výstupu
+3 výstupy
+2 výstupy
+4 výstupy
+*16 výstupu
+
+32.Posloupnost instrukcí procesoru definovaného na prednáškách
+START, IN, STA x, FLAG
+je
+*žádná z ostatních odpovedí není správná
+korektní operace ctení ze vstupního zarízení
+korektní operace zápisu do výstupního zarízení
+
+33.Pro asociativní pamet neplatí
+v pameti se plní klíc a obsah
+pamet klícu se prohledává paralelne
+zkratka je CAM
+*používá se jako operacní pamet
+
+34.Který skok procesoru 8086 pracuje se 16bitovým operandem?
+žádná z uvedených možností
+krátký (short)
+*blízký (near)
+vzdálenný (far)
+
+35.Co platí pro segmenty a stránky:
+segmenty jsou stejné velikosti, stránky jsou ruzné velikosti
+segmenty jsou stejné velikosti, stránky jsou stejné velikosti
+*segmenty jsou ruzné velikosti, stránky jsou stejné velikosti
+segmenty jsou ruzné velikosti, stránky jsou ruzné velikosti
+
+36.Proc není Booleova algebra vhodná pro technickou realizaci?
+není možné pomocí ní provádet operaci implikace
+zakreslení grafu je pomocí ní príliš obtížné
+byla vymyšlena dríve, než se zacala uplatnovat von Neumannova koncepce
+*obsahuje príliš mnoho operací
+
+37.V 64bitovém režimu architektury x86-64 se potlacuje
+*segmentace
+stránkování
+
+38.Registr PC -- cítac instrukcí v procesoru obsahuje
+pocet již provedených instrukcí.
+pocet instrukcí, které zbývají do konce programu.
+*adresu práve provádené instrukce.
+
+39.Procesor 8086 poskytuje pro adresování V/V bran
+8bitovou adresu
+20bitovou adresu
+24bitovou adresu
+*16bitovou adresu
+
+40.Instrukce PUSH osmibitového procesoru definovaného na prednáškách vkládá do zásobníku
+1 bajt
+1 bit
+*1 dvoubajtové slovo
+2 dvoubajtová slova
+
+(ako v UNIXE sa pise... na win si dopiste CR)
+LF 

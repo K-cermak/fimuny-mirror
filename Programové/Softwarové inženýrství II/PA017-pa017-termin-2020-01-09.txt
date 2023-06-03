@@ -1,0 +1,7 @@
+9.1.2020
+4x10b
+
+1) COCOMO II - ake modely a popisat
+2) Na co sluzia prehliadky, recenze a inspekcie SW. Podobnosti a rozdiely (fakt neviem co to tam chcel)
+3) PUTNAM - napisat rovnicu, popisat, vysvetlit
+4) ako prebiehaju iteracie v UP a SCRUM. V com su (tie iteracie) podobne a rozdielne

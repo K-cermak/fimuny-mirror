@@ -1,0 +1,10 @@
+1. Popiste L2 vrstvu ISO OSI modelu, adresaci na teto vrstve, funkci vrstvy, protokoly a pripadne algoritmy, ktere se zde pouzivaji.
+2. Porovnanie reaktívneho a proaktívneho ad-hoc smerovania, priklady protokolov.
+3. Rozdiel medzi Tapestry a Pastry u P2P sieti
+4. Ako sa riesi koexistencia IPv4 a IPv6
+5. Zakladne funkcie smerovaca+schema
+6. Popisat RTP RTCP RTSP
+7. Co je IP multicast, jaký L4 protokol využívá, zákl. pøístupy vytváøení multicastových skupin (vèetnì pøíkladù protokolù).
+8. Neighbour discovery v Ipv6.
+9. Funkce TCP, fáze pøenosu, podrobnìji rozepsat Tahoe/Reno/Vegas
+10. Co jsou overlay networks a kde se nacházejí.

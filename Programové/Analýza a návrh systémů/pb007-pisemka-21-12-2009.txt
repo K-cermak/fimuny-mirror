@@ -1,0 +1,11 @@
+21.12.2009
+
+1)transakcni analyza - k cemu se to pouziva a postup
+2)co je 4.NF, uved vlastni priklad 3.NF a rekni co je 3.NF, uved vlastni priklad dat v 1.NF ktera nejsou v 3.NF a proc
+3)VPA
+4)SCRUM
+
+5)kontext.diagram, prvotni DFD, ERD, seznam udalosti podle YMCA
+
+Mikulasuv informacni system, nejake takovehle zadani, ale presne si to nepamatuju:
+Rodice si objednavaji navstevu mikulase a certa, rodice uvedou adresu a jestli bylo dite zlobive nebo hodne. Uzavirka objednavek je 30.listopadu. Vsechny objednavky kontroluje a schvalaluje andel. Pokud bylo dite hodne, dostane od mikulase darek. Pokud bylo zlobive, odnese ho cert. Cert s Mikulasem maji moznost kdykoliv prohlizet seznam korektne prihlasenych deti.

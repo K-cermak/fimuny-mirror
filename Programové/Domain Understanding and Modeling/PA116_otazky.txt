@@ -1,0 +1,6 @@
+- Co je to znalost, znalosti tacit a explicit, životní cyklus znalostí, jejich souvislost s operacemi mention a use. Vysvìtlení tìchto pojmù.
+- Co je to pojem. Typy vyšších øádù. Co je to definice.
+- Informaèní hodnota datového modelu, informaèní ekvivalence. Binarizaèní princip.
+- V èem spoèívá universalita datového modelu? K èemu ji potøebujeme? Vysvìtlete datový model, pomocí kterého lze universalitu realizovat a ukázat.
+- Popište vývoj od datových abstrakcí až po rozvolnìné objekty. Co je to ADP? Popište datový model rozvolnìných objektù.
+- Vysvìtlete, èím se liší NP a TI hierarchie.

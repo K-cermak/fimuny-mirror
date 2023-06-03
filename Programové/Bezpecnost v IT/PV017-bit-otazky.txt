@@ -1,0 +1,130 @@
+1.Zakladni a rozsirujici kriteria dle OWASP
+--------------------------------------------------------------
+2.Protection profile a Security target+Charakterizuj obsah a funkciu PP
+--------------------------------------------------------------
+3.mira ochrany EAL1
+
+--------------------------------------------------------------
+
+4.rozdilne a spolecne mezi de facto a de iure
+ Napiste 3 mezinarodni de jure normy a uvedte oblast, ve ktere pusobi
+--------------------------------------------------------------
+
+5.charakterizujte 4 zakladni oblasti ve Disaster recovery
+
+--------------------------------------------------------------
+
+6. Nakresli model architektury PKI a v strucnosti popis jednotlive zlozky.
+
+--------------------------------------------------------------
+
+
+
+7. Nakresli model architektury bezhotovostnych platieb a strucne popis.
+
+--------------------------------------------------------------
+
+
+8. priklad - zoradit aktiva podla ich vyznamu v ramci bezpecnosti:
+	   - zadanie rovnake ako pred rokom
+"Vyse potencialnich skod na aktivech A,B,C,D je ohodnocena {1,3,2,4}.
+	Pravdepodobnost utoku {vysoka,stredni,vysoka,nizka}. Obtiznost vyuziti
+zranitelnych mist
+	{nizka,stredni,velka,velka}. Seradte aktiva z hlediska vyznamu pro
+zajisteni bezpecnosti."
+
+--------------------------------------------------------------
+
+9) Napis cyklicky proces tvorby bezpecnostni politiky
+	b) Napis 6 fazi spravy rizik
+--------------------------------------------------------------
+
+10,Standard ISO 15408
+--------------------------------------------------------------
+
+11,Napis obecnou strukturu v SSO (Single Sign-On) a popis role.
+--------------------------------------------------------------
+12,Vypiste a charakterizujte role v PKI
+--------------------------------------------------------------
+13,sifrujuci pristroj CBC
+----------------------------------------------------------------
+
+14,  3DES vs DES
+
+------------------------------------------------------------
+15, Popiste princip Vernamovy sifry
+
+
+--------------------------------------------------------------
+16, Rozdil volitelne x povinne rizeni pristupu
+--------------------------------------------------------------
+17, jednoceste funkce,  ~ se zadnimi vratky, ~ hashovaci
+--------------------------------------------------------------
+18 urovne pohledu na bezpecnostni normu ITSEC
+---------------------------
+19, security vs safety
+----------------------------------
+
+
+20 Charakterizujte strucne ucel: 
+	a) Bezpecnostni funkce 
+	b) Bezpecnostniho mechanismu 
+-----------------------------------------------------
+21. Charakterizujte strucne ucel: 
+	a) Celkove bezpecnostni politiky 
+	b) Systemove bezpecnostni politiky 
+-------------------------------------------------------------
+22. Strucne charakterizujte 3 zakladni faze reakce na utok 
+--------------------------------------------------------------------
+23. Strucne charakterizujte 2 zakladni rezimy prace blokovych sifrovacu nacrtnutim schematu, vysvetlenim zakladniho principu a uvedenim charakteristickych vlastnosti: 
+	a) ECB
+	b) CBC 
+------------------------------------------------------------------------
+24. Strucne charakterizujte: 
+	a) Perfektni (idealni) sifrovac 
+	b) Vypocetne bezpecny sifrovac 
+	c) bezpecny sifrovac 
+-------------------------------------------------------------------
+25. Uvedte princip pouziti distribucniho centra klicu symetricke kryptografie v modelu PULL, zduvodnete vhodnou oblast aplikace 
+--------------------------------------------------------------------------------
+26. Charakterizujte 2 zakladni modely rizeni pristupu: 
+	a) Nepovinna ochrana 
+	b) Povinna ochrana
+-------------------------------------------------
+27. Definujte pojmy autorizace a autentizace
+---------------------------------------------
+28. Celkova a systemova bezpecnostni politika
+----------------------------------------------------------
+29. uvedte a charakterizujte 2 zakladni principy symetricke kryptografie
+-------------------------------------------------
+30. Definujte duvernost bezpecnostniho systemu
+------------------------------------------------
+31. popiste 4 strategie provadeni analyzy rizik - elementarni, zakladni, kombinovana a detailni
+----------------------------------------------
+32. Napiste a strucne charakterizujte 7 roli v PKI
+----------------------------------------------------------
+33 popis + priklady : a) dublovani autorizace   b) separace odpovednosti
+--------------------------------------------
+34 rozdil ISO a TR ISO, popis typu TR ISO
+-------------------------------------------------------
+35 Microsoft Passport, namalovat obrazek, prubeh autentizace
+---------------------------------------------------
+36 zakladni dokumenty certifikacni autority
+-------------------------------------------------------
+37) role a) elektronickeho seku
+        b) intrukce pro banku prijemce o prevodu castky
+        
+   v modelu prijemce - odesilatel - banka prijemce - banka odesilatele
+---------------------------
+38 jak probiha hodnoceni pomoci OWASP
+--------------------------------
+39 jak probiha hodnoceni pomoci comon criterii + EAL2 tusim
+--------------------------------------------------
+40-- jak probiha hodnoceni pomoci comon criterii + EAL2 tusim
+-----------------------------------------------------------------
+41-- jak se vyuzivaji comoncriteria./uzivatel,hodnotitel,vyvojar...
+
+
+
+
+

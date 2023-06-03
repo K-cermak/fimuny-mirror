@@ -1,0 +1,8 @@
+technologia IS, skuska 8.1 2006
+
+1. trojvrstvova architektura IS, tenky klient
+2. RSI
+3. SWOT tabulka
+4. Firma robila maly IS pre niekolko uzivatelov. ma prijat ponuku na velky IS univerzity s tisicmi uzivatelov?
+5. zaujmove skupiny v podniku(zamestnanci, majitelia, dodavatelia/odberatelia) 
+6. vyber zakazky, poradcovia 

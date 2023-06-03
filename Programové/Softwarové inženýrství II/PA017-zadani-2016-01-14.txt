@@ -1,0 +1,6 @@
+PA017 > Termín 14/1/2016
+-----------------------------------------------
+1. Putnamova rovnice, vypsat
+2. Co obsahuje hypertextový model WebML
+3. Neupravené FP na Upravené FP
+4. Vyjmenovat Lehmanovy zákony, jeden popsat

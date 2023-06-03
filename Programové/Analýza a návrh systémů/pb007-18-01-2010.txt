@@ -1,0 +1,7 @@
+1. Jake modely pouziva WebML (popis, notace, nakreslit)
+2. 3 stejne a 2 odlisne vlastnosti SASS a YMSA
+3. Popsat vyvazovani DD a minispecifikace
+4. Uvest 2 UML modely, ktere zachycuji vyvoj systemu v èase (popsat, nakreslit, vysvetlit jak je zachycen cas)
+
+5. Kontextovy diagram, Use Case diagram, Seznam udalosti a ERD podle YMSA pro system rizeni jachtarskych zavodu
+ * zadani ze slidu

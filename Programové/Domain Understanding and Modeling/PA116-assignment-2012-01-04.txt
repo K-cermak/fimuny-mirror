@@ -1,0 +1,4 @@
+Create map of Domain Understanding and Modeling competencies, which contains:
+A, Analytic patterns
+B, Nonaka-Takeushi SECI model, how is connected to use-mention paradigm and Service System life cycle
+C, Conceptual systems

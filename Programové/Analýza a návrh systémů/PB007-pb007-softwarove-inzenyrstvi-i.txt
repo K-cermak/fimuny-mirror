@@ -1,0 +1,67 @@
+1. termin
+1) ci moze byt specifikacia pisana viacerymi sposobmi + urci spravne tvrdenia (citala som iba tie, ktore tvrdili ze ano, jedno vravelo ze moze byt v prirodzenom jazyku, druhe ze moze byt abstraktne az matekmaticke a detailne)
+2) pri inkrementalnom vyvoji co plati (znizuje sa riziko celkoveho neuspechu / je vodopadovy / je agilny / vsetko sa dodava naraz / dodava sa po castiach)
+3) ktory termin najblizsie popisuje situaciu, kedy sa sw este pouziva ale uz sa naupravuje, neupdatuje (disposal / phase-out / release / nejaka blbost)
+4) vztah testovania ku statickej analyze a naopak. co plati (neviem uz moznosti)
+5) ktore su diagramy v uml (3 boli dobre, 2 nezmysly)
+6) co predstavuju lifelines (cestu sprav medzi ucastnikmi, ucastnikov, spravu, este jedna moznost)
+
+(btw test už je naskenovaný) Asi bylo celkem hodne otázek. Co si pamatuju:
+- co delá která cást data flow diagramu 
+- diagramy používané v uml (nejaký chyták, mám z toho -2 a to jsem šel jen "na jistotu")
+- sw analýza vs sw testování 
+- co jsou lifelines v sequence diagramu 
+- co zahrnuje configuration management 
+- obecne k funkcním a nefunkcním požadavkum 
+- vztahy používané v use case diagramu (role & use case generalization, inclusion, extension)
+
+2. termin
+- Která z následujících tvrzení jsou pravdivá?
+a) Asociace muže existovat mezi trídami i objekty, zatímco link existuje pouze mezi objekty.
+b) Link je instancí asociace.
+c) Pokud je mezi dvema trídami asociace, pak musí existovat i link mezi objekty techto tríd.
+d) Pokud je mezi dvema objekty link, pak musí existovat i asociace mezi trídami techto objektu
+Správne: B, D
+
+- Otázka k modelování dat
+a) ERD umožnuje modelonáví primárních a cizích (foreignú) klícu
+b) UML diagram tríd modeluje strukturální složky i složky chování systému
+c) ERD nabízí bohatší škálu vlastností mezi modelovanými entitami než UML Diagram tríd
+d) ERD modeluje pouze pohled na strukturu dat se základními vztahy mezi nimi
+e) ERD modeluje strukturální složky i složky chování systému
+Správne: A, B, D
+
+- Co je správne
+a) verifikace slouží ke zjištení chyb
+b) validace slouží ke zjištení chyb
+c) validace a verifikace jsou to stejné
+d) validace a verifikace se provádí pouze jednou po specifikaci požadavku
+Možná ješte nejaká další možnost, každopádne A je správne
+
+- Otázka k Aktorovi v Use Case diagramu
+a) je interní vuci systému
+b) je externí vuci systému
+c) se systémem komunikuje pouze prímo (bez prostredníka)
+d) se systémem muže komunikovat bud prímo nebo neprímo (pres prostredníka)
+e) se systémem muže komunikovat pouze pres prostredníka
+Správne: B, C
+
+- Co platí pro závislost (dependency)
+a) muže být mezi dvema trídami, mezi dvema balícky a mezi objektem a trídou
+b) «instantiate» nepatrí mezi závislosti
+c) muže být pouze mezi dvema trídami
+d) zmena jednoho zúcastného má za následek možnou zmenu druhého, když jsou v závislosti (tak nejak)
+Správne: A, D
+
+14.1
+-Ktoré z týchto metód patria do štrukturálnej analýzy?
+
+-Vlastnosti agregacie v ramci class diagramu
+
+-Charakterizovat passive redundancy
+
+-Ktore z nasledujucich tvrdeni o UML class diagrame a state diagrame su spravne?(tiez v skuske 18.1.13)
+
+-Co plati o reengineeringu
+
+-Vybrat spravne tvrdenia o technickej specifikacii v use case

@@ -1,0 +1,24 @@
+1) Urèete impedanci a indukènost 10m kabelu, jetlie víte, e kabel o délce 2m má impedanci Z0=75ohm a kapacitu 100pF. Napište, kde se tyto kabely pouívají.
+
+2) Popište, co znamená SFT (Level II) v sítích Novell Netware. 
+
+3) Nakreslete sí 10Base5, kde jsou dva uzly vzdáleny max. 1300m. Napište, jaké konektory se pouívají.
+
+4)  routovací tabulka
+
+5) Proè es nepouívá stejné kódování u 100BaseTX a 100BaseFX.
+
+6) HTML
+základní znaèky = popsat
+<TT>
+<TR>
+&lt;
+<left>
+&nbsp;
+<li>
+<sup>
+<italic>
+
+7) OSI = kam patøí ARP, PPP, IP, SPX
+
+8) jak vypadá 802.3 packet a popište jeho jednotlivé èásti.

@@ -1,0 +1,17 @@
+pa128 zk 16.5.2012
+
+zadani je v anglicnite, jazyk vypracovani je mozne si zvolit
+1 
+
+metricky prostor: definice a 3 priklady
+
+2 vyjmenovat 3 typy dotazu a definovat range query a nearest neighbour query
+
+3 pivot filtering: motivace, priklad, definice
+
+4 precision, recall
+5 
+Burkhard-Keller Tree
+6 
+m-tree vlastnosti a idea
+

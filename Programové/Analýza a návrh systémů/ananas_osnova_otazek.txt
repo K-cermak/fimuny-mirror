@@ -1,0 +1,247 @@
+Toto je nìco jako uèební osnova k pøedmìtu Ananas. Je to podrobný výèet bodù probírané látky. Vhodné pou¾ít jako "zkou¹ítko", jestli to máte v¹echno v malíèku ;-). Uspoøádání bodù není úplnì 100% korektní, ale i tak snad pomù¾e.
+HH
+
+
+1) Software - co je, charakteristiky
+  a) rozdìlení: generický/smluvní
+  b) krize
+  d) charakter. dobøe øe¹eného sw
+  e) kritické faktory sw produktivity
+  f) progr. v malém/velkém
+  g) aktivity vývoje sw
+  h) viditelné znaky výroby sw
+  i) charak. výrobního procesu
+  j) typy vývoje - popis, (ne)výhody
+    - vodopád
+    - obrysová specifikace
+    - inkrementální ®C
+    - prototypování
+    - výzkumník
+    - spirálový model
+  k) hlavní slo¾ení aplikace
+  l) typické èinnosti programátorù
+  m) údr¾ba - co je, relativní cena, % zamìstnancù, co ovlivòuje její slo¾itost
+  n) hypotézy o chybách
+  o) chyby a opotøebení hw/sw
+  p) Lehmannovy zákony
+  r) programování v týmu
+    - Brooksùv zákon
+
+2) Specifikace po¾adavkù
+  a) rozdíl: programátor/analytik
+  b) systém - definice, charakteristiky
+  NÁSLEDUJÍCÍ POLO®KY BY MÌLY BÝT DE FACTO POTOMKY BODU B)
+  c) funkce rozhraní
+  d) dekompozice - co je a k èemu slou¾í
+  e) náhrada star¹ího systému
+  f) analýza - co je, co zkoumá
+  g) specifikaèní dokument
+    - obsah
+    - osnova
+    - v kontextu celého vývoje sw
+  h) získávání informací
+  i) neurèitost
+  j) modely - co to je
+    - úèel
+    - nástroje
+    - model specifikace po¾adavkù
+  k) spec. podle cílové skupiny
+  l) zásady + provìøení
+  m) jazyk specifikace a høíchy
+  n) znalost organizace (analytik)
+  o) tým - charak.
+  
+3) DFD
+  a) proces
+  b) tok
+  c) pamì»
+    - vlastnosti
+    - esenciální/implementaèní
+  d) terminátor
+  e) hierarchie DFD
+  f) doporuèení tvorby DFD
+  g) zaji¹tìní vnitøní konzistence DFD
+  h) minispecifikace
+    - strukturovaný jazyk
+    - slovník
+    - syntaxe
+    - rozhodovací tabulka
+    - rozhodovací strom
+    - úvodní/závìreèné podmínky
+    - kopenogramy
+    
+4) ERD
+  a) datový model
+  b) komponenty DM
+  c) datový slovník
+  d) datový element
+  e) entity, arity
+    - asociované, nad/pod-typy
+  f) doporuèení tvorby ERD
+  g) entity a klíèe
+  h) NF
+  
+5) stavové modely
+  a) stav systému
+    - zmìna stavu
+    - poèáteèní/koncové st.
+  b) dekompozice st.
+  c) podmínka a akce pøechodu
+  d) tvorba stav. diagramu
+  e) konzistence STD
+  f) CDFD vs. STD
+ 
+6) vyva¾ování modelù
+  a) DFD - DD
+  b) DFD - minispecifikace
+  c) DD - minispecifikace
+  d) ERD - DFD+minisp
+  e) DFD - STD
+  f) matice CRUD
+  g) matice obrazovek
+  
+7) klasické metody strukturované analýzy
+  a) dekompozice systému - 4 pøístupy
+  b) FD shora dolù
+  c) SASS
+    - 4 modely
+    - nástroje
+  d) logické modelování
+    - fáze
+  e) pohledová analýza (VPA)
+    - kdy pou¾ít
+    - identifikace pozorovacích bodù
+    - (ne)funkèní pohledy
+  f) DSSD
+  
+8) moderní metody SA: YMSA
+  a) nedostatky 4 modelù (DeMarco)
+  b) analýza s esenc. modelem
+    - model okolí
+    - model chování
+  c) volba hranice systému
+  d) definice okolí - nástroje
+    - seznam událostí
+    - dialogové dat. toky
+    - poøadí tvorby modelù okolí
+  e model chování
+    - kritika postupu "shora dolù"
+    - události a odezvy
+    - vyva¾ování nahoru
+    - vyva¾ování dolù
+    - dokonèení
+    - automatizovaná èást
+  f) dokonèení u¾ivatelského implementaèního modelu
+  g) doporuèení pro návrh rozhraní
+  h) spec. operaèních omezení
+  
+9) SSADM
+  a) charakter.
+  b) ¾c, etapy
+  c) 3 zákl. pohledy
+  d) ¾c entit
+  
+10) Strukturovaný návrh
+  a) moduly a rozhraní
+  b) nefunkèní cíle návrhu
+  c) koheze
+  d) nástroje SN
+  e) metody modulárního návrhu
+    - JSP
+    - JSD
+    - adekvátní komponenty DS
+    - JSD dat -> JSD programu
+  f) pøechod DFD-> modulární návrh
+  g) transformaèní analýza
+  h) transakèní analýza
+  i) návrhové heuristiky
+  j) závìreèná dopracování návrhu
+  
+11) OO analýza
+  a) motivace
+  b) principy zvládnutí slo¾itosti
+  c) abstrakce - procedurální/datová
+  d) zapouzdøení
+  e) 3 metody organizace
+  f) objekt - charakt.
+  g) tøída
+  h) hierarchie
+  i) dìdiènost
+  j) propojení - role
+  k) pravidlo zmìny, technika dr¾adla
+  l) slu¾by
+  m) 5-vrstvový model
+  n) hlavní aktivity OOA
+  o) hledání tøíd a objektù
+  p) nalezení struktur...
+  q) definice atributù
+  r) notace
+  
+12) UML
+  a) co to je
+  b) koncepty
+  c) pøípad u¾ití
+    - dokumentace
+    - u¾ívá/roz¹iøuje
+    - realizace (diagramy)
+  d) diagramy tøíd
+  e) tøídy
+  f) operace
+  g) atributy
+  h) vztahy
+    - typy
+    - nalezení
+    - násobnost, navigace
+    - dìdiènost
+  i) stav objektu
+  j) diagramy komponent
+  k) stereotypy
+  l) UNIFIED PROCESS
+  
+13) Metodika SELECT PERSPECTIVE
+  a) projektový postup
+  b) diagramy
+  c) inkrementy
+  d) posloupnost tvorby modelù
+  e) komponenta
+  
+14) Strukturovaná vs. Objektová analýza
+  a) u¾ívané modely
+  b) objekty v ERD
+  
+15) Agilní metodiky vývoje
+  - zákl. principy
+  b) tradièní vs. agilní
+  c) XP
+  d) FDD
+  e) SCRUM
+  f) TDD
+  g) srovnání metodik
+  
+16) Øízení kvality
+  a) definice kvality
+  b) faktory kvality
+  c) spolehlivost
+    - chyby
+    - poruchy
+      - pøíèiny
+      - cena odstranìní
+      - ve vtahu k vývojové etapì
+  d) SQA
+    - produkty podle etap
+    - pøínos (cena nalezení)
+    - pøezkou¹ení sw
+    - formální pøezkou¹ení
+      - cíle, provedení
+    - testování
+      - V model
+      - moduly
+      - verifikace, validace
+      - èerné a bílé skøíòky (cyklomat. slo¾itost)
+    - integrace
+      - 2 zpùsoby, charak., (ne)výhody
+    - metriky
+    - CMM
+    - ISO
+    - jak zaèít SQA      
+  

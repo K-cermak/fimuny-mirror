@@ -1,0 +1,21 @@
+Otázky PB009 4th termín 2015 jaro
+
+1. Jaké druhy lineárních rovnobìnıch projekcí se pouívají v praxi? Uveïte úplnı vıèet,
+charakterizujte vlastnosti a oblast pouití, vysvìtlete pomocí obrázkù (osy souøadného
+systému, prùmìtna, smìr promítání, promítanı objekt, ...) 
+
+2. Vysvìtlete zákon nelineárního vnímání intenzity svìtla a jeho dùsledky v poèítaèové
+grafice.
+
+3. Jak pracuje algoritmus "vrení paprsku"? Co je jeho vısledkem? Kde se pracuje s pojmy
+„viditelnost“ a „svìtelnı model“ ?
+
+4. Jakı je rozdíl mezi pøímım a inverzním nanesením textury? + obrázok
+
+5. • Bilineární a bikubické Coonsovy plochy, implicitní a explicitní definice, odlišnosti. 
+
+tou 5kou som si neni istı bol tam proste obrázok a nieèo s Coonsonom ale neviem to nájs medzi otázkami od Sochora, tak Vám nevime da presné zadanie.
+
+Ve¾a Šastia na skúške :) 
+
+Pomáhajte tvori komunitu fi.muny uplodovaním ! pomôte druhım oni pomôu Vám !

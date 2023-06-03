@@ -1,0 +1,11 @@
+písemka z PA104 Vedení tımového projektu 4. 6. 2008
+
+byl zadán projekt - is pro evidenci a logistiku zboí, je to náš 37. projekt, máme zkušenosti se všemi pouívanımi technologiemi, ale nikdo nemá zkušenost s modulem pro logistiku.
+
+1/ Nakreslete WBS; nakreslete síovı diagram a ganttùv diagram (i s dobami trvání jednotlivıch fází).
+
+2/ Spoèítejte COCOMO 1 pro projekt na základì KSLOC (odhadnìte, máte zkušenosti se zápoètovıch projektù) (byl k dispozici "tahák" s konkrétními èísly)
+
+3/ Napište 4 rizika a jejich expozice a zpùsob jejich øešení, pro 2 ještì další zpùsob øešení.
+
+4/ Napište 4 metriky a k èemu konkrétnì budou pro projekt/firmu.

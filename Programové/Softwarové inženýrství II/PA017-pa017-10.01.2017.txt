@@ -1,0 +1,6 @@
+PA017 Softwarové inženýrství II - 10. 01. 2017
+
+1. Z koho se skládá inspekèní tým? Popištì jednotlivé role.
+2. Jaký je rozdíl mezi funkèními body branými v úvahu u projektu a u produktu?
+3. Vysvìtlete pojmy inkrementální vývoj a iterativní vývoj.
+4. Popište jednotlivé modely WebML.

@@ -1,0 +1,25 @@
+1. Co je síťový komunikační protokol. Uveďte, co síťový protokol definuje a kde najdete popisy síťových protokolů (standard). (12 bodů)
+
+2. Jaké služby poskytuje vrstva datového spoje? Výčet doplňte stručnou charakteristikou. Uveďte i protokoly této vrstvy, adresaci a základní datovou strukturu. (12 bodů)
+
+3. Popište distribuovanou verzi Spanning Tree algoritmu. Kde se využívá? (14 bodů)
+
+4. Součástí rodiny IP protokolů je i speciální řídící protokol. Uveďte jeho jméno a zejména důvod jeho existence. K čemu se používá? (12 bodů)
+
+5. Kde se nachází parametr TTL, jaký má obot hodnot a k čemu se využívá? (8 bodů)
+
+6. Popište zásady Classful a Classles adresace pro IPv4. Co je CIDR? Jak pracuje NAT. A jaký je důsledek zavedení těchto technik? (12 bodů)
+
+7. Co je to RTT (Round Trip Time), k čemu se používá v TCP? Jak se udržuje RTT aktuální pro déle trvající přenosy? (12 bodů)
+
+8. Popište protokol RBUDP, pro jaký typ přenosů slouží? (12 bodů)
+
+9. K čemu byly zavedeny autonomní systémy a jak se mezi nimi směruje? Čím se liší přístup Path vector a Distance vector? (12 bodů)
+
+10. Popište funkci relační vrstvy, jaké služby poskytuje a uveďte příklady protokolů na této vrstvě. (12 bodů)
+
+11. Které parametry považujete za důležité pro definici kvality služby konkrétního přenosu (tedy co byste chtěli nastavit, kdybyste měli se sítí uzavřít dohodu o přenosu s definovanou kvalitou služby)? (10 bodů)
+
+12. Jaké vlastnosti a jakou roli má v Internetu jmenná služba (DNS, Domain Name Service)? Je nějaký rozdíl mezi jmennou službou při použití protokolu IPv4 a IPv6? (10 bodů)
+
+13. Co jsou takzvané ad-hoc sítě, jakým způsobem jsou vytvářeny. Popište Vanets (Vehicular Ad Hoc Networks), jakého omezení zde lze využít pro směrování dat? (12 bodů)

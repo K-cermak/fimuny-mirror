@@ -1,0 +1,64 @@
+16 otázek, jedna odpovìd správnì,
+správná odpovìï +5
+špatná -2
+
+
+1.Uvaujme zamykání s vícenásobnou granularitou. Pokud jedna trasakce vlastní na nìjakém elementu zámek IX, pak jiná transakce mùe stejnı element zamèít zámkem:
+* S
+* X
+* IS
+* SIX 
+
+2.Jakı bude vısledek operace sjednocení R \cup S pøi pouití varianty "MAX"?  R={a,b,c,d}, S={b,b,c,c,c,d,d}
+
+3.Bol zadanı rozvrh a bolo treba vybra:
+* Rozvrh je korektnı, všetky transakcie sú dobre utvorené
+* Rozvrh je korektnı, niektoré transakcie niesú dobre utvorené
+* Rozvrh nieje korektnı, všetky transakcie sú dobre utvorené
+* Rozvrh nieje korektnı, niektoré transakcie niesú dobre utvorené
+
+4.Undo log pro T: B:=A+3; A:=B*3; pro hodnoty A:=2; B:=3;
+
+5.Pøedpokládejme pouití algoritmu 2 fázového tøídìní
+   vícecestnım sléváním (TPMMS), kterı v první fázi pouívá
+   pamìt velikosti M. Èasová sloitost algoritmu pro urèitá
+   data je N. Jak se zmìní èasová sloitost T algoritmu, pokud se poèet záznamù je stejnı ale mají dvojnásobnou délku
+*Nezmìní se
+*T*2
+*T/2
+*n log n
+
+6.Jakım zpùsobem se provádí table-scan pøi ètení relace R ..... ?
+Správna odpovìï: relace se prochází po blocích, je potøeba B(R) diskovıch operací
+
+7.Do jednoho bloku se vejde buï 40 záznamù nebo 100 dvojic (klíè, ukazatel). Kolik blokù zabere dvouúrovòovı
+index tabulky obsahující 1 mil. záznamù v pøípadì pouití øídkého (sparse) indexu v obou úrovních. (Do indexu
+nepoèítáme vlastní záznamy tabulky.)
+Správná odpovìï: 253 blokù
+
+8.Rozvrhy S1, S2 jsou koniktnì ekvivalentní, pokud lze jeden transformovat na druhı pomocí:
+Správná odpovìï: posloupnosti vımìn nekonfliktních akcí
+
+9.Co NEPLATÍ pro lineární hašování
+
+10. Jak se tvoøí KD Strom...
+
+11.Je dán rozvrh S = w3(A) w2(C) r1(A) w1(B) r1(D) w2(A) r4(A) w4(D). 
+Co platí pro jeho závislostní graf P(S)?
+
+12.Vypoèítat odhad RxS (x byl symbol NATURAL JOIN - pøirozené spojení)
+bylo zadáno T(R) T(S) V(R,a)  V(S,a) .. nevim presne
+ 
+13. je mono sigma(RxS) transformovat na (sigmaR)xS
+vdycky
+nikdy
+jen pokud jsou v sigma atributy pouze z R
+jen pokud jsou v sigma atributy pouze z S
+
+
+14.Co je to (write ahead logging) WAL
+
+15.Co je to BigTable
+Distribuovany system pro ulozeni a spravu obrovskych dat
+
+16.

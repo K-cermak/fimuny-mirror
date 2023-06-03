@@ -1,0 +1,13 @@
+1. Iteracni a inkrementalni vyvoj - popsat, rozdily, porovnat s Vodopadem.
+2. Co je to asociacni trida, v jake fazy vyvoje se pouziva, priklad pomoci diagramu trid.
+3. 5 roli vyvoje systemu a jake dyagramy delaji...nebo tak neco :)
+4. Vytvorte diagram aktivit na tento scenar: Vyjezd hasicu:
+Operacni stredisko spusti poplach spustenim sireny a zaroven da vedet textovou zpravou zasahove
+ jednotce. Velitel jednotky musi pred vyjezdem dat vedet O. S., ze vyjizdi. Jakmile dojedou na misto,
+ velitel jednotky informuje stredisko, ze jsou na miste a jaky je stav. Kdyz je pozar uhasen, 
+velitel upozorni stredisko o uhaseni pozaru, a o tom, zda doslo k nejakym ujmam ci skodam. 
+Pokud nedoslo, jednotka se vraci, pokud doslo, jednotka zustava a jede zpet az pote, 
+co dorazi vysetrovatel, ktereho vysle operacni stredisko. 
+
+Snad jsem to nejak srozumitelne popsal...
+ 

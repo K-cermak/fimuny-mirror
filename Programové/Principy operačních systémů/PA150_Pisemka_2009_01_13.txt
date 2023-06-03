@@ -1,0 +1,28 @@
+PA150 Písemka 13.1.2009
+Jedna varianta, 6 otázek, 90 minut.
+
+Hodnocení:
+Žádná nebo chybná odpověď: 0b.
+Neúplná odpověď: 1b.
+Správná odpověď: 2b.
+11-12b: A
+   10b: B
+  8-9b: C
+    7b: D
+    6b: E
+    
+- Popište význam označení ACID.
+
+- Kolik výpadků stránky nastane při dané posloupnosti požadavků na stránky při velikosti fyzické paměti 4 rámce a použití algoritmu LRU?
+	(Posloupnost měla 20 členů v rozsahu 0-7).
+	
+- Popište 2 základní vlastnosti validních distribuovaných algoritmů.
+
+- Popište mechanismus vzájemného vyloučení v distribuovaném systému, implementovaný pomocí plně distribuované fronty a časových razítek.
+
+- Máme 3 transakce s časovými razítky: A-17, B-20, C-25. 
+	Mechanismus řízení souběžnosti je Wait-Die.
+	Co se stane, pokud si A vyžádá zámek držený B?
+	Co se stane, pokud si C vyžádá zámek držený B?
+	
+- Vysvětlete využití checkpointů při implementaci transakcí.

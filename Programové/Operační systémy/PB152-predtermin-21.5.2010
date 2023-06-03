@@ -1,0 +1,11 @@
+Predtermin 21.5.2010
+
+Takze co si pamatuju:
+
+1. Popsat privilegovany a uzivatelsky rezim CPU, jak a kdy se prepina
+2. Sluzby OS, k cemu jsou a jak se volaji
+3. Popsat FAP a LAP a jakou roli hraje bazovy registr
+4. Reseni konzumenta a producenta pomoci semaforu
+5. Co ma splnovat reseni kriticke sekce
+
+pak tam byla jeste jedna otazka, ale nemuzu si vzpomenout

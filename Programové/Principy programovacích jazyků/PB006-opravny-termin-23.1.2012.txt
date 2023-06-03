@@ -1,0 +1,62 @@
+23.1.2012 - opravny termin
+
+1) Ktore tvrdenie najlepsie odpoveda skutocnosti
+  a) Perl je staticky typovany
+  b) Scheme je logicky jazyk s prvkami .....
+  c) 
+  d)
+ *e) Lisp pouzival dynamicku viditelnost premmenych
+ 
+ 
+2) V systeme s podtypy existuje binarni konstruktor "sipka" (->) ktora je v prvnim (levem) argumentu 
+  kontravariatni a v druhem (pravem) kovariatni, pricom sa zapisuje infixovo (t.j. napr. A->B). 
+  Sipka zdruzuje zprava. Zaroven plati ze A<=A' . Vyberte co plati: 
+ *a) A'->(A->A')->A  <=  A->(A'->A)->A'
+  b) ((A->A')->A)->A  <=  ((A'->A')->A)->A'
+  c) (A'->(A'->A'))->A  <=  (A'->(A->A))->A'
+  d) A->A'->A->A  <=  A->A'->A'->A'
+  e) (A'->A')->A'->A  <=  (A->A')->A->A
+  
+  
+3) Do globalnej premmenej "a" (typu int) je na pociatku vlozena hodnota "n". Dalej mame nasledujucu 
+  funkciu/proceduru P:
+  
+  P(ref int x, inout int y) {
+    while (x>0) {
+      x = x-1;
+      y = x + y;
+    }
+  }
+  
+  Ta je zavolana nasledovne: P(a,a);
+  Aka hodnota bude v premmenej "a" po skonecni procedury?
+  a) n
+ *b) (n*(n+1))/2
+  c) 0
+  d) 2^n, nebo tak neco
+  e) jina
+  
+  
+4) UnitT -> TriT, kolko je spojitych funkcii a kolko z nich je maximalnych?
+  UnitT je klasicky 2 prvkovy ("()" a "T"),
+  TriT je typ zadefinovany ako obsahujuci nedefinitko a potom dalsie 3 prvky A,B,C, ktore su v TriT 
+  maximalne (t.j. A,B,C su navzajom neporovnatelne (ale ktorykolvek z nich je vacsi ako T)). 
+  Dohromady teda TriT obsahuje 4 prvky.
+  Spravna odpoved: 7 funkcii, 3 maximalne
+  
+  
+5) Prolog. Prirozena cisla, t.j. Zero a pak Succ(Zero), atd.  Presny popis si nepamatam, ale zhruba:
+	Napiste predikat Par(x,y), ktory zisti ci "x" je parne, resp. neparne cislo. Blizsi popis: 
+	argument "x" je cislo ktoreho paritu vysetrujeme (t.j. nieco v tvare Succ(...(Succ(Zero)) )
+	argument "y" slouzi na vyjadreni dotazu, t.j. 
+		y == "Zero" se dotazujeme jestli "x" je sude
+		y == "Succ(Zero)" se dotazujeme jestli "x" je liche
+	Par(x,y) ide odvodit prave vtedy, ked arg. x je parne cislo a arg. y je "Zero", alebo prave vtedy ked
+		 x je liche cislo a y je "Succ(Zero)".
+		 
+  Reseni (existuji i jine):
+  
+   Par(Zero,Zero).
+   Par(Succ(Zero), Succ(Zero)).
+   Par(Succ(Succ(X)), Zero) =: Par(X, Zero);
+   Par(Succ(Succ(X)), Succ(Zero)) =: Par(X, Succ(Zero));

@@ -1,0 +1,15 @@
+Hodnocení: Maximum 50 bodů, úspěšné řešení při alespoň 25 bodech, každá úloha za max 10 bodů.
+
+Popis systému / projektu:
+Modul na vytváření písemek, který je podmnožinou školního IS. Vyučující daného předmětu vytváří písemky a testové otázky. Vyučující zadává dodatečně informace o písemkách (bodování, počet otázek, apod.). Studenti se přihlašují a odhlašují z termínů. Pro každého studenta modul vygeneruje unikátní test z otázek a pokud student test opakuje, tak mu modul vybere hlavně otázky, které předtím student měl špatně. Modul automaticky test vyhodnocuje a výsledky odesílá do hlavního IS. Modul podporuje tisk písemek a skenování odpovědí. Informace o předmětech, termínů zkoušek, zapsaných studentech na termíny a výsledcích si školní IS přebírá z modulu.
+
+Pro výše nastíněný projekt vypracujte následující úkoly. Všechny úkoly se vztahují k jednomu projektu, jejich řešení si musí vzájemně odpovídat. Tam, kde umožňuje zadání nějakou volnost, je způsob řešení plně na Vás. Doporučuje se nejdříve si přečíst celé zadání úkolů. Tam, kde budete volit nějaké hodnoty, snažte se jejich vzájemný poměr volit tak, aby odpovídal pokud možno realitě.
+
+Úkoly:
+1) Use case diagram
+2) ERD diagram
+3) DFD diagram (DFD 0)
+4) DFD minispecifikace jednoho studentem zvoleného procesu
+
+Teoretická část:
+1) Teoretická otázka na pravidla mezi DFD a ERD a mezi DFD a datovým slovníkem.

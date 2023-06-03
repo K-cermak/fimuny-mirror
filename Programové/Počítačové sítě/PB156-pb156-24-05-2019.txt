@@ -1,0 +1,12 @@
+1. L3 - sluzby - smerovanie + adresovanie
+2. analogovy vs digitalny signal - mozne chyby pri prenose a ako sa im da predist
+3. protokoly pristup k mediu - aka vrstva + popisat riadeny pristup
+4. IPv4 + IPv6 hlavicky
+5. segmentovanie v TCP
+6. NAT
+7. ???
+8. RTT + ako ostava aktualne pri dlhych prenosoch
+9. typy autentizacie stran pri bezpecnoej komunikacii
+10. client-server vs p2p + konkretne aplikacie
+11. ad-hoc siete + senzorove siete
+12. DNS + rozdiel pri IPv4 a IPv6

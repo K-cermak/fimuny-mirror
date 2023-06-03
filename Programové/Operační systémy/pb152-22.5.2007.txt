@@ -1,0 +1,10 @@
+1. Sprava pamati - vysvetlite a popiste Fetch policy.
+2. Sprava pamati - preklad z LAP do FAP pri strankovani.
+3. Kriteria na vyber planovacich algoritmov, urcit pri ktorom je cielom maximalizovat alebo minimalizovat dany parameter.
+4. Co je to semafor, ake ma operacie, implementacia v OS.
+5. nevim 
+6. nevim
+7. Popiste planovaci algoritmus Round Robin.
+8. Popis proces a vlakno,rozdielne a spolocne vlastnosti.
+
+Na test 90minut, na E treba 8 bodov, ziadna odpoved 0, za aku-taku odpoved 1, za spravnu 2 body, poradie otazok bolo asi ine :).

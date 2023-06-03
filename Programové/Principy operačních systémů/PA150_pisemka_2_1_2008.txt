@@ -1,0 +1,10 @@
+1) 3 vlastnosti kritické sekce
+2) definovat problem ètenáøi x písaøi a øešení se semaforem
+3) stránkováni s TLB
+4) Wound-wait schema a pøíklad:
+Máme procesy A B C, s èasovými razítky postupnì 1, 2, 3
+a) B drží zdroj a požádá o nìj A
+b) A drží zdroj a požádá o nìj C
+
+5) popsat øešení kritické sekce použitím monitoru
+6) vysvìtlit kontrolní body u transakcí

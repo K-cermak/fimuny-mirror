@@ -1,0 +1,6 @@
+﻿* Bankéřův algoritmus (konkrétní příklad)
+* Shoda, interaktivní shoda a byzantská shoda
+* Podmínky uváznutí a Wound-wait
+* Algoritmus Chang, Roberts
+* Synchronizace a zajištění pořadí zpráv FIFO
+* 2fázový zamykací protokol

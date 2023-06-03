@@ -1,0 +1,7 @@
+Zadanie projektu: vımena uivate¾skıch staníc(cca. 30ks) a vıvoj a inštalácia dokumentového serveru.
+Všetky otázky sa vzahovali k zadaniu.
+
+1. Gantov Diagram + AOA
+2. Napísa plán testovania
+3. Vıpoèet z Putnamovej rovnice
+4. CMM 3 a 4

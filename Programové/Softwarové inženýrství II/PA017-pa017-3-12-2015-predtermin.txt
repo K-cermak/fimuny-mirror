@@ -1,0 +1,4 @@
+1. Popis 'Elaboration' fazu v Unified Process.
+2. Napis a rozved Lehmanov zakon o rastucej zlozitosti.
+3. Co je Halsteadova zlozitost a na co sa pouziva?
+4. Ako sa vyvija rozlozenie kapacity riesitelskeho tymu v SW projekte.

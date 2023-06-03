@@ -1,0 +1,15 @@
+termin 16.5.2023
+
+1) standardizace, typy, cile bla bla
+2) kodovani, neco s morseovkou (wtf)
+3) IPv4 vs IPv6 hlavicka, jak se prechazi z jednoho do druheho
+4) distance vektor deleni horizontu, k cemu, jak
+5) proc je dobre delat site s cykly a jak cykly detekujeme
+6) co je treba na prenos videa a audia, co potrebuji multimedialni prenosy pro prenos v realnem case
+7) multiplexing, benefit multiplexingu, jakej multiplexing k optickym vlaknum
+8) adhocy, co to je, k cemu to je, vyhody a nevyhody
+9) Faze TCP prenosu, rozdil mezi AIMD a MIMD a priklady TCP s timhle
+10) Digitalni podpis, k cemu je, priklad mechanismu
+11 a 12 uz nepamatuju
+
+kazdopadne to byla mrdka, gl vsem

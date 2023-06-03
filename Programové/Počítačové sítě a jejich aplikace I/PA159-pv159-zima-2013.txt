@@ -1,0 +1,21 @@
+1) L3 vrstva, účel, funkcie, spôsob adresácie, protokoly, algoritmy protokolov
+2) TCP, opíšte varianty TCP protokolu pracujúce na L2 vrstve
+3) Bezpečnosť v IPv6, spôsob zabezpečenia, schéma
+4) Fragmentácia v IPv6, ako je riešená
+5) Smerovač - schéma, účel, funkcie
+6) MANET, čo to je, porovnanie s P2P
+7) Porovnanie P2P s Client-Server
+8) Vymenuj smerovacie protokoly používané v neštruktúrovaných P2P sieťach, opíš ako pracuje Interests based shortcuts
+9)Traffic Engeneering (TE), čo to je, prečo sa to používa
+10) Čo sú multimédiá, hlavné delenie na dve skupiny s ohľadom na Realtime prenos
+
+1) IGRP a EIGRP.
+2) Čo je komunikačný protokol, štandardy, protokoly pre jednotlivé vrstvy.
+3) Tvorba hlavičiek v IPv6, rozdiely oproti IPv4, IPv6 fragmentácia.
+4) Koexistencia IPv4 a IPv6, 3 spôsoby aj popísať.
+5) Čo je to VANET a aké sú rozdiely oproti mobilným sieťam.
+6) Funkcie smerovača, schéma, vplyv CIDR na smerovanie.
+7) TE, čo to je, na čo slúži, jak to vypadá.
+8) Smerovanie CHORD v P2P, popísať.
+9) Ako prebieha digitalizácia zvuku, 3 formáty zvuku.
+10) Čo je to multimedia, delenie, komunikačné protokoly pre ich prenos.

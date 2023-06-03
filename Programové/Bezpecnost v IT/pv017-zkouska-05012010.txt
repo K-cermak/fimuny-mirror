@@ -1,0 +1,7 @@
+termin 5.1. 08:00
+6.Zakladni a rozsirujici kriteria dle OWASP
+5.Protection profile a Security target
+4.mira ochrany EAL1
+3.rozdilne a spolecne mezi de facto a de iure
+2.charakterizujte 4 zakladni oblasti ve Disaster recovery
+1.

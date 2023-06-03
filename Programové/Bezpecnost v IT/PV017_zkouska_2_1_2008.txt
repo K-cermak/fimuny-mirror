@@ -1,0 +1,13 @@
+*Velmi zhruba* nasledovne:
+1. Nakresli model architektury PKI a v strucnosti popis jednotlive zlozky.
+2. Nakresli model architektury bezhotovostnych platieb a strucne popis.
+3. Charakterizuj obsah a funkciu PP(Protection profile) v ramci ISO/IEC 15408.
+4. Cyklicky proces vyvoja ISMS (4 fazy) podla ISO/IEC 27001.
+5. priklad - zoradit aktiva podla ich vyznamu v ramci bezpecnosti:
+	   - zadanie rovnake ako pred rokom
+"Vyse potencialnich skod na aktivech A,B,C,D je ohodnocena {1,3,2,4}.
+	Pravdepodobnost utoku {vysoka,stredni,vysoka,nizka}. Obtiznost vyuziti
+zranitelnych mist
+	{nizka,stredni,velka,velka}. Seradte aktiva z hlediska vyznamu pro
+zajisteni bezpecnosti."
+6. Popis fazy reakce na utok.

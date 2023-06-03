@@ -1,0 +1,66 @@
+15.5.2007 08:00 (Utorok) predtermin
+1) [+10bodov; -10bodov]
+Deklarace dokumentu
+Jeden atribut ve jmennem prostoru s prefixem html
+Jeden element ve jm. prostoru s URI 'smb://generic'
+Instrukce pri zpracovani
+Elementu, ktery ma prave dva dcerinne textove uzly
+Element jm. prostoru s prazdnym uri
+XML entita
+Komentar s "<br />"
+Komentar ktoreho rodic nie je element
+Element ktoreho textovy obsah je v jmennem prostoru ...
+
+2) 4 body
+4 znackovacie jazyky zalozene na xml + popis
+
+3) 3 body
+xpath dotaz (obecny) -- vsetky elementy ktore maju aspon jeden atribut 
+
+--------------------------------------------------------------------------------
+mame subor hospody.xml:
+
+<?xml version="1.0" encoding="utf-8"?>
+<hospody>
+  <hospoda id="ZelenaKocka">
+    <nazev>Zelena kocka</nazev>
+    <souradnice>49°48'57.52"N,16°12'58.09"E</souradnice>
+    <pivo>Starobrno</pivo>
+  </hospoda>
+  <hospoda id="Fontana">
+    <nazev>Fontana</nazev>
+    <souradnice>51°26'7.37"N,17°52'45.69"E</souradnice>
+    <pivo>Plzen</pivo>
+    <pivo>Starobrno</pivo>
+  </hospoda>
+  <hospoda id="Dudak">
+    <nazev>Dudak</nazev>
+    <souradnice>48°48'28.96"N,13°27'28.84"E</souradnice>
+    <pivo>Kozel</pivo>
+    <pivo>Dalesice</pivo>
+    <pivo>Dudak</pivo>        
+  </hospoda>  
+</hospody>
+
+4) 
+xquery ktore vybere vsetky hospody kde capuju starobrno v tvare output.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<hospody-se-starobrnem>
+  <hospoda id="ZelenaKocka">
+    <nazev>Zelena Kocka</nazev>
+    <souradnice>49°48'57.52"N,16°12'58.09"E</souradnice>
+  </hospoda>
+  <hospoda id="Fontana">
+    <nazev>Fontana</nazev>
+    <souradnice>51°26'7.37"N,17°52'45.69"E</souradnice>
+  </hospoda>  
+</hospody-se-starobrnem>
+
+5) 
+netrivialna xschema(8bodov) relaxNG(8bodov) alebo dtd(3body) na subor hospody.xml
+(id je unique, regex na souradnice netreba)
+
+6) 
+netrivialna xsl transformacia hospody.xml na xhtml subor
+(id nemusi byt)

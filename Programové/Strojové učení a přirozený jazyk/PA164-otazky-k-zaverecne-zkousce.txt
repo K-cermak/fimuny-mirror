@@ -1,0 +1,146 @@
+﻿MACHINE LEARNING
+
+
+Generalizace/specializace
+
+
+Entropie pro tvorbu rozhodovacích stromů
+
+
+Co je overfiting.
+
+
+Prořezávání rozhodovacího stromu.
+
+
+Confusion matrix
+
+
+Kvantitativní míry kvality klasifikačního algoritmu
+
+
+Metody vzorkování (sampling)
+
+
+Shlukování, k-means algoritmus, soft clustering (EM)
+
+
+Časté vzory (large itemsets) a asociační pravidla
+
+
+Detekce anomálií
+
+
+
+
+JAZYK R
+
+
+porozumění kódu
+
+
+
+
+TEXT MINING
+
+
+Základní úlohy
+
+
+Reprezentace a předzpracování dat
+
+
+Sumarizace textu. Extraktivní a abstraktivní s. SUmarizace z jednoho a 
+z více dokumentů. Metody extraktivní s. ROUGE a vyhodnocování výsledků
+sumarizace.
+
+
+
+
+REPORTS
+
+
+LSA, LDA and beyond. 
+Critical analysis of this class of methods
+
+
+Probabilistic methods (3)
+
+
+Translingual Mining (Transfer learning). From English to Latin
+
+
+Biomedical text mining
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+TEXT MINING
+Stručně vysvětlete:
+Tokenization
+	
+Bag-of-words
+	
+n-gram
+	
+TF-IDF 
+	
+Morphological readings
+	
+chunks
+	
+name entities
+	
+LSA nebo LDA
+
+
+
+Jaké jsou varianty TF-IDF?
+
+
+Předzpracování textu pro text mining
+
+
+Vysvětlete, co je feature selection. Popište jednu metodu
+
+
+Vysvětlete, co je feature construction. Popište jednu metodu
+
+
+Vysvětlete, co je aktivní učení a kde je výhodné ho použít.
+
+
+Uveďte na příkladu rozdíl mezi morfologickým značkováním 
+angličtiny (např. Penn Tree Bank) a češtiny.
+
+
+Morfologická desambiguace
+
+
+Filtrování, klasifikace a kategorizace textů
+
+
+Extrakce informace z textu
+
+
+Hledání klíčových slov
+
+
+Sumarizace textu
+
+
+Shlukování dokumentů a termů
+
+
+Analýza sentimentu a opinion mining

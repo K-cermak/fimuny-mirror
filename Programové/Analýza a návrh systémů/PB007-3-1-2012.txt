@@ -1,0 +1,8 @@
+PB007
+Zkouska 3. 1. 2012:
+
+1) Napiste definici 1.NF a 4.NF. Jen definice bez prikladu.
+2) Popiste SCRUM.
+3) Jak se tvori prvotni DFD v YMSA. Co se s nim deje pote?
+4) Popiste notaci diagramu trid (na nejakem smysluplnem prikladu).
+5) Vytvorte system pro hru, kde uzivatele hraji bud za sudicky nebo prince. Sudicky hledaji princezny a proveruji je, nechaji si neco uvarit (??), drzne princezny zaklinaji a stanovuji podminky pro osvobozeni princezny. Princ hleda princezny, system mu nabizi jen zaklete, plni ukoly pro jejich osvobozeni, finalni osvobozeni udela polibkem. Hru vyhraje mezi princi ten, kdo osvobodil nejvice princezen, mezi sudickama ten, komu zbyde nejvic neosvobozenejch princezen. -- Tak nejak, je to parafraze toho ze slajdu -- Melo se uvist 6 udalosti podle YMSA, kontx. diagram, Use case diagram, systemove DFD a ERD v alespon 3.NF.

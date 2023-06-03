@@ -1,0 +1,11 @@
+16.1.2019
+
+1. Prehled algoritmu neuplneho prohledavani.
+2. Rozdil mezi: backtracking, forward checking, real full look-ahead. Pricemz staci popsat jake
+   podminky se kontroluji v kazdem kroku. + doplnujici otazka
+3. Napsat propagacni pravidla konzistence mezi pro A = B - 3 (+domeny zadane). Byl by rozdil pokud 
+   bychom pouzili hranovou konzistenci?
+4. Definice konzistence po ceste. + priklady
+5. Chybne prirazeni vs konfliktni mnozina + priklady (chybne ale ne konfliktni, chybne i konfliktni, atd.) 
+6. Pseudokod hill climbing s nahodnou prochazkou
+7. Planovani schuzek (podobny jako vzorova pisemka).

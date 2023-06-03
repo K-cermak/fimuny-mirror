@@ -1,0 +1,9 @@
+Podzim 2016 polosemestrálka
+5 otázek celkem za 50 bodů.
+
+1. Popište matici sousednosti grafu. Napište ji pro zadaný graf. Jaká je jiná možnost uložení grafu v PC? Která je vhodnější pro počítačové sítě?
+2. Spočítat Lmax, Tj, Wj, Cmax pro tabulku. (viz slidy)
+3. Uveďte optimalizační funkci pro směrovací algoritmus link state pro hledání nejširší cesty. Jaké jsou nutné úpravy?
+4. Nakreslit diskrétní grafovou reprezentaci job shop problému. Jak bude vypadat, pokud máte pevně zadanou dobu startu některých úloh? (Podobné jako na slidech)
+5. Pro uvedený graf nakreslit graf kritických cest. (Graf obsahoval mnoho otevřených konců). Ke každé úloze napište Cj". Napište celkový čas provádění a označte úlohy s rezervou.
+

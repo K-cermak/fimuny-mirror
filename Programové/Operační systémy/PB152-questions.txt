@@ -1,0 +1,106 @@
+README
+------
+Jedna se o orientacni seznam moznych otazek u zkousky, ktery vychazi z historie 2011-2007. Vetsina terminu je zde zminena, nejmladsi otazky jsou umisteny v zahlavi, pote postupne sestupne starnou az do roku 2007. Zdrojem otazek je zpravidla predmetove forum.
+------
+Vytvoril Petr Jirasek, uco: 373903
+------
+Snad pomuze!
+------
+
+
+Sluzby, co to je, predavani parametru
+LAP a FAP, jejich kapacita, bazovy registr
+Kriticka sekce, tri podminky spravneho reseni
+Dva mody procesoru, duvod teto strategie, preruseni
+Problem producent-konzument, symbolicke reseni
+Vyytvareni proesu, novy vs klon
+
+
+Zpracování insutrkce pøerušení procesorem a reakce na pøerušení
+LAP, FAP - jaké jsou rozdíly, èim jsou omezeny jejich kapacity, kdy dochází k pøevodu mezi nima
+Ilustrovat synchronizaci pomocí semaforù
+4 podmínky uváznutí
+rozdíl mei jádrem a mikrojádrem
+
+
+Vecerici filozofove, pomoci semaforu vysvetlit
+
+Rozdil a shody mezi strankovanim a segmentovanim
+
+Exponencionalni prumerovani
+
+I/O pres DMA
+
+Bezpecny stav
+
+LRU algoritmus, druha sance
+
+Co je to semafor, jeho funkce a implementace
+
+Reseni problemu ctenari/pisari pomoci semaforu s prioritou ctenaru
+
+Co je to LAP a FAP, ve ktere fazi procesu se prevadi pomoci segmentu
+
+3 základní postupy jak se zamezit uvaznuti
+
+Nakreslit skicy poèítaèe s virtualizovanım os a nevirtualizovanım a napsat
+vıhody a nevıhody virtualizace
+
+Pìt základních vlastností operaèního systému pro implementaci multitaskingu
+
+1) Reimy CPU - rozdíly, popsat dva hlavní, pøepínání
+2) FAP, LAP, pøevod
+3) Vytváøení procesu - novı vs. kopie
+4) Sluby systému, pøedávání parametrù
+5) Producent-konzument
+6) Kritická sekce
+
+1. zivotny cyklus procesu + graf (novy, pripraveny...)
+2. FAP a LAP + prevod LAP na FAP pomocou strankovania
+3. jadro,mikrojadro, popis, preco je implementacia mikrojadra vyhodnejsia +
+nacrt
+4. podmienky vzniku uviaznutia
+5. semafory pro synchronizaci + obrazek
+6. nejake instrukce procesoru a preruseni (to uz nevim presne)
+
+1) 5 vlastností/funkcionalít pre implementáciu multiprocessingu
+2) Popis FAP, LAP, èím je daná ich kapacita, a prevod LAP do FAP s pouitím
+segmentov
+3) Virtualizované a nevirtualizované stroje (obrázok) + klady a zápory
+4) Semafor, popis jeho funkcií a implementácia v OS
+5) Citatelia a zapisovatelia - implementácia pomocou semaforou.. symbolicky
+zapisat
+6) charakterizova tri typy ochrany proti uviaznutiu
+
+1)Vyjmenujte 5 vlastnosti/rysu pro implementaci multiprocessingu
+2)Genericke komponenty, vyjmenovat, seradit
+3)Strankovani LAP, segmentovani LAP
+4)Semafory, k cemu slouzi, jak se realizuji…
+5)5 podminek k „uspesnenu“ planovani, a jestli je potreba je minimalizovat nebo
+maximalizovat…
+6)Jadro, mikrojadro
+
+- fragmentace pamìti vnitøní/vnìjší
+- jak funguje pøerušení
+- nìco s invertovanou tabulkou a pamìtí
+- co je to sluba OS a jak funguje jaké paramtry pøi jejím volání
+- 3 vlastnosti správného øešení KS
+- preventivní metody øešešení uváznutí nebo KS nebo èeho:)
+- nákres diagramu procesu a popsat stavy
+
+
+1) Sprava virt. pameti - varianty "Replacement Policy" pri strankovani
+
+2) Sprava virt. pameti - faktory ovlivnujici rychlost pristupu do ? pameti
+
+3) Uvaznuti + 4 postacujici podm + jak predejit
+
+4) Semafor jako organizator behu 2 procesu
+
+5) Procesor 2 rezimy + prepinani mezi nimi
+
+6) striktni a tolerantni RT system
+
+7) odhad pristi davky CPU
+
+8) neco s pristupem k DMA

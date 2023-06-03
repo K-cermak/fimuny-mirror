@@ -1,0 +1,8 @@
+Otázky ze zkoušky PV017 Bezpečnost informačních technologií z 4.2.2014
+
+1. Příklad na určení velikosti úrovně rizik. (přesné zadání si nepamatuji)?
+2. Charakterizujte hlediska, ze kterých se posuzuje úroveň záruky za bezpečnost (Security assurance requirement) SAR?
+3. Popište vztahy mezi aktivum, riziko, útočník, zranitelné místo, hrozba, útok?
+4. Stručně popište po krocích proces řešící zvládání rizik?
+5. Popište metody hodnocení objektu při auditu?
+6. Popište minimální dokumentovou základnu ISMS?

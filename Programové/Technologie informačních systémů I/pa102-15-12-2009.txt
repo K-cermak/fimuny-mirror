@@ -1,0 +1,16 @@
+skupina C1:
+
+1. Typy architekturních služeb a jejich použití
+
+2. Principy brainstormingu. Aspekty a metoda klobouku.
+
+3. Pravidlo 80-20, Pouzití pøi vývoji SW.
+
+4. Objektivní a subjektivní nemoci z povolání, rozdíl mezi nimi.
+
+5. Organizacni typy podniku a jinych organizací. Co ma IS usnadnovat v komunikacich a v organizacni strukture.
+
+6. Jaky je cil a jake aspekty jednani se pri nem stridaji. Vzajemna duvera jednajicich, pøístup vitez-vitez.
+
+
+Nìkteré otázky nejsou celé, byli dlouhé a už si je nepamatuju...

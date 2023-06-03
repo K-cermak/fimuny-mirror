@@ -1,0 +1,8 @@
+1. UML - Sekvenèní diagram, souèásti, nakreslit.
+2. Návrhové heurestiky - co to je, jak a kdy se to používá, vypsat a dvì rozepsat podrobnì.
+3. Jak se v YMSA dìlá prvotní DFD z modelu okolí, co nejpodrobnìji rozepsat postup, co obsahuje model okolí.
+4. Metodika Select Perspective - co to je, jaké modely používá.
+
+5. Nakreslit kontextový diagram, systémové DFD, ERD, alespoò 8 událostí a datový slovník pro tok "Objednávka zboží". Zadání systému - internetový obchod, pøijímá objednávky, spolupráce se systémem registrace zákazníkù, odkud si bere databázi registrovaných zákazníkù atd.
+
+Není to úplnì pøesné, ale základní myšlenka tu je. Byla pouze jedna skupina

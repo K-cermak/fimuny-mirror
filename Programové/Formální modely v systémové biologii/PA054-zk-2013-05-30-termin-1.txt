@@ -1,0 +1,21 @@
+PA054 Formální modely v systémové biologii
+zkouska 30.05.2013, 1.5 hodiny
+40 bodu (+ 60 bodu projekt, spolu potreba alespon 50 bodu)
+
+1. (15 b)
+a) Zadana "standartni" Petriho sit s misty E, S, ES, EP, P. Zapiste
+   ve formalizmu BioPEPA. Syntax BioPEPA byla popsana.
+b) Co jsou to komponenty C (vyskytuje se v syntaxi BioPEPA)?
+
+2. (10 b)
+Mejme Petriho sit z ukolu 1 s danym markingem m0 (m0(E) = m0(S) = 1, ostatni 0)
+a mnozinu ctyr reakci E + S <-> ES, ES <-> EP.
+a) Je tato mnozina reakci T-invariantem? Pokud ano, urcete posloupnost, ve ktere
+   mohou byt tyto reakce vykonany z markingu m0.
+b) Je tento T-invariant minimalni? Pokud ne, urcete minimalni T-invarianty,
+   ze kterych se sklada.
+c) Urcete marking, ktery ziskame po vykonani danych ctyr reakci.
+
+3. (15 b)
+Zadana genova regulacni sit X -> Y -> Z. Zapiste ji pomoci kappa-kalkulu. Syntax
+kappa-kalkulu byla popsana.

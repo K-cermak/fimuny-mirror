@@ -1,0 +1,9 @@
+Písemka 09.01. 2008
+
+1. Popište řešení přístupu do KS pomocí instrukce EXCHANGE.
+2. Nutné podmínky pro uváznutí.
+3. Paměť má velikost 1GB. Máme procesy A,B,C,D, které mají přiděleno 100MB, 100MB, 200MB a 400MB. Maximálně mohou žádat 400MB, 500MB, 500MB, 600MB. Správa paměti se dělá pomocí bankéřova algoritmu. 
+Proces B žádá o přidělení 100MB. Bude jeho požadavku vyhověno? Zdůvodněte!
+4. Znázorněte překlad logické adresy na fyzickou pomocí invertované tabulky. Když má logická paměť kapacitu 1GB a stránka má délku 1kB, kolik řádků bude mít invertovaná tabulka?
+5. Popište vlastnosti transakce - ACID.
+6. Vysvětlete prevenci uváznutí transakcí pomocí Wait-Die.  

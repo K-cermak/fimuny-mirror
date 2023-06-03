@@ -1,0 +1,16 @@
+PA103 25.05.2009
+
+1) Co je to stav, chovanie a identita objektu, charakterizujte a uvedte priklady
+
+2) Vysvetlit <<extends>> v pripade uzitia, ake je jeho typicke pouzitie, ako sa znaci
+v textovom popise pripade uzitia
+
+3) MDA - zakladny princip, na co sluzi, srucny popis jednotlivych modelov
+
+4) Vytvorte UML diagram tried, pouzite agregaciu a kompoziciu namiesto obycajnej asociacie tam, 
+kde je to logicke a vhodne
+
+V kartoteke su vedene zaznamy o zaverecnych pracach. Kazda zaverecna praca je bud bakalarska
+alebo diplomova, specializovana alebo nespecializovana. Kazda zaverecna praca ma svojho riesitela, 
+veduceho, oponenta a ak je specializovana tak aj garanta specializacie. Zaverecna praca sa prihlasuje na obhajobu
+pred komisiou podla rozvrhu obhajob.

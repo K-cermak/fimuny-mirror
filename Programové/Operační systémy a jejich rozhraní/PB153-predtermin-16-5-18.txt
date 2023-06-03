@@ -1,0 +1,6 @@
+Multiprogramování vs. multitasking
+Podmínky uváznutí
+Vnitøní vs. vnìjší fragmentace
+Krátkodobý plánovaè v Linuxu
+POSIX
+Algoritmus FCFS

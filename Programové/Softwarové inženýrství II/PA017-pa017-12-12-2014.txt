@@ -1,0 +1,4 @@
+1. Brooksov zákon (èo to je, preèo platí...).
+2. Èo je to "Product Backlog"? Kde sa používa?
+3. Popíšte akým spôsobom dostaneme z neupravených funkèných bodov poèet upravených funkèných bodov. 
+4. 3 výhody a 2 nevýhody inkrementálneho životného cyklu.

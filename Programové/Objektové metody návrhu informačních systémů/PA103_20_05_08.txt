@@ -1,0 +1,12 @@
+Objektové metody návrhu IS
+20.5.2008 skupina B
+kadá otázka za 10 bodov.
+
+1. Napište rozdíl mezi objektem a tøídou, co mají objekty jedné tøídy spoleèné a v èem se muou lišit.
+2. Vysvetlite pojem <<extend>> mezi pøípady uŸití a z libovolné aplikaèní oblasti napište pøíklad.
+3. Bol nakreslenı náhrhovı vzor Singleton, mali sme popísa jeho aplikovate¾nost, dusledky, a 
+nakreslit príklad pouití.
+4. Bol danı systém leteniek. Zákazník si povie poadavky a zamestnanec mu vybere podle zadanıch poadavku 
+volnu letenku. Pokud zákazník není v systému, zamestnanec zanese jeho údaje do systému. 
+Potom k nemu pripojí rezervaci letenky. Nakreslete sekvenèní diagram, musí obsahovat 1 aktéra a 
+alespoò 3 další elementy.

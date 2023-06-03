@@ -1,0 +1,6 @@
+kvadraturni amplitudova modulace
+adresovani v BT
+explicitni rezervace
+hodnoty adres v 802.11
+vytvareni fyz. kanalu v GSM
+èasová synchronizace v 802.11

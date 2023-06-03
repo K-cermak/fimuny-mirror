@@ -1,0 +1,30 @@
+PA191: Skupina (Group) E; 27.01.2020
+Čeština:
+
+1) Popište L2 vrstvu ISO OSI modelu, adresaci na této vrstvě, použité topologie, funkci vrstvy, protokoly a případně algoritmy, které se zde používají. (8b)
+2) Jakým způsobem je v IPv6 řešena mobilita? Popište včetně schématu. (8b)
+3) Jakým způsobem je v IPv6 řešeno zabezpečení? Porovnejte se zabezpečením u IPv4. (7b)
+4) Co jsou autonomní systémy a jakým způsobem se zde řeší směrování? Proč je používáme? Jak jsou identifikovány? (10b)
+5) Co znamená MPLS (Multiprotocol Label Switching) a jak pracuje; Pro jaký typ sítě je vhodné ho použít? Co je to GMPLS? (9b)
+6) Popište klasifikaci paketů a jejich filtrování na směrovači i s algoritmem; úloha pravidel. (10b)
+7) Popište transportní protokoly využívající dvou transportních kanálů. Proč to potřebují? Popište detailně jeden z těchto protokolů. (6b)
+8) Popište taxonomii P2P systémů. Jaké jsou jejich výhody a nevýhody? (7b)
+9) Popište směrování Chord v P2P. Popište vyhledání v Chordu a popište škálovatelný vyhledávací algoritmus. (8b)
+10) Popište přístup k médiu u WSN. Jak je ohodnocujeme? Co je hlavním kritériem pro jejich použití? Porovnejte BTMA a PCM. (10b)
+11) Porovnejte proaktivní a reaktivní směrování. Uveďte příklady protokolů. (10b)
+12) Popište problém zpoždění pro síťové aplikace. Jaké jsou hlavní části zpoždění a které z těchto částí můžeme ovlivnit a jak? (7b)
+
+English:
+
+1) Describe L2 on ISO-OSI model, addresses, used topologies, features and protocols. What graph algorithms are used and why?(8b)
+2) How works mobility in IPv6. Describe it + schema. (8b)
+3) How works security in IPv6. Compare with IPv4. (7b)
+4) What is (AS) Autonomous System, how is routing solved here. Why we use them? How are they identified? (10b)
+5) What is MPLS, how works and for what type of networks is it efficient to use it. What is GMPLS? (9b)
+6) Describe packet classification and filtering in router including algorithm + role of rules. (10b)
+7) Describe transport protocols using two communication channels + why they need it? Describe one of these protocols in detail. (6b)
+8) Describe P2P networks taxonomy + advantages + disadvantages for each group. (7b)
+9) P2P system Chord ++ routing (search) in this network. (8b)
+10) Describe access to media in WSN. How we evaluate them, what is the main criteria for their usage. Compare BTMA and PCM. (10b)
+11) Main difference with reactive & proactive ad-hoc routing. Describe concrete types of both groups of protocols. (10b)
+12) Describe problem of delay (latency) for network application. What are main parts of delay and what of these parts we can affect and how? (7b)

@@ -1,0 +1,31 @@
+1) Napište názvy všech probíraných algoritmù lokálního prohledávání.
+
+2) Napište odvozovací pravidla konzistence mezí pro omezení A = B - konst.
+Na pøíkladu proveïte výpoèet konzistence mezí pro omezení A = B-7.
+A \in {1..20}
+B \in {10..15, 17, 18, 20}
+Lišil by se nìjak výsledek, kdybychom místo konzistence mezí použili hranovou konzistenci?
+
+3) Napište algoritmus pro smìrovou konzistenci. Pøedpokládejte, že již máte k dispozici proceduru pro revizi hrany.
+Aplikujte na pøíkladu:
+A,B,C,D \in {1,2,3,4}.
+c1: A > B
+c2: A = C+2
+c3: C < D-1
+
+4) Ukažte na prohledávacím stromu rozdíl mezi FC a LA bez poèáteèní kontroly konzistence. Napište, kdy se provádí jaká propagace.
+A,B \in {1,2,3}, C \in {1,2,3,4}
+c1: A > B
+c2: C = B+2
+
+5) Co je omezená diskrepance a jak se používá? V jakém algoritmu se vyskytuje a co tam dìlá?
+
+6) Definujte polookruh nad fuzzy CSP (èemu se rovná A, +, *, 0, 1). Vypoètìte úroveò konzistence pro problém P (A, B, c1, c2, c3) a pro problém P1 (A, c1, c2).
+A,B \in {x,y}
+c1(A,B): (x,x) = ..., (x,y) = ..., (y,x) = ..., (y,y) = ...
+c2(A): x = ..., y = ...
+c3(B): x = ..., y = ...
+
+7) V OPL formulujte problém rozvrhování schùzek bìhem jednoho dne. Máme N schùzek v M místnostech. Schùzky se konají mezi 8. a 18. hodinou, každá má urèenu svou dobu trvání. Minimalizujte souèet koncù prvních (podle poøadí v zadání) Z schùzek. První schùzka musí skonèit pøed polednem. Na posledních K schùzkách jsou stejní lidé, nesmí se tedy pøekrývat. Druhá schùzka musí skonèit ve stejný èas jako tøetí, ètvrtá a pátá.
+Definujte také redundantní podmínku na obsazení místností pomocí kumulativní funkce, která bude vyjadøovat aktuální poèet schùzek v místnosti.
+ 

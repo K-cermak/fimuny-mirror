@@ -1,0 +1,7 @@
+Zadání z předtermínu
+40 minut
+
+1) Brooksův zákon, vysvětlit.
+2) Definovat SLA (Service Level Agreement) a co obsahuje.
+3) Rozdíl mezi funkčními body projektu a produktu, vysvětlit.
+4) Kdy se vyplatí vyvýjet SW agilní metodikou

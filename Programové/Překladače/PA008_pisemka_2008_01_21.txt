@@ -1,0 +1,27 @@
+Pisemka PA008 Pøekladaèe 21.1.2008
+
+Maximalne 300 bodu na E bylo potreba 165
+
+1) 100 bodu
+  Fragmentace pameti - popiste o co se jedna. Uvedte metody uplneho zcelovani a uvedene metody porovnejte
+
+2) 100 bodu
+  Vysvetlete generovani kodu z mezikodu zapsaneho pomoci trojic pomoci rekurzivni procedury KOMP. Zapiste tabulky alespon pro jednu komutativni a jednu nekomutitativni operaci. Napiste algoritmus postupu generovani a demonstrujte ho na prikladu (a+b)-((c*d)/e).
+Nebo byla moznost za 75 bodu udelat to same, ale bez rekurzivniho KOMP.
+
+3) 100 bodu
+  Napiste atributovou gramatiku pro dvoupruchodove generovani mezikodu pro priklad
+  S-> cycle S while E do S end
+
+  cycle ... end funguje:
+  +------------------------------+
+  v                              |
+>-+--> S1 --> E --[true]--> S2 --+
+              |
+           [false]
+              |
+              v
+
+
+  Nebo za 75 b. to same pro  S -> IF E THEN S ELSE S
+

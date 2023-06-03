@@ -1,0 +1,14 @@
+Priblizne znenie otazok
+
+1. Preskrtnut vyroky, ktore niesu pravdive (dve zo styroch boli nepravdive, tu su tie zo skript):
+- ryzi digitalni signal ma nekonecnou absolutni sirku pasma
+- cim je vetsi sirka pasma, tim vyssi je kapacita prenosu dat
+- zkracenim zakladni periody (digitalniho) signalu se dosahne zvyseni rychlosti prenosu dat
+- + este nieco tomu podobne
+2. Charakterizovat pristupove metody SDMA, FDMA, TDMA, CDMA
+3. Odstavene terminaly
+4. TDMA/DAMA - Explicitna rezervacia
+5. Cyklicky opakovana informacia v digitalnych jednosmernych distribucnych systemoch. Nieco ako popisat dovody pouzivania.
+6. Popisat OFDM.
+7. Nacrtnut skicu architektury DECT systemu a popisat jeho casti.
+8. Ako dosahuje Bluetooth asynchronny prenos dat.

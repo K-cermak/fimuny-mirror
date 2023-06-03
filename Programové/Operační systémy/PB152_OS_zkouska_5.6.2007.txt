@@ -1,0 +1,20 @@
+8 ot. celkem za 16b. na E potreba min. 8b.
+za kazdou ot 0,1 nebo 2b.
+
+1) Sprava virt. pameti - varianty "Replacement Policy" pri strankovani
+
+2) Sprava virt. pameti - faktory ovlivnujici rychlost pristupu do ? pameti
+
+3) Uvaznuti + 4 postacujici podm + jak predejit
+
+4) Semafor jako organizator behu 2 procesu
+
+5) Procesor 2 rezimy + prepinani mezi nimi
+
+6) striktni a tolerantni RT system
+
+7) odhad pristi davky CPU
+
+8) neco s pristupem k DMA
+
+kdyztak nekdo doplnte ci upresnete :)

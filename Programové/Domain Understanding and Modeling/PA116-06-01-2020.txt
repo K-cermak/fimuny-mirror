@@ -1,0 +1,20 @@
+Písemka trvá 75 minut, obsahuje 5 úkolů (5 x 10 bodů).
+Hodnocení: A: 50 - 45, B: 44 - 40, C: 39 - 35, D: 34 - 30, E: 29 - 25, F: 24 - 0
+
+Popis systému / projektu:
+Navrhněte systém, kde si studenti mohou přes terminál objednat jídlo z nabídky jídel. Každé jídlo se skládá ze surovin. Suroviny jsou skladovány na skladě, které doplňují kuchaři. Kuchař vaří jídlo dle receptu (seznamu surovin) pro studenta. Studentovi se na konci každého měsíce vyúčtuje sazba za stravu, kterou musí uhradit (číslo účtu, variabilní symbol, ...).
+
+Pro výše nastíněný projekt vypracujte následující úkoly. Všechny úkoly se vztahují k jednomu projektu, jejich řešení si musí vzájemně odpovídat. Tam, kde umožňuje zadání nějakou volnost, je způsob řešení plně na Vás. Doporučuje se nejdříve si přečíst celé zadání úkolů. Tam, kde budete volit nějaké hodnoty, snažte se jejich vzájemný poměr volit tak, aby odpovídal pokud možno realitě.
+
+Úkoly
+
+Praktická část (vztahuje se k výše uvedenému popisu systému):
+1) Vytvořte seznam klasifikovaných požadavků.
+2) Vytvořte ERD splňující 3. NF.
+3) Vytvořte systémový DFD.
+4) Vytvořte Ganttův diagram.
+
+Teoretická část (nevztahuje se k výše uvedenému popisu systému):
+1) Napište pravidla pro WBS.
+
+Pište čitelně, na nečitelná řešení nebude brán zřetel.

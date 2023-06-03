@@ -1,0 +1,10 @@
+1) ake modely sa daju pouzit pri obrysovej specifikacii? popiste ich
+
+2) vysvetlite VPA
+
+3) vysvetlite analyzu SELECT PERSPECTIVE
+
+4) najdite chyby v DFD na prilozenom obrazku..(terminator zapisuje do pamate atd..)
+
+5) Mikulasov Informacny system... napiste kontextovy diagram, seznam udalosti, 
+   prvotny DFD model a ERD

@@ -1,0 +1,8 @@
+1. OWASP - bolo treba popisat tych 5 typov zaruk (Vysoka, stredna atd...)
+2. Ako pouzivaju CC uzivatelia, hodnotitelia, vyvojary
+3. EAL 2 
+4. Sprava rizik
+5. Popisat bezpecnostu politiku a systemovu politiku.
+6. Priklad - boli zadane rizika a bolo treba napisat, ktore by sme ako prve zacali odstranovat.
+
+Znenie je len orientacne, presne si to uz nepamatam.

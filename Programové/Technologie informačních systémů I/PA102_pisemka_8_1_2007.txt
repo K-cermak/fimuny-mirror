@@ -1,0 +1,22 @@
+skupina A
+
+1) Vodopad, faze, priciny krachu
+2) Nemoci z povolani, ergonomie softwaru
+3) SOA, konfederace podrobne
+4) Uzke misto, vztah specifikace a uzkeho mista
+5) Problemy s vytvarenim IS
+6) Zasady vedeni schuze, Workshop podrobne
+
+skupina C
+
+1) Subjektivni a objektivni nemoci z povolani
+2) Etapy vyjednavani, vitez-vitez, duvera jednajicich
+3) Organizacni struktury + duvody zavadeni IS (z komunikacniho a organizacniho
+    hlediska)
+4) Hackersky syndrom
+5) Metody ziskavani informaci od zakanika (interview ...),  klady a zapory
+6) 80-20 a kdy je pouzit. Jake jsou komplikace pri uzavirani smlouvy. Vztah k
+    agilnimu vyvoji.
+
+--
+xholcik1, xnovak19

@@ -1,0 +1,14 @@
+PB156 Poèítaèové sítì 28.5.2018
+1. L4, sluby a protokoly. jakı je rozdíl mezi zabezpeèením a nezabezpeèením.
+2. P2P, rozdílné typy a vıhody a nevıhody.
+3. fronty v sítích, rùzné typy, jejich vıhody a nevıhody.
+4. servisní protokol v IP rodinì - jak se jmenuje, k èemu je, je i IPv6?
+5. ideální vs. reálná sí + pøíklad 3 protokolù, které pøibliují reálné sítì k ideálním.
+6. Co jsou autonomní systémy a jak se liší smìrování uvnitø a zvenku? 
+7. Link state vs distance vektor
+8. Co a k èemu je URL, jaké má èásti a jejich vıznam.
+
+9. Jaké parametry byste chtìli pro zaruèení kvality sluby, co byste se snaili zaruèit?
+10. Popištì distribuovanou verzi spanning tree algoritmu a kde se pouívá?
+11. Kde se nachází parametr TTL, jak funguje a jaké má pouití?
+12. Popište vrstvu datového spoje. Jakou pouívá adresaci, jaké má sluby, jaké protokoly?

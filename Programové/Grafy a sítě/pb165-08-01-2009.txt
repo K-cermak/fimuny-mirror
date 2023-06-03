@@ -1,0 +1,14 @@
+-definujte graf, orientovany a multigraf
+-definujte isomorfismus grafu. Nakreslete vsechny neisomorfni na 4 vrcholech
+-definujte pojem binarniho stromu, jake jsou algoritmy prochazeni a jeden
+popiste. Vysvetlete, jak prochazi koncove uzly
+-proc Dijkstra nepracuje nad grafem se zaporne ohodnocenyma hranama. Co se muze
+stat
+-definujte makespan a zpozdeni (lateness) a spocitejte pro nasledujici tabulku
+v tabulce byly uvedeny hodnoty pro cas zacatku,  trvani a doba dokonceni
+-napiste algoritmus pro barveni stromu se saturaci
+-co je to vyvazovani zateze (load ballancing) a u jakych aplikaci/problemu se
+pouziva
+ jaká vlastnost platí pro tok na øezu oddìlujícím spotøebiè od zdroje + náznak
+dùkazu.
+-co je nahodny orientovany graf a kde se pouziv

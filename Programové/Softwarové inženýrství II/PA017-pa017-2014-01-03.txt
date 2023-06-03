@@ -1,0 +1,5 @@
+Skupina A
+1) COCOMO, k čemu je, jak se počítá, co je korekční faktor Fc a kde se používá?
+2) Jaké diagramy se používají v Use Case Model v UP?
+3) Co je Halsteadova složitost?
+4) Putnamova rovnice, k čemu je, jak se počítá?

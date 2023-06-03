@@ -1,0 +1,49 @@
+PA172 - Exam - 16. 5. 2014
+20 questions, 5 points each, 100 points total,
+grading: A (90-100), B (80-89), C (70-79), D (60-69), E (50-59), F (0-49)
+Short (concise but precise) answers expected (2-3 sentences) but to all sub-questions!
+Accepted languages are: English, German, Russian, Czech or Slovak.
+Time budget: 5 min per question (average), 100 min total soft deadline, 110 min hard deadline!
+
+*1) Kterı zdroj má nejvìtší a kterı nejmenší intenzitu v oblasti viditelného svìtla:
+a) 100W halogenová árovka
+b) 100W wolframová árovka 
+c) 100W rtuová vıbojka  
+
+*2) Co udává kvantová úèinnost u kamery a v jakıch jednotkách se mìøí?
+
+*3) Uveïte 3 rùzné zpùsoby (fyzikální principy) zachycení (detekce) barevné informace v kamerách.
+
+*4) Uveïte 3 rùzné zpùsoby (fyzikální principy) konstrukce kamery pro zachycení (detekci) obrazové informace o extrémnì nízké intenzitì.
+
+*5) Uveïte 5 rozdílù mezi dvìma základními druhy fotoaparátù: zrcadlovkou a kompaktem.
+
+*6) Nakreslete schéma interline CCD senzoru (ITCCD) pracujícího v reimu prokládaného snímání (interlace-scan) a krátce popište princip èinnosti. Uvaujte rozlišení 4x4 pixely.
+
+*7) Jakı vliv na vıslednı obraz bude mít zvıšení ISO citlivosti (ISO speed)? V jaké situaci je takové zvıšení vhodné? Liší se v tìchto ohledech klasickı film od digitálního senzoru?
+
+*8) Èím se liší a na jakém principu pracují optickı a digitální zoom?
+
+*9) Kolik druhù obrazù pouívá meziobrazová (inter-frame) komprese zavedená v normì MPEG-1 (Part 2)? Popište kadı z tìchto druhù jednou vìtou.
+
+*10) Co je to Media Container? Uveïte 3 konkrétní pøíklady.
+
+*11) Jak se tvarovì liší rozptylka a spojka? Kterou z nich pouijete pro zvìtšení obrazu objektu (napø. lupa)?
+
+*12) Jak je definována numerická apertura (NA) objektivu? Mají objektivy s vysokou NA typicky krátkou nebo dlouhou ohniskovou vzdálenost?
+
+*13) Jak je slovnì definováno optické rozlišení a na jakıch dvou parametrech závisí? Uveïte vzoreèek anebo alespoò zda závislost je pøímá úmìra nebo nepøímá úmìra.
+
+*14) Co je to sférická vada? Struènì popište.
+
+*15) V jakém století se objevily první mikroskopy a teleskopy? Kolik mìly nejèastìji èoèek? Vzpomenete si na jména nìkterıch vynálezcù?
+
+*16) Uveïte 2 hlavní dùvody, proè musí mít teleskop co nejvìtší prùmìr.
+
+*17) Co je to range imaging a co nám udává hodnota daného pixelu v tomto druhu obrazu? Uveïte 2 pøíklady aplikací, kde se range imaging pouívá.
+
+*18) V èem spoèívá konfokální jev a jak je typicky realizován (napø. u CLSM)?
+
+*19) Jakı je princip èinnosti pøístroje oznaèovaného jako Computed Tomograph (CT)?
+
+*20) Co je to øádné spektrální snímání obrazu a jaké vıhody nám pøináší?

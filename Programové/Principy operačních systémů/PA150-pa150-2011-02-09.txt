@@ -1,0 +1,12 @@
+- cile transakcniho zamykaciho protokolu s ohledem na plan provadeni transakci
+- popiste automaticky zamykaci protokol transakcniho monitoru pro operaci
+  write
+- cile planovace soubeznosti transakci s ohledem na plan provadeni transakci
+- popiste validacni protokol
+- charakterizujte 2 bazove vlastnosti distribuovanych algoritmu
+- popiste distribuovany algoritmus volby hlavniho (master) uzlu na kruhu
+  (Chang, Roberts) a urcete jeho slozitost
+- zduvodnete, proc je 1-fazovy potvrzovaci protokol nedostatecny a je nutne
+  pouzivat 2-fazovy
+- popiste plne distribuovanou detekci uvaznuti v distribuovanem systemu
+- charakterizujte obnovu podle deniku pri okamzitem zapisu dat

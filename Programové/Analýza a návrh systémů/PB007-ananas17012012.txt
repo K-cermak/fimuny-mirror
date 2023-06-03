@@ -1,0 +1,8 @@
+﻿1. Na vhodnom príklade vysvetlite notáciu JSP.
+2. Popíšte notáciu sekvenčného diagramu (UML).
+3. CRUD
+4. Čo má obsahovať špecifikačný dokument systému?
+
+5. Use-Case (4b), 6 udalostí podľa YMSA (4b), diagram tried (4b), prvotný DFD podľa YMSA (8b)
+Internetovy obchod:
+Zákazník zadáva objednávku. Systém overuje či je zákazník registrovaný pomocou registračného systému, z ktorého databáze údaje zisťuje. Predajca objednávku príjme a zašle zboží zákazníkovi a zníži stavy na sklade. Zákazník môže platiť predom cez internet alebo na pošte cez dobierku. Objednávka môže obsahovať viacero druhov zboží. Systém po prijatí objednávky sám overí, či je požadované zboží na sklade v predom určenom minimálnom množste a automaticky doobjedná chýbajúce kusy. Ponuku zboží rozširuje predajca.

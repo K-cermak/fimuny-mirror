@@ -1,0 +1,19 @@
+-V jakých mezích se pohybuje úspìšnost nástrojù pro rozpoznávání øeèi a jakými prostøedky ji lze zvýšit?
+-Co je Hammingovo okénko a kdy se používá?
+-Jaká znáte váhová okénka a kdy se používají?
+-Popište mechanismus fyziologického vnímání zvuku.
+-Co mají spoleèného emoce a dialogové systémy?
+-Jak fungují skryté Markovovy modely a k èemu slouží?
+-Popište PCM (/diferenèní PCM/adaptivní PCM), jeho výhody a nevýhody.
+-Co je Fourierova transformace a jaké jsou podmínky jejího použití? Jaké jsou její modifikace pro použití v reálných dialogových systémech?
+-Jmenujte alespoò 4 z pravidel pro vedení kooperativního dialogu.
+-Popište jednotlivé fáze digitalizace akustického signálu.
+-Popište SIP.
+-Jmenujte a popište metody krátkodové analýzy zvukového signálu ve frekvenèní/èasové oblasti.
+-K èemu slouží DTW? Jak funguje?
+-K èemu slouží dialogová strategie?
+-Co je prozodie? Které jevy pod ni spadají?
+-Co znaèí v SRGS speciální pravidlo GARBAGE?
+-Popište prùbìh FIA.
+
+Ve slajdech má napsané, že pro FT musí mít funkce nejvýše koneènì mnoho bodù nespojitosti. U zkoušky vám to ale neuzná, prý že jich musí mít nejvýše spoèetnì nekoneènì mnoho (a pak v ústní èásti následuje vyptávání na mohutnosti èíselných množin, kterých je víc, kterých je spoèetnì apod.).

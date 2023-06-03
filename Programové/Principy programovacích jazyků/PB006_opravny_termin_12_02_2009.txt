@@ -1,0 +1,46 @@
+PB006 písemná zkouška, opravný termín 12.2.2009. Podle mého názoru lehèí než pøedchozí, takže se nenechte ukolébat :-)
+Správné odpovìdi jsou oznaèené hvìzdièkou.
+
+1. Které z tvrzení platí?
+a) Vnoøené definice funkcí se poprvé vyskytly v jazyce C.
+*b) Assembler je èasto doplòován makrojazykem.
+c) Php je vhodné k psaní mikrokernelu OS.
+d) ML je výhradnì logický jazyk
+e) nìjaká další hloupost
+
+2. Frázová syntax jazyka je urèena gramatikou (obvykle bezkontextovou), jež generuje jazyk L. Pøekladaè obecnì akceptuje
+a) nadmnožinu jazyka L
+b) kart. souèin L x C, kde C je soubor kontextových omezení
+*c) podmnožinu jazyka L
+d) jazyk L
+e) jazyk disjunktní s jazykem L
+
+3. Máme pøíkaz [do P; when e break; Q; od;]. Provádí se, dokud není splnìna podmínka e. Vyhodnocení e mùže mít vedlejší efekty. Uvažujme situaci, kdy pøi prvním prùchodu je M[e] = False, pøi druhém prùchodu je M[e] = True. Poèáteèní stav je sigma. Jaký bude stav po skonèení?
+*a) [e]([begin Q; P]([e]([P](sigma))))
+b) [begin Q; P]([e]([P](sigma)))
+c) [begin P; Q; P](sigma)
+... další dvì kratší možnosti
+
+4. Typový konstruktor O je v obou svých parametrech kontravariantní. Víme, že A <=: A'. Která z možností platí?
+*a) O A'(O(OA'A')A) <=: O A'(O(OAA)A)
+b) O A(O(OAA)A) <=: O A(O(OA'A')A)
+c) O A'(O(OAA')A) <=: O A'(O(OA'A)A)
+... další dvì podobné možnosti
+
+5. Funkce f pøijímá první parametr pøedávaný hodnotou, druhý odkazem. N je globální pøepisovatelná promìnná, jejíž hodnota je na zaèátku celé kladné èíslo n. Jaká bude hodnota N po zavolání f(N, N)?
+void f(in int x, ref int y)
+{ while x > 0 do
+  { y = y + N;
+    x = x - 1;
+  }
+}
+a) 0
+b,c,d) nìco s n^2
+*e) (2^n) * n
+
+6. Napište Hornovy klauzule vyjadøující predikát P takový, že P(x,y) uspìje, pokud x je prefixem slova y. Slova obsahují pouze písmena a,b,c a vypadají takto: prázdné slovo E. A(E) je a, slovo  A(B(C(E))) je abc atd. Prázdné slovo je prefixem jakéhokoli slova. Tedy chceme, aby uspìly P(E, A(B(C(E)))), P(A(E), A(C(E)), P(B(C(E)), B(C(E))) a aby neuspìly P(A(B(C(E))), E), P(A(E), B(A(E))).
+Øešení:
+P(E,_).
+P(A(x), A(y)) :- P(x, y).
+P(B(x), B(y)) :- P(x, y).
+P(C(x), C(y)) :- P(x, y).

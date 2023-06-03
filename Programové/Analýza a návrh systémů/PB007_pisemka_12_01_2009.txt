@@ -1,0 +1,10 @@
+﻿1) Lehmanovy zákony - napsat
+
+2) druhy událostí v YMSA + tři vlastní příklady
+
+3) Yourdon&Cordon 5-vrstvový model OOA - co to je a k čemu
+
+4) SSADM - tři druhy diagramů
+
+5) automat na nápoje - zákazník si vybere nápoj, vhazuje mince, automat vaří nápoj, provozovatel kontroluje stav surovin
+   Kontextový diagram, STD, seznam událostí (aspoň 8), systémový CDFD, ERD ve 3. NF

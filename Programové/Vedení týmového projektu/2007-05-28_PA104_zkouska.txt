@@ -1,0 +1,15 @@
+Vedeni tymoveho projektu                    28.5.2007
+
+Priblizne zneni, berte trochu s rezervou... 4 ot, 10 bodu na jednu, A...40-37,B...36-33,C...32-29,D...28-25,E...24-20,F...19-0 (tak nejak to bylo...)
+
+1. Funkcni body - jak se vypocitaji a k cemu slouzi. Jak se bez pouziti LOC da jen s pomoci fcnich bodu spocitat doba reseni projektu v mesicich a prace.
+
+2. CMM - popiste jednotlive urovne
+
+3. Rizika - co to je riziko a expozice rizika. 3 techniky na vyhnuti rizikum, 3 caste druhy rizik pri reseni projektu, rizeni rizik
+
+4. Hype krivka - nakreslete a okomentujte
+
+Good luck,    
+
+asdfghjkl

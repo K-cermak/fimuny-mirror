@@ -1,0 +1,273 @@
+1.Instrukce IN AX,DX procesoru x86 zajišuje
+pøenos slabiky z AL do V/V brány podle DX
+pøenos slabiky z V/V brány podle DX do registru AX
+*pøenos slova z V/V brány podle DX do registru AX
+pøenos slova z AL do V/Vbrány podle DX
+
+2.Co neplatí pro instrukci STI procesoru definovaného na pøednáškách
+povolí pøerušení a po provedení následující instrukce
+nastaví IF na hodnotu 1
+*povolí pøerušení po svém dokonèení
+
+3.Autorem architektury x86-64 je firma
+Intel
+*AMD
+Hewlett-Packard
+
+4.Pro nastavení pøíznakù v procesoru definovaném na pøednáškách pouiji instrukci
+JMP
+JP
+*CMP
+LDA
+STA
+
+5.Detekèní kód je kód, kterı
+detekuje hackera v poèítaèi.
+*rozpozná chybu v uloené èi pøenášené informaci.
+nahlásí chybu v poèítaèi.
+
+6.Vıstupy z eventuální sèítaèky Modulo 4 mohou nabıvat hodnoty
+0, 1, 2, 3, 4
+*0, 1, 2, 3
+0, 1
+0, 1, 2
+
+7.Jak široká musí bıt adresa, pokud chceme adresovat 1 M stránek a kadá stránka má velikost 4 K adresovatelnıch jednotek.
+22 bitù.
+12 bitù.
+16 bitù.
+*32 bitù.
+
+8.Základní šíøka dat internì zpracovávanıch koprocesorem pro vıpoèty v pohyblivé øádové èárce je
+40 bitù
+128 bitù
+*80 bitù
+32 bitù
+64 bitù
+
+9.Multiplexor, kterı má celkem 6 vstupù, má
+2 datové a 4 adresové vstupy
+*4 datové a 2 adresové vstupy
+3 datové a 3 adresové vstupy
+
+10. Co znamená Big-Endian
+bajt nejvyššího øádu je na nejvyšší adrese
+bajt nejnišího øádu je na nejniší adrese
+poèítaè má jeden konec vìtší ne druhı
+*bajt nejvyššího øádu je na nejniší adrese
+
+11.Do zásobníku procesoru 8086 se vkládají
+32bitové objekty
+8bitové objekty
+64bitové objekty
+*16bitové objekty
+
+12.Posloupnost instrukcí
+
+     LDA x
+     MOV B,A
+     LDA y
+     CMP B
+     JM ne
+ano: ...
+     JMP ven
+ne:  ...
+ven: ...
+
+vyjadøuje pøíkaz
+*IF x<=y THEN ano ELSE ne;
+IF x>y THEN ano ELSE ne;
+IF x>=y THEN ano ELSE ne;
+IF x<y THEN ano ELSE ne;
+
+13. Do pamìti typu PROM
+lze zapsat data libovolnìkrát vyšší hodnotou elektrického proudu
+*lze zapsat data pouze jednou
+lze zapsat data libovolnìkrát pùsobením UV záøení
+lze zapsat data libovolnìkrát pøepálením tavné pojistky NiCr
+nelze data zapsat
+
+14.Jaká je nesprávná konfigurace virtuální pamìti u obecného procesoru?
+*32bitová reálná adresa a 24bitová virtuální adresa
+32bitová reálná adresa a 48bitová virtuální adresa
+24bitová reálná adresa a 24bitová virtuální adresa
+
+15.Instrukce AND Intel x86 provádí
+pøiètení èísla
+pøidání hodnoty ze zdrojového registru do cílového
+*logickı souèin
+logickı souèet
+souèet dvou èísel
+
+16.Jak je v UTF-8 binárnì zobrazen znak 'ù' U+016F ?
+1100 1111  1010 1110
+1100 1111  1110 1110
+*1100 0101  1010 1111
+1110 0111  1110 0111
+1010 0111  1110 1111
+
+17. Dekodér, kterı má 8 vstupù, má
+8 vıstupù
+64 vıstupù
+2 vıstupy
+3 vıstupy
+*256 vıstupù
+
+18. Posloupnost instrukcí
+
+       LDA x
+       OUT
+       START
+opak:  FLAG opak
+
+je podle toho, jak jsme si na pøednáškách definovali vlastní procesor (pomíjíme otázku time-outu, neefektního vyuití procesoru),
+
+*korektní operace zápisu do vıstupního zaøízení
+korektní operace ètení ze vstupního zaøízení
+ádná z ostatních odpovìdí není správná
+
+19.Instrukce IRET reálného reimu procesoru Intel x86 zajišuje
+pøerušení procesu po provedení následující instrukce
+pøerušení procesu
+*návrat do pøerušeného procesu a jeho pokraèování
+návrat z podprogramu
+návrat od pøerušeného procesu. Jeho pokraèování zajistí jiná instrukce
+
+20. Instrukce INR procesoru definovaného na pøednáškách zpùsobí
+naète obsah registru R z pamìti
+*zvıší obsah registru o jedna
+uloí obsah registru R do pamìti
+sníí obsah registru o jedna
+body = ok = 2
+
+21.Dvojkové èíslo 1111 v doplòkovém kódu v zobrazení se znaménkem na 4 bitech je:
+nejmenší zobrazitelné
+záporná nula
+nejvìtší zobrazitelné
+*ádná odpovìï není správná
+kladná nula
+
+22.Na libovolnou adresu v pamìti s pøímım pøístupem se dostanu typicky
+za promìnlivı èas
+*za konstatntní èas
+nelze jednoznaènì urèit
+záleí na nastaveni v operaèním systému
+
+23.Binární hodnota 0,1001 odpovídá dekadické hodnotì desetinného èísla:
+1/32
+1/16
+10/9
+9/10
+*9/16
+body = ok = 2
+
+24.Øídící znak "Line feed" znamená
+zaèátek pøíkazové øídicí sekvence
+pøesun na zaèátek tého øádku
+správnì*posun na další øádek se zachováním sloupce
+takovı øídící znak neexistuje
+pøesun na zaèátek pøedchozího øádku
+
+25. Aritmetickı posun nenulového obsahu registru doleva zpùsobí
+obsah registru i znaménko se zmìní, pokud nedošlo k pøeteèení
+*obsah registru se celoèíselnì vynásobí dvìma, nezmìní se znaménko, nedošlo-li k pøeteèení
+obsah registru ani znaménko se nezmìní
+obsah registru se celoèíselnì vydìlí dvìma, nezmìní se znaménko, nedošlo-li k pøeteèení
+
+26. Zkratka DDR se vztahuje k
+kombinaèním logickım obvodùm
+sekvenèním logickım obvodùm
+správnì*pamìtem
+procesoru
+
+27.Rozhraní RS-232C: Pøenos dat tímto rozhraním je:
+nic z toho
+asynchronní
+správnì*synchronní i asynchronní
+synchronní
+body = ok = 2
+
+28.Instrukce PUSH osmibitového procesoru definovaného na pøednáškách vkládá do zásobníku
+1 bit
+1 bajt
+2 dvoubajtová slova
+*1 dvoubajtové slovo
+
+29. Pro registr GDTR procesoru 80286 neplatí
+správnì*oznaèuje segment stavu procesoru
+má délku 5 bajtù
+pøi spuštìní chránìného reimu se do nìj vkládá adresa tabulky GDT
+naplòuje se instrukcí LGDT
+
+
+30.Paralelní rozhraní je
+RS-232.
+*Centronics.
+
+
+31.Parametr pamìtí "vybavovací doba - èas pøístupu" bude nejvyšší u
+vyrovnávací (cache) pamìti
+operaèní pamìti
+registru
+*diskové pamìti
+
+
+32.Èíslo 21 v desítkové soustavì po pøevedení do soustavy dvojkové je
+11011
+nelze do dvojkové soustavy pøevést
+10011
+*10101
+
+33.Jakı je správnı pøevod èísla
+10111111101000000000000000000000 z IEEE 754 (exponent má 8 bitù)
+-1.5
+-0.25
+*-1.25
+-1.125
+-0.5
+
+34. Registry jsou typicky konstruovány z
+klopného obvodu JK
+klopného obvodu RS
+polosèítaèky
+úplné sèítaèky
+*klopného obvodu D
+
+35.Jakı rozsah adres v procesoru 8086 bude pøepsán, pokud se v nekoneèné smyèce zacyklí pouití instrukce PUSH AX?
+DS:0000-DS:FFFF
+00000-FFFFF
+CS:0000-CS:FFFF
+*SS:0000-SS:FFFF
+
+36.Pro adresaci uvnitø 4KB stránky potøebuji adresu širokou
+16 bitù.
+10 bitù.
+4 bity.
+*12 bitù.
+8 bitù.
+
+37.Mezi rùznımi typy pamìtí nejmenší kapacitu má obvykle
+vnitøní (operaèní) pamì
+vnìjší (periferní) pamì
+*registr
+
+
+38.Stránkováním se v procesoru Intel 80386 transformuje
+logická adresa na fyzickou
+*lineární adresa na fyzickou
+logická adresa na lineární
+fyzická adresa na lineární
+
+39.Kolik bitù z UNICODE kódování lze zobrazit pomocí UTF-8?
+16
+32
+*31
+15
+8
+
+40.Jakı je správnı pøevod èísla 25.125 do IEEE 754 (exponent má 8 bitù)
+00111111100001011000000000000000
+01000001010001001000000000000000
+01000010010011000000000000000000
+*01000001110010010000000000000000
+00111110010100100000000000000000

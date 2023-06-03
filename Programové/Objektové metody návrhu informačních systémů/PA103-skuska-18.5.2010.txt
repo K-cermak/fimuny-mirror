@@ -1,0 +1,6 @@
+bez skupin - predtermin:
+
+1,iterativny a ainkrementalny vyvoj, rozdiely oproti vodopadu
+2,asociativna trieda, obmedzenie ake ma a v ktorom stadiu vyvoja sa vyuziva
+3,role, ktore vystupuju v SW inzenyrstvi
+4,popisany postup hasicskeho vyjazdu - nakreslit activity diagram

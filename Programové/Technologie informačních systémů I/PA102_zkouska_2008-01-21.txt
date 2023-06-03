@@ -1,0 +1,6 @@
+1) Jake se ocekavaji v budoucnosti zmeny v IT? Versatilita znalosti.
+2) Koalice v podniku. Jake jsou hlavni cile?
+3) Strategicka mapa a BSC. Vrstvy, plneni, rozdil.
+4) Zakresli strukturu manazerskeho ISu. Jak se technicky lisi kratkodobe a dlouhodobe cile?
+5) Jaka nemoc zpusobuje brneni, slabost rukou? Jaka jsou priciny a prevence?
+6) Je zadouci pouzit datove uloziste v SOA? Jak aplikace v SOA mohou komunikovat?

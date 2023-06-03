@@ -1,0 +1,14 @@
+Termín: 7. 1. 2009
+
+1. Definovat problem ètenáøi x písaøi a øešení se semaforem s prioritou ètenáøù
+
+2. Pamì má velikost 1GB. Máme procesy A,B,C,D, které mají pøidìleno 100MB, 100MB, 200MB a 400MB. Maximálnì mohou ádat 400MB, 500MB, 500MB, 600MB. Správa pamìti se dìlá pomocí bankéøova algoritmu. 
+Proces B ádá o pøidìlení 100MB. Bude jeho poadavku vyhovìno? Zdùvodnìte!
+
+3. Znázornìte pøeklad logické adresy na fyzickou pomocí invertované tabulky. Kdy má logická pamì kapacitu 1GB a stránka má délku 1kB, velikost FAP je 1 MB, kolik øádkù bude mít invertovaná tabulka?
+
+4. Uváznutí - definice + všechny 4 podmínky + popsat 3 metody øešení
+
+5. Co je to serializovatelnı plán. Kolik je sériovıch plánù pøi realizaci 4 transakcí?
+
+6. ACID - vysvìtlit

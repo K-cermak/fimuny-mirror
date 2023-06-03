@@ -1,0 +1,9 @@
+Otázky Soudobé počítačové sítě PA151
+2.6.2014
+
+1. Charakterizujte metodu řízení přístupu naléhající CSMA s pravděpodobností p?
+2. Jakým způsobem je zabezpečena důvěrnost v GSM sítích?
+3. Charakterizujte metodu řízení přístupu v bluetooth při ACL spoji. Jak je možné dosáhnout vyšších přenosových rychlostí?
+4. Charaktrizujte uspořádání adresových polí v MAC rámci v síti 802.11. Jak vypadá adresování mezi dvěmi BSS v rámci jedné ESS. (Zadány byly přímo názvy stanic A,B, zřejmě bylo potřeba nakreslit obrázek adres jako ve slidech.)
+5. Charaktrizujte metodu obcházení kolizí v síti 802.11 a zajištění řešení problému skrytých terminálů pomocí RTS/CTS.
+6. Příklad na výpočet CDMA.

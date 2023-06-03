@@ -1,0 +1,11 @@
+PV017 - Bezpecnost IT
+Zkouska ze dne: 3. 1. 2012, 14: 00
+
+1) Common criteria - popsat Protection Profile a Security Target
+2) Jaka jsou hodnotici kriteria pro bezpecnost informaci v CC
+   Popsat EAL4
+3) Dokumentová základna ISMS + popis dokumentù
+4) Generické role zamìstnancù v organizaci z pohledu bezpeènosti informací + co kdo dìlá apod.
+5) Popsat jaky je vztah mezi: aktiva, hrozba, zranitelnost, utok, utocnik, riziko, opatreni
+6) Popsat 3 faze reakce na utok 
+   

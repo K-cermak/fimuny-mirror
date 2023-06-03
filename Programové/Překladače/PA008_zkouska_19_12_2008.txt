@@ -1,0 +1,26 @@
+[Uz neviem, ake bolo presne znenie otazok, takze len priblizne. Snad som
+na nic nezabudol.]
+
+1. Popiste organizaciu pamete pocas behu programu [Zrejme tam mal byt
+popis zasobniku, aktivacny zaznam funkcie a pod.]
+
+(50b.)
+
+
+2. Vymyslite atributovu gramatiku pre prikaz:
+
+if_cmp E pos S1 neg S2 else S3
+
+Ktory sa chova takto:
+    E > 0  => vykonaj S1
+    E < 0  => vykonaj S2
+    E = 0  => vykonaj S3
+
+Napiste priklad kodu, ktory vygeneruje tato atributova gramatika.
+Popiste vyznam a typ vsetkych pouzitych atributov (syntetizovany,
+dedicny).
+
+Kdo nevedel, mohol robit to iste s prikazom 'while E do S done' (toto je
+v skriptach).
+
+(50b.)

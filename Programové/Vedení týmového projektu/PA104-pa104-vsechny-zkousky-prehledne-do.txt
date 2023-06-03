@@ -1,0 +1,146 @@
+ZADÁNÍ PROJEKTÙ
+
+4.6.2008
+IS pro evidenci a logistiku zboí, je to náš 37. projekt, máme zkušenosti se všemi pouívanımi technologiemi, ale nikdo nemá zkušenost s modulem pro logistiku.
+
+4.6.2008
+Navrhujeme, implementujeme skladovy IS. Nasazujeme u zakaznika a migrujeme jeho stavajici data na novy server. IS zvlada evidenci materialu, nakup a vyvoz. Obsahuje logisticky modul. Nikdo z nasej firmy nikdy o logistike nic nepocul. Skladove IS sme ale uz robili mnohokrat (37 krat). Technologie mame preskusane a zvladnute.
+
+1.6.2009
+vımena uivate¾skıch staníc(cca. 30ks) a vıvoj a inštalácia dokumentového serveru.
+
+20.5.2010
+Vytvoøte modul pro informaèní systém vysoké školy, pro pøihlašování se na zkoušky (podobnì jako v ISu). Stávající informaèní systém je webová aplikace v Perlu. Vaše firma ma zkušenosti s webovımi aplikacemi, ale doposud nepracovala s Perlem.
+
+------------------------------------------------------------------------------
+WBS/SÍOVİ DIAGRAM/GANTTÙV DIAGRAM
+
+* Nakreslete WBS; nakreslete síovı diagram a ganttùv diagram (i s dobami trvání jednotlivıch fází).
+
+* Navrhnite WBS. Navrhnite jednotlive etapy, nakreslite sietovy diagram s casovym ohodnotenim a zavislostami uloh, nakreslite Ganttov diagram.
+
+* Gantov Diagram + AOA
+
+* WBS, stanovení vıvojového modelu + proè
+
+* síovı graf AOA aktivit projektu
+
+* Vytvoøte WBS, síovı diagram, ganttùv diagram.
+
+* WBS+sietovy d.+gantt;
+
+------------------------------------------------------------------------------
+PERT
+
+* PERT
+
+* PERT - vıpoèty intervalù, doby trvání atd.
+
+* Naleznìte kritickou cestu a vypoèítejte pro ní PERT.
+
+* najst CP+k nej spravit PERT
+
+------------------------------------------------------------------------------
+FUNKÈNÍ BODY
+
+* jaky je rozdil u pouziti funkcnich bodu pri vytvareni noveho SW projektu a pri predelavani stavajiciho. jaky je rozdil pri pocitani funkcnich bodu u projektu a u SW produktu.
+
+* Funkcni body - jak se vypocitaji a k cemu slouzi. Jak se bez pouziti LOC da jen s pomoci fcnich bodu spocitat doba reseni projektu v mesicich a prace.
+
+* Vıpoèet funkèních bodù u SW projektu nového a pøejatého, rozdíly mezi funkèními body u projektu a SW aplikace
+
+* FP
+
+* Vıpoèet funkèních bodù u SW projektu nového a pøejatého, rozdíly mezi funkèními body u projektu a SW aplikace
+
+* funkèní body - nalézt a odpovìdìt jak by se vypoèítaly neupravené FP
+
+* Napište seznam EI, EO, EQ, ILF, EIF, které se nacházejí v tomto projektu a popište, jak byste vypoèítali neupravené a upravené funkèní body.
+
+* FP+popisat vypocet upravenych/neupravenych;
+
+------------------------------------------------------------------------------
+SÍOVİ GRAF - EARLY/LATE START/FINISH
+
+* byl dan sitovy graf projektu - urcit podle nej kritickou cestu, pro kazdy uzel urcit early start, early finish, late start, late finish
+
+* CPM - vıpoèty LS, LF, ES, EF
+
+* sitovy graf, doplniit ES, EF, LS, LF. Byly tam i vazby F-F a S-S.
+
+* sitovy graf, doplniit ES, EF, LS, LF. Byly tam i vazby F-F a S-S.
+
+------------------------------------------------------------------------------
+COCOMO
+
+* CoCoMo
+
+* Vıpoèet Cocoma II a rozdíly oproti Cocomu I
+
+* cocomo I
+
+* cocomo2
+
+* cocomo -- vzorec pro rozsirovani projektu a popsat co je co v nem
+
+* Spoèítejte COCOMO 1 pro projekt na základì KSLOC (odhadnìte, máte zkušenosti se zápoètovıch projektù) (byl k dispozici "tahák" s konkrétními èísly)
+
+* Odhadnut KSLOC a spocitat pomocou COCOMO I (tabulky intervalov boli prilozene) usili (E) a cas (T) pre semi-detached (bezprostredny) mod.
+
+------------------------------------------------------------------------------
+RIZIKA
+
+* Rizika - co to je riziko a expozice rizika. 3 techniky na vyhnuti rizikum, 3 caste druhy rizik pri reseni projektu, rizeni rizik
+
+* Napište 4 rizika a jejich expozice a zpùsob jejich øešení, pro 2 ještì další zpùsob øešení.
+
+* Vymyslet 4 rizika a jejich expanzi, navrhnout a naplanovat reseni, u 2och urcit ine moznosti rizeni rizik a napsat k nim teorii.
+
+* rizika
+
+------------------------------------------------------------------------------
+METRIKY
+
+* 3 SW metriky slozitosti
+
+* Napište 4 metriky a k èemu konkrétnì budou pro projekt/firmu.
+
+* Vymyslet 4 metriky, formalne ich definovat, a potom zdovodnit, preco ich chceme pouzit v nasom projekte.
+
+
+------------------------------------------------------------------------------
+TESTOVÁNÍ
+
+* Integraèní testování - metody BUT a TDT - rozdíly
+
+* V-testovani
+
+* V-model testovani
+
+* Napísa plán testovania
+
+* Navrhnìte plán testování. Popište, co byste v jednotlivıch testech testovali a jakım zpùsobem.
+
+* spravit plan testovania, navrhnut konkretne testy a pokecat, k comu su.
+
+------------------------------------------------------------------------------
+CMM
+
+* CMM - popiste jednotlive urovne
+
+* CMM 3 a 4
+
+------------------------------------------------------------------------------
+OSTATNÍ
+
+* Vıpoèet z Putnamovej rovnice
+
+* Které informace má smysl archivovat po ukonèení projektu
+
+* dimenze odlisnosti SW produktu
+
+* dokument inspekce
+
+* kategorie faktoru kvality podle McCall-a, u kazde kategorie uvest jako priklad dva faktory
+
+* Hype krivka - nakreslete a okomentujte

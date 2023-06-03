@@ -1,0 +1,61 @@
+Zkouška z PB006 - 18.12.2012.
+PØIBLÍŽNÉ zadání pøíkladù.
+
+
+(PØÍKLAD 1) Teorie - vybrat, co je správnì. (Otázky nejsou v pøesném znìní!!)
+
+x Frázová syntax se používá na definování komentáøù.
+x Mìjme a : A, podle pravidla subsumpce je a i typem všech PODtypù A?
+x Scheme je logický jazyk.
+- Automatická data jsou ukládána na zásobníku. [øešení]
+x ???
+
+
+(PØÍKLAD 2) Máme funkci g, která je typu g : A x B -> A; a g : A x B -> B. 
+Dále nìkde v kódu máme výraz g(g(x,y),g(u,z)), co platí?
+
+x Nerozhodnutelné v jakémkoliv kontextu.
+x Kontextovì nezávislé pøetížení...
+- Kontextovì závislé pøetížení a v tomto pøípadì LZE rozhodnout. [øešení]
+x Kontextovì závisle pøetížení a v tomto pøípadì NElze rozhodnout.
+x ???
+
+
+(PØÍKLAD 3) Do globalnej premmenej "a" (typu int) je na pociatku vlozena hodnota "n". 
+Dalej mame nasledujucu funkciu/proceduru P:
+  
+  P(ref int x, inout int y) {
+    while (x>0) {
+      x = x-1;
+      y = x + y;
+    }
+  }
+  
+  Ta je zavolana nasledovne: P(a,a);
+  Aka hodnota bude v premmenej "a" po skonecni procedury?
+  a) n
+  b) (n*(n+1))/2 [øešení]
+  c) 0
+  d) 2^n, nebo tak neco
+  e) jina
+  
+  
+(PØÍKLAD 4) UnitT -> TriT, kolko je spojitych funkcii a kolko z nich je maximalnych?
+UnitT je klasicky 2 prvkovy ("()" a "T"), TriT je typ zadefinovany ako obsahujuci nedefinitko
+a potom dalsie 3 prvky A,B,C, ktore su v TriT maximalne (t.j. A,B,C su navzajom neporovnatelne, 
+ale ktorykolvek z nich je vacsi ako T)). Dohromady teda TriT obsahuje 4 prvky.
+
+x ???
+- 7 funkcii, 3 maximalne [øešení]
+x ???
+
+
+(PØÍKLAD 5) Pøíklad v prologu. Máme zadánu pomocnou funkci Add(m, n, p), definovanou (aspoò doufám):
+
+  Add(Zero, n, n).
+  Add(Succ(m), n, Succ(p)) :- Add(m, n, p).
+  
+Definujte funkci Mul(m,n,p), která vrátí yes, pokud je p souèinem m a n. (Prostì p=m*n).
+  
+  
+  

@@ -1,0 +1,31 @@
+Zkouška 8.1.2009 - skupina A
+============================
+
+1) Definujte graf, multigraf a orientovaný graf.
+
+2) Co je to isomorfismus? Nakresli všechny neisomorfní grafy o 4 vrcholech.
+
+3) Co je to binární strom a jaké známe zpùsoby jeho procházení? Jeden si vyberte a detailnìji popište.
+
+4) Proè nemùžu použít Dijiksterùv algoritmus v grafu se zápornými hranami? Co by se stalo po jeho aplikaci?
+
+5) Jak se poèítá maximální èas trvání C_max (makespan) a maximální zpoždìní L_max (lateness)? (Uveïte formuli.) Spoèítejte C_max a L_max na zadaných datech:
+ ------------------------------------------------
+| úloha            | 1  2  3  4  5  6  7  8
+|------------------+-----------------------------
+| èas spuštìní     | 0  10 1  ... 
+| doba trvání      | 1  2  4  ... nepamatuju si
+| termín dokonèení | 3  11 5  ...
+ ------------------------------------------------
+
+6) Popiš algoritmus barvení vrcholù (saturace).
+
+7) Load balancing - co to je a k èemu se používá.
+
+8) Co platí o øezech, které oddìlují zdroj od spotøebièe? Naznaète dùkaz.
+ 
+9) Náhodnì orientovaný graf - co to je a k èemu se používá.
+
+
+
+Otázky za 8 - 14 bodù, celkem 100.

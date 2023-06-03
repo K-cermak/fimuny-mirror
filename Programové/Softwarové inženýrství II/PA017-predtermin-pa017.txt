@@ -1,0 +1,10 @@
+SW INZINIERSTVO predtermin
+
+1. popisat jednu SW metriku zlozitosti
+2. naco je korekcny faktor u cocomo plus ako sa rata
+3. popisat iterativny a inkrementalny vyvoj
+4. napisat vlastnosti SW metrik zalozenych na LOC plus dva priklady
+5. UP fazy popisat
+6. scrum fazy popisat
+7. putnamova rovnica
+8. V procesni model nakreslit a popisat

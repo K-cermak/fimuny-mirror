@@ -1,0 +1,97 @@
+PB071: Prubezna_20111024
+VYSLEDKY PRVNICH CTYR* ZADANI VNITRA Z CECKA, 
+KONTROLOVANE SPOUSTENIM ZADANYCH FUNKCI V IDEcku.
+Temito vysledky se sam ridim, ale za spravnost nerucim.
+v. 31.10.2013
+* Je to jenom jedno zadani s ruzne zprehazenymi otazkami a odpovedmi.
+
+--------
+ZADANI 1
+1) B), C)
+vypis:
+A:Fremm
+B:Freedom
+C:Freedom
+D:Frereedom
+
+2) E), F)
+vypis pole od prvku array[0][0] do array[6][6] je napr.:
+         0  4066936  4066936  2686632 19919636  4063232        0
+1991963785        1        1        1        1        1        1
+         1        2        2        2        2        2        2
+         2        3        3        3        3        3        3
+         3        4        4        4        4        4        4
+         4        5        5        5        5        5        5
+         5        6        6        6        6        6        6
+      
+neplati A) ani B), bo se pole v cyklu vyplnuje az od polozky s cislem 1, nikoliv od nulte polozky
+
+3) D)
+3.95 byla pretypovana na integer, coz je 3, pak prirazena do a, proto a == 3.000000. Potom 3-3.000000 == 0.000000
+
+4) F)
+str1[4] = 0; //vrazi koncovy znak misto 5. pismene str1, proto printf precte jen prvni 4 pismena (cte jen do nuly).
+char* str2 = str1 + 8; //nastavi ukazatel zacatku retezce str2 na 8. pismeno v str1 (bo str1 je ukazatel na pismeno na pozici 0).
+
+5) B)
+value nepredavam do foo jako ukazatel (void foo(unsigned char*pArray, int *value)), jen jako int value, proto po zkonceni foo zmena value zmizi (byla jen lokalni ve foo)
+
+6) C)
+bo AND (&) vraci true, pokud aspon jedna cislice vyjde 1, ale tady vysly same nuly. Viz slajdy 2.
+
+7) A), B) C) D) 
+A) Protoze bitova konverze pouze jinak *interpretuje* dany bit, neprepisuje nic
+B) Semanticka konverze *ulozi* prectenou hodnotu do pripraveneho mista predepsanym zpusobem; napr. int je v pameti mensi nez double, proto je ztrata.
+C) Protoze tak pravily slajdy 5 ("nemenime obsah pameti, jen zpusob jeji interpretace")
+D) Protoze je tam vic assemblerovych instrukci.
+Viz slajdy 5.
+
+8) B)
+Protoze Valgrind pravil, ze se vsecko uvolnilo. Po prvnim free(pArray2) ukazuje pArray1 do nealokovane pameti. 
+Dale kdyz pArray2 == pArray3, tak free(pArray2) uvolni zaroven misto, kam ukazuje pArray3 (bo je to to stejne misto). pArray3 ted ukazuje do nealok. pam.
+
+9) B) D)
+Pamet alokovana na *zasobniku* se dealokuje *automaticky* (slidy 5).
+Pamet alokovana na *halde*, ktera ztrati ukazatel, zustane na halde (leak), pokud ji *programator* neodhalduje pryc (free).
+
+10) A), E)
+Nezpusobi leak a nevypise World, bo ve foo nastavuji array=NULL, nikoliv *array=NULL - s hvezdickou by to zmenilo hodnotu array i v mainu a leakovalo, kdezto takto ji to zmeni jen lokalne ve foo. *array=malloc(10) zpusobilo, ze array ted ukazuje na nejakou pamet i v mainu, proto array neni NULL.
+
+--------
+ZADANI 2
+1) B), F)  
+2) D), E)  
+3) A), D), E), F)  
+4) A)       
+5) E)      
+6) D)     
+7) E)     
+8) A), D) 
+9) E)      
+10) B), C)
+
+--------
+ZADANI 3
+1) E)    
+2) B)         
+3) B), C), E), F)   
+4) A), F)  
+5) E)
+6) D)
+7) A), C)
+8) C)
+9) B), D)
+10) A), B)
+
+--------
+ZADANI 4
+1) B)     
+2) D)    
+3) A)     
+4) A), D) 
+5) A) B) C) F)
+6) A), F)      
+7) C)         
+8) B), E)
+9) A), D) 
+10) C)

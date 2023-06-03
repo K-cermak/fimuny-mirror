@@ -1,0 +1,7 @@
+10. 12. 2019
+4 otevrene otazky, kazda po 10 bodech, celkem 40 bodu.
+
+1. Vzorce pro vypocet usili a casu u stredniho modelu COCOMO.
+2. Popsat faze a workflow UP (Unified Process).
+3. Jak se pocita cyklomaticka slozitost a co znaci.
+4. Napsat vse o sprint backlogu.

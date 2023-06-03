@@ -1,0 +1,4 @@
+1.Popište PCM (/diferenèní PCM/adaptivní PCM), jeho výhody a nevýhody.
+2.Co je Kepstrum a jak získáme?
+3.Jak fungují skryté Markovovy modely a k èemu slouží?
+4.Bezkontextové gramatiky - co jsou, k èemu slouží + napiš gramatiku pro Promluvu: Chci si tento semestr zapsat pøedmìt (IB000|IB001|IB002).

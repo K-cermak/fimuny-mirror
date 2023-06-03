@@ -1,0 +1,31 @@
+skup. A
+
+- definujte propustnost, zpodìní, rozptyl a øeknìte, kterého z tìchto parametrù dosáhnete u Internetu nejsnáze
+
+- end-to-end pøístup - uveïte komplement a u kadého síové vlastnosti, které se dají pøístupem dosáhnout
+
+- jak byste zábránili pøetíení sítì pøi multicastu v IPv4?
+
+- statické vs. dynamické smìrování - jakı je rozdíl a co pouívá v Internetu. Proè?
+
+- co jsou to well-known porty, uveïte jeden pøíklad a kdo rozhoduje o jejich rozdìlení
+
+- co je nového v IPv6 a uveïte dva nejdùleitìjší rozdíly od IPv4
+
+- token bucket - popis a kde se pouívá
+
+- smìrování a pøepínání - rozdíl, na jaké vrstvì se pouívá, co je vhodnìjší kde + popis jednoho smìrovacího protokolu
+
+- kódování 4B/5B - kde a proè
+
+- rozdíl mezi flow control a congestion control a jak kadého dosáhnout
+
+- tøídy ATM podle kvality sluby
+
+- reakce TCP na ztrátu paketu - co se stane
+
+- co byste zvolili pro pøenos hlasu - UDP nebo TCP a proè
+
+- algoritmus CRC - co to je a k èemu
+
++ 2 další, co si nepamatuju

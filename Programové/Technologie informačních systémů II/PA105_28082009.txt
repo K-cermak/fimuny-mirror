@@ -1,0 +1,14 @@
+C1
+
+1) Demokratický tým, pravidla,...
+2) Rozdíl mezi inkrementálním a iterativním vývojem
+3) Jak probíhá ètení kódu, co je výsledek, opravují se chyby
+4) Intergraèní testování
+5) Softwarový prototyp
+6) Køivka uèení
+
+A1
+
+1) Vanový diagram
+2) Entact (inicializace) procesu
+3) 3 okruhy èinnosti v týmu

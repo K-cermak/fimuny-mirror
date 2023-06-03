@@ -1,0 +1,14 @@
+26.5.2016 1.termín:
+
+1. Pro oøezávání polygonù se pouívá algoritmus Sutherland-Hodgman. Vysvìtlete princip,zakreslete celou sestavu a vysvìtlete funkci jednoho bloku. Jaké pøípady øeší tento algoritmus chybnì ?
+Ïalej bol priloenı obrázok s príkladom polygónu, pre ktorı bolo potrebné vypísa vstupné a vıstupné postupnosti algoritmu ako ho postupne orezáva.
+
+2. Jak pøevedete kubiku v reprezentaci Hermite na stejnou kubiku v reprezentaci Bezier? Naznaète na obrázku, vysvìtlete.
+
+3. Vysvìtlete metody konstantního a hladkého stínování s interpolací barvy a normály. Porovnejte principy a pouitelné svìtelné modely. 
+
+4.Nakreslete schematickı obrázek lidského oka, oznaète jednotlivé èásti a jejich úlohu pro vidìní.
+
+5. Nieèo na spôsob: Popište sadu transformací, pomocí kterıch otoèíte tìleso v obecné poloze kolem jeho osy o danı úhel. Osa je dána dvojicí bodù. 
+
+

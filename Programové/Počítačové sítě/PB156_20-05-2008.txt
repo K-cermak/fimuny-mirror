@@ -1,0 +1,16 @@
+1 Propustnost, zpoždění a rozptyl jsou základní parametry počítačových sítí. Vysvětlete každou z nich. Který z těchto parametrů nejsnáze v současném Internetu nastavit a proč?
+2 Co je to End-to-End argument? A jaký je komplementární pojem? Uveďte jednu síťovou vlastnost, kterou je třeba zajišťovat end-to-end a jednu, kterou je potřeba zajistit oním komplementárním algoritmem.
+3 Popište funkci vyrovnávacích pamětí (cache/proxy) na síti. Jaký vliv na parametry (viz otázka 2) má použití vyrovnávacích pamětí?
+4 Jaký je rozdíl mezi řízením toku dat a reakcí na zahlcení? Popište stručně principy obou přístupů.
+5 Popište stručně proces získání adresy dynamického portu. Co jsou to well know porty? Znáte nějaký well know port (stačí jeden, větší počet již nezvýší počet přidělených bodů). Víte kdo přiděluje well known porty? Pokud ano, napište to.
+6 Jakým způsobem reaguje protokol TCP na ztrátu paketu? Popište podrobněji důsledky této reakce.
+7 Popište základní vlastnosti IP protokolu verze 6 (IPv6). Jmenujte dva podle vás největší rozdíly proti IPv4.
+8 Srovnejte vlastnosti UDP a TCP protokolů. Který z nich použijete pro přenos hlasu?
+9 Jaký problém mají řešit směrovací protokoly? Které vrstvě ISO OSI toto náleží? Popište stručně princip jednoho Vámi zvoleného směrovacího protokolu.
+10 Uveďte základní vlastnosti statických a dynamických směrovacích algoritmů. Který přístup je používán v současném Internetu a proč?
+11 Čím byste hlídali rozsah šíření multicatu po síti v protokolu IPv4? Svou volbu zdůvodněte.
+12 Popište princip algoritmu Token Bucket. Kde se používá?
+13 Co je to kódování 4B/5B a jaký má účel?
+14 Popište jednotlivé třídy kvality služeb v rámci ATM
+15 Srovnejte směrování a přepínání. Je možno stavět pouze přepínané sítě? Pokud ano, za jakých podmínek? Zdůvodněte.
+16 Popište princip CRC (Cyclic Redundancy Check) algoritmu. V jaké souvislosti se používá a co zajišťuje?

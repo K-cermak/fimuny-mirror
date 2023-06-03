@@ -1,0 +1,5 @@
+7.12.2016 - predtermín
+1) 3 nevýhody a 2 výhody WATERFALL
+2) Popísať a vysvetliť 3 modely COCOMO II
+3) Popísať a vysvetliť Fuknčné body + načo slúžia
+4) Popísať a vysvetliť ľubovoľnä metriku a výpočet zložitosti

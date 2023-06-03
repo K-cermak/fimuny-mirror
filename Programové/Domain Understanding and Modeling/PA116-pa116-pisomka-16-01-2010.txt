@@ -1,0 +1,17 @@
+Zadanie bolo v angličtine. Otázky sú iba približné, najmä 2) a 3), pretože
+tam som absolútne nemal šajnu o čom je reč. Bol by som veľmi rád, keby to niekto
+doplnil/opravil.
+
+1) Ako by ste si modelovali situáciu, kedy dve rôzne komponenty systému musia
+pristupovať k tej istej entitnej sorte. Načrtnite a popíšte svoje riešenie.
+Vysvetlite. Popíšte na konkrétnom priklade 
+Device entitná sorta 
+Maintaince a "ešte niečo" (asi výrobné oddelenie) - 2 rôzne komponentys  
+
+2) Zadefinovať kontext, atď.
+
+3) MENTION-USE principle. Operácie MENTION, USE. Univerzalita.
+
+4) Čo je to modelovací proces? Čo je to model? Dynamický model. Modelovacie nástroje.
+   
+  

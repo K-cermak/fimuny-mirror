@@ -1,0 +1,41 @@
+1. V java je program napsan jen v jedinem bloku....
+   Cobol je program pouzivany pro ucetni a financni operace  {reseni}
+   Lisp vychazi s turingova stroje
+   Smalltalk je silne typovany se statickym typovym systemem
+   Prolog je funkcionalni jazyk..
+
+2. Pretizeny operator /, bere dva parametry typu Int, ale ma dvoji chovani.
+Vraci Int nebo Float.
+{kontext. zavysle pretizeni}
+
+3. operatory -> (kontra, kova) a x (kova, kova)
+
+4. --procedura se vola S(a,a,a+1) , a je globalni, na vstupu se do a priradi kladne n, otazkou je jakou hodnotu bude mit po prolezeni procedurou, promenne x,y,z se volaji jak je popsano niz--
+
+   procedure S (in x , ref y , name z)
+   begin
+     y := 0 // tedy i a := 0;
+     while (x > 0) do
+       begin
+	 y := z + 1;  // y(=a) := a+1 + 1
+	 x := x-1;
+       end;
+     end;
+
+{reseni: na vystupu bude mit promenna n hodnu 2n}
+
+5. operator ? , vyraz e1 ? e2 : e3, vyhodnoti se podminka e1, pokud je true
+vyhodnoti se vyraz e2, ktery je vyslednou hodnotou a vyraz e3 se jiz
+nevyhodnocuje, pokud je false vyhodnoti se vyraz e3, ktery je vysledkem a vyraz
+e2 se uz nevyhodnocuje. Obsahuje vedlejsi efekty.
+
+pokud M[[e1]]sigma = false pak [[e1 ? e2 : e3]]sigma =
+
+{reseni u = e3,e1 ; o' = e3,e1}
+
+6. Napiste program v prologu. Predikat height(t,n) ktery se vyhodnoti na true
+pokud n je rovno poctu uzlu v nejdelsi vetvi. Mame Succ, Zero, Empty pro cisla a
+Node a Empty pro stromy, binarni fci ge()
+
+ge(m,Zero).
+ge(Succ(m),Succ(n)) :- ge(m,n)

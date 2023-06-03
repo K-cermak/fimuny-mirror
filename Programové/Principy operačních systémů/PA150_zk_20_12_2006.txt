@@ -1,0 +1,19 @@
+PA150 ZK 20. 12. 2006
+
+V1:
+1. Round Robin, mame procesy P1, P2, P3, P4. zaradene do fronty v case 0, casy potrebne
+   na dokoncenie procesov P1..P4 su 53, 17, 68, 24. V akom poradi skoncia?
+3. Definujte problem producent-konzument, riesenie so semaforom.
+2. Strankovanie a segmentacia - vyznam, spolocne a rozdielne vlastnosti.
+3. Deadlock - definicia, 4 podmienky, 3 sposoby riesenia.
+4. 3 procesy P1-P3, P3 zahajuje volbu koordinatora, algoritmus elect, kolko sprav elect(i) bude odoslanych,
+   ked alg. skonci v kazdom P
+6. def. tranzakcie, vlastnosti ACID
+
+V2:
+1) Round Robin a k tomu prilozeny priklad s procesy
+2) Transakce(ACID)
+3) Segmentace a strankovani, posis spolecne rysy a rozdily
+4) Uvaznuti, definice, metody proti uvaznuti + 4 podminky pro vznik uvaznuti
+5) Typ konzument-producent a ilustruj semaforovy model
+6) Distribuovany system se 3 pocitaci v kruhu a kolik zprav se musi poslat pro volbu noveho koordinatora a nakresli topologii chodu zprav

@@ -1,0 +1,21 @@
+Pb 156 , pocitacove site termin 20.6.11
+
+prvni 4 otazky jsou hlavni(50 bodu musite mit 35)
+znìni neni presne, jen podle toho co si pamatuji, dále je možné že jsem omylem z nejake podotazky otazky udelal 2 otazky a na nìjakou zapomìl, už se mi to nìjak všechno mixuje dohromady
+
+1.co jsou to a k èemu slouži smerovací protokoly do jake vrstvy patøi, vyberte jeden smìrovaci algoritmus a popište ho.
+2.K cemu slouzi IPv6 protokol, zakladni charakteristika + co ma navic oproti Ipv4(jake jsou rozdili), vyberte jeden rozdil podle ktereho je podle vas protokol Ipv6 lepši a proè?
+3.rozdil mezi UDP,TCP,  ktery z nich byste pouzili na pøenos zvuku(hlasu), proè?
+4.charakterizuj, propustnost, zpozdeni a rozptil, ktery z techto faktoru lze nejsnáze nastavit v Internetu.
+
+5.jak byste v multicastu omezili jeho šiøeni?
+6.popiste multicast core tree?
+7.kdyby mezi kazdými dvema uzli existovalo bezestratove spojeni, melo by nejaky smysl pouzivat TCP, zdùvodnìte?
+8.jake služby v Internetu byste si pøedstavovali + ještì nìco.
+9.mobilita v IPv6 + schéma
+10.rozdil fragmentace IPv6 a Ipv4
+11.staticke a dynamicke smerovani + jaky je Internet?
+12.site spojovane a nespojovane, kde je jednodižší zajistit služby a proè?
+
+
+dalši 2 pøedchozi terminy jsou v diskuznim foru predmetu. 

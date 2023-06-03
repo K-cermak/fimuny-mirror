@@ -1,0 +1,689 @@
+8086: jednoduchý program
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,stack
+	mov ss,bx
+	mov sp,dno
+
+	mov dx,mesg
+	mov ah,9
+	int 21h
+	hlt
+
+segment	data
+mesg	db 'Testuji segment','$'
+
+segment	stack
+	resb 6
+dno:	db ?
+
+
+8086: adresovací techniky
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bx,slovoa9
+	mov cx, [slovoa9]
+	mov byte [bx+2], 50
+	mov byte[bajtd3], ch
+	hlt
+
+segment	data
+bajtd3	db 0
+slovoa9	dw 5731
+
+segment	stack
+	resb 16
+dno:	db ?
+
+
+8086: volba segmentového registru
+
+cpu 8086
+segment	code
+	resb 256
+..start	mov bx, data
+	mov ds, bx
+	mov bx, stack
+	mov ss, bx
+	mov sp, dno
+	mov bx, ananas
+	mov es, bx
+	
+	
+	mov cl, [byteb9]
+	mov cs:[115],cl
+	mov es:[115],cl
+	mov ds:[115],cl
+	mov ss:[115],cl
+	
+	mov cl, [byte81]
+	mov bp, word[word69]
+	mov cs:[bp],cl
+	mov es:[bp],cl
+	mov ds:[bp],cl
+	mov ss:[bp],cl
+	hlt	
+
+segment	data
+	resb 256
+byteb9 db 0
+byte81 db 0
+word69 dw 0
+
+segment ananas
+	resb 256
+
+segment	stack
+	resb 256
+dno:	db ?
+
+
+8086: obsluha přerušení dělení nulou
+
+cpu 8086
+segment ananas
+    resb 1024
+    
+segment code
+..start    mov bx,data
+    mov ds,bx
+    mov bx,stack
+    mov ss,bx
+    mov bx,ananas
+    mov es,bx
+    mov bx, code
+    mov cs, bx
+    mov sp, dno
+
+    mov word es:[0], divf1
+    mov es:[2], cs
+
+    xor ax,ax
+    div al
+    xor ax,ax
+    div al
+    xor ax,ax
+    div al
+    
+konecb6    hlt
+
+divf1:
+    mov dx,mesg
+    mov ah,9
+    int 21h
+    pop ax
+    add ax,2
+    push ax
+    iret
+
+segment data
+mesg    db "Division by zero", 0Dh,0Ah, '$'
+
+segment stack
+    resb 16
+dno:    db ?
+
+
+8086: průchod seznamem bajtů s 8bitovým součtem
+
+cpu 8086
+segment	code
+..start	mov bx,data
+	mov ds,bx
+	mov bp, prvky83
+	mov dl, 0 
+	mov ch,[delka18] 
+	add ch, 0
+	jz end
+repeat:
+	add dl, [ds:bp]
+	add bp, 1
+	dec ch
+	jnz repeat	
+end:	hlt
+segment	data
+resb	160
+delka18	db 5
+prvky83: 
+	x1 db 0
+	x2 db 1
+	x3 db 2
+	x4 db 3
+	x5 db 4
+
+
+8086: průchod seznamem bajtů s 16bitovým součtem
+
+cpu 8086
+segment	code
+..start	mov bx, data
+	mov ds, bx
+	mov cx, [delka18]
+	mov dx, 0
+	mov bx, prvky83
+cyklus mov al, [bx]
+	cbw
+	add dx, ax
+	add bx, 1
+	loop cyklus
+	hlt
+
+segment	data
+delka18 dw 5
+prvky83 db ?
+	resb 1500
+
+
+8086: 32bitový součet dvojslov
+
+cpu 8086
+segment code
+..start mov bx, data
+    mov ds, bx    
+    mov ax, [dwrd118]
+    add ax, [dwrd218]
+    mov [dsum18], ax
+    mov ax, [dwrd118+2]
+    adc ax, [dwrd218+2]
+    mov [dsum18+2], ax
+    hlt
+    
+segment data
+dwrd118 dd 5
+dwrd218 dd 5
+dsum18 dd 32
+
+
+8086: 32bitový součet slov
+
+cpu 8086
+segment code
+..start mov bx, data
+    mov ds, bx    
+    mov ax, [wrd2a1]
+    cwd
+    mov si, ax
+    mov di, dx
+    mov ax, [wrd1a1]
+    cwd
+    add ax, si
+    adc dx, di
+    mov [dsuma1], ax
+    mov [dsuma1+2], dx
+    hlt
+    
+segment data
+wrd2a1    dd 5
+wrd1a1    dd 5
+dsuma1 dd 32
+
+
+8086: průchod seznamem slov s 32bitovým součtem
+
+cpu 8086
+segment code
+..start mov bx, data
+    mov ds, bx
+    mov cx, [delka18]
+    mov si, 0
+    mov di, 0
+    mov dx, 0
+    mov bx, prvky83
+cyklus mov ax, [bx]
+    cwd
+    add si, ax
+    adc di, dx
+    add bx, 2
+    loop cyklus
+    mov dx, di
+    mov ax, si
+    hlt
+
+segment data
+delka18 dw 5
+prvky83 db ?
+    resb 1500
+
+
+8086: průchod seznamem dvojslov s 32bitovým součtem
+
+cpu 8086
+segment code
+..start mov bx,data
+ mov ds,bx
+ mov bx,stack
+ mov ss,bx
+ mov sp,dno
+ mov bx,prvky83
+ mov cx,[delka18]
+ xor ax,ax
+ xor dx,dx
+     smycka:
+     add ax,ds:[bx]
+ inc bx
+ inc bx
+ adc dx,ds:[bx]
+ add bx,2
+     loop smycka
+ hlt
+
+segment data
+delka18 dw 5
+prvky83 dd 1
+ dd 2
+ dd 3
+ dd 4
+ dd 5
+ resb 1500
+
+segment stack
+ resb 16
+dno: db ?
+
+
+8086: číslo v bajtu na ascii hexa číslice
+
+cpu 8086
+segment  code
+..start  mov bx,data
+  mov ds,bx
+  mov bx,stack
+  mov ss,bx
+  mov sp,dno
+  mov al,[bnume8]
+  mov cl,4
+  shr al,cl
+  call hexc2
+  mov al,[bnume8]
+  call hexc2
+  mov ah,9
+  mov dx,end
+  int 21h
+  hlt
+hexc2:
+  and al,15
+  cmp al,9
+  jbe next
+  add al,7;39
+next:
+  add al,48
+  mov ah,2
+  mov dl,al
+  int 21h
+  ret
+  
+segment  data
+bnume8  db 0
+end  db 13, 10,'$'
+
+segment  stack
+  resb 16
+dno:  db ?
+
+
+8086: obsluha přetečení
+
+cpu 8086
+segment some
+    resb 1024
+
+segment code
+..start  mov bx,data
+      mov ds,bx
+      mov bx,stack
+     mov ss,bx
+      mov sp,dno
+      mov bx, some
+      mov es, bx
+      mov bx, code
+      mov cs, bx
+    
+      mov es:[16], word intobc
+      mov es:[18], cs
+    
+      mov bx, 0
+cykl:
+      mov dl, [data1dc+bx]
+      add dl, [data2dc+bx]
+      into
+      inc bx
+      cmp bx, [delka82]
+      jne cykl
+      hlt
+intobc:
+      mov AH,9
+      mov DX,zprava 
+      int 21h
+      mov al, bh
+      mov cl,4
+      shr al, cl
+      call ascii
+      mov al, bh
+      call ascii
+      mov al, bl
+      mov cl,4
+      shr al, cl
+      call ascii
+      mov al, bl
+      call ascii
+      mov ah, 9
+      mov dx,end
+      int 21h
+      iret
+ascii:
+      and al, 15
+      cmp al, 9
+      jbe next
+      add al,39
+next:    
+      add al, 48
+      mov AH,2
+      mov DL,al
+      int 21h
+      ret
+
+segment  data
+delka82 dw 5
+data1dc db -100 
+  db -100 
+  db 1
+  db 1
+  db -100 
+  resb 10000 
+data2dc  db -100 
+  db -100
+  db 1
+  db 1
+  db  -100 
+  resb 10000
+zprava db "overflow ",'$'
+end  db 13,10,'$'
+
+segment stack
+      resb 16
+dno:    db ?
+
+
+8086: číslo se znaménkem v intervalu
+
+cpu 8086
+segment code
+..start mov bx,data
+ mov ds,bx
+ mov bx,stack
+ mov ss,bx
+ mov sp,dno
+ 
+ mov ax,[hod04]
+ mov bx,[min04]
+ cmp ax,bx
+ JS next1
+ mov ax,[max04]
+ mov bx,[hod04]
+ cmp ax,bx
+ JS next1 
+ call pNe
+ hlt
+next1:
+ call pAno
+ hlt
+
+pAno:
+ mov dx,mAno
+ mov ah,9
+ int 21h
+ ret
+pNe:
+ mov dx,mNe
+ mov ah,9
+ int 21h
+ ret
+
+segment data
+hod04 dw 3
+min04  dw 2
+max04  dw 4
+
+mAno db 'ne',0Dh, 0Ah,'$'
+mNe db 'ano',0Dh, 0Ah,'$'
+
+segment stack
+ resb 1000
+dno: db ?
+
+
+8086: číslo bez znaménka v intervalu
+
+cpu 8086
+segment  code
+..start  mov bx,data
+  mov ds,bx
+  mov bx,stack
+  mov ss,bx
+  mov sp,dno
+  
+  mov ax,[min80]
+  mov bx,[max80]
+  mov cx,[hod80]
+  cmp cx,ax
+  jbe ano
+  jmp sek
+ano  mov dx,mesne
+  mov ah,9
+  int 21h
+  hlt  
+sek  cmp cx,bx
+  jb ne
+  jmp ano
+ne  mov dx,mesano
+  mov ah,9
+  int 21h
+  hlt  
+
+segment  data
+hod80  dw 1
+min80   dw 2
+max80  dw 5
+mesano  db 'ano',13,10,'$'
+mesne  db 'ne',13,10,'$'
+
+segment  stack
+  resb 16
+dno:  db ?
+
+
+8086: předávání parametrů do funkce hodnotou
+
+cpu 8086
+segment code
+..start    mov bx,data
+    mov ds,bx
+    mov bx,stack
+    mov ss,bx
+    mov sp,dno
+    
+    push word[scit15f]
+    push word[scit25f]
+    call sum12
+    hlt
+sum12: 
+    mov bp,sp
+    mov ax,[bp+2]
+    add ax,[bp+4]
+    ret 4
+    
+segment data
+scit15f dw 16
+scit25f dw 16
+    
+segment    stack
+    resb 16
+dno:    db ?
+
+
+8086: předávání parametrů do funkce odkazem
+
+cpu 8086
+segment  code
+..start  mov bx,data
+  mov ds,bx
+  mov bx,stack
+  mov ss,bx
+  mov sp,dno
+
+  mov bp,1263
+  mov bx,scit1d1
+  push bx
+  mov bx,scit2d1
+  push bx
+  call sumec
+  hlt
+
+sumec  push bp
+  mov bp,sp
+  push bx
+  mov bx,[bp+6]
+  mov ax,ds:[bx]
+  add ax,ds:[bx+4]
+  mov dx,ds:[bx+2]
+  adc dx,ds:[bx+6]
+  pop bx
+  pop bp
+  ret 8
+  
+segment  data
+scit1d1  dd 0
+scit2d1  dd 0
+
+segment  stack
+  resb 16
+dno:  db ?
+
+
+8086: vzdálený skok
+
+cpu 8086
+segment    code
+..start    mov bx,data
+    mov ds,bx
+    mov bx,stack
+    mov ss,bx
+    mov sp,dno
+    mov bx, word 0xef0f
+    mov es,bx
+    mov bx, word 0x5397
+    mov es:[bx], word 0x2eFF;
+    mov es:[bx+2], word domab2
+    jmp far [mimo96]
+end:
+    hlt
+segment   data
+mimo96   dw 0x5397
+    dw 0xef0f
+domab2   dw end, code
+segment    stack
+    resb 16
+dno:    db ?
+
+
+8086: výpočet faktoriálu
+
+cpu 8086
+segment    code
+..start    mov ax, data
+    mov ds, ax
+    mov bx, ax
+    mov ax, 01h
+    
+    mov cx, 0001
+    mov ax, 0001
+    mov dx, 0000
+cyklus:
+    mul cx
+    inc cx
+    cmp cx, [inputc5]
+    jbe cyklus
+end:    hlt
+segment    data
+inputc5    dw 2
+segment    stack
+    resb 6
+dno:    db ?
+
+
+8086: čtení z terminálu po bajtech
+
+cpu 8086
+segment  code
+..start  mov bx,data
+  mov ds,bx
+  mov bx,stack
+  mov ss,bx
+  mov sp,dno
+
+num  mov ah,1
+  int 21h
+  cmp al,0
+  jne cykl
+  jz end
+
+cykl  mov bl,al
+  cmp bl,61h
+  jge next
+  jmp extra
+  
+next  cmp bl,7ah
+  jle up
+  jmp extra
+
+up  sub bl,20h
+  jmp extra
+
+extra  mov ah,2
+  mov dl,bl
+  int 21h
+  jmp num
+end  hlt  
+
+segment  data
+
+segment  stack
+  resb 16
+dno:  db ?
+
+
+8086: čtení z terminálu po řádcích
+
+cpu 8086
+segment    code
+..start    mov bx,data
+    mov ds,bx
+    mov bx,stack
+    mov ss,bx
+    mov sp,dno
+cyklus    mov ah, 0x0a
+    mov dx,done
+    int 21h
+    je end
+    mov bl, [done+1]
+    cmp bl,[rsltb3]
+    js next
+    mov [rsltb3],bl
+next:
+    jmp cyklus
+end:
+    hlt
+segment data
+rsltb3    db 255
+done    db 255, ?
+    resb 255
+    
+segment    stack
+    resb 16
+dno:    db ?

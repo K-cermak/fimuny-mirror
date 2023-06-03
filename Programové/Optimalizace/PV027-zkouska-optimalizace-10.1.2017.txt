@@ -1,0 +1,11 @@
+PV027 OPTIMALIZACE 10.1.2017
+1) definuj pojem optimalizace; proč vše lze zapsat jako minimalizaci
+2) popiš podstatu simlexové metody
+3) výhody quazi-newtonovských metod oproti klasickým newtonovským
+4) příklad na metodu největšího spádu
+5) body (1,4), (2,6) a (3,5) prolož přímku
+6) přepiš zadání příkladu na lineární programování do standartního tvaru
+7) minimalizuj (příklad na lineární programování)
+
+navíc 3 bonusové otázky
+celkem 16+3 bodů

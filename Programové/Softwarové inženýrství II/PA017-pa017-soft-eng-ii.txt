@@ -1,0 +1,6 @@
+PA017 - predtermin 2013-12-16
+-co spolocne maju genericke a agilne vyvojove metodiky
+-popisat scrum
+-ake zakladne udaje by mala obsahovat servisna zmluva
+-popisat integracne postupy
+

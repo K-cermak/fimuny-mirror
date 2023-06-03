@@ -1,0 +1,60 @@
+﻿termín: 29.1.2013
+bodové hodnocení: 4x testové otázky (8/0/-2b), 1x praktická otázka (většinou programování v proglogu: 0-10b)
+0 až 18  => F,
+19 až 24  => E,
+25 až 29  => D,
+30 až 33  => C,
+34 až 37  => B,
+38 až 42  => A.
+vypracoval: Jerry
+
+1) Co to je garbage collection?
+
+a) Sbírání dostupných alokovaných bloků a jejich odstranění
+b) Incializace a následné uvolnění paměťových bloků
+c) Mazání nedosáhnutelných objektů v paměti [spravne]
+d) Mazání slepých odkazů na neexistující místa do paměti
+e) Provádění fragmentace paměti
+
+2) Binární operátor -> je zprava kontravariantní a zleva variantní, při uspořádání A<=A'<=A" platí:
+
+a) (A'->A")->(A"->A')<=(A->A")->(A'->A")
+b) (A'->A')->(A'->A')<=(A"->A')->(A"->A')
+c) (A->A')->(A"->A')<=(A->A")->(A'->A')
+d) (A->A')->(A'->A)<=(A"->A")->(A'->A)
+e) (A->A')->(A'->A)<=(A"->A")->(A'->A) [spravne]
+
+3) Mějme proceduru:
+
+f(name x, in y){
+   y = y-1;
+   a = a+x+y;
+}
+
+dále máme globální proměnou "a" do které přiřadíme libolné kladné přirozené "n". Jaká bude hodnota "a" po provedení procedury?
+
+a) 0 
+b) n!
+c) (3n(n+3))/2
+d) 2n
+e) jiné [spravne]
+
+4) Kolik je počet unikátních funkcí (UnitT->UnitT)->(UnitT->UnitT), a kolik z nich je maximálních?
+
+a) celkem 25 max. 6
+b) celkem 10 max. 1 [spravne]
+c) celkem 11 max. 2
+d) celkem 11 max. 3
+e) celkem 12 max. 1
+
+5) Napište tělo binární funkce Isom(x,y), která bere dva binární stromy a určí zda-li jsou izomorfní (= stejně rozmístěné uzly, ale nezáleží na ohodnocení prvků).
+A, B jsou jednouzlové stromy, Fork(x,y) je strom s levým a pravým podstromem, řešení:
+
+Isom(A,A).
+Isom(B,A).
+Isom(A,B).
+Isom(B,B).
+Isom(Fork(x,y),Fork(u,v)) :- Isom(x,u),Isom(y,v). 
+
+  
+

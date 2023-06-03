@@ -1,0 +1,22 @@
+19. 12. 2012 - PV017 - Bezpecnost v IT - doc. Ing. Jan Staudek, CSc. 
+====================================================================
+
+1.	Popisat genericke kroky reakcie na vyskyt bezpecnostneho incidentu.
+
+2.	Co sa rozumie celkovou politikou bezpecnosti informacii v organizacii?
+Poziadavky na obask hejto politiky.
+
+3.	Charakterizujte kategorie poziadavkov na zaruku dosiahnutia bezpecnosti
+informacii, ktorych splenenie sa dokazuje pri urcovani vysky zaruky za
+specifikovanu funkcnu skladbu bezpecnostnych opatreni podla standardu ISO15408
+(Common Crteria).
+
+4.	Popisat elementarne kroky procesu ohodnotenia rizik.
+
+5.	Popisat fazy zivotneho cyklu SMS a charakterizovat dielcie kroky plniace
+jednotlive fazy. (ISMS project roadmap)
+
+6.	Aktiva: A, B, C, D. Potencialne skody pri utoku: 5000000, 50000, 1000,
+10000. Intervaly vyskytu utookov: rok, tyzden, minuta, den. Navrhnut
+klasifikaciu rizik. Popisat metodiku volby typu opatreni zaistujucich ochranu
+pred relevantnymi rizikami.

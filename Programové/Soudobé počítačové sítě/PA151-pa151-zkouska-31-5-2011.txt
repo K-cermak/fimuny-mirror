@@ -1,0 +1,13 @@
+PA151 - Soudobé sítì - èást jedné skupiny ze 31.5.2011
+
+jak funguje CSMA/CD
+ - viz. druhé sildy
+popsat druhy satelitù a typické využití
+ - geo/meo/leo - televize, délková komunikace, telefony apod. poèet satelitù na pokrytí zemì, zpoždìní...
+jak probíhá synchronizace èasu ve wifi síti 802.11
+ - pøes beacony, buï AP nebo všichni navzájem
+Jaké metody používá GSM pro zajištìní dùvìrnosti
+ - SIM (chalange-response) šifruje pøenášená data, doèasná jména koncových stanic podle buòky kde je, 
+ multiplexing - èasový, frekvenèní, kódový atd. kromì lepšího využití pásma také znesnadòuje sledování jednoho hovoru (neznám-li vzorce pøeskakování).
+Jak funguje adresace v jedné buòce BSS a mezi buòkami
+ - tady jsem moc nevìdìl, chtìl tam nìco o pøidávání bitù do adresy kdy urèím zda jsem ve stejné buòce nebo ne.

@@ -1,0 +1,75 @@
+##################################################
+PB154 - Základy databázových systémù
+Zkouška dne 19. 12. 2011
+Maximum 60 bodù, èas na vypracování 70 minut.
+##################################################
+Pozn.: Hvìzdièka "*" u atributu znaèí, že je primárním klíèem (v textu byl podtržen).
+
+
+Mìjme relaci zákazníkù (id, jméno, pøíjmení, rodné_èíslo, ulice, mìsto, psè, oblast) a funkèní závislosti:
+id -> jméno, pøíjmení, rodné_èíslo, ulice, mìsto, psè
+rodné_èíslo -> id, jméno, pøíjmení, ulice, mìsto, psè
+ulice, mìsto, psè -> oblast
+
+a) Uveïte všechny kandidátní klíèe (a zdùvodnìte). [3 body]
+b) Zvolte primární klíè relace. [1 bod]
+c) Uveïte dva pøíklady super klíèe (odlišné od možností uvedených v pøedchozích bodech). [2 body]
+
+#####
+
+Uvažujte relace pøedmìt(pkód*, název, kredity) a zápis(uèo*, pkód*).
+
+a) Popište, co znamená pojem cizí klíè. [2 body]
+b) Urèete cizí klíè v relaci zápis. [1 bod]
+c) Pomocí relaèní algebry formálnì definujte podmínku, kterou musí klíè splòovat. [3 body]
+
+#####
+
+Mìjme relace zákazník(zákId*, jméno, adresa), úèet(èísloúètu*, zùstatek, zákId, pobId) a poboèka(pobId*, název, ulice, mìsto). Zformulujte výrazy v relaèní algebøe, které vrací:
+
+a) jména a adresy zákazníkù, kteøí mají alespoò jeden úèet v poboèce v Olomouci [3 body]
+b) pro všechna mìsta, ve kterých má banka nìjakou poboèku, název mìsta a poèet poboèek v nìm [3 body]
+
+#####
+
+Je dán prázdný B+ strom, který má vìtvení 4 ukazatele (n=4). Postupnì vkládejte hodnoty 6, 8, 5, 2, 1, 3. Jaká bude podoba stromu s tìmito hodnotami? [6 bodù]
+
+#####
+
+Uvažujte relace pøedmìt(pkód*, název, kredity) a zápis(uèo*, pkód*). Zformulujte SQL pøíkazy, které vrací:
+
+a) pro každý pøedmìt jeho kód, název a poèet studentù, kteøí si jej zapsali (výsledek nemusí být uspoøádaný) [3 body]
+b) kódy a názvy pøedmìtù, které nemají vyplnìnou hodnotu atributu kredity. Výsledek má být uspoøádaný podle kódù. [3 body]
+
+#####
+
+Uvažujte bìžný rotaèní pevný disk.
+
+a) Uveïte a struènì charakterizujte tøi základní složky èasových nákladù potøebných ke ètení jednoho bloku. [5 bodù]
+b) Zaøaïte jej na správné místo v hierarchii pamìtí. [1 body]
+
+#####
+
+Uvažujte relaci pøedmìt(pkód*, název, kredity). Zformulujte SQL pøíkaz, který pøedmìtùm s kódem zaèínajícím na MA zvýší poèet kreditù o jedna. [6 bodù]
+
+#####
+
+Navrhnìte E-R model pro knihovnu, která eviduje knihy (název, autoøi, žánr, isbn, vydavatel), exempláøe knihy (opotøebení, datum poøízení) a ètenáøe (jméno, adresa). Uvažujte, že
+- kniha mùže mít více exempláøù
+- kniha mùže mít více autorù
+- ètenáø si pùjèuje exempláøe knih
+- konkrétní exempláø mùže být vypùjèet nejvýše jednomu ètenáøi. [6 bodù]
+
+#####
+
+Zpracování dotazù (tj. co se dìje v databázi mezi zadáním SQL pøíkazu a vrácením odpovìdi).
+
+a) Nakreslete schéma krokù zpracování. [2 body]
+b) Struènì jednotlivé kroky okomentujte. [4 body]
+
+#####
+
+Uvažujte relaci student(uèo*, jméno, pøíjmení) s 9 záznamy, kde do jednoho bloku lze uložit až 3 záznamy.
+
+a) Popište, co je sekvenèní soubor, a pro uvedenou relaci uveïte pøíklad takového souboru s vyhledávacím klíèem uèo. [3 body]
+b) Nad sekvenèním souborem zkonstruujte index pro atribut jméno a uveïte typ tohoto indexu (øídký / hustý). [3 body]

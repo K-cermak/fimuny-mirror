@@ -1,0 +1,7 @@
+Otázky z předtermínu 14. 12. 2016
+Každá otázka za 10 bodů, 60 minut.
+-----------------------------------
+1) Uveďte 4 smysluplné vlastnosti LOC metrik.
+2) Napiště 5 rozdílů mezi UP a SCRUM.
+3) Uveďte a vysvětlete Lehmanův zákon o velikosti přířůstku.
+4) Vyjmenujte základní položky cenové kalkulace softwarového projektu. 

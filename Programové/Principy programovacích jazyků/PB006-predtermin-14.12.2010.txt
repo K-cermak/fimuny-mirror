@@ -1,0 +1,28 @@
+1) Co je správnì:
+A) V Ruby musí každá funkce mít jednoslovný identifikátor
+*B) Forth a PostScript jsou zásobníkové jazyky
+C) Perl je silnì staticky typovaný jazyk
+D) V Lispu je (parametrický?) polymorfismus
+E) Prázdný typ je izomorfní s kartézským souèinem nulového poètu typù
+
+2) kontra x kova, vyraz<=:vyraz<=:vyraz
+
+3) procedure P(in x:int, ref y:int, out z:int){ //tady si nejsem uplne jisty zadanim, volalo se P(a,a,b), na konci v a ulozeno n+1
+	y=1; z=x;
+	while x>0 do{
+		z = y*z;
+		y = y+1;
+		x = x-1;
+		}
+	}
+4) Kolik je hodnot typu (UnitT -> UnitT) -> BoolT? Kolik z nich je striktních?
+7, 5 striktnich
+
+5) Existuje relace R, nadefinujte klauzulemi relaci T tak, aby tvoøila
+reflexivní a tranzitivní uzávìr R.
+   T(x,x). (reflexivni)
+   T(x,z) :- R(x,y), T(y,z). (tranzitivita)
+   T(x,y) :- R(x,y). (T se vztahuje na prvky relace R)
+
+bodovani 1-4 -2/0/8b, 5 0-10b
+

@@ -1,0 +1,8 @@
+Mame skolsky informacny system. Ucitel vypisuje na zvolene predmety skuskove terminy. Studenti sa na skusky prihlasuju a odhlasuju. Skuskovy termin ma svoj cas a ucebnu v ktorej sa odohrava.
+Skuskovy termin je obmedzeny kapacitou. Studenti skuskami prechadzaju uspesne alebo aj nie.
+
+Spravte:
+ERD
+Class Diagram
+UseCase Diagram
+Stavovy diagram studenta, kde bude zachytene kolko krat sa zucastnil skusky a ci ju spravil alebo nie.

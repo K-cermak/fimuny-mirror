@@ -1,0 +1,16 @@
+PA081 Programovani numerickych vypoctu, zkouska 3.6.2014
+
+pisomka dost narocna (ta >90% uspesnost je trochu zavadzajuca :)), 
+10 otazok. Vsetko zo slajdov, ale treba si ich prejst podrobne. 
+Skutocne si overuje, ci student aj rozumie principom metod, vie povedat 
+vyhody/nevyhody atp. Co si vybavujem otazky, tak porovnat metodu secen a 
+regula falsi, vysvetlit ten uberhack v Quake III - aky zmysel ma bitovy 
+posun a iteracia Newtona, odvodit Newtona pre hladanie korenov fcie jednej 
+premennej + vediet, ako rychlo konverguje a kedy ju je vhodne pouzit, 
+popisat LU/Choleskeho/QR dekompozicie (+na aku triedu matic sa daju pouzit), 
+napisat kusok kodu, ktory testuje, ci sa dve premenne mozu rovnat, ak su zatazene nejakou chybou, 
+ake problemy ma Powellova metoda a co s tym, dokonca dal aj priklad - ten s kondenzatorom, 
+je to v slajdoch s dynamickymi systemami - vediet pocitat doprednou aj spatnou onou, 
+co to je... ak si spominate na viac, doplnte ma, mozeme potom hodit na fi.muny. 
+Na ustnej sa v podstate pyta to iste, co je v zadani, da sa doplnit/opravit, 
+ale ak k otazke nic nenapisete, tak rovno preskakuje 

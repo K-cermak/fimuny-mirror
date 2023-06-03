@@ -1,0 +1,7 @@
+1. intuitivně popsat biologickou síť a abstrakci buňky
+2. systém reakcí, přibližně A + E <=> AE <=> AEp <=> Ap + E, popsat ho pomocí diferenciálních rovnic mass action kynetiky, odvodit vztah pro stabilní stav AE
+3. obrázky dvou dvojných zpětných vazeb (+ a -), popsat jejich rovnovážné stavy
+4. intuitivně vysvětlit rozdíl mezi deterministickou a stochastickou simulací, ukázat na příkladu pozitivní zpětné regulace
+5. popsán organizmus, ve kterém se má vytvářet Kotva, Motor a Bičík; všechny tři regulovány stejně pojmenovanými proteiny, tyto tři proteiny regulovány proteinem Control
+Úkolem vytvoři schéma tak, aby se při pozitivní změně signálu Control postupně nastartovaly produkce v pořadí Kotva, Motor a Bičík; při negativní změně se mají postupně vypínat v pořadí Kotva, Motor, Bičík. Schéma popsat diferenciálními rovnicemi + říct, jak musí vypadat konstanty maximální úrovně exprese, aby to celé fungovalo
+

@@ -1,0 +1,16 @@
+OS a rozhrani - zk.6.6.2011 - test a,b,c,d,e,f - spravne 1+ odpovedi 
+celkem 10 otazek - 20b, potreba 10+b, bodovani ruzne
+
+-kdy prechazi stav procesu z neco na neco (new, ready, running, waiting, term.-graf)
+-SJF bez predbihani - priklad s procesy, ktery pobezi v case "neco"
+-melo se vybrat kdy se jedna o planovani s predbihanim: (2,3)
+	1. pøechází ze stavu bìžící do stavu èekající
+	2. pøechází ze stavu bìžící do stavu pøipravený
+	3. pøechází ze stavu èekající do stavu pøipravený
+	4. konèí
+-urcit typ nejakeho grafu
+-doplnit strankovaci tabulku (s valid/invalid)
+-neco o systemovych volanich
+-IPC (InterProcess Communication)-co do nej patri=pojmenovane roury...
+-neco
+-neco

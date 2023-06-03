@@ -1,0 +1,66 @@
+Prislovi ++
+Jednou se mi dostal na disk velice vtipný texák "pøísloví pøeložená do vìdecké èeštiny". Taky jsem v poslední dobì èetl nìkolik knížek o C++, takže se mi to nìjak v mozku zkombinovalo a výsledkem jsou tato pøísloví pøeložená do C++. Myslím si, že není tøeba dávat sem pùvodní tvar tìchto pøísloví, protože si to každý jistì rozkóduje sám. (Dokonce si myslím, že to uhodne i èlovìk, který nezná C++, ten však nebude mít ponìtí v èem je ten fór). Takže pokud tento programovací jazyk neznáte, nemá podle mì smysl to èíst, jinak pøeji hezkou zábavu. 
+1)
+les.in() == les->echo;
+2)
+pycha,pad;
+3)
+void vira(hora & h1,hora & h2)
+{
+hora tmp=h1;
+h1=h2;
+h2=tmp;
+}
+4)
+#define self *this
+dist(self,kosile)<dist(self,kabat);
+5)
+enum Ucho {utrzene,neutrzene,} ucho;
+while(ucho)
+go(pro_vodu)+dzban;
+6)
+enum hodnoceni {spatne,dobre};
+hodnoceni cinnost(osoba komu);
+odmena=cinnost(certu) ? peklo : 0;
+7)
+while(! polosyto() ) jez(),while(!polopito() ) pij();
+8)
+if(kraj1 != kraj2) mrav1 != mrav2;
+9)
+class Jiny
+{
+public:
+jama jehoJama;
+}
+class Kdo
+{
+public:
+jama * kopa() {return new jama;}
+void pada(jama j);
+}
+void main()
+{
+Jiny jiny;
+Kdo kdo;
+jiny.jehoJama=*kdo.kopa();
+kdo.pada(jiny.jehoJama);
+}
+10)
+if( byti()+vlci ) vyti()+vlci;
+11)
+#include <ltime.h>
+class Ptace
+{
+Time cas;
+public:
+Ptace(Time & t)
+:cas(t)
+{};
+int skok();
+}
+
+void main()
+{
+Ptace ranni( Time(5,30) ),dopoledni( Time(11,20) ); 
+ranni.skok() > dopoledni.skok();
+}

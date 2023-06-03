@@ -1,0 +1,335 @@
+50.	xa7	db	
+	ya8	db 	
+		lda 	xa7
+		sta	ya8
+
+	
+	koneca5 HLT
+
+51.		Add	C 
+		Add	A
+
+	konst49	db	224
+		MVI	C, 224
+
+	konec52 HLT
+
+52.	vzorcc6 db
+		lda	vzorcc6
+		MOV	B,A
+		MOV	C,A
+		MOV	E,A
+		MOV	H,A	
+		MOV	L,A
+	konec81 HLT
+
+53.	udaj80 	db
+		add	E
+		lda	udaj80
+		MOV	e, a
+		inr	e
+	konec58	HLT
+
+54.	udaj1a	db
+		lda	udaj1a
+		inr	a
+		sta	udaj1a
+
+	konec53 HLT
+
+55.	suma76	db
+	scitab	db
+	scitd1	db
+		lda	scitab
+        	mov     b, a
+        	lda     scitd1
+        	add     b
+        	mov     b, a
+        	lda     suma76
+        	add     b
+        	sta     suma76
+	konec7b	HLT
+
+56.	cislo6b	db
+	cislo	db	255
+		lda	cislo6b
+		mov	b, a	
+		lda	cislo	
+		xra	b
+		mov	b, a
+							
+	konec0b	HLT
+
+57.	cislo5c	db	
+		lda	cislo5c
+		cma
+		inr a
+ 
+		sta cislo5c
+	konecff	hlt
+
+58.	cislo2e	db
+		mvi 	b, 0
+		lda	cislo2e
+		add	b	
+
+	konecd4	HLT
+
+59.	cislofb	db	9bh
+	cislo	db	e0h
+		lda	cislo
+		mov	b, a
+		lda	cislofb
+		add	b
+
+
+	konecc8	HLT
+
+60.	cislod5	db	0d4h
+	cislo	db	ch
+		lda	cislo
+		mov	b, a
+		lda	cislod5
+		add	b
+	konec8a HLT
+
+61.	argh	db	3
+	abcd	db	12
+		lda	argh
+		mov	b, a		
+		lda	abcd
+		add	b
+
+
+	konecfc	hlt
+
+62.	x038	db
+	y5b3	db
+		lda	x038
+		mov	b, a
+		lda	y5b3
+		cmp	b
+		jnz	shoda
+		inr	e
+	shoda   add	e
+
+	konec1e	HLT
+
+63.	x590	db
+	y1e7	db
+		lda	x590
+		mov	c, a
+		lda	y1e7
+		cmp	c
+		jz	shoda
+		inr	b
+	shoda   add	b
+
+	konec97	HLT
+
+64.	x041	db
+	y98b	db	
+		lda	x041
+		mov	b, a
+		lda	y98b
+		add	b
+		jc 	koneca1
+
+	ovrflw8 HLT
+	koneca1	HLT
+
+65.	x006	db
+	ybf0	db
+		lda	ybf0
+		mov	b, a
+		lda	x006
+		sub	b
+		jnc	konec92
+
+	ovrflw1	HLT
+	konec92	HLT
+
+66.	x639	db	
+	ye88	db
+		lda	ye88
+		mov	b, a
+		lda	x639
+		cmp	b
+		jm 	ano
+
+	ne	mvi	d, 2
+		jmp	konec50
+	ano 	mvi	d, 1
+
+	konec50 HLT
+
+67.	x98d	db	
+	y778	db
+		lda	x98d
+		mov	c, a
+		lda	y778
+		cmp	c
+		jm	koneced
+	bud	mov	a, b
+		cma
+		mov	b, a
+	
+	koneced	HLT
+
+68.	x460	db
+	y0bc	db
+		lda	x460
+		mov	b, a
+		lda	y0bc
+		cmp	b
+		jp	konec5a
+	alebo:	mov	a, l
+		cma
+		inr	a
+		mov	l, a
+	
+	konec5a	HLT
+
+69.	xf33	db	
+	y496	db	
+	zvys	db	69		
+		lda	zvys	
+		mov	d, a
+		lda	y496
+		mov	b, a
+		lda	xf33
+		cmp	b
+		jm	konec37
+	alebo:	mov 	a, c
+		ADD	d
+		mov	c, a
+	konec37	HLT
+
+70.		adv	of	
+	xc9e	db
+	y9d1	db
+		lda	xc9e
+		mov	b, a
+		lda	y9d1
+		add	b
+		jo	ovrflwf
+	nebud	lda	xc9e
+		cma	a
+		inr	a
+		sta	xc9e
+		jmp	konecf6
+	ovrflwf	HLT
+	konecf6	HLT
+
+71.		adv	of
+	xd50	db
+	y33f	db
+		lda	xd50
+		mov	b, a
+		lda	y33f
+		cmp	b
+		jbe	ano7a
+	ne7a	HLT
+	ano7a	HLT
+
+72.		adv	of
+	x182	db
+	y760	db
+	ano	db	1
+	ne	db	2
+		lda	x182
+		mov	b, a
+		lda 	y760
+		cmp	b
+		JLE	bud
+	nebud	lda	ne
+		mov	c, a
+		jmp	ne98
+	bud	lda	ano
+		mov	c, a
+		jmp	ano98
+
+	ano98	HLT
+	ne98	HLT
+
+73.		LXI	H, 36242
+		MOV	M, C
+		LXI	H, 7000
+		MOV	E, M
+
+	konec1b	HLT
+
+74.	xlow74	db
+	xhigh74	db
+	ylow74	db
+	yhigh74	db
+	zlow74	db
+	zhigh74	db
+		lda	xlow74
+		mov	b, a
+		lda	xhigh74
+		mov	c, a
+		lda	ylow74
+		mov	d, a
+		lda	yhigh74
+		mov	e, a
+		lda	zlow74
+		mov	h, a
+		lda	zhigh74
+		mov	l, a
+		lda	xlow74
+		add	d
+		sta	zlow74
+		lda	xhigh74
+		adc	e
+		sta	zhigh74
+	koneca0	HLT
+
+75.	kolike5	db	
+	i	db	1
+	a1	db	0
+	a3	db	233
+		lda	i
+		mov	b, a
+		mov	c, a
+		lda	a1
+		mov	d, a
+		mvi	e, 1
+		lda	kolike5
+	skok	cmp	b
+		jm 	konec4b
+	blok	
+		dcr	a
+		sta	kolike5
+		lda	a3
+		mov	m,a
+		dad	d
+		lda	kolike5
+		jmp 	skok
+	konec4b	HLT
+
+76.		LXI	SP, 1057
+		PUSH	H
+		PUSH	B
+		POP	H
+		POP	B
+	konec77	HLT
+
+77.	w529	db	
+	xc69	db
+	yd36	db
+	zf36	db
+		lda	w529
+		mov	b, a
+		lda	xc69
+		call	odecti7
+		lda	yd36
+		call	odecti7
+		lda	zf36
+		call	odecti7
+	konecc5	HLT
+	odecti7:CMA
+		inr	a
+		add	b
+		mov	b, a
+		RET

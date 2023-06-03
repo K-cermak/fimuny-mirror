@@ -1,0 +1,40 @@
+1) Otazka na programovaci jazyky. 
+2) V pascalu vyraz not je
+a) monomorfni b) param. polym. c) zavisle pretizeni d) nezavisle. pretizeni
+
+3) fce P( x, y), kdy x je promenna volana hodnotou a y volana hodnotou-vysledkem 
+a N je globalni promenna. Pri volani fce P(N,N), kdy N > 0 plati, ze N bude.
+    P(x,y)
+    { if( x > 0)
+	{y = y * x;
+	 N = N - 1;
+	 P(x-1,y);	 
+	}
+    }
+
+Vysledeke je n*n!
+4) Binarni konstruktor T ma 1. parametr kovariantni a 2. parametr kontravariantni
+Vysledek byl T(TAB')(TAB)<T(TAB)(TAB')
+
+5) V nejakem jazyce plati: e1?e2:e3. Kdyz je e1 jako true, pak se vyhodnoti e2, kdyz je
+ false, tak e3. M[[e1]] je true; o' = [[e1?e2:e3]]o. Plati, ze ecka maji mohou mit vedlejsi
+efekty. u = M[[e1?e2:e3]];
+
+Vysledek je u=Me2(e1) o'=e2(e1)
+
+6) Pomoci Hornovych klauzulich napiste fci Isom(x,y), ktera ma jako sve parametry 2 binarni stromy. Fce vraci true, pokud jsou jejich "kostry" identicke (tedy nemusi mit stejne uzly, jen strukturu). Empty znaci prazdny strom. NodeA(x,y) znaci strom s uzlem A a jeho levym podstromem
+x a pravym podstromem y. NodeB je ekvivalent, akorat jeho korenovy uzel je B.
+
+Tedy:
+  A		B
+ /  \          /  \
+E    B        E    A        jsou pro Isom ekvivalentni
+    /  \          / \
+   E    E        E   E
+
+Vysledek je:
+Isom(Empty, Empty).
+Isom(NodeA(x, y), NodeA(u, v)):-Isom(x, u), Isom(y, v).
+Isom(NodeA(x, y), NodeB(u, v)):-Isom(x, u), Isom(y, v).
+Isom(NodeB(x, y), NodeA(u, v)):-Isom(x, u), Isom(y, v).
+Isom(NodeB(x, y), NodeB(u, v)):-Isom(x, u), Isom(y, v).

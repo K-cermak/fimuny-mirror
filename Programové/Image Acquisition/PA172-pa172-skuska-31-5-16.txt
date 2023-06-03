@@ -1,0 +1,25 @@
+PA172 - 31.5.’16
+- optická hustota - čo to je?
+- pixel binning - vo co go?
+- 3 rôzne spôsoby zachytenia farebnej informácie v kamerách
+- 3 rôzne technológie zachytenia obrazu s málo svetlom
+- tomografia - čo to je a dva príklady
+- na čo slúži MPEG 2
+	MPEG 4 (DivX, Xvid)
+	MPEG 4 (AVC)
+	PCM
+	MP3
+- médiá na ukadanie multimédií (napr. HD video)
+- hlavné komponenty fluorescenčných mikroskopov
+- vzdialenosť ohniska od šošovky, vzdialenosť objektu od šošovky a vzdialenosť jeho obrazu od 	šošovky => ich vzťah a rovnička
+- index lomu - vo co go?
+- typy a príklady geometrického zkreslenia
+- čo sú to objemové dáta a ako sa získavajú?
+- Airyho disky - čo to je a ako to vyzerá?
+- princíp Nipkow disk pre prvé televízie a mikroskop
+- dve metódy stabilizácie obrazu
+- chroma subsampling - čo to je a na čo slúži
+- interlaced scan (prekladané scanovanie)
+- scanning probe microscope - ako funguje?
+- ako získať chemické zloženie hviezdy?
+- na poslednú som si nespomenul :-/ 

@@ -1,0 +1,19 @@
+﻿Metricky priestor + 3 priklady
+Minkovsekho vzorec
+Minskeho metriky, konkretne vzorec na Euklidovsku vzdialenost
+Jaccardov koeficient
+range query
+nearest neighbour query
+k-NN query
+reversed k-nn query
+ball partitioning
+generalized hyperplane partitioning
+excluded middle partitioning
+pivot filtering (motivace, filtering s jednim pivotem a se dvema)
+recall, precision
+Burkhard-Keller Tree, opisat nakreslit priklad
+Vantage point tree
+generalized hyperplane tree (definice a obrazek)
+M-tree naco je dobry, ake su tam typy uzlov co je v nich ulozene
+leaf node splitting a metody, jakymi se to dela, rozdiel medzi splitovanim v Slim a M-tree
+D-index

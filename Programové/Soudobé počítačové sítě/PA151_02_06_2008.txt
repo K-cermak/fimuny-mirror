@@ -1,0 +1,9 @@
+PA151 - Soudobé počítačové sítě - 2.6.2008
+-----
+
+1) Co je to sirka pasma a jak souvisi s rychlosti prenosu dat. Nyquistova veta;
+2) Skryty terminal a jak se tento problem resi v sitich 802.11;
+3) TBS + PCF;
+4) Synchronizace v infrastrukturni siti 802.11;
+5) Synchronous Connection Oriented, Asynchronous Connection-Less v Bluetooth;
+6) Nacrtnout skicu poskytovani telekomunikacnich sluzeb. Dorucovatelske sluzby, telematicke sluzby a podpurne sluzby.

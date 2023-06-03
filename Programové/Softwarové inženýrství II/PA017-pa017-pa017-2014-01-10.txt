@@ -1,0 +1,7 @@
+Skupina A
+1)vysvetli Lehamnuv zakon o omezene velikosti prirustku.
+2)charakteristiky metrik zalozene na velikosti kodu(size oriented)
+3)popsat CMM 3.uroven
+4)zakladni body servisni smlouva
+
+u skupiny B to bylo obdobne co jsem tak zahledl akorat jiny lehmanuv zakon, jina uroven cmm

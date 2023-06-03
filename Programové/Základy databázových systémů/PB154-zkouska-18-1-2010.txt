@@ -1,0 +1,82 @@
+1) ZAKAZNIK = (jmeno,prijmeni,ulice,...)
+   Napiste vyraz v n-ticovem relacnim kalkulu ktery vypise prijmeni vsech zakazniku s jmenem Ales a bydlici v ulici
+   Dolni.
+   Odpoved: {t|existuje s nalezi zakaznik(t[prijmeni]=s[prijmeni] azaroven s[jmeno]='Ales' azaroven s[ulice]='Dolni')}
+2) UVER = (cislouveru,vyseuveru,urok)    SPLATKA = (cislouveru,cislosplatky,vysesplatky,datum)
+   Napiste vyraz v SQL ktery vrati cislo uveru a soucet vsech jeho splatek.
+   Odpoved: SELECT cislouveru,SUM(vysesplatky) AS soucet FROM uver NATURAL LEFT OUTER JOIN splatka GROUP BY cislouveru
+3) B+ strom s n=4 (ukazatele), hodnoty B,C,D,E,F,G,H,I,J,K,L,M
+   a)Nakreslete strom s temito hodnotami tak, aby nesla vlozit dalsi hodnota aniz by se rozstepil nejaky uzel.
+   b)Jak bude tento strom vypadat po vlozeni A?
+   Odpoved: a)                 |E|H|K|
+                    __________/  /  \ \________
+                   /            /    \         \
+              |B|C|D| -> |E|F|G| -> |H|I|J| -> |K|L|M|
+           
+            b)                     |H| | |
+                             ______/  \_________
+                            /                   \
+                      |C|E| |                   |K| | |
+                  ____/ |  \____                /  \__
+                 /      |       \              /      \
+          |A|B| | -> |C|D| | -> |E|F|G| -> |H|I|J| -> |K|L|M|
+4) Dotazy v relacni algebre: #[uco]($[uco=2345](student))   a   $[uco=2345](#[uco](student))     # = projekce, $ = selekce
+   Napiste kdy je vyhodnejsi prvni vyraz a proc a naopak.
+   Odpoved: Prvni vyraz vraci nejdrive relaci na schematu relace student a pote az z ni tiskne jen sloupec uco.
+            Tento vyraz je vhodny pokud potrebuje vybirat v selekci podle atributu ktere ale nechceme videt ve vysledne relaci, skryji
+            se pomoci projekce.
+            Druhy vyraz naopak vraci nejdrive jen relaci na schematu (uco) a pote z nej vybira podle selekce. 
+            Tento vyraz je vhodny pokud v selekci nepotrebujeme vybirat z jinych atributu nez z tech ktere jsou uvedeny v projekc.
+5) SKUPINA = (kod,cislo,kapacita)           INSERT INTO skupina VALUES ('PB154',1,30)
+   Prevedte tento vyraz do relacni algebry.
+   Odpoved: skupina <- skupina + %[x(kod,cislo,kapacita)]({('PB154',1,30)})           % - prejmenovani
+6)  /----\    /----------\    /-----\      /-----\    /----\    /---------\
+   | isbn |  | rok vydani |  | nazev |    | cislo |  | stav |  | zakoupeno |
+    \----/    \----------/    \-----/      \-----/    \----/    \---------/
+         \     |    _________/       //\\        \     |       /                isbn = prim klic
+          \    |   /                //  \\        \    |      /                 cislo= diskriminator (parcialni klic)
+           ---------               //    \\        ===========
+           | KNIHA |<-------------//patri \\=======|| VYTISK||
+           ---------              \\      //       ===========
+                                   \\   //
+                                    \\//
+   Prevedte tento ER diagram to relacniho modelu.
+   Odpoved: relace kniha na schematu KNIHA=(isbn,rok vydani,nazev), klic je (isbn)
+            relace vytisk na schematu VYTISK=(isbn,cislo,stav,zakoupeno), klic je (isbn,cislo)
+7) Nakreslete stavovy diagram zpracovani transakce a strucne ho popiste.
+   Odpoved:               AKTIVNI
+                          |      |      
+                          |      |
+                          v      |
+                    CASTECNE     v
+                   POTVRZENA---->CHYBUJICI
+                        |           |
+                        |           | 
+                        v           v
+                   POTVRZENA      ZRUSENA
+   Aktivni-pocatecni stav,zustava v nem dokud bezi
+   Castecne potvrzena-jakmile byla provedena posledni operace
+   Chybujici-po zjisteni chyby
+   Zrusena-po vraceni transakce (rollback), vracena do stavu pred spustenim
+   Potvrzena-po uspesnem dokonceni
+8) Napiste co je to RAID a kde se pouziva a popiste funkce zrcadleni(mirroring) a rozdeleni(striping).
+   Odpoved: RAID - Redundat Array of Inexpensive Disks
+            Spojeni vice disku do funkcniho celku.
+            Zrcadleni - Data se ukladaji na prvni disk a na druhy se uklada jejich kopie.
+                        vyhoda je vetsi spolehlivost
+                        nevyhoda je pomalost a narocnost na misto
+            Rozdeleni - Rozdeluje data rovnomerne na dva disky
+                        vyhoda je rychlost
+                        nevyhoda je nizka spolehlivost
+9) Napiste co je to viceurovnovy index a proc se pouziva.
+   Odpoved: Viceurovnovy index se pouziva pro zrychleni pristupu, nejcasteji se kombinuje ridky a husty index, napr:
+            |A| |--->|A| |---->|A|1| |
+            |D| |-   |B| |--\  |A|2| |
+                  \  |C| |-\ ->|B|1| |
+                   ->|D| |\  ->|C|1| |
+                     |E| |\\   |C|2| |
+                     |F| |\\-->|D|1| |
+                           \-->|E|1| |
+                            -->|F|1| |
+                               |F|2| |
+10) Popiste algoritmus sort-merge.

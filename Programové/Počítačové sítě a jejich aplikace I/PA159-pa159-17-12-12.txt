@@ -1,0 +1,25 @@
+﻿PA159, předtermín 12.12.2017; skupina A
+
+1) Popsat L2/L3 datové struktury, adresaci a rozsah sítě. Proč potřebujeme L4?
+
+2) Popsat hlavičky IPv4 a IPv6 a jejich rozdíly.
+
+3) Co je to QoS, jak je implementováno v IPv6; (vyloženě chtěla vědět, že Traffic class využívá v IPv6 pole PRI).
+
+4) Co je to stavová a bezstavová autokonfigurace; co z toho je používáno u IPv4.
+
+5) Popsat jak funguje Path Vector, trochu popsat jeho nejpoužívanější protokol.
+
+6) Co je to Traffic Engineering, jaké metody používá.
+
+7) Rozdíl mezi High Speed TCP a Scalable TCP.
+
+8) Popsat, jak funguje MPLS a jakým způsobem se distribuují značky (labels).
+
+9) Popsat systém BATON a jak se v něm vyhledává.
+
+10) Rozdíl mezi Destination Sequence Distance Vector a Optimised Link State Routing, kde se používají a co je nezbytné pro jejich nasazení.
+
+11) Srovnat autokonfiguraci v P2P a Ad-hoc systémech.
+
+12) Jaké požadavky mají multimediální aplikace, zaměřit se na zpoždění. Vyjmenovat všechny případy, kdy zpoždění vzniká.

@@ -1,0 +1,11 @@
+PA055 - vizualizace komplexních dat písomka leden 2018
+
+K čomu slúži vizualizácia, rozdiel medzi vedeckou a informačnou.
+Obrázok vizualizácie (paralelné osi s 2D na osiach a farbou), čo to je a ako to vytvoriť z dát.
+Mosaic plot, čo to je a využitie.
+Ako sa vizualizujú toky, aké vlastnosti by mali mať dáta.
+Metóda redukcie dimenzií, aké dve poznáme a jednu bližšie.
+Aké pravidlá je nutné dodržiavať pri práci s farbami vo vizualizáciách.
+Aký je vzťah medzi metódami redukcie dimenzionality a metódami zhlukovania.
+Zhodnoťte vizualizáciu a navrhnite vylepšenie.
+Príklad dát siete (grafov), ako sa spracúvajú a aké vizualizácie sa používajú.

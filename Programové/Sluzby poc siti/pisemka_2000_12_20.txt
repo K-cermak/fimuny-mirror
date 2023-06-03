@@ -1,0 +1,39 @@
+1. Mìjme následující tabulku na www:
+
+	---------------------------
+	| Sluby poè. sítí |      |
+	|------------------| P005 |
+	| FI     |   2 kr  |      |
+	---------------------------
+
+   Zapište korektní HTML kód, kterı zobrazí uvednou tabulku. Tlouška
+   orámování je 2, tabulka má jako podklad lutou barvu.
+
+2. Popište proces ovìøování u doménového typu (vèetnì všech mnoství,
+   které mohou nastat).
+
+3. Co to jsou tzv. pseudotøídy v kaskádovém stylu (CSS)? Uveïte konkrétní
+   pøíklady stylu se selektorem pseudotøídy.
+
+4. Co je to MIME?
+
+5. Popište známé typy médií pro pøenos Ethernetu a uveïte jejich názvy.
+
+
+--- ØEŠENÍ ---
+
+1.
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><BODY>
+<TABLE BORDER="2" BGCOLOR="Yellow">
+	<TR>
+		<TD ALIGN="center" COLSPAN="2">Sluby poè. sítí</TD>
+		<TD ALIGN="center" ROWSPAN="2" VALIGN="middle">P005</TD>
+	</TR>
+	<TR>
+		<TD ALIGN="left">FI</TD>
+		<TD ALIGN="center">2 kr</TD>
+	</TR>
+</TABLE>
+</BODY></HTML>

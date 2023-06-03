@@ -1,0 +1,4 @@
+1. Brooksov zakon - znenie, popis o com to je
+2. Product backlog - co to je a kde sa to pouziva
+3. Ako z neupravenych funkcnych bodov vznikaju upravene?
+4. Uvedte 3 vyhody a 2 nevyhody inkrementalneho modelu.

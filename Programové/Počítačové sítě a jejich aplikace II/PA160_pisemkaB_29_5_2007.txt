@@ -1,0 +1,12 @@
+Zkracene zadani - skupina B
+
+1. Protokol pruzkumu okoli v ipv6
+2. Garance v synchronni komunikaci v distribuovanem systemu. Jake vyhody ma asynchronni komunikace.
+3. RPC co to je, jak se pouziva. Co resi JAVA RMI, jak se predavaji ukazatele na objekt.
+4. cwnd = 100 000, velikost paketu 1000, RTT = 1000ms. Jak velky datovy tok.
+5. Webove sluzby a jejich protokoly
+6. Soft state v dist. systemech
+7. Self Scheduling v kontextu Load Balancingu
+8. Migrace bezici binarky z jednoho uzlu na jiny
+9. principy a priklady bunecne (cells) organizace v bezdr. sitich
+10. Jakou fci ma v optickych sitich OADM?

@@ -1,0 +1,12 @@
+1) Popište vlastnosti ideálních a reálných sítí a uveďte i protokoly/techniky, kterými se reálné sítě snaží přiblížit ideálním.
+2) Popište IPv6 adresu, vyjmenujte a popište všechny druhy IPv6 adres, co nové podporuje IPv6 na rozdíl od IPv4.
+3) Neighbour discovery v IPv6.
+4) Co jsou to Distance Vector směrovací protokoly? Jak pracují? Jmenujte 3 zástupce, jednoho z nich popište detailně.
+5) Řízení toku a zahlcení v TCP. Jak se počítá velikost vysílacího okna v tradičních TCP protokolech? Jak to ovlivňuje množství přenesených dat na vysokorychlostních linkách?
+6) Co je to Traffic Engineering, popište Single-commodity a Multi-commodity.
+7) Popište protokol RBUDP (Reliable Blast UDP). Do jaké skupiny protokolů patří? Kdy ho lze s výhodou použít?
+8) Popište heuristické směrovací strategie používané v P2P sítích a alespoň jednu z nich podrobněji. Základní problém heuristik?
+9) Popište přístup k médiu pro WSN a Ad-hoc sítě. Identifikujte hlavní kritérium použitelnosti pro tyto protokoly; uveďte jejich klasifikaci a pro každou skupinu zástupce.
+10) Popište P-Grid.
+11) Porovnejte proaktivní a reaktivní směrování. Uveďte příklady protokolů.
+12) Vyjmenujte funkční požadavky multimediálních síťových aplikací a vyjmenujte a stručně popište protokoly zpracovávající tyto požadavky.

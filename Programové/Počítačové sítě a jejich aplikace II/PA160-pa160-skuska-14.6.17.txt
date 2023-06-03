@@ -1,0 +1,16 @@
+Skuska 14.6.17 - 4/7 terminov v lete 2017
+
+90 minut (celkom dost casu, vacsina odisla tak po hodine)
+Volne odpovede na cisty papier (neskenuje sa)
+Skuska prebiehala v D3 naraz so skuskou z architektury vypocetnich systemu, sedeli sme v tom bocnom, odrezanom stlpci
+9 otazok, dokopy 120 bodov
+
+1) RPC - ako funguje, ako zabezpeci komunikaciu medzi systemami? (12b)
+2) integrita - co to je? preco nestaci spravu zasifrovat? ako sa integrita dosiahne? (14b)
+3) migracia - ake sposoby pozname? ako sa migruje beziaci proces z pocitaca A na B? (14b)
+4) WSRF - co to je, ake su rozdiely oproti gridovej strukture? (12b)
+5) self-scheduling - co to je, na ake procesy je vhodny? (12b)
+6) MSC - z akych komponentov sa sklada? (bola tam napoveda ze mozte uvazovat aj high-level MSC) (16b)
+7) SNMP - ake ma vlastnosti, z coho sa sklada? (14b)
+8) symetricke sifrovanie ma problem s distribuciou klucov. ako to riesi asymetricke sifrovanie? primerane to vysvetli. (14b)
+9) soft-state, aky problem riesi? (12b)

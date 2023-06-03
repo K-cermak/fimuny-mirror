@@ -1,0 +1,4 @@
+﻿1. Popište a vysvětlete postup generování cílového kódu z kódu typu postfix. Máme virtuální stroj s alespoň jedním registrem, pamětí a příkazy LOAD, STORE, ADD, SUB, MULT, DIV typu registr paměť.
+Daný postup použijte pro demonstraci generování kódu pro příklad (a+b)-(c*(d/e)).
+2. Dvouprůchodové generování S->cycle E do S if E then S exit S od (pokud platí E1 prováděj S1 (pokud platí E2 proveď S2 a vyskoč z příkazu), proveď S3 a vrať se na začátek, pokud neplatí E1 vyskoč z příkazu)
+případně obligátní while E do S

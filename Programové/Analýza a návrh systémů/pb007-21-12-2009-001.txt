@@ -1,0 +1,36 @@
+Zkoušková písemka z PB007
+Verze 001
+
+(90 min)
+--------------------------------
+1. K čemu slouží transformační analýza? 
+   Kdy je vhodné ji použít? 
+   Jak se při ní postupuje?
+   Co je jejím vstupem a co je jejím výstupem?
+
+2. Vysvětlete (definujte) 3. normální formu dat.
+   Uveďte příklad datové položky, která není v 3.NF Zdůvodněte proč.
+   Uveďte příklad datové položky, která je v 2.NF a není ve 4.NF. Zdůvodněte proč.
+
+3. Popište postup analýzy metodou SASS (DeMarco). 
+   Charakterizujte tuto metodu. 
+   Uveďte výhody a nevýhody. 
+   Jaké modely systému (nástroje) SASS používá?
+
+4. Vysvětlete modely systému obsažené ve WebML.
+
+5. Podle popisu systému vytvořte kontextový diagram (4b.)
+   navrhněte nejméně 8 událostí klasifikovaných podle YMSA (4b.)
+   vytvořte ERD (4b.)
+   v souladu s postupem YMSA vytvořte systémové DFD (4b.)
+   a pro jeden proces vytvořte DFD 1. úrovně (4b.)
+   Všechny modely systému musí obsahovat všechny relevantní atributy a splňovat 3 NF.
+   DFD musí splňovat pravidlo "7+-2".
+
+   Popis Mikulášova informačního systému:
+   Svatý Mikuláš a čert navštvují děti na základě objednávek podávaných přes system.
+   Rodiče prostřednictvím systému objednávají návštěvu Mikuláše a čerta u svých dětí.
+   Příjem objednávek je každoročně ukončen 30. listopadu. Rodiče v objednávce sdělí údaje 
+   o dítěti a zda dítě bylo hodné. Jednotlivé objednávky prověřuje a schvaluje anděl.
+   Když bylo dítě hodné, dostane od Mikuláše dárek, v opačném případě odnese díte čert.
+   Mikuláš i čer si mohou kdykoliv vyžádat aktuální seznam všech dětí, které mají být obdarovány nebo odneseny.

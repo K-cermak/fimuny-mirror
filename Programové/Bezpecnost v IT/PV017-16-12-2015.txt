@@ -1,0 +1,9 @@
+﻿1. Stručně popsat jednotlivé procesy návrhu řízení rizik, zaznačit je v blokovém schématu PCDA
+2. Navrhnout dobrou metodiku pro určení úrovně rizik, pokud známe pravděpodobnosti útoku a dopad
+3. Co je to ISMS, popsat jeho návrh, implementaci a (provoz?)
+4. Měření - popsat procedury a získané charakteristiky
+5. Popsat dokument ISO/IEC 15408, který specifikuje uživatel, uvedením jeho typové struktury
+6. Co je to:
+	a) standard
+	b) standard de iure
+	c) standard de facto

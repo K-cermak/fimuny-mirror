@@ -1,0 +1,5 @@
+1. Binarny strom. Definicia pomocou korenoveho stromu. Vypocet poctu vrcholov + dokaz.
+2. Porovnat Link State a Distance Vektor na zaklade konvergencie.
+3. Vypocitat cenu projektu a zapisat slovne jednotlive polozky.
+4.Zadany Graf vypocitat makespan. Treba najprv zrobit splnitelny vyber z dijunknej grafovej reprezentacie a napisat rozvrh.
+5. Z tabulky nakreslit graf. Maximalne oneskorenie a vazene oneskorenei vypocitat.

@@ -1,0 +1,74 @@
+pisemka 23.5.2012, 10 otazek casu vic nez dost a kdyby nekdo presto 
+nestihal, tak by ho to prej nechal dopsat
+
+1. Proces typicky prechazi ze stavu bezici (running) do cekajici (waiting) pri:
+  *a) Synchronni I/O
+  b) Asynchronni I/O
+  c) ukonceni procesu
+  d) odstaveni od procesoru algoritmem RR
+  e) zadna z uvedenych moznosti
+  
+2. preempivni SJF: P1 vznik v case 0, trvani 7; P2 vznik v case 2, trvani 4; P3
+vznik v case 4, trvani 1; P4 vznik v case 5, trvani 4. Ktery proces pobezi v case 10?
+  a) P1
+  b) P2
+  c) P3
+  *d) P4
+  e) zadna z uvedenych moznosti
+  
+3. obrazek prednaska c. 11, stranka 5. Co znamena RES?
+  *a) rezidentni pamet ktera nebyla odswapovana
+  b) rezidentni pamet ktera nemuze byt odswapovana
+  c) resistentni pamet
+  d), e) naky blbosti
+  
+4. obrazek prednaska c. 11, stranka 13. V "page table" nebylo nic uvedeno a my sme to meli 
+doplnit (vysledek uplne stejny jako je ve slidech). Ktera z moznosti page/fram/valid je spravne?
+  a) 0/5/v, 1/7/i ...
+  b) 0/4/i, 1/9/v ...
+  c) 0/4/v, 1/x/i ...
+  *d) zadna z uvedenych moznosti
+  
+5. OS s mikrojadrem:
+  a) je rychlejsi, protoze je mensi rezie uvnitr jadra
+  *b) je stabilnejsi a bezpecnejsi
+  *c) snadna prenostitelnost OS
+  d) prikladem je MS DOS
+  e) naka blbost
+  
+6) Systemova volani
+  *a) prikladem jsou LINUXova volani open, close, exit
+  b) prikladem jsou LINUXova volani openFile, closeFile, neco //tyhle sou tusim WIN
+  *c) slouzi jako rozhraji mezi aplikaci a jadrem OS
+  d) LINUX ma asi 5000 volani
+  *e) lze je imlementovat pomoci preuseni
+  
+7) SYSENTER:
+  a) slouzi k pomalemu systemovemu volani
+  *b) slouzi k rychlemu systemovemu volani
+  c) naka blbost
+  
+8) fork():
+  *a) vytvori novy proces v LINUXu
+  b) vytvori novy proces LINUXu jako kopii rodice a nasledne rodice zabije
+  ?*c) jeho ekvivalent ve WIN API je createProcess() 
+  d)
+  e)
+
+9) vlakna:
+  *a) prepnuti vlakna pri planovani CPU je rychlejsi nez prepnuti procesu
+  *b) kazde vlakno si udrzuje svuj zasobnik
+  c) vlakna spolu komunikuji pres IPC
+  *d) aktualni verze LINUXu podporuje kernel-level threads
+  e)
+  
+10) obrazek prednaska c. 9, strana 8 (RAG bez cyklu). Vyse uvedeny obrazek je:
+  a) RAG s cyklem, tedy doslo k uvaznuti
+  *b) RAG bez cyklu, tedy nedoslo k uvaznuti
+  c) Wait-for graf s cyklem, tedy doslo k uvaznuti
+  d) RAG bez cyklu, tedy doslo k uvaznuti
+  e) Wait-for graf bez cyklu, tedy nedoslo k uvaznuti
+  
+  
+  
+  

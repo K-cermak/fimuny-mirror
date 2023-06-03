@@ -1,0 +1,22 @@
+Na pisemku bylo 90 minut, za presnost zadani nerucim.
+
+1) Popiste adresni mody unicast, anycast, multicast. Ktere z techto se vyskytuji v IPv4
+    a ktere v IPv6? Kcemu se napriklad da vyuzit anycast?
+2) V sychnronnim systemu (napr. CORBA v zakladni verzi) se pouzivaji k omezeni neprijemnosti
+    spojenych se synchronnim prostredim tzv. "call back". Co si pod tim predstavujete a
+    jak byste to implementovali?
+3) Co musi splnovat klient a server podle specifikace ONC RPC? Za co jsou tito odpovedni?
+4) Mame sit s RTT 1000ms a teoretickou proustnosti 1Gbps. urcete (semi-kvantitativne) 
+    jaky bude rozdil v prenesenem objemu dat za 1000s, kdyz neposleme jeden proud dat,
+    ale pouzijeme 10 standartnich TCP kanalu. Vypadek paketu nastane za 500s (v polovine 
+    sledovane doby).
+5) Ukazte priklady adres rozhrani a podsiti v IPv6.
+6) Vysvetlete kratce problem shody v async systemu. Na prednasce jsme si ukazali hierarchii
+    jistych bradcastu. Popiste a nastinte implementaci toho, jaky je jeste implementovatelny 
+    v async sitich.
+7) Popiste High Speed TCP. Jak se lisi od vicekanaloveho TCP? Zduvodnete.
+8) WDM, popiste a vysvetlete. Co je Coarse a Dense WDM? 
+9) Jak uzdruzuje mobilni sit "stopu" zarizeni, tedy to, kde se nachazi? Zmeni se neco, 
+    v pripade GSM, kdyz zarizeni zmeni poskytovatele (prejde do zahranici)?
+10) Nastinte problem casu v distribuovanem prostredi. Popiste algoritmy pro synchronizaci 
+    absolutniho casu, jmenujte jejich vlastnosti a nevyhody.

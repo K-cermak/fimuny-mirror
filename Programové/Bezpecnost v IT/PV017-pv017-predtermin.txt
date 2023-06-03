@@ -1,0 +1,11 @@
+1. Charakterizujte obsah a funkciu PP(Protection profile) ST(Security target) v ramci ISO/IEC 15408.
+
+2.Vhodnou schemou vyjadrite model merania ucinnosti bezpecnostnych opatreni a strucne charakterizujte ucel jeho komponent a jeho vystupov.
+
+3. Popiste model typu PDCA systemu rizeni informacnej bezpecnsoti a popiste na casovej osi obsahovu napln jednotlivych etap.
+
+4.Popiste architekturu dokumentovej zakladny systemu rizeni informacnej bezpecnosti, obsahove zameranie dokumentu na jednotlivych urovniach a uvedte role v hierarchii rizeni spolocnosti zodpovedne za validnost dokumentov na jednotlivych urovniach.
+
+5.Vysvetlite vyznam pojmu riziko, a navrhnite stupnicu pre vyjadrenie zavaznosti rizik a metodiku pre odvodenie odpovedajucich hodnoteni zavaznosti rizika.
+
+6.Vymenujte a strucne charakterizujte procesy rizeni rizik.

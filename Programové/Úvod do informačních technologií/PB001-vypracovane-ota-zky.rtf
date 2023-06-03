@@ -1,0 +1,456 @@
+{\rtf1\ansi\ansicpg1250\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11900\viewh15320\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 1.Uve\uc0\u271 te, \u269 o rozumiete pod pojmomm von Neumannova architekt\'fara po\u269 \'edta\u269 ov a stru\u269 ne t\'fato architekt\'faru pop\'ed\'9ate.\
+\
+Je to z\'e1kladn\'e1 sch\'e9ma architekt\'fary po\uc0\u269 \'edta\u269 a, kde sa technick\'e9 vybavenie po\u269 \'edta\u269 a rozde\u318 uje na tieto z\'e1kladn\'e9 vz\'e1jomne prepojen\'e9 \u269 asti: procesor (pr\'edpadne aj radi\u269 ), pam\'e4\u357  (zdie\u318 an\'e1 pre d\'e1ta aj in\'9atrukcie) a perif\'e9rie (vstupn\'e9 / v\'fdstupn\'e9 / vstupno-v\'fdstupn\'e9 zariadenia).\
+\
+V takejto architekt\'fare po\uc0\u269 \'edta\u269 a prebieha RIADEN\'c9 spracovanie d\'e1t. A\'9e na mal\'e9 v\'fdnimky je t\'e1to sch\'e9ma platn\'e1 dodnes. Od s\'fa\u269 asn\'fdch po\u269 \'edta\u269 ov sa von Neumannova sch\'e9ma odli\'9auje t\'fdm, \'9ee nezah\u341 \u328 a mo\'9enos\u357  uplatnenia viacer\'fdch procesorov a viacero pam\'e4t\'ed.\
+\
+---\
+\
+2.Ak\'fa \'9atrukt\'faru a ak\'e9 vlastnosti o\uc0\u269 ak\'e1vate od vn\'fatornej pam\'e4te po\u269 \'edta\u269 a?\
+\
+O\uc0\u269 ak\'e1vam ve\u318 k\'fa 2D \'9atrukt\'faru (st\u314 pce x riadky = matica), ktor\'e1 n\'e1m mimochodom ur\u269 uje rozsah adries.\
+Sl\'fa\'9ei k uchovaniu strojov\'e9ho k\'f3du a d\'e1t aktu\'e1lne be\'9eiacich procesov.\
+\
+Vlastnosti:\
+- je priamo adresovate\uc0\u318 n\'e1 (st\u314 pec, riadok) a procesor k nej m\'e1 priamy pr\'edstup\
+- je volatiln\'e1 - po preru\'9aen\'ed pr\'fadu sa d\'e1ta stratia\
+\
+- rozsah adries: 16, 32, 64, \'85 bitov\
+- cyklus pam\'e4te - doba, za ak\'fd \uc0\u269 as s\'fa d\'e1ta ulo\'9een\'e9 alebo na\u269 \'edtan\'e9\
+\
+- m\'f4\'9ee by\uc0\u357  statick\'e1 / dynamick\'e1 - statick\'e1 pam\'e4\u357  je stabiln\'e1, tzn. \'9ee pokia\u318  je priv\'e1dzan\'fd pr\'fad, dok\'e1\'9ee uchov\'e1va\u357  \'fadaje, dynamick\'e1 pam\'e4\u357  podlieha aj pri priv\'e1dzan\'ed pr\'fadu strate d\'e1t, preto ju je potrebn\'e9 periodicky obnovova\u357 \
+- m\'f4\'9ee by\uc0\u357  r\'fdchla / pom\'e1l\'e1, drah\'e1 / lacn\'e1 (r\'fdchlaj\'9aia je spravidla drah\'9aia ne\'9e pomal\'9aia)\
+\
+---\
+\
+3.\uc0\u268 o s\'fa a na\u269 o sl\'fa\'9eia API (Aplika\u269 n\'e9 programov\'e9 rozhrania)?\
+\
+(application programming interface)\
+API definuje PR\'cdSTUP k opera\uc0\u269 n\'e9mu syst\'e9mu a \u271 al\'9a\'edm zlo\'9ek\'e1m.\
+\
+Je to zbierka defin\'edcii funkc\'ed\'ed, d\'e1tov\'fdch \'9atrukt\'far a tried, ktor\'e9 m\'f4\'9ee program\'e1tor vyu\'9e\'edva\uc0\u357 .\
+Predstavuje abstrakciu volanej slu\'9eby, ktor\'e1 zjednodu\'9auje spr\'e1vu k\'f3du a je prenosite\uc0\u318 n\'e1.\
+Pr\'edklad API: OpenGl alebo DirectX\
+\
+---\
+\
+4.\uc0\u268 o je AUTENTIZ\'c1CIA? A \u269 o je AUTORIZ\'c1CIA? Uve\u271 te jednu autentiza\u269 n\'fa met\'f3du, pou\'9e\'edvan\'fa na po\u269 \'edta\u269 och alebo v po\u269 \'edta\u269 ov\'fdch sie\u357 ach.\
+\
+AUTENTIZ\'c1CIA - prices overenia identity subjektu - subjekt mus\'ed preuk\'e1za\uc0\u357  svoju toto\'9enos\u357  na z\'e1klade nie\u269 oho \u269 o vlastn\'ed (napr. OP), nie\u269 oho \u269 o vie (napr. PIN) alebo nie\u269 oho \u269 \'edm je (napr. hlas)\
+\
+AUTORIZ\'c1CIA je udelenie pr\'edstupu k nejakej slu\'9ebe na z\'e1klade autentiz\'e1cie\
+\
+Pr\'edklad autentiza\uc0\u269 nej met\'f3dy: zadanie ID a hesla\
+\
+---\
+\
+5.Ak\'e9 probl\'e9my rob\'ed v\'fdpl\uc0\u328  pl\'f4ch na rasterov\'fdch displejoch? Ako sa tieto probl\'e9my rie\'9aia?\
+\
+M\'f4\'9ee nasta\uc0\u357  strata detailov, vznik ne\'9eiad\'facich artefaktov alebo rozpad tvaru a rie\'9ai sa to zv\'fd\'9aen\'edm rozl\'ed\'9aenia, predfiltrovan\'edm (anti-aliasing - ka\'9ed\'e9mu pixelu je nastaven\'e1 intenzita pomerne k ve\u318 kosti plochy, ktorou je zakr\'fdvan\'fd rasterov\'fdm objektom) alebo postfiltrovan\'edm\
+\
+---\
+\
+6.Ako je v grafick\'fdch syst\'e9moch zobrazovan\'e1 farba (a ako ju popisujeme v software)? Uve\uc0\u271 te jeden sp\'f4sob k\'f3dovania farby.\
+\
+Na ka\'9edom grafickom syst\'e9me m\'f4\'9ee by\uc0\u357  farba udan\'e1 t\'fdm ist\'fdm digit\'e1lnym k\'f3dom zobrazen\'e1 r\'f4zne.\
+Ka\'9ed\'e9 zariadenie m\'e1 svoj farebn\'fd gamut, \uc0\u269 o je mno\'9eina farieb, ktor\'fdmi dan\'e9 zariadenie disponuje.\
+\
+V software reprezentujeme farbu 8, 15, 16, 24 (True Color), a\'9e 96 bitmi.\
+\
+Sp\'f4sob k\'f3dovania farieb: RGB / CMY\
+RGB - adit\'edvn\'fd - pripo\uc0\u269 \'edtava farvy k bielej - zodpoved\'e1 skladaniu svetla - vyu\'9e\'edva sa v LCD a CRT monitoroch\
+CMY - subtrakt\'edvn\'fd - odpo\uc0\u269 \'edtava farby od bielej - zodpoved\'e1 mie\'9aaniu farieb (napr. atrament)\
+\
+---\
+\
+7.Ako s\'fa v po\uc0\u269 \'edta\u269 i reprezentovan\'e9 "re\'e1lne" \u269 \'edsla (reda \u269 \'edsla s desatinnou \u269 as\u357 ou)? Na ktor\'e9 \u269 asti m\'e1 vplyv presnos\u357  zobrazenia?\
+\
+V po\uc0\u269 \'edta\u269 i neexistuje nekone\u269 n\'fd rozsah, existuje len kone\u269 n\'e1 reprezent\'e1cia, \u269 o je konkr\'e9tny kone\u269 n\'fd interval hodn\'f4t, ktor\'e9 dok\'e1\'9eeme na tom danom po\u269 \'edta\u269 i zobrazi\u357 .\
+\
+Re\'e1lne \uc0\u269 \'edsla s\'fa reprezentovan\'e9 mantisou m a exponentom e.\
+0 <= m <= 1 ^ x = m . 2^e\
+\
+Presnos\uc0\u357  zobrazenia, z\'e1le\'9e\'ed od toho, ko\u318 ko bitov po\u269 \'edta\u269  pou\'9e\'edva na reprezent\'e1ciu hodn\'f4t.\
+\
+---\
+\
+8.\uc0\u268 o rozumiete pod pojmom preru\'9aenie? Kde sa s n\'edm stret\'e1vame? Pop\'ed\'9ate z\'e1kladn\'e9 princ\'edpy jeho spracovania.\
+\
+Preru\'9aenie je mechanizmus, ktor\'fd umo\'9e\uc0\u328 uje pozastavi\u357  vykon\'e1van\'fd proces na z\'e1klade externej pr\'ed\u269 iny, kedy je nutn\'e9 ulo\'9ei\u357  si stav preru\'9aovan\'e9ho procesu, aby ho bolo mo\'9en\'e9 nesk\'f4r obnovi\u357 . Obsluhu preru\'9aenia realizuje jadro OS - kernel - vyvol\'e1 tzv. prepnutie kontextu, \u269 o je oper\'e1cia, pri ktorej OS prep\'edna riadenie medzi procesmi.\
+\
+Pod\uc0\u318 a priority s\'fa: nemaskovan\'e9 (najvy\'9a\'9aia priorita), aktu\'e1lne spracov\'e1van\'e9, maskovn\'e9\
+\
+Stret\'e1vame sa s n\'edm pri:\
+- podpore I / O\
+- neautorizovanom pr\'edstupe (napr. ke\uc0\u271  sa program dostane na miesto v pam\'e4ti, ktor\'e9 mu nepatr\'ed)\
+- zabr\'e1neniu p\'e1du syst\'e9mu pri pou\'9eit\'ed neleg\'e1lnych in\'9atrukci\'ed alebo operandov (napr. delenie nulou)\
+- n\'e1silnom ukon\uc0\u269 en\'ed programu\
+- v\'fdpadku hardware alebo pri prehrievan\'ed\
+\
+Pr\'edklady:\
+- preru\'9aenie od \uc0\u269 asova\u269 a (prepl\'e1novanie procesov, timeout)\
+- preru\'9aenie od perif\'e9rie (kl\'e1vesnica, my\'9a, sie\uc0\u357 ov\'e1 karta)\
+- preru\'9aenie z procesoru (delenie nulou, chybn\'e1 oper\'e1cia)\
+\
+Z\'e1kladn\'e9 princ\'edpy jeho spracovania:\
+Ak je pr\'ed\uc0\u269 ina len jedna a potrebuje sa preru\'9ai\u357  beh aktu\'e1lneho programu, je nutn\'e9 ulo\'9ei\u357  jeho stav a zapam\'e4ta\u357  si miesto n\'e1vratu.\
+\
+Ak je viacero zdrojov a pr\'ed\uc0\u269 in preru\'9aenia, je potrebn\'e9 rozl\'ed\'9ai\u357  typy (pr\'ed\u269 iny) preru\'9aenia a zapam\'e4ta\u357  si zdroj preru\'9aenia.\
+\
+---\
+\
+9.Pop\'ed\'9ate \'9atrukt\'faru ADRIES v internete. Viete, ako s\'favis\'ed ADRESA a MENO uzlu? Viete z adresy zisti\uc0\u357  meno uzlu (ako to urob\'edte)?\
+\
+URL adresa je univerz\'e1lny form\'e1t mena pou\'9e\'edvan\'fd na ozna\uc0\u269 enie zdroja na internete. \
+Je to vytla\uc0\u269 ite\u318 n\'fd re\u357 azec znakov ASCII skladaj\'faci sa z t\'fdchto \u269 ast\'ed:\
+\
+- method - met\'f3da (protokol), ktor\'fd m\'e1 by\uc0\u357  vyu\'9eit\'fd pri pr\'edstupe k odkazovan\'e9mu zdroju\
+- host - uzol, kde sa odkazovan\'e1 inform\'e1cia nach\'e1dza (kde m\'e1 by\uc0\u357  vyh\u318 adan\'e1)\
+- port - volite\uc0\u318 n\'e1 s\'fa\u269 as\u357 , pokia\u318  je vyu\'9eit\'fd in\'fd ne\'9e \'9atandardn\'fd port\
+- path - cesta, kde sa odkazovan\'e1 inform\'e1cia nach\'e1dza (+ pr\'edpadne \uc0\u271 al\'9aie inform\'e1cie (parametre))\
+\
+IP adresa jednozna\uc0\u269 ne ur\u269 uje uzol pomocou \u269 \'edselnej adresy.\
+- v IPv4 protokole adresu ur\uc0\u269 uje 32 bitov a be\'9ene sa zapisuje dekadicky vo form\'e1te: A.B.C.D\
+- v IPv6 protokole adresu ur\uc0\u269 uje 128 bitov a be\'9ene sa zapisuje hexadecim\'e1lnym z\'e1pisom\
+\
+Ka\'9ed\'e1 URL a ka\'9ed\'e1 IP je unik\'e1tna a ka\'9ed\'e1 URL adresa rezprezentuje pr\'e1ve jednu konkr\'e9tnu IP adresu.\
+Napr.: www.google.com <--> 173.194.112.83\
+\
+\'c1no vieme, urob\'edme to prostredn\'edctvom DNS (Domain Name System), \uc0\u269 o je slu\'9eba na preklad dom\'e9nov\'fdch mien na IP adresy a sp\'e4\u357 .\
+\
+---\
+\
+10.\uc0\u268 o je to TCP (Transmission Control Protocol), kde a na \u269 o sa pou\'9e\'edva a ak\'e9 m\'e1 vlastnosti?\
+\
+TCP je hlavn\'fd prenosov\'fd protokol na internete, ktor\'fd sa pou\'9e\'edva na prenos d\'e1t v sieti, zabezpe\uc0\u269 uje inici\'e1ciu spojenia a garantovan\'fd prenos (kontrola doru\u269 enia).\
+\pard\pardeftab720
+\cf0 \
+Vlastnosti:\
+- je schopn\'fd reagova\uc0\u357  na zahltenie (spomal\'fd a znovu postupne prid\'e1va)\
+- overuje, \'9ee pakety sa nestratili t\'fdm, \'9ee ka\'9ed\'e9mu paketu pridel\'ed poradov\'e9 \uc0\u269 \'edslo, ktor\'e9 sa tie\'9e pou\'9eije k overeniu, \'9ee d\'e1ta boli prijat\'e9 v spr\'e1vnom porad\'ed\
+- na strane pr\'edjemcu odosiela sp\'e4\uc0\u357  potvrdenie pre pakety, ktor\'e9 boli \'faspe\'9ane prijat\'e9. pokia\u318  by sa odosielate\u318 ovi potvrdenie nevr\'e1tilo do rozumnej doby, data by vyslal znovu\
+- overuje, \uc0\u269 i prenesen\'e9 d\'e1ta neboli po\'9akoden\'e9 t\'fdm, \'9ee pred odoslan\'edm spo\u269 \'edta kontroln\'fd s\'fa\u269 et, ulo\'9e\'ed ho do odosielan\'e9ho paketu a pr\'edjemca kontroln\'fd s\'fa\u269 et vypo\u269 \'edta znovu a over\'ed, \u269 i sa zhoduj\'fa\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+---\
+\
+11.Pop\'ed\'9ate z\'e1kladn\'e9 vlastnosti P2P syst\'e9mov. Uve\uc0\u271 te pr\'edklad vlastnosti, v ktorej je P2P syst\'e9m lep\'9a\'ed ne\'9e klient/server model.\
+\
+P2P je decentralizovan\'fd distribuovan\'fd syst\'e9m (klient-klient) tvoren\'fd vz\'e1jomne komunikuj\'facimi entitami (peery). Je to opak modelu klient-server.\
+\
+Ka\'9ed\'fd peer je z\'e1rove\uc0\u328  serverom aj klientom.\
+- poskytuje slu\'9eby ostatn\'fdm peerom - rola serveru\
+- vyu\'9e\'edva slu\'9eby ostatn\'fdch peerov - rola klienta\
+\
+Pr\'edklady: Skype, BitTorrent, BitCoin...\
+\
+Vlastnosti:\
+- distribuovan\'e9 riadenie - neexistuje centr\'e1lna entita\
+- samoorganiz\'e1cia\
+- heterogenita - peeria be\'9eia na r\'f4znych platform\'e1ch\
+- \'9ak\'e1lovate\uc0\u318 nos\u357  - nehroz\'ed pre\u357 a\'9eenie centr\'e1lnej entity\
+- dynamika - topologia syst\'e9mu sa ve\uc0\u318 mi r\'fdchlo men\'ed\
+- zdie\uc0\u318 anie zdrojov - ka\'9ed\'fd peer sa so svojimi zdojmi podie\u318 a na fungovan\'ed P2P syst\'e9mu \
+\
+Pr\'edklad vlastnosti, v ktorej je P2P syst\'e9m lep\'9a\'ed ne\'9e klient/server model:\
+- \'9ak\'e1lovate\uc0\u318 nos\u357  - s rast\'facim po\u269 tom peerov v P2P syst\'e9me rastie kapacita syst\'e9mu, kde\'9eto K-S model je limitovan\'fd hardwareov\'fdmi parametrami serveru\
+- spo\uc0\u318 ahlivos\u357  - P2P nie je z\'e1visl\'fd na behu jedn\'e9ho serveru - je do ve\u318 kej miery redundantn\'fd - jednu funkcionalitu poskytuje z\'e1rove\u328  viacero peerov\
+\
+---\
+\
+12.Kde a ako m\'f4\'9ee informatika pom\'f4c\uc0\u357  vedeck\'e9mu b\'e1daniu (myslen\'e9 b\'e1danie v neinformatick\'fdch odboroch)?\
+\
+Informatika m\'f4\'9ee pom\'f4c\uc0\u357  vedeck\'e9mu b\'e1daniu napr. t\'fdm, \'9ee zlep\'9auje komunik\'e1ciu \u318 ud\'ed, \u269 i u\'9e na mal\'e9 alebo obrovsk\'e9 vzdialenosti, pom\'e1ha uskuto\u269 \u328 ova\u357  zlo\'9eit\'e9 v\'fdpo\u269 ty, uklada\u357  a spracov\'e1va\u357  obrovsk\'e9 objemy d\'e1t a pod.\
+\
+CERN - h\uc0\u318 adanie bo\'9eskej \u269 astice - Hixov boz\'f3n, predpovede po\u269 asia, virtu\'e1lne vedeck\'e9 t\'fdmy, po\u269 \'edta\u269 ov\'e9 simul\'e1cie napr. v automobilovom priemysle, \'9atatistick\'e9 spracovanie ve\u318 k\'fdch s\'faborov napr. v astron\'f3mii\
+\
+------------------------------------------------------------------------------------------------------------------------------------------------\
+\
+0.1.Uve\uc0\u271 te alternat\'edvu preru\'9aenia\
+\
+polling\
+\
+---\
+\
+0.2.\uc0\u268 o je to POLLING? Kedy je efekt\'edvnej\'9aie pou\'9ei\u357  polling namiesto preru\'9aenia?\
+\
+polling je opakovan\'fd dotaz na udalos\uc0\u357  alebo stav nie\u269 oho\
+\
+---\
+\
+0.3.Vysvetlite rozdiel medzi P2P a K-S modelom\
+\
+n\'e1ro\uc0\u269 nos\u357  zbudovania\
+- K-S vyu\'9e\'edva jednoduch\'e9 modely komunik\'e1cie\
+- P2P vy\'9eaduje komplexn\'e9 interakcie\
+\
+spravovate\uc0\u318 nos\u357 \
+- spr\'e1va K-S je preh\uc0\u318 adnej\'9aia v\u271 aka koncentr\'e1cii komunik\'e1cie v jednom bode\
+\
+\'9ak\'e1lovate\uc0\u318 nos\u357 \
+- K-S model je limitovan\'fd hardwareov\'fdmi parametrami serveru\
+- P2P syst\'e9m \'9ak\'e1luje z princ\'edpu - s rast\'facim po\uc0\u269 tom peerov rastie kapacita syst\'e9mu\
+\
+bezpe\uc0\u269 nos\u357 \
+- v K-S je za bezpe\uc0\u269 nos\u357  zodpovedn\'fd server\
+- v P2P syst\'e9m je zodpovednos\uc0\u357  rozlo\'9een\'e1 medzi peery - nutnos\u357  komplexnej\'9a\'edch bezpe\u269 nostn\'fdch protokolov\
+\
+spo\uc0\u318 ahlivos\u357 \
+- v K-S syst\'e9m je z\'e1visl\'fd na behu serveru\
+- P2P syst\'e9m je do ve\uc0\u318 kej miery redundantn\'fd - jednu funkcionalitu poskytuje z\'e1rove\u328  viacero peerov\
+\
+---\
+\
+0.4.1.Pre\uc0\u269 o s\'fa pod\u318 a m\u328 a rastrov\'e9 displeje pou\'9e\'edvanej\'9aie? (asi ne\'9e vektorov\'e9)\
+\
+Preto\'9ee v\'fdvoj v\'fdpo\uc0\u269 etnej techniky sa uberal smerom zobrazovania textov a k pr\'e1ci s farebnou grafikou, kde je vektorov\'e9 zobrazenie nev\'fdhodn\'e9 resp.neefekt\'edvne.\
+\
+Dnes s\'fa u\'9e takmer v\'9aetky modern\'e9 zobrazovacie met\'f3dy zalo\'9een\'e9 na rasteroch.\
+\
+---\
+\
+0.5.Re\'e1lne \uc0\u269 \'edsla - ak\'fd je rozdiel medzi 32bitovou a 64bitovou presnos\u357 ou???\
+\
+64bitov\'e1 presnos\uc0\u357  je presnej\'9aia, dok\'e1\'9ee reprezentova\u357  v\'e4\u269 \'9a\'ed rozsah hodn\'f4t.\
+\
+---\
+\
+0.6.\uc0\u268 o je to rasteriz\'e1cia\
+\
+rasteriz\'e1cia je proces konverzie vektorov\'e9ho obrazu, tvoren\'e9ho matematicky definovan\'fdmi geometrick\'fdmi tvarmy, do rasterov\'e9ho obrazu, tvoren\'e9ho maticou obrazov\'fdch bodov - pixelov\
+\
+---\
+\
+0.7.\uc0\u268 o je to deleg\'e1cia\
+\
+prek\'e1zanie, \'9ee JA m\'f4\'9eem vystupova\uc0\u357  za niekoho in\'e9ho\
+\
+------------------------------------------------------------------------------------------------------------------------------------------------\
+\
+1.Rozdiel medzi preklada\uc0\u269 om (kompilerom?) a interpretom + pr\'edklady jazykov, kt. su prekladan\'e9 interpretovane\
+\
+Preklada\uc0\u269  preklad\'e1 n\'e1\'9a zdrojov\'fd k\'f3d do medzijazyka a n\'e1sledne do strojov\'e9ho jazyka, ktor\'e9mu rozumie procesor. Nasleduje zostavenie - kv\'f4li pou\'9e\'edvaniu proced\'far a funkci\'ed - potrebujeme ich vytiahnu\u357  z knihovien a rie\'9ai e\'9ate to, kam ten program p\'f4jde do pam\'e4te. (exist. aj dynamick\'e9 zostavovanie - za behu)\
+\
+Inerpret\'e1cia znamen\'e1, \'9ee program be\'9e\'ed na abstraktnom po\uc0\u269 \'edta\u269 i (virtu\'e1lnom). Je tu mo\'9enos\u357  preklada\u357  za behu (just-in-time).\
+\
+Napr\'edklad Javu preklad\'e1me do Bytecode a potom m\'e1me Java virtual machine, ktor\'fd tomuto jazyku ch\'e1pe.\
+alebo Python.\
+\
+---\
+\
+2.1.\uc0\u268 o je kernel a na \u269 o sl\'fa\'9ei (ak\'e9 m\'e1 funkcie)\
+\
+Kernel je jadro OS. Je jeho z\'e1kladnou a najni\'9e\'9aou zlo\'9ekou.\
+\
+Zodpoved\'e1 za: \
+- alok\'e1ciu a spr\'e1vu zdrojov\
+- priame ovl\'e1danie hardwareu\
+- bezpe\uc0\u269 nos\u357 \
+\
+---\
+\
+2.1.1.\uc0\u268 o je mikrokernel?\
+\
+- mal\'e9 je pekn\'e9 :D \
+- zaveden\'e9 mikromoduly, ktor\'e9 s\'fa zodpovedn\'e9 za konkr\'e9tne oper\'e1cie\
+- ve\uc0\u318 a funkci\'ed bolo presunut\'fdch do u\'9e\'edvate\u318 sk\'e9ho priestoru, tak\'9ee v jadre zostalo len to najnutnej\'9aie \u269 o tam mus\'ed by\u357 \
+- vysoko flexibiln\'fd - \'faprava OS pod\uc0\u318 a potreby\
+\
+---\
+\
+2.2.Monolitick\'fd a modul\'e1rny OS - porovnaj\
+\
+Monolitick\'fd OS\
+- p\'f4vodn\'e9 opera\uc0\u269 n\'e9 syst\'e9my\
+- nejasn\'e9 rozl\'ed\'9aenie funkci\'ed vn\'fatri opera\uc0\u269 n\'e9ho syst\'e9mu\
+- ve\uc0\u318 k\'e9, zle \'9a\'edrite\u318 n\'e9, zle udr\'9eiavate\u318 n\'e9 syst\'e9my\
+- vysok\'e9 ceny\
+\
+Vrstven\'fd OS\
+- s\'fa v \uc0\u328 om vrstvy, ktor\'e9 zodpovedaj\'fa procesom spr\'e1vy\
+	- spr\'e1va CPU\
+	- spr\'e1va pam\'e4te\
+	- spr\'e1va perif\'e9ri\'ed\
+	- spr\'e1va syst\'e9mu s\'faborov\
+- komunik\'e1cia medzi vrstvami\
+\
+- lep\'9aia abstrakcia\
+\
+Modul\'e1rny OS\
+- moduly namiesto vrstiev\
+- komunik\'e1cia medzi modulmi\
+\
+- zap\'fazdrenie funkci\'ed\
+- pr\'edbuzn\'fd objektov\'e9mu pr\'edstupu\
+- lep\'9aia \'fadr\'9eba\
+- riziko vzniku FATWARE - riziko vzniku rozsiahlych modulov, ktor\'e9 nemaj\'fa prakticky \'9eiadnu funkciu\
+\
+---\
+\
+3.1.Rozdiel medzi symetrickou a asymetrickou kryptografiou\
+\
+Symetrick\'e1 kryptografia - pri \'9aifrovan\'ed aj de\'9aifrovan\'ed sa pou\'9e\'edva jeden rovnak\'fd s\'fakromn\'fd k\uc0\u318 \'fa\u269 , ktor\'fd komunikuj\'face strany zdie\u318 aj\'fa. Odosielate\u318  za\'9aifruje spr\'e1vu t\'edmto k\u318 \'fa\u269 om, odo\'9ale ju a pr\'edjemca pou\'9eije tento k\u318 \'fa\u269  na de\'9aifrovanie spr\'e1vy.\
+\
+RIZIKO: zdie\uc0\u318 anie k\u318 \'fa\u269 a - \u269 im viac str\'e1n je zahrnut\'fdch do komunik\'e1cie, t\'fdm v\'e4\u269 \'9aie je riziko jeho vyzradenia.\
+\
+Asymetrick\'e1 kryptografia - vyu\'9e\'edva 2 k\uc0\u318 \'fa\u269 e - s\'fakromn\'fd, ktor\'fd by mal by\u357  dostupn\'fd len majite\u318 ovy a verejn\'fd, ktor\'fd je vo\u318 ne dostupn\'fd. Odosielate\u318  za\'9aifruje spr\'e1vu verejn\'fdm k\u318 \'fa\u269 om pr\'edjemcu, odo\'9ale ju a pr\'edjemca pou\'9eije svoj s\'fakromn\'fd k\u318 \'fa\u269  na de\'9aifrovanie spr\'e1vy.\
+\
+RIZIKO: autenticita verejn\'e9ho k\uc0\u318 \'fa\u269 a - \'fato\u269 n\'edk m\'f4\'9ee podstr\u269 i\u357  odosielate\u318 ovi falo\'9an\'fd verejn\'fd k\u318 \'fa\u269 .\
+\
+---\
+\
+3.2.Certifika\uc0\u269 n\'e1 autorita + s akym sp\'f4sobom \'9aifrovania s\'favis\'ed\
+\
+Certifika\uc0\u269 n\'e1 autorita je d\'f4veryhodn\'e1 tretia strana, ktor\'e1 vydan\'edm digit\'e1lneho certifik\'e1tu potvrdzuje, \'9ee dan\'fd verejn\'fd k\u318 \'fa\u269  patr\'ed konkr\'e9tnemu subjektu.\
+\
+S\'favis\'ed s asymetrickou kryptografiou.\
+\
+---\
+\
+3.3.\uc0\u268 o je to digit\'e1lny podpis - pop\'ed\'9ate jeho princ\'edp\
+\
+Digit\'e1lny podpis je \uc0\u269 as\u357  elektronick\'e9ho dokumentu, ktor\'e1 potvrdzuje jeho p\'f4vod. Z obsahovej \u269 asti dokumentu sa vytvor\'ed HASH, ktor\'fd sa za\'9aifruje s\'fakromn\'fdm k\u318 \'fa\u269 om. Ktoko\u318 vek ho potom pr\'edslu\'9an\'fdm verejn\'fdm k\u318 \'fa\u269 om m\'f4\'9ee de\'9aifrova\u357  a overi\u357  zhodnos\u357  HASHov.\
+\
+HASH je re\uc0\u357 azec znakov pevnej d\u314 \'9eky (pre \u318 ubovo\u318 ne dlh\'fd vstup), ktor\'fd vznikol aplik\'e1ciou hashovacej funkcie na spr\'e1vu. Hash reprezentuje p\'f4vodn\'fa spr\'e1vu - je to jej otla\u269 ok.\
+\
+---\
+\
+4.Zobrazenie z\'e1porn\'fdch \uc0\u269 \'edsel\
+\
+Z\'e1porn\'e9 \uc0\u269 \'edsla zobrazujeme pomocou priameho, inverzn\'e9ho alebo doplnkov\'e9ho k\'f3du.\
+\
+- priamy k\'f3d - prv\'fd bit reprezentuje znamienko - znamienkov\'fd bit\'85 5: 00101, -5: 1010\
+- inverzn\'fd k\'f3d - z\'e1porn\'e9 \uc0\u269 \'edsla sa reprezentuj\'fa ich bin\'e1rnou inverziou pr\'edslu\'9an\'e9ho kladn\'e9ho \u269 \'edsla\
+- doplnkov\'fd k\'f3d - z\'e1porn\'e9 \uc0\u269 \'edslo sa vyjadruje ako bin\'e1rna inverzia pr\'edslu\'9an\'e9ho kladn\'e9ho \u269 \'edsla zv\'e4\u269 \'9aen\'e1 o 1.\
+\
+Be\'9ene sa pou\'9e\'edva doplnkov\'fd k\'f3d, preto\'9ee neobsahuje z\'e1porn\'fa nulu a d\'e1 sa pou\'9ei\uc0\u357  rovnak\'fd algoritmus na s\u269 \'edtanie aj od\u269 \'edtanie.\
+\
+---\
+\
+5.Procesor - \uc0\u269 o to je, z \u269 oho sa sklad\'e1 a \u269 \'edm ho charakterizujeme + ak\'e9 typy procesorov pozn\'e1\'9a? (Pri 2 z nich pop\'ed\'9a rozdiely)\
+\
+Procesor je tzv.srdce po\uc0\u269 \'edta\u269 a. Je to jedna zo z\'e1kladn\'fdch komponent technick\'e9ho vybavenia po\u269 \'edta\u269 a. Jedn\'e1 sa o stroj vykon\'e1vaj\'faci in\'9atrukcie (sekven\u269 ne zap\'edsan\'e9) - r\'fdchlos\u357  vykon\'e1vania in\'9atrukci\'ed je dan\'e1 vn\'fatorn\'fdmi hodinami a cyklom, ktor\'fd naz\'fdvame takt procesoru.\
+\
+Procesor sa sklad\'e1 z vn\'fatorn\'fdch hod\'edn a jednej / viacer\'fdch z\'e1kladn\'fdch jednotiek sekven\uc0\u269 n\'fdch (ALU - arithmetic logic unit - aritmeticko-logick\'e1 jednotka)\
+\
+Charakterizujeme ho in\'9atruk\uc0\u269 n\'fdm cyklom, \u269 o je v\'fdber a prevedenie in\'9atrukcie jednou ALU jednotkou.\
+\
+Typy procesorov:\
+- univerz\'e1lne - v be\'9en\'fdch PC\
+	- CISC - (complex) dok\'e1\'9ee sprac. komplexn\'fa sadu in\'9atrukci\'ed - in\'9atrukcie jednoduch\'e9 a zlo\'9eitej\'9aie\
+	- RISC - (reduced) zjednodu\'9auje zlo\'9eitej\'9aie in\'9atrukcie na jednoduch\'e9 - redukovan\'e1 sada in\'9atrukci\'ed\
+- \'9apecializovan\'e9\
+	- vektorov\'e9 - napr.na predpovede po\uc0\u269 asia\
+	- grafick\'e9 - v grafick\'fdch kart\'e1ch \
+	- embedded - v dom\'e1cich spotrebi\uc0\u269 och\
+\
+---\
+\
+6.Virtu\'e1lna pam\'e4\uc0\u357  - pop\'ed\'9ate princ\'edp virtualiz\'e1cie pam\'e4te + ak\'fa ma spravidla (maxim\'e1lnu) ve\u318 kos\u357  + na \u269 o je dobr\'e1?\
+\
+Virtualiz\'e1cia pam\'e4te - technika, umo\'9e\uc0\u328 uj\'faca oddelenie spr\'e1vy fyzickej pam\'e4te od vyu\'9eitia pam\'e4te aplik\'e1ciami. Aplik\'e1cie dost\'e1vaj\'fa pridelen\'fd virtu\'e1lny adresovac\'ed priestor, ktor\'fd je pootm mapovan\'fd na fyzick\'fa pam\'e4\u357 . Je tak mo\'9en\'e9 pred aplik\'e1ciami skry\u357  fragment\'e1ciu pam\'e4te (prekladanie segmentov alokovan\'fdch pre r\'f4zne aplik\'e1cie) a oddeli\u357  adresovacie priestory jednotliv\'fdch aplik\'e1ci\'ed.\
+\
+---\
+\
+7.\uc0\u268 o je to kriminalita bielich golierov a ako s\'favis\'ed s IT\
+\
+Kriminalita bielych golierov je kriminalita p\'e1chan\'e1 od stolu prostredn\'edctvom IT technol\'f3gi\'ed.\
+\
+M\'f4\'9ee to by\uc0\u357 :\
+- zneu\'9e\'edvanie zdrojov na sieti (\'fa\uc0\u269 ty, v\'fdpo\u269 etn\'fd v\'fdkon, kapacita siete, po\'9atov\'e9 slu\'9eby)\
+- kr\'e1de\'9ee inform\'e1ci\'ed (\uc0\u269 \'edsla kreditn\'fdch kariet, telef\'f3nne linky, \'9apion\'e1\'9ena \u269 innos\u357 )\
+- v\'edrusy\
+- z\'e1merne zl\'e9 inform\'e1cie\
+- destabiliz\'e1cia spolo\uc0\u269 nosti - \'9a\'edrenie \'9apecifick\'fdch inform\'e1ci\'ed, \'fatoky na infra\'9atrukt\'faru, \'fatoky na citliv\'e9 inf.zdroje\
+\
+---\
+\
+8.Kon\'9atrukt\'edvna geometria telies\
+\
+Je to technika pou\'9e\'edvan\'e1 pri modelovan\'ed 3D objektov. Komplexn\'e9 objekty s\'fa z jednoduch\'9a\'edch vytv\'e1ran\'e9 pomocou boolsk\'fdch oper\'e1ci\'ed, ktor\'fdmi s\'fa zjednotenie, prienik a rozdiel.\
+\
+---\
+\
+9.\uc0\u268 o je to svetlo? \u268 o je to farebn\'fd priestor? Kde sa v grafike vyu\'9e\'edva?\
+\
+Svetlo je elektromagnetick\'e9 vlnenie charakterizovan\'e9 vlnovou d\uc0\u314 \'9ekou a intenzitou.\
+Vidite\uc0\u318 n\'e9 spektrum je od 400nm (fialov\'e1) - 700nm (\u269 erven\'e1).\
+\
+Farebn\'fd priestor \
+- spektrum farieb ktor\'e9 vieme vn\'edma\uc0\u357 \
+- subjekt\'edvna z\'e1le\'9eitos\uc0\u357  spracovania reality na\'9a\'edm okom a na\'9a\'edm mozgom - u ka\'9ed\'e9ho m\'f4\'9ee by\u357  to vn\'edmanie r\'f4zne\
+\
+---\
+\
+9.1.\uc0\u268 o je to vizualiz\'e1cia? + pre\u269 o treba pozna\u357  princ\'edp o\u269 n\'fdch klamov?\
+\
+Vizualiz\'e1cia je technika na vytvorenie obrazu - prevod d\'e1t vypo\uc0\u269 \'edtan\'fdch po\u269 \'edta\u269 om do zobrazite\u318 nej grafickej podoby.\
+\
+Preto\'9ee s nimi treba po\uc0\u269 \'edta\u357  pri tvorbe videa a da\u357  si pozor na to, aby sme ich nevytvorili, preto\'9ee dostaneme pravdepodobne ne\'9eelan\'fd v\'fdsledok.\
+\
+---\
+\
+10.Ak\'e9 techniky sa pou\'9e\'edvaj\'fa na spracovanie zvuku?\
+\
+Proces spracovania zvuku za\uc0\u269 \'edna AKVIZ\'cdCIOU zvuku, nasleduje VZORKOVANIE spojit\'e9ho sign\'e1lu, SPRACOVANIE vzniknut\'fdch zvukov\'fdch d\'e1t a ich ulo\'9eenie na nosi\u269 , \u269 i prenos po sieti.\
+\
+- akviz\'edcia - proces z\'edskavania d\'e1t pomocou vstupn\'fdch zariaden\'ed - mikrof\'f3n, videokamera\
+- vzorkovanie - odoberanie aktu\'e1lnych hodn\'f4t anal\'f3gov\'e9ho sign\'e1lu v pravideln\'fdch \uc0\u269 asov\'fdch intervaloch, ktor\'e9 s\'fa dan\'e9 vzrokovacou frekvenciou (napr. pri vz.frekv. 10kHz sa zaznamen\'e1 hodnota sign\'e1lu 10 000-kr\'e1t/sekundu)\
+\
+---\
+\
+11.\uc0\u268 o je text\'fara? Ak\'e9 druhy pozn\'e1\'9a?\
+\
+Text\'fara je detail pridan\'fd na povrch modelu.\
+\
+Druhy: \
+- procedur\'e1lna - vlastnosti povrchu s\'fa zadan\'e9 funkciou - dlho sa vypo\uc0\u269 \'edtava \
+- rasterov\'e1 - rasterov\'fd obraz je namapovan\'fd na povrchu modelu\
+\
+---\
+\
+12.\uc0\u268 o s\'fa to perif\'e9rie? Uve\u271  aspo\u328  3 druhy\'85\
+\
+S\'fa to zariadenia, ktor\'e9 sl\'fa\'9eia na vstup a v\'fdstup inform\'e1ci\'ed, pr\'edpadne vstup aj v\'fdstup v r\'e1mci jedn\'e9ho zariadenia (vstupn\'e9, v\'fdstupn\'e9, vstupno-v\'fdstupn\'e9).\
+\
+Druhy: \
+- na komunik\'e1cia s u\'9e\'edvate\uc0\u318 om - kl\'e1vesnica, my\'9a, \'85\
+- na permanentn\'e9 ukladanie d\'e1t - USB, \'85\
+- na komunik\'e1cia s in\'fdmi syst\'e9mami\
+\
+- \'9apecializovan\'e9 perif\'e9rie\
+	- \'9apecializovan\'e9 tla\uc0\u269 iarne\
+	- rezacie plottery\
+	- haptika - sn\'edma pohyb prstu\
+\
+---\
+\
+13.Na \uc0\u269 o sl\'fa\'9eia OS? Stru\u269 ne zd\'f4vodnite.\
+\
+- k spreh\uc0\u318 adneniu - zjednodu\'9auje pr\'e1cu s po\u269 \'edta\u269 om (s pam\'e4\u357 ou, so s\'fabormi, s perif\'e9riami)\
+- k zdie\uc0\u318 aniu - zabezpe\u269 uje zdie\u318 anie s\'faborov\
+\
+- k spr\'e1vnemu fungovaniu po\uc0\u269 \'edta\u269 a - OS koordinuje fungovanie ostatn\'fdch aplik\'e1ci\'ed, star\'e1 sa o komunik\'e1ciu s hardware. Poskytuje rozhranie aplik\'e1ci\'e1m, u\'9e\'edvate\u318 om\
+\
+- multitasking - OS umo\'9e\uc0\u328 uje spr\'e1vu viacer\'fdch procesov na jednoprocesorovom syst\'e9me\
+- multi user (time sharing) - OS podporuje s\'fabe\'9en\'fa pr\'e1cu viacer\'fdch u\'9e\'edvate\uc0\u318 ov\
+\
+---\
+\
+14.\uc0\u268 o je ekonomick\'fd a \u269 o je energetick\'fd imperativ?\
+\
+ekonomick\'fd imperativ\
+- pri zria\uc0\u271 ovan\'ed hardwareu mus\'edme pozera\u357  na finan\u269 n\'fa str\'e1nku, \u269 o to bude st\'e1\u357 \
+- \uc0\u269 i sa mi oplat\'ed viac ale pomal\'9aej pam\'e4te\
+\
+energetick\'fd imperativ \
+- notebooky - mus\'edme po\uc0\u269 \'edta\u357  s v\'fddr\'9eou bat\'e9rie\
+- napr. CERN je v prev\'e1dzke len v jari a v jeseni, preto\'9ee v lete sa klimatizuje a v zime sa top\'ed a nie s\'fa dostato\uc0\u269 n\'e9 energetick\'e9 zdroje, ktor\'e9 by utiahli cel\'fd komplex\
+\
+------------------------------------------------------------------------------------------------------------------------------------------------}

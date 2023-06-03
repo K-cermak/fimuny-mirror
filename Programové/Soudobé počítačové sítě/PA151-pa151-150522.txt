@@ -1,0 +1,27 @@
+PA151 Soudobé počítačové sítě
+Zkouška 22. 5.2015
+
+6 otázek, každá je hodnocena 0, 1, 2 – žádná/chybná odpověď, neúplná odpověď, správná odpověď 
+Hodnocení: 
+A: 12–10 bodů, 
+B: 9 bodů, 
+C: 8 bodů, 
+D: 7 bodů, 
+E: 6 bodů
+
+*1. Popište princip vytváření fyzických kanálů přenosu dat v sítích typu GSM.
+*2. Popište princip adresování stanic v sítích typu Bluetooth a charakterizujte účel a formát jednotlivých typů adres.
+*3. 
+(a) Popište strukturu systému adres v MAC rámci sítí typu 802.11
+(b) Charakterizujte obsah jednotlivých adresových polí v případě přenosu rámce předávaného mezi přístupovými body AP1 a 
+AP2 téhož distribučního systému ESS (Extended Service Set), který vyslala stanice A ležící v základní obsluhované sestavě, 
+BSS (Basic Service Set) obsluhované přístupovým bodem AP1 stanicí B ležící v základní obsluhované sestavě, BSS, 
+obsluhované přístupovým bodem AP2.
+*4. 
+(a) Popište princip synchronizace času v infrastrukturních sítích typu 802.11.
+(b) Popište princip synchronizace času v ad-hoc sítích typu 802.11.
+*5. Popište princip protokolu řízení přístupu k přenosovému médiu metodou Reservation Aloha – Explicitní rezervace.
+*6. 
+(a) Popište princip digitální modulace metodou kvadraturní amplitudové modulace QAM (Quadrature Amplitude Modulation). 
+(b) Nakreslete možný konstelační diagram modulace třídy QAM s bitovou rychlostí trojnásobně vyšší než je odpovídající 
+baudová rychlost.

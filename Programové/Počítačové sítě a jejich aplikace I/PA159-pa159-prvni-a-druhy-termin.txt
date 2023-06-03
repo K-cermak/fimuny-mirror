@@ -1,0 +1,31 @@
+﻿PA159 - Počítačové sítě a jejich aplikace I
+Vytvořil: Jerry
+
+Bylo 10 otázek po 10 bodech, 90 minut času.
+
+20.12.2012, skupina A, první termín
+---------------------------------
+1. Popiste L2 vrstvu ISO OSI modelu, adresaci na teto vrstve, funkci vrstvy, protokoly a pripadne algoritmy, ktere se zde pouzivaji.
+2. Jakym zpusobem je v IPv6 resena mobilita? Popiste vcetne schematu.
+3. Co jsou to autonomni systemy a jakym zpusobem se zde resi smerovani. Proc je vyhodne AS zavadet.
+4. Co znamena MPLS (Multiprotocol Label Switching) a jak pracuje, pro site jakeho rozsahu je vhodny? Co je to GMPLS?
+5. Jake jsou zakladni typy QoS based smnerovacich algoritmu? Alespon jeden popiste podrobneji.
+6. Popiste protokol RBUDP (Reliable Blast UDP). Do jake skupiny protokolu patri. Kdy ho lze s vyhodou pouzit?
+7. Popiste heuristicke smnerovaci strategie pouzivane v P2P sitich a alespon jednu z nich podrobneji.
+8. Popiste P2P site vyuzivajici PRR stromy a vyhledavani v nich.
+9. Jak pracuje reaktivni ad-hoc smnerovani (Reactive On demand Ad-hoc Routing)? Uvedte priklady konkretnich protokolu se strucnym popisem.
+10. Popiste prenosove a funkcni pozadavky multimedialnich sitovych aplikaci.
+
+
+9.1.2013, skupina B, druhý termín
+---------------------------------
+1. Co je to síťový komunikační protokol? Udejte základní definici. Uveďte způsob standardizace. Uveďte příklad protokolu pro kažou vrstvu ISO OSI modelu.
+2. Způsob tvorby IPv4 a IPv6 hlaviček? Jak se u IPv6 poznává fragmentace paketu?
+3. Jakou funkci má směrovač, uveďte jeho schéma. Jaký vliv má CIDR na jeho funkcionalitu?
+4. Jakým způsobem je zajištěna koexistence IPv4 a IPv6? Uveďte a popiště 3 základní řešení.
+5. Co jsou to protokoly IGRP a EIGRP, na co se používají?
+6. Jak probíhá digitalizace zvuku? Uveďte příklady alespoň 3 audio formátů.
+7. Co je to Traffic Engineering (TE), jeho popis, k čemu slouží a jaké základní metody používá?
+8. Co jsou to VANETs, jaké jsou výhody oproti obecným mobilním sítím?
+9. Směrování pomocí CHORD v P2P sítích, popis fungování, jaké vyhledávácí protokoly pro tuto metodu znáte?
+10. Co si představujete pod pojmem multimediální data? Jak je můžeme dělit? Jaké komunikační protokoly se používají pro přenos.

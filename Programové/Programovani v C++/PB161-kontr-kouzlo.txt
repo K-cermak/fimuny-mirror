@@ -1,0 +1,4 @@
+Jestil chcete mit vysledky testu z PB071 a PB161 hned, tak staci zadat aise tenhle prikaz. Pokud budete chtit takhle odevzdat i naostro pak staci prepsat "nanecisto" => "naostro"(predmet tehdy veld Svenda):
+
+touch /home/xtoth1/kontrPublic/odevzdani/special_pb161_nanecisto_xnovak_hw01
+

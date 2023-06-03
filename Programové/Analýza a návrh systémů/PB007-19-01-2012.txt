@@ -1,0 +1,14 @@
+PB007 - Analýza a návrh systémù - 19.1.2012
+---------------------------------------------------------------
+1. Pøipad užití - co to je, "notace", co se nachází uvnitø.
+2. Vysvìtlete pojmy: agregace, dìdiènost a jak se znaèí v UML.
+3. Feature-Driven Development - co to je a jak to funguje.
+4. UP (Unified Process) - jaké má fáze a popsat je.
+
+5. Kontextový diagram (4b), alespoò 8 událostí klasifikovaných dle YMSA (4b), prvotní DFD a ERD. (vše v "platné formì" a vyvážené)
+
+   Nìco takovýho:
+
+   Odborný pracovník zadává diplomové práce (DP) a studenti si vybírají, nìkteré práce nebudou vybrány. Odborný pracovník mùže být z fakulty, nebo mimo. Když není
+   z fakulty, pak je fakultou pøidìlen nìkdo z fakulty, aby kontroloval formální stránku práce. Když si student vybere DP je mu pøidìlen Vedoucí DP. 
+   Po dokonèení práce udìlá 1 odborník recenzi. Podle poètu DP je aktivována komise nebo více komisí, které se skládájí z odborných pracovníkù.

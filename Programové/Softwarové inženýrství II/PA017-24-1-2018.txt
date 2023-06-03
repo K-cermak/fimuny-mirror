@@ -1,0 +1,13 @@
+1. UP
+2. SCRUM
+3. Ako z funkènıch bodov zistím nároènos vıvoja?
+4. Ortogonálna klasifikácia defektov
+5. Korekènı faktor v Cocomo
+6. Putnamova rovnica
+7. Špirálovı model
+8. Opísa podrobne 2 metriky zloitosti vıvoja
+
+7. z 9 skúšok podzimu 2017/18 (boli dva predtermíny, a poslednú skúšku pridal iba asi 2 tıdne pred òou)
+90 minút
+40 bodov, polovica na E
+Kadého postupne volal na konkrétne miesto kam si mal sadnú, na predošlom termíne vraj niekoho chytili za opisovanie z mobilu tak to dos prízvukoval aby sa nestalo

@@ -1,0 +1,8 @@
+1) Co je to SW, z èeho je tvoøen
+2) Opotøebovává se SW? Popište výskyt chyb SW v èase
+3) Co je to externí vstup (v kontextu výpoètu funkèních bodù)
+4) Co znamená "verifikace SW"
+5) 2 výhody a 3 nevýhody vodopádu
+6) Popsat modely WebML
+7) Co znamená "iterativní vývoj"
+8) Nakreslit a popsat V-model

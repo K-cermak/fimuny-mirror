@@ -1,0 +1,46 @@
+Predtermin 20.12.2011, sk. B.
+
+Male info:
+?? - neviem to urcite, ci to tam bolo tak presne
+Vysledky vid diskusia by VS rok: 2011 n.l.
+
+1. Ktore je spravne?
+
+a) Godel obsahuje parametericke polymorfne typy
+b) Smalltalk vychadza z Javy
+c) Lisp je funkcionalny a je pouzivany na vedecke vypocty ??
+d) Nieco s pythonom ??
+e) Taktiez nejaky blabol o tom, ze nieco je super ??
+
+2. Mame proceduru p, ktora je uvedena nizsie. Mame globalnu premennu a, do ktorej je pred volanim procedury ulozene cele cislo n. Procedura je volana p(a,a,2*a). Aka hodnota bude v a po skonceni procedury?
+
+p(in x:int, ref y:int, name z:int)
+{
+   while(x > 0)
+   {
+      y = z;
+      x = x - 1;
+   }
+}
+
+a) 2^n * n  b) n^2  c) n*n   d) n^n   e) nic sa nezhoduje
+
+3. Mame typ bool, ktory okrem zakladnych boolovskych hodnot true a false obsahuje aj nulovu hodnotu. Napiste pocet prvkov v mnozine boolT x boolT a urcite, kolko z nich je maximalnych.
+
+a) 4 prvky 2 max    b) 9 prvkov 1 max
+c) 6 prvkov 2 max   d) 9 prvkov 4 max
+e) 10 prvkov 4 max
+
+4. Mame unarny znak 'E','a' a 'b'. Tieto slova patria do jazyka L, ktory je generovany mnozinou {a,b}. Zapis E znamena prazdne slovo, zapis A(E) znamena jednoznakove slovo 'a', zapis B(E) je jednoznakove slovo 'b'. Zapisy A(A(E)),A(B(E)), B(A(E)) a B(B(E)) su postupne slova aa,ab,ba,bb.
+Vytvorte unarnu fci Alternate, ktora akceptuje len slova, kde sa strieda 'a' a 'b'. T.j. akceptuje slova, kde za sebou nie su 2 rovanke znaky jazyka L. Pre prazdne a jednoznakove slova je funkcia Alternate zadana jednoducho. (pozn. autora: To, ze je zadana jednoducho asi znamena, ze pre E, A(E) a B(E) to proste plati).
+
+5. ?? Mame vyraz el := er, ktory funguje tak, ze sa najprv spocita prava strana er, ktorej hodnotu oznacime 'v', potom lava strana el, ktora spocita adresu 'a' a nakoniec sa hodnota 'v' ulozi na adresu 'a'.
+Hodnota vyrazu el := er, je 'v', preto mozme pocitat aj zlozene vyrazy ako x := y := 0, kde vacsiu prioritu ma vyraz vpravo, co si mozme predstavit ako x := (y := 0), t.j. najprv sa spocita to, co je v zatvorke, potom mimo zatvorky. Vyraz moze mat vedlajsie efekty.
+Aka hodnota bude pre vyraz M([e1 := e2 := e3])phi?
+
+a) M[e3]phi
+b) M[e3([e3])phi]
+c) M[e1]([e1]([e2]([e3])phi))
+d) M[e1]([e2](e3)phi)
+e) nic nie je spravne ??
+

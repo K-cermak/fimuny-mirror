@@ -1,0 +1,6 @@
+1. Popsat fáze 2-fázového commit protocolu
+2. Vysvìtlit, jak funguje obnovení pomocí deníku
+3. Jak funguje soubìžnost pomocí èasových razítek
+4. Kvórový DME algo
+5. Lampartovy vektory
+6. Problém generálù

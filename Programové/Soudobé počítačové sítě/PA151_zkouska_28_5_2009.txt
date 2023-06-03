@@ -1,0 +1,6 @@
+﻿1. Popište způsob řízení přístupu nenaléhající CSMA.
+2. Popište řízení přístupu v sítích Bluetooth
+3. Popište řízení přístupu CSMA v sítích 802.11
+4. Co jsou logické a fyzické kanály v sítích GSM, k čemu slouží dedikované kanály
+5. Co je to šířka pásma a jak souvisí s rychlostí přenosu.
+6. Nakreslete schéma telefonní služby, co jsou to doručovatelské služby.

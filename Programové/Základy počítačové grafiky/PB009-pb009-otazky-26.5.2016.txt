@@ -1,0 +1,12 @@
+1. Pro oøezávání polygonù se používá algoritmus Sutherland-Hodgman. Vysvìtlete princip, zakreslete celou sestavu a vysvìtlete funkci jednoho bloku.  Jaké pøípady øeší tento 
+algoritmus chybnì? + tam bol obrazok a za ulohu bolo napisat ake budu vystupne body polygonu po aplikacii algoritmu.
+
+2. Jak pøevedete kubiku v reprezentaci Hermite na stejnou kubiku v reprezentaci Bezier? Naznaète na obrázku, vysvìtlete.
+
+3. Nakreslete schématický obrázek lidského oka, oznaète jednotlivé èásti a jejich úlohu pro vidìní.
+
+4. Vysvìtlete metody konstantního a hladkého stínování s interpolací barvy a normály.
+Porovnejte principy a použitelné svìtelné modely.
+
+5. Bola dana rovina v priestore s linearne nezavyslymi vektormi U a V, a v nej leziaci bod A, cez ktory prechadzala normala roviny.
+Ulohou bolo napisat sadu transformacii, ktore otocia teleso okolo tejto normaly.
