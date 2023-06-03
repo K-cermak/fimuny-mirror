@@ -1,0 +1,13 @@
+MV013 Statistics for Computer Science: Oral exam on 03.06.19
+
+Two questions, approximately 10-15 minutes preparation on one sheet of paper, then
+around 10 minutes oral discussion about the topics.
+First question (simple) had almost always something to do with statistical graphics.
+Second question (hard) had almost always something to do with statistical inference.
+
+1. Describe a boxplot, what does it show, how can it be used to compare samples, etc.
+2. Testing of difference of two means, write down a test statistic (of your choosing),
+null and alternative hypotheses, show how to compute and decide on rejection via:
+critical region, confidence interval, p-value.
+
+Then quick look-through of the project and possible mistakes in it.

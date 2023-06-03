@@ -1,0 +1,15 @@
+Pisemna cast:
+1. Napsat matici transformace podle obrazku (zmena velikosti + posunuti + rotace)
+2. Linearni regrese - zadane 3 body, najit a, b
+3. Mandelbrotova mnozina - napsat vzorec a urcit jestli do ni nejaky body patri
+4. Podminena pravdepodobnost
+5. Napsat obecnou a parametrickou rovnici kruznice
+6. Umocneni na desetinne cislo, napsat "jednoduseji" (jako mocnina + odmocniny stacilo)
+
+Programovani:
+1. Bitmapova grafika - udelat dve elipsy a jejich xor.
+2. Triangulace - vygenerovat si body a udelat jejich triangulaci.
+3. Linearni regrese s tim, ze jsou zadane dva ruzne shluky bodu (pomichane) a maji se jimi prolozit dve primky.
+4. Nejkratsi cesta v grafu - kun na sachovnice na zadanem bodu a najit nejkratsi cestu do 0,0.
+
+

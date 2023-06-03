@@ -1,0 +1,16 @@
+Zkouška z teoruie Grafù, 24.1.2007, skupina B
+První èást:
+1) Tøi grafy na osmi vrcholech, najdìte isomorfní dvojice nebo ukažte že isomorfní nejsou
+
+2) Nakreslete graf s danými vlastnostmi a ukažte (dokažte) že váš graf tyto vlastnosti má!
+	a) Graf F má vrchol stupnì 4 a má právì 6 koster,
+	b) Graf G má všechny vrcholy stupnì 3 a neobsahuje kružnici C4 jako podgraf,
+	c) Graf H neobsahuje úplný graf K4 jako podgraf, pøesto na jeho obarvení nestaèí 3 barvy.
+
+Druhá èást:
+1) Mìjme libovolný graf G na 6 vrcholech.
+Pak G obsahuje trojúhelník nebo nezávislou množinu velikosti 3. Dokažte.
+
+2) Mìjme úplný bipartitní graf K5,5. Jeho hrany obarvíme libovolnì dvìma barvami (tøeba èervená a modrá,
+úplnì libovolnì, problém nesouvisí s hranovou barevností). Dokažte, že pak graf obsahuje kružnici C4 jako podgraf,
+kterou tvoøí hrany stejné barvy.

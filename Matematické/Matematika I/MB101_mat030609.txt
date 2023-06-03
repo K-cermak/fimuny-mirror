@@ -1,0 +1,310 @@
+Øešení 2. písemky z MB101 z 3.6.2009.
+
+Skupina A
+
+|1|. (5 bodu) V loterii je tazeno 5 cisel z mnoziny {1, 2, 2, ... , 35) pritom nezalezi na jejich poradi.
+Sazejici tipuje 5 cisel a vyhrava 1. cenu, pokud vsechna uhodne, 2. cenu, pokud tipuje spravne
+4 cisla a 3. cenu, jestlize spravne uhodne 3 cisla. Definujte vyznam kombinacniho cisla (n,k) a
+pomoci kombinacnich cisel vyjadrete pravdepodobnost:
+(a) ziskani 1. ceny;
+(b) toho, ze vsechna tazena cisla budou licha;
+(c) toho, ze alespon 2 tazena cisla budou suda;
+(d) ziskani 3. ceny.
+
+(a)
+(35,5) - poèet všechno možností
+   1   - poèet pøíznivých možností jevu A
+výsledek -> 1/(35,5)
+
+(b)
+18 - poèet všech lichých èísel, 5 - poèet tahù
+výsledek -> (18,5)/(35,5)
+
+(c)
+1. - jedno liché èíslo - (17,1)*(18,4)
+2. - žádné liché èíslo - (17,0)*(18,5)
+výsledek -> 1-((17,1)*(18,4)+(17,0)*(18,5)/(35,5))
+
+(d)
+uhodnu 3 tahy z pìti tažených èísel - (5,3)
+neuhodnu 2 èísla ze zbývajících 30 - (30,2)
+výsledek -> (5,3)*(30,2)/(35,5)
+
+|2|. (6 bodu) Urcete vzdálenost rovin A: [4; 5; 3; 2]+t(1; 2; 2; 2)+s(2; 0; 2; 1) a B : [1;-2; 1;-3]+
+r(2;-2; 1; 2) + p(1;-2; 0;-1) v euklidovskem prostoru R4.
+
+Zjistím, které vektroy jsou nezávislé - sestavím matici z roviny B:
+ 1  2  1
+-2 -2 -2
+ 1  1  0
+-3  2 -1      - vypadne mi poslední vektro a sestavím si obecnou rovnici roviny B
+
+B: x = 1+2r+ p
+   y =-2-2r-2p
+   z = 1+1r    ->r=z-1
+  -------------
+   x =-1+2z+p
+   y = 0-2z-2p
+  -------------
+  2x+y=-2+2z
+  -------------
+  2x+y-2z+2=0
+
+Z první roviny stejným zpùsobem zjistím nezávislé vektory a najdu bod - napø. [5,3,2] (vypadl mi 1.vektor).
+Bod a obecnou rovnici dosadím do vzoreèku:
+
+
+v(A,B)= |a*x+b*y+c*z+d|/sqrt(a^2+b^2+c^2) = 9/3 = 3
+
+
+|3|.(4 body) Uvazte vektorovy prostor Mat2x2 ctvercovych matic radu 2 a v nem mnozinu V
+tech matic, ktere maji nulovy soucet prvku v kazdem radku i v kazdem sloupci. Rozhodnete
+(a zduvodnete!), je-li V vektorovym podprostorem v Mat2x2 a pokud ano, urcete jeho bazi a
+dimenzi.
+
+Vektorový prostor U obsahuje Matice 2x2.
+V = {(a11 a12
+      a21 a22), a11+a12=0, a21+a22=0, a11+a21=0, a12+a22=0}
+
+X = (-1  1   Y = (-3 3     
+      1 -1)        3 -3)   
+
+1. podmínka
+X+Y = (-4  4
+        4 -4)  - poøád platí, že jsou øádky a sloupce nulové - splnìno
+
+2. podmínka
+t*x = (-t  t
+        t -t)  - poøád platí, že jsou øádky a sloupce nulové - splnìno
+
+3. podmínka
+U != 0 - splnìno
+
+=> dle mého názoru V je podpostorem U
+
+dim V = 1
+báze V = (1,-1)
+
+
+
+|4|.
+
+|  6-x  9   -4  |   =        (6-4)(-7-x)(2-x)-108-100-16(-7-x)+45(2-X)+15(6-x)=
+| -5   -7-x  3  |            = (x^2-8x+12)(-7-x)-208+112+16x+90-45x-15x+90 =
+| -4   -5    2-x|            = -7x^2+8x^2-x^3+56x-84-12x-44x+84 =
+                             = -x^3+x^2+0x+0  => (x-1)(x-0)(x-0)
+
+x=1 (alg. násobnost 1)
+( 5  9 -4  (u1                        (1 4 -3
+ -5 -8  3   u2  = 0    po úpravách:    0 1 -1    => u3=t, u2=t, u1=-t  => (-1,1,1) - geom. násob. 1
+ -4 -5  1)  u3)                        0 0  0)
+
+
+x=0 (alg. násobnost 2)
+( 6  9 -4
+ -5 -7  3     po úpravách  - u3=t, u2=2t/3, u1=7t/3 => (7/3,2/3,1) - geom. násob. 1
+ -4 -5  2)
+
+Matice není diagonalizovatelná, protože máme jen dva vlastní vektory a potøebujeme 3.
+
+
+|6|.
+(a)
+  a  b  c  d
+a 1        1
+b    1
+c       1
+d 1        1
+
+
+- reflexivní, symetrická, tranzitivní => ekvivalence
+
+(b)
+  a  b  c  d
+a 1  1    
+b 1  1  1
+c    1  1
+d          1
+
+- reflexivní, symetrická
+
+(c)
+  a  b  c  d
+a 1  1  1  1
+b    1  1  1
+c       1  1
+d          1
+
+- reflexivní
+
+
+Skupina B
+
+|1|. (5 bodu) Osoby X a Y prijdou na smluvene misto kdykoliv mezi 9.00 a 10.00 (okamziky
+prichodu jsou nezavisle a stejne mozne behem celeho intervalu). Urcete pravdepodobnost, ze:
+(a) prvni z prichozich nebude muset na druheho cekat dele nez 10 minut,
+(b) osoba Y prijde az jako druha, jestlize prijde po 9.30.
+
+(a)
+
+1. osoba Y pøijde jako 1. a bude èekat maximálnì 10 minut na osobu X  => y<x<y+10
+   - do grafu zanesu dvì pøímky 
+     - y-x=0
+     - x-Y=1 (mìøítko na obou osách jsem zvolil - 1 bod = 10 minut)
+   - z grafu vyètu, že spoleèná vyfrašovaná èást je  36 - 18 - 12,5 = 5,5
+
+2. osoba X pøijde jako 1. a bude èekat maximálnì 10 minut na osobu Y  => x<y<x+10
+   - do grafu zanesu dvì pøímky 
+     - x-y=0
+     - y-x=1 (mìøítko na obou osách jsem zvolil - 1 bod = 10 minut)
+   - z grafu vyètu, že spoleèná vyfrašovaná èást je  36 - 18 - 12,5 = 5,5
+
+3. P(A) = 5,5+5,5/36 = 11/36
+
+(b)
+
+1. osoba Y pøijde jako druhá, jestliže pøijde po 9:30 - x<y>3
+   - dvì pøímky: x-y=0 a y=3
+
+Zjistím, že:
+osoba Y pøijde jako druhá, jestli pøijde po 9:30 - 8/3
+osoba Y pøijde jako první, jestli pøijde pøed 9:30 - 8/3
+
+P(A) = (8/3)+(8/3) = 4/3
+
+
+
+
+|2|.(5 bodu) V R3 urcete obecnou rovnici roviny urcene bodem A = [1; 1; 1] a primkou p :
+[-1; 1; 1] + t(1; 2; 3).
+
+p: x = -1 +  t      A=[1,1,1]
+   y =  1 + 2t      
+   z =  1 + 3t
+
+rovina: x = 1 +  t  -> t=x-1
+        y = 1 + 2t
+        z = 1 + 3t
+        ----------
+        y = 1+2x-2 = -1+2x
+        z = 1+3x-3 = -2+3x
+        ----------
+        2z-3y = -1
+        ----------
+        -3y+2z+1=0
+
+
+
+|3|.(6 bodu) V populacnim modelu dravec-korist je vztah mezi poctem lisek (Lk) a kraliku (Kk)
+v danem a nasledujicim mesici dan rovnostmi
+            L(k+1) =  0,5Lk + 0,5Kk
+            K(k+1) = -0,2Lk + 1,2Kk;
+pritom na pocatku je ve zkoumane oblasti 50 lisek a 80 kraliku. Pomoci vypoctu vlastnich
+hodnot a vektoru matice systemu analyzujte limitni chovani tohoto modelu.
+
+( 0,5 0,5
+ -0,2 1,2)
+
+Zjistím vlastní èísla a vlastní vektroy:
+| 0,5-x 0,5  |   = (0,5-x)(1,2-x)+0,1 = x^2-1,7x+0,7 => (x-1)(x-0,7)
+|-0,5   1,2-x|
+
+
+x=1
+(-0,5 0,5   =  (1 -1
+ -0,2 0,2)      0  0)   =>X2=t, X1=t  => vlatní vektor - (1,1)
+
+x=0,7
+(-0,2 0,5   =  (2 -5
+ -0,2 0,5)      0  0)   =>X2=2t, X1=5t  => vlatní vektor - (5,2)
+
+
+A = P * D * P^(-1)
+
+P = (1 5
+     1 2)
+
+D = (1   0
+     0 0,7)
+
+P^(-1) = (-2/3  -5/3
+           1/3  -1/3)
+
+
+D^s, s jdoucí k nekoneèná
+
+D^s = (1 0
+       0 0)
+
+A = P * D * P^-1 = (-2/3 -5/3
+                    -2/3 -5/3)
+
+A vynásobím poèáteèním stavem králíkù a lišek a dostanu:
+
+(-2/3 -5/3  (50  = (100
+ -2/3 -5/3)  80)    100)
+
+
+
+|4|. Vypoètìte hodnotu determinantu.
+
+( 2  1 -1  2 -1      ( 0 -7  1  4  1        (-7  1  4  1     (0  1  11  1     |1 11  1|
+ -4  3  2 -1  1        0  5  0  3 -1          5  0  3 -1      0  0 -2  -1     |0 -2 -1|
+  3  5 -2  1 -2   =    1  4 -1 -1 -1    =     1  0  1  0  =   1  0  1   0  =  |2 -6  2|   = -28
+  2  2 -1  3 -1        0  1  0  1  0          6  2  0  2)     0  2  -6  2)
+ -1  2  3  1  3)       0  6  2  0  2)
+
+
+|5|.
+
+U = <(1, 2,1,0),(-1, 1,1,1)>
+V = <(2,-1,0,1),( 1,-1,3,7)>
+
+U prùnik V
+v = t1( 1,2,1,0)+t2(-1, 1,1,1)
+v = s1(-1,1,1,1)+s2( 1,-1,3,7)
+
+t1( 1,2,1,0)+t2(-1, 1,1,1)-s1(-1,1,1,1)-s2( 1,-1,3,7) = 0
+
+(1 -1 -2 -1       (1 1 0 -3
+ 2  1  1  1   =    0 1 1 -1
+ 1  1  0 -3        0 0 1  3)    => x4=t, x3=-3t, x2=4t, x1=-t
+ 0  1 -1 -7)
+
+
+báze(U prùvnikV) = (-1,4,-3,1)
+
+dim(U+V) = 3, protože dimU + dimV = dim(U prùnik V) + dim(U+V) => 2+2 = 1 + 3
+
+
+|6|.
+
+(a)
+  a  b  c  d
+a 1        
+b 1  1  1  1
+c       1
+d          1
+
+
+- reflexivní, tranzitivní
+
+(b)
+  a  b  c  d
+a 1      
+b    1   
+c       1
+d          1
+
+- reflexivní, symetrická, tranzitivní => ekvivalence
+
+(c)
+  a  b  c  d
+a 1  1  1   
+b 1  1  1   
+c 1  1  1   
+d           
+
+- symetrická, tranzitivní
+   
+

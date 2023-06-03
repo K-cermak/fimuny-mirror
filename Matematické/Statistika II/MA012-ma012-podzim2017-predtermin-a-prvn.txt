@@ -1,0 +1,16 @@
+13.12. 2017
+1. Jednovıberová ANOVA — predpoklady, model, kedy pouívame
+2. Èo je poradie, akı je hypotéza pri sign teste, vymyslie si a napísa usporiadanı vıber a jeho poradie
+3. Konkordantné/diskondartné páry, Kendal vs Pearson, boli dané 2 vıbery a trebalo napísa jedno diskondartnú dvojicu
+4. Ètyøpolná tabulka, šanca a ešte nieèo z poslednej prednášky
+5. Vypoèíta jednovıberovı wilcoxnov test
+
+
+3.1. 2018
+1. Dvovyfaktorova Anova bez trideni - predpoklady, model, kdy pouívame
+2. Test dobre shody pro diskretni velicinu s neznamymy parametry - algoritmus, testovaci statistika, empiricke a teoreticke cetnosti
+3. PCA - princip, algorimus, jak vybyrame poèet hl. komp., co je souctem vlastnich cisel?
+4. Kontigencni tabulka - popis, predpoklady, hypotezy, test. statistika...
+5. Vypoèitat znamenkovy test
+
+Urèite som zabudol na niektoré podotázky ale všetky sa tıkali rovnakej témy.

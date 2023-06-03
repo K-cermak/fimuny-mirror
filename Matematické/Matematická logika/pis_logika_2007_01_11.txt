@@ -1,0 +1,20 @@
+1) Napište vıraz (A -> B} v C' , kde v je nebo, ' je negace pomocí schroederova operátoru (NOR).
+
+2) Uveïte teorii, její kadı model je nekoneènı.
+
+3) Nech L je jazyk s rovností a jedním binárním predikátovım symbolem R. Uveïte teorii T, její kadı
+model má 3-prvkovı nosièl a nejmenší prvek. Lze zvolit T tak, aby byla úplná?
+
+4) Nech L je jazyk s rovností, kterı obsahuje nulární funèkní symbol 0, unární funkèní S, binární funkèní *.
+Mìjme 3 realizace jazyka L s nosnımi mnoinami Z, Q_0^+, R_0^- (celá èísla, nezáporná racionální, nekladná reálná)
+kde 0 reprezentuje nulu, S pøiètení jednièky, * násobení. Najdìte 3 formule, které jsou vdy pravdivé v jedné
+realizaci, ale ne ve dvou zbylıch.
+
+5) Nech T1, T2 jsou bezesporné teorie tého jazyka. Jsou potom bezesporné té teorie:
+a) T1 U T2 (sjednocení)
+b) T1 - T2 (rozdíl)
+
+6) Nech L je jazyk prvního øádu. Rozhodnìte a dokate, zda v kadém modelu jazyka L platí
+(F <-> P) -> (Vx F <-> Vx P)     kde V je pro všechna, F, P jsou nìjaké formule jazyka L
+
+7) Uveïte dùkaz vìty o korektnosti pro vırokovou logiku.

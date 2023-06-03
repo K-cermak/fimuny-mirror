@@ -1,0 +1,26 @@
+Pø.1. 
+Z dvourozmìrného dat. souboru s rozsahem n=25 v nìmž X má varianty 4, 5, 6 a Y varianty 1, 2, 3 
+a byli urèeny simultální absolutní èetnosti n11=2, n12=3, n13=2, n21=4, n22=3, n23=4, n31=2, n32=3, n33=2. 
+a) Spoètìte koeficienty variace znakù X a Y
+b) Vypoètìte medián a kvart. odchylku znaku X
+
+Pø.2.
+Stochasticky nezávislé náh. velièiny X1, X2 mají binomické rozložení, pøièemž x1-Bi(8;0,08) a X2-Bi(11;0,11).
+a) Vypoètìte pravdìpodobnost, že náh.vel. X1 nabyde hodnoty aspoò 1
+b)Uvažme transformované náh.velièiny Y1=2x1+x2, Y2=x1-3x2
+vypoètìte koeficient korelace náh.velièin Y1, Y2 a interpretujte ho.
+
+Pø.3.
+Spojitá náhodná velièina X se øídí rovnomìrným spojitým rozložením na intervalu (1,15). vypoètìte èíselné statistiky
+a) E(3X-7)
+b) E(3x^2-3x-100)
+c) D(2x+1)
+d) C(3X-X+1)
+e) K0,9(x)
+
+Pø.4
+Výrobní linka produkuje èoèku o hmotnosti 1000g. Odchylka od hmotnosti mìøená v dkg=10g se øídí studentovým rozložením o 2 stupních volnosti.
+Vypoèítejte pravdìpodobnost, že balíèek bude:
+a) hmotnost nejvýše 1029,2g
+b) hmotnost vìtší než 956,97g
+

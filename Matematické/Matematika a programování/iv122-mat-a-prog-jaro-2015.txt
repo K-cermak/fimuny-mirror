@@ -1,0 +1,7 @@
+1. Zadanı obrázok a z neho urèit, aká je vısledná matica transformácie po posune, otoèení a sploštení.
+2. Zadané príklady na komplexné èísla a vypoèíta ich:
+sqrt(-i) =
++ tie z prednášky
+3. Zadané jednotlivé pravdepodobnosti a bolo potrebné pomocou podmienenej pravdepodobnosti vypoèíta rôzne pravdepodobnosti
+4. Zadané 2 body a vypoèíta lineárnu regresiu
+5. Zadané rôzne grafové problémy a urèi, ktoré algoritmy sa tam hodia (Kruskal, BFS, Dijkstra,...)

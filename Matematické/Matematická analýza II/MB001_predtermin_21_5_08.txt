@@ -1,0 +1,18 @@
+1. napiste rovnici tecne roviny k z=f(x,y)=x^2+2*y v bode A=[2,-1,?]
+
+2. lokalni extremy z funkce x*y + 50/x + 20/y
+
+3. Spoctete obsah rovinneho obrazce M, ohraniceneho primkamy y=x,y=odmodnina(3)*x a
+krivkami x^2 + y^2 = 4x a x^2 + y^2 = 8x
+
+4. nevim presne zadani byl tak dvojty integral y odmocnina(x^2 + y^2) a omezeni bylo na x^2 + y^2 <= (mensi rovno) 2y
+
+Teoreticke:
+
+5. napsat co vis o totalnim diferencialu
+
+6. napsat Fubiniho vetu pro n=2
+
+7. integralove kriterium + prihlad na harminické rade 1/n
+
+8. bohuze si nepamatuju ten nazev, ale bylo to neco z posledni hodiny, nìco na a.

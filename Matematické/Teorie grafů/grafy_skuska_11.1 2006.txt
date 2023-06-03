@@ -1,0 +1,17 @@
+grafy 11.1 2006
+
+1. najst ktore z 3 grafov su navzajom izomorfne. 
+grafy boli kruznice tusim dlzky 10 a kazda mala 3 tetivy.
+(15b)
+
+2. Na zadanom grafe(kruznica )najst najnizsie obarveni, najvacsiu mnozinu nezavislych bodov, 
+najmensiu dominujucu mnozinu. zdovodnit vysledky.
+(25b)
+
+dokazova cast
+1. najst graf, ktory ma presne 2007 roznych kostier a nieje to kruznica dlzky 2007.
+(10b)
+
+2. ked bipartitny graf Kn,n ma A kostier, graf vzniknuty z K n,n podrozdelenim jednej hrany ma B kostier.
+dokazte ze plati: B = (1+(n-1)^2/n)A -- tym vztahom som si nie isty...
+(20b)

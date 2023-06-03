@@ -1,0 +1,16 @@
+Teoret cast:
+1.moze byt sucin dvoch reg. matic singularna matica.
+2.napiste 4 vektory tak aby boli line kombinaciou, ale zidne 3 nesmu byt lin. komb.
+3.mate zobrazenie dim ker = m, h(f)=n a este nieco a napisat hodnotu dim Im, dim Im (kolmitko) atd.
+4. definicia affineho priestoru
+Prakticka cast:
+5.spocitat determinant - matica 5x5, po Gaus. eliminacii ostalo
+ 1  0  0  0  0
+ 0 -1 -2 -3 -4
+ 0  0  0  0  0   =   0
+ 0  0  0  0  0 
+ 0  0  0  0  0
+6. mete tri vektory uloha je previest na orotgenalne
+7.zobrazenie z R4->R3 viete comu sa rovna Im a Ker, napisat predpis zobrazenia
+
+-viem ze trochu strohe bez konkretnych cisel, ale snad pomoze, teoria ma trochu zaskocila

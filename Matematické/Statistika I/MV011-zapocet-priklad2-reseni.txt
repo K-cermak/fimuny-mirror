@@ -1,0 +1,141 @@
+#tabulka <- read.csv (file = "Priklad.csv", header = TRUE, sep = ";", dec = ".")
+ 
+tabulka <- dataB
+ 
+names (tabulka)
+str (tabulka)
+#informace o sloupcich v tabulce (min., prumer, kvantily, max.)
+summary (tabulka)
+ 
+alpha <- 0.05
+ 
+# c) ------------------------
+ 
+rychlost <- tabulka$Rychlost
+n <- length (rychlost)
+ 
+# vektor poradi a serazeny vzorek
+R <- rank (rychlost)
+rychlost.sorted <- sort (rychlost)
+ 
+# median, kvartily
+c.25 <- 0.25 * n
+c.50 <- 0.50 * n
+c.75 <- 0.75 * n
+c (c.25, c.50, c.75)
+ 
+#kvartily
+x.25 <- rychlost.sorted[ceiling(c.25)]
+x.75 <- rychlost.sorted[ceiling(c.75)]
+c (x.25, x.50, x.75)
+ 
+#kvartilova odchylka
+q <- x.75 - x.25
+q
+ 
+# hradby boxplotu
+c (x.25, x.75) + c (-1, 1) * 1.5 * q
+c (x.25, x.75) + c (-1, 1) * 3 * q
+ 
+# boxplot pomoci stejnojmenne funkce
+boxplot (rychlost, horizontal = TRUE, xlab = "rychlost", ylim = range (rychlost), main = "krabicovy diagram (boxplot)")
+stripchart (rychlost, vertical = FALSE, method = "jitter", pch = 21, col = "red", bg = "yellow", cex = 0.8, add = TRUE)
+ 
+#P-P plot
+ 
+install.packages('CircStats')
+library('CircStats')
+ 
+pp.plot(rychlost, ref.line = TRUE)
+ 
+# d) ------------------------
+ 
+X <- tabulka$Krok
+Y <- tabulka$Rychlost
+ 
+#obecna primka
+ 
+model1 <- lm (Y ~ X, data = tabulka)
+model1
+#provedeme pro celkovy vypis informaci
+prehled1 <- summary (model1)
+ 
+#primka prochazejici pocatkem
+ 
+model2 <- lm (Y ~0+ X, data = tabulka)
+model2
+#provedeme opet pro celkovy vypis informaci
+prehled2 <- summary (model2)
+ 
+#regresni koeficienty modelu 1
+coef(model1)
+#z vysledku prikazu je rovnice y = 0,1360785 * x - 3,2582386
+ 
+#regresni koeficienty modelu 2
+coef(model2)
+#z vysledku prikazu je rovnice y = 0,1176175 * x
+ 
+# e) ------------------------
+ 
+plot (c (150, 200), c (15, 25), type = "n", xlab = "X", ylab = "Y")
+points (X, Y, col = "blue", pch = 24, lwd = 1.5, cex = 1.0)
+ 
+x <- seq (150, 200, by = 0.1)
+ 
+Y1 <- predict (model1, data.frame (X = x))
+Y2 <- predict (model2, data.frame (X = x))
+ 
+#primka (souradnice X, souradnice Y, barva, tloustka)
+lines (x, Y1, col = "red", lwd = 2)
+#parabola (souradnice X, souradnice Y, barva, tloustka)
+lines (x, Y2, col = "#00cc00", lwd = 2)
+ 
+dev.copy2pdf (file = "grafZavislostiYnaX.pdf", width = 5, height = 4)
+ 
+# f) ------------------------
+ 
+#kontrolujeme Pr(>|t|) pro koeficienty vuci alfa 0.05
+#pokud je hodnota nizsi nez 0.05, pak nezamitame nulovou hypotezu o vyznamnosti koeficientu
+#pokud je hodnota vyssi nez 0.05, pak zamitame H0 a potvrzujeme H1, ze koeficient neni vyznamny
+ 
+prehled1
+#B0 je 0.323, tedy neni vyznamny
+#B1 je 1.52e-07, tedy je vyznamny
+ 
+prehled2
+ 
+#B1 je mensi nez 2e-16 (<2e-16), tedy je vyznamny
+ 
+#interpretace
+ 
+# B1:
+# Kladná hodnota koeficientu k indikuje pøímou lineární závislost mezi promìnnými X a Y - pøímka bude stoupající.
+# Záporná hodnota koeficientu k indikuje nepøímou lineární závislost mezi promìnnými X a Y - pøímka bude klesající.
+ 
+# B0:
+#
+# V pøípadì kladné hodnoty koeficientu B0 protíná pøímka osu y nad poèátkem souøadnicových os,
+# v pøípadì záporné hodnoty koeficientu q protíná pøímka osu y pod poèátkem souøadnicových os.
+ 
+# g) ------------------------
+ 
+# kriterium 1:
+anova(model1, model2)
+ 
+# ve vypise vidime Pr(>F) 0.3229, porovnani s nasi hranici 0.05 (5%) nam rika ze neni duvod preferovat
+# model2 oproti modelu1
+ 
+# kriterium 2:
+ 
+prehled1$r.squared
+prehled2$r.squared
+# koeficient determinace je R-squared
+# udava jaky podil rozptylu v pozorovani zavisle promenne se podarilo regresi vysvetlit
+# je v intervalu 0-1 a cim vyssi hodnota tim vetsi uspesnost regrese, tedy v nasem pripade uspesna
+ 
+# srovname pomoci nasledujici funkce
+if(prehled1$r.squared > prehled2$r.squared) {
+  print("Model 1 je vhodnejsi, protoze jeho koeficient determinace je blizsi 1")
+} else {
+  print("Model 2 je vhodnejsi, protoze jeho koeficient determinace je blizsi 1")
+}

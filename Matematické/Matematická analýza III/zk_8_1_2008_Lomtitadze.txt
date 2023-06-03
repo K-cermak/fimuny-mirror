@@ -1,0 +1,43 @@
+1. Najdete obecne reseni rovnice
+
+y' = y/x + tg(y/x)
+
+
+
+2. Derivaci podle parametru spocitejte (integral nelze vypocitat primym integrovanim)
+
+y(a) = Int((1-e^(-ax)) / (x e^x))dx, a >= 0
+
+pozn.: Integral je od 0 do nekonecna.
+
+3. Napiste rovnici tecny ke krivce dane implicitni rovnici
+
+y = f(x)
+
+e^xy - x^2 - y^2 = 0
+
+x=0, y=1
+
+
+
+4. Formulujte vetu o prevodu krivkoveho integralu typu
+
+Int P(x,y))dx + Q(x,y)dy
+
+na integral typu
+
+Int F(x,y)ds
+
+pozn.: Integral je pres C
+
+
+
+5. Urcete realnou a imaginarni cast komplexniho cisla
+
+ln(1-i)
+
+
+
+6. Definujte stejnomernou konvergenci
+
+{fn(x)} od n=1 do +nekonecna na [a,b]

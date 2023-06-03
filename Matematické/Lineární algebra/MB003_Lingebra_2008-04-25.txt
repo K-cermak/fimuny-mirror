@@ -1,0 +1,14 @@
+Zadanie druhej vnútrosemestrálky:
+
+1. Urète bázy súètu a prieniku podpriestorov (4 body).
+P = [(1,0,2,3), (3,3,-4,-1)]
+Q = [(3,5,-4,-3), (1,1,2,2)]
+
+2. Rozhodnú (dokáza), èi je zobrazenie f: C -> C dané
+   predpisom f(x) = |x| lineárne. C - vektorový priestor nad R (2 body).
+
+3. Urèi jadro a obraz zobrazenia A: R2[x] -> R3[x].
+   A(f) = (x^2 + 1) f' a ich dimenzie (4 body).
+
+
+GL

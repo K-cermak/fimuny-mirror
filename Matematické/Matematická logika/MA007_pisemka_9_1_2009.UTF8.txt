@@ -1,0 +1,15 @@
+1) Dokážte že L(|) je plnohodnotný. Vycházíme z L(AND, OR, NOT) je plnohodnotný
+2) Ukažte teorii, jejíž modely jsou pouze nekonečné
+3) Odvozovací systém: axiom Phi -> not not Phi, pravidlo z Phi -> Psi odvoď Psi. L(IMPL, NOT).
+   Ukažte zda platí věta o korektnosti a úplnosti (každá Phi_i je z T, instance axiomu nebo odvozena pravidlem)
+4) Nechť L je jazyk prvního řádu (predikátový). Rozhodněte a dokažte, zda v každém modelu jazyka L platí
+(F <-> P) -> (Ex F <-> Ex P) F, P jsou nějaké formule jazyka L
+5) T1, T2,.... jsou sporné, každá T_i je nadmnožinou a není rovna T_i+1. Nechť S je průnik těchto množin od 1 do nekonečna.
+   Rozhodněte zda:
+   S je sporná
+   S je bezesporná
+6) Máme jazyk s un. predikátem P a un. fčním symbolem S. Tři realizace M_N, M_Z, M_Q. P označuje postupně sudá čísla, nezáporná čísla, celá čísla, S je přičítání 1.
+   Najděte formuli Phi pro každou realizaci takovou že Phi platí právě v jediné realizaci z nich.
+7) Napište a dokažte větu o korektnosti pro výr. logiku.
+
+První příklad za pět bodů, další po deseti. 2 hodiny času.

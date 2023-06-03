@@ -1,0 +1,27 @@
+A1) Z 5 výrobkù, mezi nimiž jsou 3 zmetky, vybíráme tøikrát bez vracení po jednom výrobku. Oznaèíme A1 jev: "1. vybraný výrobek je zmetek", A2 jev: "2. vybraný výrobek je kvalitní", A3 jev" "3. vybraný výrobek je zmetek". Vypoètìte prst spoleèného nastoupení jevù A1, A2, A3.
+A2) Náhodný vektor (X,Y)' Má rovnomìrné rozložení na kruhu o støedu v bodì (1, 1) a polomìru 1. Urèete C(X, Y) a rozhodnìte, zda jsou X a Y závislé velièiny.
+A3) Zapište libovolnou hustotu f náhodné velièiny X (ne rovnomìrné!!) takovou, abyste umìli urèit E(X), D(X), medián, desetiprocentní a devadesátiprocentní kvantil rozložení X a modus rozložení X. Spoètìte je.
+A4) Je pravdìpodobnìjší hodit pøi hodu mincí orla 3x ze 4 pokusù nebo 5x z 8 pokusù?
+A5) Uveïte vlastní pøíklad znaku alternativního, nominálního, ordinálního, intervalového a pomìrového.
+A6) Vysvìtlete "lidsky" pojem marginální prst fce, uveïte pøíklad.
+
+B1) Ze šesti výrobkù jsou dva zmetky. Náhodnì vyereme dva výrobky. Jaká je prst, že budou a) oba dobré   b) právì jeden zmetek   c) oba zmetky
+B2) Náhodná velièina X má rovnomìrné rozložení na intervalu (1, e). Urèete hustotu náhodné velièiny ln X.
+B3) Zapište libovolnou hustotu f náhodné velièiny X (ne rovnomìrné!!) takovou, abyste umìli urèit E(X), D(X), medián, desetiprocentní a devadesátiprocentní kvantil rozložení X a modus rozložení X. Spoètìte je.
+B4) 20x nezávisle na sobì házíme 3 kostkami. Jaká je prst, že alespoò v jednom hodu padnou 3 šestky?
+B5) Uveïte vlastní pøíklad znaku alternativního, nominálního, ordinálního, intervalového a pomìrového.
+B6) Vysvìtlete "lidsky" pojem podmínìná prst fce, uveïte pøíklad.
+
+C1) V první sadì výrobkù je 12 výrobkù, z toho jeden zmetek. Ve druhé sadì je 10 výrobkù, z toho jeden zmetek. Náhodnì zvolený výrobek se pøemístil z první sady do druhé sady. Pak se ze druhé sady náhodnì vybral výrobek. Jaká je prst, že to byl zmetek?
+C2) Náhodná velièina X má rovnomìrné rozložení na intervalu (0, pi). Urèete hustotu náhodné velièiny cos X.
+C3) Zapište libovolnou hustotu f náhodné velièiny X (ne rovnomìrné!!) takovou, abyste umìli urèit E(X), D(X), medián, desetiprocentní a devadesátiprocentní kvantil rozložení X a modus rozložení X. Spoètìte je.
+C4) Jev A nastoupí alespoò v jednom ze 6 nezávislých pokusù s prstí 0,9. Jaká ja prst nastoupení jevu A v jednom pokusu, je-li ve všech pokusech  stejná?
+C5) Uveïte vlastní pøíklad znaku alternativního, nominálního, intervalového a pomìrového.
+C6) Vysvìtlete "lidsky" pojem podmínìná prstní fce, uveïte pøíklad.
+
+D1) Ve studijní skupinì je 23 posluchaèù. Prst složení zkoušky z teorie prsti a statistiky je pro 8 posluchaèù 0,9, pro 12 posluchaèù 0,6 a pro 3 posluchaèe 0,4. Urèete prst, že náhodnì zvolený posluchaè tuto zkoušku složí.
+D2) Náhodná velièina X má hustotu f nenulovou na intervalu (-1, 1) danou vztahem k(x + 1). Urèete prst, že náhodná velièina "absolutní hodnota X" bude vìtší než 0,7.
+D3)  Zapište libovolnou hustotu f náhodné velièiny X (ne rovnomìrné!!) takovou, abyste umìli urèit E(X), D(X), medián, desetiprocentní a devadesátiprocentní kvantil rozložení X a modus rozložení X. Spoètìte je.
+D4) V rodinì je 7 dìtí. Za pøedpokladu, že se chlapci i dívky rodí se stejnou prstí nezávisle na sobì, urèete prst, že je v této rodinì   a) právì 5 chlapcù   b) alespoò 3 dívky
+D5) Uveïte vlastní pøíklad znaku alternativního, nominálního, ordinálního, intervalového a pomìrového.
+D6) Vysvìtlete "lidsky" pojem marginální prstní fce, uveïte pøíklad.
