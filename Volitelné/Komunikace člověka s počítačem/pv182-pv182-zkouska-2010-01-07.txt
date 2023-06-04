@@ -1,0 +1,20 @@
+zkouška PV182 - 7. 1. 2010
+90 minut
+
+0-16 = F, 17-22 = E, 23-28 = D, 29-34 = C, 35-40 = B, 41-50 = A
+
+do hodnocení se započítávají body ze cvičení nad hranici 20b.
+
+
+1.) Vysvětlete 4 atributy skic z pohledu návrhu: jasný slovník, menší rozlišení, konzistence se stavem, předkládání myšlenek (4x 5b = 20b)
+
+
+2.) Jaké jsou typické chyby hotového návrhu, při němž nebyly nezváženy principy použitelnosti? Komentujte, uveďte příklad z praxe. (10b)
+
+
+3.) Vysvětlete základní etické zásady před testováním: čas uživatele, pohodlí uživatele, soukromí, informovanost, dobrovolnost. (10b)
+
+
+4.) Grafický návrh obrazovky může být založen na CRAP (contrast, repetition, alignment, proximity). Co jednotlivé principy ve výsledném návrhu podporují? Vyznačte jejich „aplikaci“ na přiloženém snímku obrazovky. (10b)
+
+obrazovky byly z aplikace kodak easy share pro tisk fotek a pro posláni fotek emailem 

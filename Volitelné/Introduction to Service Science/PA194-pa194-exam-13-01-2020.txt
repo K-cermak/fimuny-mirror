@@ -1,0 +1,11 @@
+OPEN QUESTIONS
+- Describe the paradigm "All economies are service economies"
+- Define the elements of a service system
+- Describe the role of government in relation to information (not exact phrasing)
+
+CLOSED QUESTIONS
+- Mark basic service economy paradigms
+- What is true in a cooperation system (expressions involving P1, C1, T1, P2, C2, T2)?
+- What is the name of situation where everyone knows all cards including undealt ones?
+- What is the name of an auction where the price decreases until the first call?
+- What is the use of r-edges in diamond DO? [1. projection, 2. mention/use, 3. change context, 4. characteristic]

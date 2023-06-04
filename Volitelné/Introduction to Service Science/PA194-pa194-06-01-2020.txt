@@ -1,0 +1,25 @@
+Closed questions: Each for max 2 points, you have to get at least 6 points to pass
+1. Which statements are correct in term of SDL?
+- ???
+2. Which of these are basic paradigms of SDL?
+- Some options obtained basic and some obtained advanced paradigms of SDL
+3. Players can see cards of all players as well cards in deck.
+- Asymetric information
+- Perfect information
+- Imperfect information
+- Incomplete information
+4. Where participants have to reveal their cost estimates?
+- Dutch auction
+- English auction
+- The first price auction
+- The second price auction
+5. What is correct for Dual service system of two systems: S1(P1, C1, T1), S2(P2, C2, T2)?
+- T1 != T2
+- P1 = C2
+- C1 operates with T2
+- P2 owns T1
+
+Open questions: Each for max 5 points, you have to get at least 9 points to pass
+1. Why are operand resources the source of competitive advantage?
+2. Describe Provider - Client.
+3. Describe Mention - Use in diamond SEE. Why do we need it?

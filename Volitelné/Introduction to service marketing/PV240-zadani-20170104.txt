@@ -1,0 +1,5 @@
+5 otazok, viac spravnych odpovedi - uplne spravne: 2b, 1 moznost nespravne: 1b, inak: 0b
++3 otvorene otazky po 5 bodov (priblizne znenie):
+What is the purpose of segmentation?
+What is CATI, CAPI, CAWI? What group does it belong to? 
+Explain the difference between 4P and 4C marketing mix.

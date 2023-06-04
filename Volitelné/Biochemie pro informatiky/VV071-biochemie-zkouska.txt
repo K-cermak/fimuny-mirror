@@ -1,0 +1,36 @@
+Neúplné otázky zkoušky z Biochemie pro informatiky.
+
+abcd
+-----
+Co je kyselina dle Lewisovy teorie?
+Co je to Bi-Bi reakce?
+Který vitamín je niacin?
+Co je to enantiomer?
+Jakým koncem se váže aminokyselina na chaperon?
+Atomy jakých prvků obsahují enzymy využívající ATP? (Mg2+, Ca2+)
+Kde se neuplatňuje acetyl-CoA? (alkoholové kvašení,...)
+Co je detekováno UNAMI chuťovými pohárky?
+Co transportuje koenzym Q10?
+
+ano-ne
+-------
+Čím je kyselina silnější, tím snadněji dokáže disociovat.
+Glycin nemá chirální C.
+Ligasy katalyzují spojení 2 molekul, k čemuž je dodávána energie štěpením ATP nebo GTP.
+Pyridoxalfosfát je nezbytný pro funkci řady enzymů, které metabolisují aminokyseliny.
+Reakce, ve kterých dochází k hydrolýze ATP, bývají obvykle nereverzibilní.
+Ubichinon (CoQ) může existovat ve 3 redoxních stavech.
+Sukcinyl dehydrogenáza se nenachází na vnitřní membráně mitochondrie.
+něco s trypsinem
+
+otevřené
+----------
+Co je to peptidická vazba? Nakresli její strukturní vzorec.
+Co je to glykosidická vazba? Jaké znáš druhy?
+Co je to nekompetivní inhibitor enzymu?
+Uveď známé sekundární struktury proteinu.
+Napiš název a funkci aspoň 3 pentóz.
+Čím se inhibuje pentózový cyklus?
+Popiš jednotky a funkci komplexu ATP syntázy.
+Co je plastochinon a v jakých oxidačních stavech může být?
+Jaký je rozdíl mezi lysozomální a cytozolickou dráhou štěpení proteinů?

@@ -1,0 +1,106 @@
+26.5.2014 - https://www.facebook.com/groups/128695710522335/permalink/712943165430917/?hc_location=ufi
+1) Cholského metoda - napsat podmínky konvergence a napsat príklad 3 rovnic o trech neznámých, který bude konvergovat
+2) Popsat regula falsi
+3) Metoda prostá iterace f(x) = 3x/ln(3) - X^2/2 - 2x (asi blbe opsana)
+4) Newtonova metoda:, kde nabývá lokálního maxima
+x+y^2+2 = 0
+x^2+2x+y^2-3=0
+(x0, y0) = (-2,1)
+5)Urcit, jestli konverguje jacobiho metoda
+1x1 + 0x2 + 1x3 = 7
+-2x1 + 2x2 - 6x3 = -1
+-4x1 + 0x2 + 4x3 = 3
+
+2.6.2014
+1.Popisat Newtonovu metodu pre sustavu nelinearnych rovnic, 
+2. definovat rad iteracnej metody a popisat vetu o rade jednokrokovej iteracnej metody pomocou derivacii
+3. dvojita newtonova m. - (asi) 2x^3 - 3x^2 + x - 3 najst najvacsi koren polynomu 
+4. najst najmensi kladny koren, metoda regula falsi, x^2tg(x-1)-3, 
+5. Croutova metoda na maticu na sustavu rovnic o troch neznamych.
+3 -1 0 | 2
+-3 5 2 | -2
+0 3 4 | 11
+
+10.6. 2014:
+1) popsat zdvojenou NWM
+2) rád korvengence: bisekce, NWM, secen, regula falsi
+3) metoda prosté iterace - overení podmínek konvergence na dané g(x), urcit rad te iteracni funkce pro zadany koren.
+4) GS na soustave lineárních rovnic
+5) Steffensenova metoda na dané g(x)
+
+2014 termin 26.5.:
+1. Popisat Gauss Seidlovu metodu a jej konvergenciu
+2. Napisat definiciu Sturmovej postupnosti a Sturmovu vetu
+3. Zadana funkcia g(x) a bolo treba zistit, ci je to validna iteracna funkcia pre vypocet sprt3(9) a aj vypocitat 2 iteracie
+4. sin(x^2 /2) - 3x + 1 pomocou Newtonovej metody
+5. Cholskeho metoda - vypocitat korene 3x3 matice
+
+2014 1.termin: 
+1. Popísat choleského metódu, 
+2. Popísat metódu regula falsi a nakreslit grafy, 
+3. metoda prosté iterace (1/x-2*sqrt(x-1)) 
+4. zdvojena newtonova metoda na polynome neviem uz akom 
+5. sustava rovnic, ci bude konvergovat matica (nebola riadkovo ani stlpcovo dominantna)
+
+poslední termín 2014: 
+1. teorie bisekce, 
+2. Jacobiho metoda, 
+3. pomocí Newtonovy metody pocítat, 
+4. pomocí regula falsi polynom, 
+5. Choleského metoda
+
+3.6.2015 bolo: 
+1) newtonova popis  (graf, princip, podminky)
+2) popis gauss-seidelova a jacobiho  + podminky konvergence
+3) sturmova posloupnoust 
+4) matica a v nej zadane na dvoch miestach alfa a vypocitat pre ake alfa bude jacobiho vzdy konvergovat 
+	* zadana soustava tri rovnic s konstantou alfa a bylo treba napsat vsechny hodnoty alfa pro ktere konverguje jacobiho metoda 
+5) cholskeho
+
+
+https://www.facebook.com/groups/128695710522335/permalink/910207125704519/?hc_location=ufi
+27.5.2015
+maehly, popsat, 
+co je to rád - Rád chteli definovat pomocí limity a formulovat vetu o tom, jak se vypocítá rád jednokrokové metody.
+popsat soucin trojúhelníkových matic - Popište rozklad matice na dolní a horní trojúhelníkovou matici
+vypocítat nelineární rovnice newtonem a regula falsi (U soustavy nelineárních rovnic se mel urcit ten hledaný bod graficky, takže doporucuju umet rovnice kuželosecek.)
+
+29.5.2015
+1) Popsat princip a podmínky bisekce a urcit pocet kroku, aby platilo | s^k - \xi | < \varepsilon .
+2) Napsat príklad soustavy dvou rovnic o dvou neznámých, pro které Jacobiho ani Gauss-Seidelova metoda nekonverguje. Nakreslit ilustracní nákres.
+3) Overit fourierovy podmínky, pomocí nich urcit pocátecní iteraci a spocítat 1. a 2. iteraci newtonovy motody funkce 2*x^2 + arctg(x) - 1 .
+4) Pomocí Strumovy vety zjistit pocet reálných korenu polynomu 2*x^3 - 5*x + nejaká konstanta (tuším... cca) na intervalu [0, 2]
+5) Overit, podmínky a vypocítat Croutovou metodou rešení 3x3 lineárního systému. Byly k dispozici vzorecky, co jsou ve slidech (tvaru a_{neco, neco} = neco s prvky l a u).
+
+24.6.2016
+1.teoria gaus-seidlova
+2.teoria metoda secen
+3.matica - sustava rovnic newtnova metoda
+4.priklad na jaccobi (trebalo zamenit riadky tak aby konvergovala a potom vyratat 2 iteracie)
+5.vypocitaj sqrt(13) pomocou polenia intervalov a potom dopocitaj cez regula falsi presnejsie
+
+25.6.2016
+1.teorie popsat rád metody pomocí derivací
+2.teorie  metoda regula falsi - popis vcetne obrázku, rád metody
+3.priklad sturmova posloupnost - kolik je záporných korenu a kolik všech
+4.priklad soustava rovnic - pomocí vlatstních císel overit konvergenci a spocítat jednu iteraci se zadaným x0
+5.priklad Newtonova metoda - urci interval pro monotoni konvergenci, pomoci furierovych podminek to ukazat, zvolit x0 a spocitat 2 iterace
+
+
+* Mužete prosím nekdo uvést príklad té soustavy dvou rovnic o dvou neznámých, pro které Jacobiho ani Gauss-Seidelova metoda nekonverguje?
+* no práve ani ne. Potrebuješ matici 2x2 pro kterou vlastní císla z (D^(-1))*(L+U) ani ((D-L)^(-1))*U nejsou menší než 1
+
+!!! treba vediet vzorec pre rád konvergencie za pomoci límít (skripta strana 36) a upozornujem že to nie je definícia nakolko je to v odseku poznámka ale budiš
+--------------------------------
+rád metody x^(k+1)=g(x^k) je 3 pretože nejaká derivácia neviem co
+-------------------------------
+podmienky toho že na intervale [a,b] je len 1 pevný bod sú 2:
+1. interval sa zobrazí sám na seba
+2. je to kontrakcia
+
+to že f(x)=x nepostací
+na strane 34 je nejaká Lipschitzova podmienka
+----------------------------------
+u zdvojenej newtonovej metody vás furierove podmienky nezaujímajú
+len si urcíte správe x^0
+-------------------------------------

@@ -1,0 +1,71 @@
+Ahoj, 
+
+omlouvam se, ze pisu az ted, tvuj mail jsem si precetl jeste pred tim, nez jsem tam sel a potom v euforii jsem na odpoved uz zapomnel. 
+
+Kazdopadne porota byla hodna, Stanicek se me ptal na nastroje pro datove modelovani (myslel tim klasicky pristup a metodiku HIT pro tvorbu datovych modelu), Matula se me ptal na OSI model a TCP/IP, UDP a Sochor se ptal na Otevrene systemy rizeni organizaci nebo tak nejak. Dost jsem tam blekotal, muj vykon zdaleka nebyl uplne presvedcivy, ale nakonec mi dali za jedna :-) Obhajoba byla uplne v pohode, pokud mas navrzene dobre znamky a trochu ses na to pripravoval a zkusil si to rict nanecisto, tak urcite nebude problem. 
+
+Tak hodne stesti! 
+
+Jirka 
+
+
+cau, 
+
+stanicek: jaky je rozdil medzi objektovo orientovanym navrhem a ERD navrhem
+(soustredte se jenom na rozdily)?
+-- odpoved som presne nevedel, sochor a stanicek mi pomohli. 
+
+sochor: nieco o aktualnych sietach.
+-- s odpovedou mi pomohli
+
+matula: struktura dokumentov, pisma, znackovacie jazyky.
+
+Ahoj,
+
+hodne zalezi na diplomce..kdyz ji mas v pohode, tak te automaticky berou jinak
+(ale je to jenom muj nazor)...i kdyz by se to nemelo  :-) 
+
+ale jinak pohoda...stanicek mi dal otazku rozdil mezi objektovou a stukturalni
+analyzou..trosku jsem v tom tapal, ale pomohl mi..i sochor mi pomohl..sochor se
+ptal na funkcni body a cocomo, ten treti se ptal na trivrstvou architekturu.
+
+Snad ti to pomuze a zitra to zvladni.
+Cus Vlada
+
+zdar,
+
+stanicek se ptal naky kvality informace a rikal tam veci, co sem v zivote
+neslysel  :)  (neco o redukci nakladu, asi na ty informace). Kazdopadne to dal
+nerozpitvaval a ptal se na veci kolem a vubec se choval docela mile, az sem to
+necekal  :) .
+
+hodne stesti
+
+--jk
+
+Zdar, 
+
+no nevim, jestli jem ten pravej na takovou otazku. Prave me vyrazili ze statnic i s DP. Stanicek je zkratka debil a stoural, taky by se mi chtelo rict pekna kurva, ale to by bylo asi moc expresivni. DP mi smahnul a neuznali mi to - prej jsem to tema uplne spatne uchopil a mel bych to obhajovat spis na zurnalistice. (posudky jsem mel 1 a 2). Jsem prej bajecnej manazer a recnik, ale ne informatik - to teda beru spis jako poklonu. 
+
+No hlavne jsem po tom smahu DP byl takovej rozhozenej a asi jsem toho opravdu moc nepredvedl. Ale neni to zrovna jednoduchy, kdyz Stanicek se pri kazdy moji dilci odpovedi uchechtaval a kroutil hlavou. 
+
+Otazky jsem mel     1 CMM 
+            2 arch. klient-server 
+             (to fakt nevim, co vic chteli 
+             slyset, rekl jsem toho dost) 
+            3 statni omezeni kryptografie 
+
+Docela se ptali a snazili se, aby jim clovek rekl, co chteji slyset, ale ja fakt nemohl prijit na to, co to je. 
+
+Myslim, ze jestli mas nejaky informaticky tema a svuj jasny prinos, tak jsi v pohode. U tech statnic moc drsny asi nejsou, ale zalezi na atmosfere z obhajoby. 
+
+Good Luck! 
+        Step
+
+Ahoj, 
+od Dr. Pelikána jsem dostal otázku na èíselné soustavy a jejich zobrazení v poèítaèi, od doc. Matyáše øízení pøístupu a vše kolem a od Ing. Kuèery ISO OSI model. Obecnì bych øekl, že se rozhodnì nesnažili èlovìka potopit, naopak a že otázky mùžeš oèekávat pøesnì podle specializace vyuèujícího/dotazujícího a pøesnì v té formì, v jaké jsou uvedeny v okruzích. 
+Pøeji u státnic hodnì zdaru a hezký den. 
+-os-
+
+
+

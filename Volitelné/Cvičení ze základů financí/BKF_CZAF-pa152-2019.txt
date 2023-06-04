@@ -1,0 +1,122 @@
+1. Vysoká dostupnost v databázových systémech.
+	a) definujte pojem dostupnosti a představte kategorizaci podle devítek včetně vzorce pro výpočet kategorie z hodnoty dostupnosti (2b)
+	b) popište princip master-slave replikace pro trojici uzlů, včetně uvedení typů DML příkazů, které lze/nelze na jednotlivých uzlech vykonávat (2b)
+	c) a dále popište kroky prováděné při výpadku master uzlu a při obnovení činnosti původního master uzlu. (2b)
+
+2. MergeJoin - spojení relací R a S s využitím dvoufázového MergeSort algoritmu. Předpokládejte, že B(R) = 490 000, B(S) = 360 000, T(R) = 12 250 000 a T(S) = 12 960 000.
+	a) Formulujte algoritmus MergeSort. (2b)
+	b) Dále doplňte algoritmus MergeJoin. (1b)
+	c) Určete a zdůvodněte nejmenší paměť M, pro kterou lze již MergeJoin spustit pro uvedené relace. (1b)
+	d) Určete a zdůvodněte náklady MergeJoin v počtech čtení bloků a zvlášť v počtech zápisů bloků, včetně rozlišení, zda se jedná o sekvenční nebo náhodný zápis. (2b)
+
+3. Uvažujte následující relace, kde indexy existují vždy pro primární klíč a dále pro atribut název.
+	obor(|obor_kód|, |předmět_kód|, povinné ukončení) pozn.: || je nahrazení podtržení (CTRL+U)
+	předmět(|kód|, název, kredity, max_ukončení)
+
+Pro následující dotaz
+SELECT název, kredity FROM obor NATURAL JOIN předmět
+WHERE název LIKE 'SQL%' and obor_kód = 'AplInf' AND povinné_ukončení = max_ukončení
+
+	a) uveďte, zda je dotaz syntakticky a sémanticky správně; opravte chyby v dotazu (1b)
+	b) uveďte plán vyhodnocení (jako strom), ale bez jakékoli optimalizace nebo modifikace výrazu (2b)
+	c) vzniklý plán transformujte tak, že jeho vyhodnocení DB systémem bude co nejlevnější, řešení zdůvodněte a uveďte typ algoritmu ke každé operaci plánu. (3b)
+
+4. Diskové pole RAID.
+Uvažujte 13 identických rotačních disků, každý o kapacitě 2 TiB, průměrné přenosové rychlosti 128 MiB/s, času vystavení hlaviček 2.9 ms a rotačnímu zpoždění 2 ms. Diskový i databázový blok je 4 KiB.
+	a) Pro tyto disky navrhněte konfiguraci RAID10, ve které je jeden z disků tzv. hot-spare. Popište princip ukládání dat. Znázorněte uložení bloků souvislého souboru s velikostí 32 KiB (souvislý = jeden blok za druhým na souborovém systému). (3b)
+	b) Uveďte celkovou dostupnou úložnou kapacitu, počet operací čtení a zápisů bloků, které lze zpracovávat současně v jeden okamžik, a délku obnovy do plně funkčního stavu po výpadku jednoho disku. Vše zdůvodněte. (3b)
+
+5. Vysoká dostupnost v databázových systémech.
+	a) definujte pojem dostupnosti a představte kategorizaci podle devítek včetně vzorce pro výpočet kategorie z hodnoty dostupnosti (2b)
+	b) popište princip master-slave replikace pro trojici uzlů pomocí zasílání žurnálu; uveďte typy DML příkazů, které lze/nelze na jednotlivých uzlech vykonávat (2b)
+	c) a dále popište kroky prováděné při výpadku master uzlu a kroky po opětovném obnovení činnosti původního master uzlu. (2b)
+
+6. Spolupráce operátorů během zpracování dotazů v databázích.
+	a) Představte koncept iterátoru a jeho využití v technikách proudového a materializovaného vyhodnocení 	operací. Porovnejte a zhodnoťte přínosy použití iterátoru. (2b)
+	b) V pseudokódu formulujte jednoprůchodový algoritmus pro vyhodnocení množinového sjednocení relací R a S používající iterátory. Určete nároky na velikost paměti M a zařaďte do kategorie technik (proudové vs. materializované vyhodnocení). (4b)
+
+7. Uvažujte undo-redo žurnálování, kde záznamy o aktualizaci obsahují nejprve novou a pak původní hodnotu. Křížek značuje provedení INSERT nebo DELETE.
+	a) Pro níže uvedený žurnál proveďte obnovu po výpadku, tj. aktualizujte hodnoty DB tak, aby byla konzistentní. Jednotlivé kroky komentujte, uveďte transakce, které berete v úvahu. (4b)
+	b) Pokud to obnova vyžaduje, přidejte do žurnálu nové záznamy, zdůvodněte. (2b)
+
+	1.  [T1, start]		DB content
+	2.  [T1, A, 11, X]	A   |   12
+	3.  [T4, start]		B   |   33
+	4.  [T1, B, 34, 35]	C   |   15
+	5.  [T4, C, 23, 15]	D   |   54
+	6.  [T4, abort]		E   |   81
+	7.  [T1, commit]	F   |   42
+	8.  [T3, start]
+	9.  [T3, C, 11, 15]
+	10. [T1, end]
+	11. [T3, D, 58, 54]
+	12. [T2, start]
+	13. [T2, A, 12, 11]
+	14. [T3, commit]
+	15. [T2, B, 33, 34]
+	16. [T5, start]
+	17. [T5, F, 42, X]
+	... crash ...
+
+8. Hašování v databázích a operace DISTINCT nad celými záznamy relace R, která je uložena v B(R) blocích.
+	a) Popište obecný princip rozšiřitelného hašování (s adresářem). (2b)
+	b) Formulujte dvojprůchodový algoritmus pro DISTINCT využívající hašování. (2b)
+	c) Stanovte a zdůvodněte minimální paměťové nároky M pro tento algoritmus nad R (bez algoritmu v (b) je hodnoceno nula body). (2b)
+
+9. Plán zpracování dotazu. Uvažujte relace tracking(|pos_key|, car_key, time, gps), order(|pos_key|, |order_number|) a následující dotaz a jeho plán zpracování: pozn.: || je nahrazení podtržení (CTRL+U)
+SELECT * FROM tracking LEFT JOIN order USING (pos_key) WHERE order_number='DHL'
+
+"Merge Join (cost=13512.90..21324.59 rows=1121 width=168)"
+"	Merge Cond: (tracking.pos_key = order.pos_key)"
+"	->  Index Scan using tracking_pkey on tracking (cost=0.42..7421.22 rows=151873 width=154)"
+"	->  Sort (cost=13494.96..13503.72 rows=3503 width=22)"
+"		Sort Key: order.pos_key"
+"		->  Bitmap Heap Scan on order (cost=75.72..13288.73 rows=3503 width=22)"
+"			Recheck Cond: ((order_number)::text = 'DHL'::text)"
+"			->  Bitmap Index Scan on order_order_number (cost=0.00..74.84 rows=3503 width=0)"
+"				Index Cond:((order_number)::text = 'DHL'::text)"
+
+	a) Nakreslete strom vyhodnocení, k uzlům přiřaďte použité algoritmy a odhadované velikosti v počtech záznamů. (3b)
+	b) Určete celkové náklady na vyhodnocení. (1b)
+	c) Vysvětlete, co znamená Bitmap Heap Scan a Bitmap Index Scan. Pozor, všechny indexy na relacích jsou typu B-strom. (2b)
+
+10. Hašování v databázích a operace GROUP BY. Předpokládejte relaci tracking(|pos_key|, car_key, time, gps), kde B(R) >> M, 8 KiB velikost bloku a následující dotaz, který vrací 68 000 záznamů:
+SELECT car_key, MAX(time) FROM tracking GROUP BY car_key
+	a) Popište algoritmus hašování relace tracking, kde dostupná paměť M = m bloků. (2b)
+	b) Formulujte dvouprůchodový algoritmus pro GROUP BY využívající hašování. (2b)
+	c) Stanovte a zdůvodněte minimální paměťové nároky M pro vyhodnocení algoritmu z (b), kde car_key je INT (4B) a time je TIMESTAMP (8B). Bez algoritmu v (b) je hodnoceno 0 body.
+
+11. Spojování relací. Uvažujte relace tracking(|pos_key|, car_key, time, gps), order(|pos_key|, |order_number|) a následující dotaz a jeho plán zpracování:
+SELECT * FROM tracking LEFT JOIN order USING (pos_key) WHERE order_number='DHL'
+
+"Merge Join (cost=13512.90..21324.59 rows=1121 width=168)"
+"	Merge Cond: (tracking.pos_key = order.pos_key)"
+"	->  Index Scan using tracking_pkey on tracking (cost=0.42..7421.22 rows=151873 width=154)"
+"	->  Sort (cost=13494.96..13503.72 rows=3503 width=22)"
+"		Sort Key: order.pos_key"
+"		->  Bitmap Heap Scan on order (cost=75.72..13288.73 rows=3503 width=22)"
+"			Recheck Cond: ((order_number)::text = 'DHL'::text)"
+"			->  Bitmap Index Scan on order_order_number (cost=0.00..74.84 rows=3503 width=0)"
+"				Index Cond:((order_number)::text = 'DHL'::text)"
+
+	a) Formulujte obecný algoritmus pro MergeJoin (včetně řazení) a určete jeho náklady na vyhodnocení (v počtech V/V operací). (4b)
+	b) Určete a zdůvodněte, jakým způsobem je MergeJoin aplikován v uvedeném plánu, tj. jaké části obecného algoritmu se vykonají/nevykonají a proč. (2b)
+
+12. Indexování relací pomocí Grid-Index.
+Předpokládejte relaci map(|id|, x, y, name, description), kde name je název místa na mapě, description je podrobný popis a x, y jsou kartézské souřadnice.
+T(map) = 480 000, B(map) = 3 200 a V(map, x) = 1 200, V(map, y) = 1 000 - obě s rovnoměrným rozložením. Záznamy relace jsou uloženy uspořádaně podle id.
+	a) Popište princip Grid-Indexu a vhodný index pro atributy x, y vytvořte a odhadněte prostorové nároky pro jeho uložení v blocích, kde velikost DB bloku je 8 KiB. (4b)
+	b) Stanovte a zdůvodněte náklady na vyhodnocení následujícího dotazu s využitím navrženého indexu a bez jeho existence. (2b)
+SELECT name, description FROM map WHERE x=321 AND y=543
+
+13. Ukládání relací se záznamy s proměnnou délkou a odkazování na záznamy.
+	a) Popište techniku "Slotted Page Structure", a jak jsou řešeny aktualizace záznamů (insert/update/delete). (3b)
+	b) Představte princip odkazování na záznamy pro tuto techniku včetně formátu odkazu a diskutujte vliv na odkaz po změně nebo smazání záznamu (update/delete). (3b)
+
+14. Uvažujte relace výrobce(|výrobce_id|, název) a bazar(|id|, výrobce_id, typ, rok výroby, výkon_kw, barva, výbava), kde existují indexy pro primární klíče a další dva indexy na relaci bazar samostatně na atributech rok_výroby a výkon_kw.
+	a) Aplikace poskytuje formulář pro vyhledání podle stáří vozu. V implementaci se používá tento dotaz, kde je proměnná :age nahrazována hodnotou z formulář.
+	   SELECT * FROM bazar WHERE date_part('year', current_date)-rok_výroby<:age
+	   Vyhodnocovací plán pro hodnotu 4 je následující:
+"Seq Scan on bazar (cost=0.00..260.00 rows=127 width=108)"
+"  Filter: ((date\_part('year', 'now') - rok\_výroby) < 4)"
+	  

@@ -1,0 +1,162 @@
+1. V jaké vzdálenosti od Zemì (v astronomických jednotkách - AU) byla
+nejvzdálenìjší galaxie pozorovaná Hubbleovým teleskopem v okamžiku, kdy
+detekované svìtlo vyslala?
+
+
+nejvzdalenejsi: CL1358+62 (vzdalena 12mld AU)
+
+v = 12*10^9 ly
+1 ly = 300000 km/s * y
+y = 365 * 24 * 3600 s 
+1 ly = 9460800000000
+1 AU = 149 * 10^6 km  potom 
+1 ly = 63240.64 AU
+
+pak vzdalenost je 13 * 63240.64 * 10^9 = 758,88768 * 10^12 AU
+
+-----------
+2. elekron pøekoná rovnomìrnì zrychleným pohybem z klidu vzdálenost 30nm
+za dobu 10^-9s. Jaké je jeho zrychlení a jaká na nìj pùsobí síla?
+
+s = 1/2 a * t^2
+30*10^-9 = 1/2 a * 10^-18
+60*10^9 ms^-2= a
+
+F = m * a
+F = 9,109 . 10^-31 * 60 * 10^9
+F = 546.54 * 10^-22 N
+
+-----------
+3. Jakou gravitaèní silou na sebe pùsobí 2 malá tìlesa o hmotnosti 80kg na
+vzdálenost 10m? Za jak dlouho se jejich vzdálenost zmenší o 1cm, jsou-li
+na poèátku vùèi sobì v klidu?
+
+Fg = Gc * m1 * m2 / r^2
+Fg = 6,67 * 10^-11 * 64 * 10^2 / 10^2
+Fg = 426,88* 10^-11 N;
+
+a = F /m
+a = 426,88 * 10^-11 / 80
+a = 5,336 * 10^-11
+
+s/2=1/2*a*t^2
+t = sqrt (s/a)
+t = sqrt ( 1 / 5,336 * 10^-9)
+t = sqrt( 187,4 * 10 ^6 )
+t = 136894 s = 38,02h = 1,5 dne 
+
+
+-----------
+4. a)Jaká je délka matematického kyvadla s dobou kmitu 1s a 1ms na povrchu
+Zemì a Mìsíce?
+
+T = 2 * Pi * sqr ( l / g )
+
+Zeme
+1s:
+1 = 2 * Pi * sqr ( l / 9,8 )
+l = (1/6,28)^2 * 9,8
+l = 0,248m
+
+1ms
+1*10^-3 = 2 * Pi * sqr ( l / 9,8 )
+l = 2,484 *10^-7m
+
+mesic
+1s: 
+l = (1/6.28)^2 * 1,622 
+l = 0.041m
+1ms:
+l = (1*10^-3/6.28) * 1.622
+l = 0.411 * 10^-7
+
+b)Jakou periodu má matematické kyvadlo ve výtahu, který volnì padá k
+Zemi?
+zadnou, pri volnem padu je v = a - g a tim padem ho nic "nenuti" kmitat :) 
+-----------
+5. Popsat pohyb Foucaultova kyvadla na severnim a jiznim polu a
+rovniku. Za jak dlouho se rovina kmitu otoci o 90 stupnu v Brne?
+
+
+na severnim se bude stacet doprava, na jizni doleva,na rovniku vubec (Coriolisova sila je na rovniku nulova).
+
+zemepisna sirka Brna = 50° 
+na polu  - 360°/24h => 0,25°/min
+ pomeru rychlosti na polu a na rovniku je sin uhlu k ose otaceni
+ => 0,25°/min * sin50° ~> 0,2°/min.
+ => o 90° za 450min = 7.5h
+
+-----------
+6. Jakou praci vykona zemska tize pri presunu vody o objemu
+20*3*0.02km^3 o 50m nize v blizkosti povrchu Zeme? Stovnejte s denni
+produkci bloku elektrarny o vykonu 1000MW.
+
+
+Vv= 20*3*0.02 km^3= 1,2km3=1,2*10^9m3=1,2*10^12l
+mv = 12*10^11kg
+
+W1=Fg.s
+W1=5,88*10^14J
+
+W2=P.t
+W2=8,64x10^13J
+
+Zemská tíže vykoná 6,8* víc práce než generátor.
+
+-----------
+7. (Dilatace casu). Jak dlouho by se musely pohybovat hodiny rychlosti zvuku (M=1), aby se rozesli o 1 hodinu vuci hodinam v klidu. 
+
+t = t0 / sqrt( 1 - v^2/c^2)
+
+takze kdyz t ma byt o hodinu vice nez t0 tak plati ze
+
+t+1 = t / sqrt( 1 - 346,3^2 / 299792458^2 )
+
+kdyz substituuju tu odmocninu za a
+
+t+1	       = t / a
+ta + a	       = t
+t( a - 1 ) + a = 0
+t( a - 1 )     = -a
+t	       = - a / (a - 1 ) ~ a / 1 - a
+
+t	       = 1 498 878 459 687, 019
+t	       ~ 1,5 * 10^12 hodin
+
+
+-----------
+8. Jak dlouho trvá zastavení rakety z rychlosti 4/5c rovnomìrnì zpomaleným
+pohybem se zrychlením 2g?
+
+a = v/t
+v - 2gt = 0
+t = v/2g
+
+v = 4/5c ~ 239 833 966
+t= 239 833 966/2*9,8
+t= 12 236 426 sec ~ 142 dní
+-----------
+9. (relativisticke skladani rychlosti) Soustava S' se pohybuje vuci S rychlosti v, predmet se vuci S' pohybuje stejnou rychlosti v. Pro jakou rychlost v se skutecna rychlost predmetu vuci S lisi od hodnoty 2*v o 0.01% .
+-----------
+10. Jaký je pøírustek hmotnosti nabutého akumulátoru proti nenabitému,
+získá-li nabitím energii 2MJ.
+
+e = mC^2
+m = e / c^2
+m = 2*10^6 / 89875517873,6 * 10^6
+m = 2,22 * 10^-11 kg
+
+-----------
+11. Jakou elektrostatickou silou na sebe pusobi dve koule z uhliku
+(hmotnosti 100kg a vzdalenosti 10m), preda-li kazdy atom jedne z nich
+jeden elektron druhe kouli? Za jak dlouho se jejich vzdalenost zmensi o
+1cm, jsou-li na pocatku vuci sobe v klidu? (coulombuv zakon, Dodatecna napoveda prednasejiciho: 1 gram uhliku obsahuje 5×(10^22) atomu => "jednu dvanactinu presune komplicovi z druhe koule")
+
+Fe=5,769.10^25 N; t=1,317.10^-13 s
+-----------
+12. Jakou kapacitu má deskový kondenzátor s plochou 50x50 nm^2 a
+vzdáleností elektrod 5 nm s dielektrikem a-SiO2? Jaký náboj je na
+elektrodách takového kondenzátoru pøi napìtí 1V (v C a v poètech
+elementárních nábojù)? (permitivita toho Si dielektrika je 4)
+
+ C=1,77.10^-17 F; Q=1,77.10^-17 C; n~110

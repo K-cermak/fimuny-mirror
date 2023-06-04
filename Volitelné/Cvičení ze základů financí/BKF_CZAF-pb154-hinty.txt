@@ -1,0 +1,53 @@
+Ahoj.
+Tady je pár tipù pro tento pøedmìt, kterımi z osobní zkušenosti doporuèuju se øídit:
+Ruèím za jejich správnost, by jsou asi obèas v rozporu s moudry ostatních zde prezentujících:
+Je to dlouhé proto, e to je vysvìtlované ;-)
+
+- V pøedmìtì se nelpí na úplném našprtání algoritmù (dle krokù) - jde o principy.
+- Pokud si upravíte kroky, a nezmìní se vısledek, body dostanete. (Narozdíl od mnohıch jinıch pøedmìtù: zejména IB002, IB005, IB108, IA006, ... )
+
+
+Konkrétnì k vìcem ze zkoušek:
+Je dobré vìdìt, PROÈ databáze vznikly a mít to napamìti pøi odpovídání:
+- databází je sice i txt soubor, ale databázové stroje vznikly pro efektivní (èas a pamì) zpracování dotazù (nejlépe co nejvíce typù dotazù),
+- to úzce souvisí s efektivním pouitím a vyuitím rotaèních diskù (kterım se proto dost vìnuje pokraèující - pro vìtšinu lidí povinnı - pøedmìt).
+- pøi ètení (i zapisování) z disku je nejmenší zpracovatelnou polokou blok (angl. cluster).
+- V bloku mùe bıt víc "jednotek dat" (tøeba záznamù), ale i kdyby byl blok plnı z 1/10, pøi ètení ho pøeèteme celı (co trvá) - takové vìci jsou zde klíèové.
+
+- pokud se vás nìkdo ptá "co je to ... (napø. transakce)" tak tam nepište ádné vlastnosti apod (u transakcí ani ACID, ani stavy),
+- pokud se vás ptají na vlastnosti, nepištì tam stavy apod!
+- pokud se vás nìkdo ptá na pojem, a vlastnosti této vìci jsou pro vymezení pojmu klíèové (napøíklad ho specifikují nebo urèují),
+  tak je tam samozøejmì napište (není pøípad transakcí),
+- transakce je posloupnost pøíkazù pøistupující k datùm v DB. Pøíkazy musí bıt uspoøádané. Transakce vznikly právì z dùvodu zpracování více pøíkazù po sobì,
+  které dohromady NETVOØÍ atomickou operaci, proto se musí øešit soubìné zpracování transakcí, aby se navzájem neovlivòovali.
+- Tedy soubìné zpracování více transakcí je bìné.
+- Transakce NEMUSÍ mít vlastnosti ACID - to je jen naše pøání. Rùzné DB umoòují provádìt transakce, které nemají všechny 4 vlastnosti a taky jsou pouívané.
+- Velice èasto ale tyto vlastnosti chceme mít, a proto je dobré je znát :-P
+- Definice "zachování konzistence" je implikace "jestlie byla DB konzistentní pøed transakcí, bude i po ní".
+- ádná transakce samozøejmì nezaruèí, e DB bude konzistentní PØED ní ;-) (Tedy odpovìï "DB musí bıt konzistentní pøed transakcí i po ní" je matematicky nesmyslná!)
+- Konzistence = splnìní všech integritních omezení (dány napø. vztahy mezi klíèi - primáøní, cizí, povolení null hodnot, datové typy apod.) 
+
+
+Asi jedinou vıjimkou, co se algoritmù tıèe, je (external) merge sort - nestaèí napsat obecnou definici merge sortu probíranou jinde! (napø. IB002).
+- Øadící alg. které se uèíte jinde jsou obecné koncepty.
+- Merge sort probíranı zde, je ponìkud konrétnìji specifikovanı a lehce modifikovanı (s ohledem na disk a pamì RAM).
+- bere v potaz, e na disk se píše a zapisuje jen po blocích.
+- Dávejte si pozor, co je urèeno jako blok a kolik obsahuje záznamù.
+- (V pøíkladì na slidech se do pamìti vejdou 3 bloky a kadı obsahuje 1 záznam. Na zkoušce mùe bıt jinak.)
+
+Vysvìtlení:
+Máte-li pamì pro n blokù, tak:
+- V první fázi naètete (popoøadì!) vdy n blokù a LIBOVOLNİM algoritmem jejich obsah seøadíte. Po seøazení vdy uloíte (typicky na disk)
+- TEDY NA ZAÈÁTKU ALGORITMU NEØADÍTE OBSAH V RÁMCI KADÉHO BLOKU!
+- Takto vytvoøíte nìkolik seøazenıch èástí (ve slidech je kadá z nich oznaèena jako "run").
++ Následnì vemete n-1 "runù", a z nich naètete z disku do pamìti první blok. V kadém z naètenıch blokù dále umístíte ukazatel (šipku) na první hodnotu.
+- Všech n-1 hodnot, na které ukazuje šipka, porovnáte a nejmenší z nich odstraníte z runu, a dáte bokem (stále do pamìti RAM!),
+- na to potøebujete poslední volnı blok pamìti ;-)
+- Ukazatel v bloku, ze kterého jste právì odebrali záznam, posunete na další hodnotu, pøièem
+A) pokud je poslední blok v pamìti (ten kam øadíte vısledek) plnı, tak jej uloíte na disk, a máte zase místo pokraèovat,
+B) pokud je nìkterı z naètenıch blokù (zpracovávanıch) prázdnı - tak naètete další blok daného runu (pokud není u zpracovanı, jinak nic nenaèítéte a dokonèíte ostatní.)
+Dále opakujete, dokud nezpracujete všech n-1 runù.
+Pokud vám vzniklo více po prvním kroce více, jak n-1 runù, tak musíte tento cyklus (oznaèen znaèkou "+") dìlat pro kadou "n-1"-tici runù, a pak zase vzniklé delší runy dávat dále dohromady stejnì.
+
+Tato èísla, a proè je ten algoritmus pro DB tak dobrı, a proè se probírá mi pøíjde ze slidù nepochopitelné. Jeho hlavní vıhoda je, e respektuje bloky na disku, a je èasovì i pamìovì efektivní.
+(Všimnìte si, e dávat dohromady n-1 runù má lineární èasovou sloitost.)

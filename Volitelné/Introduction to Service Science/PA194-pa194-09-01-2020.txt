@@ -1,0 +1,16 @@
+Closed questions: Each for max 2 points, you have to get at least 6 points to pass
+1) Choose PDL specific statements
+[product is destroyed by customer, short-time, ...]
+2) Choose type of information every participant can see only his cards and can't see cards of other players and cards in deck.
+[perfect, imperfect, incomplete, asymetric]
+3) Choose advanced paradigms of service economy
+[service covers the fundamentals of exchange, ...]
+4) Which diamond does not include context? (There might have been more description about searched diamond)
+[see, organize, recognize, do]
+5) What is true about relationship provider - target
+[mention, use, understand, responsible, ...]
+
+Open questions: Each for max 5 points, you have to get at least 9 points to pass
+1) describe market of lemons
+2) product proposition "enterprise is not value creator but only value proposer"
+3) describe SERVQUAL, where it is used, why it is important

@@ -1,0 +1,6 @@
+1. Princip DMA operaci
+2. Aproximace LRU, druha sance
+3. Shodne a rozdilne vlastnosti strankovani a segmentace
+4. Bezpecny stav procesu
+5. Reseni vecericich filosofu pomoci semaforu
+6. Exponencialni prumerovani

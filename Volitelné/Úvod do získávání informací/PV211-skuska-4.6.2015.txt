@@ -1,0 +1,22 @@
+PV211 - Úvod do získavania informácií
+
+4.6.2015
+Test je v podstate rovnakı ako 22.5.2014 (word document tu na fi.muny.cz, 
+nebudem to teda celé opisova iba na to nadviaem)
+
+- otázky 2,3,4(správne aèko),6,7,10,13,14,18,21 boli presne v takom znení
+ a vybraná monos je naozaj správna
+- 1,5,9,12,15,17,19 boli tie ale boli zadané iné dáta
+
+ïalej 
+- bola otázka èo oznaèuje P@10 
+- zisti P@5 pre postupnos desiatich R/N (napr. RNRRNRNNRN, nepamätám si presne)
+- urèi, ktoré dokumenty vráti dotaz IBM /2 Microsoft, kde
+  /k znamená maximálnu vzdialenos slov (nie Levensteinovu)
+  a bolo zadané nieèo takéto (ale ove¾a viac): Microsoft: 1: <1,5> 
+  èo vlastne znamená, e v dokumente 1 je slovo Microsoft na 1. a 5. mieste
+  (asi to nepomôe ale správna odpoveï bola "4")
+- èo je to google bombing (správna odpoveï je nieèo z pagerankom)
+- Nestrukturovaná data se od strukturovanıch liší tím, e 
+	*Datové schema se aplikuje a tìsnì pøed naèítáním dat. 
+- + ïalšie otázky ale tie su u nepamätám (ale myslím, e 11,16 a 20 tam boli tie)
