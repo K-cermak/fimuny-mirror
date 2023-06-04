@@ -1,0 +1,18 @@
+﻿Zkouška 7. 6. 2012
+===============================================================================
+
+1) Co definuje specifikace XPDL?
+2) Popište notaci procesní mapy v UML pro diagram aktivit, nakreslete
+   jednoduchý příklad s AND a XOR větvením.
+3) Co předává WAPI 1 mezi PDT a WES?
+4) Popište kolaborativní workflow, definujte jeho procesy, uvěďte konkrétní
+   příklad.
+
+
+Zkouška 14. 6. 2012
+===============================================================================
+
+1) Nakreslete a popište workflow metamodel.
+2) Jak se stanoví náklady procesu?
+3) Jaké jsou základní typy zdokonalování procesů?
+4) Popište notaci Petriho sítí pro modelování procesů.

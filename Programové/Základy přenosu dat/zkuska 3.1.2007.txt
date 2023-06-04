@@ -1,0 +1,15 @@
+1) Øízení datového spoje, multiplexing .. popisat ciele
+2) OSI ISO model .. 7 vrstiev, ich strucna charakteristika
+3) priklad na Nyquistovu vetu:
+   a) Medium ma sirku pasma 1Mhz. Kolko signalovych prvkov potrebujeme,
+      aby sme dosiahli rychlost prenosu 10Mb/s
+   b) aku sirku pasma ma medium s r
+4) CDMA... Janka, Igor a Peter maju vlastne kluce tvaru napr(1,0,0,1,1,0)
+   a primac dostanne spravu (-2,-2,0,0,2,0). Zistite, kto poslal spravu 
+   primacu a zistite aj, aku spravu poslal ..(cisla su len vymyslene, 
+   tie si fakt nepamatam. Priklad na to najdete v slajde 9. Rozprostøování spektra, strany 16 az 28)
+5) ako sa budy vymienat spravy v systeme s HDLC, ked,.. (slajd 7. Øízení datového spoje.. strany 24 az 36)
+   a) uzol A posle uzlu B spravy 0,1,2 .. uzlu B pridu len spravy 0 a 2
+   b) uzol A posle uzlu B spravy 4,5 .. uzlu B pride len sprava 4
+6) je postupnou bitov 0101000011101 zakodujete ju v tychto kodoch:
+   NRZ-L, NRZI, Bipolar-AMI, Pseudoternary, Manchaster, Diff. Manchaster

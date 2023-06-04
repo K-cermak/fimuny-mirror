@@ -1,0 +1,15 @@
+1) Popište GMR hlavu, jak funguje, nakreslete ji
+
+2) Popište syntézu zvuku, oba typy (tzn. Wave-Table, FM) a popište zpùsob fungování
+
+3) a) TurboBoost, b) Rozdíl mezi SCSI differential a singleended
+
+4) Popište ètení a zápis CD-R, nakreslete prùøez a popište.
+
+5) Nakreslete a popište buòku PROM s multiemitorem (Tzn. ne diodou, jak je ve slidech, nevím :( ), nakreslete zapojení takové 8b pamìti 2x4.
+
+6) Nakreslete ATA-2 kartu a popište zapojení zaøízení, jejich maximální poèet, aspoò 3 typy zaøízení
+
+7) Nakreslete a popište stránkování Pentia II, stránka 4kB.
+
+8) Vysvìtlete kódování USB a zakódujte vzorek 1010111111110111.

@@ -1,0 +1,61 @@
+1. ZKOUSKA : PREDTERMIN 17.12.2013
+aké novinky priniesla architektúra Core, 
+ako funguje CRT s obrázkom, 
+ako funguje laserová myš
+inventor v TTL
+-jak probíhá komunikace pøes USB
+-hysterézní køivka
+
+
+2.ZKOUSKA: 10.1.2014
+
+-nakreslit prom 2x4 realizovane pomocou multiemitorovych tranzistorov a jednu bunku
+-strankovanie pentium II + nakres
+-popis + nakres GMR hlavy
+-cd-r - nakres + popis zapisu a citania
+-metody syntezy zvuku
+-co je to Intel Turbo Boost technology a Advanced Smart Cache
+-komunikacia cez USB + zakodovat 16b 
+-myslim ze este nieco, ale neviem si spomenut
+
+
+
+3. TERMIN: 15.1.2014
+
+- plazmovı displej
+- klavesnica-hallov jav
+- Pentium II strankovanie
+- syntéza zvuku
+a myslím e tam bolo aj toto:
+- NAND flash - NOR flash
+- SCSI
+- L2cache 80486DX, nakres popis prace
+a CMOS invertor nakreslit a posat
+
+
+
+4.TERMIN: 22.1.2014
+
+nakreslit DRAM a popsat funkci jedné buòky
+stránkovací reimy v Pentiu III
+Branch Prediction u Pentia+ nákres
+pamì DRAM - nakreslit a popsat fukci jedné buòky
+CAS, RAS, CAS Latency
+ètení a zápis magneto-optického disku 
+a jednu sem tam mìl, tu u si nepamatuju, a nebyla v tìch otázkách vypracovanejch na fi.muny.cz ...byl to nìjakej konektor tiskárny myslím
+
+
+5.termin  28.1.3014
+1. EEPROM - bunka a princip jeji cinnosti, pak 4x4
+2. rapid execution engine, execution trace cache
+3. a) SATA - max.pocet zarizeni,4 kanaly,
+b) vypocet vel. souboru, byla zadana frekvence,atd
+4. rezimy firewire A JEJICH princip
+5. a) porovnat u CD ROM CAV vs. CVL
+   b) co to je SLI
+6 opticka mys-nakres,princip
+7 sublimacni tiskarna-nakres,princip
+8 odvodit/vypocitat neco ohledne fyzicke adresy atd. ...?? :-D mozna, tomu jsem moc nevenovala pozornost 
+
+
+SNAD VAM TO POMUZE, OTAZKY SE MOC NEMENI ;)  BTW CHYBI TU JESTE SESTY - POSLEDNI TERMIN

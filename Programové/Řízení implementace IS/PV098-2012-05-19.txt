@@ -1,0 +1,7 @@
+1 Co je to projekt. 5 Planu, popsat jednou vetou
+2 Podnik jako otevreny system, model zlepsovani vykonu, 6 cinnosti, ktere podnik muze delat pro zlepseni vykonu. Jak spolu souvisi (namalovat nebo popsat)
+3 Proces rizeni zainteresovanych stran 
+4 CEP - co to je, jake ulohy typicky vedou na pouziti CEP
+5 nakreslit faze standardniho postupu, expresniho postupu, prirustkoveho vyvoje, prirustkoveho vyvoje s prototypovanim, rozepsat podrobne fazi definice architektury
+6 (Nepamatuji si presne zadani)Informacni strategie - jednotlive etapy/faze (nevzpominam si presne, co to bylo za slovicko), kolik ma typicky fazi a proc
+7 Jste neschopny project manager a je jasne, ze projekt jde do haje, co udelate, kdyz vam v pistoli zbyva uz jenom posledni naboj? :) GL&HF

@@ -1,0 +1,7 @@
+1. Dané Fourierovy koeficienty F6 = 21, F7 = 0, F8 = 0, F9 = 3 -> dopočítat F0 -- F5, zrekonstruovat pomocí inverzní FT signál délky 6 (f0 -- f5).
+
+2. Dané 3 původní body a 1 interpolovaný -> dopočítat čtvrtý původní bod (lineární interpolace a nearest neighbour)
+
+3. Napsat transformační matici pro obrázek velikosti 256*256, která provede převrácení okolo 3. řádku a scaling v ose X 0.25x.
+
+4. Formálně zapsat a dokázat, že 1D konvoluce je komutativní.

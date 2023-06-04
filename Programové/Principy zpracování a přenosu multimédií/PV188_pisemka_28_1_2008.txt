@@ -1,0 +1,10 @@
+1. Co je to hloubka ostrosti.
+2. Co je to SureStream?
+3. Na co by jste použili MPEG-7 resp. MPEG-21?
+4. Výhody vs. nevýhody nekomprimovaného záznamu dat (otázka nezněla takto, ale podstatou odpovídá).
+5. Vysvětlit princip PCM.
+6. Alespoň tři druhy mikrofonů z pohledu druhu použitého měniče a vysvětlit funkci toho měniče.
+7. Co to je směrová charakteristika mikrofonu?
+8. Rozdíl mezi aktivním a pasivním autofokusem.
+9. Porovnat výhody a nevýhody TCP vs. UDP při přenosu multimédií.
+10. nevzpomenu si

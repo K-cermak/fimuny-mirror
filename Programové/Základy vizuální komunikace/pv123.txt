@@ -1,0 +1,294 @@
++------------------------------------------------------+
+| Základy vizuálnej komunikácie 1/2 (otázky 1-95) 2009 |
++------------------------------------------------------+
+     by psie sliny
+
+Legenda:
+- niekde je uvedených viac možností ako bolo požadované
+- x pri otázke - pravdepodobná odpoveď
+- otázniky pri odpovedi: ví¤čšinou znamená, že nič lepšie som nenašiel
+
+niektoré veci prebraté z predošlých vypracovaných otázok
+snažil som sa to spraviť bez chýb, ale ak nejaké vznikli, tak sa za ne ospravedlňujem
+
+
+1. Reč obrazov a symbolov (vrátane významu)
+-- symbolika - veda o symboloch a ich použití­, reč znakov
+-- syntax - vzťahy medzi znakmi
+-- sémantika - vzťah medzi znakom a označovaným
+-- pragmatika - vzťah znaku a uží­vateľa, nie vzťahy k predmetom
+2. Klasické vymedzenie sociálnej komunikácie (H.D. Lasvell)
+-- 1) kto (komunikátor), 2) hovorí­ čo (komuniké), 3) komu (komunikant), 4) čí­m (druh komunikácie), 5) prostrední­ctvom akého média (napr. hovorenej reči v priamom fyzickom kontakte), 6) s akým íşmyslom (intencia, motivácia), 7) s akým íşčinkom
+3. Formy nonverbálnej komunikácie
+-- proxemika (priestorové oddialenie/priblí­ženie hovorcu)
+-- kinezika (reč pohybov)
+-- posturolíłgia (reč postojov)
+-- gestika (reč paží­)
+-- mimika (tvárových svalov)
+-- vizika (očí­)
+-- haptika (dotykov)
+4. Ĺ truktíşra komunikácie
+-- Komunikátor kíłduje svoje sdÄ›lení­, napr. vo verbálnych znakoch (hovorí­), vyjadruje určitý obsah a použí­va určité médium (hovorí­ priamo ku komunikantovi alebo mu telefonuje). Komunikant dekíłduje prijaté sdÄ›lení­, ktoré obaja interpretujíş ako význam použitých znakov, pričom ak išlo o verbálne sdÄ›lení­, obaja použí­vajíş svoju slovníş zásobu
+5. Popí­šte schému tváre v smiechu, hneve a kľude (tvar obočia a íşst)
+-- (tu síş aj oči) >:-), <:-(, |:-|
+6. Mimika a gestika. Teíłria empatie.
+-- Komunikatí­vny je hlavne výraz tváre. Človek má to sčasti v nezávislej nerv. síşstave - červenanie, plač, blednutie, rozší­renie zorní­c. Vzorce mim. výrazu síş prevažne naučené. Najviac povie časť okolo íşst a očí­. Rozlišuje sa spontánna mimika (strach, ľak) od hranej, často íşmyselne alebo návykovo preháňanej.
+-- Teíłria empatie (vcí­tenia) vychádza z toho, že subjekt vcí­tene nevedomo a slabo napodobuje mimiku pozorovanej osoby a tak si navodzuje v slabšej forme jej vníştorný stav.
+7. Hromadné sdÄ›lovací­ prostriedky (charakteristika a druhy)
+-- (tiež masmédiá) sa v obecnom zmysle zaoberajíş "produkciou, reprodukciou a distribíşciou vedomostí­ (znalostí­) široko chápaných síşborov symbolov majíşcich dí´ležitý význam pre skíşsenosť v sociálnom svete" (D. McQuail)
+-- Vo svojich prí­jemcoch sdÄ›lovací­ prostriedky ovplyvňujíş samotníş konštrukciu sociálnej skutočnosti, ich predstavy o nej. Fakticky teda mí´žu vytvárat vlastníş, novíş ďalšiu realitu. (M. Foret)
+-- Patrí­: tlač, rozhlas, televí­zia, film (niekt. druhy), zvuková reprodukcia, internet, niekedy reklama
+8. Reč tela (signály) (vymenujte 5 typov)
+-- sebadotýkanie, signály bariéry, sig. napí¤tia, pachové signály, signál vzrušenia
+9. Čí­m sa zaoberá obor typografie?
+-- je organizácia pí­sma v ploche pri rešpektovaní­ logických a estetických pravidiel; ďalej rešpektuje pravidlá ekonomické, kultíşrnohistorické; podlieha dobovému vkusu, ale sama ho zároveň ovplyvňuje a formuje
+10. Čí­m sa zaoberá obor grafický design?
+-- obor užitého umenia, kt. sa zaoberá grafickými návrhmi na plošné (2D) výrobky, tesne spolupracuje s typo. a pí­smom
+11. Čí­m sa zaoberá obor pí­smo?
+-- zahrňuje jednak navrhovanie (tvorbu) pí­sma, jednak prácu s pí­smom (nie typografickým); patrí­ tu kaligrafia - ozdobné ručné pí­sanie pisma
+12. Čo zahrňuje grafický design? (v širšom zmysle)
+-- grafický design, pí­smo, typografia
+13. Konštrukčné prvky pí­sma (názvoslovie)
+-- horná doťažnica (verzálková), stredná (mí­nusková), základná (zákl. íşčiarie), dolná, akcentová doťažnica
+-- horný doťah, preťah, stredná výška pí­sma, akcent, horný preťah, dolný doťah
+14. Vymenujte 5 skladobných častí­ pí­sma
+-- oko, chvost, hlava, ucho, patka, ...
+15. Čo je latinka? Akíş zaoberá geografickíş rozlohu?
+-- je to pí­smo, použí­va sa prakticky na všetkých svetadieloch
+16. Čo je pí­smová kuželka? Vyjadrite čí­selne alebo graficky pomer základného riadkovania.
+-- je to kovový hranol, kt. je ukončený rovnou plochou (tá vymeniteľná vec, ktorou tlačí­ stroj pí­smeno)
+-- riadkovanie:
+
+   +--------  horná (tam siaha t)
+   textqp     60
+   +--------  horná/dolná (siaha p,q)
+   textqp     60
+   +--------  dolná
+(a ešte medzi základnými íşčariami 60)
+
+17. Vyznačovacie pí­sma (5 typov)
+-- základné, polotučné, tučné, kurzí­va, polotučná alebo tučná kurzí­va, kapitálky
+18. Pí­smová rodina (def.)
+-- síşhrn pí­siem rovnakého rezu i jeho vyznačovacie, prípadne ozdobné varianty vo všetkých veľkostiach (stupňoch).
+19. Farebný index písma
+-- je šedé zafarbenie písma v ploche (pri zažmúrených očiach). Rozdielny je aj pri základných a vyznačovacích variantách. Je dôležitý pri stanovení sadzobného obrazca a pre správnu komb. písma a ilustrácií. Dôležitý pre čitateľnosť textu.
+20. Súbor písma (def.)
+-- všetky stupne písma jednej rodiny, ale v jednej variante. Bývajú kodifikované vo vzorníkoch písma.
+21. Čo je stopa a driek písma?
+-- stopa - sústava zvislých, šikmých či vodorovných ťahov
+-- driek - hlavné zvislé alebo šikmé ťahy
+22. Čo sú pravé a nepravé ligatúry?
+-- písma navĂ¤zujúce na seba, pravá je na jednej kuželke, nepravá na dvoch
+23. Čo je majuskula, miniskula a akcent?
+-- veľké písmená, malé písmená, diakritika
+24. Čo je serif, poloserif, hlava, pĂ¤ta písmena? (popíšte)
+-- serif je zakončenie ťahu písmen (pri niektorých)
+-- poloserif je čiastočné (napr. pri písmene T)
+-- hlava a pĂ¤ta - horné a dolné zakončenie
+25. Čo ovplyvnilo konečnú podobnu písmového znaku? (4 typy)
+-- nástroje, materiál, ľudské myslenie, jeho jazyk a potreby komunikácie, životné, a sociálne prostredie
+26. Čo stálo na počiatku každého pokusu o vytvorenie písmového systému? (1 slovom)
+-- piktogram
+27. Regionálne písmové okruhy (podľa nástroja a materiálu)
+-- egyptský - dláto a kameň, neskôr papyrus a brko
+-- mezopotámsky - hlinené tabuľky a tlačítko
+-- čínsky - štetec, tuš a papier
+-- stredoamerický - dláto a kameň, neskôr papier, pero a farby
+-- grécky - kameň a dláto, keramická hlina a farba
+-- rímsky - plochý štetec, mĂ¤kký kameň a dláto, neskôr voskové tabuľky a písatko s hladítkom, papyrus, pero, atrament, ...
+28. Význam písma (3 typy)
+-- vnímanie slov zrakom aj opakovane a kdekoľvek, zrušenie miestych a časových obmedzení, dokonalé a rýchle sprostredkovanie poznania
+29. Predstupne písma (3 typy)
+-- mnemogramy, petrogramy, jaskynné kresby
+30. Z čoho vznikol piktogram? (1 termínom)
+-- zo skalnej kresby
+31. Aké výtvarné diela vznikajú v paleolite, mezolite a neolite? (i datácia)
+-- paleolit - skalné kresby (20k) (staršia doba kamenná 2,5 mil. - 9k)
+-- mezolit - zjednodušené skalné kresby (8300) (stredná doba kamenná 9000-5000)
+-- neolit - dokončuje sa vývoj piktogramov (5000-1000)
+32. Vymenujte známe lokality s výskytom jaskynných kresieb (aspoň 3)
+-- Altamira, Lascaux, Niaux
+33. Čo je to ideogram?
+-- obraz (znak) zobrazujúci jedno slovo, viaže sa k pojmu, nie zvukovej podobe
+34. Čo je piktogram? Čo je Zimná kronika?
+-- schématický obrázok reálneho predmetu, nie je to už skalná kresba
+-- Zimná kronika - piktografický zápis udalostí jedného roku kmeňa Vrán - Indiánske piktogramy (z 19. st.)
+35. 4 stupne vo vývoji písma (len vymenovať)
+-- piktogram, ideogram, slabičné písmo, hláskové písmo
+36. Ktoré moderné písmo dospelo len do štádia slabičného písma? (1 typ)
+-- japonská katakana
+37. Čo je bustrofedon?
+-- písanie zľava doprava a na druhom riadku opačne (napr. pri zvitkoch)
+38. Čo sú hieroglyfy?
+-- zložitejšie ideogramy
+39. Aké nástroje a materiály používa čínska kaligrafia?
+-- činsku tuš, čínsky štetec, roztierací kameň a papier
+40. V ktorých oblastiach sa nezávisle vyvinuli hieroglyfy?
+-- sumerské, egyptské, mayské, chetické a protoindické
+41. Ktoré písma sa vytvorili z fénickej abecedy? (5 typov)
+-- hebrejské, arabské, sýrske, mongolské, grécke
+42. Kedy a z čoho vznikla grécka alfabeta? Čím sa líšila od svojej predchodkyne?
+-- 500 p.n.l ??, z fénickej abecedy, prevzali 16 znakov bez zmeny, pre samohlásky dali nejaké zostávajúce znaky, pre O zaviedli písmeno a pridali 3 spoluhláskové páry a ešte názvy písmen už boli iba na identifikáciu, neoznačovali konkrétne veci
+x43. Kedy a kde vzniklo prvé hláskové písmo? Čo chýbalo?
+-- 2000 p.n.l., protosinajské, obtiažne a zdĺhavé kreslenie
+44. Vysvetlite princíp akrofĂłnie
+-- je to zmena piktogramu na písmeno; napr. nejaký piktogram sa označoval ako BETH, tak sa zobralo B a použilo ako písmeno
+45. Aké písma vznikali z východnej gréckej abecedy? (3 typy)
+-- slovanské - hlaholika, cyrilika, azbuka
+46. Označte písmená dĂłrskej varianty gréckej abecedy.
+-- západná
+47. Označte písmená iĂłnskej varianty gréckej abecedy.
+-- východna -- VIĎ SKRIPTĂ�
+48. Aké písma vznikli zo západnej gréckej abecedy? (5 typov)
+-- latinské, etruské, starogermánske runy, arménske, gruzínske
+x49. Čo je rímska nápisová kapitála? (podrobná charakteristika) Čo priniesla nového?
+-- tiež sa volá rímska kvadráta, je to nápis, časté používanie skratiek, ligatúr, slová oddelené bodkami vo vertikálnom strede riadku, neskôr aj štvorčeky, trojuholníky, brečtanový list (tu asi niečo ešte chýba)
+-- prínos: tvorcovia nápisov vyvinuli serify a písmo výškovo ustálili, išlo o dekoratívny efekt - vyrovnanie písiem v riadku, riadkoch medzi sebou, tiež ustálenie písmovej schémy (okrem napr. P), rytmus písma (vznikol rozdelením ťahov na hlavné a vedľajšie), kompozícia písiem do štvorca - odtiaľ kvadráta
+50. Rímska nápisová kapitála: materiál, technika, tvar žliabku.
+-- materiál: rovná kamenná doska z mĂ¤kkého vápenca alebo mramoru
+-- žliabok v tvare V
+-- technika: písmo predkreslené plochým štetcom na rovnú kamennú dosku. Dlátom vytesané.
+51. Kde a na akom objekte sa nachádza najslávnejší nápis na svete?
+-- v Ríme na Trajánovom stĺpe
+52. Napíšte 3 písmená, ktoré nepatria do konečnej podoby latinskej abecedy.
+-- J, U, Z
+53. Čo je unciála, čím sa vyznačuje?
+-- zmiešané písmo, vznikla z rímskeho zmiešaného písma scripta mixta. Stala sa formálnym latinským knižným písmom a nahradila majuskulovú klasickú kapitálu.
+54. Čím a na čo sa písala rímska kurzíva?
+-- čím: vápnom, uhlíkom
+-- na čo: vyškrabané do omietky, do keramických črepov, tehiel a pod., rydlom do vosk. tab.
+55. Čo sú tzv. písma národné (datácia)?
+-- modifikácia rímskych písiem, vznikajú koncom 6. st.
+56. Čo je karolínska miniskula? Aký proces uzaviera?
+-- písmo, ktoré bolo vytvorené behom reforiem počas karolínskej renesancie, vývoj trval do gotiky
+-- uzaviera proces vývoja princípu malej abecedy
+57. Kadiaľ viedlo zemepisné rozhranie medzi textúrou a rotundou? (1 slovom)
+-- cez Alpy
+58. Čo je rotunda?
+-- gotická knižná miniskula, talianske národné písmo, zdomácnela v južn. Francúzku a Ĺ panielsku, vďaka kníhtlači nakrátko celoeurĂłpskou
+59. Čo je textúra?
+-- písmo, nahor od Ă�lp, písmo doznievajúceho rytierskeho a cirkevého stredoveku, pravidelným striedaním diekov a osnovy riadkov sa dosahuje max. grafického účinku. Jednoliatosť riadkov podporuje skrátenie horných a dolných preťahov. Čím užší obraz písmena, tým menej čitateľné. Stránka býva príliš geometrická a je doplňovaná iniciálami a ďalšou výzdobou.
+60. Čo je fraktúra a kurent?
+-- fraktúra - najnemecnejšie písmo ozn. ako "gebrochenes" (lomené) alebo "deutsch" (nemecké), lebo je ich výtvorom. Tlačiarenske písmo dobrej kresby, úsporné, má svetlejší farebný index než ostatné gotické písma.
+61. Vymenujte 5 kritérií klasifikácie tlačového písma.
+-- kolmosť a šikmosť osi (guľatých písmen)
+-- diferencovaná a nediferencovaná šírková proporcia písmen
+-- veľkosť rozlíšenia hlavných a vedľajších ťahov pri písmenách
+-- prítomnosť serifov, spôsob ich napojenia
+-- ďalšie (zem vzniku, autor a písmoliareň, vzťah verzálok a mínusiek, atď.)
+62. Lineárne písmo serifové (synonymá, charakteristika, druhy)
+-- clanderon, egyptienka
+-- patria tu písma z egyptienok 19. st. a ich moderných modifikácií. Spojujú sa tu prvky antikvy (serify a diferenciácia písmových ťahov) a lineárneho písma (skelet znakov). Ĺ írková proporcia je vĂ¤čšinou nemenná.
+-- clanderon, s trojuholníkovými serifmi, s rovnými serifmi (egyptienka)
+63. Prechodová antikva (synonymá, charakteristika, hlavní zástupcovia)
+-- zahrňuje barokné antikvy 2. pol. 18. st. a ich moderné modifikácie. Tvorí časový i tvarový prechod medzi renesančnou a klasicistickou antivkou, prechod od písmen z písaných prehlôh k písmam konštruovaným. Sú to univerzálne knižné písma.
+-- Fournier, Baskerville, Old Fece, ITC Zapf International, ITC Century, Menhartova romana, Kolektiv, Týfova antikva.
+64. Dynamická antikva (synonymá, druhy, charakteristika, hlavní zástupcovia)
+-- Renesančné antikvy od 2. pol. 15. st. do 1. pol. 18. st. a ich novodobé modifikácie
+Používa sa predovšetkým ako knižné písmo, neskororenesančné písma sú ale univerzálne. -- benátska, renesančná, neskoro renesančná
+-- Jensonova Antikva (1470), Centaurus, Bembo, Palatino, Plantin, Erhardt
+65. Statická antikva (synonymá, druhy, charakteristika, hlavní zástupcovia)
+-- klasicistické antikvy konca 18. st. a začiatku 19. st. a ich moderné modifikácie. Uzavieraju historický vývoj knižného písna. Kresba všetkých písmových znakov je statická, konštruovaná. Používa sa ako knižné písmo. -- didotovská, anglická
+-- Didot, Bodoni, Modern 20, ITC Modern No. 216
+66. Lineárne bezserifové písmo (synonymá, druhy, charakteristika, hlavní zástupcovia)
+-- písmo navĂ¤zuje na tvarovú dynamickú schému renesančnej antikvy, ale bez serifov. Písmo sa používa ako akcidenčné (príležitostné), ale aj ako knižné.
+-- so zvislou osou, s naklonenou osou
+-- Antque Olive, Fruntiger, Gill, Syntax
+67. Lineárne bezserifové geometricky konštuované písmo (druhy, charakteristika, hlavní zástupcovia)
+-- vychádza z konštuktivizmu prelomu 20. a 30. rokov. Je tu snaha o odklon od tradície. Všetky ťahy sú nediferencované, písmové znaky su koncipované do geometrického tvaru alebo z neho vychádzajú. Písmo sa využíva v akcidencii a reklame.
+-- odvodené zo štvorca, odvodené z kruhu, odvodené z iného geometrického tvaru
+-- Eurostile, Microgramma, Futura, Kabel, Barell, Gotic Barell
+68. Lineárne bezserifové statické písmo (druhy, charakteristika, hlavní zástupcovia)
+-- toto písmo zahrňuje grotesky 19. st. a ich moderné modifikácie. Vzorom pre tieto písma boli statické schémy klasicistickej antikvy.
+-- grotesk, neogrotesk
+-- Akcidenční grotesk, Univers, Helvetica, Folio
+69. Lineárna antikva (charakteristika, druhy)
+-- písmo zlučuje kresobné a tvarové prvky písiem antikvových a bezserifových. Sú to písma ako knižné, tak aj časopisecké a akcidenčné. V súčasnej dobre vzniká veľa písiem v tejto klasifikačnej skupine. Ĺ írková proporcia je nejednotná, často však rovnaká. Tieňovanie je výrazné, len pri písmach s jemnými serifmi je nepatrné.
+-- s jemnými serifmi, so skrytými serifmi, s rozšírenými koncovými ťahmi
+-- síce zástupcov nechce, ale možno sa zíde vedieť aspoň pár: Optima, ITC Quorum, ITC Serif Gotic, Fritz Quadrata, Icone, Pascal
+70. Klasifikujte minimálne 3 ukážky (druh písma, meno písma)
+-- veľa šťastia
+71. Prečo opticky vyrovnávame riadky mínusiek?
+-- kvôli tomu, aby nevyzerali nevyrovnane a nepravidelne (kvôli prítomnosti/neprítomnosti horných a dolných preťahov)
+72. Čo je rozpal písma?
+-- je to vzájomné vyrovnávanie medzier medzi písmenami tak, aby vzialenosti medzi písmenami boli opticky rovnaké a slovo, riadok a celý text bol opticky vyrovnaný, aby text tvoril čo najkompaktnejšiu šedú plochu
+x73. Čo je hlavným cieľom (poslaním) typografie?
+-- organizácia písma v ploche
+74. Aká je paralela medzi typografiou a architektúrou?
+-- organizácia materiálu v priestore (3D) vs. org. písma v ploche (2D), obe pracujú so štandardnými prvkami - prefabrikátmi
+75. Čo je alfou a omegou typografie? (1 slovom)
+-- čitateľnosť
+x76. Čo je optický stred, kde všade sa uplatňuje? (popíšte pozíciu voči geometrickému)
+-- je vyššie oproti geom.; oblasť, kde sa oko pozerá najprv, dáva sa tam titulok, nadpis, ...
+77. Zlatý rez, Fibonacciho čísla a zlomky
+-- nie je šanca to nakresliť - viď 06_Typografie.pdf, 6 strana
+
+-- Zlatý rez: (5-1)/2 = 0,62
+-- Fibonacciho čísla: 1,1,2,3,5,8,13,... sú blízke zlatému rezu
+-- Fib. zlomky sú 1/1, 1/2, 2/5, 3/8, 5/13, ...
+78. Delenie formátov normalizovanej rady
+-- A0-A8, B0-B6, C0
+79. Rada A: A0-A6 (priraďte číselné hodnoty)
+
+-- A0: 1489 x 841 mm
+-- A1: 841 x 594 mm
+-- A2: 594 x 420 mm
+-- A3: 420 x 297 mm
+-- A4: 297 x 210 mm
+-- A5: 210 x 148 mm
+-- A6: 148 x 105 mm
+
+80. B0-B6 (-||-)
+
+-- B0: 1414 x 1000 mm
+-- B1: 1000 x 700 mm
+-- B2: 700 x 500 mm
+-- B3: 500 x 350 mm
+-- B4: 350 x 250 mm
+-- B5: 250 x 175 mm
+-- B6: 175 x 122 mm
+
+81. Vymenujte 4 základné estetické kategĂłrie, kt. platia aj v typografii
+-- symetria, rovnováha (vyváženosť), rytmus, kontrast
+82. Čo je hladká a zmiešaná sadzba?
+-- hladká: sadzba bez výrazných typografických prvkov, robená z 1 typu písma, urobený zákl. ("chlebový") text
+-- zmiešaná: obsahuje písma rôznych rezov, má celú radu typografických prvkov, obsahuje vyznačovacie varianty písma a rôzne stupne veľkostí písma na titulky, záhlavie kapitol, poznámky
+83. Vymenujte dva súčasné typometrické systémy, ako sa na nich volajú stupne 12b.?
+-- didotov merný systém - 12b = 1 cicero
+-- merný systém pica - 12b = 1 pica
+84. Vymenujte 4 zákl. typografické prvky.
+-- písmo, slovo, riadok, stĺpec
+85. Vymenujte 8 spôsobov členenia na logické a optické prvky.
+-- členenie pomocou odstavcov, čtverčík je štvorec na výšku kuželky
+-- členenie pomocou liniek - horizontálnych i vertikálnych, rúzne hrúbky
+-- členenie pomocou rámčeku
+-- členenie pomocou rôznych rezov a veľkostí písma
+-- členenie pomocou stĺpcov
+-- členenie pomocou bodov, značiek, číslic a pod.
+-- členenie vertikálne a horizontálne (pozn. horiz. - napr. také boxy rôznej dĺžky vedľa seba)
+-- členenie pomocou veľkých medzier medzi riadkami
+86. Vymenujte hlavné predpoklady vzniku kníhlače, rozveďte (5 typov)
+-- Papier: pergamen, na ktorý sa tlačilo počas stredoveku bol drahý a nedostatkový, prvá papiereň vznikla v Taliansku v r. 1286, papier bol tiež drahý, ale oveľa lacnejší ako pergamen; zákl. surovina - vlákna rôznych rastlín, doplnená hadrami
+-- Knihy: premeny od vypaľovaných alebo na slnku sušených doštičiek, papyrusových zvitkov (rotulus), voskových doštičiek, po stredovekú rukopisnú knihu (kĂłdex). Spolu s nimi sa začínajú objavovať otlače drevorezov na hracích kartách a náboženských obrázkoch. Objavujú sa aj knihy zostavené z týchto doskotlačí, kde sú drevorezové obrázky často sprevádzané textom. Boli to hlavne mená svĂ¤tých a náboženské príbehy. Vznikajú tzv. blokové knihy. Písmo je tu vyrezané nožom a dlátom spolu s obrázkami do hruškového alebo zimostrázového dreva. Postupne sú tlačené tzv. donáty (latinské gramatiky) a biblie chudobných, kde su ilustrácie tlačené. Knižné ilustrácie pomocou drevorezu sa držali az do 17. st.
+-- Vzdelanosť: rozvoj školského vzdelania, vznik ďalších univerzít zvýšil dopyt po knihách, hlavne konzumného charakteru. Pri univerzitách vznikajú rôzne inštitúcie pre rozširovanie kníh - požičiavajú sa za peniaze, rozmnožovali podľa diktátu. Existovali aj pisári na prenájom. Predaj kníh sa začal rozvíjať, vďaka univerzálnemu jazyku - latinčine sa šíril i za hranice.
+V stredoveku vznikli tieto typy kníh podľa ich funkcie: liturgické, študijné (individuálne, inštitucionálne), rukopisy zábavného a poučného čítania
+-- Písmo: bol jeho vývoj od majuskúlneho, unciálneho, polounc., tzv. národného, miniskulného, po tzv. karolínsku miniskulu. V 12 st. sa začína transformovať na gotickú miniskulu, od konca 13. st. sa objavuje kurzívne písmo, cca 1400 v Taliansku vzniklo humanistické písmo, ktoré sa stalo predlohou pre prvé renesančné tlačové písmo.
+-- Technické podmienky: všeobecná znalosť vinárskeho a knihárskeho(??) lisu. Tlačiarenský lis sa mu podobá. Ďalšou dôležitým faktorom bol rozvoj metalurgie.
+87. Vymenujte 5 hlavných zložiek kníhtlače (vynálezu)
+-- pohyblivé litery, konštrukcie liacieho strojčeku, vytvorenie liteĹ™iny (zliatina olova, cínu a antimĂłnu), vhodné tlačové farby a konštrukcia tlačiarenskeho lisu
+88. Čo znamená skratka B42?
+-- Latinská biblia (prvá kniha tlačená pohyblivými literami, má 42 riadkov/stranu a písmo je textúra)
+89. Ako sa volá 1. česká tlačená kniha, kedy a kde bola vytlačená?
+-- Kronika trojánska, 1468 v Plzni
+90. Čo su inkunábule? (syn., charakteristika)
+-- prvotlače, teda knihy pochádzajúce z renesančného obdobia cca 1450-1500
+91. Kto, kde a kedy vynašiel kníhtlač?
+-- Johann Gensfleisch Gutenberg v Ĺ trasburgu, cca 1440
+92. Charakterizujte stručne renesančnú typografiu
+-- jednoduchá, objavujú sa vyznačovacie písma, ustáľuje sa titul knihy, tlačiari začínajú používať vlastné značky
+93. Vymenujte dvoch renesančných tvorcov písma
+-- Claude Garamond, Jean Jannon
+x94. Aké písmo vytvoril Nicholas Jenson? Kedy?
+-- svoju verziu antikvy (1420-1480)??
+95. Kto bol Aldus Manuntius a kto bol jeho spolupracovníkom?
+-- benátsky tlačiar, vydal román Polifilov sen od Franceska Golony písmom, kt. vyryl Francesco Griffo

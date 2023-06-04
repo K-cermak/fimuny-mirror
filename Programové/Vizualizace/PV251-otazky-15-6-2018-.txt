@@ -1,0 +1,8 @@
+1. radiálne zobrazenie stromu - princíp, prevod obrázku rad. zobrazenia na strom
+2. techniky redukcie dimenzií - PCA, MDS - vybra si jednu a pochopite¾ne popísa princíp
+3. vizualizácia multidimenzionálnych dát - opísa 3 konkrétne techniky + obrázky
+4. focus & context - opísa nejakú distorciu, ktorá sa pouíva + uvies, kedy je vhodné ju poui
+5. dúhová farebná škála - opísa, preèo je zlá
+
+kadá otázka za 10b
+25b na E

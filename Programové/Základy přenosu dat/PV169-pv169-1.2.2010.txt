@@ -1,0 +1,46 @@
+1. otazka, vypocitat periodu a zadanie sin(t)=A sin(628 t)
+
+vzorec je sin(t)=A sin(2*pi*f + omega) f je frekvencia a frekvencia sa rovna
+f=1/T, kde T je perioda - nasa neznama
+
+628=2*pi*f
+f=314/pi
+
+a ked do dosadime do zvorca vyjde: T=pi/314 co je priblizne 0.01
+
+2. si nepamatam, nieco 24 kanalov, 256 urovni jeden kanal a je to stereo zvukovy
+kanal, neviem mozno niekto iny si spomenie
+
+3. nakreslit TDM s procesorom a RAM ako sa multiplexuju ramce, alebo nieco take
+
+4. ilustrovat explicitnu rezervaciu - reservation Aloha
+
+5. hammingov kod na postupnost
+nepamatam presnu tak si vymyslim 1101010
+
+nakreslime si tabulku kde budeme mat paritne bity:
+ 11   10   9   8   7   6   5   4   3   2   1
+ d    d    d   r8  d   d   d   r4  d   r2  r1
+
+d su data, tam teda zapiseme nasu postupnost a vyplnime paritne bity
+
+ 11   10   9   8   7   6   5   4   3   2   1
+  1    1   0   r8  1   0   1   r4  0   r2  r1
+
+a uz len spocitat na r1 sa vztahuju miesta 1(paritny bit, ktory
+vyplname),3,5,7,9,11
+to je teda 0+1+1+0+1 = 1 = r1
+k r2 miesta 2(vyplname),3,6,7,9,11
+teda 0+0+1+1+1 = 1 = r2
+r4 miesta 4(vyplname),5,6,7
+teda 1+0+1 = 0 = r4
+a r8 miesta 8(vyplname),9,10,11
+teda 0+1+1 = 0 = r8
+
+a vysledok v hammingovej postupnosti vyzera:
+ 11   10   9   8   7   6   5   4   3   2   1
+  1    1   0   0   1   0   1   0   0   1   1
+11001010011
+
+6. Sonet/SDH ake ramce pouziva popisat
+

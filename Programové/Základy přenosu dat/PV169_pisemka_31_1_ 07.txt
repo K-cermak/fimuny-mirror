@@ -1,0 +1,53 @@
+Písemka ze Základù pøenosu dat - 31. 1. 2007
+
+1, Jakou bitovou rychlostí se šíøí signál když víte:
+Kódovaní používá 4 rùzné úrovnì signálu, které jsou od sebe vzdáleny 50kHz.
+Støedové pásmo signálu je 250kHz.
+--------------------------------------------------------------------------------
+øešení:
+
+4 úrovnì signálu - tzn. 3 "mezery" po 50 kHz
+
+napø.
+250kHZ| 50kHz mezera |300kHZ| 50kHz mezera |350kHz| 50kHz mezera | 400kHz
+
+tzn. šíøka pásma je (400-250) 150kHZ = 150 000Hz
+Na støedovém pásmu IMHO nezáleží (kolem nìj se sice rozprostírají ony vysílaci
+frekvence ale na šíøku pásma to nemá vliv)
+
+Podle Nyquistovy vìty (nebo jak se ten èlovìk sakra jmenoval ;))
+
+C = 2B.log2(M)
+
+B = 150 000; M=4; C = 2 x 150 000 x 2 = 600kb/s
+ASI TEDA...snad.
+
+2, Proè se pøi pøechodu na digitální linky ISDN stanovil B-kanál na 64kb/s?
+--------------------------------------------------------------------------------
+Odpovídá to kódovaní hlasu do PCM. Kvantování x vzorkování = 64kb/s 
+Slide 61; 5. Techniky kódování signálu
+
+3, Mìjme kódovaní Manchaster na lince s rychlostí 10 Mb/s
+Jaká je šíøka pásma?
+--------------------------------------------------------------------------------
+Zase použití Nyquistovy vìty...
+
+4, Jak rychle lze pøenášet pomocí NRZ se šíøkou pásma z minulého pøíkladu.
+--------------------------------------------------------------------------------
+No jo, ale to si ji musíte napøed spoèítat...
+
+5, Nakreslete ilustraèní obrázek DM, Delta Modulation; vysvìtlete princip 
+--------------------------------------------------------------------------------
+slide 68; 5. Techniky kódování signálu  
+
+6, Je dán kontrolní polynom x^2 + x + 1, a zpráva 10011(binárnì):
+Napištì pùvodní pøíchozí zprávu jako sedmici bitù.
+--------------------------------------------------------------------------------
+Staèí pøevést zprávu na polynom a vynásobit s kontrolním polynomem. Dostatnete
+polynom 6. øádu, který staèí pøevést na sedmici bitù.
+
+Slide 16 - ?; 6. Mechanismy pøenosu dig. dat
+
+7, Vysvìtlete DAMA - explicitní rezervace
+--------------------------------------------------------------------------------
+slide 43; 8. Multiplexing

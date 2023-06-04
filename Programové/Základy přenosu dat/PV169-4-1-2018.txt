@@ -1,0 +1,39 @@
+90 minút
+2 body za kadú úlohu
+Bodovanie:
+A 12-10, B 9, C 8, D 7, E 6, F 5-0
+1. termín v skúškovom období, teda celkovo termín 2/5
+
+1. Ktoré z vybranıch má väèšiu šírku pásma a preèo?
+a) Sínusovka s frekvenciou 100 kHz a amplitúdou 10V
+b) Sínusovka s frekvenciou 200 kHz a amplitúdou 5V
+(Obe majú šírku pásma 0, teda rovnakú, viï príklady z konca prednášky Signály)
+
+2. Máme šírku pásma 1 MHz. Akú dátovú rıchlos dosiahnú NRZ; Manchester; 2B1Q?
+(Treba dosadi do Nyquistovej vety: C = 2B * log2(M); B = 1000000 Hz; M sú 2; 1/2; 4, vyjde 2Mb/s, 2Mb/s, 4Mb/s)
+
+3. Sú dané nasledujúce sekvencie a ich kódové slová v (5,2) blokovom kóde. Ko¾ko-bitové chyby vieme opravi? Ko¾ko-bitové chyby vieme detekova?
+00 -> 0000
+01 -> 0101
+10 -> 1011
+11 -> 1110
+(Kódy majú od seba všetky Hammingovu vzdialenos 3+, opravi vieme najviac 1-bitové chyby, detekova asi všetky mimo tıch, kde sa strafíme do iného kódového slova)
+
+4. Vypoèítajte baudovú rıchlos pre dané bitové rıchlosti a uveïte typy modulácie:
+2000 b/s, FSK
+4000 b/s, ASK
+6000 b/s, QPSK
+36 000 b/s, 64-QAM
+(Prednáška Analógové vysielanie, prvı z príkladov na konci, bezo zmeny. Trebalo len doplni typy modulácie - frekvenèná; amplitúdová; kvadratúrna fázová; kombinácia ASK a PSK = kvadratúrna amplitúdová)
+
+5. Protokol ARQ v Go-Back-N s ve¾kosou okna 3 rámce (kadı rámec má 1 kb) prenáša rıchlosou 1 Mb/s. Rıchlos signálu v sieti je 2*10^8 m/s, vzdialenos dvoch uzlov je 5000 km, ako rıchlo sa prenesie 1 Mb dát? Èakania, èasy na odoslanie potvrdení atï zanedbávame.
+(Nie som si istı riešením, ja som to poèítal ako: Protokol zvládne 1000 prenosov za sekundu, teda jeden prenos za 0,001 s.  Prenos signálu na danú vzdialenos trvá 0,025 s. Jeden prenos teda dokopy trvá 0,026 s. V kadom prenose sa vezmú 3 rámce, teda treba 334 prenosov. 334 * 0,026 = 8,684 )
+
+6. Vysvetlite, ako funguje explicitná rezervácia (rezervaèná aloha).
+(Neviem, ako presne otázka znela, ale trebalo popísa alohu - prednáška MAC, øízení pøístupu k médiu, slide 35)
+
+
+
+
+
+(Keby niekto chcel inšpiráciu, uèil som sa štılom - prešiel som si zoznam vypracovanıch otázok a ku kadej otázke som si v slidoch doh¾adal zvyšok uèiva a pochopil ho, aby som vedel odpoveda na súvisiace otázky a podobne. Vyššie uvedené odpovede som rozpísal (samozrejme viac rozvinuté) do skúšky a vyšlo to na A.)

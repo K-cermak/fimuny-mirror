@@ -1,0 +1,8 @@
+1) ??
+2) Popsat slotted ALOHA - vyhody a nevyhody
+3) DATA-TDMA - nakreslit a popsat
+4) Priklad na CRC, zadana data, klic G a vypocist FCS
+5) Prehled kodovani signalu - obrazek 14, slajd 5
+6) Sirka pasma je 1MHz, prenos data 10Mb/s. Kolik je signalovych urovni
+   Jaka bude sirka pasma, pokud chceme stejnou datovou rychlost u binarniho
+signalu

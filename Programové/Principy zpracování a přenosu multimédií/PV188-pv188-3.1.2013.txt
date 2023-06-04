@@ -1,0 +1,12 @@
+PV188 - 8. 1. 2013
+
+1. Co je to smerova charakteristika mikrofonu?
+2. Jaky je rozdil mezi jednocipovou a tricipovou kamerou? Porovnejte jejich kvalitu.
+3. K jakym chybam muze dojit pri prevodu audio signalu na digitalni signal?
+4. Co je to Motion Vector?
+5. Princip kodovani VBR.
+6. Porovnat TCP a UDP pro multimedia.
+7. Stabilizace obrazu.
+8. Co je to psychakusticky model a jeho vyuziti?
+9. Co je vstupni pupila a kde se pouziva?
+10. Co jsou XLR konektory a jake jsou vyhody jejich typu propojeni?

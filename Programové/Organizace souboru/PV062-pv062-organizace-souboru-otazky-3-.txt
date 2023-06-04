@@ -1,0 +1,24 @@
+PV062 Organizace souboru. Otazky ze zkousky 3.6.2013
+
+1. Ilustrujte princip prirazeni prostoru souborum v unix-like systemech.
+2. Vytvorte B strom 4. radu postupnym vlozenim klicu. (klice byly zadany)
+3. Zpráva sestávající ze znaku A, B, C, D s pravdepodobnostni výskytu 1/8, 1/2, 1/4, 1/8 byla zakódována do binární abecedy unárním kódem. 
+Urcte entropii zdroje? 
+Je toto kódování optimální?
+
+4. MAMAMAMASO zakódujte pomocí LZ78, jaky je vystup?
+
+5. Znazornete datove struktury v logicke pameti, ktere vzniknou faginovym hashovanim když: 
+Globalni hloubka adresare je 2.
+Lokalni hloubka prvnich dvou kapes je 2.
+Lokalni hloubka ostatnich dvou kapes je 1. 
+Kapsy maji prostor pro 3 zaznamy
+
+6. Urcete maximalni pocet kroku na nalezeni zaznamu v 16 arnim B stromu s 64 000 klici.
+
+
+Otazky z jineho terminu:
+1. Vysvetlit otevirani souboru?
+
+
+Jestli vam otazky na tomto serveru pomohly, pomohou nejspis i dalsim. Pokuste se prosim pridat vase otazky z vaseho terminu. :-) 

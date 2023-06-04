@@ -1,0 +1,1145 @@
+Proti obecnym OR (Onion Routing) sitim prinasi TOR navic
+ - podporu sifrovani dat proudovou sifrou se symetrickym klicem. 
+ - poskytuje temer real-time anonymni spojeni pro ruzne sluzby. 
+ * adresarove servery s informacemi o jednotlivych routerech. 
+ * podporu skrytych sluzeb a mist setkani.
+
+Pri podpisu s obnovou dat plati:
+ - Podepisovana data nejsou soucasti podpisu, je nutne je obnovit nezavislym
+   komunikacnim kanalem. 
+ - Podepisovana data lze z podpisu obnovit pri znalosti soukromeho klice. 
+ * Podpis obsahuje i podepisovana data. 
+ * Podepisovana data mohou byt obnovena kymkoli, kdo vlastni prislusny verejny
+   klic.
+
+Ktera z techto tvrzeni jsou spravna?
+ - Biometricka data jsou tajna. 
+ * Biometriky v idealnim pripade urcuji identitu cloveka presne a lze tak
+   spojovat jednotlive jeho ciny. 
+ - Jeden vzorek lze vyuzit jen v jednom systemu. 
+ * Nektere biometriky hodne o subjektu vypovidaji.
+
+Zakladni metody autentizace uzivatelu jsou zalozeny na necem, 
+ - co nelze jednoduse znicit 
+ * jsem 
+ * znam
+
+reseni pro odesilani anonymnich e-mailu jsou zalozena na:
+ * remailerech, u kterych rozlisujeme nekolik typu (trid) 
+ - vyuziti uctu na freemailu (Seznam) 
+ - anycastovych sitich, remailerech a mixech 
+ - anonymity pred prijemcem lze dosahnout velmi tezko 
+ * broadcastovych sitich, remailerech a mixech
+
+Co to je pozitivni kompromitace statisticke databaze?
+ - Nesmysl 
+ * Opak castecne kompromitace (imho diskutabilni – pozn. autor)
+ - Kompromitace se zametenim stop 
+ - Opak negativni kompromitace 
+ * Vysledkem zpresneneho dotazu je nenulovy pocet odpovedi
+
+Projekt AN.ON poskytuje stejne sluzby jako
+ - Mixmaster. 
+ - Mixminion. 
+ * Onion routing. 
+ * TOR.
+
+K cemu se pouzivaji systemy rizeni identity (IMS)?
+ - System pro spravu verejnych klicu s identifikatory 
+ - K dlouhodobe archivaci odcizenych identifikacnich prukazu 
+ * K navrhu a sprave atributu identity
+
+Vyraz script kiddies oznacuje:
+ - Hackera, ktery pise skripty a odhaluje nove zranitelnosti systemu. Ma castecne
+   informace o systemu. 
+ * utocnika, ktery nema dostatek znalosti o systemu a vyuziva bezne dostupne
+   predpripravene nastroje na zname zranitelnosti, casto zpusobem pokus-omyl. 
+ - utocnika, ktery je schopen kreativne odhalovat nove zranitelnosti i bez
+   znalosti o systemu.
+
+Jaka rizika s sebou nese zasilani platebnich karet a PINu postou?
+ - Platebni karta je skrze obalku vystavena tzv. napetovym a teplotnim utokum. 
+ * Postovni obalku lze behem dorucovani ztratit. 
+ * PIN muze byt skrze neporusenou obalku nepozorovane precten. 
+ - Libovolna platebni karta muze byt skrze neporusenou obalku snadno zkopirovana.
+
+Jak overime pravost certifikatu vydaneho duveryhodnou certifikacni autoritou?
+ - Overime, zda je has certifikatu shodna s hasi uvedenou v certifikatu. 
+ - Vyuzijeme meta-certifikatu certifikacni autority. 
+ - Overime zda se shoduje nazev certifikacni autority s nazvem uvedenym na danem
+   certifikatu. 
+ * Overime zda je certifikat podepsan danou certifikacni autoritou.
+
+Pravidla pristupu do pocitacove site (FI) MU
+ - uzivatel smi kopirovat programove vybaveni jen pro potreby sveho rocniku 
+ - v pripade nutnosti je povoleno rekonfigurovat PC, ktere je pod spravou CVT FI 
+ * je zakazano odposlouchavat provoz a vytvaret kopie postovnich zprav 
+ * je zakazano pracovat pod cizi identitou 
+ * je povoleno pouzivat pouze legalni software 
+ - v pocitacovych ucebnach a na pocitacich FI je mozne hrat pouze 
+   legalne zakoupene hry
+
+Jake jsou zakladni vlastnosti kvalitativni analyzy rizik?
+ * Vystup neni v nejake konkretni hodnote, napr. v urcite castce 
+ * Postup je do znacne miry automatizovatelny 
+ - Vystup je lehce srozumitelny 
+ - Postup neni automatizovatelny 
+ * Vystup je nesrozumitelny 
+ - Vystup je v nejake konkretni hodnote, napr. v urcite castce
+
+Protokoly SSL/TLS
+ * vyzaduji zajisteni vhodneho systemu spravy (kryptografickych) klicu 
+ - nepredstavuji zvysene naroky na vypocetni vykon komunikujicich stran 
+ * se chovaji k protokolum aplikacni vrstvy OSI modelu transparentne 
+ - neni vhodne pouzivat ve starsich operacnich systemech pro 32bitove procesory 
+ - neni snadne integrovat do jiz existujicich aplikaci
+
+Jake byly duvody (a motivace) pro zavedeni kriterii bezpecnosti?
+ * Potreba minimalizace nakladu na individualni ohodnoceni 
+ - Snazsi a rychlejsi vyvoj implicitne bezpecnych systemu 
+ - Jednalo se o chytry marketingovy tah vyrobcu spatne zabezpecenych operacnich
+   systemu 
+ * Usnadneni specifikace pozadavku na navrh a vyvoj 
+ - Standardizace kryptografickych primitiv
+
+PIN je u kreditnich karet vyzadovan, aby
+ - cely system plateb kartami vypadal bezpecneji (ve skutecnosti vsak bezpecnost
+   vubec nezveda - je zde jen pro psychologicky efekt) 
+ * clovek, ktery kartu zcizi, ji nemohl snadno pouzit k platbam 
+ * karta po okopirovani sla obtizneji zneuzit 
+ - karta sla hure okopirovat 
+ - zajistil absolutni ochranu penez pred jakymkoli utokem na bezpecnost karty
+
+Ktera z techto tvrzeni jsou spravna?
+ - Biometriky po analyze s vyuzitim kryptografie o subjektu zpravy vypovidaji. 
+ - Biometricka data jsou tajna. 
+ * zadna z techto odpovedi neni spravna. 
+ - Jeden vzorek lze vyuzit jen v jednom systemu.
+
+Pod pojmem riziko rozumime:
+ - pravdepodobnost odhaleni zranitelnosti. 
+ * pravdepodobnost uplatneni hrozby. 
+ - rozsah dopadu uplatneni hrozby. 
+ - existenci zranitelnosti v systemu a pritomnost utocnika, ktery ji muze vyuzit.
+
+Remailer je
+ * sluzba pro anonymni posilani a prijem e-mailu 
+ - cast postovniho serveru, ktera se stara o opakovani neuspesnych pokusu 
+ - verejny postovni server (povazovany za chybne nakonfigurovany)
+
+Pokud ma hasovaci funkce vlastnost silne bezkoliznosti, znamena to, ze:
+ * Je vypocetne neproveditelne nalezt dva libovolne navzajem ruzne vstupy
+   takove, aby byly vysledne hase pro oba vstupy stejne.
+ - Nelze nalezt dva navzajem ruzne vstupy takove, aby byly vysledne
+   hase pro oba vstupy stejne.
+ - Je vypocetne neproveditelne nalezt k danemu vstupu jiny vstup tak, aby
+   byly vysledne hase pro oba vstupy stejne.
+ - Nelze nalezt dva navzajem ruzne vstupy takove, aby byly vysledne hase
+   pro oba vstupy stejne na alespon 1/2 pozic.
+
+Jaky zpusob predani verejneho klice je povazovan za duveryhodny:
+ - vystaveni na klicovy server.
+ - zaslani emailem s paralelnim umistenim na webovou stranku.
+ * overeni otisku klice telefonem.
+ * osobni predani na USB disku.
+ * zaslani duveryhodnym zprostredkovatelem.
+
+Jak pracuje technika minimalniho rozsahu dotazu ve statistickych databazich?
+ - zadna takova technika neexistuje.
+ - Pro vyhodnoceni dotazu muze byt pouzito mene zaznamu nez je stanovena
+   minimalni mez, ale pouze za zvlastnich bezpecnostnich opatreni (napr.
+   podpis dohody o mlcenlivosti).
+ - zadna takova technika se ve statistickych databazich nepouziva.
+ * Pro vyhodnoceni dotazu nesmi byt pouzito mene zaznamu nez je 
+   stanovena minimalni mez.
+
+Mezi obvykle bezpecnostni politiky patri:
+ * Systemova bezpecnostni politika
+ * Celkova bezpecnostni politika
+ - Interaplikacni bezpecnostni politika
+ - Integrovana bezpecnostni politika
+ - Horizontalni bezpecnostni politika
+
+Cibulove schema pouzivane napr. v Onion Routing
+ * vyuziva symetricke i asymetricke kryptografie
+ - kryptografie se nepouziva vubec, neni potreba
+ - pouziva pouze asymetrickou kryptografii
+ - pouziva pouze symetrickou kryptografii, protoze je rychlejsi
+
+cipova kreditni karta bez mag. prouzku
+ * obvykle obsahuje maly procesor
+ - obvykle neobsahuje procesor, prestoze se ji tradicne rika "cipova"
+ * skyta obvykle vyssi bezpecnost nez karta s mag. prouzkem (bez cipu)
+ - skyta obvykle nizsi bezpecnost nez karta s mag. prouzkem (bez cipu)
+
+Pod pojmem slaba integrita dat rozumime
+ - Data nesmi bez svoleni autorizovane osoby zmenit svuj stav vubec
+ - Data nesmi byt bez svoleni autorizovane osoby zpracovavana na semanticke urovni
+ * Data nesmi bez svoleni autorizovane osoby nepozorovane zmenit svuj stav
+
+Jake jsou zakladni vlastnosti kvantitativni analyzy rizik?
+ - Vystup neni v nejake konkretni hodnote, napr. v urcite castce
+ * Vystup je v nejake konkretni hodnote, napr. v urcite castce
+ * Vystup je lehce srozumitelny
+ - Postup je plne automatizovatelny
+ - Vystup je nesrozumitelny
+ * Postup neni automatizovatelny
+
+Jaky je rozdil mezi terminy security a safety?
+ - Je to to same, cestina pouziva jen jeden termin - bezpecnost
+ * Security - stav ochrany IS proti ztratam; safety - nedojde k
+   ohrozeni lidskeho zivota
+ - Safety - stav ochrany IS proti ztratam; security - nedojde k ohrozeni
+   lidskeho zivota
+
+V pripade, ze nespokojeni uzivatele jsou "mensi zlo" nez neopravneni uzivatele, 
+nastavime biometricky system tak, ze bude mit FAR (False Acceptance Rate) a FRR (False Rejection Rate):
+ - nizkou hodnotu FRR a nizkou hodnotu FAR.
+ * vysokou hodnotu FRR a nizkou hodnotu FAR.
+ - vysokou hodnotu FAR a nizkou hodnotu FRR.
+ - vysokou hodnotu FRR a vysokou hodnotu FAR.
+
+Pojmem tranzitivita duvery oznacujeme:
+ * duveru ciziho uzivatele X v nas verejny klic, pokud mu (nasemu klici, pozn. autora)
+   duveruje uzivatel Y, kteremu (uzivateli Y, pozn. autora) duveruje uzivatel X.
+ * duveru ve verejny klic uzivatele X, kteremu duveruje uzivatel Y,
+   kteremu duverujeme my.
+ - takovy termin neexistuje.
+ - duveru uzivatele X v nas verejny klic, pokud my duverujeme jeho
+   verejnemu klici.
+ - duveru v propagaci naseho verejneho klice od uzivatele X na uzivatele Y.
+
+Pod pojmem silna integrita dat rozumime
+ - Data nesmi bez svoleni autorizovane osoby nepozorovane zmenit svuj stav
+ - Data nesmi byt bez svoleni autorizovane osoby zpracovavana na semanticke
+   urovni
+ * Data nesmi bez svoleni autorizovane osoby zmenit svuj stav vubec
+
+Je lepsi pouzivat TOR nebo Mixminion?
+ - Jednoznacne Mixminion.
+ - Jednoznacne TOR.
+ - Ani jedno, ani druhe.
+ * Zalezi na tom, co chceme delat.
+
+Ktere dve z techto biometrickych technik byvaji obvykle nejlevnejsi s ohledem
+na celkove naklady na nasazeni u koncovych uzivatelu, resp. jejich pracovnich stanic?
+ - vzor ocni sitnice
+ - DNA
+ * dynamika psani na klavesnici
+ * otisk prstu
+
+Autentizace protokolem s nulovym rozsirenim znalosti (zero-knowledge)
+ - zabrani prokazujici se strane, aby se dozvedela, jak zni tajemstvi,
+   ktere vlastni overovatel
+ - zabrani overovateli, aby se zaroven autentizoval prokazujici se strane
+ * zabrani overovateli, aby se dozvedel tajemstvi, ktere vlastni
+   prokazujici se strana
+ - sdeli overovateli pouze pocet nul v tajnem klici prokazujici se strany
+ * zabrani overovateli, aby se mohl pozdeji neopravnene vydavat za
+   prokazujici se stranu
+
+Co je cilem zajisteni duvernosti dat?
+ - Zamezit zmene semantickeho obsahu dat neautorizovanymi osobami
+ - Utajit existenci semantiky dat pred neduveryhodnymi osobami
+ * Zabranit zjisteni semantickeho obsahu dat neutorizovanymi osobami
+
+Povinnosti spravce osobnich udaju:
+ * shromazdovat osobni udaje odpovidajici pouze stanovenemu ucelu a
+   v rozsahu nezbytnem pro naplneni stanoveneho ucelu
+ * uchovavat data pouze po dobu nezbytnou k jejich zpracovani
+ - vkladat falesne zaznamy, aby v pripade kradeze dat nebylo mozne snadno
+   posoudit jejich validitu
+ - archivovat data kódovane, neni-li receno jinak
+
+Ktera z techto tvrzeni, pokud mluvime o biometrickych systemech, jsou
+spravna?
+ - Proces verifikace je narocnejsi nez proces identifikace. 
+ * Proces identifikace je narocnejsi nez proces verifikace. 
+ * Na zacatku procesu identifikace neni identita znama. 
+ - Na zacatku procesu identifikace je identita znama.
+
+Autentizace je
+ * vsechny ostatni moznosti jsou nepravdive 
+ - proces nezbytny pro ustaveni sifrovane komunikace u bezdratoveho spojeni 
+ - volitelna (ale obvykle pritomna) faze procesu prokazovani identity 
+ - preklep - spravne je "autorizace"
+
+Ktere z tvrzeni o anonymitni mnozine neplati
+ * nezalezi na chovani uzivatelu v dane skupine 
+ - pro urceni velikosti anonymitni mnoziny se uziva entropie 
+ * velikost anonymitni mnoziny je smysluplny ukazatel 
+ - zalezi i na kontextovych informacich v systemu
+
+Jakym zpusobem je pocitana analyza rizik metodou ALE (Annual Loss
+Expentancy)
+ * ALE=SLExARO, kde SLE=Single Loss Expentancy a ARO=Annualized Rate of
+   Occurence 
+ - ALE=SLO/ARE, kde SLO=Single Loss of Opportunity a ARE=Annualized Rate of
+   Executions 
+ - ALE=SLE/ARO, kde SLE=Single Loss Expentancy a ARO=Annualized Rate of Occurence 
+ - ALE=SLOxARE, kde SLO=Single Loss of Opportunity a ARE=Annualized Rate of
+   Executions 
+ - ALE=SLE+ARO, kde SLE=Single Loss Expentancy a ARO=Annualized Rate of Occurence 
+ - ALE=SLO+ARE, kde SLO=Single Loss of Opportunity a ARE=Annualized Rate of
+  Executions
+
+Co je nejcastejsi pricinou bezpecnostnich incidentu?
+ - Vliv prirody, zdroju. 
+ - Zamerny utok (sabotaz) zamestnancu (i byvalych). 
+ * Chyby (neumyslne). 
+ - Vnejsi utocnici. 
+ - skodlivy software.
+
+Mezi bezpecnostni pozadavky podle standardu pro hodnoceni kryptografickych
+modulu FIPS 140-1/2 patri:
+ * Sluzby a autentizace 
+ * Rozhrani modulu 
+ - Elektromagneticka rezonance 
+ * Sprava klicu 
+ * Metody pro zmirneni jinych utoku 
+ - Flexibilita modulu
+
+Ktera z uvedenych tvrzeni jsou pravdiva?
+ - Symetricka kryptografie se vyuziva pouze pro sifrovani, zatimco asymetricka
+   pouze k podepisovani. 
+ * Symetricka kryptografie vyuziva jeden klic sdileny mezi dvema a vice
+   uzivateli. 
+ - Teoreticky lze pouzit asymetrickou kryptografii i k sifrovani, ale v praxi se
+   toho nevyuziva. 
+ - Pokud chceme vyuzit asymetrickou kryptografii k sifrovani, musi zustat oba
+   klice utajeny.
+
+Odmitnuti sluzby (Denial of Service) je
+ * utok, ktery uvede server do stavu, kdy neni schopen reagovat na pozadavky 
+ - stav, kdy server zjisti nedostatecnou autorizaci uzivatele k operaci 
+ - stav, kdy server vcas zjisti utok a zamitne dalsi komunikaci s utocnikem 
+ - utok, kdy zpracovani pozadavku na webovem serveru nevyhnutelne skonci s HTTP
+   chybou 500
+
+Cilem projektu Eternity server je
+ - poskytnout trvale uloziste dat s operacemi ulozit, nalezt a smazat 
+ - navrhnout sluzbu, ktera je odolna vuci utoku typu Denial of Service 
+ * poskytnout trvale uloziste dat 
+ * vytvorit datove uloziste, ktere je odolne vuci vypadkum
+
+K bezpecnym metodam autentizace klienta bance v systemu internetoveho
+bankovnictvi patri prokazani se
+ - heslem, ktere si klient zvolil pri zakladani uctu 
+ - kódem ziskanym vlozenim rodneho cisla ci uzivatelskeho hesla do autentizacni
+"kalkulacky" 
+ - rodnym cislem 
+ * osobnim klicem ulozenym bezpecne na cipove karte, USB flashdisku ci SD
+   karte 
+ * kódem ziskanym vlozenim vyzvy (challenge) bankovniho systemu do autentizacni
+   "kalkulacky"
+
+Duveryhodnost dat?
+ - Utajeni obsazene informace. 
+ * Data jsou v nezmenene podobe tak, jak byla vytvorena. 
+ * Technicky se realizuje napr. pomoci digitalniho podpisu. 
+ - Data ziskana od duveryhodneho zdroje.
+
+Zakladni metody autentizace uzivatelu jsou zalozeny na necem, co
+ - smim 
+ * mam 
+ * vim
+
+Jak pracuje technika nahodneho vyberu ve statistickych databazich?
+ * Vysledek dotazu je vyhodnocen na zaklade nahodne vybranych zaznamu ze vsech
+   existujicich zaznamu v databazi. 
+ - Vysledek dotazu je vyhodnocen na zaklade mirne poupravenych zaznamu, ktere jsou
+   nahodne vybrany ze vsech existujicich zaznamu v databazi. 
+ - Vysledek dotazu je zaokrouhlen na hodnotu nahodne vybraneho zaznamu. 
+ - Vysledek dotazu je zcela nahodny a nepredvidatelny. 
+ - zadna takova technika neexistuje.
+
+Jak pracuje technika maximalniho rozsahu dotazu ve statistickych databazich?
+ * zadna takova technika neexistuje. 
+ - Pro vyhodnoceni dotazu nesmi byt pouzito vice zaznamu nez je stanovena
+   maximalni mez. 
+ - Pro vyhodnoceni dotazu muze byt pouzito pouze mensi mnozstvi zaznamu nez je
+   stanovena maximalni mez.
+
+Bezpecnostni politika je
+ - dokument schvaleny clenem predstavenstva a stanovujici presna pravidla pro
+ - zajisteni technickych i lidskych zdroju pro vyuziti IT pro zajisteni cilu
+   organizace 
+ * soubor pravidel specifikujici ucinny zpusob uplatnovani opatreni potrebnych 
+   k dosazeni pozadovane minimalni urovne rizik 
+ - soubor opatreni a mechanizmu potrebnych k dosazeni pozadovane minimalni
+   urovne prevence a detekce zranitelnosti 
+ - dokument schvaleny vrcholovym managementem a specifikujici vyuziti IT pro
+   zajisteni cilu organizace
+
+Kerckhoffsuv princip v soucasnosti neplati:
+ - Protoze dokazeme ucinne utajovat sifrovaci algoritmy. 
+ - Jelikoz soucasne delky klicu neumoznuji efektivni utoky hrubou silou. 
+ * Nesmysl, Kerckhoffsuv princip plati i v soucasnosti. 
+ - Anzto dokazeme hrubou silou prolomit klice o delce vetsi nez 80 bitu.
+
+Ktere z nasledujicich pojmu se vztahuji ke Spolecnym kriteriim (CC).
+ - Profil prokazatelne bezpecnosti (Provable Protection Profile, PPP)
+ - Specifikace sitove bezpecnosti (Network Security Target, NST)
+ - Subjekt hodnoceni (Subject of Evaluation, SOE)
+ * Specifikace bezpecnosti (Security Target, ST)
+ * Profil bezpecnosti (Protection Profile, PP)
+ * Predmet hodnoceni (Target of Evaluation, TOE)
+
+Ktera z techto tvrzeni jsou spravna?
+ * Se snizenim FAR se zvysuje FRR.
+ - Se zvysenim FAR se zvysuje FRR.
+ - Se snizenim FAR se snizuje FRR.
+ * Se zvysenim FAR (False Acceptance Rate) se snizuje FRR (False Reject Rate).
+
+Mezi bezp. funkce systemu pro ochranu inf. soukromi patri:
+ - identita
+ - nezjistitelnost
+ * pseudonymita
+ * anonymita
+ * nepozorovatelnost
+ * nespojitelnost
+
+Ktere z nasledujicich metod lze vyuzit k analyze rizik?
+ - Metoda ARO (Annualized Rate of Occurence)
+ * Meroda CRAMM (CCTA Risk Analysis and Management Method)
+ - Metoda RSA (Risk System Analysis)
+ * Metoda ALE (Annual Loss Expentancy)
+ - Metoda AES (Advanced Evaluation Standard)
+
+Nespojitelnost (podle Spolecnych kriterii) zajistuje moznost opakovaneho pouziti zdroju:
+ - tak, ze identita uzivatele zustane skryta specifickym uzivatelum, 
+   pro specificke operace bez prozrazeni identity uzivatele, ale v pripade
+   potreby lze identitu zpetne zjistit
+ - tak, ze pouze administratori uvidi, ze ve skutecnosti toto pouziti
+   inicioval tentyz uzivatel
+ * tak, ze ostatni si tato pouziti nebudou schopni spojit bez prozrazeni
+   identity uzivatele
+
+Pod pojmem hybridni kryptosystemy rozumime napriklad
+ - Data jsou pred sifrovanim algoritmem symetricke kryptografie hasovana,
+   sifrovana je pouze vysledna has
+ - Data jsou pred podpisem zasifrovana algoritmem asymetricke kryptografie
+ * Data jsou sifrovana nahodnym symetrickym klicem, ten je sifrovan verejnym
+   klicem prijemce
+
+Pod pojmem symetricka kryptografie rozumime:
+ * Kryptografie s vyuzitim stejneho klice pro sifrovani i desifrovani.
+ - Kryptografie s takovym algoritmem, jehoz vsechny operace splnuji matematickou
+   vlastnost symetrie nad danou grupou.
+ - Kryptografie s takovym algoritmem, ktery umoznuje komukoli symetricky overit
+   pravost podpisu.
+ - Kryptografie s vyuzitim klice, ktery je na binarni urovni symetricky.
+
+Co je vysledkem hodnoceni systemu podle Spolecnych kriterii (CC)?
+ * Diskretni hodnoceni (ano/ne) danych pozadavku na hodnoceny system
+ - Popis, jakym zpusobem je v hodnocenem systemu dosazeno danych vlastnosti
+ - Subjektivni (ze strany hodnotitele) hodnoceni bezpecnosti systemu
+ - Sada doporuceni, jak hodnoceny system zabezpecit
+
+Mezi vlastnosti Onion Routingu (OR) rozhodne patri
+ - zavislost na specializovanem hardwaru
+ - vyuziva se zejmena v privatnich sitich
+ * zpozdeni komunikace by mela byt co nejmensi
+ * aplikace mohou s OR fungovat bez nutnosti jejich modifikace
+ - neumoznuje komunikaci klient-server
+
+Ktere tvrzeni je spravne:
+ * TLS/SSL "Handshake" protokol slouzi k ustaveni zabezpeceneho spojeni, "Record"
+   protokol predstavuje zakladni vrstvu.
+ - "Record" protokol dovoluje predavat/ukladat nezabezpecena data pro potreby
+   vlady USA, podle §708, odstavce 17 zakona o vnitrni bezpecnosti.
+ - Pouziti TLS/SSL "Handshake" protokolu je volitelne v zavislosti na pozadavcich
+   klienta a serveru.
+ - Pri TLS/SSL "Handshake" se povinne kontroluji certifikaty obou stran.
+ - Pri TLS/SSL "Handshake" se provadi autentizace uzivatele heslem.
+
+Co jsou (z pohledu uzivatele) dve nejmene bezpecne soucasti dnesnich platebnich systemu?
+ * Platebni terminal
+ * cipova karta s magnetickym prouzkem
+ - Bankomat
+ - cipova karta
+
+Typicke operace na firewallu jsou
+ - hasovat
+ * zakazat
+ - porovnat
+ * povolit
+
+sifrovani v PGP probiha tak, ze se data sifruji
+ - symetricky, symetricky klic se zasifruje soukromym klicem prijemce a prilozi k datùm
+ - asymetricky, klice se zasifruji verejnym klicem prijemce a prilozi k datum
+ * symetricky, symetricky klic se zasifruje verejnym klicem prijemce a prilozi k datùm
+ - asymetricky, klice se zasifruji soukromym klicem prijemce a prilozi k datùm
+
+Chybovost biometrickych systemù vyjadrena pomoci FRR (False Rejection Rate) je:
+ - Podil poctu akceptovanych pokusu o prihlaseni legitimnich uzivatelu 
+   ku poctu vsech pokusu o verifikaci legitimnich uzivatelù.
+ - Podil poctu vsech pokusu o prihlaseni legitimnich i nelegitimnich uzivatelu
+   ku poctu vsech pokusù o prihlaseni legitimnich uzivatelu.
+ - Podil poctu akceptovanych pokusu o prihlaseni legitimnich uzivatelu
+   ku poctu odmitnutych pokusu o prihlaseni legitimnich uzivatelu.
+ * Podil poctu odmitnutych pokusu o prihlaseni legitimnich uzivatelu ku poctu vsech pokusu o prihlaseni.
+
+Jake jsou faktory primo ovlivnujici pravdepodobnost neopravneneho (vy)uziti informaci?
+ * uroven bezpecnostnich mechanizmu.
+ - Vyse trestu tem, kdo s daty neopravnene manipuluje.
+ - Vyse trestu tem, kdo data hlidali a zajistili restriktivni manipulaci.
+ - Vyse trestu tem, kdo data neohlidali a spolupodileli se na jejich uniku.
+ - Kódovani dat.
+
+Podle ceskeho zakona o e-podpisu (227/2000) je zaruceny elektronicky podpis:
+ - Elektronicky podpis, ktery je proveden nad zarucene korektnimi daty
+ - Nic takoveho dle ceskeho zakona neexistuje
+ * Elektronicky podpis, ktery je jednoznacne spojen s podepisujici osobou
+ - Elektronicky podpis, ktery je pripojen ke zprave tak, aby ho bylo mozne zarucene overit
+
+Typicke operace na firewallu jsou
+ - hasovat
+ * prelozit
+ - zmenit
+ * zakazat
+
+Je vubec mozne, aby melo vnejsi prostredi (teplota atp.) nejaky vliv na bezpecnost cipovych karet?
+ - ne, neni to mozne
+ * ano, je to mozne
+
+Bylo by mozne spolehlive autentizovat studenta MU na zaklade trojice celych cisel vyska[cm] : vaha[kg] : vek[roky]?
+ - Ano, jde o fyzickou vlastnost (biometrika).
+ * Ne, MU studentu prilis mnoho, aby toto bylo spolehlive.
+ - Ano, jde o udaje cizim lidem nezname.
+
+Zakon o ochrane osobnich udaju:
+ - vztahuje se na zabezpeceni zpracovavanych osobnich udaju v pripade automatizovanych prostredku dodavanych ze zemi mimo EU
+ - nevztahuje se na data poskytovana dobrovolne statnim institucim
+ * nevztahuje se na zpracovani osobnich udaju, ktere provadi fyzicka osoba vylucne pro osobni spotrebu
+ * vztahuje se na veskere zpracovani osobnich udajù, at k nemu dochazi automatizovane nebo jinymi prostredky
+ * nevztahuje se na nahodile shromazdovani osobnich udaju, pokud tyto udaje nejsou dale zpracovavany, nebo pokud nejsou pro podnikani
+
+Pod pojmem prokazatelna zodpovednost rozumime
+ * Za veskere sve ciny v systemu jsou uzivatele zodpovedni vuci majiteli dat
+ - Uzivatele se musi pred pouzitim systemu autentizovat vuci jeho majiteli
+ - U kazde cinnosti lze jednoznacne prokazat, kdo je za ni zodpovedny.
+ - Uzivatele systemu jsou zodpovedni za ciny, ktere lze jednoznacne prokazat
+
+Magneticky prouzek standardni platebni karty obsahuje:
+ - udaje o castce, kterou drzitel teto karty naposledy vybral nebo platil
+ * udaje o karte
+ - udaje o poslednich 3-5 transakcich s kartou
+ * udaje o majiteli
+
+Problem zivosti pro vstupni zarizeni spociva v tom, ze:
+ * Vstupni zarizeni neni schopno urcit, zda vzorek je od zive osoby.
+ - zadna z techto odpovedi neni spravna.
+ - Vstupni zarizeni neni schopno urcit, zda vzorek je prave od osoby, ktera stoji u vstupniho zarizeni.
+ - Osoba, ktera se prihlasuje u vstupniho zarizeni neni schopna urcit kam jeji vzorek bude preposlan.
+
+Digitalni podpis v PGP probiha tak, ze se
+ - vytvori has zpravy, ktery se podepise verejnym klicem odesilatele
+ - zprava se podepisuje primo klicem dle volby uzivatele
+ * vytvori has zpravy, ktery se podepise soukromym klicem odesilatele
+ - vytvori has zpravy, ktery se podepise verejnym klicem prijemce
+ - vytvori has zpravy, ktery se podepise soukromym klicem prijemce
+
+Nespojitelnost nezohlednuje identitu uzivatele ale
+ - Rozsah sluzeb a zdroju, ktere jsou v systemu aktualne vyuzivane
+ - Jeho pseudonymitu a nesledovatelnost
+ * Rozsah sluzeb a zdroju, ktere byly pouzity jednim uzivatelem
+ - Rozsah sluzeb a zdroju, ktere byly pouzity ruznymi uzivateli
+
+Pokud neautorizovana osoba zjisti semanticky obsahu chranenych dat, jedna se o naruseni
+ - prokazatelne zodpovednosti
+ - dostupnosti
+ - integrity
+ * duvernosti
+
+Zabezpeceni provozu na urovni IP dosahnu pokud zvolim:
+ - IPv4s
+ - PGP
+ * IPv6
+ * IPsec
+ - Stunnel
+
+Bezpecnost je zalozena predevsim na
+ - spravnem nastaveni bezpecnosti site i koncovych stanic
+ - aktualizovanem antiviru a spravne nastavenem firewallu, prip. i vyuziti PGP
+ - dohode s uzivateli
+ * prevenci, detekci a reakci na mozne problemy
+
+Komu v platebnich systemech poskytuji soucasne tokeny nejnizsi ochranu?
+ - Bankam
+ - Provozovatelum site bankomatu (v pripade, ze provozovatelem neni primo banka)
+ - Obchodnikum
+ * Zakaznikum
+
+Co je to "Security through obscurity"?
+ * Vira, ze pouze dobre utajeny algoritmus je bezpecny
+ - Souhrnny nazev pro bezpecnostni mechanizmy vybudovane na teorii slozitosti
+
+Pro komunikaci mezi jednotlivymi Onion Routery (OR) plati
+ - komunikace se sifruje pomoci asymetricke kryptografie.
+ - topologie uzlu pripomina hvezdici s pevne danym stredem.
+ * seznam preposlanych paketu se uklada.
+ * komunikace se sifruje pomoci sifry se symetrickym klicem.
+ * kazdy OR odstrani vrstvu paketu desifrovanim.
+
+Ktere dve z techto biometrickych technik jsou nejpohodlnejsi pro uzivatele?
+ - vzor ocni sitnice
+ - EKG
+ * vzor ocni duhovky
+ * srovnani tvare
+
+Protokoly SSL/TLS umoznuji
+ - komunikovat anonymne
+ * kontrolu integrity prenasenych dat
+ * autentizaci komunikujicich stran (klient i server)
+ - autentizaci jen a pouze jedne strany
+ - zajistit nepopiratelnost
+
+Pro osobni udaje dle ceske legislativy plati:
+ - dozor nad osobnimi udaji provadi Policie cR
+ * jedna se o jakykoliv udaj tykajici se urceneho nebo urcitelneho subjektu udaju.
+ - zpracovavani osobnich udaju je zakazano, vyjma pripadu pro osobni potrebu
+ * o osobni udaj se nejedna, pokud je treba ke zjisteni identity subjektu udaju 
+   neprimerene mnozstvi casu nebo materialnich prostredku
+ * jde-li na zaklade jednoho ci vice osobnich udaju primo ci neprimo zjistit 
+   identitu subjektu, povazuje se subjekt udaju za urceny nebo urcitelny
+
+Podle ceho je urcen pocet kol/rund u algoritmu Rijndael.
+ - Delka zpravy
+ * Delka klice
+ - Inicializacni vektor
+ - Delka bloku
+ - Inicializacni vektor a delka bloku
+ - Delka klice a bloku
+
+Kdy je dosazen EER (Equal Error Rate) v biometrickych systemech?
+ - Nastaveni prahove hodnoty, pro kterou je FAR/FRR rovno 0.8.
+ - Nastaveni prahove hodnoty, pro kterou je FRR roven 1.
+ * Nastaveni prahove hodnoty, pro kterou FRR a FAR jsou stejne.
+ - Nastaveni prahove hodnoty, pro kterou je FRR/FAR rovno 0.8.
+
+Co je to verejny pseudonym?
+ * Napr. telefonni cislo ve Zlatych strankach 
+ - Pseudonym pouzivany uvnitr verejne nedostupneho systemu
+ - Je znam verejnosti za poplatek
+ - Pseudonym pouzitelny pouze na verejnosti
+ * Je verejne znam od pocatku, napr. v seznamu osob
+
+Mista setkani a skryte sluzby TORu je/jsou:
+ * sluzba, ktera umoznuje anonymni provoz napr. weboveho serveru.
+ - mista, kde se setkavaji pouze anonymni uzivatele.
+ * je sluzba umoznujici serveru kontrolovat anonymni prichozi pozadavky.
+ - mista, kde uzivatele ziskavaji anonymitu tak, ze to ostatni nevidi.
+
+Pokud existuje v systemu zranitelnost a existuje utocnik, ktery ji muze vyuzit, vysledny stav je nazyvan:
+ - utok 
+ - zranitelnost 
+ * hrozba 
+ - riziko
+
+Poskytuje TOR testovani integrity prenasenych dat?
+ * Ano, je to obrana proti tagging utokum. 
+ * Ano, je to vylepseni oproti puvodnimu navrhu Onion Routing systemu. 
+ - Ne, proc bychom neco takoveho potrebovali, staci zarucena anonymita. 
+ - Ano, je to obrana proti mig-in-the-middle utokum.
+
+V pripade, ze neopravneni uzivatele jsou "mensi zlo" nez nespokojeni uzivatele,
+nastavime biometricky system tak, ze bude mit FAR (False Acceptance Rate) a FRR (False Rejection Rate):
+ - vysokou hodnotu FRR a vysokou hodnotu FAR. 
+ - nizkou hodnotu FRR a nizkou hodnotu FAR. 
+ * vysokou hodnotu FAR a nizkou hodnotu FRR. 
+ - vysokou hodnotu FRR a nizkou hodnotu FAR.
+
+System detekce pruniku (IDS)
+ * je mozne pouzit v siti i na pocitaci 
+ - poskytuje lepsi ochranu nez firewall 
+ - je mozne pouzit bud v siti nebo na pocitaci 
+ - ma smysl pouzivat pouze jako sitovy prvek, kdy detekuje a informuje o probihajicim utoku
+
+Anonymita (podle Spolecnych kriterii) zajistuje moznost pouziti zdroju nebo sluzeb systemu tak, ze:
+ - specifikovane entity jsou schopny urcit skutecne uzivatelske jmeno spojene se specifikovanymi subjekty, operacemi, objekty 
+ * identita uzivatele zustane skryta specifickym uzivatelum, pro specificke operace 
+ - identita uzivatele zustane skryta, ale v pripade potreby ji lze zpetne zjistit
+
+Pretty Good Privacy (PGP) umoznuje
+ - odeslat, prijmout a odpovedet na anonymni e-mail 
+ - anonymne pristupovat k webu 
+ * sifrovat a desifrovat data 
+ - chranit pocitac pred zneuzitim 
+ * digitalne podepsat data a overit podpis
+
+Firewall je
+ * umela prekazka pred potencialne nebezpecnym okolim 
+ - software pro detekci a blokaci podezrelych aktivit v systemu 
+ - spolehlivou ochranou pred zneuzitim pocitacu ve vnitrni siti
+
+Systemy menici tok a vyskyt dat na komunikacnim kanalu se nazyvaji
+ - mutexy 
+ - minmaxy 
+ * anonymitni 
+ * mixy 
+ - minixy
+
+Chybovost biometrickych systemu vyjadrena pomoci FTE (Fail to Enroll) je:
+ - Podil poctu uzivatelu, ktere system neverifikoval, ku poctu vsech pokusu uzivatelu o prihlaseni do systemu. 
+ * zadna z techto odpovedi neni spravna. 
+ - Podil poctu uzivatelu, ktere system zaregistroval na vice nez jeden pokus, ku poctu vsech uzivatelu systemu. 
+ - Podil poctu uzivatelu, ktere system zaregistroval, ku poctu uzivatelu systemu, ktere system nezaregistroval.
+
+Jaky je v dnesnich platebnich systemech pro zakaznika nejvetsi bezpecnostni problem?
+ - Banky uz v 90. letech zavrhly pouzivani bezpecneho protokolu SET (Secure Electronic Transaction). 
+ * Soucasny system funguje tak, ze zakaznikovi nezarucuje vazbu mezi zobrazovanou a potvrzovanou transakci. 
+ - Napetove utoky jsou snadnou a efektivni cestou jak obejit bezpecnostni mechanizmy cipu na platebni karte. 
+ - Zakaznici sami se chovaji nezodpovedne.
+
+Kerckhoffsuv princip rika, ze:
+ - Klic neni treba utajovat, pokud pouzity algoritmus je take tajny 
+ - Klic neni treba utajovat, pokud je pouzity algoritmus verejne znam 
+ * Pouzity algoritmus je verejne znam, utajovan je pouze klic 
+ - Pouzity algoritmus je pristupny pouze autorizovanym osobam, klic je utajovan
+
+Ktere z nasledujich bodu lze zaradit mezi obecne principy pro bezpecnost IT?
+ * Usilujte o jednoduchost. 
+ - Nepouzivejte klice s delkou < 128 bitu. 
+ - Nikdy nezverejnujte kriticke bezpecnostni algoritmy. 
+ * Externi zdroje pokladejte za nebezpecne. 
+ * Fyzicky nebo logicky oddelte kriticke zdroje.
+
+Co je to perturbacni technika pouzivana ve statistickych databazich?
+ * Technika stavejici napr. na zaokrouhlovani mezivysledku dotazu. 
+ * Pridavani pseudonahodneho "sumu" k mnozine zaznamu, na jejichz zaklade se vyhodnoti dotaz. 
+ - zadna takova technika neexistuje. 
+ - Pro vyhodnoceni dotazu nesmi byt pouzito vice zaznamu nez je stanovena maximalni (perturbacni) mez. 
+ * Technika umoznujici zjistit konzistentni, ale ne spolehlive odpovedi na serii podobnych dotazu. 
+ - Pro vyhodnoceni dotazu muze byt pouzito pouze mensi mnozstvi zaznamu nez je stanovena maximalni (perturbacni) mez.
+
+Ktere z nasledujicich moznosti obsahuji relevantni bezpecnostni funkce systemu pro ochranu inf. soukromi?
+ - neslucitelnost, nepozorovatelnost, anonymita, pseudonymita 
+ - nezjistitelnost, nespojitelnost, anonymita, identita 
+ - nespojitelnost, nepozorovatelnost, anonymita, pseudonymita, identita 
+ * nespojitelnost, nepozorovatelnost, anonymita, pseudonymita
+
+Klasicke odemykani zamku na dverich klicem
+ - nespada pod autentizaci (klic neni ani neco, co znam, vim, ani neco, co "jsem") 
+ - spada pod autentizacni procedury, ale jen kdyz klic do zamku pasuje 
+ * spada pod autentizacni procedury
+
+Nepozorovatelnost (podle Spolecnych kriterii) zajistuje moznost
+pouziti zdroju nebo sluzeb systemu tak, ze:
+ - ostatni uzivatele systemu nemohou pozorovat pouzivani daneho zdroje nebo
+   sluzeb, ale v pripade potreby lze toto chovani zpetne spojit s konkretnim uzivatelem
+ - uzivatele nejsou zodpovedni za sve chovani v systemu
+ - ostatni uzivatele, s vyjimkou administratoru, nemohou pozorovat
+   pouzivani daneho zdroje nebo sluzeb
+ * specifikovane entity nejsou schopny pozorovat specifikovane operace
+   provadene specifikovanymi entitami na specifikovanych objektech
+ * ostatni uzivatele (ani administratori) systemu nemohou pozorovat
+   pouzivani daneho zdroje nebo sluzeb
+ - specifikovane entity jsou schopny pozorovat specifikovane operace
+   provadene specifikovanymi entitami na nespecifikovanych objektech
+
+Ke zneuzitim mobilniho telefonu operatorem patri:
+ * poloha mobilniho telefonu muze byt sledovana
+ * SMS posilane z mobilu na mobil mohou byt jednoduse ukladany
+ - zadna z techto odpovedi neni spravna, protoze cela komunikace je bezpecne sifrovana
+
+Mezi bezpecnostni pozadavky podle standardu pro hodnoceni 
+kryptografickych modulu FIPS 140-1/2 patri:
+ * Bezpecnost O/S
+ - Testovani GUI modulu
+ * Rozhrani modulu
+ * Sluzby a autentizace
+ - Odolnost vuci lidskemu faktoru
+ * Fyzicka bezpecnost
+
+PIN je u kreditnich karet vyzadovan, aby
+ - zajistil absolutni ochranu penez pred jakymkoli utokem na bezpecnost karty
+ * karta po okopirovani sla obtizneji zneuzit
+ * clovek, ktery kartu zcizi, ji nemohl snadno pouzit k platbam
+ - cely system plateb kartami vypadal bezpecneji (ve skutecnosti vsak
+   bezpecnost vubec nezveda - je zde jen pro psychologicky efekt)
+ - karta sla hure okopirovat
+
+IEEE - principy SW inzenyra stanovi napr.
+ * vykonavat svou cinnost v souladu s verejnym zajmem
+ - zastavat pouze takove pozice, na ktere ma narok a schopnosti
+ - povinnost zit cestne, zdrave a podle pravidel IEEE tak, aby na nej mohla
+   byt spolecnost hrda
+ * zajistit cestnost a nezavislost ve svych odbornych odhadech
+ - povinnost pouzivat pouze software, za ktery nebylo prokazatelnym zpusobem zaplaceno
+
+Digitalni podpis zajistuje
+ - Duvernost podepisovanych dat
+ * Integritu podepisovanych dat
+ - Obnovu privatniho klice pri jeho ztrate
+ - Autorizaci podepisovanych dat
+
+Pro zajisteni prokazatelne zodpovednosti (accountability)?
+ - Je provadena archivace dat pro udrzeni schopnosti spravy uctu.
+ * Je na zacatku prace v systemu obvykle provadena autentizace nebo identifikace.
+ * Je provadena archivace dat umoznujicich propojeni cinnosti s
+   konkretni osobou tak, ze dana osoba se nemuze zrici zodpovednosti za svoji cinnost.
+ - Ja na zacatku prace v systemu obvykle provadeno desifrovani dat pro praci s uctem.
+
+Onion Routing systemem oznacujeme
+ * system poskytujici sve sluzby pro ruzne protokoly
+ - system fungujici po vrstvach (napr. TCP/IP)
+ - rezistentni system pro anonymitni komunikacni site
+ * system pro anonymni komunikaci pri pouziti verejne site
+
+Mezi zakladni pravidla bezpecnostniho modelu Bell-LaPadula patri:
+ - Procesy nesmeji cist/zapisovat data z/do nizsi urovne.
+ * Procesy nesmeji zapisovat data do nizsi urovne.
+ - Procesy nesmeji cist data na nizsi urovni.
+ - Procesy nesmeji zapisovat data do vyssi urovne.
+ * Procesy nesmeji cist data na vyssi urovni.
+
+Citlive osobni udaje dle ceske legislativy vypovidaji mj. o:
+ - majetkovych pomerech statnich uredniku 
+ - postoji k trestne cinnosti jinych 
+ * sexualni orientaci
+
+Bezpecnostni politika zahrnuje
+ * Pozadavky, pravidla a postupy urcujici zpusob ochrany a zachazeni s hodnotami spolecnosti 
+ - Specifikaci technologickych opatreni kterymi budou prosazovany bezpecnostni pozadavky spolecnosti 
+ - Seznam konkretnich osob, ktere maji povoleno pristupovat k citlivym datum spolecnosti
+ 
+Obvykle nejmene bezpecnym bodem behem prubehu autentizace v internetovem bankovnictvi je:
+ * autentizace banky 
+ - autentizace klienta 
+ - autentizace pocitace klienta
+ 
+Pod pojmem asymetricka kryptografie rozumime
+ - Kryptografie s vyuzitim klice, ktery je vystupem kvalitni hasovaci funkce. 
+ - Kryptografie s algoritmem, ktery je opakem symetricke kryptografie a nepouziva zadny klic. 
+ * Kryptografie s vyuzitim dvojice soukromeho a verejneho klice. 
+ - Nic z ostatnich uvedenych moznosti.
+ 
+Mezi bezpecnostni pozadavky podle standardu pro hodnoceni kryptografickych modulu FIPS 140-1/2 patri:
+ * Metody pro zmirneni jinych utoku 
+ * Sprava klicu 
+ * Sluzby a autentizace 
+ * Rozhrani modulu 
+ - Flexibilita modulu 
+ - Elektromagneticka rezonance
+ 
+Poskytuje TOR testovani integrity prenasenych dat?
+ - Ne, proc bychom neco takoveho potrebovali, staci zarucena anonymita. 
+ * Ano, je to obrana proti tagging utokum. 
+ * Ano, je to vylepseni oproti puvodnimu navrhu Onion Routing systemu. 
+ - Ano, je to obrana proti mig-in-the-middle utokum.
+
+Analyza a hodnoceni hrozeb zahrnuje:
+ * Rozvahu, co vsechno by melo byt chraneno. 
+ * Vyhodnoceni, jake hrozby hrozi ochranovanym hodnotam. 
+ - Pravidla a postupy, urcujici zpusob ochrany a zachazeni s ochranovanymi hodnotami. 
+ - Techniky pro implementaci bezpecnostnich funkci chranicich ochranovane hodnoty.
+ 
+Mezi bezp. funkce systemu pro ochranu inf. soukromi nepatri:
+ - pseudonymita 
+ - nepozorovatelnost 
+ * integrita 
+ - nespojitelnost 
+ * neslucitelnost 
+ * identita
+
+Tvrzeni "System je chranen sdilenym heslem" by mohlo oznacovat
+ - riziko
+ - utok
+ * zranitelnost
+ - hrozbu
+ - bezpecnostni politiku
+
+Pro emailove zpravy posilane pomoci systemu Mixminion plati
+ * jsou anonymni
+ - hlavicky mailu nejsou modifikovany
+ * uzivatel specifikuje cestu po siti
+ - odpovedi jsou v systemu dorucovany odlisne od normalnich emailu
+ * je mozne na ne v urcitem casovem ramci odpovedet
+ - jsou pseudonymni
+
+Zabezpeceni provozu na urovni IP dosahnu pokud zvolim:
+ - PGP
+ - Stunnel
+ * IPv6
+ * IPsec
+ - IPv4s
+
+Ktera technika neni platna pro anonymitni komunikacni site:
+ * vyuzivani minixu pro preposilani zprav
+ * sifrovani zprav mezi uzly algoritmem RSA s delkou klice zavislou na poctu uzlu
+ - pozastavovani prijatych zprav
+ - v case nedeterministicke odesilani prijatych zprav
+ - preusporadavani zprav v ramci uzlu
+
+Ktery z nasledujicich protokolu brani tomu, aby se ten komu jednou prokazete znalost tajne informace nemohl pozdeji vydavat za vas:
+ - protokol typu vyzva-odpoved (challenge-response), ktery vyuzije asymetrickou kryptografii jen pro podpis, nikoliv ale pro sifrovani.
+ - protokol, ktery pouziva sifrovani pro zabezpeceni prenosu autentizacnich dat.
+ * protokol, zalozeny na dukazu nuloveho rozsireni znalosti (zero-knowledge).
+
+Jaky zpusob predani verejneho klice je povazovan za duveryhodny:
+ - vystaveni na klicovy server.
+ * overeni otisku klice telefonem.
+ - zaslani emailem s paralelnim umistenim na webovou stranku.
+ * zaslani duveryhodnym zprostredkovatelem.
+ * osobni predani na USB disku.
+
+Pod pojmem dostupnost dat rozumime
+ - Prubeh autentizace osoby pro praci s daty a sluzbami by mel byt dostupny i lidem se snizenou pracovni schopnosti
+ - Uzivatele by mely mit pristup k datum a sluzbam co nejmene komplikovany
+ - Data by mela byt dostupna i neautorizovane osobe v pripade kriticke udalosti
+ * Autorizovani uzivatele by mely mit pristup k datum a sluzbam co nejmene komplikovany
+
+Ktere z nasledujich bodu lze zaradit mezi obecne principy pro bezpecnost IT?
+ - Nikdy nezverejnujte kriticke bezpecnostni algoritmy.
+ * Fyzicky nebo logicky oddelte kriticke zdroje.
+ * Usilujte o jednoduchost.
+ * Externi zdroje pokladejte za nebezpecne.
+ - Nepouzivejte klice s delkou < 128 bitu.
+
+Zvolte spravnou hierarchii podle druhu pseudonymu (ve smeru zvysujici se anonymity a nespojitelnosti)
+ - Pseudonym transakce -> pseudonym role-vztahu -> pseudonym role a pseudonym vztahu -> pseudonym osoby
+ - Pseudonym osoby -> pseudonym role-vztahu -> pseudonym role -> pseudonym vztahu -> pseudonym transakce
+ * Pseudonym osoby -> pseudonym role a pseudonym vztahu -> pseudonym role-vztahu -> pseudonym transakce
+ - Pseudonym osoby -> pseudonym transakce -> pseudonym role a pseudonym vztahu -> pseudonym role-vztahu
+ - Pseudonym osoby -> pseudonym role-vztahu -> pseudonym vztahu -> pseudonym role -> pseudonym transakce
+
+Proxy servery jsou na Internetu
+ - zbytecne, pouze zpomaluji rychlost dat a jsou snadno zneuzitelne
+ * dulezite, rozumi aplikacnim protokolum, umoznuji anonymizaci
+ - zarucenym prostredkem anonymniho vyuzivani Internetovych zdroju
+ - zdrojem vseho zla, patrily by zakazat
+ * casto zpusobem jak obejit lokalni bezpecnostni politiku
+
+
+Pod pojmem silna integrita dat rozumime
+ * Data nesmi bez svoleni autorizovane osoby zmenit svuj stav vubec
+ - Data nesmi bez svoleni autorizovane osoby nepozorovane zmenit svuj stav
+ - Data nesmi byt bez svoleni autorizovane osoby zpracovavana na semanticke urovni
+
+System detekce pruniku (IDS)
+ * je mozne pouzit v siti i na pocitaci
+ - je mozne pouzit bud v siti nebo na pocitaci
+ - poskytuje lepsi ochranu nez firewall
+ - ma smysl pouzivat pouze jako sitovy prvek, kdy detekuje a informuje o probihajicim utoku
+
+Jaka rizika s sebou nese zasilani platebnich karet a PINu postou?
+ * Postovni obalku lze behem dorucovani ztratit.
+ - Platebni karta je skrze obalku vystavena tzv. napetovym a teplotnim utokum.
+ - Libovolna platebni karta muze byt skrze neporusenou obalku snadno zkopirovana.
+ * PIN muze byt skrze neporusenou obalku nepozorovane precten.
+
+Proc platebni karty s cipem maji magneticky prouzek?
+ * Kvuli zpetne kompatibilite.
+ - cip provadi kryptograficke operace nad daty ulozenymi na magnetickem prouzku.
+ - zadna z techto odpovedi neni spravna.
+
+Digitalni podpis zajistuje
+ - Autorizaci podepisovanych dat
+ - Obnovu privatniho klice pri jeho ztrate
+ - Duvernost podepisovanych dat
+ * Integritu podepisovanych dat
+
+Mezi bezpecnostni pozadavky podle standardu pro hodnoceni kryptografickych modulu FIPS 140-1/2 patri:
+ * Sluzby a autentizace
+ * Metody pro zmirneni jinych utoku
+ * Sprava klicu
+ * Rozhrani modulu
+ - Flexibilita modulu
+ - Elektromagneticka rezonance
+
+Z jakeho duvodu se doporucuje podepisovat vlastni verejny klic privatnim klicem:
+ - pro zvyseni jeho duveryhodnosti o vyssi pocet podpisu
+ * pro zajisteni jeho integrity
+ - nedoporucuje se
+ - pro zarovnani delky verejneho klice na hodnotu delitelnou delkou verejneho modula
+ - pro zvyseni entropie verejneho klice
+ 
+Pod pojmem asymetricka kryptografie rozumime
+ - Kryptografie s vyuzitim klice, ktery je vystupem kvalitni hasovaci funkce.
+ - Kryptografie s algoritmem, ktery je opakem symetricke kryptografie a nepouziva zadny klic.
+ - Nic z ostatnich uvedenych moznosti.
+ * Kryptografie s vyuzitim dvojice soukromeho a verejneho klice.
+
+Chybovost biometrickych systemu vyjadrena pomoci FRR (False Rejection Rate) je:
+ * Podil poctu odmitnutych pokusu o prihlaseni legitimnich uzivatelu ku poctu vsech pokusu o prihlaseni.
+ - Podil poctu akceptovanych pokusu o prihlaseni legitimnich uzivatelu ku poctu vsech pokusu o verifikaci legitimnich uzivatelu.
+ - Podil poctu vsech pokusu o prihlaseni legitimnich i nelegitimnich uzivatelu ku poctu vsech pokusu o prihlaseni legitimnich uzivatelu.
+ - Podil poctu akceptovanych pokusu o legitimnich legitimnich uzivatelu ku poctu odmitnutych pokusu o prihlaseni legitimnich uzivatelu.
+
+Ktere dve z techto biometrickych technik jsou nejpresnejsi?
+ * vzor ocni sitnice
+ * vzor ocni duhovky
+ - dynamika podpisu
+ - hlas
+
+Co je to pseudonym role-vztahu?
+ - Pseudonym, ktery lze pro danou roli a vztah pouzit pouze jednou a pri dalsi takove komunikaci musi byt vygenerovan novy
+ * Takovy pseudonym, ze komunikacni partner se nedozvi, ze dva pseudonymy pouzite v ruznych rolich patri ve skutecnosti pouze jednomu uzivateli
+ - Pseudonym, jehoz pouziti je omezeno pouze pro unikatni roli a vztah (partnera)
+ * Pseudonym, ktery je unikatni pro roli a vztah (partnera)
+
+Zakladni metody autentizace uzivatelu jsou zalozeny na necem, co
+ * mam
+ * vim
+ - smim
+
+Protokoly SSL/TLS umoznuji
+ - zajistit nepopiratelnost
+ * kontrolu integrity prenasenych dat
+ - komunikovat anonymne
+ * autentizaci komunikujicich stran (klient i server)
+ - autentizaci jen a pouze jedne strany
+
+Provoz v anonymitni siti
+ - je pro zachovani urcite miry anonymity nepodstatny
+ - je casto zamenovan za falesne zpravy
+ * je pro zachovani urcite miry anonymity dulezity
+ - neobsahuje falesne zpravy
+ * je casto obohacovan o falesne zpravy
+
+Maximalni pocet identit jedne osoby muze byt
+ - 2 pro vdane zeny
+ * kolik chce (kdyz se bude dostatecne snazit)
+ - 4 pro jedince s dvema svatbami a jednim rozvodem
+ - 1
+
+Mista setkani a skryte sluzby TORu je/jsou:
+ * sluzba, ktera umoznuje anonymni provoz napr. weboveho serveru.
+ - mista, kde se setkavaji pouze anonymni uzivatele.
+ * je sluzba umoznujici serveru kontrolovat anonymni prichozi pozadavky.
+ - mista, kde uzivatele ziskavaji anonymitu tak, ze to ostatni nevidi.
+
+Co je cilem zajisteni duvernosti dat?
+ - Utajit existenci semantiky dat pred neduveryhodnymi osobami
+ * Zabranit zjisteni semantickeho obsahu dat neutorizovanymi osobami
+ - Zamezit zmene semantickeho obsahu dat neautorizovanymi osobami
+
+Ktere z nasledujicich moznosti obsahuji relevantni bezpecnostni funkce systemu pro ochranu inf. soukromi?
+ - nespojitelnost, nepozorovatelnost, anonymita, pseudonymita, identita
+ * nespojitelnost, nepozorovatelnost, anonymita, pseudonymita
+ - nezjistitelnost, nespojitelnost, anonymita, identita
+ - neslucitelnost, nepozorovatelnost, anonymita, pseudonymita
+
+Co patri mezi cile bezpecnostni politiky?
+ - Identifikovat ochranovane prostredky firmy.
+ * Stanoveni strategie pro pouziti bezpecnostnich funkci.
+ - Eliminovat vsechny utocniky.
+ - Prenest odpovednost na treti strany.
+ * Minimalizace (kontrola) rizik.
+
+Mezi vlastnosti Onion Routingu (OR) rozhodne patri
+ * zpozdeni komunikace by mela byt co nejmensi
+ - neumoznuje komunikaci klient-server
+ * aplikace mohou s OR fungovat bez nutnosti jejich modifikace
+ - vyuziva se zejmena v privatnich sitich
+ - zavislost na specializovanem hardwaru
+
+Podle ceho je urcen pocet kol/rund u algoritmu Rijndael.
+ * Delka klice
+ - Delka bloku
+ - Delka klice a bloku
+ - Inicializacni vektor a delka bloku
+ - Delka zpravy
+ - Inicializacni vektor
+
+Co znamena pojem duvernost dat?
+ - Zajisteni integrity dat.
+ * Utajeni obsazene informace.
+ - Data jsou v nezmenene podobe tak, jak byla vytvorena.
+
+Pod pojmem prokazatelna zodpovednost rozumime
+ * Za veskere sve ciny v systemu jsou uzivatele zodpovedni vuci majiteli dat
+ - U kazde cinnosti lze jednoznacne prokazat, kdo je za ni zodpovedny.
+ - Uzivatele se musi pred pouzitim systemu autentizovat vuci jeho majiteli
+ - Uzivatele systemu jsou zodpovedni za ciny, ktere lze jednoznacne prokazat
+
+Pro zajisteni prokazatelne zodpovednosti (accountability)?
+ * Je na zacatku prace v systemu obvykle provadena autentizace nebo identifikace.
+ * Je provadena archivace dat umoznujicich propojeni cinnosti s konkretni osobou tak, ze dana osoba se nemuze zrici zodpovednosti za svoji cinnost.
+ - Ja na zacatku prace v systemu obvykle provadeno desifrovani dat pro praci s uctem.
+ - Je provadena archivace dat pro udrzeni schopnosti spravy uctu.
+
+V souvislosti se sdruzovanim dat do rozsahlych databazi uklada zakon 101/2000 sb. o ochrane osobnich udaju
+ * Povinnost nesdruzovat data, ktera byla puvodne ziskana k rozdilnym ucelum, do jednoho celku.
+ - Povinnost informovat zkoumanou osobu (subjekt) o tom, ze se podarilo zjistit o nem citlive informace a zda muze potvrdit jejich pravdivost.
+ * Povinnost informovat osobu, jejiz data budou ulozena a zpracovavana v databazi, ze se timto zpusobem bude s poskytnutymi daty nakladat.
+
+Ktera z techto tvrzeni jsou spravna?
+ - Jeden vzorek lze vyuzit jen v jednom systemu.
+ - Biometriky po analyze s vyuzitim kryptografie o subjektu zpravy vypovidaji.
+ * zadna z techto odpovedi neni spravna.
+ - Biometricka data jsou tajna.
+
+Odmitnuti sluzby (Denial of Service) je
+ - utok, kdy zpracovani pozadavku na webovem serveru nevyhnutelne skonci s HTTP chybou 500
+ - stav, kdy server zjisti nedostatecnou autorizaci uzivatele k operaci
+ - stav, kdy server vcas zjisti utok a zamitne dalsi komunikaci s utocnikem
+ * utok, ktery uvede server do stavu, kdy neni schopen reagovat na pozadavky
+
+Bezpecnostni politika je
+ - dokument schvaleny vrcholovym managementem a specifikujici vyuziti IT pro zajisteni cilu organizace
+ - dokument schvaleny clenem predstavenstva a stanovujici presna pravidla pro zajisteni technickych i lidskych zdroju pro vyuziti IT pro zajisteni cilu organizace
+ * soubor pravidel specifikujici ucinny zpusob uplatnovani opatreni potrebnych k dosazeni pozadovane minimalni urovne rizik
+ - soubor opatreni a mechanizmu potrebnych k dosazeni pozadovane minimalni urovne prevence a detekce zranitelnosti
+
+Jaky je v dnesnich platebnich systemech pro zakaznika nejvetsi bezpecnostni problem?
+ - Napetove utoky jsou snadnou a efektivni cestou jak obejit bezpecnostni mechanizmy cipu na platebni karte.
+ - Zakaznici sami se chovaji nezodpovedne.
+ * Soucasny system funguje tak, ze zakaznikovi nezarucuje vazbu mezi zobrazovanou a potvrzovanou transakci.
+ - Banky uz v 90. letech zavrhly pouzivani bezpecneho protokolu SET (Secure Electronic Transaction).
+
+Pro liberalni kontrolu certifikatu verejneho klice plati:
+ * Klic povazujeme za platny, dokud nejsme presvedceni o opaku.
+ - Klic povazujeme za zneplatneny, pokud standard X.509 nestanovi jinak.
+ - Klic povazujeme za neplatny, dokud nejsme presvedceni o opaku.
+ - Nic z ostatnich uvedenych moznosti.
+
+Ktera z techto tvrzeni jsou spravna?
+ - Biometriky po analyze s vyuzitim kryptogragie o subjektu zpravy vypovidaji.
+ * Biometriky v idealnim pripade urcuji identitu cloveka presne a lze tak spojovat jednotlive jeho ciny.
+ * Kopirovani merenych biologickych charakteristik cloveka neni sice trivialni, ale ani nemozne.
+ - Biometricka data jsou tajna.
+
+Podle ceskeho zakona o e-podpisu (227/2000) je zaruceny elektronicky podpis:
+ * Elektronicky podpis, ktery je jednoznacne spojen s podepisujici osobou
+ - Elektronicky podpis, ktery je proveden nad zarucene korektnimi daty
+ - Nic takoveho dle ceskeho zakona neexistuje
+ - Elektronicky podpis, ktery je pripojen ke zprave tak, aby ho bylo mozne zarucene overit
+
+Ktere z nasledujich bodu lze zaradit mezi obecne principy pro bezpecnost IT?    
+ * Usilujte o jednoduchost.
+ * Fyzicky nebo logicky oddelte kriticke zdroje.
+ - Nepouzivejte klice s delkou < 128 bitu.
+ - Nikdy nezverejnujte kriticke bezpecnostni algoritmy.
+ * Externi zdroje pokladejte za nebezpecne.
+
+Je vubec mozne, aby melo vnejsi prostredi (teplota atp.) nejaky vliv na bezpecnost cipovych karet?
+ - ne, neni to mozne
+ * ano, je to mozne
+
+Digitalni podpis zajistuje
+ - Platnost podepisovanych dat.
+ - Komprimaci podepisovanych dat.
+ - Duvernost podepisovanych dat.
+ * Autentizaci podepisovanych dat.
+
+Podezrele chovani v siti zjistite
+ * honeypotem
+ - antispyware programem
+ - antivirovym programem
+ * firewallem
+ * IDS
+
+Ktera technika neni platna pro anonymitni komunikacni site:
+ * vyuzivani minixu pro preposilani zprav
+ - pozastavovani prijatych zprav
+ - v case nedeterministicke odesilani prijatych zprav
+ - preusporadavani zprav v ramci uzlu
+ * sifrovani zprav mezi uzly algoritmem RSA s delkou klice zavislou na poctu uzlu
+
+cipova kreditni karta bez mag. prouzku
+ - skyta obvykle nizsi bezpecnost nez karta s mag. prouzkem (bez cipu)
+ * skyta obvykle vyssi bezpecnost nez karta s mag. prouzkem (bez cipu)
+ * obvykle obsahuje maly procesor
+ - obvykle neobsahuje procesor, prestoze se ji tradicne rika "cipova"

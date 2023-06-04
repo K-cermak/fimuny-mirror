@@ -1,0 +1,8 @@
+1. Invertor v technologii TTL.
+2. a)Rapid execution engine, b)Execution trace cache.
+3. Popsat komunikaci po sériovém portu, parametry komunikace.
+4. Průřez IEEE 1394, popsat.
+5. a) nepamatuji si, b) SLI, kde se používá.
+6. Princip činnosti optické myši + nákres.
+7. Princip činnosti sublimační tiskárny + nákres.
+8. Výpočet magnetického toku, je-li dána magnetická indukce a průřez materiálem.

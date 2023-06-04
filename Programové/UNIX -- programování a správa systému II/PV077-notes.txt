@@ -1,0 +1,2397 @@
+zaloha:
+	dump(8) restore(8)
+	tar(1) cpio(1) rsync(1)
+
+	drbd (distributed replicated block device) (~raid1)
+
+	zalohy databazi -- write-ahead log
+
+	rsync (nad ssh) + cp -l (hardlinkovany snapshot)
+
+FileSystem Hierarchy Standard (FHS):
+	na samostatnych svazcich:
+		/	neni sdilitelny mezi vice stroji, minimalisticky; nasledujici casto symlinky do /usr
+			/bin	single user bins + network startup
+			/sbin	system bins (SysV drive /etc)
+		/dev	devtmpfs, specialni soubory (terminaly, diskove oblasti, ...)
+			/etc	konfiguracni soubory
+			/lib	sdilene knihovny, pluginy, kernelove moduly
+				na multilib /lib{32,64}; lib -> lib32
+			/mnt	pro rucni prijovani docasnych svazku
+			/media	pro automaticke pripojovani by desktop env
+			/opt	homogenni baliky
+			/root	root $HOME, drive / (BSD, SysV+, kvuli konfigurakam, historii etc.)
+		/tmp	obvykle tmpfs, male soubory (vs. /var/tmp)
+		/home	domovske adresare (drive /usr nebo /usr/home/)
+		/boot	bootloader, kernel (drive /)
+		/usr	sdiletelne, puvodne uzivatelska data, RO mimo instalaci sw (vyjma /usr/X11), predpoklada se, ze je cez NFS
+			/usr/{,s}bin		{uzivatelske,systemove} programy, nejsou nezbytne pro single user
+			/usr/{,share/}doc	dokumentace, arch independent
+			/usr/games		hry, education
+			/usr/include		header files
+			/usr/lib{,32,64}	knihovny, nejsou nezbytne pro single user
+						take obcas binarni data zavisla pro konkretni platformu
+			/usr/libexec		spustitelne soubory spoustene jinymi programy (ne z cli); muzou na stdin ocekavat socket, nebo jej
+						necekaji vubec
+			/usr/local		podobna struktura jako /usr, veci instalovane lokalne spravcem na danem workstation
+						veci, co nejsou 'soucasti systemu', napr. veci mimo balickovaci system
+						BSD porty
+			/usr/{share/},man	manualove stranky
+			/usr/share		sdilitelna data nezavisla na arch, casove zony, terminfo, fonty
+			/usr/src		zdrojaky
+			/usr/{spool,tmp}	symlinky do /var
+		/var	zapisovatelna data
+			/var/{log,adm}		logy (solaris)
+			/var/cache		predformatovane manpages, fonty
+			/var/lock		aplikacni zamky, specielne /var/lock/subsys pro SysV init skripty
+			/var/{mail,spool/mail}	maildir
+			/var/run -> /run
+			/var/spool		fronty (mail, printers, ...)
+			/var/tmp		vetsi docasne soubory, zpravidla neni tmpfs
+		/run	tmpfs, data vazane k bezicim programum (e.g., pid soubory); zmena z /var pro potreby systemd (k dispozici v early boot)
+			
+	rozdilne adresare pro /{,usr}/{,s}bin a dalsi take pro moznost rozdeleni dle $PATH to, co chci
+
+init: proces cislo 1; /sbin/init, /bin/init, /etc/init, /bin/sh; moznost override z bootloaderu
+	BSD init - v pid 1 temer nic, vse v shellu; spusti /etc/rc (ten mountuje, fsck, pousti demony); podle /etc/gettytab spousti na danych terminalech program getty
+	SysV init
+		- stav = runlevels 0-6 urcuje, ktere SSTs (e.g., demony) jsou aktivni
+		  0 halt; 1 single; 2 multi; 3 remote fs (2 + sdileni disku); 4 future use; 5 future use (rh: 3+xwindow); 6 reboot
+		- ridici soubor/etc/inittab - uloha na samostatnem radku; napr xdm, mingetty
+			IDENTIFIKATOR_NEKDY_MAX_2CHAR:CONCAT_SEZNAM_RUNLEVELU:ZPUSOB_PUSTENI:PRIKAZ_PLUS_ARGS
+			ZPUSOB_PUSTENI: - sysinit (jen pri startu systemu), once, wait, powerfail, powerok, powerokwait, respawn (spustit znovu), off (vypnuta)
+			specialne radky:
+			l0:wait:/etc/rc.d/rc 0	(podobne l1 ... l6), tento zajisti spousteni vetsiny SSTs
+		- init (8), telinit(8)
+		  pozna, zda bezi jako PID; pokud ne, zpracovava argv; init [0-6a-cA-CsSqQ]
+		  	[0-6]		prechod do daneho urovne chodu systemu
+		  	[a-cA-C]	nastartovani jednorazovych cinnosti
+			[sS]		init 1, soucasny terminal jako konzole
+			[qQ]		reload /etc/inittab
+		- startovaci skripty v /etc/init.d spoustejici/zastavujici service dle argv[1] (start/stop), symlinky do /etc/rc[0-6].d jako [SK][0-9][0-9]skript; S nebo K urcuje, zda argv[1] = start nebo stop; cisla = priorita (mensi, driv spust)
+		- dalsi argumenty napr restart, reload (znovunacteni konfigurace bez retstartu), condrestart (po aktualizace balicku, jen pokud bezi) a status
+		- /etc/sysconfig v RHEL/Fedora pro konfiguraci startovacich skriptu (ten sourcne sysconfig)
+		- chckconfig(8)
+		- minusy: pristup k mnoha souborum, symlinky, chybi zavislosti mezi sluzbama, vynucene poradi neumoznuje paralelizaci; inittab neumoznuje resit, co se stane, kdyz spadne, respawn interval apod.; nevi, ktere procesy bezi (viz kill -9 $(pidof sshd)); fork exec
+	systemd
+		- moznost paralelizace: disk -- nastavi sebe jako autofs target, podobne otevre socket a ceka; on demand spusti sluzbu
+		- sledovani procesu pres cgroups (kazdy sst bezi v samostatne cgroupe, systemd tedy je schopny zjistit, zda sst bezi nebo zda spadne)
+		- unit - vec, co se ma spoustet, popsany unit filem
+			- typ: service, timer, target (~runlevel; e.g. multi-user.target)
+			- [Unit]
+			  Description=...
+			  After=smth.target smth.service
+			  Wants=smth.service
+			  [Service] <- ? asi Service, Timer, Target dle typu unity
+			  Type=forking .................................................. forking = vyrobi potomka, process pak skonci, potomek pak dal pokracuje
+			       simple ................................................... primym potomkem PID 1
+			  PIDFile=/run/smth ............................................. napr sshd si sam vyvori pid file
+			  EnvironmentFile=-/et/sysconfig/sshd 	......................... podpora pro sysconfig soubory, parsuje basic shell prirazeni, comment, nebo instanciace promenne
+			  ExecStart=path $OPTIONS
+			  ExecReload=/bin/kill -HUP $MAINPID
+			  KillMode=process
+			  Restart=on-failure
+			  RestartSec=42s
+			  [Install]
+			  WantedBy=multi-user.target
+		- /usr/lib/systemd konfigurace dodana packagem
+		- /etc/systemd je runtime konfigurace
+		- systemctl enable smth[.service]		aktivovat po startu systemu, 
+		- systemctl enable --now smth			aktivovat po start a zaroven spustit
+		- systemctl enable getty@ttyS1.service		spousteni ve vice instancich; popsana v /usr/lib/systemd/system/getty@.service; pousti se ne sluzba samotna, ale jeji instance; param za @ se instanciuje jako promenna %I prej
+		- sluzba se ma startovat v nejakym targetu, dle /etc/systemd/system/multi-user.target.wants/smth.service (symlink z /usr/lib/systemd/system)
+		- target != runlevel; muze byt mensi cast startu systemu, napr. vic unit files jako jeden samostatny target -> da se pak spolurestartovat etc.; ten by pak byl zavisly na multi-user.target
+		- systemctl daemon-reload			pro nacteni noveho stavu; napr nove files, nebo nove symlinky (auto pri enable/disable)
+		- systemctl start/stop smth
+		- systemctl status smth
+		- systemctl 					seznam vsech bezicich
+		- systemctl status				+ struktura cgroups, jake procesy jsou v te cgroupe
+		- systemctl is-system-running			bezi vse co ma, nebo neco spadlo?
+		- systemctl list-units				list nainstalovanych
+		- systemctl reset-failed smth.service		po oprave konfigurace; systemd zkousi znova restartovat omezenerkat
+		- systemctl edit smth.service			ulozi /etc/systemd/system/sshd.service.d/override.conf; moznost prerazit implicitni volby bez zmeny unit filu
+
+svazky
+	mount(8), umount(8)
+	fstab - automaticky/manualne pripojovane svazky, swapovaci oblasti
+		radek = svazek, postupne v radku:
+			zarizeni (/dev/sdaX, tmpfs, devpts, sysfs, proc)
+			mountpoint, swap
+			typfs
+			parametry (nejsou li, defaults; git=5, mode=620; swap ma pri=PRIORTA)
+			poradi_kontroly_konzistence (0 = nekontrolujeme; pro paralelizaci a zarizeni nekontroly na stejnem disku)
+			poradi_zalohovani_pro_dump (0 = nezalohujem)
+	mtab - aktualne pipojene svazky, problem u read only svazku; /proc/mounts u linuxu
+	bind-mount - pripojeni adresare jako svazku, pac hardlink neexisuje pro slozky (nelze urcit .. pro adresar; u bind-mount to resi vrstva VFS)
+		mount --bind SRC DST
+	vicenasobne pripojeni no prob in linux (je to porad 1 superblock)
+	loop device - pro pripojeni neblokoveho zarizeni (napr. souboru)
+		losetup(8)
+		mount -o loop SOUBOR ADRESAR
+
+	swap - vetsinou diskova oblast, nekdy i do souboru (ale nedoporucene u nfs, jen u realnych fs)
+		swapon(8), swapoff(8), swap(8), /proc/swaps (linux)
+		linux dela priority striktne -- dokud neni swap s vyssi prioritou vyuzit, tak se mensi priorita nevyuzije
+
+automounter
+	- vitualni fs v kernelu autofs{,2}, pristup k adresari preposilan nejakemu demonu kernelem;
+	- autofs (linux), automount (solaris), amd(8) userspace ("sitovy nfs server, co si nechava preposilat zadosti")
+	- autofs konfigurace: /etc/auto.master - seznam vsech automount pointu
+		/ftp	/etc/auto.ftp <- konfig soubor
+	
+		/etc/auto.ftp: automount mapa:
+		pub		PREPINACE_NAPR_PRO_FS	ftp.fi.muni.cz:/export/ftp/ftp/pub
+		^ adresar, lze nahradit *, tj. pro jakykoliv podadresar:
+		*					home.fi.muni.cz:/export/home/&
+
+uzivatele
+	UID/GID cisla; jmena se pouzivaji pro logovani do souboru a prihlasovani
+	tabulka uzivatelu, oddelene dvojteckami, line per user	/etc/passwd
+		JMENO_UZIVATELE:HESLO_V_ZASIFROVANE_PODOBE_NEBO_HVEZDICKA_PRO_SHADOW:UID_NE_NUTNE_UNIKATNI:REALNE_NEBO_TAKE_EFEKTIVNI_GID_JEZ_MAJI_PROCESY_PRO_PRIHLASENI:GCOS:HOMEDIR_SHELLU:SHELL
+	sifrovani hesel: crypt(3); 25step DES s 2 znaky na salt; $CISLO_ALGORITMU$SUL$HASH
+	slovnikovy utok: crack(8), cracklib
+	/etc/shadow	NAME:HASH:LAST_CHANGE_TS:HOW_OFTEN_CHANE_TS:...
+		chmod 000 -- nelze autentizovat stejnymi hesly; nutnost setuid/gid programu, ktere pracuji s hesly
+		u BSD: /etc/master.password (spojene passwd a shadow + binarni podoba hesel generovana z master.passwd)
+	/etc/group
+		JMENO_SKUP:VOLITELNE_HESLO_SKUPINY_NEBO_x_PRO_GSHADOW:GID:SEZNAM_UZIVATELU_KTERI_TAM_TAKE_PATRI
+	vipw(8) je li db ulozena i jinde (shadow, master.passwd)
+	chfn(8) zmena user informaci
+	davkove pridavani useradd, groupadd, userdel, groupdel; vytvori home, alokuje volne UID, skopiruje soubory ze /etc/skel do home
+	pwconv(8) prevod hesel do shadow
+	skupina pro kazdeho uzivatele: mask 002 vs 0022, zapis pro skupinu pri spolupraci
+
+	/etc/shells - seznam shellu, co uzivatele mohou mit, chsh(1); one per line; pseudouzivatel ma /sbin/nologin
+
+NSS - alternativni zdroj dat pro systemove tabulky passwd, group, hosts, ...; /lib/libnss_SERVICE.so.X
+	/etc/nsswitch.conf
+	passwd:   compat  <- moje passwd
+	group:    compat
+	hosts:    dns [!UNAVAIL=return] files <- dohledej pomoci dns, kdyz neni db pristupna, selzi s chybou; pokud nenajde, tak pouzij /etc/hosts
+	networks: nis [NOTFOUND=return] files
+
+	obecne:
+	DATABAZE [[!]STATUS=AKCE ...] POPIS_SLUZEB
+		AKCE:	RETURN		vrat nalezenou hodnotu nebo chybu
+			CONTINUE	pokracuj pouzitim dalsi sluzby
+			SUCCESS		zaznam nalezen, nedoslo k chybe, implicitne return
+			NOTFOUND	vyhledavani skonceno bez chyby, ale nenalezeno; implicitne CONTINUE
+			UNAVAIL		sluzba neni trvale dostupna (napr. neni zkonfigena), CONTINUE
+			TRYAGAIN	docasna err (timeout), CONTINUE
+
+	getpwnam(3), getpwuid(3) nejsou reentrantni a vraci ptr do knihovny
+		#include <pwd.h>
+		#include <sys/types.h>
+		struct passwd *getpwnam(const char *name);
+		struct passwd *getpwuid(uid_t uid);
+		struct passwd {
+			char *pw_name;
+			char *pw_passwd;
+			uid_t pw_uid;
+			gid_t pw_git;
+			char *pw_gecos;
+			char *pw_dir;
+			char *pw_shell;
+		};
+
+		seznam vsech useru: getpwent(3), setpwent(3) <- zacatek prochazeni, endpwent(3) <- zavre FD na db/soubor pwd/...
+		nsswitch a cli: getent(1): getent TABULKA_NAPR_passwd USER
+
+	getgrnam(3), getgrgid(3):
+		#include <grp.h>
+		#include <sys/types.h>
+		struct group *getgrnam(const char *name);
+		struct group *getgrgid(gid_t gid);
+		struct group {
+			char *gr_name;
+			char *gr_passwd;
+			gid_t gr_gid;
+			char **gr_mem; <- NULL terminated array
+		};
+		getgrent(3), setgrent(3), endgrent(3)
+
+PAM:
+	autentizace do pluginu (napr. heslo, sitnice, krb5 listky, ...)
+	knihovna libpam s kterou se aplikace nalinkuji, ta pouziva pluginy
+	pluginy v /lib/security
+	konfigurace v /etc/pam.conf a /etc/pam.d/*
+
+	faze autentizace:
+		account 	- ma ucet?
+		auth		- autentizace
+		password	- zmena hesla, nemusi probihat vzdy; ale je nutne zajistit, ze bude probihat vzdy pokud je treba
+		session		- inicializace veci k uzivateli; napr. nastaveni limitu, audit informace, pripojeni home skrze nfs
+		
+	/etc/pam.d/APLIKACE
+		auth		required 	pam_securetty.so	<- dovoli root login jen na nekterych terminalech
+		auth		required 	pam_env.so		<- nastaveni promennych prostredi
+		auth		required 	pam_nologin.so		<- [ -e /etc/nologin ] && jen root login
+		auth		sufficient 	pam_unix.so nullok	<- normalni unix heslo, uspeje-li, cajk; sufficient pro vice metod autentizace
+		auth		required 	pam_deny.so		<- vzdy selze
+		account		requried 	pam_unix.so
+		password 	required 	pam_cracklib.so retry=3 <- 3x vybrat heslo, pokud ani na potreti nepodari vybrat neslovnik, nechat
+		password 	sufficient 	pam_unix.so nullok shadow <- nemaji se brat z passwd, ale shadow, nullok = brat prazdne heslo
+		password 	required 	pam_deny.so
+		session 	required 	pam_limits.so
+		session 	required 	pam_unix.so
+		session 	optional 	pam_console.so <- na console zpristupni zvukovou kartu, ...
+
+		required - selze => auth selze
+		requisite - selze => auth selze hned
+		sufficient - staci k auth bez ohledu na nasledujici moduly
+		optional - spusti se, ale vysledek se pouzije jen pokud jde o jediny modul daneho typu
+		substack - podobne jako include vlozi dalsi config, detailnejsi konfigurace
+			substack smth -> /etc/pam.d/smth
+			napr pro krb5 login pro vsechny sluzby; namisto upravy vsech /etc/pam.d/* upravim jen password-auth substack
+	plugin muze implementovat vice fazi, napr. pam_unix.so
+
+/run/utmp: seznam prave logged in useru; pole struktur utmp (utmp.h); POSIX.1 ma rozhrani utmpx; w(1)/who(1) pro display
+	zapis v PAMU: session
+	getutxent(3):
+		#include <utmpx.h>
+		struct utmpx *getutxent(void);
+		struct utmpx *getutxid(struct utmpx *);
+		struct utmpx *getutxline(struct utmpx *);
+		struct utmpx *pututxline(struct utmpx *);
+		void setutxent(void);
+		void endutxent(void);
+
+/var/log/wtmp -- zaznam o prihlasenich a odhlasenich uzivatelu; stejny format utmp; uzivatel NULL: odhlaseni na danem termu
+	specialni zaznamy -- reboot, shutdown, zmena systemoveho data
+	jake jadro se nabootovalo; i ssh loginy, jak dlouho /logged in; logged in do shutdownu nebo havarie
+	neexistuje => nevytvari se; u rotace treba novy file
+	last(8)
+/var/log/btmp -- neuspesne prihlaseni
+	lastb(8)
+
+prihlaseni na terminalech: (tty = teletype); jedno stale PID
+	getty - inicializace linky, vypis zpravy, cekani na vstup; inicialni binarka, co bezi
+	login - nacteni hesla (PAM), zapis do wtmp (PAM; pokud existuje) a utmp; zavolan pomoci exec; prepne se na UID a GID uzivatele a execem vola shell
+	shell - uzivatelsky program; po uzavreni system pusti novy getty
+	
+zarizeni v unixu:
+	blokova, znakova
+	zarizeni = specialni iuzel v /dev s: hlavni cislo (cislo ovladace v jadre globalne hardcoded), vedlejsi cislo (interni ID pro ovladac)
+	v C: datovy typ dev_t <- numericky typ; pouziva jej stat(2), mknod(2)
+		dev_t makedev(unsigned maj, unsigned min);
+		unsigned major(dev_t dev);
+		unsigned minor(dev_t dev);
+		- problem s velikosti: vedlejsi cislo (SCSI kanal, target -- vic disku, LUN logical unit number, partition)
+	puvodne tyto specialni soubory byly preddefinovany, nepocitalo se s hotplugem
+	pojmenovani:
+		podle topologie - irix/solaris /dev/dsk/c0t3d1s8 -- problem presunu na jiny radic, problem presunu na jiny driver (sata disk do usb ramce)
+		podle ovladace a poradi /dev/sda1 -- vypadek disku prejmenuje ty za nim; probe v jinem poradi
+		podle vyrobce
+		podle poradi - nejaka mys jako /dev/mouse0
+		podle vyrobniho cisla
+		label, UUID (128b), ...
+	devfs: virtualni souborovy system; dev neni na disku staticky, generuje se
+		- ovladace samy registruji soubory
+		- nemame pod kontrolou pristupova prava
+		- pojmenovani podle topologie + symlink na /dev/sda1 etc
+		- ukladat politiku pojmenovani v jadre je bad idea
+		- pridavani zarizeni, jehoz driver byl odstranovan -- race conditions
+	sysfs: virtualni fs
+		- od linux 2.6
+		- stromovy hierarchie hw, sbernic, etc.
+		- dynamicka alokace hlavnich cisel
+		- echo 0 0 0 > /sys/class/scsi_host/host0/scan
+		  echo 1 > /sys/block/sdb/device/delete
+		  echo 45 > /sys/devices/platform/smth/temp_max
+		  cat /sys/class/input/inpu0/name
+		  cat /sys/bus/pci/devices/0000001b.0/vendor
+		- hotplug
+			(starsi) kernel zavola /sbin/hotplug, ktery dostane argumenty jake zarizeni; uspace se zaridi
+			(novejsi) AF_NETLINK notifikacni socket
+		  	coldplug - zaslani hotplug udalosti obsahujici vsechny hotplug udalost od startu systemu pro zarizeni, ktere stale existuji
+	udev: sprava /dev v userspace, navazany na sysfs a hotplug udalosti, politika pojmenovani mimo jadro
+		- udevd(8) demon, udevadm(8)
+			udevadm trigger <- coldplug (napr po zmene konfigurace)
+			udevadm info
+		- vyvyjen jako soucast systemd dneska
+		- konfigurace v /etc/udev/
+			pravidla v /etc/udev/rules.d
+		- priklad konfigurace
+			KERNEL=="ttyUSB*",     ATTRS{product}=="productname zarizeni", ATTRS{serial}=="serialname zarizeni", SYMLINK+"tmu0"
+			^^^^^^^^^^^^^^^^^      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+			omezeni na zarizeni    konjunkce podminek
+		- moznost namisto SYMLINKU pustit nejaky skript/binarku:
+			KERNEL=="sd*1",        SYSFS{model}=="..", SYSFS{vendor}=="...", RUN+="executable"
+			pisu zde atributy listu, nebo cehokoliv na ceste ke koreni
+		- moznost nastavit prava toho dev inode: MODE="0666"
+		- moznost pravidlo podminit napriklad zapojenim: ACTION=="add"
+		- moznost pojmenovat sitove zarizeni: NAME="jmeno_co_chci", RUN+"/sbin/ifup jmeno_co_chci" <- RUN jej nastavi
+		- informace o modelname, vendor etc: udevadm info
+		- do podminek lze psat regex
+			udevadm info -q path -n /dev/ttyACM0 <- prevede z dev na podadresar v sysfs
+				/sys/devices/pci0000:00/0000:00:1f.2/ata2/host1/target1:0:0/1:0:0:0/block/sda/sda1
+					     |            |          |      |                       |     |    ' partition
+					     |            |          |      |                       |     ' fyzicky disk
+					     |            |          |      |                       ' blokove zarizeni
+					     |            |          |      ' zarizeni na sata sbernici, tj. disky na radici
+					     |            |          ' sata radic ve slotu
+					     |            ' pci slot
+					     ' koren pci sbernice
+			udevadm info -q all -a -n /dev/sda
+				seznam bloku, kde kazdy blok reprezentuje jeden uzel sysfs smerem ke koreni;
+					partition,
+					disk
+					zarizeni na sata sbernici (typ disku s jednoznacnym cislem - ATTRS{wwid}; modelname ATTRS{model}; verze firmware
+						ATTRS{rev})
+					dalsi uzly
+					sata radic (0000:00:1f.2 v prikladu nahore) (spravuje jej driver ahci DRIVERS=="ahci"
+						vendor name ATTRS{subsystem_vendor}, device name ATTRS{device}
+					koren pci sbernice
+		http://reactivated.net/writing_udev_rules.html
+		- pojmenovavani automaticke (symlinky): by-{id,path,uuid}; vne /dev/disk, /dev/input, ...
+			podle vyrobniho cisla	/dev/disk/by-id/scsi-SATA_...
+			podle topologie		/dev/disk/by-path/pci-0000:00:0f0-scsi-0...
+			podle UUID filesystemu	/dev/disk/by-uuid/114...
+	dbus: v userspace zasilani zprav
+		- dbus-monitor(8)
+			dbus-monitor --system <- posloucha zpravy na sbernici; napr. zpravy o zmene sily wifi signalu; dhcp info napr jakou jsem ziskal ip
+		- sbernice systembus (pro privilegovane programy; novy disk, ...)
+		- kazda usersession ma sessionbus (napriklad pismo)
+
+x11/X Window System: client-server system; komunikace X protokolem pomoci streamu (TCP/UNIX socket; napr. /tmp/.X11-unix/X0)
+	- X server -- proces, ktery zobrazuje okna (XF86_SVGA)
+		proces nebo xterminal (dedicated hw zarizeni)
+		prevadi prikazy pro grafickou kartu
+		display = X server, screen = obrazovka; pojmenovani: [stroj]:display[.obrazovka]
+		autentizace:
+			pomoci promenne prostredi XAUTHORITY
+				=cesta k napr. /run/lightdm/user/xauthority
+				obsahuje randstring ("cookie"), pomoci nehoz se klient prokaze X serveru
+				kopie znalosti souboru na X serveru
+	- X klient -- aplikace vyzadujici zobrazeni (e.g., xterm)
+		promenna DISPLAY referencuje X server, nebo preda -display argument
+		xdpyinfo(1) - informace o displayi, jaky vendor, velikost requestu xprotokolu, little-big endian, jake bitove hloubky, seznam extensions
+			rozlizeni, dpi, ktere udalosti se aktualne identifikuji
+			seznam visuals = (zpusob prevodu bytu na barevne pixely)
+	- rozsireni
+		- misto socketu lze pouzit Mit-SHM (blok sdilene pameti)
+		- z klavesnice stavovy automat: XKB (znamenka s diakritikou, nebo shift a pismena pro velka pismena)
+		- shape - neobdelnikova okna
+		- randr - zmena velikosti obrazovky za behu
+		- glx - opengl prikazy do oken
+		- xvideo - prehravac pousti serveru barevne snimky na spolecnem kodovani (ne RGB, ale IUV?), X server sam preskalovava a konvertuje do RGB
+	- obrazovka:
+		okna ve stromove hierarchii od korenoveho okna; orezavani okna na velikost rodice; scrollbar je napr samotne okno
+		mohou existovat okna `mimo hierarchii' (potomek pod korenem) (popup okna)
+		visual - jak se v te obrazovce prevadi byty na barvy pixelu
+		okna maji atributy: kurzor, barva popredi, barva pozadi, gravitace (u ktereho rohu ma obsah zustavat pri resize)
+				    maska udalosti (o ktere udalosti se nekdo zajima)
+		prekryti okna:
+			- okna mohou pozadat o ulozeni obsahu v pripade prekryti
+			- na pokyn xserveru se musi byt rdy prekreslit
+			- okno muze pozadat o ukladani obsahu toho, co je pod nim (popup menu)
+	- kurzory: reprezentovany 2 bitmapami -- tvar (ktere jsou pruhledne, ktere ne); vzhled (2 barvy = popredi, pozadi)
+		kurzorovy font -- pro kurzor vzdy 2 obrazky: tvar a vzhled
+		extenze - ruzne barvy a poropruhlednost
+	- focus: x11 implicitne: focus follows mouse, da se prenastavit; nezavisi na tom, ktere okno je nahore
+	- barvy: nativne RGB (nebo pojmenovani unikatnim stringem); klient showrgb(1) vypise vsechny barvy textove, ktere x11 podporuje
+		podpora vice barevnych prostoru; umi podporu pro palety (pokud to hw podporuje)
+	- fonty:
+		serverove fonty: bitmapove/vektorove; ulozene u X serveru, font server
+			xlfd - x logical font description: pismolina, rodina pisem, rez pisma, rozliseni, znakova sada
+			xlsfonts(1)
+			fslsfonts(1)
+			xfontsel(1)
+			xset(1) nastavuje fonty
+			fixed monospaced font
+			cursor font pro kurzory
+			rychlejsi na vykreslovani, neumoznuje antialiasing, rotace pisma krome nasobku pi/2
+		klientske fonty: rasterizace na klientech
+			fontconfig -- balik pro spravu
+			uzivatelsky adresar ~/.fonts
+			fc-list --family <- jake fonty system podporuje
+			fc-list(1)
+			fc-cache(1) <- pregenerovani seznamu fontu
+	- obrazky: jako okno, ale nejde videt; double buffering pomoci vykopirovanani do okna po vykresneni sceny
+		pixmap - barevny obrazek; format XPM
+		bitmap - popredi a pozadi; format XBM
+		XPM: (XBM stejne, jen nema barenou paletu)
+			static char *rei[] = {
+				/* columns rows colors chars-per-pixel */
+				nejrpve barevna paleta = char string per element palety
+				pak jednotlive pixely palety concat do stringu, mozno vice stringu
+			};
+		"drawable" - vec, do ktere lze kreslit
+	- udalosti: informace o zmene stavu
+		typy = keypress, mousemove; geometrie zmena; zmena mapovani okna; zmena viditelnosti; zadost o prekresleni; zmena focusu
+			KeymapNotify, MotionNotify, FocusIn, FocusOut, KeyPress, KeyRelease, Expose (odkryti dalsi casti okna), VisibilityNotify
+			ConfigureNotify (meni se okno), ButtonPress, ButtonRelease
+			XLookupString -- prevod na text (shift + a -> 'A')
+		atributy = cas, okno, souradnice, ...
+		xev(1) (demo udalosti -- okno v okne standalone appka)
+	- window manager - sprava oken, dekorace; muze mit nejake atributy nastavene okny (titulek, zda vykreslovat dekorace)
+		resi jen prime potomky obrazovky
+	- programovani
+		X protokol
+		Xlib/XCB - C rozhrani k X protokolu
+			dpy = XOpenDisplay(display)
+			XCreateWindow(dpy, RootWindow(dpy, screen) <- get korenove okno, ..)
+			XChangeProperty napr pojmenovani
+			XMapWindow viditelne okno
+			while XNextEvent(dpy, &ev) if ev.type == Expose <- vykresleno
+		toolkity - Xt, Xaw, Motif, Gtk+, Qt, XForms, Tk
+	- spusteni
+		startx(1)
+		xinit(1) <- cte ~/.xinitrc nebo systemovy
+		display manager xdm, gdm, kdm, lightdm, ... spusti x server, nejake login okno
+		~/.xsession podoble jako .xinitrc startovaci skripty
+
+(BSD) syslog
+	- demon syslogd(8) zpracovava hlaseni o udalostech
+		- konfigurace /etc/syslog.conf
+		  syntax: typ/priorita zpravy TAB soubor
+		  napriklad
+			kern.*				/dev/console
+			*.info;mail.none;authpriv.none	/var/log/messages
+				tj vsechny .info (a vyssi priorita) krome facilities mail a authpriv
+			*.emerg				*
+				posli vsem prihlasenym na jejich terminaly
+			*.debug				-/var/log/debug
+				minus pred logem nevola fsync, coz syslog implicitne dela
+			local2.=info			|/somebin
+				priorita prave info, zaroven pipe do /somebin
+			*.notice			@loghost.domena.cz
+				zaslat po UDP 514 siti na logovaci server
+			# comment
+			
+	- socket /dev/log (AF_UNIX, SOCK_DGRAM); prip. symlink do symtemd do journald (syslog compat)
+		symlink je do /run/systemd/journal/dev-log
+	- typ zpravy: kern, user, mail, daemon, auth, syslog, lpr, news, uucp, cron, authpriv, local0-local7
+	- priorita: emerg, alert, crit, err, warning, notice, info, debug
+	- zprava ma datum, hostname, id = jmeno procesu (+pid obcas) (aplikace toto resi sama), zprava
+	- openlog(3), closelog(3)
+	  #include <syslog.h>
+	  void openlog(char *id, int option, int facility)
+		facility = jeden proces je soucasti skupiny procesu pod jednou facility
+		option ... logicky soucet LOG_CONS (nedari se odeslat zpravu => print do systemove konzoly)
+				    LOG_NDELAY (otevrit spojeni ihned; jinak az po prvni zprave; napr pokud
+						se prepinam do chrootu by to pak neexistovalo)
+				    LOG_PID (do zpravy zahrnout pid procesu)
+				    LOG_PERROR (psat i na stderr)
+	  void closelog(); // uzavreni logu
+	  void syslog(int priority, char *fmt, ...); // zapis do logu
+	- zapis ze shellu: logger(1), e.g., logger -p TYP_ZPRAVY.PRIORITA -i ZPRAVA
+
+	- alternativy:
+		stejne funkce z knihovny; stejny protokol pro vzdalene logovani
+		rsyslog
+			modularni
+			 - read: moduly co ctou ze socketu, z jadra, z tcp, ...
+			 - write: mysql
+			 - regexp v pravidlech i na zneni zpravy
+			 - syslog.conf(5)
+		syslog-ng
+			- umi podepisovat zpravy, davat duveryhodna casova razitka, TLS (sifrovany prenos zprav)
+			- opet filtrace jako rsyslog
+
+journal (systemd)
+	- uklada do binarni logovaciho souboru, umoznuje indexaci a efektivni vyhledavani a ukladani
+	- prevezme syslog fmt retezec a parametry => schopnost vyhledavat podle formatovacich parametru
+		(tj hledam fmt retezec s prvnim argumentem (napr user) == root)
+	- rozsirena mnozina metadat (napr. identifikace klienta, se kterym demon mluvi)
+	- duveryhodne atributy
+		casove razitko
+		od ktereho PID zprava prisla
+		z jake service (if any) zprava prisla
+		podepisovani zprav
+		etc.
+		napr. => ochrana pred manipulaci logu
+	- systemd-journald-{audit,dev-log,}.socket
+	- zapis: syslog nebo sd_journal_print(3) -- podporuje dalsi atributy
+	- journalctl(8)
+		- filtrace zprav od urcite systemd unit: journalctl -u UNIT.service
+	- zprava:
+		MESSAGE=zprava
+		MESSAGE_ID=nejake_id_zda_se_ze_hash
+		PRIORITY=6
+		duveryhodne atributy: (zacinaji prefixem _)
+			_SERVICE=SOMESERVICE.service	(napr. systemd-logind.service)
+			_EXE=/lib/systemd/SOMESERVICE 	(napr. /lib/systemd/systemd-logind)
+			_COMM=SOMESERVICE		(napr. systemd-logind)
+			_CMDLINE=/lib/systemd/SOMESERV	(napr. /lib/systemd/systemd-logind) <- prikaz, ktery zpravu
+											       vygeneroval
+			_PID=
+			_UID=
+			_GID=
+			_SYSTEMD_CGROUP=/system/systemd-logind.service
+			_CGROUPS=cpu:/system/systemd-logind.service
+			_BOOT_ID=							    <- po rebootu je jine,
+											       lze tedy oddelit
+											       jednotlive starty
+			_MACHINE_ID
+			_HOSTNAME
+
+			udajne aplikace nemuze zadat atributy s podtrzitkem
+
+tracing
+	strace(1) (par(1) (irix); truss(1) (solaris))
+		sluzby jadra
+		navratove hodnoty + resolution errno (syscall(..) = -1 ENOENT (No such file or directory) etc.)
+		strace -p PID <- pripoji se k bezicimu procesu
+		strace -f <- nasleduje skrze fork a trasuje i podprocesy; na zacatku mame pak prefix PID
+	ltrace(1), valgrind(1)
+	dtrace (solaris, bsd)
+		- popis jazykem D (podobny awk) podminka a blok spusten, pokud je podminka splnena
+		- jadro kontrolovalo korektnost a spustilo nad tracepointy
+	systemtap (linux)
+		- ladici kod -> C -> kompilace jako kmod -> zavedeni do kernelu -> pripojeni na tracepoints
+
+	probe (sonda) - misto v programu, ktere lze sledoat (traceovat); napr kprobe, retprobe
+		implementovano jako nop, da se nahradit jako int 3 -> v obsluze tohoto sw preruseni (vyjimky)
+		se podivame odkud jsme se sem dostali a muzeme traceovat
+		- staticke sondy
+			- definovane clovekem v kodu
+			- vyssi uroven abstrakce (vstup do funkce x inicializace tcp spojeni; ma kontext, tedy
+			  muze prochazet pointery; napr. tenhle ptr reprezentuje tcp spojeni z X do Y)
+			- v kernelu: tracepoints
+			- userland: USDT probes (user-space statically defined tracepoints); compat s dtrace
+				kdyz me nekdo bude trasovat, vratim mu tyhle a tyhle veci
+		- dynamicke sondy - umistit odskok kamkoli do kodu
+			- kprobes, retprobes, uprobes (uland)
+			- problem, ze mam vicebajtovou instrukci -- cast muze byt v instrukcni cache
+
+	bpf
+		- puvodne pro urychleni tcpdump(8)
+			- zachycuje pakety a zobrazuje je; umoznuje filtrovat
+		- pcap(3)
+		- bytecode pro spusteni v jadru, ktery se ma pustit pro kazdy packet
+			- ten urcuje, ktery packet poslat do uspace
+		- neni turing complete
+		- verifikovatelny; nelze zacyklit
+
+	ebpf - zobecneni bpf
+		- ukladani dat do asociativnich poli pro generovani napr. histogramu, per-process statistik
+		- jit kompilator pro nektere platformy (linux)
+		- "alternativni pristupova prava -- ted nekontroluj opravneni pro proces"
+		- "bezpecnostni moduly -- uspace rika, co root muze a co ne"
+		- zaveseni na tracepoint, podminky pro to, co za proces trasuju (e.g. bash) -> pak se pusti
+		  trasovani
+
+	bpf-tools - kombinace python a C
+		- nad kompilatorem bcc bytecodu ebpf
+		- zpravidla nutnost root
+		- /usr/share/bcc/tools/ <- priklady
+			hardirqs <- statistiak kolik casu zaberou preruseni, ktera vznikla v usecs
+			tcpconnect <- sleduje navazovana tcp spojeni (pid, program, ip protokol, saddr, daddr, dport)
+			perlcalls <- uprobes; pruchody perl programu -- jednotlive volani a jejich pocet
+
+	bpftrace(8) - kompilace do ebpf
+		- jazyk podobny awk - nazev_tracepointu/funkce podminka telo
+		- velikost read(2), logaritmicky histogram navratovych hodnot (kolik bytu read nacetl)
+		  bpftrace -e 'kr:vfs_read { @ = hist(retval); }'
+				 ^  
+				 '- jmeno sondy
+
+		 (..., 0)	POCET |@@@@@@@@@@ <- napr -1; cteni z uzavreneho fd etc.
+		 [0]            POCET |
+		 [1]		POCET |@@
+		 [2,4)          POCET |@@@@
+
+		- jak dlouho trvaji sluzby jadra read(2) v systemu
+		  kprobe:vfs_read { @start[tid] = nsecs; }
+					^   ^       ^- aktualni casove razitko
+					|   '- cislo vlakna/procesu
+					'- mapa
+		  kretprobe:vfs_read /@start[tid]/ {
+					^- pokud jsem zaznamenaval vstup do fce
+		    @ns[comm] = hist(nsecs - @start[tid]);
+			^		^- vygeneruj histogram
+			'- asociativni pole
+		    delete(@start[tid]);
+		  }
+
+		@ns[pulseaudio]:
+		[1K, 2K)	POCET |@@@@
+		...
+
+		@ns[simplescreenrec]:
+		[1K, 2K)	POCET |@@@@
+		...
+
+		- volani readline(3) v bashi; chyti se az na volani readline realizovanem az po startu
+		uretprobe:bash:readline {
+		^          ^-proces
+		'- navrat
+		    printf("%s\n", str(retval));
+		    ^- vypis navratove hodnoty
+		}
+
+cron
+	- vykonavani praci v zadanem case, ulohy bezi pod UID/GID toho, kdo o tu service pozadal
+	- vixie-cron, cronie
+	- stderr zachycovan a poslan mailem
+
+	- jednorazove ulohy
+		- at(1) - vykonani prace v zadanem case
+			- pamatuje si promenne prostredi
+		- atq(1) - vypis fronty prikazu at(1)
+		- atrm(1) - smazani z fronty
+		- implementovany ruznymi demony -- crond(8) nebo atd(8)
+
+	- pravidelne ulohy
+		uzivatel ma crontabulku; manipulace via crontab(1); editor dle EDITOR/VISUAL
+		crontab [-u user] file.crontab
+		crontab [-u user] [-l <- vypise|-r <- smaze|-e edituje]
+		crontab bez parametru beze ze stdin (po ^D -> prepise crontab)
+		tabulka:
+			# NASTAVENI PROSTREDI
+			SHELL=/bin/bash
+			PATH=/sbin:...
+			MAILTO=root
+			HOME=/
+			# CASOVA SPECIFIKACE (5x)      			PRIKAZ_SPUSTENY_V_SHELLU_TAKZE_I_REDIRECT_ETC
+			MIN HOD DNY_V_MESICI MESIC DEN_V_TYNU (0=Sun)	PRIKAZ
+			vsechny musi nastat zaraz
+				 - s vyjimkou dne -- 2x -- den v mesici; tech se bere OR
+				 - tj napriklad vzdy prvniho nebo v pondeli
+			casovy udaj:
+				* - vzdy
+				cislo
+				interval(6-12)
+				,-oddeleny seznam cisel
+				*/5 - kazdych 5 cosi
+	- systemove pravidelne ulohy:
+		- resi jak casto, ne kdy presne
+		- /etc/cron.{hourly,daily,weekly,monthly}
+		  - do nich symlink/shell skript
+ 		  - cron ma v systemove tabulce spusti pomoci run-parts(1) vse co je v techto adresarich (viz nize)
+		  - napriklad balicky mohou pridavat automaticky skripty pro udrzbu
+		  - run-parts(1) lze vyuzit i k tomu, ze se spusti vse z adresare
+		- /etc/cron.d/ slozka
+		  - vlastni crontabulky nejakych SST nezavisle na uzivateli, napr.
+		    	/etc/cron.d/0hourly -- spusteni run-parts(1) na /etc/cron.hourly:
+		      		01 * * * * root run-parts /etc/cron.hourly
+		  - mezi casem a prikazem je jeste username, pod kterym se job ma spustit
+		- /etc/crontab - nekdy byva, globalni crontabulka
+
+	- davkove ulohy (system si vybere cas, kdy ji spusti)
+		- batch(1) - odlozene vykonavani, napr kdyz load avg klesne pod 1
+
+	- anacron(8)
+		- pamatuje si, ze bylo ten den uz cron.daily spusteno, pokud ne, spusti pri startu systemu
+		  podobne pro weekly etc. /think: notebook/
+		- pokud mam baterku -> lze odlozit
+		- snaha o nepretozani virtualnizacniho serveru -- rozvolni interval o nejake nahodne cislo
+		- minimalne pro denni ulohy
+		- kazda uloha ma casove razitko, kdy naposledy bezela
+		- /etc/anacrontab
+			RANDOM_DELAY=45
+			START_HOURSE_RANGE=3-22 <- 2x za rok posunuti casu; mezi 2 a 3 bud neni nebo 2x za sebou
+						   zaroven chceme ulohu v jednom dni (log timestamp)
+			# period [days]		delay[mins]	job-id		command
+			1			5		cron.daily	nice run-parts /etc/cron.daily
+			@monthly		45		cron.monthly	nice run-parts /etc/cron.monthly
+
+	- timer unit u systemd systemd.timer(5)
+		- [Timer] sekce
+		- OnActiveSec=
+			- kdyz jina unita je aktivni, spust neco jineho (asi?)
+		- OnUnitActiveSec=
+			- kdyz unita je neaktivni, spust toto (asi?)
+		- OnStartupSec=
+			- kdyz pocitac bezi tak dlouho, spust toto (asi?)
+		- OnUnitInactiveSec=
+			- az tenhle timer byl nespusteny tak a tak dlouho, spust znova
+
+rotovani logu/recyklace logovani
+	- prejmenovani neni problem, logger ma fd; smazani je issue
+		-> SIGHUP zpravidla (napr. syslogd(8)) po nemz zavrou logfile a zpravidla vytvori novy logfile
+	- logrotate(8)
+		/etc/logrotate.conf
+			# GLOBALNI NASTAVENI
+			weekly
+			rotate 4
+			create					# vytvori soubor, pokud odrotuju puvodni
+			dataext					# pripona ne .1, .2 -> pripona .datum apod
+			compess
+			
+			# includne rotovani pro jednotlive sst tak, abych nemusel mit jeden file
+			# zpravidla balicky si tam muzou davat veci
+			include /etc/logrotate.d
+
+			# wtmp nema balicek, tak muzu dat sem
+			/vat/log/wtmp {
+				monthly
+				create 0664 root utmp		# pak je treba vytvorit po zrotovani
+					minsize 1M		# malo provozu -> netreba rotovat; rotuj pokud >1M
+				rotate 1
+			}
+
+
+			napr. rotovani pro syslog:
+			/var/log/messages /var/log/secure /varlog/maillog /var/log/spooler \
+				/var/log/boot.log /var/log/cron { # obecne nechci /var/log/* -- rekurzivni rotace
+				sharedscripts			# jenom jednou pro vsechny log soubory v prenexu
+				postrotate \			# zasle sighup aby syslog znovuotevrel log
+					/bin/kill -HUP `cat /var/run/syslogd.pid`
+				endscript
+			}
+
+		/etc/logrotate.d/ <- pro runparts(1)
+		logrotate file
+		logrotate /etc/logrotate.conf
+
+promazavani tmpfiles v /tmp nebo /var/tmp
+	- warn:
+		- prejmenovani symbolickym linkem (?) a vidim symlink misto puvodniho souboru
+		- vidim adresar -> meanwhile ho nekdo prejmenuje za symlink -> vlezu do nej a mazu mimo tmp
+	- tmpwatch(8) [-u|-m|-c] [-x soubor] [-X glob] [-f] cas adresar; datum napr. 10d
+		podle -u utime (access), -m mtime (modif), -c ctime (inode change time)
+		-x vyloucit nejake soubory, napr. -x /tmp/.{X11,XIM,ICE,Test}-unix
+		-X vyloucit pomoci globu,   napr. -X /tmp/hsperfdata_*
+		-a all types, not just regular files
+
+tiskarny (lp = line printer, historismus)
+	spooling:
+		- tiskova fronta do niz uzivatel zarazuje ulohy
+		- vice front na tiskarnu
+		- tiskovy server z ni bere ulohy a preklada do jazyka tiskarny a posila ji
+		  tzv. filtry, napr. pro prevod JPEG->PS
+	- accept/reject: muzu pridat do spoolu (fronty)?
+	- enable/disable: info pro tisk server zda muzu vybirat joby a posilat na tiskarnu
+	- obecne se uzivatelske prikazy zachovavaji pro compat
+
+	- drive: serveru posilam PS/text file a server preklada do jazyka tiskarny
+	- nyni:  (CUPS) prevod do jazyka tiskarny na serveru, ovsem ke klientum predava atributy:
+		podpora duplexu, eko rezim, sesivani, ...
+
+	- BSD
+		- /etc/printcap (printer capabilities)
+			- popis tiskarny (presneji tiskove fronty) na radku, :-delimited
+			- prvni pole: seznam jmen tiskarny
+				napr.: dj|lp|LONGNAME:
+				prvni jmeno pouzivaji uzivatele
+				posledni jmeno pro informaci pro uzivatele
+			- nasleduji parametry tiskove fronty
+				- retezcove parametry -- s rovnitkem
+					sd=/var/spool/lpd/dj    -- spool directory slozka, kam printer SST ulada
+								-- tiskove ulohy
+					lf=/var/log/lpd-errs	-- logfile, implicitle syslog, facility printer
+					lp=/dev/lp1		-- fyzicke zarizeni
+				  popripade:
+					rm=somedomain.net	-- remote machine 
+					rp=lj4			-- remote printer (pojmenovani fronty na 2 strane)
+				- ciselne parametry -- s #
+					mx#100000		-- max velikost ulohy v kB
+					pl#60			-- page length pro format textoveho vystupu
+				- binarni parametry (flagy) -- nemaji nic
+					sh			-- suppress header
+					sf			-- suppress formfeed (?) potlaceni odstrankovani
+								-- po tiskove uloze
+		- implicitni tiskarna nastavovana promennou prostredi PRINTER
+			pokud neni nastavena veme se ta co se jmenuje lp
+		- server lpd(8) (demon) na zaklade printcapu spravuje tiskarny definovane therein
+			- lpc(8) (line printer control); ovladani accept, reject, enable, disable
+		- /etc/hosts.lpd
+		- filtry:
+			vstupni (spousti pro kazdy soubor)
+			datovy (pro urcite formaty dat)
+			vystupni (pro tiskovou ulohu jako celek)
+		- pozor: lpr na 5 souboru = 1 tiskova uloha -> vystupni filtr se spousti jen jednou
+		- zachovaly se z toho primarne uzivatelske prikazy:
+			- lpr(1) tisk
+			- lpq(1) vypis fronty
+			- lprm(1) smazani ulohy z fronty
+
+	- SysV pritner SST
+		- demon lpsched(8)
+		- administrace lpadmin(8), lpshut(8) (ukonceni scheduleru)
+		- accept(8), reject(8), enable(8), disable(8) ovladani kontroly prace se spoolem/tiskarnou
+		- lpmove(8) presun do jine fronty
+		- users:
+			lp(1)		asi tisk
+			cancel(1)	zruseni tisku
+			lpstat(1)	vypis fronty
+
+	- CUPS - Common UNIX Printing System
+		- rozsiritelne atributy: duplet, ekorezim, zasobniky papiru, ...
+			- advertisement od serveru ke klientum (plus klikatka, ktera to zobrazuji; ala widle)
+		- sitovy protokol a la HTTP (port 631) + web admin rozhrani
+		- moznost pouzivat lpr na TCP 515
+		- autokonfigurace
+			- posloucha na siti, kdo nabizi jakou tiskarnu (zeroconf multicastuje)
+		- popis tiskarny: ppd (printer protocol description) soubor
+			- popis jake ma tiskarna schopnosti (duplex, ...)
+			- specifikuje kdyz duplex => posli takove a takove prikazy
+
+diskove kvoty: (nejdrive BSD, pak SysV)
+	- v ramci svazku, jemneji ne (napr. pro adresare; protoze hardlinky -> tezko urcit, v jake slozce); per user
+	- kvoty na velikost souboru (# bloku) nebo pocet i-uzlu (# souboru)
+		- ext4 napr. ma staticky pocet i-uzlu (viz df -i -> Inodes, IUsed, IFree, IUse%)
+	- mekka kvota (quota)
+		- dlouhodobe doporuceni na dodrzovani
+		- grace period -- casovy limit globalni pro fs (~1w); po prekroceni ma tento limit na snizeni
+		- po uplynuti casoveho limitu se aplikuje tvrda kvota na urovni mekke kvoty -> nelze prekrocit dale
+	- tvrda kvota (limit)
+		- max limit neprekrocitelny
+	- evidovany v metadatech fs (napr na vyhrazenem iuzlu)
+		- drive /quota (pokud system podporoval kvoty jen pro uzivatele) popr. /quota.{user,group}
+	- quota(1)
+		quota -v 	informace o vsech kvotach
+		quota		info jen o prekrocenych kvotach
+		quota -u user	pro roota, info o user
+	- quotaon(8), quotaoff(8), quotacheck(8) [-a] [fs]
+		quotacheck prepocita kvoty, napr potom, co je vypnu (tim to info ztratim)
+	- edquota(8) [-p vzorovy_user] user: editace kvot pro uzivatele (podobne jako vystup quota -v)
+		vzorovy_user se vykopiruje
+	- setquota(8) [-u|-g] user block-soft block-hard inode-soft inode-hard -a|filesystem
+	  setquota    -t block-grace inode-grace -a|fs
+	  setquota    -b -a|fs
+	- repquota(8) -a|fs .. prehled pro vsechny usery used, soft, hard, grace
+		user_prekroc_bloky	+-	usernr	softnr	hardnr	grace (5days, none, apod)
+	- warnquota(8) [-c config] posle mail dotcenym userum
+
+virtualizace: zapouzdreni software, iluze o vlastnim hw, prostredi, ...
+	- procesu, aplikace, OS; je taky:
+		unix process, chroot(2), jail(2) - omezeni pristup k rozhrani napr taky, selinux sandbox
+	- hypervizor - ridi virt; bezi na hostiteli (host)
+	- guest (hosti) -- instance, kontejner, klient
+	- virtualizujeme: os, cpu, ram, periferie (sitove karty, ...)
+	- emulace
+		- interpretace instr virtualnim cpu; zrychleni JIT kompilaci;
+		- odchytavani instrukci pri I/O k HW
+	- nativni virt
+		- nativni exec, musi podporovat hw
+		- hypervisor odchytava privilegovane instr (napr. reset cpu; strankovani) a resi je ve vlastni rezii
+	- pv - hypervizor a guest se domluvi a privilegovane operace provadeny primym volanim do hypervizora namisto
+               odchytavani
+		- to same i u periferii:
+		  namisto predstirani fyzicke sitove karty mam pv sitova karta
+			ta nepredstiranym zpusobem vola hypervizor
+			pv driver, ten nepouziva dma/io instrukce, ale vola primo hypervizor
+	- virtualizace periferii:
+		- emulace - odchytavam io/dma a tvarit se jako konkretni gpu/sitovka/...; generovat dma, int
+		- hw virt - 
+			site: samostatna hw fronta:
+				sitova karta muze mit podporu pro vice mac adres;
+				if packet na mac adresu -> vyvolej konkretni preruseni X -> zarad paket do rxqueue X
+				hypervizor preda sitovou kartu = konkretni rx/txqueue fyzicke sitove karty
+			disky: samostatne LUN
+				reknu radici "tenhle PID muze pouzivat jen tenhle LUN"
+			hypervizor = 'arbitr rikajici periferiim, co komu povolit; virt stroj komunikuje naprimo'
+		- pv: nepredstirani virt hw, uziti volani do hypervizora
+			- virtio vrstva (linux), vmware tools, ...
+			- 'jak si tvurci os predstavuji, ze by mel hw komunikovat'
+		- disku
+			- soubor/blokove zarizeni -- disk uvnitr VM
+			- formaty: qemu-img(1) (napr. convert)
+				- raw (zadny format; 0 ... end = data pro virtualku), napr. LV
+				- qcow2 -- thin provisioning (ridka organizace disku; roste), moznost snapu
+				- vmdk (vmware)
+		- site
+			- tun/tap device (linux) -- spolecny driver, jeden na L2, druhy na L3
+				- proces otevre tun device -> vznikne tun0/tap0 u hostitelskeho kernelu, coz je
+				  to sitove zarizeni
+				- kernel tam pomoci routing table posle paket
+				- z druhe strany lze z toho device cist jako z FD
+				- symetricky opacne; vyvola preruseni uvnitr od 'sitove karty'
+				- tj je to preklad I/O operaci TUN/TAP souboru pomoci virtualni sitove karty
+				- pripojeni do site
+					- nastavim routing:
+					  2 bodove smerovani /tahle ip je za timhle devicem, default je za eth0/
+					- pokud nemam verejnou ip pro virtualni stroj, prekladam adresy z privatni
+					  ip na mou
+					- muj pc se muze tvarit jako switch
+						jeden port nativni karta,
+						druhy -- guest
+	- qemu - emulator cele arch (boot, bios, vga karta, ... cele virtualni pc)
+	- kvm - virtualizace cpu (+qemu pro virtualizace pc)
+		hypervizor = linux kernel -> virtualizuje cpu jednomu procesu
+		hw virtualizace
+	- xen - puvodne pv, nyni i plna virt
+		- maly hypervizor, pro spravu hw spusti dom0
+		- dom0 - privilegovany linux pro spravu hw
+		- domU - virtualni stroje
+	- virtualbox (sun, oracle)
+		- emulace toho, co nejde nativne
+		- hot path JIT komplikace privilegovanych instrukci
+		- nejaka podpora hw virt cpu
+		- bootuje v rezimu emulace
+		- userspace nativne
+	- libvirt - nezavisly na hypervizoru (xen, kvm, lxc, ...); virsh(8), virt-manager(1) (lokalne/nad ssh)
+		- xml definice vm, vnet, disku
+		- jako knihovna libvirt, prip jako demon libvirtd
+	- cloud: OpenNebula, OpenStack, oVirt, Kubernetes
+	- kontejnery: virtualizace sw prostredi bez virt os; oddeleni aplikaci
+		- chroot(2), ale procfs/sysfs
+		- chci roota vne kontejneru, ale jen vne; UID GID v kontejneru mapovana na hostitelske UID GID
+		- chci nevidet cizi PID, prip. umoznit PID 1
+		- jen konkretni sitove zarizeni
+			- bind (2) jen na jednu adresu
+			- INADDR_ANY/IP6_ANY
+			- komunikovat i s jinymi adresami tehoz pc
+			- filtrovat pakety
+		- omezovat cpu, pamet ... (cgroups)
+		- pro linux nastavuju jmenne prostory = definice kontejneru, podle toho, jake namespaces chci
+		- sprava: lxc/lxd, systemd-nspawn(8) machinectl machined, libvirt, Dockerd, rkt, cri-o, podman
+		- OCI (open container initiative)
+	- systemd-nspawn (8)
+		dnf -y --releasever=31 --installroot /var/lib/machines/f31 install fedora-release bash
+		systemd-nspawn -D /var/lib/machines/f31 bash
+		systemd-nspawn -D /var/lib/machines/f31 --as-pid2
+		dnf -y --releasever=31 --installroot /var/lib/machines/f31 install procps systemd vim
+		systemd-nspwan -b -D /var/lib/machines/f31
+
+site
+	- TCP/IP prepojovani packetu (kazdy paket nezavisle na jinych)
+	- ATM -- kombinace prepojovani packetu a okruhu -- establish okruhu pred (16:30 u siti1)
+	- L2 ethernet, atm lane, ppp, hdlc, ffdi
+	- L3 ipv4, ipv6, arp, rarp
+	- L4 icmp, icmpv6 (ridici zpravy), igmp (mutlicast), tcp, udp
+	- L5+ smpt, ftp, telnet, ntp, snmp, ssh, xmpp
+	- repeater L1
+	- bridge/switch L2
+	- router (smerovac) L3 (muzu mit zvlast router pro ipv4, ipv6, ...)
+	  nezavisly na L2 -- e.g. propojeni ppp/wifi s eth
+	- ipv4
+		- rfc 791
+		- 4 byte adresy
+		- adresa rozhrani
+		- adresa site vs adresa v ramci site
+		- vysilani: unicast, broadcast (1-to-all), multicast (1-to-some)
+		- tridni adresace
+			A	  0.x.x.x - 127.  x.  x.x			3B adresa v ramci site
+			B	128.0.x.x - 191.255.  x.x			2B
+			C	192.0.0.x - 223.255.255.x			1B
+			D	224.0.0.0 - 239.255.255.255	multicast
+			E	240.0.0.0 - 255.255.255.255	rezerva
+		- beztridni adresace
+			CIDR: prefix adresy (adresa, maska) RFC 1518
+			zapis 147.251.48.1/255.255.255.0
+			broadcast adresa ... nejvyssi addresa v siti (tj horni v CIDR range)
+			0.0.0.0 -- neznam adresu, moje adresa
+			255.255.255.255 -- (limtied) bcast, vsem v siti
+			127.0.0.1 -- localhost
+			privatni site: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+		- datagram (packet) - balik omezene velikosti
+		- smerovan nezavisle
+		- nespolehliva sluzba
+		- fragmentace
+			- 576B < mtu (max transfer unit), typicky 1500kB (eth default)
+			- pri pruchodu do site s mensim mtu
+			- typicky, kdyz tuneluju
+			- nahodne cislo jako identification
+			- 1 a dalsi fragmenty -> more fragments = 1; posledni: more frag = 0;
+			  az na prvni maji fragment offset
+			- TODO fragmentace fragmentu?
+			- znovusestaveni: jen cilovy pocitac, nekdy hranicnim souterem/firewallem
+			- path mtu discovery: zjisteni mtu cesty; posila se nefragmentovatelny p., sleduje odpovedi
+			  (pokud mam don't fragment, poslu zpet ICMP err a zahodim paket)
+			- TODO v jakem poradi je vyhodne odesilat prave vygenerovane fragmenty
+		- ip header
+			verze proto		4 bity			4
+			header len		4 bity			pocet 32b jednotek o kolik je hlavicka delsi
+			type of service		3 b priorita
+						1 b latence
+						1 b propustnost
+						1 b beztratovost
+						flag co z toho chci, max 1 nastaveny; pouzitelne, pokud mam vic cest
+			total len		16b
+			identification		16b			k fragmentaci
+			flags			3b (don't fragment, more fragments, 1b reserved)
+						https://www.ietf.org/rfc/rfc3514.txt -- reserved
+			fragment offset		13b			nasobek 8B
+			ttl			8b			kazdy router snizi alespon o 1
+			protocol		8b			oznaceni vyssi vrstvy
+			header chcksum		16b
+			srcip			32b
+			dstip			32b
+			options (optional?)	k * 32b
+				- record route - trasovani cesty; podepisuji se do hlavicky (ping -R)
+				- timestamp - trasovani s casovym razitkem (problem clocksync)
+				- loose source route  - historismus; minimalni cesta kudy mam jit, jinak zahazuj
+				- strict source route - historismus; presne tudy mam jit, jinak zahazuj
+				- security - utajeni datagramu
+			data			k * 32b < 65536
+ethernet/wifi
+	- src, dst MAC addr (6B), data (46-1500B), CRC 4B
+
+ARP/RARP
+	- prevod L2 adres <-> L3 adres
+	- ARP:  vim: L3 -> chci: L2
+	- RARP: vim: L2 -> chci: L3
+	- MAC addr: horni 3B vendor id (pronajima jej od IEEE, neni trvale koupeny); dolni 3B device id
+	- dolni device id se daji rotovat po case, byt je snaha o jednoznacnost
+	- protokol:
+		HW type:	2B (1 = Ethernet)
+		proto type:	2B (0x0800 = IP)
+		HW len:		1B (Ethernet = 6)
+		proto len	1B (IP = 4)
+		operation	2B (1 ARP req, 2 ARP response, 3 RARP req, 4 RARP resp)
+		sender layer 2 addr
+		sender layer 3 addr
+		target layer 2 addr
+		target layer 3 addr
+
+		posledni 4 doplni ty, ktere zna; pokud zada, posle jako broadcast, v odpovedi dostane doplnene
+
+	- jinak mame nejakou arp cache; vetsinou se to posila co ~3min
+	- intra-sitovy provoz: IP a MAC z te site
+	- inter-sitovy provoz: IP cile, MAC routeru
+		- z masky site vim, co je moje sit; pokud posilam mimo, poslu na MAC gatewaye (router)\
+	- proxy arp: cast smerovani jen pomoci arp tabulek
+		- za me nekdo jiny odpovida na arp request
+		- situace: sit 10.0.0.0/24 na topologii bus; muj pc pripojeny na bus, ppp na dalsi pc
+		  kdybych mel sit s ppp spojem jako dalsi sit 10.0.1.0/24, jde to zbytecne na router,
+			ten to posle zpet na muj pc
+		  best prac: jen jeden endpoint, pokud vic routeru, tak v separatni siti
+		  ppp targetu hodim adresu site 10.0.0.0/24, napr 10.0.0.X
+		   -> arp broadcast pro 10.0.0.X -> ja odpovim na 10.0.0.X (ikdyz moje je 10.0.0.Y) s moji mac
+		   -> L3 packet pro 10.0.0.X posle na moji mac -> muj pc vybali ip packet a posle 10.0.0.X
+	- zjisteni moji ip: broadcast kdo mi priradi adresu
+	- emulace anycastu: napr korenove dns servery
+		- duplikovane adresy a pomoci bgp se to odroutuje nejblizsi instanci site
+
+ipv6	- vetsi adresni prostor
+	- mobilita - 1 pc je pripojen do vice siti, ale ma pridelenou domovskou adresu, v domovske siti sedi pc
+		'domovsky agent' -- k tomu se ten pc pripoji a rekne ted jsem v jine siti; domovsky agent preposila
+	- ipsec - povinna implementace narozdil ipv4
+	- autokonfigurace - zjisteni info o siti primo ze site, resp vypocitatelna automaticky (zjisti prefix site,
+		kdo je router; ale uz neresi pridelovani adresy)
+	- zahazuje bcast; nahrazuje multicastem
+	- anycast - posilani nekteremu jednomu ze skupiny prijemcu
+		napr casovym serverum -- vsechny maji jednu anycast adresu
+	- vice ipv6 adres na 1 rozhrani
+	- adresa 128b, 8-tuple 16b cisel; daji se vypustit uvodni nuly; da se vypustit 1 sekvence 0000 -> ::
+		prefix podobne jako ipv6 (classless -- beztridni -- nativne; typicky /64)
+	- hlavicka pevne delky, retezeni hlavicek (prednostne hlavicky pro routery)
+		verze proto		4b	vzdy 6
+		priorita		8b	trida provozu
+		identifikace toku	20b	(flow label/flow id) nahodny bit u vsech spolecnych paketu pro jeden
+						tok; napr jedno tcp spojeni, skupina asociovanych udp spojeni;
+						popr. asociovane ridici pakety s nejakym spojeni
+						v ipv4 jde tcp pakety jdou ruzne a mohou se rozbihat; stejny tok
+						jde zjistit jen tak, ze se divame do L4 hlavicky
+		delka paketu		16b
+		next header		8b	identifikace hlavicky (napr. vyssi vrstvy)
+		hop limit		8b	~ttl
+		srcaddr			128b
+		dstaddr			128b
+	- specialni adresy: ::, ::1 loopback
+		link local adresy -- adresy v ramci linky; fe80::/10; lokalni cast dopocitana podle MAC
+			pokud chci komunikovat s venkovnim svetem, tak musim mit druhou pro komunikaci s venkem
+		adresy pro priklady: 3ffe:ffff::/32
+		ipv4 compat adresy: ::/96	['0:0:0:0:0:0:0:0', '0:0:0:0:0:0:ffff:ffff']
+		ipv4 mapovane adresy: ::ffff:0:0/96 | ipv4 bity zprava (na misto 0000:0000)
+		privatni ipv6 adresy: site local adresy: fec0::/10, ekvivalent ipv4 adres dle RFC1918
+		unique local address: RFC 4193
+			prefix fc00::/7
+			8.bit = 1 pro lokalni pridelovani, 0 pro globalni
+			40b globalni id
+			80b lokalni pridelovani (65536 siti /64)
+			 - da se podle toho dobre sitovat 2 privatni site bez precislovani (nejspis rozdilne gid)
+		EUI-64 format adresy
+			prefix site: fe80::/10 (link local)
+			MAC:	       00:D0:B7:       6B:4A:B2
+			EUI-64	fe80::02  d0:b7 ff:fe  6b:4a b2
+				      ^^	^^^^^
+				      |           '- vzdy
+				      '- pokud chci unicast, tak 7. bit nastaven na 1
+	- autokonfigurace (router advertisement, kde je uveden /64 verejny prefix lokalni site); radvd(8)
+		- privacy extensions (klic pro kdf; vypocitam si lokalni cast podle toho)
+		- ohlasim se do site a zda jsem v kolizi? (problem: DoS)
+
+	- fragmentace neni na smerovacich, musime delat mtu discovery (zahazuje se kdyz too big)
+	- ndp (neighbour discovery protocol), nahrada arp; zjistovani adresniho prefixu site, smerovacich info atd.
+	  v ramci ICMPv6 paketu; nepouziva se bcast
+	  pouziva multicast -- mam 6B MAC adresu, horni 3B jsou rezervovany na multicast
+				   		  dolni 3B reprezuji nejake mcast skupiny stroju
+	  dolni 3B doplni z dolnich 3B ipv6 adresy (dostanou to jenti, co se shoduji s dolnimi 3B adresy)
+
+prechod ipv4 ipv6:
+	- dual stack: podpora obojiho
+	- tunelovani: zapouzdreni ipv6 paketu do ipv4 (protokol SIT, 41)
+	- autotunelovani: jsem pripojen k ipv4 only siti, chci pristup k ipv6
+		schovani bloku /48 IPv6 adres za jednu IPv4 adresu
+		nemusim si nic nechat pridelovat, vymyslim si ipv6 adresy dle me verejne ipv4 adresy:
+			adresy 2002:xxxx:yyyy:/48 vytvorene z IPv4 adresy; tj mam 80b range, kde si vyberu ip
+				tj napriklad moje verejna ipv4 adresa 1.2.3.4 a interni adresa 10.0.0.2
+				-> moje ipv6 adresa (si pridelim) 2002:102:304::2; nebo EUI-64
+		komunikace do nativniho ipv6 internetu pres 6to4 relay;
+			(anycast) adresa relay (tunelovych endpointu):
+				192.88.99.1 (stejnym mechanismem ma ipv6 adresu 2002:c058:6301::1)
+				neni to ovsem symetricke (potencialne jina cesta), protoze totiz anycast adresa
+				dorucuje nejblizsimu tunelovacimu serveru
+		abych mohl komunikovat, musi muj router ipv6 packet zabalit do ipv4 packetu
+	- tldp.org/HOWTO/Linux+IPv6-HOWTO/
+	- apenwarr.ca/log/20170810 (nezabezpecene arp, issues wifi rezimu)
+
+ICMP - L4
+	- RFC 792
+	- 8b typ (druh); 8b code (podtyp); checksum 16b (nebo 0; optional); obsah zavisly na type a code
+	  zpravidla tam mame zacatek paketu, jehoz se icmp zprava tyka
+
+	ICMP echo request/reply (type=8/type=0)	po prijeti request povinnen reagovat reply
+		16b identifikacni (nahodne) cislo, 16b sekvencni cislo; pouziva ping(8)
+
+	ICMP destination unreachable (type=3), code upravuje:
+		network	 unreachable	nekdo po ceste nezna cestu k cili
+		host	 unreachable	posledni router po ceste nezna cestu
+					pri neuspesnem arp requestu (po timeout)
+					nemusi se tak stat, kdyz mam arpcache a host spadl
+		protocol unreachable	protokol L4 neni podporovany na cilovem pc
+		port 	 unreachable	na portu nikdo neposloucha
+		fragmentation needed	packet too big, ma bit don't fragment = 1, jde do linky s mtu < |packet|
+		source route failed	strict source routing a neni mozne toto splnit
+
+		datova sekce: ip hlavicka a prvnich 64b puvodniho paketu
+
+	ICMP source quench (type=4, code=0); hlavicka a 64b ze zacatku ip datagramu
+		zadost o pomalejsi vysilani, nestiha; neni to direktiva; neznamena to, ze jsem neposlal
+		neni autentizovano -> vetsinou se jen loguji
+
+	ICMP redirect (type=5)
+		zadost o presmerovani na jiny router
+		code urcuje typ presmerovani: redirect for the network, host, tos and net, tos and host
+		data opet hlavicka a prvni 64b dat ip datagramu + doporucena cesta
+		neni auth -> vetsinou se jen loguji
+		typicky pokud jsem packet dostal na portu, kam bych jej poslal, napr.:
+			pokud mam 2 odchozi body ze site (napr ppp spojeni na dalsi pc viz vyse u proxy arp)
+
+	ICMP time limit exceeded (type=11)
+		code: ttl dosahlo nuly | prekrocen cas znovusestaveni z fragmentu (napr. se fragment ztratil)
+		data opet hlaick a 0:64b dat z ip datagramu
+		traceroute na tomto zalozen -- postupne posila s ttl od 1, 2, ...
+
+	ICMP param problem (type=12)
+		syntax chyba (code=0 zadny ptr neni | code=1 polozka pointer na syntax error)
+		pointer - 8b, zarovnano na 32b, odkaz na syntax error
+		data - ip header + 64b z ip datagramu
+
+	ICMP timestamp req/reply (13/14); information req/reply (15/16); addr mask req/repl (17/18)
+
+ICMPv6 - L4
+	protokol (next header) cislo 58; typ 8b, code 8b, checksum 16b
+	chybove 0-127
+		1	destination unreachable
+		2	packet too big
+		3	time exceeded
+		4	parameter problem
+	informativni 128-255
+		128/129	echo req/repl
+		133	router solicitaion
+		134	router advertisement
+		135	neighbour solicitation  |
+		136	neighbour advertisement | nahrada ARP (NBD)
+		137	redirect
+
+UDP -- User Datagram Protocol, nespojovany, -poradi, -garance_zdvojeni, porty (16b cislo), well-known ports
+	port rozlisuje vice ruznych komunikujicich entit na jednom pc
+		(ovsem muzu 2 ruzne serv na stejnem tcp a udp portu)
+	udp ramec
+		sport 16b	dport 16b	len 16b	   chksum 16b (optional; soucet udp header a ip pseudoheader)
+	ip pseudohlavicka = srcip, dstip, padding 8 null bits; proto 8b, packetlen 16b
+
+tcp -- transmission control protocol, spojovany, spolehlivy, duplexni proud dat, buffering, porty
+	garance:
+		- spravne poradi datagramu (ne sekvencni doruceni, ale preskladani)
+			pomoci sekvencnich (32b) cisel
+			pokud poslu 1500B dat a pak chci poslat dalsi, tak sekvencni cislo je o 1500 vetsi
+			(realne to bude mensi, pac tam mame i ip a tcp hlavicky; mtu casto 1500)
+		- duplicitni datagramy jsou vyrazeny
+		- potvrzovani prenosu dat (tcp layer v kernelu zajisti retransmit)
+		- opakovani nedojde-li k potvrzeni
+	- klient-server
+		server posloucha (listen) na portu a prijme (accept) spojeni
+		klient spojuje se (connect) na port ciloveho stroje (muze se navazovat z konktr. srcportu)
+	- identifikace tcp spojeni: srcip, srcport, dstip, dstport
+	- 3-way handshake
+		klient -> server	SYN 	(seq = random number x) zadost o synchronizaci
+						= informace o tom, jake sekvencni (32b) cislo pouzivame
+		server -> klient	SYN-ACK (seq = random number y, ack = x+1)
+		klient -> server	ACK 	(ack = y + 1)
+	- nahodnost seq cisla je treba proti MITM (ne kryptograficky nahodne; nepredikovatelna)
+		pokud charlie uhodne cislo x, zahlti linku alice, te syn=y ack=x+1 packet nedojde;
+		on sam pak posle ack=y+1
+		- nahodne cisla se neberou primo z entropy poolu, pouziva se klic, ktery se periodicky obnovuje;
+		  z tohoto klice se pak sekvencni cisla generuji na zaklade ip adresy klienta
+		  (widle MSB 16b melo 0, lol, spam bob then)
+	- uzavreni spojeni, opet se potvrzuje; ukoncovaci ramec - priznak FIN
+		- lze uzavrit jen jedno spojeni (napr odesilaci stranu, a muzu dal prijimat)
+	- potvrzovani paketu:
+		- nepotvrzovat kazdy paket (nevyuzita linka)
+		- potvrzovani klouzajicim oknem -- velikost okna urcuje co muzu odeslat bez potvrzeni
+		  jak mi dojde potvrzeni, posunu okno za misto potvrzeni na prvni nepotvrzeny packet
+	- kazdy tcp ramec mimo inicialniho ma nastaveny ACK bit, kterym se potvrzuje prijem paketu urciteho seqnr
+		- pri duplexnim spojeni posilam s daty i potvrzeni (mam li co posilat, jinak jen potvrzeni)
+	- ACK packet obsahuje pocet slov, ktery je druha strana ochotna prijmout (vnitrni flow control)
+		- napr. kdyz je aplikace (ne sitova karta) nestiha zpracovavat
+		- firewall pro blacklist adresu: pri detekci utoku, tak potvrdim otevreni spojeni a okno = 0 size
+	- vnejsi flow control: co je sit samotna schopna prenaset
+		- slow start, postupne zrychluj; po zahozeni packetu exponencialne spomaluj
+	- out-of-band data (data mimo poradi) -- moznost posilat normalni proud data a prioritni proud dat
+
+	- tcp ramec
+		srcport 16b	dstport 16b	seqnr 32b	acknr 32b
+		headerlen 4b (pocet 32b slov; velikost hlavicky vcetne optional polozek)
+		window 16b (interni flow control; pocet clov, ktere je odesilatel schopen prijmout)
+		chcksum 16b (povinny; vcetne pseudohlavicky ip)
+		urgent pointer (pokud packet obsahuje oob data, tak kde ta data konci)
+		options: 32b padded
+			MSS (max segment size) - jak velky blok dat jsem ochoten prijmout
+			SACK (selective ACK)   - moznost selektivniho retransmitu (po ACKnumber jsem dostal vse,
+				ale mj. jsem dostal i tyto packety, ale ne nektere pred nimi)
+			MD5	misto 16b checksum
+		priznaky (1B)
+			SYN 1b	toto spojeni je nove, zadost o sychro a navazani spojeni
+			ACK 1b	ack number je platny (vsechny krome prvniho =1)
+			FIN 1b	zadost o ukonceni v prislusnem smeru
+			URG 1b	urgent pointer je platny
+			RST 1b	alternativa destination port unreachable na L4 -- "connection reset by peer"
+				dostanu tcp ramec, ktery nejsem schopen zaradit v kernelu ramec do tabulky otevrenych
+				spojeni; nekdo jiny drzi otevrene spojeni -> prijde kernelu dalsi paket, ten o nem
+				nic nevi, muze poslat RST -- pozadavek na reset/zruseni spojeni
+			PSH 1b	pozadavek pro rychle doruceni (napr. latentni potvrzeni doruceni, abychom
+				nezpomalovali)
+	- bufferbloat - prilis velka fronta, co pridava latenci tim, ze jen drzi data
+		(linux: codel algoritmus)
+
+sctp: L4 - stream control transfer protocol ('multiplexovane tcp')
+	- v ramci 1 spojeni prenasim vic streamu; kdyz ztratim packet, tak zkusim zbrzdit jen ten jeden proud dat
+	- multihoming (tj. pokud prechazim mezi sitemi, tak rici, ze chci prijimat na 2+ ip)
+	- muze/nemusi zachovavat spojeni; nespolehlivy; zachovava hranice zprav; volitelne zachovava poradi
+
+dccp: L4 datagram concestion control protocol
+	- spojovany nad udp, zachovava hranice paketu, ma congestion control, slow start exp backoff
+
+protocol ossification
+	- problem s middleboxes, naty, firewally pri nasazovani novych protokolu, napr.
+	  tcp early congestion notification flag; pokud se blizim k zahlcene siti, at spomali
+	- presun L4 z kernelu do user-space nad udp
+		- quic: udp + tls, vice streamu (middlebox na to nevidi),  proudovy, puvodne jako nahrada http
+		  lwn.net/Articles/814522
+
+programovani sitovych aplikaci:
+	- streams (sysv) - puvodne pro seriove porty pro zpracovani vice keypressu (zachyceni ^C apod.)
+	- BSD sockets
+
+BSD socket (BSD IPC): API pro IPC (vs sysv ipc - semafory, fronty zprav, shm)
+	- nezavisle na sitovem proto, pracuje nad ruznymi rodinami proto
+		PF_UNIX PF_IPX PF_BRIDGE PF_AX25 PF_INET PF_APPLETALK PF_NETROM PF_NETLINK PF_INET6 PF_AAL5 PF_X25
+		kernel predava prislusne sitove vrstve dle vybrane rodiny proto
+	- socket = jeden konec sitoveho spojeni, deskriptor
+		- rozsireni abstrakce souboru
+			- bezne souborove operace read(2), write(2), close(2)
+			- specialni socketove sluzby sendmsg(2), recvmsg(2)
+	- vytvoreni socketu
+	  socket(2) socketpair(2)
+	  #include <sys/types.h>
+	  #inclued <sys/socket.h>
+	  int socket(int domain, int type, int proto);
+		domain -- rodina protokolu (= rodina adres) -- zpusob komunikace pres socket; AF_UNIX, AF_INET atd.
+		type   -- semantika komunikace (pokud ma domena vice typu komunikace; stream, datagram apod.)
+			SOCK_STREAM	proudovy, ~tcp, duplex spolehlivy usporadany crc oob-data
+			SOCK_DGRAM	datagramova sluzba, ~udp
+			SOCK_RAW	primy pristup na sitove zarizeni (sitova karta); napr zachycovat nebo rucne
+					posilat; zpravidla jen root
+			SOCK_SEQPACKET	usporadane duplexni spojeni pro prenos packetu do jiste max delky; je videt
+					hranice packetu; jak posilame read/write, tak posilame samostatne pakety
+		proto  -- 0 implicitne je li protokol jeden, jinak specifikace proto (vetsinou L4) viz /etc/protocols
+		vraci soket, fd
+	  int socketpair(int domain, int type, int proto, int sd[2]);
+		vraci nepojmenovanou dvojici EKVIVALENTNICH socketu via arg
+		uspeje li, kernel vyplni 2 fd sd[0] sd[1] navzajem propojene (write do jednoho -> read z druheho)
+		a la pipe(2) -- ale socketpair neni jednosmerna komunikace; spise jako 2 roury
+
+	- /etc/protocols
+		ip	0	IP	# internet protocol
+		icmp	1	ICMP
+		igmp	2	IGMP
+		ggp	3	GGP
+		tcp	6	TCP
+		udp	17	UDP
+		raw	225	RAW
+	
+	  nemuzeme v type uvadet string, /etc/protocols lze brat z:
+	  getprotoent(3), getprotobyname(2), getprotobynumber(2)
+	   - zase nsswitch, zase nejsou reentrantni
+	  	#include <netdb.h>
+		struct protoent *getprotoent();			// postupne prochazeni
+		struct protoent *getprotobyname(char *name); 
+		struct protoent *getprotobynumber(int proto);
+		void setprotoent(int stayopen);			// zacatek prochazeni
+		void endprotoent();				// konec prochazeni
+		struct protoent {
+			char  *p_name;		// primarni jmeno
+			char **p_aliases;	// seznam aliasu
+			int    p_proto;
+		};
+
+		getprotoent_r(3) // reentrantni verze
+
+	- adresace socketu - zavisi na rodine protokolu
+		// obecne schema
+		#include <sys/socket.h>
+
+		struct sockaddr {		// obecny object adresy; obecne vzdy pointer
+			sa_family_t sa_family;	// odpovida rodine proto, kernel podle toho resi pristup k sa_data
+			char sa_data[14];
+		};
+
+		// unix sockety
+		#include <sys/socket.h>
+		#include <sys/un.h>
+		struct sockadd_un {
+			sa_family_t sun_family;
+			char sun_path[UNIX_PATH_MAX];
+		}
+
+		// adresace ipv4 adresou a portem
+		#include <sys/socket.h>
+		#include <netinet/in.h>
+		struct sockaddr_in {
+			sa_family_t sin_family;
+			in_port_t sin_port; /* BE */		// LE = nizsi adresy mene vyznamne bity
+			struct in_addr sin_addr;
+		};
+		struct in_addr {
+			uint32_t s_addr; /* BE */		// BE = nizsi adresy nejvice vyznamne bity
+		};
+
+		// adresace ipv6 adresou a portem
+		#include <sys/socket.h>
+		#include <netinet/in.h>
+		struct sockaddr_in6 {
+			sa_family_t	sin6_family;
+			in_port_t	sin6_port;	// BE
+			uint32_t	sin6_flowinfo;	// flow-id v hlavicce
+			struct in6_addr	sin6_addr;
+			uint32_t	sin6_scope_id;	// scopeid sitoveho rozhrani pokud bych mel vic ipv6 adres
+			/* pokud mam vic rozhrani s link local adresami, tak maji stejny prefix;
+			   ping na link local adresu inet6 s prefixlen -- neni jasne, na jake rozhrani pingovat;
+			   toto urcuje scope; tj vyber sitoveho rozhrani */
+		};
+		struct in6_addr {
+			unsigned char s6_addr[16];
+		};
+
+	- pojmenovani socketu: bind(2)
+		socket ziskany ze socket nebo socketpair "visi ve vzduchu"; tohle prideli jmeno socketu
+		int bind(int fd, struct sockaddr *addr, int addrlen);
+			sockaddr je ten obecny, dava se konkretni pro danou family;
+				proto je treba davat sizeof (*addr), aby kernel vedel, kam muze pristupovat
+			resi pristupova prava (AF_UNIX - prava do adresare;
+					       AF_INET, AF_INET6 - unix: privilegovane porty 0-1023 jen root)
+					      (4000 pro X11, vnc 5900, nfs 2049 ... tj != well-known port)
+
+		pripojeni na vsechny lokalni rozhrani:
+			adresa INADDR_ANY (IPv4); global var in6addr_any - inicializae IN6ADDR_ANY_INIT
+		pripojeni na lo: glob var in6addr_loopback a inicializator IN6ADDR_LOOPBACK_INIT
+		pokud socket uzavru, nemuzu nejakou dobu volat na tentyz socket opet bind(2), kvuli cekani
+			na FIN packety u tcp apod. (~10min)
+			flag SO_REUSEADDR pro setsockopt povoli okamzity bind
+
+	- zjisteni jmena socketu getsockname(2)
+		#include <sys/types.h>
+		#include <sys/socket.h>
+
+		int getsockname(int s, struct sockaddr *name, int *namelen);
+			kernel vyplni mou alokovanou name, upravi namelen; pokud je namelen maly, tak vyplni
+			jen cast; pokud tak, tak prectu prvni field pro zjisteni jak velkou sockaddr budu potreb.
+
+	- zjisteni s kym je socket spojeny (tj druhe strany) getpeername(2)
+		#include <sys/socket.h>
+		int getpeername(int sock, struct sockaddr *name, socklen_t *namelen);
+		// -1 pokud neni spojeny (connect (2)) a errno = ENOTCONN
+
+	- prijem novych spojeni od klientu: listen(2)
+		#include <sys/socket.h>
+	
+		// jen pro sockety typu SOCK_SEQPACKET a SOCK_STREAM
+		int listen(int sock, int backlog);	// backlog -- delka fronty, pokud jsou cekajici > backlog
+							   odmitni je s ECONNREFUSED
+
+	- prijem prichoziho spojeni: accept(2) (tj prijde syn packet)
+		#include <sys/types.h>
+		#include <sys/socket.h>
+
+		// sock -- na kterem socketu chci prijmout nove spojeni, musim predtim listen
+		// kernel proces zablokuje dokud nedojde nove spojeni
+		// vrati me novy fd = odpovidajici novemu spojeni; stary zustava nezmeneny a muzu znova listen(2)
+		// do noveho fd muzu read/write data
+		// jen SOCK_SEQPACKET, SOCK_STREAM
+		int accept(int sock, struct sockaddr *addr, int *addrlen);
+		// pokud dam addr a addrlen -> podobne jako getsockname(2) informace o soketu, vidim IP
+		// adresu toho, kdo se na moji ip adresu spojil
+		// getsockname sock a navraceneho jsou na stejne adrese (ip a port)
+
+		// neblokujici accept: sluzba jadra select(2); mohu realizovat vice ctecich operaci
+		// muzu to brat jako test na pripravenost pro spojeni
+
+	- zadost o vytvoreni spojeni: connect(2); pro toto jej muzu a nemusim pojmenovavat
+		#include <sys/types.h>
+		#include <sys/socket.h>
+		
+		int connect(int sock, struct sockaddr *server, int addrlen);
+		// protistrana (cil) specifikovana pomoci sockaddr
+		// u tcp realizuje 3-way handshake a dle navratoveho kodu - spojeni se podarilo navazat? pokud ano,
+		// tak sock je spojeny a muzem write/read
+		// i pro SOCK_DGRAM -- nenavazuje zadne spojeni, jen rekne, kdo je cilem, at se nemusi pri kazdem
+		// write
+
+	- uzavreni spojeni:
+		- close(2) uzavre fd (jako u souboru)
+		- shutdown(2): int shutdown(int sock, int how); how: 0 read close; 1 write close; 2 all io closed
+			nezavira fd
+
+	- I/O nad sockety
+		- read(2), write(2); nasledujici jen pro sockety
+		- cteni: recv(2), recvfrom(2), recvmsg(2)
+			#include <sys/types.h>
+			#include <sys/socket.h>
+
+			// flags:
+			//	MSG_DONTWAIT	- neblokujici
+			//	MSG_OOB		- nacti oob data
+			//	MSG_PEEK	- precti data bez vymazani vstupni fronty
+			//	MSG_WAITALL	- nacte presne len bajtu
+
+			// obvykle nad spojenymi sockety
+			int recv(int s, void *msg, int len, unsigned flags);
+
+			// u nespojenych socketu (udp) -- potrebuju vedet protistranu, ktere pripadne odpovedet
+			int recvfrom(int s, void *msg, int len, unsigned flags, struct sockaddr *from, int *fromlen);
+
+			// scatter gather. struct msghdr, cmsghdr; muzu z toho vycist nejake errory
+			int recvmsg(int s, struct msghdr *msg, unsigned flags);
+
+		- zapis: send(2), sendto(2), sendmsg(2)
+			#include <sys/types.h>
+			#include <sys/socket.h>
+
+			// flags:
+			// MSG_OOB		-	posilani oob dat
+			// MSG_DONTROUTE	-	pouze pro primo pripojene site
+			// MSG_DONTWAIT		-	neblokujici
+			// MSG_NOSIGNAL		-	nesignalizuje SIGPIPE v pripade chyby (napr kdyz nema kdo
+			//				cist; proti strana neexistuje apod.)
+
+			int send(int s, void *msg, int len, unsigned flags);
+
+			// paketova komunikace
+			int sendto(int s, void *msg, int len, unsigned flags, struct sockaddr *to, int *tolen);
+			int sendmsg(int s, struct msghdr *msg, unsigned flags);
+
+	- tcp/ip client server pristup:
+		jednoprocesovy pristup: jeden pid, io multiplexovany cez select(2) nebo poll(2) nebo asynchronni io
+		viceprocesovy pristup: hlavni procesp prijme spojeni cez accept(2), preda child k vyrizeni;
+			jeden pid per klienta (napr sshd)
+		stavovy server: vysledek prechozich operaci ovlivnuje nasledujici operace (ftp; napr GET)
+		bezstavovy server: nezalezi na zopakovani pozadavku (nfs)
+
+		schema tcp serveru:					schema tcp klienta:
+
+			socket()					socket()
+			   |						   |
+			bind()		.------ send/recv		bind() (optional; force srcaddr,srcport)
+			   |		|	  |			   |
+			listen()	|	close			connect()
+		.--------->|		|   	  |			   |
+		|	accept()	|	_exit			send()/recv()
+		|	   |		|				   |
+		|	fork()  --------'				close()
+		|	   |
+		-----------'
+
+		schema udp aplikace:
+
+		socket() ---> bind() (optional) ---> connect() (optional) ---> sendto()/recvfrom() ---> close()
+			      ^^^^^^                 ^^^^^^^^^                 ^^^^^^^^^^^^^^^^^^------------------
+		 	      |                      '- pokud chci pouzit send()/recv() nebo read()/write() misto -'
+		              '--- alespon 1 strana by mela udelat bind na nejaky well known port
+
+	- parametry socketu: getsockopt(2), setsockopt(2)
+		- nastavovani flowlabel, ttl, ...
+
+		#include <sys/types.h>
+		#include <sys/socket.h>
+		int getsockopt(int s, int level, int optname, void *optval, int *optlen);
+		int setsockopt(int s, int level, int optname, void *optval, int optlen);
+			level - cislo protokolu (viz getprotoent(3))
+				nebo SOL_SOCKET (nastaveni socketoveho rozhrani kernelu)
+			pro nastaveni: viz ip(7), ipv6(7), tcp(7), udp(7), socket(7)
+
+		pro SOL_SOCKET:
+			SO_DEBUG	zapisovani debuginfo
+			SO_REUSEADDR	povoli nove pouziti lokalni addr pri bind(2)
+			SO_KEEPALIVE	povoli posilani keep-alive paketu
+			SO_DONTROUTE	obchazi smerovani
+			SO_LINGER	nastavuje chovani pri uzavirani socketu;
+					close zkonci hned
+					mam odvisilano, data jsou v kernel bufferech, ale jeste nepotvrzena protistr
+					rika, zda close/shutdown ma blokovat prip jak dlouho
+			SO_BROADCAST	ziskani prav na posilani bcast packetu (root only)
+			SO_OOBINLINE	OOB data ctena v normalni fronte
+			SO_SNDBUF	nastaveni velikosti send bufferu
+			SO_RCVBUF	nastaveni velikosti receive bufferu
+			SO_SNDLOWAT	do jake doby kernel muze bufferovat data nez bude posilat samostat. pakety
+			SO_RCVLOWAT	podobne; tzv low-waternarj pro cteni
+			SO_SNDTIMEO	timeout pro IO, maximalni doba blokace ve sluzbe jadra send(2)
+			SO_RCVTIMEO	...
+			SO_TYPE		vraci typ socketu (napr. SOCK_STREAM)
+			SO_ERROR	doslo k chybe?
+
+	- konverze endianity ntohl(3)
+		#include <arpa/inet.h>
+		uint32_t htonl(uint32_t hostl); // host to network long
+		uint32_t ntohl(uint32_t netl);  // network to host long
+		uint16_t htons(uint16_t hosts); // host to network short
+		uint16_t ntohs(uint16_t nets);  // network to host short
+
+	- prace s IP adresami inet_pton(3), inet_aton(3)
+		#include <sys/socket.h>
+		#include <netinet/in.h>
+		#include <arpa/inet.h>
+
+		// obecna funkce pro konverzi obecnych sitovych adres
+		// dst musi mit dost mista
+		int inet_pton(int af, char *cp, void *dst);
+		char *inet_ntop(int af, void *src, char *dst, socklen_t size);
+
+		// legacy: inet_addr(3)
+
+		// ipv4 only:
+		int inet_aton(char *src, struct in_addr *dst);
+		char *inet_ntoa(struct in_addr in);
+
+	- prace s dns -> ipv4, cast nsswitche
+		gethostbyname(3), gethostbyaddr(3)
+		
+		#include <netdb.h>
+		extern int h_errno; // resolver ma error -> herror pro ziskani stringu
+		
+		struct hostent *gethostbyname(char *name);
+		struct hostent *gethostbyaddr(char *addr, int len, int type);
+		void sethostent(int stayopen);
+		struct hostent *gethostent();
+		void endhostent();
+		void herror(char *s);
+
+		struct hostent {
+			char  *h_name;
+			char **h_aliases;
+			int    h_addrtype; // typ adresy
+			int    h_length;   // delka seznamu:
+			char **h_addr_list;
+		};
+
+		pripadne /etc/hosts
+			127.0.0.1	localhost localhost.localdomain
+
+	- dns -> ipv4/ipv6 + reentrant, threadsafe: getaddrinfo(3)
+		#include <sys/types.h>
+		#include <sys/socket.h>
+		#include <netdb.h>
+
+		int getaddrinfo(
+			const char *node,		// textove jmeno pc
+			const char *service,		// textoev jmeno sluzby, ssh etc.
+			const struct addrinfo *hints,	// ptr na vstupni struct addrinfo <- flags jak chceme hledat
+			struct addrinfo **result	// ptr na struct addinfo -- alokovana, ma dynalloc veci vsobe
+		);
+
+		// poradi resultu, v jakem getaddrinfo ma vracet dane RFC 3484; mistni preference gai.conf(5) v /etc
+		//	/etc/gai.conf (implicitni v libc)
+		// v hints lze upresnit:
+		//	rodinu protokolu (ai_family); muze byt AF_UNSPEC
+		//	typ socketu	 (ai_socktype)
+		//	protokol	 (ai_protocol); napr muzu dat SOCKSTREAM (udp resulty ignoruje)
+		//	flagy:
+		//		AI_NUMERIC	jako jmeno davam adresu, neresolvuj dns
+		//		AI_NUMERICSERV	sluzbu jako cislo, nikoliv textove jako ssh
+		//		AI_CANONNAME	dohledavat kanonicke jmeno
+		//		AI_PASSIVE	dohledavam pro svuj server (node == NULL; loopback napr),
+		//				chci do ai_addr INADDR_ANY
+		//		AI_ADDRCONFIG	dle konfigurace pc -- napr. filtruje ipv6 addr pokud nejsem na ipv6
+		//		AI_V4MAPPED	je-li ai_family == AF_INET6; vraci ipv4 adresy jako ipv6 mapovane
+		//				je-li AI_ALL, vraci IPv4 jako v6-mapovane vzdy
+
+		void freeaddrinfo(struct addrinfo *result);
+		const char *gai_strerror(int retval);	// error podle locale
+
+		struct addrinfo {
+			int	ai_flags;
+			int	ai_family;		// chci dohledat jak pro ipv4 a ipv6
+			int	ai_socktype;		// type ze socket(2)
+			int	ai_protocol;
+			size_t	ai_addrlen;
+			struct sockaddr *ai_addr;	// ptr na adresu, kdyz mam vic adres nebo moznost udp tak tcp
+			char  **ai_canonname;
+			struct addrinfo *ai_next; // NULL terminated array
+		};
+
+	- prace s porty: getservbyname(3), zase neni reentrantni, nsswitch
+		#include <netdb.h>
+		struct servent *getservbyname(char *name, char *proto);
+		struct servent *getservbyport(int port, char *proto);
+		void setservent(int stayopen);
+		struct servent *getservent();
+		void endservent();
+		struct servent {
+			char  *s_name;
+			char **s_aliases;
+			int    s_port;
+			har   *s_proto;
+		};
+
+		dohledavani pomoci /etc/services (nsswitch)
+			discard	9/tcp sink null
+			discard	9/udp sink null
+			ftp	21/tcp
+			telnet	23/tcp
+			time	37/tcp	timserver <- alias
+
+		nebo getaddrinfo(3)
+
+	- UNIX sockety tim, ze jsme na unixu a na druhe strane je proces na stejnem pc:
+		- pristupova prava maji stejny vyznam na obou stranach socketu
+		- muzeme zasilat filedeskriptory skrze sockety
+		- jako cesta ve FS, tj musime mit +w do adresare pro vytvareni
+		- (linux) abstraktni sokety - adresovane cestou ve fs zacinajici \x00, nejsou ve fs videt,
+			prava se nepouzivaji
+
+konfigurace site:
+	- hostname(1), sethostname(2) sluzba jadra, gethostname(2)
+		#include <unistd.h>				// FQDN bsd
+		int gethostname(char *name, size_t len);	// hostname bez DN: sysv
+		int sethostname(const char *name, size_t len);
+	- hostnamectl - notifikace cez dbus
+	- /etc/hostname
+	- uname(1)
+	- ifconfig(8) [interface|-a]
+		- ifconfig -a zobrazi i ty devices, co nemaji UP ve flags
+		- flags:
+			RUNNING: pripojeno na nejakou linku, AP, ...
+			BROADCAST support for ...
+			MULTICAST
+			zarizeni ma informace:
+				inet <ip addr> netmask <maska site> broadcast <bcast addr>
+				inet6 <ipaddr> prefixlen <mask> scopeid <scope>, lze vickrat
+				ether <l2 addr> txqueuelen <delka send fronty v kernelu>
+				txqueuelen 1000 -> 1000 paketu muze sedet ve fronte	
+
+		ifconfig DEV up		# aktivace rozhrani
+		ifconfig DEV down	# deaktivace
+		ifconfig DEV [-]arp	# zapni [vypni] arp
+		ifconfig DEV [-]promisc	# zapni [vypni] promiskuitni rezim, napr tcpdump/wireshark
+		ifconfig DEV mtu N	# nastav mtu
+		ifconfig DEV hw mac_address
+		
+		# muzu i na jedne radce:
+		#   pozn: ADRESA netmask MASKA prida zaznam do kernel routing table:
+		##
+		##  mojeip/prefix		0.0.0.0		maska		...
+		##  napr:
+		##  10.0.0.0			0.0.0.0		255.255.255.0	...
+		
+		ifconfig DEV ADRESA
+		ifconfig DEV netmask MASKA_SITE
+		ifconfig DEV [-]broadcast [BC_ADRESA]
+
+		ifconfig DEV dstaddr|pointtopoint ADRESA (v cisco unnamed rozhrani; nezalezi na L2)
+
+	smerovani:
+		- adresovani na zaklade masky - primo pripojenym adresam/ppp se dostanu primo
+		- routing table (struktura v kernelu);
+			sitovy prefix (adresu site a masku)
+			na jake rozhrani se ma posilat
+			pres jaky router
+			metrika (kdyz mam vice cest k cili, ktera se ma preferovat)
+			minimalni konfigurace:
+			- cesta vne site (ifconfig ip adresy a masky site pridava cestu)
+			- cesta mimo sit (default destination)
+			hleda se shoda s nejvetsim prefixem (tedy default - 0.0.0.0) jako posledni, pak dle metrik
+
+	- route(8)
+		# vypis
+		# route nevypisuje cestu pro lo
+		$ route
+		Destination: default -- pokud se nenajde shoda, jak se dostat 'ven'
+
+		# pridani cesty: adresa je soucasti sitoveho rozhrani
+		$ route add 127.0.0.2 dev lo
+
+		# default gateway: (default = destination 0.0.0.0)
+		$ route add default gw 147.251.48.14
+
+		# gateway k urcite siti (ve ktere treba nejsem, kdyz se k ni chci dostat, jdu cez gw)
+		$ route add -net 147.251.48.0 netmask 255.255.255.0 gw 147.251.1.13
+
+	- ip(8)
+		$ ip link ...
+		$ ip addr ...
+			ip addr ls ~= ifconfig
+		$ ip route ...
+			ip route ls ~= route
+			zaznam z ip route ls lze copypaste za 'ip route del' primo pro smazani
+		$ ip neigh ls
+			neighbour discovery a arp zaznamy
+		$ ip tunnel
+
+		$ ip route ls table local # <- table JMENO_SMEROVACI_TABULKY
+		
+		$ ip route ls table main # ~= route
+
+	- demoni (dbus support)
+		- NetworkManager nmcli(8)
+		- systemd-networkd(8)
+
+	- firewalld (dbus spojeni, pravidla dle SSID ...)
+
+smerovaci protokoly: dynamicka modifikace smerovacich tabulek; kostra; load balancing; tolerantnost k outage
+	- Link state - posilame sousedy, kazdy konstruuje mapu, dijkstra
+	- Distance vector - posilame tabulky, bellman ford
+	- AS (32b id) - jednotlive poskytovatele
+		- vnitrni smerovani (smerovac zna info o topologii vlastni site + hranicni gw)
+		- vnejsi smerovani (/~ dle jednotlivych AS)
+	- Smerovaci protokoly:
+		RIP	DV	16hranice horizontu	trigger a periodicke updates
+		RIPv2	
+		OSPF	LS	podpora autentizace, umi delit AS na oblasti (areas - id 32b cislo)
+				metropolitni site -- router v praze nevi vse o topologii v brne apod.
+		BGP	DV	kazdy router posila info, ke ktere siti se dostane jakym retezcem auto. systemu
+				manipulace s delkou cesty
+				nekdy pouzivaji cloudove systemy
+		IS-IS	LS	zvlast topologie a zvlast prefixy ruznych L3 proto
+				(ipv4 vs ipv6; netreba rozdilne topologie)
+		
+	- Smerovaci protokoly v UNIXu:
+		RouteD		RIP
+		GateD		obecny demon pro bsd
+		Zebra, Quagga	gpl, portabilni
+		BIRD		bird.network.cz, linux
+			smerovaci tabulku pro kazdou instanci smerovaciho protokolu (bgp, ospf - vic instanci treba)
+			a muzu rict tehdy a tehdy sleduj bgp, tehdy ospf atd.
+
+	- Policy Routing (Linux)
+		- smerovani podle TOS, ne podle adresniho prefixu
+		- ip(8)
+		- vic smerovacich tabulek
+		- pravidla (napr. priorita, popis paketu)
+			- LHS: zdroj prefix, cil prefix, TOS, fwmark, zarizeni
+			- RHS: akce: jedno z
+					cislo tabulky
+					prohibit (destination unreachable administratively prohibited)
+					blackhole (zakazani paketu)
+					unreachable (network unreachable)
+			       dale zdrojovy a cilovy realm (domena) -- muzu tim rozdelit z ktereho routovaciho
+				protokolu jsem info ziskal, od ktereho zakaznika jsem paket ziskal (-> accounting)
+		- implicitni tabulky local a main
+
+obecne programy:
+	netstat(8)
+		netstat # vypise vsechny sockety (i AF_UNIX)
+			-v verbose
+			-n neprevadej na dns
+			-c periodicky vypis jako top
+			-t tcp socks
+			-u udp socks
+			-r print smerovaci tabulku # ~route
+			-i print seznam sitovych rozhrani # ~ifconfig
+
+			-tan | grep LISTEN <- sockety ve stavu LISTEN
+	tcpdump(8)
+		-n			neprevadej na jmena
+		host aisa.fi.muni.cz	omezeni na tgt
+		-x			vypisuj detaily paketu
+		-e 			vypisuj i adresy L2
+		-w			write libpcap format
+		-r			read libpcap dump
+		-p			neprepne do promisc
+
+	ping(8)
+		-R			record route
+		-i 0.2			interval 0.2
+		-f			flood (icmp echo co nejrychleji;
+					       odeslany -> write .; prijaty -> BCKSP; E on error)
+		-s velikost_paketu
+
+	arp(8)
+		-a			vypis arp tabulku:
+						ipadresa (+dns jmeno), l2 addr, typ (ether), rozhrani,
+						priznaky (pub -- proxyarp|temp -- arp info zjistena po siti)
+		-d ipaddr
+		-s ipaddr hwaddr [netmask netmask] [pub|temp]
+
+		popr ip neigbour
+
+ppp protokol:
+	seriove linky, L2, symetricky (neni role master a slave)
+	vyjednavani pri inicializaci -- chci tuhle ip a tenhle prefix; pouzij tuhle ip
+		sifrovani, komprese, jake l3 protokoly, zda se ip hlavicka komprimuje
+		escape znaky, autentizace
+	po vyjednavani muzou chodit l3 pakety
+	pppoe bridge - ppp ramce do ether, v ppp ramcu provoz; telefonie
+
+dns:
+	- dns -> ip
+	- drive hosts.txt, nyni /etc/hosts
+	- hierarchiky system do domen, kazda domena ma spravce, ktery je autoritativni
+	- FQDN - oddelovani teckami, nalevo nejkonkr
+	- jmena pocitacu: a-z0-9\- (case insensitive), nic jineho
+	- dns podporuje vic: diakritika do domeny
+	- zaznamy popisujici sluzby: _service._udp.fi.muni.cz
+	- RFC 1033-1035, RFC 1912
+
+	- BIND referencni impl dns; named(8)
+		nepoustet pod rootem (pouzit -u a -g), chroot nebo selinux
+		signaly:
+			SIGHUP znovunacti konfiguraci
+			SIGINT uloz aktualni db a cache do /var/tmp/named_dump.db
+			SIGUSR1 zvys debuglevel +1
+			SIGUSR2 vypni ladeni
+		rndc(8) ovladani misto signalu
+
+		/etc/named.conf
+			options {
+				directory "/var/named";	// cwd named
+				forwarders {				.... koho kontaktovat, kdyz nevi
+					147.251.48.3; 147.251.4.33;
+					3ffe:ffff::1;
+				};
+				forward only;				.... kdyz neodpovi forwards, do nothing
+				forward first;				.... -||-, jdi od korenovych ns
+									kdyz ani jednu neuvedu, jde od koren. ns
+			};
+
+			zone "." {					... adresy korenovych ns
+				type hint;				... cache, netvar se jako autorita
+				file "named.root"; // relativ. vuci cwd
+			};
+
+			zona je neco jako domena (casto ekvivalentni); spis je to podstrom
+				zona: muni.cz ns1
+				zona: fi.muni.cz ns2
+
+			zone "localhost" {
+				type master;				... je autoritativni
+				file "master/localhost";		
+			};
+			soubory se casto davaji do master a slave subdirs; demon ma prava zapisu jen do slave
+
+			zone "0.....ip6.arpa" {				... reverzni mapovani (o jednicku mene)
+				type master;
+				file "master/ip6-loopback";		... tady je ta jednika pak
+			};
+			zone "0.0.127.in-addr.arpa" {
+				type master;
+				file "master/127.0.0";
+			};
+
+			zone "fi.muni.cz" {
+				type master;
+				file "master/fi.muni.cz";
+				also-notify {				... pri zmene notifikuj protokolem dns
+					147.251.48.40;			    tyto servery, aby si tyto stahli aktualni
+					3ffe:ffff::1;			    info; notifikace jde implicitne vsem
+				};					    registrovanym ns
+				allow-transfer { any; };		... dovoleni prenosu cele zony celemu svetu
+			};
+
+			sekundarni ns:
+			zone "muni.cz" {
+				type slave;
+				file "slave/muni.cz";
+				masters { 147.251.4.33; };
+				allow-transfer { any; }
+			}
+
+		priklad zonoveho souboru pro dopredny preklad:
+		master/fi.muni.cz
+
+			$TTL 1D						... direktiva, ktera plati pro dalsi radky
+			@	IN SOA	anxur.fi.muni.cz. \		... musime mit zaznam source of authority
+									    odkud se ta informace bere, typicky
+									    primarni ns; tecky na konci povinne,
+									    kdyz nedam, tak se hodi jmeno zony
+					postmaster.fi.muni.cz. (	... kontaktni mail adresa; zavinac za .
+					2010041701 	; Serial	... seriove cislo zony; sekundarni ns pro
+									    zjisteni zmeny (compare)
+					3H		; Refresh	... po jake dobe se ma sekundar ptat pro
+									    zmenu soa zaznamu
+					15M		; Retry		... pokud sekundar nedostane odpoved, tak
+									    se ptej kazdych 15M
+					2W		; Expire	... expirace; pokud se 2W nespoji sekundarni
+									    tak prestane na tuto zonu odpovidat
+					1D  )		; Min/neg TTL   ... negativni ttl -- platnost 1D pro "neexi-
+									    stuje smth.fi.muni.cz"
+
+				IN NS	anxur				... nameserver
+				IN NS	aisa
+				IN MX	50	relay.muni.cz.		... mailserver bere nejnizsi prioritu
+				IN MX	100	relay
+				IN TXT "random text"
+
+			anxur	IN A	147.251.47.3
+				IN AAAA ffff::
+				IN HINFO "hardware" "software pc"
+				IN TXT	"freeform"
+			foo	IN CNAME anxur				... cname canonical name
+									nemuzem delat libovolne aliasy:
+										nemuzu udelat CNAME na CNAME
+										u CNAME polozky nesmi stat zadne
+											dalsi udaje, tj TXT musi
+											byt u targetu, apod AAAA
+									zaroven pokud mam domenove jmeno na prave
+										strane, tak nesmi byt CNAME (ani
+										v SOA)
+			zavinac znamena jmeno zony pro dany radek; pokud nemam jmeno zony na radku, pouzije se
+				predchozi
+			dns dotazy pomoci host: host -t soa fi.muni.cz <- ziskani soa zaznamu
+
+		priklad reverzniho mapovani:
+			$TTL 1D
+			48.251.147.in-addr.arpa. IN SOA anxur.fi.muni.cz \
+					postmaster.fi.muni.cz. (
+					... )
+					IN NS anxur.fi.muni.cz.
+					IN NS aisa.fi.muni.cz.
+			1		IN PTR aisa.fi.muni.cz.
+			3		IN PTR anxur.fi.muni.cz.
+					IN PTR relay.fi.muni.cz.
+			5		IN PTR thetis.fi.muni.cz.
+			...
+
+		cache korenovych ns: named.root
+			.	3600000 IN INS A.ROOT-SERVERS.NET.	autoritativni ns pro . je nejake domenove jm
+			A.ROOT-SERVERS.NET. 3600000 IN A 198.41.0.4
+
+		glue record:
+			pokud mam nameserver, ktery je vne domeny, ktere spravuje, tak jeho parent musi vedet nejen
+			jmeno serveru spravujici danou subdomenu, ale i mit A/AAAA zaznam
+
+		dalsi zaznamy:
+			host -t any _xmpp._tcp.fi.muni.cz <- ktery pc se o tuto sluzbu stara
+			SRV zaznam: obecnejsi MX zaznam (o jakou sluzbu se jedna)
+				_kerberos._udp	IN SRV 0 0 88 aisa
+			LOC: geolokace
+				aisa IN LOC 49 12 35.943 N \
+				            16 36 55.099 E \
+					    215 1 1 1
+			SSHFP: otisk verejneho klice
+				aisa IN SSHFP 2 1 1ffa....890
+
+		nadstavba dnssec umoznuje podepisovat zaznamy od rootu
+
+	- nameserver - sitova sluzba poskytujici domenova jmena
+	  druh:
+		- autoritativni - pro nejakou domenu, vi info o domene bez ptani kohokoliv
+		  druh:
+			- registrovane - na nej jsou delegovana prava spravovat subdomenu
+			- neregistrovane - neni odkaz z nadrazene domeny, presto zna info o sve domene
+				napr. interni autoritativni neregistrovany ns
+		  druh:
+			- primarni - cela informace ulozena na disku v souboru
+			- sekundarni - periodicky stahuje z primarniho nebo nadrazeneho sekundarniho ns teto zony
+		- cache-only - jen pro preposilani dotazu prip cache
+
+	- korenove ns - pro domenu '.'
+		- v Inetu pod domenovym jmenem ROOT-SERVERS.NET
+		- seznam je zverejnovan spolu s IP adresami na ftp.internic.net
+		- interni korenovy ns - korenovy ns v siti s protokolem TCP/IP, ktera neni pripojena do internetu
+
+	- zpracovani dotazu
+		- 2 chovani pri vyrizovani
+			- ns vi, koho se ptat, kdyz nevi:
+				- forwarders = napr. dns servery ISP
+				- nebo pokud zna tak korenove ns
+		- 2 chovani pri odpovedich
+			- rekurzivni - prevezme za svuj a pta se korenovych (pc by se primarne mel ptat zde)
+			- iterativni - vraci nevim, ale zeptej se tam (korenove zpravidla takto deleguji)
+	- data v dns
+		- dopredne mapovani: dns -> ip
+		- reverzni mapovani: ip -> dns
+			pseudodomena in-addr.arpa
+			147.251.48.14 -> 14.48.251.147.in-addr.arpa a na to se uz muzu zeptat na dalsi domenova jmena
+			fec0::1 -> 1.0.0.0.....0.c.e.f.ipv6.arpa
+		- servisni data (TTL pro nejakou odpoved)
+		- dalsi (geo, aliasy)
+
+	- konfigurace klienta:
+		resolvovaci mechanismy, napr. nsswitch
+		/etc/resolv.conf -- dns servery, nejvyse 4 ns
+
+			kdyz napisu ping aisa, tohle mi zkusi suffixovat:
+			domain fi.muni.cz			nebo:
+			search fi.muni.cz ics.muni.cz muni.cz
+
+			nameserver 147.251.48.4.14	rekurzivni ns
+
+ftp: ridici spojeni 21/tcp; datove spojeni 20/tcp iniciovano serverem (muze byt mezi serverem a serverem)
+	pasivni ftp -- i datove spojeni iniciuje klient; nekdy lepsi cez proxy a firewally
+	anon ftp - ucty ftp nebo anonymous (R/O z urciteho subtree; ftp demon zavola pro toto chroot(2))
+	- problem s prekladem adres: uvnitr v protokolu nekdo posila ip adresu (potencialne privatni adresu)
+		ten kdo preklada by toto mel vne ftp prepsat take; podobne SIP
+
+RPC: remote procedure call
+	- asynchronni vykonavani procedury na remote machine
+	- prikompilovani kodu, ktery se tvari, ze fci vykonavam lokalne -- realne na jinem pc
+	- ONC RPC (open network computing rpc); (podobne SOAP, CORBA, ...)
+		- nfs
+	- vemu fci, specifikuji vstupni a vystupni argumenty -> vygeneruj kus kodu, ktery tyto data zabali a posle
+		po siti; na druhe strane umim data rozbalit a predat obsluzne rutine
+		(prilinkovavam ten kod, co to resi)
+	- rpcgen ^- generuje vyse zminene thunky
+		- musi resit float, endianitu, ...
+		- musi resit pointer na pole, nemame velikost pole
+	- vrstva/knihovna XDR -- external data representation (serializace dat arch indep)
+	- funkce pro rpc volani se nedela samostatne, ale do baliku
+		tento je realizovany sitovym demonem
+		kazdy, kdo se pripoji na sitovy demon muze spustit fci z baliku
+		baliky jsou verzovane
+	- port mapper 111/tcp 111/udp
+		- rika na jakym portu bezi dany balik (porty nejsou fixni)
+		- rpc.portmap(8), rpcbind(8)
+		- rpc sluzba na pevnem portu
+		- jmenna sluzba pro RPC: cislo baliku, verze baliku => port
+		- moznost forwardovani pozadavku
+		- vzdalena registrace sluzeb
+		- rpcinfo(8) - jake rpc sluzby v jakych verzich na jakych portech a protokolech
+
+nfs: bezstavova sluzba (neni ukazovatko pozice v souboru)
+	- autentizace puvodniho nfs: UID/GID lokalnich se mapuji na stejne UID/GID remote
+	- nfs v3 umoznila remap UID/GID
+	- nfs v4 jine moznosti auth (krb5)
+	- pripojovani:
+		mount -t nfs aisa:/export/home /home
+		spoji se via rpc s mount demonem a pokud muzu, da mi handle odkaz na adresar
+		s tim jdu k rpc.nfsd(8)
+	- nemoznost atomickych operaci se soubory (O_CREAT O_EXCLUSIVE v open napr.)
+	- zamykani v ramci fs, napr flock nebo lockf
+		- realizuji to rpc.lockd(8) /na nfs serveru/
+		  rpc.statd(8) /na klientovi a eviduje co si co zamcel a monitoruje, zda zamykajici proces
+				stale bezia rekne lockd at odemce/
+	- implementace: uspace, kernel
+		biod(8)
+		nfsiod(8) (kernel?)
+	- NFS server
+		rpc.mountd(8) demon - hlavni auth sluzba; pokud mam pravo, dostanu handle
+	- NFS klient
+		rpc.nfsd(8) lokalni demon; 2049 port
+		vypsat adresar - dostanu handly na soubory
+		otevrit soubour - dostanu handle na soubor apod.
+		IO proti tomuto demonu az co ziskam handle od mountd ze serveru
+	- rpc.ugidd(8) mapovani UID a GID podle jmen ne podle cisel
+	- rpc.gssd(8) GSSAPI auth
+	- /etc/exports (linux) - svazky, ktere muzeme sdilet po siti (/etc/dfs/dfstab na solarisu)
+	- showmount(8) vypis info z mount demona, pripadne export-list
+	- userspace nfs server - potiz s prepinani uid/gid na serveru
+		- ganesha (dalsi nfs server); backend muze byt neco jineho nez lokalni fs; amazon s3 nebo ceph
+
+krb5:
+	KDC: key distribution center ma databazi hesel, vuci ni prokazujeme identitu
+	realm: oblast spravovana KDC (=~ domena); velka pismena; konvence je ze je stejny jako domena
+	principal: kazdy uzivatel nebo sluzba; tj login v realmu
+		USER@REALM.COM
+		typsluzby/REALM@REALM
+	heslo: pro kazdeho principala jakesi sdilene tajemstvi; kdc k nemu ma pristup v cleartextu
+
+	ziskani listku:
+	 1) principal (nebo program za nej) zada KDC o listek pro nejaky server (principala), s nejakou expiraci
+	 2) kdc odpovi odpoved:
+		(session key, jmeno klienta, jmeno serveru) zasifrovane sdilenym tajemstvim usera
+		listek nepruhledny pro uzivatele (zasifrovany heslem sluzby)
+			(session key, jmeno a adresa klienta, jmeno serveru, cas, expirace)
+	 3) pokud znam sdilene tajemstvi users - dostanu session key
+	 4) autentizace vuci sluzbe:
+		klient vytvori autentizator a posle s listkem sluzbe
+		autentizator = jmeno a adresa klienta zasifrovano session key
+	 5) sluzba desifruje listek a ziska session key; pomoci nej desifruje autentizator a overi, ze popis
+	    klienta je shodny s listkem
+
+	na KDC bezi sluzba ticket granting service: principal krbtgt/REALM@REALM
+	klient ziska TGT -- ticket granting ticket -- listek pro ziskavani listku pro dalsi sluzby
+		- platnost napr 8h
+
+	ziskani tgt -- kinit(1), pam_krb5(8), klist(1), kdestroy(1)
+	nutnost synchronizace casu (vyjma tgt mam omezene platnosti listku; napr 5min)
+
+	autentizator a listek jdou cleartext -- nutnost replay cache, do nez ulozim jiz pouzite listky
+
+	autentizace muze byt oboustranna - sluzba muze zpet potvrdit, ze se dostala k session key
+	
+	listky vazane na klientskou adresu nebo jsou forwardovatelne
+	
+	proxy listky -- listek pro nejakou sluzbu; deleguju cast svych prav na sluzbu
+
+	muzu mit nejakou cross realm trust
+
+	implementace: mit kerberos v, heimdal
+	konfigurace: /etc/krb5.conf
+
+	klice sluzeb: /etc/krb5.keytab, ktutil(8)
+
+	web.mit.edu/kerberos/www/dialogue.html
+
+ldap: lightweight directory access protocol
+	- zaznamy ve stromove strukture; vyhledavani v podstomu objekt nejakych attr
+	- muzu odkazovat jine ldap servery
+	- read-mostly, nemam transakce
+	- uzly:
+		PRIMARNI_KLIC=hodnota, priklady primarnich klicu:
+			dc	domain component
+			ou	organizational unit
+			uid
+			gid
+		ctou se smerem ke koreni
+		ma distinguished name (DN) - poloha ve stromu (cesta ke koreni), napr.
+			uid=user,ou=People,dc=fi,dc=muni,dc=cz
+		relativni DN -- v ramci jedne urovne: uid=user; vzdy pod parentem musi byt unikatni
+	- kazdy zaznam je objekt, kazdy objekt patri do trid (klidne vice trid); to urcuje, ktere ma atributy
+		trida urcuje atributy popr. i aritu
+	- definice trid = schema
+		pokud objekt patri do tridy, pak musi mit tyhle attr tohohle typu, muze mit tyhle attr
+		definice ve formatu ASN.1
+		serializace: basic encoding rules (podobne jako snmp)
+	- autentizace proti LDAP: (treba i pro vyhledavani)
+		- primarni klic je uid, coz je JMENO uzivatele
+		- neautentizovany anon pristup
+		- interni: simple (heslo vne objektu (spefikovano DN))
+		- externi: SASL napr pomoci krb5
+		- pristupova prava maji
+			subjekt (kdo se prihlasuje; tj nejake DN, neni extra db uzivatelu)
+			objekt (co muze delat -- omezeni na podstrom, na konkretni DN,
+				na 'self' -- na svoji karticku, nebo jen k nekterym atributum)
+		  jsou authenticate, compare (existuje dany objekt s takovym atributem? napr pro login),
+			read, search, write
+
+	ldapsearch -H ldap[s]://ldap.fi.muni.cz/ -b (podstrom) ou=People,dc=fi,dc=muni,dc=cz uid=user -x (anonymni)
+		   -h hostname
+
+	prislusnost do trid je atributem objektu
+		(objectClass: account, objectClass: posixAccount; muze byt vic classes)
+		(ldif zaznam)
+	
+	nss_ldap - napojeni na nsswitch; dohledava v ldap db
+		"uvatele hledej v tomhle podstromu, muzes se do ldap autentizovat tak a tak"
+		- /etc/ldap.conf
+		- umi zapouzdrit via ssl
+
+	migrace do ldapu -- migrationtools
+	uzivatele: tridy account, posixAccount
+
+	hesla v ldap: {SMD5}... salted md5; 	CRYPT	SMD5	MD5 SSHA	SHA
+	generovani hashovane podoby hesla: slappasswd(8)
+	ukladani binarni dat v LDIF formatu: oddelovac atributu 2x:, predpoklada base64 napr:
+		picture:: base64data
+
+	ldapsearch(1), ldapadd(1), ldapdelete(1), ldapmodify(1)
+	GQ(1), nss_ldap
+
+	servery: OpenLDAP, iPlanet/SunONE, FreeIPA
+
+elektronicka posta:
+	MTA	mail transfer agent	sendmail, postfix		 postovni server co umi preposilat zpravy
+	MUA	mail user agent		mutt				 klient
+	MDA	mail delivery agent	mail(1), procmail(1), deliver(1) volan z MTA na finalnim PC pro doruceni do
+									 schranky uzivatele
+	obalka zpravy:
+		obalkovy odesilatel	kam poslat errmsg
+		obalkovy adresat	skutecny prijemce
+
+	vnitrek zpravy:
+		format RFC 2822, RFC 5222
+		hlavicka - jen ascii znaky (i u MIME)
+			KLIC: HODNOTA
+			BILY_ZNAK HODNOTA (pokracovani hodnoty z predchoziho radku)
+
+			From:		mailbox autora/autoru (muze byt jiny nez odesilatel v obalce)
+			Sender:		je li from vice lidi, sender je skutecny odesilatel
+			Reply-To:	kam se ma odpovidat
+			To:		adresati
+			Cc:		carbon copy		dalsi prijemci
+			Bcc:		blind carbon copy	slepa kopie
+					prvni MTA bcc odstrani a ze vsech adresatu vygeneruje obalky pro kazdeho
+			Message-Id:	jednoznacny id zpravy (nahodnystring@hostname)
+			In-Reply-To:	message-id puvodni zpravy
+			References:	identifikatory predchozich zprav
+			Received:	kazdy MTA prida jeden takovy radek
+			Return-Path:	obalkovy odesilatel
+			Date:		
+			Subject:
+			Keywords:
+			X-cokoli:
+
+		telo zpravy
+
+	kodovani MIME words hlavicek: RFC 2047
+		quoted-printable:
+			=?Q?ZNAKOVA_SADA?zakodovany_text?=	znakova sada prevazne UTF-8
+		base64:
+			=?B?ZNAKOVA_SADA?zakodovany_text?=
+
+	MIME extenze RFC 1521 2045-2049 2231
+		hlavicky:
+			Mime-Version: 1.0
+			Content-Transfer-Encoding: prenosove kodovani tela
+				7bit			ASCII
+				base64			3b na 4ch
+				quoted-printable	ne-ASCII bajty a rovnitko -> =hexakod
+				8bit			prime pouziti lib. bajtu
+			Content-Type: typ[podtyp[; param ...]] <- typ tela zpravy
+				text/		plain, html, richtext, ...
+				image/		gif, jpeg, g3fax
+				audio/		basic
+				video/		mpeg, quicktime
+				application/	ocet-stream, postscript, pdf
+				x-nestandardni
+				slozene typy:
+					multipart/mixed		- kazda cast ma vlastni hlavicky
+					multipart/parallel	- mely by se prezentovat zaroven
+					mutlipart/alternative	- MUA ma zobrazit jednu z (text/plain a text/html)
+
+					multipart, co ma casti -- cast muze byt zas multipart -> strom
+		
+	smtp - simple mail transfer protocol - prenos mailu, rfc 2821 rfc 821
+		(popr ESTMP)
+		inicializace:
+			HEL0 (smtp)
+			EHL0 (esmtp)
+
+			server posle seznam extenzi, ktere podporuje
+				SIZE	maximalni velikost zpravy
+			odpoved:
+				jednoradkova	NEJAKE_CISLO MEZERA TEXT
+				viceradkova	CISLO-TEXT
+						CISLO-TEXT
+						CISLO MEZERA LASTLINE
+
+		predani obalky: MAIL FROM:odesilatel
+				RCPT TO:adresat
+		
+		predani zpravy nasleduje:
+				DATA;
+				.
+				<hlavicky a telo>
+				. 			<- konec zpravy
+
+	format mailboxu v unixu:
+		- mbox - jeden soubor; zprava zacne radkem:
+			From mezera datum a obalkovy odesilatel
+			hlavicky a telo
+			From ...
+		- Maildir
+			- podadresare tmp (jsou vytvarene), new (nove), cur (client uz videl a presunul si to z new)
+			- MDA zapisuje do tmp, po dokonceni presune do new
+
+	lokalni klienti:
+		- primy pristup k mailboxu (zamykani proti MDA)
+		- odeslani - pokud mam lokalne smtp server:
+			stdin /usr/sbin/sendmail -t
+				-t -> zpracuj hlavicky a pretranf. na obalku
+			ten si to zaradi do sve fronty MTA
+
+	sitovi klienti:
+		cteni:
+			POP3
+				unikatni pristup k mboxu; zamce se po autentizaci klienta
+				tj nutnost opakovaneho prihlasovani
+				atomicka operace behem session
+				nelze vice schranek na 1 ucet
+			IMAP (Internet Mail Access Protocol)
+				sdileny pristup k mailboxu
+				prace s vice schrankami v ramci jednoho uctu
+				podpora selektivniho fetch MIME casti
+		odesilani: SMTP
+
+dhcp (nadstavba bootpc)
+
+====
+
+pomocne skripty pro ipv4 a ipv6 masky a eui:
+	priklady volani dole
+
+
+ipv4.py
+ipv4_to_binary = lambda x: list(map(lambda z: int(z), list(''.join(list(map (lambda y: '{0:8b}'.format(int(y)).replace(' ', '0'), x.split('.')))))))
+
+ipv4_apply_mask_bin = lambda X, Y: list(map(lambda x: x[0] and x[1], zip(X,Y)))
+ipv4_mask_to_bin = lambda MASK: list([ 1 for i in range(0,MASK) ] + [ 0 for i in range(MASK, 32) ])
+
+ipv4_mask_complement_ipstr = lambda X:  list(map(lambda x: int(not x), ipv4_to_binary(X)))
+ipv4_mask_complement_num = lambda X:  list(map(lambda x: int(not x), ipv4_mask_to_bin(X)))
+
+ipv4_bitfield_to_string = lambda X: ".".join(list(map(lambda x: str(int(x, 2)), list(map (lambda x: ''.join(x), [ map(lambda x: str(x), X[8*i:8*(i+1)]) for i in range(0,4) ])))))
+
+ipv4_mask_ipstr_ipstr = lambda X, Y: ipv4_apply_mask_bin(ipv4_to_binary(X), ipv4_to_binary(Y))
+ipv4_mask_ipstr_num   = lambda X, Y: ipv4_apply_mask_bin(ipv4_to_binary(X), ipv4_mask_to_bin(Y))
+
+cidr_range_start_str = lambda X, Y: ipv4_bitfield_to_string(ipv4_mask_ipstr_ipstr(X,Y))
+cidr_range_end_str = lambda X, Y: ipv4_bitfield_to_string(list(map(lambda x: x[0] or x[1], zip(ipv4_mask_complement_ipstr(Y), ipv4_to_binary(X)))))
+
+cidr_range_str = lambda X, Y: [ cidr_range_start_str(X,Y), cidr_range_end_str(X,Y) ]
+
+cidr_range_start_num = lambda X, Y: ipv4_bitfield_to_string(ipv4_mask_ipstr_num(X,Y))
+cidr_range_end_num = lambda X, Y: ipv4_bitfield_to_string(list(map(lambda x: x[0] or x[1], zip(ipv4_mask_complement_num(Y), ipv4_to_binary(X)))))
+
+cidr_range_num = lambda X, Y: [ cidr_range_start_num(X,Y), cidr_range_end_num(X,Y) ]
+
+pokud chci cidr range, tak bud
+	cidr_range_num("224.0.0.0",20)
+nebo
+	cidr_range_num("224.0.0.0","255.255.255.0")
+
+ivp6.py
+import itertools 
+
+def ipv6_fill_nulls(x):
+    if len(x) < 4:
+        return ''.join([ '0' for i in range(0,4-len(x)) ]) + x
+    else:
+        return x
+
+def ipv6_fill(str):
+    fst_part = list(itertools.takewhile(lambda x: x != '', str.split(':')))
+    snd_part = str.split(':')[len(fst_part)+1:]
+    tmp = fst_part + ['0000' for i in range(0,8-len(fst_part)-len(snd_part))] + snd_part
+    return list(map(ipv6_fill_nulls, tmp))
+
+ipv6_full_to_bin = lambda X: list(map(lambda x: int(x), ''.join((map(lambda x: '{0:16b}'.format(int(int(x, 16))).replace(' ', '0'), X))))) 
+
+ipv6_to_binary = lambda X: ipv6_full_to_bin(ipv6_fill(X))
+
+ipv6_apply_mask_bin = lambda X, Y: list(map(lambda x: x[0] and x[1], zip(X,Y)))
+ipv6_mask_to_bin = lambda MASK: list([ 1 for i in range(0,MASK) ] + [ 0 for i in range(MASK, 128) ])
+ipv6_mask_complement_num = lambda X:  list(map(lambda x: int(not x), (X)))
+
+ipv6_bitfield_to_string = lambda X: ":".join(list(map(lambda x: str(hex(int(x, 2)))[2:], list(map (lambda x: ''.join(x), [ map(lambda x: str(x), X[16*i:16*(i+1)]) for i in range(0,8) ])))))
+
+ipv6_mask_ipstr_num   = lambda X, Y: ipv6_apply_mask_bin(ipv6_to_binary(X), ipv6_mask_to_bin(Y))
+
+cidr_range_start_num = lambda X, Y: ipv6_bitfield_to_string(ipv6_mask_ipstr_num(X,Y))
+cidr_range_end_num = lambda X, Y: ipv6_bitfield_to_string(list(map(lambda x: x[0] or x[1], zip(ipv6_mask_complement_num(ipv6_mask_to_bin(Y)), ipv6_to_binary(X)))))
+
+cidr_range_num = lambda X, Y: [ cidr_range_start_num(X,Y), cidr_range_end_num(X,Y) ]
+
+def eui64_link_local(x):
+    tmp = x.split(':')
+    return 'fe80::'+hex(int(tmp[-6],16) | 0b10)[2:] +tmp[-5]+':'+tmp[-4]+'ff:fe'+tmp[-3]+':'+tmp[-2]+tmp[-1]
+
+
+def eui64(x):
+    tmp = x.split(':')
+    return '::'+hex(int(tmp[-6],16) | 0b10)[2:] +tmp[-5]+':'+tmp[-4]+'ff:fe'+tmp[-3]+':'+tmp[-2]+tmp[-1]
+    
+ipv4_to_binary = lambda x: list(map(lambda z: int(z), list(''.join(list(map (lambda y: '{0:8b}'.format(int(y)).replace(' ', '0'), x.split('.')))))))
+
+def autotunel(ipv4):
+        tmp = ipv6_to_binary('2002::')[0:16] + ipv4_to_binary(ipv4) + [ 0 for i in range(0,128-16-32) ]
+        return ipv6_bitfield_to_string(tmp)
+
+pokud chci cidr range:
+	cidr_range_num("fe80:ffff::", 20)
+
+pokud chci link local eui:
+	mac_addr = "18:66:12:50:93:18"
+	eui64_link_local(mac_addr)
+
+pokud chci eui pro nejakou sit:
+	eui_raw = ipv6_to_binary(eui64("18:66:12:50:93:18"))
+	mask = ipv6_to_binary(cidr_range_num("2001:2718:4801:6230::", 64)[0])
+	ipv6_bitfield_to_string(list(map(lambda x: x[0] | x[1], zip(mask, eui_raw))))
+

@@ -1,0 +1,11 @@
+1. Co je to projekt? Ve správném pořadí uveďte pět plánů projektu a každý cca jednou větou vysvětlete. Který z těchto plánů je nejdůležitější a proč? (10)
+
+2. Vysvětlete podnik jako otevřený systém. Popište nebo nakreslete model zvyšování výkonu. Uveďte 6 témat, kterými se podnik může zabývat, aby zlepšil svůj výkon a popište či nakreslete, jak spolu souvisí. (10)
+
+3. Popište/nakreslete proces řízení zainteresovaných stran a jeho jednotlivé kroky (10)
+
+4. Co je to Complex Event Processing? Popište princip realizace úloh, které vedou na CEP řešení. (10)
+
+5. Nakreslete schématicky (na úrovni etep) šablony pro Standardní postup, Expresní postup, Přírůstkovou metodu a Přírůstkový postup s prototypováním. Jaké kroky obsahuje etapa Definice architektury? (10)
+
+6. Popište WBS projektu tvorby informační strategie. Kolik etap takový projekt zpravidla má a proč? (10)

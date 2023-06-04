@@ -1,0 +1,9 @@
+zkouška 26. 1. 2015 (3. termín ve zkouškovém období)
+6 otázek, 2 body správná odpovìï/1 bod polovièní odpovìï/0 bodù špatná odpovìï (na E staèí celkovì 6 bodù)
+
+1) popsat kódování MLT-3
+2) nakreslit konstalaèní diagram, kde je bitová rychlost 4x vìtší než baudová
+3) velikost okna u Sliding Window, Selective Reject a proè
+4) Hammingova vzdálenost, délka pro detektci chyby + délka pro opravu chyby
+5) øízení pøístupu k médiu POLL/SELECT
+6) CSMA naléhající

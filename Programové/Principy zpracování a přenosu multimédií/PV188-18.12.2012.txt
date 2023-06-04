@@ -1,0 +1,15 @@
+Skuska 18.12.2012
+
+1. Co je to mikrofon?
+2. Jak se provadi audio signal na PCM ?
+3. Jaka je analogie vzorkovani a kvantovani audia pouzivana pro videosignaly? Da se bez
+   pouziti video-kompresi nejak usetrit misto n disku?
+4. Zvacsi sa svietivost ak zvacsime objektiv? *odpoved : zalezi od pupily*
+5. Preco sa pouziva vacsia slnecna clona u teleobjektivov ako u sirokouhlych obj? 
+   *odpoved : clonove cislo – cim vacsia clona tym vacsia hlbka ostrosti. Pre portrety mala clona, pri fotkach krajiny co najvacsia – obraz cely ostry.*
+6. Jake druhy snimku se pouzivaji u MPEG kompresnich formatu?
+7. Co to je chromaticka vada u objektivu?
+8. Symetricka kabelaz
+9. Co je to progresive download a kde se vyuziva? Vyhody, nevyhody.
+10.Jaka je analogie vzorkovani a kvantovani audia pouzivana pro videosignaly? Da se bez
+   pouziti video-kompresi nejak usetrit misto n disku?

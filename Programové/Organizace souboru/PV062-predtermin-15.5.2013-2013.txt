@@ -1,0 +1,20 @@
+PV062 - Organizace Souboru - 15.5.2013
+
+1.) Znaky z Abecedy {A,B,C,D} generovane Zdrojom s pravdepodobnostami: {0.125, 0.5, 0.25, 0.125}; znaky su kodovane Shannon-Fannonom
+	a.) Urcite entropiu Zdroja
+	b.) Je zvoleny kod optimalny? Zdovodnite.
+	
+2.) Huffmanovo Kodovanie: MAMAMAMASO
+	a.) vypisanie jednotlivych kodovych slov pre znaky
+	b.) Aky je kompresny zisk oproti kodovaniu tej samej spravy 7 bitovym ASCII kodom?
+	
+3.) Aku minimalnu aritu musi mat strom, v ktorom je 64 000 klucov a ku kazdemu zaznamu sa musi dat dostat maximalne pomocou 4 krokov?
+
+4.) Kvadraticke hashovanie - postupne sa vkladali prvky pomocou hashovacej funkkcie (m = k mod 13), z toho dve kolidovali.
+
+5.) B-Strom tretieho stupna*, postupne vkladanie prvkov {8, 5, 12, 1, 6, 3, 7, 12}
+	 *podotykam, ze to naozaj bolo B-Strom tretieho stupna - nie B-Strom arity 3. Aky je v tom rozdiel, to fakt netusim
+	 
+6.) Indexovanie pomocou bitovej mapy - vysvetli, co to je, ako to funguje, etc..
+
+~BasomtiKombucha!

@@ -1,0 +1,6 @@
+1) Princip RTS/CTS a jakým způsobem řeší problém skrytých terminálů.
+2) Proč může sliding window s bitovou šířkou rámce k mít velikost okna maximálně 2^k - 1.
+3) Vysvětlete princip ADSL.
+4) Zakódujte do HDB3: 100000000100001
+5) Příklad na multiplexing - 4 kanály, každý myslím 100 kb/s, jeden rámec přenáší 2 bity z každého kanálu, za jak dlouho se přenese jeden rámec.
+6) Příklad na Shannonovu větu - šířka pásma 4 kHz, zdroj 10 V, šum 5 mV, vypočítat bitovou rychlost.

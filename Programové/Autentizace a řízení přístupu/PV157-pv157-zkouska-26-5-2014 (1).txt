@@ -1,0 +1,96 @@
+PV157 Autentizace a řízení přístupu - zkouška 26.5.2014
+13 otázek celkem za 50 bodů
+Všechny odpovědi správně. Správně = *
+
+1.Které z následujících nejsou hašovací funkce
+* RSA
+* RC4
+- MD4
+* AES
+- SHA-1
+- MD5
+
+2.Jaká technologie PINmailerů je bezpečnější při útocích prosvícením?
+- Laserový tisk
+* Průklepový tisk
+
+3.Pro statickou autentizaci dat (SDA) platí, že:
+Je prováděna pouze čipovou kartou (terminál pouze zasílá data)
+Řeší problém padělání/duplikace karet
+* Je prováděna pouze platebním terminálem (čip pouze zasílá data)
+* Potvrzuje pravost pouze statických dat uložených v čipové kartě.
+- Potvrzuje pravost statických dat uložených v čipové kartě, ale i dynamických dat zaslaných terminálem
+- Potvrzuje pravost statických uložených v čipové kartě, ale i dynamických dat zaslaných čipem
+
+4.Pro urychlení počítačových systémů využívajících digitální podpis
+* u čipových karet bývají použity kryptografické koprocesory
+- používají obě strany identický privátní klíč
+- se často používá podchlazování ochranných komponent čipových karet
+* obvykle využíváme hašovací funkce pro reprezentaci podepisovaných dat
+- lze využít prokazatelnou odpovědnost metodou Monte Carlo
+
+5.Pro autentizaci obrazovou informací platí
+- Uživatel musí správně vybarvit předložený obrázek
+* Uživatel musí vybrat správný obrázek nebo jeho část
+- Uživatel musí systému slovně popsat obrázek sloužící k autentizaci
+- Uživatel musí do systému nahrát správný obrázek
+
+6.Na čem podle specifikace EMV závisí dohoda autentizační metody uživatele?
+* Na prioritně uspořádaném seznamu podporovaných verifikačních metod (CVM)
+- Na tom, zdali má být prováděna transakce online či offline
+- Na konkrétní implementaci statické, dynamické či kombinované autentizace dat
+- Rozhodnutí přísluší plně platebnímu terminálu
+
+7.K prvkům hardwarové podpory řízení přístupu patří např.
+- randomizace adres haldy (heap), na kterých se alokují dynamické proměnné běžících programů
+* zákaz přístupu všem procesům kromě OS do adres paměti nižších než jistá hranice (tzv. fence address)
+- tzv. zero address: pokud se proces pokusí přistupovat k nulové adrese, což bývá známkou chyby, je násilně zastaven
+- tzv. poštovní adresování: paměť je rozdělena na oblasti, aby OS mohl chránit paměť kontrolovou znalosti tajného PSČ (tzv. ZIP code)
+* existence několika úrovní oprávnění (tzv. rings) definujících přístupnost různých registrů a strojových instrukcí programovému kódu
+
+8.Řízení přístupu, při němž vlastník rozhoduje o přístupech ke svým
+- souborům, se nazývá:
+- Povinné řízení přístupu.
+* Volitelné řízení přístupu.
+- Princip maximálních privilegií.
+- Flexibilní řízení přístupu.
+
+9.Útok na čipové karty přes aplikační rozhraní (API) je založen na:
+*Nezamýšleném dopadu zpracování útočníkem zaslaných specifických vstupních dat.
+- Využití indukce chyb do zpracování dat zaslaných přes aplikační rozhraní.
+- Nedostupnosti aplikačního rozhraní vnitřnímu prostředí karty.
+* Využití chyby v návrhu rozhraní.
+
+10.Forenzní řešení biometrik popisují tyto výroky
+- výsledek identifikace je získán obvykle za 1s či rychleji.
+* pro používání je nutná odborná znalost systému.
+- miniaturizace zařízení je jedním z hlavním cílů.
+* cena je vysoká, ale s tím se počítá.
+
+11.Které z uvedených možností jsou proveditelnými útoky při provedení autentizace prostřednictvím .rhosts
+-Útok hrubou silou.
+* Vrácení podvržené IP adresy po dotazu na DNS server.
+* Uvedení nepředpokládaného loginu uživatele.
+* IP spoofing.
+
+12.Mezi nevýhody ACL (seznam přístupových práv) patří:
+- je pomocí nich obtížné zjistit všechny subjekty, ke kterým má daný objekt přístup
+* je pomocí nich obtížné zjistit všechny objekty, ke kterým má daný uživatel přístup
+- malá režie a tvrdá vyjadřovací schopnost
+- je pomocí nich obtížné zjistit všechny subjekty, které mají k danému uživateli přístup
+
+13.Jaký typ pamětí je typicky používán u současných čipových karet?
+- DRAM
+* SRAM
+- GRAM
+* EEPROM
+
+Otevřené otázky:
+20 bodů
+1. Popište, jak probíhá man in the middle útok na Diffie-Hellman protokol.
+2. Popište stručně jak se provádí odběrová analýza u čipové karty.
+3. Napište 2 výhody a 2 nevýhody autentizace biometrikou oproti jiné metodě.
+4. Jak probíhá Shamirův protokol (přesné znění si nepamatuji).
+
+Pokud vám udělalo radost, že někdo poskytl otázky z minulých let, pokuste se prosím udělat radost i příštím studentům. :)
+Děkuji.

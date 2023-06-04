@@ -1,0 +1,176 @@
+1. Datagram v síti TCP/IP je směrován
+*nezávisle na ostatních datagramech 
+vždy stejně jako ostatní datagramy 
+vždy podle cesty, určené odesílatelem (source route) 
+stejně jako ostatní datagramy téhož TCP spojení
+
+2. Program mkfs(8) se používá pro
+kontrolu konzistence svazku 
+připojování svazku 
+správu logických oblastí 
+*vytváření souborového systému 
+defragmentaci svazku
+
+3. Která věta je pravdivá?
+RPC služby typicky běží na privilegovaném portu. 
+*RPC služeb může být víc než TCP portů. 
+RPC služby typicky běží na pevném portu. 
+RPC služby posílají všechna data ke klientovi přes portmapper.
+
+4. Piggybacking znamená, že
+*potvrzení o přijetí dat se posílá zároveň s daty, jdoucími opačným směrem 
+vysílající strana může vyslat více než jeden datagram, aniž by musela čekat na potvrzení 
+některá data jsou přenášena mimo hlavní proud dat
+
+5. Diskové kvóty se uživatelům nastavují příkazem
+*edquota 
+quota 
+quotaset 
+quotaon 
+quotacheck
+
+6. Pod pojmem X server se rozumí
+*program nebo zařízení, které provádí zobrazování dle požadavků X klientů 
+aplikace, která požaduje po X klientovi zobrazování svých grafických dat 
+aplikace, které obvykle patří jedno okno, a která často běží na výkonném počítači
+
+7. Rodina protokolů/adres v socketovém rozhraní je
+seznam služeb jádra, obsluhujících daný protokol 
+obecně název pro protokoly čtvrté vrstvy 
+například SMTP, FTP nebo SSH 
+*například IPv4, IPv6, IPX a další. 
+jiná pro TCP a jiná pro UDP
+
+8. Firewall typu packetový filtr v podstatě nelze použít v zapojení
+tříportovém 
+*jednoportovém 
+dvojportovém
+
+9. V LDAP databázi má objekt
+u každého atributu nejvýše jednu hodnotu 
+právě jednu třídu, do které patří 
+vždy atribut userPassword 
+*jednoznačné (absolutní) distinguished name 
+jednoznačné relativní distinguished name v rámci podstromu
+
+10. Zprávu ICMP redirect posílá router, pokud
+zjistí, že způsobil zacyklení datagramu. 
+zjistí chybnou konfiguraci směrování na cílovém počítači. 
+*posílá datagram zpět do rozhraní, ze kterého byl datagram přijat. 
+funguje jako proxy-server.
+
+11. Jaký nejvyšší průměr (počet uzlů po cestě včetně koncových) může mít síť s protokolem IPv4?
+65536 
+64 
+*256 
+200 
+65535
+
+12. Socket, na kterém dříve úspěšně proběhlo volání connect()
+nelze v budoucnu použít pro službu listen() 
+nelze používat jako argument služby rcvmsg() 
+*nemusí poskytovat spolehlivý přenos dat 
+zaručuje zachování pořadí datagramů 
+nelze dále nastavovat pomocí setsockopt()
+
+13. Dohledání jména uživatele na základě jeho čísla provádí knihovní funkce
+getusrname(3) 
+lookupuser(3) 
+getuserbynumber(3) 
+getpwent(3) 
+*getpwuid(3)
+
+14. Seznam aktuálně připojených svazků je na Linuxu v souboru
+/etc/vfstab 
+/etc/dfstab 
+/etc/fstab 
+/etc/volumes 
+*/proc/mounts
+
+15. V tiskovém subsystému BSD se tiskne příkazem
+lpstat 
+*lpr 
+bsdprint 
+print 
+lp
+
+16. Pokud odesilatel ještě nezná svoji adresu, uvede do odchozího datagramu zdrojovou adresu
+192.168.0.0 
+10.0.0.1 
+*0.0.0.0 
+127.0.0.1 
+255.255.255.255
+
+17. Program route(8) se používá pro
+přidělení IP adres síťovému rozhraní 
+konfiguraci dynamického směrování 
+alternativu k příkazu netstat -i 
+*změny a výpis směrovací tabulky jádra 
+konfiguraci policy routingu
+
+18. TCP wrapper neumí
+povolovat přístup jen z určitých IP adres 
+*autentizovat uživatele na základě hesla 
+ověřovat reverzní DNS záznam proti dopředným záznamům 
+zeptat se na jméno uživatele protokolem ident 
+poslat mail/spustit externí program v případě neoprávněného přístupu
+
+19. Adresář /dev obsahuje
+konfiguraci nainstalovaných zařízení 
+*speciální soubory 
+konfiguraci všech podporovaných zařízení 
+startovací skripty systému 
+vývojové (development) prostředí
+
+20. Na co se ptá ARP dotaz?
+*dohledání vzdálené adresy 2. vrstvy ke známé adrese 3. vrstvy 
+dohledání lokální adresy 3. vrstvy ke známé adrese 2. vrstvy 
+dohledání lokální adresy 2. vrstvy ke známé adrese 3. vrstvy 
+dohledání vzdálené adresy 3. vrstvy ke známé adrese 2. vrstvy
+
+21. Ke každému záznamu typu PTR by měl existovat odpovídající záznam typu
+*A 
+NS 
+B 
+CNAME
+
+22. Protokol FTP
+používá jedno TCP spojení (otevírané od klienta k serveru) 
+používá dvě TCP spojení, která jsou implicitně otevíraná od klienta k serveru (druhé spojení může při použití tzv. pasivního FTP být otevíráno i opačným směrem) 
+nepoužívá protokol TCP, ale UDP 
+*používá dvě TCP spojení, z nichž jedno je implicitně otevírané od serveru ke klientovi
+
+23. Poštovní klient (MUA) může zprávy sestavovat do vláken diskuse pomocí hlaviček
+From: a To: 
+X-Thread: 
+Return-Path: 
+*In-Reply-To: 
+Sender:
+
+24. Jednorázové vykonání příkazu v určeném čase zajistíme příkazem
+*at 
+timerun 
+cronrun 
+crontab 
+batch
+
+25. Výpis služeb jádra, které postupně volá určitý proces, lze zvenku získat (na Linuxu) programem
+ElectricFence 
+*strace 
+calltrace 
+syscall 
+ping
+
+26. V systému udev jsou speciální soubory jednotlivých zařízení vytvářeny
+staticky při kompilaci jádra 
+dynamicky jádrem na speciálním virtuálním souborovém systému (např. typu devfs) 
+staticky při instalaci systému 
+*dynamicky, démonem v uživatelském prostoru
+
+27. V systému PAM se nastavení systémových limitů pro uživatele provádí ve fázi
+password 
+account 
+auth 
+environ 
+*session
+

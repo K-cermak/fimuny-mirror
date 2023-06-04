@@ -1,0 +1,33 @@
+PV065
+12.1.2009
+
+UPOZORNĚNÍ:
+Tento text je poskytován v naději, že bude užitečný, ale BEZ JAKÉKOLI ZÁRUKY :-)
+
+- Co vrací funkce alloca()?
+
+- Jak se jmenuje architektura, ve které jsou všechny procesory a paměťové bloky na stejné sběrnici?
+
+- Jaký signál dostane proces při použití neplatné adresy?
+
+- Jaký význam má sticky-bit?
+
+- Jak se jmenuje priorita, kterou si proces může nastavit sám?
+
+- Jak se u souboru nastavuje mandatory locking?
+
+- Který filesystém dokáže ukládat krátké symlinky přímo do i-nodů?
+
+- Kolik existuje odkazů na adresář?
+
+- Jak lze zjistit počet odkazů na [soubor/uzel] (nevím přesně)
+
+- Jakým makrem se při lokalizaci nastavuje převod velkých a malých písmen?
+
+- Jak se jmenuje nástroj jádra, který překládá virtuální adresy (s nimiž pracuje procesor) na [fyzické adresy/adresy uživatelského prostoru](nevím přesně)?
+
+- Jaká funkce dočasně nahradí masku přerušení a zároveň uspí proces čekáním na jeden z těchto signálů (atomicky)?
+
+- Jak se jmenuje program, který se začne provádět po zapnutí počítače?
+
+- Jakou funkcí může proces změnit své efektivní a reálné UID?

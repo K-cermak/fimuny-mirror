@@ -1,0 +1,10 @@
+1. Kramerovo pravidlo. Proveïte jeho grafickı dùkaz.
+2. Jak funguje skládání rotací pomocí quatenionù? Dokate.
+3. Nastiòte dùkaz vìty: "Nech q náleí H1, p = [s, v] a náleí H. Pak p'= qpq^-1, kde 
+   p'= [s,v'] a souèasnì |v| = |v'|". Slovnì objasnìte vıznam.
+4. Odvoïte obecnou rovnici elipsy v maticovém zápisu.
+5. Praktickı pøíklad na vypoèítání odraeného paprsku od roviny pomocí Househodleroy matice.
+
+Kadá otázka po 10 bodech, na E je potøeba 30.
+
+Všem hodnì štìstí!!!

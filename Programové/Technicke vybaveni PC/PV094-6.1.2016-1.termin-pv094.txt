@@ -1,0 +1,16 @@
+6.1.2016
+
+1. Nakreslit a popsat funkci CMOS invertoru (øíkal specificky CMOS, ne jak funguje invertor obecnì).
+2. Nakreslit zapojení maximálního poètu zaøízení na narrow SCSI a popsat. Uvést aspoò 4 typy zaøízení které lze pomocí SCSI zapojit.
+3. Popis režimy INTEL 64 
+4. Jak pracuje L1 cache u 80486DX - nakreslit a popsat. Dále klasifikovat tuto cache pamì
+5. Klávesnice s Hallovou sondou (fungující na principu Hallova jevu) - nakreslit, vysvìtlit jak funguje vèetnì matematického vztahu, 
+   struèného popisu fyzikálních velièin a jednotek tìchto fyz. velièin
+6. Popište rozdíl mezi: a) x1 a x16 u pci express; b)dvd-r a dvd+r 
+7. Rozdíl mezi NAND a NOR flash
+8. Popsat princip èinnosti HAMR technologie u pevnych disku
+
+
+Pozn:
+1) ->vysvìtleno hned v 1. pøednášce, ve slidech to není ale mluví o tom (pøivedení napìtí, sepnutí x nesepnutí, vliv Ohmova zákona)
+-drtivá vìtšina informací je ve slidech 

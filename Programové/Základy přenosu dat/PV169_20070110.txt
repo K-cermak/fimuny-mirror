@@ -1,0 +1,15 @@
+PV169 Základy pøenosu dat
+10. 1. 2007
+
+1/ k èemu se používá scrambling, B8ZS - nakreslit
+
+2/ ground wawe, sky wawe, line of sight, nakreslit, frekvence
+
+3/ 10 Mb/s, Manchester - vypoèítej potøebnou šíøku pásma (Nyquistova vìta)
+   jak by se zmìnila rychlost pøi použití NRZ kódu
+
+4/ PCM - pulse code modulation, schematicky popsat
+   DM - delta modulation - rozdíl od PCM
+
+5/ jak bude vypadat 7 bitový rámec, obsahující zprávu 10011 kódovaný pomocí polynomu
+   X^2 + X + 1

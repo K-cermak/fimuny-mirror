@@ -1,0 +1,25 @@
+12.1.2018 - 2. januárovı termín, celkovo 3.
+
+
+1. SNR sa 2-krát zvıši, akı bude dopad na rychlost dat?
+- slajdy Signály - slajd è. 90
+
+
+2. 100000000 v B8ZS
+- slajdy Digitálny vysílaní - slajd è. 33
+
+
+3. Vytvori Hammingov kód (5,2).
+- slajdy Chybové øízení
+
+
+4. Vypoèíta kontrolnı súèet dvoch hexadecimálnych slov
+- slajdy Chybové øízení - slajd è. 103
+
+
+5. U si presne nepamätám, nakresli nejakı diagram tuším nieèo so Stop and Wait
+- boli tam aj zadané nejaké èísla, nenašiel som to v slajdoch (ale u som si to presne nepamätal, take mono to tam je :D)
+
+
+6. Zdôvodni ve¾kos okna u Go-Back-N ARQ, Sliding Window.
+- slajdy Øízení datového spoje - slajd è. 29

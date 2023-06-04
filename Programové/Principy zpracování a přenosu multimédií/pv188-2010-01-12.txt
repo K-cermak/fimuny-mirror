@@ -1,0 +1,10 @@
+1. Co je ohniskova vzdialenost.
+2. Alespoò tøi druhy mikrofonù z pohledu druhu použitého mìnièe a vysvìtlit funkci toho mìnièe.
+3. Popisat ako funguje autofokus (blizsie nespecifikovane).
+4. Porovnat vyhody a nevyhody symetrickeho a nesymetrickeho propojeni.
+5. Psychoakusticky model, co to je, kde vsade sa vyuziva.
+6. Mame dve videa s roznym kodovanim, ktore z nich bude vnimat clovek subjektivne kvalitnejsie: obe videa mali stejne rozlisenie, stejny bitrate, jediny rozdiel bol vo framerate - 25 fps a 29,9 fps. 
+7. Buffery na strane klienta, kde su vhodne, kde nie, diskutovat.
+8. Nieco v zmysle porovnat streaming a videokonferenciu vzhladom na pouzitie kodovania a komprese.
+9. hmm
+10. Oprava chyb pri prenosu multimedialnich dat.

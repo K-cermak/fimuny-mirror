@@ -1,0 +1,6 @@
+1. Kedy je maximalna entropia, + odvodit vzorec pre maximalnu entropiu
+2. LZ78 OKOLOKOLEM
+3. Faginovo hashovanie, tabulky, hodnoty zadane
+4. B strom, boli zadane velkosti ukazatelov a hodnot a mali sme urèi maximalnu aritu
+5. Primarni index, sekundarni index, ktory môe by riedky
+6. Definuj logické, fyzické, implementaèné schema

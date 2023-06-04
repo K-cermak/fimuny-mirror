@@ -1,0 +1,40 @@
+﻿1) Paralelní souřadnice 
+2) Jak se vypořádat s chybějícími nebo "špatnými" hodnotami ve vstupních datech 
+3) Popis metod pro evaluaci vizualizací (Testování použitelnosti, Expert review, Field test, case study), popiš alespon tři 
+4) Co je to chart junk? 
+5) Obrázek grafu princip a k jakým datům slouží
+
+1) strom vykresleny do kruhu
+2) co je kartogram a rozne typy
+3) perspektivne steny
+4) vizualizacia dokumentov (aspon tri typy popisat)
+5) graf spojeny z dvoch typov grafov a mali ste napisat z coho sa to sklada, ake data sa vizualizuju a ako by to slo urobit lepsie
+
+1) radialne zobrazenie hierarchyckych struktur (z vizualizacie zrekonstruovat strom)
+2) kartogrami opisat a vymonovat 3 druhy
+3) 3 techniky viazualizacie dokumentov opisat
+4) Opisat co su to dokument walls (alebo nieco take)
+5) vizualizacia ku ktorej bolo treba napisat ake techniky tam su vyuzite (kombinacia dvoch) a napisat co zobrazuje a ako by sa dala zlepsit
+
+1) choropletove mapy
+2) effectiveness
+3) expresivenes
+4) sposoby zobrazenia multivariate dat
+5) stromova struktura vykreslena do kruhu
+
+1) perspektivne steny
+2) kartogramy
+3) popisat metody hodnotenia vizualizacie (review expertov, user testing...)
+4) marching cubes
+5) obrazok vizualizacie - zhodnotit a navrhnut vylepsenie
+
+1) polarne suradnice + nakreslit priklad
+2) sposoby zobrazenia multivariate dat + jeden blizsie popisat
+3) ake su moznosti riesenia chybajucich dat
+4) treemap + nakreslit priklad
+5) zhodnotenie vizualizacie - v podstate najst co najviac problemov danej vizualizacie
+
+1) perspektivní stěny
+2) vizualizace multivariate dat
+3) kartogramy
+4) normalizace

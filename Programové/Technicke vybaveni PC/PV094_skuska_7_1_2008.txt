@@ -1,0 +1,16 @@
+1) Nakreslite schemu PROM 2x4 bitov, nakreslite podrobne a popiste pracu jednej bunky. 
+
+2) Nakreslite a popiste princip strankovania procesoru Pentium so strankou velkosti 4kB. 
+
+3) Ake kodovanie signalov pouziva zbernica USB, popiste. Zakodujte 16-bitovu vzorku. 
+
+4) Nakreslite schemu zapojenia (maximalneho poctu) zariadeni na zbernicu ATA-2 a vyssie (EIDE). Vymenujte najmenej 3 typy zariadeni, ktore na nu mozno zapojit
+
+5) Nakreslite a popiste GMR hlavu. Popiste princip zapisu a citania. 
+
+6) Nakreslite prierez mediom CD-R. Popiste ako prebieha zapis a citanie. 
+
+7) vysvetlite pojmy: 
+	- alfa-blending
+	- SLI
+

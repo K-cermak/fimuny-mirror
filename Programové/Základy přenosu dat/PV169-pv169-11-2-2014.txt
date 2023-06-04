@@ -1,0 +1,8 @@
+PV169 - 11.2.2014 (poslední termín)
+
+1. vysvětlit formát rámce u spoje typu T1, proč má 193 bitů a rychlost... ? 
+2. CSMA, nenaléhající varianta
+3. Global System for Mobile Communication (?)
+4. příklad na CRC
+5. vysvětlit princip přepínání okruhů s časovým dělením
+6. byte stuffing

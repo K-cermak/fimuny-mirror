@@ -1,0 +1,45 @@
+PV122 Formální struktura přirozeného jazyka, podzim 2007
+kolokvijní test z 12.1.2007
+
+FONETIKA A FONOLOGIE:
+1) Definice progresivní asimilace, distinktivního rysu a + ke každému příklad
+Progresivní asimilace (shoda) = hlásková změna kvůli jednodušší výslovnosti,
+kdy. Při progresivní asimilaci se druhá hláska přizpůsobuje té první.
+Př. tři x dři (neznělé ř x znělé ř) (více na http://cs.wikipedia.org/wiki/Asimilace_(lingvistika))
+Distinktivní rys = fonologický rys, který v daném systému slouží k vyjádření
+různého významu. V češtině se jedná např. o délku hlásky (bor x bór).
+2) Zadáno cca 20 slov nějakého jazykového systému, určit, zda [s] a [t] jsou alofony (pak určit distribuční pravidlo) nebo fonémy (pak určit minimální pár).
+Zadání si opravdu nepatuji;)
+3) Zadáno cca 10 slov nějakého jazykové systému, podle jehož pravidel odvodit nějaké slovo
+Ani toto ne;)
+4) Exaktně charakterizovat 3 vybrané hlásky (vyznačené složenými závorkami)
+"po{d} oknem" [t] - dentální prealveolární oklusiva neznělá
+
+MORFOLOGIE A SLOVOTVORBA:
+5) Morfologická analýza slova "zaměstnaným" + ke každému morfému příklad jiného kontextu
+za|měst|n|a|ný|mi
+za = prefix určující místo
+měst = kořen, odvozené od místo, město
+n = afix tvořící přídavné jméno (místní...)
+a = afix tvořící sloveso (zaměstnat)
+ný = afix tvorící přídavný jméno (zaměstnaný)
+mi = gramatický afix (PL. instrumentál)
+6) Odvodit dvě slova podle pravidel z 2)
+:)
+7) Vysvětlit gramatickou kategorii osoby a čísla
+osoba = kategorie charakterizující vztah mluvčího, adresáta a okolí
+([JÁ/MY] něco sděluji/sdělujeme [TOBĚ/VÁM] o [NĚM/NICH]
+číslo = kategorie rozlišující počet mluvčích, adresátů a okolí
+SYNTAX:
+8) Ve větě "Jeho ostrý příspěvek přerušil živou diskusi" (přibližné znění) najděte všechny proposice a převeďte je na věty
+3 proposice: příspěvek, přerušil, diskusi
+Po převedení: To, že ostře přispěl, přerušilo to, že se živě diskutovalo.
+9) Věcná a metaforická sémantika výrazu "hrst"
+věcná: množství, které se vejde do dlaně
+mateforická: 	malé množství ("Zbyla jen hrstka nepřátel...")
+		jistota ("Mám tě v hrsti!", "Lepší vrabec v hrsti...")
+LEXIKOLOGIE:
+10) Určete valence slovesa "poskytnout". Které z nich jsou obligatorní/fakultativní
+poskytnout - trojvalenční, obligatorní valence: nominativní, dativní, akuzativní
+([JÁ] poskytnu [NÉKOMU] [NĚCO])
+fakultativní valence: příslovečná určení (místa, času, způsobu...), doplňková

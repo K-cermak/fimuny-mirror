@@ -1,0 +1,19 @@
+﻿3 open questions:
+What are the main parts from SLA?
+What are the differencies between ITIL and ITSM?
+Name and briefly describe at least 3 _-as-a-Service.
+
+My feelings: When I didn't what to write I just wrote whatever I remembered about that topic. Mr. Vagner is very kind and tries to find points behind every bush. :D You could also find answers for open questions in closed questions. :)
+
+Then there were 15 closed questions with 1 correct answer and 5 closed questions with at least 1 correct question (>=1).
+
+My feelings: Some questions were the same from past years. But in the end all closed questions were so easy. There were questions with options True, False and also questions where the correct answer was the exact definition of the term in slides. And it was stated which questions were the ones with only 1 correct answer.
+
+Advises to learn from:
+I read this document many times and also tried to memorize some parts of it:
+https://docs.google.com/document/d/1MGzvK7SPlfUls7rS-Qr82lKypLwaG_Hz3ZOitqUKZJY/edit?fbclid=IwAR3x15T1Xib6QImEEgcqg9xSdIve6Y0pnYw4yuxGgBVq9h64uZ5BsJ-MS2E#heading=h.rv19ri2aiz7s
+
+I memorized all questions from past years and trained to answer them here:
+https://kabell.sk/fi_muni_drill/question/PV203/1
+
+This all was enough for me to get an A.

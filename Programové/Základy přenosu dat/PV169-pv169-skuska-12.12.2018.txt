@@ -1,0 +1,13 @@
+Ktora sirka pasma je vacsia?
+a 100kHz a 10mV
+b 200kHz a 5mV
+
+Aku bitovu rychlost budu mat NRZ, Manchester, 2B1Q pri 1MHz?
+
+CDMA vysielaju stanica A, B, C, D, E. Popisat/nakreslit.
+
+Popisat TDM - vymena casovych dielov
+
+Blokovy kod(5,2) - popisat kedy vieme opravit chybu a kedy iba detekovat, podla coho sa to urcuje.
+
+Minimum Shift Keying

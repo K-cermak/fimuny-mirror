@@ -1,0 +1,17 @@
+Technologie počítačových sítí - termín 7. června 2010
+Pozn.: Toto není přesné znění otázek.
+
+1) Vypočtěte indukčnost a charakteristickou impedanci koaxiálního kabelu s danými vlastnostmi
+2) Napište rozdělení IP adres na jednotlivé třídy
+3) a) Napište nezkrácenou verzi dané IPv6 adresy
+   b) Co je AWG?
+   c) Co je LANE v ATM?
+   d) Jaký formát má ethernet address?
+4) Uveďte jednotlivé verze Fast Ethernetu, jaké médium vyžadují, kde se používají
+5) Je dán bitový vzorek. Zakódujte ho metodou používanou v síti a) Ethernet; b) Token Ring
+6) Nakreslete schematické zapojení transceiverů daných typů v síti FDDI
+7) Načrtněte šíření signálu optickým kabelem typu 
+   a) single-mode 
+   b) multi-mode graded index
+   c) multi-mode step index
+8) Popište VLAN, jaké jsou typy atd.

@@ -1,0 +1,6 @@
+1. RTS/CTS protokoly + problem se skrytymi terminaly
+2. ADSL
+3. priklad na shannona
+4. priklad na rychlost ramce
+5. hds3 zakodovat
+6. Proc u Go/Back/N ma 2^m -1

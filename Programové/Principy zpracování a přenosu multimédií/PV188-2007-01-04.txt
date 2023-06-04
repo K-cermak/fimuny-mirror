@@ -1,0 +1,16 @@
+PV188              4.1.2007
+
+10 otazek, 100 bodu celkem, na nektere otazky bylo 8, nektere 10,12 a 14 bodu.
+
+1. Co je vstupni pupila a kde se pouziva
+2. Co je smerova charakteristika a kde se pouziva
+3. Co jsou XLR konektory a jake jsou jeich vyhody...
+4. Jaky je rozdil mezi jednocipovou a tricipovou kamerou? Porovnejte jejich kvalitu
+5. K jakym chybam muze dojit pri prevodu audio signalu na digitalni signal?
+6. Co je to Motion Vector a popiste ho (otazka za 14 bodu)
+7. Pouziti protokolu TCP a UDP pri prenosu multimedii a jejich vyhody a nevyhody
+8. Co je to SMIL a popiste zakladni vlastnosti jazyka
+9. KDe a jak se pouziva VBR pri prenosu multimedialnich dat
+10.Jake jsou vyhody a nevyhody videa v komprimovanem formatu?
+
+GOOD LUCK vam preje vas Maerius Drvostep!!!

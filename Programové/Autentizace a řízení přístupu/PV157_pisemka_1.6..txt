@@ -1,0 +1,97 @@
+1.Co je to elektronická znaèka
+*Technologicky toté co zaruèenı elektronickı podpis
+Ovìøení elektronické znaèky je obtínìjší ne ovìøení elektronického podpisu
+*Liší se od elektronického podpisu jen reimem pouití soukromého klíèe
+*Elektronická znaèka je ke zprávì pøipojena tak, e je moné detekovat následné zmìny ve zprávì
+
+2.Forenzní øešení biometrik popisují tyto vıroky
+*cena je vysoká, ale s tím se poèítá.
+vısledek autentizace je získán obvykle za 1s èi rychleji.
+miniaturizace zaøízení je jedním z hlavním cílù.
+*pro pouívání je nutná odborná znalost systému.
+
+3.Vhodná tajná informace pro autentizaci je
+*Fráze (passphrase)
+Rodné pøíjmení matky
+*Heslo
+*PIN
+Tel. èíslo, pokud není uvedeno ve Zlatıch stránkách
+
+4.Biometrické technologie mohou bıt zaloeny na nìkterém z tìchto typù charakteristik:
+*behaviorální
+chemoterapickı
+morální
+*fyziologickı
+environmentální
+
+5.Co je to narozeninovı paradox?
+Pravdìpodobnost nalezení stejného data narození k pevnì zvolenému datu je pøi 23 lidech vìtší ne 50 %
+Situace, kdy se zaèátkem rokù rodí víc muù ne en
+*Statisticky podloená vysoká úspìšnost nalezení kolize
+*V sále s 23 lidmi je pravdìpodobnost stejného data narození dvou lidí vìtší ne 50 %
+
+6.Detekcí narušení se u èipovıch karet myslí:
+*Vlastnost èásti systému umoòující detekovat fyzickı útok.
+Odolnost proti pokusùm o zjištìní robustnosti vùèi fyzickım útokùm.
+Pøi zjištìní narušení je automaticky provedena chránìnou èásti obranná akce.
+Po narušení jsou stopy narušení obtínì odstranitelné.
+
+7.Kadá z dvou komunikujících stran má svùj symetrickı klíè. Kolik zpráv se vymìní ve Shamirovì protokolu bez klíèù, aby obì strany sdílely stejnı klíè?
+ádná z tìchto odpovìdi není správná
+2
+*3
+4
+
+8.Které z uvedenıch moností zajišuje protokol IPsec?
+*Podporu správy klíèù.
+Nepopiratelnost pøijetí dat.
+*Autentizace a integrita pùvodu dat.
+*Dùvìrnost dat, ochrana proti útoku pøehráním.
+
+9.Mezi vlastnosti (axiomy) modelu Bell-LaPadula patøí
+*procesy nesmìjí zapisovat data do niší úrovnì
+procesy nesmìjí èíst data z niší úrovnì
+*procesy nesmìjí èíst data na vyšší úrovni
+
+10.Jaká jsou platná tvrzení pro aktivní autentizaci elektronickıch pasù?
+*Soukromı klíè je uloen v èipu, bez monosti jeho pøímého získání
+Veøejnı klíè je uloen ve èteèce el. pasù a je digitálnì podepsán
+Pro autentizaci je pouit zero-knowledge protokol (Fiat-Shamir), kterı zároveò ovìøí, zda má pas dispozici soukromı klíè
+Protokol vızva-odpovìï lze pouít pouze pokud èip neumoòuje efektivní implementaci zero-knowledge protokolu
+
+11.Z hlediska lidské pamìti je vhodné volit
+*Sloitá, ale snadno zapamatovatelná hesla
+*Jednoduchá a jednoduše zapamatovatelná hesla
+Obtínì zapamatovatelná hesla a kadı mìsíc nutit uivatele ke zmìnì
+*Hesla zaloená na frázích
+
+12.Pro autentizaci obrazovou informací platí
+Uivatel musí systému slovnì popsat obrázek slouící k autentizaci
+*Uivatel musí vybrat správnı obrázek nebo jeho èást
+Uivatel musí do systému nahrát správnı obrázek
+Uivatel musí správnì vybarvit pøedloenı obrázek
+
+13.Digitální podpis mùe vytvoøit
+Pouze osoba vlastnící veøejnı klíè
+*Pouze osoba vlastnící soukromı klíè
+Pouze osoba vlastnící certifikovanı klíè
+Pouze osoba vlastnící sdílenı klíè
+
+14.V souèasnıch SIM (Subscriber Identity Module) kartách pro GSM sítì je uloen:
+Statická aplikaèní data a veøejnı certifikát operátora
+*Symetrickı klíè
+Asymetrickı klíè
+Statická aplikaèní data podepsána soukromım klíèem karty
+
+15.Pro vztah øízení pøístupu a autentizace platí:
+øízení pøístupu je obvyklou podmínkou pro autentizaci
+*autentizace je obvyklou podmínkou pro øízení pøístupu
+jde o ekvivalentní termíny
+jedná se o dva naprosto nesouvisející pojmy
+
+16.K prvkùm hardwarové podpory øízení pøístupu patøí napø.
+randomizace adres haldy (heap), na kterıch se alokují dynamické promìnné bìících programù
+*zákaz pøístupu všem procesùm kromì OS do adres pamìti niších ne jistá hranice (tzv. fence address)
+*existence nìkolika úrovní oprávnìní (tzv. rings) definujících pøístupnost rùznıch registrù a strojovıch instrukcí programovému kódu
+tzv. zero address: pokud se proces pokusí pøistupovat k nulové adrese, co bıvá známkou chyby, je násilnì zastaven
+tzv. poštovní adresování: pamì je rozdìlena na oblasti, aby OS mohl chránit pamì kontrolovou znalosti tajného PSÈ (tzv. ZIP code)

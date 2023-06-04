@@ -1,0 +1,79 @@
+1. Mam zlozku Sultan, v nej mam subory harem1.txt a harem2.txt, dalej v nej mam nejake podzlozky a v nich nejake dalsie subory, chceme uzivatelovi pridat opravnenie iba k suborom harem1.txt a harem2.txt a vsetkych dalsim, ktore sa nahraju o zlozky Sultan, ale nie do zloziek a ani podzloziek ani suborom v tychto podzlozkach
+
+a/ pridat prava (This folder only) so zaskrtnutym checkboxom "Only apply these permissions to objects and/or containers within this container"
+b/ pridat prava (This folder only)
+c/ pridat prava (Subfolders and files only) so zaskrtnutym checkboxom "Only apply these permissions to objects and/or containers within this container"
+d/ pridat prava (Subfolders and files only)
+
+Spravne: a
+
+2. Aky je rozdiel medzi CREATOR OWNER a OWNER RIGHTS
+
+a/ ziadny, funckce je stejna
+b/ pomocou CREATOR OWNER je mozne obmedzit implicitne DACL opravnenie vlastnika objektu, teda odobrat mu opravnenie menit opravnenia
+c/ CREATOR OWNER je mozne aplikovat iba na zlozky
+d/ ziadna z uvedenych moznosti
+
+Spravne: c
+
+3. Mame uzivatela xtest, nema pristup k nejakej zlozke a ma *explicitne* opravnenia - uloha s pravom Everyone: Write Deny. Tu je nutne si dat pozor na to, ci su opravnenia explicitne alebo zdedene, teda explicitny Write Deny sa nedal prebyt ziadnou moznostou.
+
+4. Edice N, co to je:
+
+nieco na sposob neobsahuje kodeky (bolo to velmi zle formulovane), ta edicia neobsahuje Windows Media Player
+
+5. Access token uzivatela obsahuje mimo ine:
+
+a/ jeho vlastne SID, SID skupin, ktorych je clenom, a prava urcena tomuto uzivatelovi
+b/ heslo uzivatela chranene pomocou syskey
+c/ obsahuje hash hesla
+d/ ziadna spravne
+
+Spravne: a 
+
+6. Uzivatel je clenom nejakej skupiny a chce aby sa mu program spustal vzdy s pravami administratora (so zobrazenim a potvrdenim UAC dialogu)
+
+a/ digitalne podpise
+b/ prida cestu k programu do nejakej sekcie UACSafeLocations
+c/ nastavi integrity level na low
+d/ vytvori manifest k suboru
+e/ ziadna spravne
+
+Spravne: d
+
+7. Mam 3 sluzby - S1 automatic, zavisla na S3; S3 automatic delay, S2 disabled, zavisla na S3
+
+a/ vsetky 3 sa spustia
+b/ ani jedna sa nespusti
+c/ bude spustena iba S1
+d/ bude spustena iba S1 a S2
+e/ sluzba S3 nebude spustena *ihned* po starte ale az o nieco pozdejsie
+f/ ziadna odpoved nie je spravne
+
+Spravne: f
+
+S3 sa spusti kvoli zavislosti S1 hned
+
+8. Administrator vytvoril nejaku zlozku a v nej subor na ktory vytvoril hard link, ktory premiestnil na iny disk
+
+a/ pokial sa zmaze hard link dojde k zmazaniu povodneho suboru 
+b/ pokial sa zmaze povodny subor zmaze sa aj hard link
+c/ hard link bude mozne otvorit a bdue odkazovat na povodny subor
+d/ ziadna nie je spravne
+
+Spravne: d
+
+c/ nebude pretoze hard link na novom disku vytvori novy subor, ked premiestnujeme vramci inej jednotky vznika novy objekt, t. j. dedi opravnenia cieloveho kontajneru
+
+9. powershell - mame $var1 = 10, $var2 = 20, co sa stane pri $var1, $var2 = $var2, $var1 ?
+
+a/ chyba
+b/ prehodia sa hodnoty
+c/ vypisu sa hodnoty
+d/ ziadna nie je spravne
+
+Spravne: b
+
+Zvysok nanestastie nie je k dispozicii. Dufam, ze aspon to nieco pomoze ;)
+
+Odporucam neucit sa otazky na spamat, skor sa naucit princip ako funguju. Vacsinou sa opakuju tie iste typy otazok s obmenami, cize poriadne citat na co sa vlastne pytaju.

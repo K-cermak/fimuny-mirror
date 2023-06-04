@@ -1,0 +1,1057 @@
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-09-21
+zapsal Marek Blahuš (učo 172464)
+
+http://www.phil.muni.cz/elf/, resp. http://www.phil.muni.cz/elf/course/view.php?id=235
+heslo = kód předmětu = PV122
+ELF@MU = Moodle :o)
+Témata hodin: viz http://en.wikipedia.org/wiki/Linguistics :-D
+
+2 jazyky cs - posun 300 let, morfologický rozdíl, neobvyklý jev, důvod problémů
+plech -ách (6. pád pl.)
+těma samejma rukama -> těma samýma rukama
+"ten samý" - ještě v 50. letech to považovali za germanismus; vs. "tentýž" (v obecném jazyce není)
+- obecná čeština _má_ člen ("_ten_ sešit, co mi dal _ten_ kluk v _tý_ menze")
+týmaž rukama ... spisovně
+obecná čeština nezná rod v množném čísle (města byly, holky byly...)
+Novinky: psaný jazyk se stal pro lidi běžným, ale píše se obecný jazyk, ne ten spisovný
+- obzvl. kvůli vlivu internetu, který je psaný, ale nijak regulovaný do spisovnosti jako třeba noviny
+v Řecku v 70. létech stanovili obecný jazyk za spisovný, ale nepřijala ho věda, církev, armáda, legislativa... (novořečtina)
+v Norsku: bokmål je skoro stejný s dánštinou, nynorsk je obecný
+takový problém neexistuje ani v např. en, sk - tam jsou rozdíly jen stylistika
+zjednodušeně: písemné formy všech jazyků jsou jazyky umělé
+zápis jazyka lze změnit, mluvený jazyk lze pouze pozorovat
+vysvětlení pozůstatku duálu ("oběma ušima") je snadné člověku, ale počítači to lze jen jako seznam výjimek
+Příště: sémiotika, vztah forma-myšlení
+jazyk není komunikace ani myšlenek, ani informací - jsou to jen jakési mezilidské "dotyky"
+"Dobrý den" nepřenáší nic o dnu ani dobrotě, ale je to signál pozornosti a respektu
+jazyk může také nepřenášet informace, ale generovat stavy ("Slibuji" je úplně jiné od ostatních tvarů tohoto slovesa, navíc se uznává většinou jen mluvené)
+překládat se dá pouze komunikát, nikoliv _slovo_
+1 české slovo lze jinde vyjádřit jako více slov (zh...), v jiných jazycích naopak není slova bez toho, aby to současně byla věta (inuitské jazyky...)
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-10-05
+zapsal Marek Blahuš (učo 172464)
+
+Téma: SÉMIOTIKA
+http://www.aber.ac.uk/media/Documents/S4B/sem02.html
+
+Znak = ???
+
+Není jediný přirozený jazyk, jehož základem by bylo něco grafického.
+Grafika se k přirozeným jazykům buďto nepřipojí vůbec nikdy, nebo připojí jako nosič jejich velmi specifické formy dle umělé konvence.
+
+Znak = označující (signifiant) + označované (signifié)    [fr: siňifjan, siňifjé]
+
+Termín nemá s přirozeným slovem téměř nic společného.
+Pojem "psa" takový, jaký je zaveden v zoologických příručkách, se slovem "pes" prakticky nesouvisí.
+Označování od normálních lidí a od vědců má jen jistý průnik.
+Vědci si dovolují sahat do přirozeného jazyka a vypůjčovat si z něj slova, které pak dávají jako nálepky svým přesně stanoveným věcem.
+Díky tomu pak dochází často k nedorozuměním.
+
+Přes triádu se nakonec dostáváme až ke čtveřici - příklad s psem:
+
+vyslovené [pes] se vyslovuje různě a je třeba mu přiřadit správně výraz "pes"
+Pokud není v jazyku intenzivní vliv zápisu, je takovéto rozlišení tím obtížnější.
+
+Výraz "pes" je jistým způsobem vázán na pojem psa, a ten pak jako poslední vázán na psa jako objekt.
+
+Tedy:
+
+            |
+pojem pes <--- výraz "pes"  ...... myšlení
+   |        |      ^
+-- | -------+----- | ----
+   v        |      |
+objekt pes  |    [pes]      ...... přirozený svět
+            |
+ oblast         oblast
+zkušenostní    jazyková
+
+Způsob vnímání objektů je velmi silně vázaný na to, jak funguje jazyk.
+Takže způsob, jakým mluvčí vnímá realitu, je ovlivněn tím, jaký používá jazyk.     [Sappir-Whorf ??? :o)]
+
+Při zavedení pojmu vodníka není problém uvádět fyzické rysy, ačkoliv skutečná fyzická realizace neexistuje.
+Tam spadá i celá terminologie náboženská v každém náboženství, nebo v politice :o)
+
+Zajímavý je vliv počtu pojmů na způsob myšlení.
+V jazyce neslyšících je nízký počet pojmů (max. 1000 v ČZJ).
+Znakující dítě má problém vnímat matematiku nebo se doučit český jazyk.
+Proto je zapotřebí trvale trénovat proces "<---", aby se zahušťovala sféra vlevo.
+
+Barvy jsou v jazycích velmi různé [viz toki pona].
+Je doložen v praxi polynéský jazyk operující s dvěma barvami.
+Více barev prostě v té konkrétní situaci není považováno za nutné.
+Evropské jazyky se rozcházejí v oblasti modré.
+
+Když se dva lidé třeba i shodnou na nějakém výrazu, tak pak se ještě můžou rozejít, protože mají ve skutečnosti každý svůj pojem trochu jiný.
+
+Různé druhy označujících:
+(Symbol se právě definuje jako jeden z typů znaku, proto jsme se předtím bránili jeho použití v definici znaku.)
+- symbol
+  = z hlediska sémiotiky znak nejčistší
+  = panuje arbitrární vztah mezi označujícím a označovaným
+    - samotným pozorováním nelze dospět k identifikaci označovaného
+    - jediným způsobem, jak se o označoveném poučit, je být poučen ("_to_ znamená _to_")
+  - příklad: výkřičník v trojúhelníku
+- ikona = tady už se používá realita k označování jiné reality
+  - příklad: hlava Shakespeara jako ikona spisovatele
+- index = vztah je jiný než na základě podobnosti, ale je kauzální
+  = přítomnost určitého rysu je zkušenostně vztahována k určitému jevu, protože se běžně oba doprovázejí
+  - příklad: stopa v písku je vždy přítomná po chůzi v něm ... takže to je spojeno buď obecně s "přítomností člověka", nebo jeho "chůzí"
+Mezi těmito ale existuje kontinualita.
+Příklad kombinace ikoničnosti a symboličnosti: panáček na dveřích pánských toalet
+Nevidomý si při nahmatání takového objektu (silueta postavička) tento vůbec nespojuje s člověkem ("vidím tři čáry - stůl?" :o)
+Velmi zajímavé je také kreslení slunce, domu, plotu apod. - rodiče jednou ukázali, že to "se tak dělá" - nikdo nekreslí to, co kolem sebe skutečně vidí.
+Vůbec nemluvě o nějakých takovýchto prasátkách :-D
+
+      _____________o_o_o_
+    /|           |
+   / |           |
+  <  |           |
+   \ |           |
+    \|___________|
+    /\          /\
+   /  \        /  \
+  /    \      /    \
+
+Opaky:
+digitální <-> analogický [ačkoliv spíš analogový]
+arbitrární <-> motivovaný
+konvenční <-> přirozený
+
+Jestliže si zavedu pět nosičů a budu rozlišovat přesně pět nosičů, pak je to přenos digitální. [ačkoliv to je vlastně "diskrétní"]
+Když se usměju a pozoruju ten výraz tváře, tak je to přenos analogický.
+Jednoduchý příklad: analogové hodiny dávají informaci o proporci, digitální naopak přesnou
+
+Každý zapisovaný jazyk je automaticky digitální.
+Přirozený jazyk je směsí analogického a digitálního systému.
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-10-12
+zapsal Andrej Herich (učo 207392)
+
+Fonetika
+ - zvukova rovina
+
+ zvuk - vseobecny fyzikalny pojem
+  ton - harmonicky
+  sum - neharmonicky
+
+ hlaska (fon) - ton alebo sum, ktory moze vydat a registrovat clovek
+  spoluhlasky (konsonanty) - neharmonicke; neznele - cisto sumove
+  samohlasky (vokaly) - harmonicke
+
+<tabulka konsonantov, da sa najst v studijnych materialoch v elfovi>
+
+<tabulka vokalov, da sa najst v studijnych materialoch v elfovi>
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-10-19
+zapsal Marek Blahuš (učo 172464)
+
+Téma: Dokončení kapitoly "Fonetika, fonologie"
+
+"obvod budovy"
+"obvod kanceláře"
+"obvod města"
+
+Kritéria pro hlásky (=fóny):
+- vokál
+  - přední / střední / zadní
+  - otevřený / střední / uzavřený
+- konsonant<s>(a)</s> (ale frikativ_a_ ktp.)
+  - explozíva (nedají se libovolně protahovat)
+    - labiála / dentála / palatála / velára / laringála (podle artikulačního místa)
+    - znělá / neznělá (podle dalšího artikulačního způsobu)
+  - frikativa (dají se libovolně protahovat)
+    - labiála / dentála / palatála / velára / laringála (podle artikulačního místa)
+    - znělá / neznělá (podle dalšího artikulačního způsobu)
+
+Přízvuky rozslišujeme:
+- primární
+- sekundární
+
+' ... primární přízvuk
+ráz ... konsonant - explozíva - laringála, neznělá
+o ... vokál - zadní - polouzavřený
+b ... konsonant - explozíva - bilabiální, znělá
+...
+d ... konsonant - explozíva - dentální, znělá
+' ... primární přízvuk - není tam žádná pauza, ani žádný další zvuk - "b" a "d" bezprostředně navazují, "u" je posíleno přízvukem
+b ... konsonant - explozíva - retní, znělá
+...
+i ... vokál - přední - uzavřená
+
+t ... konsonant - explozíva - dentální, neznělá
+' ... primární přízvuk
+k ... konsonant - explozíva - velára, neznělá
+antsela:ře
+
+t ... konsonant - explozíva - dentální, neznělá
+' ... primární přízvuk
+m ... konsonant - frikatíva - nazální, retná, znělá
+ň ... konsonant - frikatíva - palatální, nazální
+esta
+
+Dochází ke zvláštnímu jevu, že ve skupině "tm" zůstává dvojice neznělá-znělá ... protože neexistuje neznělé "m".
+
+Absolutní konec promluvy - před dlouhou pauzou - má vždy na konci neznělou.
+
+Zajímavost: četba "očima" je poměrně nový fenomén (vzniklo koncem antiky, ve středověku zaniklo, obnovilo se zase až v renezanci)
+Prelingvální neslyšící člověk se nevyrovná s napsaným textem ("...já mu to napíšu - nenapíšeš!...")
+Zajímavost: jazykem vědy v celém antickém Římě byla řečtina, takže i analýzy latiny dělali jako primární mluvčí řečtiny ovlivnění řečtinou
+
+"vůz mého dědečka"
+['vu:s,me:ho'ďedetška]
+     ^^^ opět zůstává neznělá-znělá
+(přízvuk na "me:ho" není - využívá přízvuku předchozího slova)
+
+"od mého dědečka"
+['od,me:ho...]
+... v tomto případě znělá, ale samostatně "od", nebo "od tchána", je neznělá
+
+Závěr: Z hlediska fonetického "vu:s(,)me:ho" i "od(,)me:ho" jedno slovo - není tam žádný předěl.
+       Rozdíl je tedy jen ve spodobě. Tento předěl právě spadá na rovinu fonologickou, nikoliv fonetickou.
+
+Každopádně:
+"pouze" [po[^u]ze]
+"poučený" [poutšeni:]
+U "poučený" nebo "neuvěřitelný" taky pociťujeme předěl, takže by to taky měly být dvě jednotky :o)
+
+A ještě jeden zajímavý jev:
+"přes to přese všechno"
+           [z]
+Tohle je omyl v češtině :o) ... správně by mělo být "přez", což se i ukazuje v "přeze" a je to tak i ve všech jiných slovanských jazycích
+
+"neutron" [ne-u-tron]
+Je to další omyl (v němčině je "noj-trál"). Důvodem je existence masového "ne" v češtině, po kterém nastává pociťovaný předěl.
+
+"Bystrouška" == "Bystro-uška" :o) ... bystré uši
+
+^^^ AŽ PODSUD TOHLE VŠECHNO (s výjimkou toho pociťovaného předělu) SE TÝKA FONETICKÉ STRÁNKY JAZYKA ^^^
+
+-----
+
+FONOLOGIE:
+
+"to bych byl rád"  ... znělé "ch"
+"to bych tomu dal" ... neznělé "ch"
+    ---------
+
+znělé a neznělé "ch" nelze rozlišovat před či za tou samou hláskou - jsou ovlivňované pouze konkrétní pozicí (viz příklad)
+[neznělé "ch" je neznělá varianta jak znělého "ch", tak znělého "h"]
+
+Toto popsané nahoře je základem fonologického systému - tj. základ pro definici fonému - že nemá jinou funkci a prostě je tam někdy právě on, někdy právě něco jiného.
+
+Zavede se pojem "komplementární distribuce jevu", tj. že neexistuje kontext, ve kterém by se vyskytovala jak hláska A, tak hláska B.
+Pokud ta je splněna, jsou obě hlásky používány jako varianty téhož fonému, a nikoliv jako dva samostatné fonémy.
+V tomto okamžiku už opouštíme celou fonetiku, protože na tom už se nedá nic měřit...
+
+Jako opak komplementární distribuce stojí rozdílnost - nalezneme "minimální pár", ve kterém nese tento rozdíl význam.
+Např. u [obvod] a [obvot] je jednoduché ho najít - např. slova "do" a "to", které prokazatelně znamenají dvě různé věci.
+
+Minimální páry pro "o:"/"o" v češtině:
+- chor (od "chorý") x chór
+- bor x bór (chem. prvek)
+Což je už dost pochybné.
+
+Problémy příliš systematického zkoumání tohoto typu jsou:
+- obtížnost prohledávání množiny při hledání minimálního páru a opírání se často o okrajové záležitosti jazyka (viz př. výše)
+- slova stejně znějící, ale jiného významu
+
+Přesto se ale ukazuje, že není třeba se opírat o rozdíly fonetické, ale jen o fonologické (např. existence dvou "ch" se vůbec na školách běžně nezmiňuje).
+
+Závorky:
+[hranaté] - fonetická transkripce
+/šikmé/ - fonologická transkripce
+
+Distinktivní rys = rozdíl v tom, že se v daném systému používá určitého fonetického rysu pro rozlišování významů = fonologičnost (tj. např. kvantita samohlásek v češtině je distinktivní, ale v mnoha jiných jazycích ne)
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-10-26
+zapsal Marek Blahuš (učo 172464)
+
+fonetika:  fón
+fonologie: foném
+
+distinktivní rys
+minimální pár
+alofon
+
+(
+Rozdíl mezi [d] a [t] v "obvod" není distinktivní, protože to nerozlišuje žádné významy.
+Obecně ale [d] a [t] distinktivní být mohou.
+)
+
+nosové "n" není foném - mezi "n" a nosovým "n" je pouze kontextový rozdíl
+ráz není foném - objevuje se striktně pouze pokud chceme realizovat samohlásku po pauze
+
+dž, dz x tš, ts
+
+pro důkaz např. toho, že "ts" je foném, je třeba ukázat, že se liší i od "t s"
+
+minimální pár pro dž: džem x čem
+"dz" je v čestině pouhý alofon, např. v "moc bych přál"
+
+Pokud nemáme v úmyslu citovat výpověď rodilého mluvčího, není korektní používat cizí fonémy ve slově cizího jazyka ve svém jazyce.
+Washington -> [vošingt(o)n]
+
+Složitější je např. "Word", kde žádná z jeho tří hlásek nemůže (nebo konkrétně v dané pozici) být v češtině.
+-> V__t ... na Moravě "vort", v Čechách "verd" (projevil se tam vliv dialektů)
+
+Italština je příkladem jazyka, který má ve slabice vždy po jednom konsonantu vokál.
+
+Vznik sykavek: ki -> ti -> či, ši...   Proto se pak při převodech často "š" převádí právě na "ki"
+
+Lze sledovat systémy z hlediska stabilnosti (a tedy předpokládaného budoucího vývoje) - stálost vazeb.
+Např. v češtině g<->k není dost silná (z historických důvodů), takže máme např. tendenci grog [grok] -> groček, ačkoliv by mělo být grožek
+
+== fonologická slabika ==
+
+slabika = onset + nucleus + coda
+
+slabičný vzorec pro češtinu: O1-4 N1-2 C1-3
+
+nucleus je zásadně vokalický prvek, protože zaručuje artikulovatelnost slabiky
+coda jsou konsonantické prvky
+
+vzorec pro češtinu podmiňuje katastrofičnost psychologického vlivu:
+- vzkv|é|st, vztl|a|k, vstř|í|c => O4   ("vz" dřív mělo uprostřed souhlásku)
+- z|á|bst, p|o|mst => C3
+
+== suprasegmentární foném ==
+- vzniká modifikací fonémické řady (ale ne vkládáním nového prvku)
+
+Roli hraje i intonace - např. české mluvčí angličtiny lze na dálku poznat podle české intonace.
+
+_melodém_ = intonační vzorec
+
+V češtině melodémy:
+- klesavý - oznamovací věty: "Udělal velmi mnoho práce" ... \
+- stoupavý - zjišťovací otázky [Čechy]: "Půjdeš na zahradu?" ... /
+- stoupavě klesavý - zjišťovací otázky [Morava]: "Půjdeš na zahradu?" ... /\
+Přitom tato pravidla není možné přenášet mezi jazyky!
+
+Pro chlubení či jiné zdůraznění to lze různě modifikovat, např. zdůraznit nějaké konkrétní slovo, nebo třeba i každé zvlášť.
+
+Tento rys je fonologický - ať už u nás, nebo tím víc v orientálních jazycích (zh).
+
+Z jazyků v našem okolí má zbytky fonologických intonací u slov ještě chorvatština.
+V klasické řečtině se to sice zapisuje, ale nepoužívá - vzniklo to tam až tehdy, když se začalo povědomí ztrácet, aby se ve školách vědělo, jak to správně má znít.
+
+Kromě toho existují v jazyce tři typy předělů = pauz:
+
+# ... předěl absolutní ... na začátku a na konci promluvy - při kultivované řeči (vzácná) splývá s předělem věty
++ ... předěl externí
+= ... předěl interní
+
+>>> To bych mu přál, aby uspěl. <<<
+   ['tobixmu'pɼa:l,?abi'?uspjel] ... fonetický přepis (IPA)
+   /#to=bix=mu+přál+abi=uspjel#/ ... fonologický přepis (často pomocí abecedy jazyka samotného, jen s některými konvencemi)
+
+"já bych mu to tam byl dal" ... tvoří v češtině jeden celek, je velmi obtížné vysvětlit to konkrétní pořadí
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-11-02
+zapsal Marek Blahuš (učo 172464)
+
+Fonetika - Fonologie
+Langue - Parole
+
+parole ("reč", "promluva") - to, co je smyslově vnímatelné, registrovatelné fyzikálně; nezávislé na systému
+langue ("jazyk", "jazykový systém") - soustava pravidel, která umožňuje generovat formu promluvy (to je ten "automat")
+
+fonetika - zvukově analyzuje promluvy
+fonologie - systém znaků nezávislý na konkrétních jednotlivých promluvách a myšlený jako teoretická koncepce primárně uložená v každém komunikujícím jedinci
+
+"Řešení":
+Langue ~ Fonologie
+Parole ~ Fonetika
+
+Ještě k minulému - můj dotaz - odpověď: Minimální pár se liší jen v jednom rysu a v jednom místě.
+
+Q: Je foném znak?
+A: Ano (má dvě složky - označující /zvuková podoba/, i označované /"být sebou", "být jiný" :-D /).
+   Ale je to na samé hraně - je to totiž ten nejabstraktnější případ.
+
+== MORFOLOGIE ==
+
+Překlad slovo - slovo je naivní, ale spousta lidí má takovou tendenci.
+
+>>> učitelským <<<
+
+se při analýze nedá brát jako celek - je třeba jej podrobit morfologické analýze, minimálně takto:
+
+>>> uč|i|tel|sk|ým <<<
+
+Jediná jednotka s jasným významem je:
+"uč" (resp. "uk") - je to něco se "znalostmi" (nic dalšího není dost obecné - srov. "nauka")
+Další:
+"i" - způsobit, dělat    [tedy "uč|i" = dělat znalosti]
+"tel" - ten, který systematicky nebo profesionálně něco provádí (-ist [eo] ;-)    [dosud: muž, který způsobuje, že někdo znát]
+"sk" - vlastnost    [dosud: typický pro člověka, který profesionálně dělá, že někdo zná]
+Poslední už zase jen nějaké formální účely:
+"ým" - pomáhá "lovit v syntaktickém moři" prvky, na které se to vážě (je to takový "háček")
+     - jeho význam se nám už rozpadá:
+  a) sg. m./n. instrumentál
+  b) pl. dativ
+
+Očekávání, že pro něco tak velmi speciálního bude v jiném jazyku existovat jako už předchystaný prefabrikát, je více než pošetilé - to by se jinak nejednalo o dva různé jazyky, ale o ten samý jazyk.
+
+Poučení:
+- pojem slova je z lingv. hlediska špatně uchopitelný (při přechodu mezi přir. jazyky se to mění)
+
+V dokumentech je rozbor "těmi nejneuvěřitelnějšími":
+- starý indoevropský kořen "t" (v "těmi") má jakýsi historický význam lexikálního charakteru - pochází to ze samotného přirozeného doprovodu fyzického ukázání
+
+Při příležitosti poučování o abstraktních kategoriích jako jsou tyto se k tomu současně přidává skrytě i výuka toho umělého "spisovného" jazyka.
+Takhle se dřív velmi dlouho tradičně učilo (např. mrtvá latina - oprostěná o možnosti skutečného použití se zaměřuje na zkoumání systému).
+
+Dnes se přechází při výuce jazyků spíše na přímou konverzační metodu, která sice dosáhne rychleji nějakého konkrétního praktického cíle, ale člověk je ochuzen o bližší poznání systému, což možná není úplně dobře.
+
+=== Jazyky analytické & Jazyky syntetické ===
+http://en.wikipedia.org/wiki/Morphological_typology
+
+[Toto dělení je důležité si zapamovat:]
+
+Syntetické
+- aglutinační - např. hu, eo ;-) [http://eo.wikipedia.org/wiki/Aglutina_karaktero_de_Esperanto]
+- flexivní (=fusional, inflexive) - např. cs
+- polysyntetické - rámec např. ze slovesa - např. inuitské jazyky
+
+Analytické
+- druhý pól
+
+- cs ... výrazně flexivní
+vs.
+- en ... umírněně analytický typ (v oblasti indevr. jazyků je největší kandidát na prohlášení za analytický) 
+     ... jako původně indevr. jazyk byla samozřejmě původně flexivní, ale to tam velmi násilně téměř zaniklo
+
+>>> udělal jsem <<<
+Stalo se už vypuštění toho "jsem" ve třetí osobě (původně "udělal jest").
+To pak brání tomu, aby se to samé udělalo u dalších osob.
+Proto je pravděpodobné, že se to časem spojí a vznikne z toho koncovka (v pl už "robiłiśte") atd.
+Takto vznikly i všechny slovesné koncovky románských jazyků (z tvaru latinského slovesa "být").
+
+[cs] "udělaný" = [eo] "farinta" / "farita" ?
+- ([eo] farinta = [cs] udělach ;o)
+- tedy např. "jsem udělach" (to ještě u Husa bylo základní a "udělal jsem" byl vulgarismus)
+- ale už pak na úrovni Jana Blahoslava ty už staré tvary uměl málokdo používat
+
+---
+
+Některé jazyky nedokáží svým systémem vyjádřit jen vybrané skupiny rysů, ale často jen několik současně
+- nelze tedy často mluvit úplně "politicky korektně"
+
+Při vývoji jazyků se ze všech možných tříd, do kterých bylo možné objekty rozdělit, některé vybíraly a ty se stávaly gramatickými rysy.
+
+Ve všech starých jazycích se za ženský rod se pokládá všechno sloužící k označování zemí, měst, rostlin... ("plození"; "město" je analogií k "zemi" - městské státy)
+Kniha, Bible, to se přenáší rodově z rostlin, ze kterých byl jejich papír vyráběn.
+
+Význam gramatického rodu je často dnes už jen další vazba mezi slovy (jako koncovky apod.).
+Přesto příležitostně a účelově se dá zahrát na tu prehistorickou strunu (a to pak dělá potíže při překladu takových textů).
+Příkladem jsou dětské texty ke spojení "(il) Paris" a "(la) Seine" - česky shodou náhod obojí ženského rodu ;)
+
+V dokumentech je přehled všech běžných gramatických kategorií, včetně jejich původu.
+Je zajímavé, že např. číslo u sloves nemá žádný sémantický význam, slouží pouze k navázání na jiné části promluvy (jako koncovky apod.).
+Určenost se ve spisovné češtině neurčuje, ale v obecné češtině už je. Záleží tedy na tom, o které češtině mluvíme. ;-)
+
+diateze = "slovesný rod"
+
+=== Rod ===
+3 - cs, de
+2 - es, fr
+1 - hu, (en)
+až cca 10 - velké, malé, božské, nebožské, živoucí...
+
+Nejvýraznější hrozba pro češtinu je zrušení přídavných jmen, resp. jeho poangličtění - bylo přijato příd. jméno "MP3" ("MP3 přehrávač").
+Analýzou dojdeme k tomu, že jazyk získává schopnost použít substantivum v roli přídavného jména.
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-11-09
+zapsal Andrej Herich (učo 207392)
+
+Morfologicke kategorie
+
+Cislo (numerus) - kvantifikator
+ - ak neexistuje vyjadruje sa cislovkou
+ - singular, dual, plural
+  sg.   mesto  sto
+  dual  meste  (dve)ste
+  pl.   mesta  (tri)sta
+  <!-- na e-ckach su makcene (hacky) -->
+
+Urcenost (determinacia)
+ - urceny, neurceny
+ - vyjadruje sa obvykle clenom
+
+Pad (casus)
+ - v povodne urcoval polohu a smer, popripade pohyb / nepohyb
+ - v druhej faze ziskava abstraktnu podobu
+ N - pomenovavaci pad
+ G - rodinne vztahy
+ D - darovanie
+ A - obvinovaci pad (acuse; povodne)
+ V - volanie
+ L - poloha na nejakom mieste
+ I - manipulacia s predmetmi
+ ablativ - vzdalovanie sa od miesta
+
+Osoba (persona)
+ - 3. os., 1. os. sg., 1. os. pl., 2. os sg., 2. os. pl., neosoba (v skutocnosti existuje v cestine/slovencine az 6 osob)
+ - vztah nositela deja k tomu, kto hovori (preto 'my' nie je kvantifikaciou 'ja')
+
+Cas (tempus)
+ <!-- v tomto mam vazne medzery a pritom to bolo take zaujimave -->
+ - vztahuje sa k skutocnemu casu relativne alebo absolutne
+
+  _relativne casy_  _absolutne casy_
+  predcasnost        minulost
+  sucasnost          pritomnost
+  naslednost         buducnost
+
+  kombinacie rel. a abs. casov
+  prezens
+  imperfektum
+  preteritum
+  perfektum - komentar k faktu v sucasnosti (ktory je vysledkom cinnosti v minulosti)
+  aorist - dej, ktory skoncil
+  plusquamperfektum - dej, ktory ovplyvnil udalost v minulosti
+  futurum
+  futurum exaktum - dej, ktory vznikne s predpokladanej udalosti
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-11-16
+zapsal Marek Blahuš (učo 172464)
+
+Celou minulou hodinu se probíraly morfologické kategorie.
+Jejich dokončení:
+
+opět viz [Typologie_gramatickych_kategorii.doc]
+
+== Diateze ==
+nevhodně "slovesný rod"
+
+třídění podle orientace slovesného děje - jestli činnost "vychází od subjektu nebo se k němu vrací"
+
+Dělení:
+- aktivum (činný rod)
+- pasivum (trpný rod)
+
+Nějaká akce má subjekt a objekt a záleží na tom, který z nich stavíme ve větě do pozice subjektu.
+
+Ještě jedna nová konstrukce:
+Medium
+- přímé
+- nepřímé - "si"
+Je to ale zbytková kategorie.
+Jediné, co stále v češtině systematicky prochází systémem, je pasivum.
+
+Slouží to pro zjednodušení výmluvy při změnách orientace - dá se tak držet subjekt:
+"Někdo vystoupil a byl kritizován, pokračoval a byl předmět kontroly, šel dál a nachladil se..." - není třeba pořád měnit subjekt
+
+== Modus ==
+
+- indikativ
+- imperativ
++ konjunktiv (v češtině se nahrazuje kondicionálem s opisováním /byl byste tak laskav a dostavil se/)
+- kondicionál
++ optativ (v některých jazycích - mírné zainteresování - "přál bych si, aby", "kdyby tak", "kéž by něco")
+
+Indikativ (ale není tak častý, jak by se zdálo): Rozlišit mezi dějmi prostě konstatovanými (výpověď mající charakter přenosu informací)
+
+U ostatních jde o vyjádření různé existence vůle - postupně:
+(indikativ) < konjunktiv < optativ                  < imperativ
+       dělá < udělal by  < kéž by udělal / ať udělá < udělej
+
+Imperativ - formálně nepřipouští žádný odpor a teoreticky by mělo ihned následovat naplnění
+
+V evropském kontextu téměř neexistuje jazyk, který by přímo toleroval ve vztazích k cizímu a nepodřízenému člověku používat přímo imperativ.
+Proto se kdykoliv jindy uchylujeme ke konstrukcím "Mohl byste prosím", "Byl byste tak laskav" apod. - a to i v češtině, kde na to neexistuje moc přímo určených způsobů.
+
+Toto byla primární funkce.
+Sekundární funkce je čistě gramatická - pokud už tyto formy existují, tak se téměř vždycky používá pro určení závislostí výpovědí (souslednost časová).
+
+Účel nelze v češtině formulovat bez kondicionálu ("aby...") => o účelu se uvažuje jako o nereálném ;-)
+
+== Vid ==
+(aspekt)
+
+- perfektum   = dokonalé   \_ vyjádření děje
+- imperfektum = nedokonalé /
+
+Není to natolik běžná kategorie mezi jazyky.
+Ale slovanské jazyky a speciálně čeština tomu dávají velkou důležitost.
+
+Není to jen triviální dvojice dokonavý - nedokonavý.
+
+[Vid.xls]:
+"strčím" - "strkám" - "strkávám"
+
+Podstata vůbec není v čase - ten je jen vedlejším produktem vlivu rodu.
+"Přítomný čas" totiž v češtině vůbec není jednoznačně vymezen
+- celá řada sloves, které mají vid dokonavý ("nemají žádné časové trvání"), nemůže být situovaná do současnosti (ta totiž předpokládá trvání)
+- věci, které jsou uzavřené, mohou pouze být jako že už proběhly, nebo že proběhnou
+- vid má přitom tak silný dopad na sloveso, že ho automaticky posouvá do roviny, kde je nejsnáze myslitelný
+- tj. prézent slovesa "strčit" je "strčím", kdy ale přestává být prézentem
+
+Zmatek, který to způsobuje cizincům, lze pro Čecha alespoň trochu ilustrovat např. nejednoznačnými slovesy:
+- "daruju", "slibuju" - pro Čecha se to řeší kontextem, ale cizinec to musí interpretovat, jestli to je prézens nebo futurum (ne gramaticky, ale sémanticky)
+
+"nesu" - "nosím" - "nosívám"
+
+Tam už se nám časy nepletou.
+Je třeba zavést parametr zvaný "aktuálnost" (zda z toho něco vyplývá pro aktuální okamžik) - plus nebo mínus
+"nosím" x "nosívám" - rozdílem je opakovanost = iterativnost
+"nesu" x "nosím" - aktuální x neaktuální
+                 - nebo ukončený x neukončený (u jiných sloves)
+
+Dokonavosti lze ve všech těchto příkladech dosáhnout připojením vhodné předpony ("přistrkám").
+
+Rozkaz v budoucím času - "přines" - využívá toho, že "při-" převádí k dokonavosti a dokonavost si vynucuje posun do budoucnosti.
+
+Kvantifikace děje "po malých dávkách": předpona "popo-", resp. "připo" - téměř ke všem slovesům
+Např. i "připozavřu" :)
+
+Poměrně rychle nám tu přechází kategorie gramatická (slovesný vid) na kategorii slovotvornou (nově vytvořená slovesa).
+Otázka pak je, jestli ty výsledky chápat jako samostatná slovesa, nebo pouze jiné tvary toho původního.
+Jak tedy rozlišit mezi slovotvorbou a gramatikou?
+
+---
+
+Od výrazu "knih(a)" lze vygenerovat 2x7=14 morfologických tvarů.
+Snaha o zpravidelnění gramatiky vede až k takovým násilným věcem, jako vymyšlení vokativu plurálu
+- není žádný jazyk, který by ho skutečně měl
+- proto se pokládá, že je vždycky stejný jako nominativ plurálu
+- zavádí se jen proto, že hezky sedí k vokativu singuláru
+Podobně ani v žádném indevr. jazyku není u neuter rozdíl mezi nominativem, akuzativem ani vokativem.
+
+Q: Kolik tvarů od "vidět" [pokud si zakážem změny vidu]?
+
+A:
+Prézent:
+- indikativ: 6 + 6 (změna diateze)
+- kondicionál: 12
+- imperativ: (3 + 3) 6
+Préteritum:
+- 24 (seshora, jen odpadne imperativ a zbytek zůstane)
+Futurum:
+- 12 (odpadne jak imperativ, tak kondicionál)
+Dále kategorie na pomezí slovesnosti a jmennosti:
+- přechodník (6 - 3 aktivní a 3 pasivní), příčestí (2 - aktivní a pasivní), infinitiv (2 - aktivní a pasivní)
+Toto dává cca 75 tvarů.
+Navíc se ale i někde kříží substantivní rod [viděn, viděna, viděno...] (tam, kde se používá příčestí - ztrojnásobí se to)...
+Odhadem je to: cca 200 tvarů.
+
+Q: Kolik tvarů od "knih(a)" naopak v rámci slovotvorby (tj. morfologické afixy apod. - zakážeme si měnit gramatické afixy apod.)
+A:
+Je to o hodně těžší:
+Tento proces, na rozdíl od toho prvního, je totiž zásadně nenacvičovaný (i když je pro vyjadřování úplně stejně nezbytný).
+Přitom rodilý mluvčí, když už se seznámí se základem, nedívá se do slovníku dál a automaticky vytváří další tvary:
+* knížka, knižní, knihař, knihovna, knihovat, knihárna
+Přitom pozor na odvozeniny druhého stupně ("knihovník" z "knihovna", "knižně" z "knižní"...)
+Od těchto derivátů lze už pak postupovat dál stejně košatou derivací:
+Příklad běžného vzorce derivací: činnost ~> profese ~> nositel profese ~> kolektivní označení oboru
+Od tohoto základu získáme celkem 30 až 40 jednotek.
+Podle charakteru se to pak ještě násobí těmi asi 14, resp. asi 200, podle substantivního, resp. slovesného charakteru.
+
+Q: Čeho je v češtině signálem koncové "-a"?
+A:
+- f nom sg <-------- (sem patří i "je viděna", tj. ne jen substantiva)
+- n nom/ak/vok pl
+- m ak sg živ
+- m gen sg
+- m nom sg
+- m pret přechodník
++ možná ještě 3 nebo 4
+
+Gramatických sufixů v češtině je několik set.
+
+I maďarština je pořád ještě snadnější než čeština, protože tam se aspoň příznak každé gramatické kategorie vyjadřuje zvláštním morfémem.
+
+K tomu ještě přistupuje morfologická variabilita, jako např. koncovka -u/-ovi:
+- u některých tvarů je možná variabilita, u některých možná není (pak jen jedna z nich)
+
+---
+
+Q: Kolik morfologických jednotek je v "neste"?
+A:
+- "-te" není signál imperativu - protipříklad "nesete"
+- "-te" obsahuje 2. os. pl.
+- informace o rozkazu je právě v nepřítomnosti "-e-" (z "nesete") => NULOVÝ MORFÉM
+Nulový morfém ve slově je (i když tam není ;-) a patří k nejčastějším a nejzatíženějším morfémům.
+
+Singulár - "nes" - je složený z nes+0+0
+
+S nulovým morfémem lze tedy provádět naprosto stejné operace jako s jinými.
+
+Odpovědí tedy je "3 morfémy" (nes+0+te)
+
+Q: Infinitiv "nést"/"nésti":
+A: Oproti základu "nes" dochází k ALTERNACI MORFÉMU
+   Ačkoliv někdy malá proměna má velký význam, naopak z historických důvodů k tomu u některých tvarů došlo a neznamená to přitom nic.
+   Jedná se tedy o ALOMORFY.
+   Navíc "páni" (nom pl m) a "pany" (ak) - rozdíl není v koncovce "-i/-y" (to je jen komplikovaný pravopisný způsob jak naznačit:)
+   - rozdíl je v kořeni /páň/ x /pan/ - tedy vyjádření pádu může probíhat i výhradně na kořeni slova, nikoliv na koncovce
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-11-23
+zapsal Marek Blahuš (učo 172464)
+
+Paradigma = původně: ukázka, vzor, typ
+          = v lingvistice: soubor hodnot
+
+[list: 3.3.0.2 Konjugační paradigma]
+
+Q: Proč jsou imperativy "kryj-0-0", "kryj-0-0-me", "kryj-0-0-te"?
+A: Jedna 0 je odlišení imperativu, druhá 0 je pro odlišení "kryj-0-0" od "kryj-0-me", "kryj-0-te"
+   Jedna 0 alternuje s kmenem (viz níže) "-e-", druhá 0 alternuje s "me" a "te".
+   Asi tam bude CHYBA: Plurál by měl být "kryj-0-me", resp. "kryj-0-te". !!!
+
+Morf "kryj->>e<<-š" může nabývat i jiných hodnot, na základě "třídy".
+- česká školní "slovesná třída" je lingvisticky "(slovesný) kmen"
+- pak se hovoří o různých třídách jako o "a-kmenech", "e-kmenech"
+- tento morf už ale z hlediska systému dnes nenese vůbec žádný specifický význam
+-- historicky ho ale nesl - typické činnosti se označovaly slovesy s různými určitými kmeny
+-- nějaké tendence ale ještě pořád existují - nová slovesa jsou intuitivně přiřazována k vzoru "kupovat", který je dnes produktivní (v němčině zase "-ieren")
+
+U substantiv má kmen větší význam:
+- s kmenem "a" by se mohlo vztahovat k ženě
+- s kmenem "o" by se mohlo vztahovat k muži
+- to už se táhne systémem několik tisíc let (indevr. jazyky)
+
+Naopak morfém "me" je živý - 1. os. pl.
+
+>>> Kdybych se mu tam s tím včera nebyl připomněl, byl by to úplně pustil z hlavy. <<<
+                                        ---------
+
+při-po-mnět:
+
+ind. préz.
+při-po-men-u
+při-po-men-e-š
+při-po-men-e-0
+při-po-men-e-me
+při-po-men-e-te
+při-po-men-ou-0
+
+imp.
+při-po-mn-i
+při-po-mn-ěme
+při-po-mn-ěte
+
+přech. přít.
+při-po-mín-aj-e
+při-po-mín-aj-íc-0
+při-po-mín-aj-íc-e
+
+příč. činné
+při-po-mně-l-
+
+příč. trpné
+při-po-mni-t
+
+přechodník minulý
+při-po-mn-i-v
+při-po-mn-i-vš-i
+při-po-mn-i-vš-e
+
+/*
+při-po-men-ou-t:
+
+ind. préz.
+při-po-men-u
+při-po-men-e-š
+při-po-men-e-0
+při-po-men-e-me
+při-po-men-e-te
+při-po-men-ou-0
+
+imp.
+při-po-meň-0
+při-po-meň-me
+při-po-meň-te
+
+přech. přít.
+při-po-mín-aj-e
+při-po-mín-aj-íc-0
+při-po-mín-aj-íc-e
+
+příč. činné
+při-po-mně-l- / (při-po-men-ul ???)
+
+příč. trpné
+při-po-men-u-t
+
+přechodník minulý
+při-po-mn-i-v
+při-po-mn-i-vš-i
+při-po-mn-i-vš-e
+*/
+
+Snaha o dosažení správné řešení:
+
+"-by-ch-0 se .. .. .. .. ne-by-l-0 při-po-mn-ě-l-0"
+
+kmen "men" s významem "myslet" (všechny "mentální"...) je v indevr. jazycích velmi častý
+po-men x z-mínit
+
+kořen "men" alternuje v různých podobách (jako [mň/nazální/], "mín", "meň"...)
+(arch. "mnít" = "být té mínky")
+
+To ukazuje, že polysyntetický typ je v češtině v náznacích přítomen (podobný jiným jazykům, kde jsou větné rámce až věty totožné se slovem /inuitské jazyky/).
+
+[LEM(M)A]
+
+dokonce i ty pozice uprostřed jsou pevně obsazovány:
+1. zvratný předmět (se, si, 0)
+2. nepřímý předmět
+3. adverbiální ...
+...
+
+Přičemž i třeba při změně nepřímý předmět - přímý předmět (s tím - ho) dochází ke změně pozic (mu tam s tím - mu ho tam).
+Takže nakonec je jen otázka konvence, že to dále píšeme jako jednotlivá slova - inuitské jazyky se prostě jen rozhodly psát to všechno jako jedno slovo.
+
+Dovnitř slovesa se integruje _jmenná_ kategorie (-l-0) určující osobu a číslo podmětu (z historického vývoje - původně stará adjektiva "bylá", "připomnělá").
+To vytváří zvláštní atmosféru vnímanou jako politicky nekorektní jazyk. :o)
+
+MORF x MORFÉM:
+- z hlediska systému je možné a účelné uvažovat o jednotlivých kategoriiích separátně (odděleně osoba od času apod.) - MORFÉMY
+- ale MORFY už jsou pak konkrétní sady připojovaných morfémů, kterými se vyjádří současně více kategorií
+PV122 Formální struktura přirozeného jazyka (2006p), 2006-11-30
+zapsal Miloš Jakubíček (učo 172962)
+
+syntax (přirozený jazyk) vs. syntaxe (formální jazyk)
+dříve příliš nezkoumána, považována za zřejmou
+
+větně členská analýza souvětí není vždy smysluplná, nedává relevantní údaje:
+Vím, že... (předmětná)
+Chci, aby... (taky předmětná)
+
+valenční model sloves:
+0-valenční: prší, sněží
+1-valenční: spí
+2-valenční: vidět, nést
+3-valenční: vzít, dát
+
+-----
+
+PV122 Formální struktura přirozeného jazyka (2006p), 2006-11-30
+zapsal Stanislav Filipčík (učo 173173)
+
+Syntax
+
+dlouho se neprováděl žádný výzkum či analýza
+
+že, když - popis spojek ve slovníku je rovnou popisem vedlejších vět
+
+Vidím, že přichází.	- souvětí podřadné, VV podmětná
+
+principem české školní analýzy je větně-členská analýza
+
+Řekl, že přichází.	- VV předmětná
+Vidím, že přichází.	- VV podmětná - změnil se pouze větný rámec
+Řekl, aby tam nechodil.	- VV předmětná
+
+různý morf. význam sloves
+
+def. syntaxe - věta je "něco" většího než slovo a obsahuje sloveso
+
+Líná huba - holé neštěstí. - věta na první pohled bez slovesa, ale sloveso obsahuje "-"(viz ruština)
+
+nadpisy, obsahy - sloveso vyjádřeno "syntaktickou nulou" - vyjadřuje "je"
+
+Bratrovi. - jednoznačnosti věty tohoto typu se dostane vrácením do větného rámce.
+
+metoda substantizace(či jiná substituce) je zavalení věty jiným způsobem než přidaním slovesa
+
+Petr přišel	-> komprimace: petrův příchod
+Petr vidí psa	-> vidění Petra, vidění psa
+
+Valenční model:
+slovesa bezvalenční	- pršet, sněžit
+	jednovalenční	- spát, skákat
+	dvojvalenční	- vidět, nést
+	trojvalenční	- dát, vzít
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-12-07
+zapsal Marek Blahuš (učo 172464)
+
+== Syntax - dokončení ==
+
+analýza a porovnání dvou textů ("kulturního překladu"):
+- stará (barokní) pozvánka na Boží tělo /Rudolf II./
+- moderní pozvánka na udělení čestného doktorátu /Luděk Matyska/
+
+valenční formy:
+
+VF ... sněží, prší
+nom.-VF ... spím, poskakuje
+nom.-VF-acc. ... vidím ho, nemám to
+nom.-VF-dat. ... dám mu to, vezmu jí to
+       -acc. .../
+
+obligatorní x fakultativní valence
+
+všechny valence vypsané nahoře jsou obligatorní
+fakultativní mohou být např. tyto:
+- příslovečné určení - lokální
+                     - temporální
+                     - modální
+                     (alespoň tolik)
+
+Příklad rozšíření "sněží" takovýmito fakultativními valencemi: "Dnes v Brně hodně sněží."
+
+Ale jiné věty jako "sněží >nám< tam" nebo ">prý< tam teď prší" už obsahují v sobě kondenzovaný určitý větný rámec - to už se netýká valence.
+
+Valence adverbiální a obligatorní: nom. - jít - adv_L (kam?) ... "Jdu >domů<."
+Valence fakultativní a neadverbiální: nom. - vidět - acc. + činnost ... "Vidím Petra >sedět<."
+
+Vazba věty na větu:
+nom - VF - acc
+            |
+      nom - VF - dat
+"Nemám, co bych mu dal."
+
+V utváření takovýchto "organických sloučenin" nejsme ničím omezováni (jen svými schopnostmi zatáhnout to vše do mluvy).
+
+"vy jste byli informováni" ... "vy" je tu sice podmět, ale nás zajímá, že je to realizace _akuzativní valence_
+u "informovat" jsou obligatorní valence "někdo, někoho" a fakultativní "o něčem" a příp. další adverbia
+
+"udělí na >návrh< naší fakulty" ... "návrh" je kondenzace slovesa "navrhovat" - proto lze i u něj určovat valence
+
+Převod z "navrhovat":
+  nom - VF - acc
+           - dat
+na "návrh" (ne sémantický zápis, ale ten "povrchový"):
+  nom -> gen \_
+  acc -> gen /  v tom je právě ta nevýhoda - že smysl toho genitivu už lze pak určit jen z kontextu
+
+Z toho vyvstává problém-otázka rozdílu povrchových struktur a hloubkových struktur:
+Existují vedle sebe struktury čistě sémantické (ty by při manipulaci s výpověďmi měly zůstávat nezměněné, pokud se nemění význam - měly by tedy zůstávat nezměněné i třeba při překladu.)
+
+Zavedem pojem "propozice" === "vtažení příznaku k nositeli" (přitom "příznak" je jak statický /vlastnost/, tak i dynamický /dění/).
+
+...
+
+Dojdeme k závěru, že celý barokní text je jen košatá akuzativní valence slovesa "přikazovat".
+
+"poroučet a přikazovat" je syntaxe, která víceméně konstruuje jen jedno sloveso, ale sémanticky upřesněné (např. v latině či právních textech je taková stylistika běžná)
+
+"tu chtějíce my" je další příčina, ale je to formálně součást přímo té řídící věty
+
+hledání počtu propozic - dobře se poznají podle genitivu, protože do něj se převádí valence od slovesa
+- v textu "čas památky", "obyčej" (co si lidé zvykli dělat), "služba Bohu", "procesí"; "potupu", "překážku", "vykonávání" ...
+
+"ráčit": nom - VF - acc (přičemž acc je nejen infinitiv, ale třeba i substantivum /pán ráčí víno/)
+
+slovesa jako "chtít" mají velmi omezenou sémantiku, jsou to modální slovesa a bývají 2-valenční, přičemž akuzativní vazba bývá většinou obsazována infinitivem nebo ještě zábavněji akuzativně-infinitivní vazbou ("chci ho tam mít" != "chci mít" != "chci ho")
+
+"Slyším ho zpívat" = "Slyším, jak zpívá" nebo i "Slyším, jak ho zpívají" (i když je to pro češtinu nepřirozené - přejaté z latiny)
+
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-12-14
+zapsal Marek Blahuš (učo 172464)
+
+== Pokračování analýzy e-mailového sdělení Luďka Matysky z minulé hodiny ==
+
+věta "Vzhledem k výjimečnosti..."
+
+rozhodl jsem se, že udělím:
+1. nejprve rozhodnu, s odstupem času pak udělím
+
+rozhodl jsem se udělit
+1. nejprve rozhodnu, s odstupem času pak udělím
+2. "udělil jsem", s rozhodujícím komentářem "protože to je moje pravomoc, které jsem využil"
+
+hlavní postavení v této větě má tedy nakonec udělení, nikoliv jen pouhé rozhodnutí
+
+"rozhodl jsem se udělit doktorát" - to je informace
+"rozhodl jsem se udělit volno" (kvůli tomu) - o tom se neinformuje, to je direktiva
+
+"měli byste se zúčastnit" = "já chci a vy se zúčastníte"
+["byl bych rád" je jen v této oblasti způsob obcházení přímého rozkazu, který není považován za vhodný]
+
+dříve ve škole učitel studentovi jedině "Pane kolego, mohl byste udělat...",
+dnes už běžně "Pane kolego, udělejte..." -
+- znamená to to samé (absolutní příkaz), ale je to změna stylu komunikace.
+V 19. stol. si lidi rádi osvojovali takovéto oslovení, které bylo dříve vlastní pouze aristokratům.
+Dnes se jej se stejným nadšením postupně zbavují.
+Celé to pochází z plurálu "my" (aristokrat), pro který bylo pak i příslušné oslovení "vy".
+
+"vzhledem k" není vhodné převést na "vzhlédneme-li", protože nejde o podmínku; naopak to jen vyjadřuje příčinu ("protože...")
+
+atribut spjatý s modálním tvrzením (", které byste měli") je ve všech jazycích velmi nápadné spojení:
+- jde ve skutečnosti o záměr - "dělám to proto, abyste..."
+
+== Teorie mluvních aktů ==
+
+Austin: How to do things with words
+
+Rozlišují se mluvní akty "locutionary act" - o kterých mluví škola - a "illocutionary act" - takový, který mění svět.
+Tj. Není žádná jiná operace v díle této fakulty, kterou by se udělovalo volno
+- osoba obdařená určitými pravomocemi vyjádřila svou vůli a tím nastal právní stav.
+Ve všech typech kultur je ilokučním aktem např. slib.
+"Já jsem slíbil" nebo "Já slíbím", to je informace, tj. lokuční akt.
+Ničím nelze nahradit "Já slibuji" (a jedině v prvním osobě a prézentu a tady) je vytváření slibu samotného - ilokuční akt.
+
+Searle: Speech Acts
+
+Velké množství sloves má v sobě zakódován dosti odlišný potenciál, pokud konstitují lokuční či ilokuční akt.
+Jedno je tedy "informace o", druhé je "efektivní změna".
+
+== Textová lingvistika ==
+
+Funkční větná perspektiva = soubor pravidel, která se uplatní na rovině prokazatelně vyšší než je věta a které umožňují z vět sestavovat text.
+
+Textová lingvistika si hlídá _réma_ a _téma_.
+Cílem je na začátku rekapitulovat stav a na konci věty přidat novou informaci, se kterou se přichází.
+Při dodržování těchto pravidel se jen vyhledáváním podstatných jmen před interpunkcí dá v dobrém textu sdělení pochopit i bez čtení.
+
+Jsou jazyky, které mají v tomto ohledu syntax vybavenou podstatně více pravidly a formálněji.
+V češtině tomu tak není, protože když se takovéto návyky vytvářely (renezance, baroko) v evropské kultuře, role češtiny byla nevalná.
+Čeština má k dispozici vlastně jen slovosled a práci se zájmeny, resp. v hovorovém jazyce zájmeny ve funkci určitého členu.
+Toto jsou základy tzv. _textové koheze_.
+V řadě jazyků je v této oblasti velmi intenzivní práce s tzv. _textově kohezními částicemi_:
+- např. částice "začíná výčet", {A, částice "výčet pokračuje"}*, částice "konec výčtu", ..., částice "teď používám A z předchozího výčtu", ..., částice "teď používám A z výčtu, který teprve bude následovat" ...
+
+Řečtina:
+
+"tekmérion de tútú kai tode" ~~~= "důkaz tohoto a toto"
+de ... není to pokračování, ale povinná kompletace předchozí informace
+tútú ... odkaz do předcházejícího seznamu, a sice jeho posledního členu
+tode ... odkaz od posledního jmenovaného do prvního následujícího, přičemž ten poslední je důkazem toho následujícího
+
+Závěr: Existují ve větě prvky, jejichž syntaktický smysl není dán tím, co je obsaženo v té samotné větě, ale slouží k upřesnění informace o pozici této věty ve vyšším celku, přičemž tím vyšším celkem se myslí text ve své úplnosti.
+V závislosti na konkrétním jazyku už se pak určuje, v rámci jak velkého celku textu se tato pravidla udržují.
+V češtině to funguje většinou v rámci odstavce.
+
+sem patří "nám" v "prší nám tady" zmiňované při předchozí přednášce
+﻿PV122 Formální struktura přirozeného jazyka (2006p), 2006-12-21
+zapsal Marek Blahuš (učo 172464)
+
+== Lexikologie ==
+
+U znakových jazyků neexistuje rozumný způsob zápisu.
+U arabštiny se mluvený a psaný jazyk liší natolik, že ten mluvený se prostě nezapisuje.
+
+V praxi při určování "počtu slov jazyka" se tedy úplně omezuje to, co je ale vlastně podstatou jazyka, tj. mluvené slovo, a pracuje se jen s psanou formou.
+
+V češtině se na odpověď, co vše zahrnout tak, aby to ještě bylo srozumitelné bez tlumočníka, pohybuje někde na 19. století, příp. i na 16. století (odtud přebírali obrozenci a Rudolfa II. jsme tu taky četli bez větších problémů).
+
+Slovní zásoba jazyka ... n*10^5
+Pasivní slovní zásoba jednotlivce ... n*10^4
+Aktivní slovní zásoba jednotlivce ... n*10^3
+
+sémasiologická analýza = rozklad na sémy (poslední pojem zaváděný v řadě foném-morfém-...)
+sém = elementární sémantický prvek přítomný v nemotivovaném výraze a tvořící jeho význam
+celkový význam slova (=lexému) lze chápat jako souhrn těchto rysů - sémů
+viz př. s výrazem "hra" [Lexikologie - sémantika.doc] - důležité rozlišit motivované a nemotivované
+
+"hra" = jednání+zábava / věc+zábava...
+
+motivovaná (onomaziologická analýza)
+- mutace: hr-áč, hř-iště (relace mezi bází ("áč"...) a příznakem ("hr"...) - nový koncept)
+- transpozice: hr-a, her-ní (změna slovních druhů)
+- modifikace: hráč|ka, hřišť|átko (zdrobňování, přechylování)
+
+osobní vlak x luxusní vlak
+[(pitná voda) / nasládlá voda] x minerální voda
+...
+jsou odborné termíny součástí jazyka?
+
+černý pasažér je pasažér, jen není černý 
+vs.
+bílá vrána není ani bílá, ani vrána
+
+"Alea iacta est" nebo "Mens sana in corpore sano" jsou jen české smyšlené latinské "originály" pro české fráze.
+Nedotýkání se kruhů už je pak úplná blbost, pochází asi z českých gymnaziálních kruhů 19. století.
+
+"A přece se točí!" (italský novinář žijící v Londýně v 19. století)    :-O
+
+Řečtina má velké problémy s rozdíly mezi ustálenými významy starých slov a tím, kam se dnes jako jazyk vyvinula:
+- příklady: demokracie = vláda lidu x republika
+            [atomiki energia] = atomová energie, osobní úsilí
+Cesta výrazu "demokratický" z Prahy do Vídně do Paříže do Říma až do Athén :o)

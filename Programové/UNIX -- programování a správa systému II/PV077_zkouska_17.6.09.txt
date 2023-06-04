@@ -1,0 +1,35 @@
+Není to kompletní sada 20 otázek; pár je stejných jako v odpovědníku v ISu; na zápočet stačilo 9 správných (tj. 18b); hodnocení (dobře/špatně/žádná odpověď): +2/-1/+0; otázky nejsou přímo doslovné, jsou ale ofic. zadání dosti podobné. Pokud tam najdete nějakou chybu, tak prosím uploadněte správnou verzi a admina požádejte, ať tohle odstraní.
+
+- Výpis služeb jádra, které postupně volá určitý proces, lze zvenku získat (na Linuxu) programem: strace
+
+- Jak se vytvoří nový souborový systém (v možnostech vždy dvojice odpovědí): mkfs nebo newfs (chyták "fdisk nebo disklabel")
+
+- Kde je uložený seznam uživatelů: /etc/passwd
+
+- Kde lze nastavit, když chci seznam uživatelů načítat z LDAP serveru: /etc/nsswitch.conf
+
+- Jak získám jméno uživatele na základě jeho čísla (v programu): getpwuid()
+
+- Jak se jmenuje konfigurační soubor pro Syslog: /etc/syslog.conf
+
+- Pravidelné spouštění nějakého příkazu/skriptu/atd. lze provést příkazem: crontab
+
+- Co se nepodílí na běhu NFS: ypserv
+
+- Nastavení kvót lze provést: edquota (quotactl tam jako odpověď nebylo)
+
+- Zjištění adresy sítě z IP adresy: ip AND maska
+
+- V hlavičce mailu být ne-ASCII znaky: nesmí být
+
+- Co jsou to well-known porty: porty s obecně známýmí službami (chyták: port 1023 a menší, port 1024 a menší)
+
+- K záznamu CNAME musí být na pravé straně: záznam, ke kterému existuje záznam typu A (určitě na pravé straně nesmí být další CNAME záznam, tj. vytvoření aliasu na alias)
+
+- Jakým voláním se nezíská soket: connect()
+
+- Směrovací protol pro směrování uvnitř autonomního systému: OSPF
+
+- Jak se jmenuje jmenný server, který po spuštění načte svou databázi od jiného j. serveru a uloží si ji na disk: sekundární j. s.
+
+- Pod pojmem X server se rozumí: program nebo zařízení, které provádí zobrazování dle požadavků X klientů

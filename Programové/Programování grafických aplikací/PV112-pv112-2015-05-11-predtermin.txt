@@ -1,0 +1,13 @@
+Bylo 5 otázek po 10bodech.
+
+1) Rozdíl mezi globální a lokální transformací. Přidat příklad.
+
+2) Mipmapping, co to je a na co se to používá.
+
+3) GL_TRIAGLES zapsat použití příklad, a také další primitiva pro usnadnění zadávání vrcholů (_STRIP a _FAN).
+
+4) Face calling - popsat a jak zjistíme FRONT a BACK.
+
+5) (otázka praktická) Byl tu kód vykreslení trojúhelníku a metoda gluLookAt. Úkolem bylo definovat výstup metody. Pochopil jsem to tak, že máme rozebrat metodu gluLookAt popsat jak funguje a zjistit jak se budeme na trojúhelník dívat.
+
+Snad vám to pomůže :).

@@ -1,0 +1,21 @@
+PV188 Principy zpracování a přenosu multimédií
+Termín 7. ledna 2016
+100b celkem, Na E potřeba 60b, otázky za různý počet bodů, ne každá za 10.
+
+1. Co je to mikrofon?
+2. Výjmenujte alespoň dvě aplikce přenosu zvuku a videa vyžadující nízké zpoždění a odhadněte jejich požadavky na end-to-end zpoždění?
+3. Co je chromatická vada objektivu?
+4. Popište symetrické propojení elektroakustického řetězce?
+5. Jaké snímky se používají v MPEG kopresi a co rozumíte pod pojmem GOP?
+6. Jaký je ekvivalent vzorkování a kvantování pro videosignál a co je to prostor YUV?
+7. Proč je sluneční clona u širokoúhlých objektivů kratší, než u teleobjektivů?
+8. Vysvětlete rozdíl mezi intraframe a interframe kompresí?
+9. Jak se provádí převod signálu na jeho digitální podobu pomocí PCM?
+10. Lze zvětšit světelnost objektivu zvětšením jeho průměr? 
+
+Učil jsem se z "PV188-vypracovane-otazky-pozim-2015.doc" a ziskal jsem A.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Pokud se vám líbilo, že vám někdo poskytl otázky, pomozte prosím budoucím studentům a podělte se také o ty své ze zkoušky
+nebo i jejich vypracování. I otázky opakující se v testech z minulých semestrů, mají vypovídající hodnotu.
+Děkuji.

@@ -1,0 +1,249 @@
+OTAZKY ZO SKUSOK PV183 (ktore som nasla)
+
+-----------------------------------------------------------------------
+22.5.2014
+
+1) Zadana numericka apartura (nebo jak se to jmenuje :D) + index lomu optickeho vlakna, mela se spocitat rychlost svetelneho paprsku v takovem vlakne
+2) Rozdily mezi dvema sitemi typu 1000Base-neco a 10GBBase-neco
+3) DSSS + obrazek
+4) Jak funguji CSMA typu persistent, non-persistent, p-persistent
+5) Zadana IP adresa + maska... dopocitat vsetky mozne adresy
+6) Architektura spoje SONET + vypsat a vysvetlit zarizeni, ktere SONET pouziva
+7) Na jakych vrstvach OSI pracuji protokoly IP, PPP, SPX, ARP
+8) Zakodovat posloupnost bitu 1111001001 pomoci ASK a kde se to pouziva
+-----------------------------------------------------------------------
+23.5.2012
+
+1. rozdíl mezi 1000BaseLX a 1000BaseCX a rozdíl mezi 10GBaseLX a 10GBaseLW
+2. zakódovat vzorek pomocí ASK, kde se pouívá
+3. ze zadané IP adresy s maskou vypoèítat adresu sítì, broadcast, první a
+   poslední uzel
+4. popis a nákres DSSS
+5. naèrtnout SONET a popsat zaøízení
+6. popis CSMA (non-persistent, persistent, p-persistent)
+7. nìjakej pøíklad na vypoèítání rychlosti svìtelného paprsku v optickém vláknì
+-----------------------------------------------------------------------
+24.5.2005
+
+1. spocti vykona na vystupu site. Byly zadany nejake hodnoty a to:
+   delka site, odpor site(zjednoduseno ze Z=R), vstupni volty, utlum
+2. pristupve metody v sitich, charakteristika, priklady bez dalsiho vysvetlovani
+3. Napis co je a, AWG
+               b, rezervovana IP
+	       c, ethernetova adresa + priklad
+               d, LANE v siti ATM
+4. FastEthernet: priklady, pristupove metody, prenosova media
+5. FDDI - zakresli SAS, DAS, SAC, DAC (v propojeni)
+6. zakoduj 11011101 v kodovani pouzivanem v siti a,Ethernet
+                                                 b,Token Ring
+7.VLANE - druhy, popis, co to je
+8. zakresli sireni signalu v optickem kabelu a, singlemode
+ 					     b, multimode, stepindex
+					     c, multimode, gradedindex
+-----------------------------------------------------------------------
+24.5.2011
+
+1) zadaná numerická apartura (nebo jak se to jmenuje :D) + index lomu optického
+   vlákna, mìla se spoèítat rychlost svìtelného paprsku v takovém vláknì
+2) rozdíly mezi dvìma sítìmi typu 1000Base-nìco a 10GBase-nìco
+3) DSSS + obrázek
+4) Jak fungují CSMA typu persistent, non-persistent, p-persistent
+5) zadaná IP adresa + maska... dopoèítat všecky moné adresy
+6) architektura spoje SONET + plus vypsat a vysvìtlit zaøízení, které SONET pouívá
+7) na jakıch vrstvách OSI pracují protokoly IP, PPP, SPX a ARP
+8) zakodovat posloupnost bitù 1111001001 pomocí ASK a kde se to pouívá
+-----------------------------------------------------------------------
+29.5.2007
+
+
+
+1) rozdíl mezi synchroním a asynchroním xDSL
+
+2) routovací tabulky pro 4 PC z obrázku 4 podsítí (v kadé oznaèenı jeden PC a napsána jeho IP) pøipojené k centrálnímu síovému prvku (s 4 IP pro kadı slot) do hvìzdy.
+
+3) co je to PSK, zašifrujte vzorek 11001001 a kde se PSK pouívá
+
+4) co je to FHSS, obrázek a kde se to pouívá
+
+5) popsat rámec z 802.3
+
+6) popsat základní prvky v síti ISDN
+
+7) vypoèítat pøíènou admitanci; zadána frekvence, indukènost, délka kabelu, kapacita, odpor, hodnotu dielektrika
+
+8) nakreslit a popsat základní strukturu pøi posílání dat pøes optickı kabel (obrázek s sdruovaèem, modulátorem, ...)
+
+
+-----------------------------------------------------------------------
+31.5.2005 
+
+1.Vypocitajte podla zadanych udajov absolutnu hodnotu priecnej admitancie. (Na konci prikladu uviest jej jednotku!)
+2.Zakodujte 11000101 podla PSK a uvedte, ktora technologia toto kodovanie vyuziva
+3.Uvedte sucasti vysielaca a prijimaca optickeho prenosu dat.
+Zakreslite.
+4.Podla uvedenej schemy zapojenia pocitacov zostavte smerovacie tabulky
+5.Charakterizujte technologiu symetrickej a asymetrickej DSL, uvedte priklady
+6.Popiste FHSS a zakreslite ukazku
+7.Ake zariadenia vyuziva ISDN. Zakreslite.
+8.Popiste packet 802.3 a charakterizujte jeho casti
+-----------------------------------------------------------------------
+31.5.2011
+
+1. Príklad, mal si zistit vst. napätie. Bolo dané: vıst. vykon útlm a odpor
+2. prístupova metóda 802.11
+3. modulácia signálu v FSK
+4. Popísa 10Broad36
+5. popísa ARP
+6. napísa èo je to piconet, balun, modálna disperzia, MAU (ethernet)
+7. napísa ref. body ISDN, tj. napísa medzi èím..
+8. popísa 10BaseFL
+
+Na príklad si vcelku spomínam bolo to A=-20dB, P=2mW a Z=100ohm. A vyslo to
+~~4,47V (sqrt(20)).
+-----------------------------------------------------------------------
+4.6.2008
+
+
+
+1. Neco vypocitat
+
+
+2. a) modalni disperze
+
+   b) MAU (v Ethernet)
+
+   c) balun
+
+   d) piconet
+
+
+3. Komunikace v siti 10Broad36 + typy + obrazek
+
+
+4. Pristupova metoda v siti IEEE 802.11 s obrazkem
+
+
+5. Zakodujte 1111001001 podle FSK. Kde se FPK pouziva?
+
+
+6. 10BaseFL
+
+
+7. ISDN referencni body
+
+
+8. ARP + na jakem urovni pracuje v OSI
+-----------------------------------------------------------------------
+5.6.2006
+
+1. Mal si danu Z0=75 ohm(char. imp.) na 2m kabla. C=100pikoF. Aka bude Z0,a L na 10m kabla. Kde sa tento kabel pouziva.
+
+
+2. na akej vrstve iso/osi modelu pracuje router,repeater,switch,gateway.
+
+
+3. 2xAUI,2xRJ-45,2xBNC, treba to zosietovat(nakreslit a popisat obrazok).
+
+
+4. IPv4 (rozdelenie do tried,rozsah adries)
+
+
+5. a.)na co sa pouziva media filter v token ringu
+  
+   b.)rozdiel medzi hub a switch
+
+
+6. co sposobuje utlm na optickom kabli + nakreslit a popisat.
+
+
+7. MLT-3 zakodovat najaky vzor (napr 1101001110010101), kde sa pouziva.
+
+
+8. Gigabit ethernet (rozdelenie + prenosove media).
+
+
+------------------------------------------------------------------------
+6.6.2011
+
+1. Vypocitat impedanciu a indukcnost (aspon myslim... :D)  Z=75 ohm, C=100pF na 2m kabli ..zistite Z a L na 10m kabli + kde sa taky kabel pouziva
+2. Rozdelenie IPv4 adries
+3. Fast ethernet priklady, metody pristupu, prenosove media
+4. Nakreslit FDDI-bolo tam treba nakreslit DAS,SAS,SAC,DAC obrazky s TRANSCEIVER-mi
+5. AWG, LANE v ATM, prepisat zjednodusenu IPv6 adresu na neskratenu a popisat co
+je ethernetova adresa + priklad
+6. Nakreslit single-mode a oba multi-mode typy optickych kablov
+7. Zakodovat 11011101 v kodovani pouzivanom v Ethernet a Token-ring
+8. VLAN
+------------------------------------------------------------------------
+7.6.2010
+
+
+Pozn.: Toto není pøesné znìní otázek.
+
+
+1) Vypoètìte indukènost a charakteristickou impedanci koaxiálního kabelu s danımi vlastnostmi
+
+2) Napište rozdìlení IP adres na jednotlivé tøídy
+
+3) a) Napište nezkrácenou verzi dané IPv6 adresy
+
+   b) Co je AWG?
+
+   c) Co je LANE v ATM?
+
+   d) Jakı formát má ethernet address?
+
+4) Uveïte jednotlivé verze Fast Ethernetu, jaké médium vyadují, kde se pouívají
+
+5) Je dán bitovı vzorek. Zakódujte ho metodou pouívanou v síti a) Ethernet; b) Token Ring
+
+6) Nakreslete schematické zapojení transceiverù danıch typù v síti FDDI
+
+7) Naèrtnìte šíøení signálu optickım kabelem typu
+ 
+   a) single-mode
+ 
+   b) multi-mode graded index
+
+    c) multi-mode step index
+
+8) Popište VLAN, jaké jsou typy atd.
+-----------------------------------------------------------------------
+15.6.2011
+
+1,pristup u systemu FDDI
+2,Šlo o vıpoèet pøíèné admitance
+3,Gigabit Ethernet + media
+4,binarnu sekvenciu zakodovat v MLT-3 + pouzitie
+5,utlm pri optickych vodicoch-Rozdìlit vlivy útlumu, popsat a nakreslit obrázky
+6,Sonet - konkrétnì zpùsoby zabezpeèení nekruhovıch topologií Sonet
+7,802.3 packet + popis
+8,na akych vrstvach OSI pracuju gateway,router,repeater a bridge etc.
+-----------------------------------------------------------------------
+16.6.2009 = 12.6.2013
+
+- zpocitat vystupni vykon, zadane vstupne napatie, impedancia siete, utlm
+
+- Zakódovat 11001001 v PSK, kde se pouívá
+
+- Prvky ISDN sítì, charakteristika, zakreslit
+
+- Rozdíl mezi asynchroním a synchroním xDSL
+
+- Rozdíl mezi S/UTP a S/STP
+
+- Rozdiel Hub a Switch
+
+- Rozdíl mezi 100BaseT a 100BaseVG
+
+- K èemu je RARP
+
+- technika FHSS, nakreslit
+
+- TCP segment, ako su identifikovane koncove aplikacie
+
+- Adresa 138.120.65.148/21 (asi) a napsat adresu sítì, broadcast, první a poslední uzel
+
+
+
+

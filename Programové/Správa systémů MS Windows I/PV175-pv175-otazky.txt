@@ -1,0 +1,273 @@
+			<p>Windows XP: Vyberte pravdivá tvrzení o základních (basic) a dynamickıch typech diskù. [alespoò jedna správnì]</p>
+ :c1 V rámci dynamického disku lze vytvoøit jenom 4 primary partitions (primární oddíly).
+ :c2 Kadı dynamickı disk má uloeny informace o rozdìlení všech dynamickıch diskù v poèítaèi. Po pøipojení disku do jiného poèítaèe musíme disk naimportovat, aby došlo k aktualizaci tìchto informací.
+ :c3 Svazky na dynamickıch discích lze zvìtšit pøímo v systému bez nástrojù tøetích stran i pøes nejednolitı prázdnı prostor.
+ :c4 Oddíly na základních discích lze zvìtšovat i pøes více fyzickıch diskù, nabízejí-li tyto disky jednolitı volnı prostor.
+:c2:c3 ok ex
+--
+
+			<p>Windows XP: Uivatel "xtest" je èlenem skupin Users a Studenti. Pøi pokusu o editaci souboru "znamky.txt" obdrel hlášení systému indikující nedostateèná oprávnìní. Pøi bliším pohledu na NTFS oprávnìní k souboru "znamky.txt" je vidìt následující;</p>
+<p>Administrators: Full Control - Allow
+Users: Read & Execute - Allow, Read - Allow
+Everyone: Write - Deny
+Studenti: Read & Execute - Allow, Read - Allow, Modify: Allow
+Vlastník souboru (Owner) je Administrator</p>
+<p>Kterou z nabízenıch moností lze pouít pro umonìní zápisu do souboru "znamky.txt" pro uivatele "xtest"? [právì jedna správnì]</p>
+ :c1 Pøidat uivatele xtest to skupiny Administrators.
+ :c2 Pøidat oprávnìní k souboru "xtest: Write - Allow".
+ :c3 Pøidat uivateli xtest oprávnìní "Full Control - Allow" a pøevzít uivatelem "xtest" vlastnictví souboru znamky.txt.
+ :c4 ádná z uvedenıch není dostateèná.
+:c4 ok ex
+--
+
+			<p>Windows XP: Co platí o vestavìnıch úètech (built-in accounts) v rámci pracovní skupiny (Workgroup)? [alespoò jedna správnì]</p>
+ :c1 Úèet Guest lze smazat.
+ :c2 Úèet Administrator nelze smazat.
+ :c3 Úèet Guest nelze pøejmenovat.
+ :c4 Úèet Administrator lze pøejmenovat.
+:c2:c4 ok ex
+--
+
+			<p>Windows XP: Sluba (Service) A má nastaveno jako "Startup type" hodnotu "Manual". Sluba B závisí pouze a jenom na slubì A, má nastaveno "Startup type" na hodnotu "Automatic".  Mùe dojít ke spuštìní sluby A bez úprav hodnoty Startup type? [právì jedna správnì]</p>
+ :c1 Ano - bez jakıchkoliv dalších podmínek bude sluba A vdy zapnuta. Podstatnou roli hraje fakt, e sluba B má Startup type na hodnotì Automatic.
+ :c2 Ano - ale pouze pokud sluba A sama nezávisí na jinıch slubách, které mají Startup type na hodnotì "Disabled". (tj. A závisí na nìjakıch dalších slubách)
+ :c3 Ano - ale pouze pokud na slubì A nezávisí další sluby, které mají Startup type na hodnotì Disabled. (tj. nìjaké další sluby závisí na A)
+ :c4 Ne.
+:c2 ok ex
+--
+
+			<p>Windows Vista: Jakı formát souboru vyuívá integrovanı nástroj pro vytváøení záloh v systému Windows Vista? [právì jedna správnì]</p>
+ :c1 Formát souboru je BKF.
+ :c2 V pøípadì Complete PC backup je formát souboru VHD, v pøípadì Files and Folders pak ZIP.
+ :c3 Formát souboru je ZIP.
+ :c4 Formát souboru je konfigurovatelnı, pøednastavenı je ZIP. Na vıbìr je však RAR, ARJ a další.
+:c2 ok ex
+--
+
+			<p>Windows XP: Administrátor nainstaloval Windows XP SP2 z originálního nemodifikovaného média na pevnı disk naformátovanı jako FAT32. Nyní se mu nedaøí nastavit oprávnìní pro soubory a sloky na tomto disku. Jaká je nejpravdìpodobnìjší pøíèina problému? [právì jedna správnì]</p>
+ :c1 Administrátor nevypnul zjednodušené sdílení souborù (Simple File Sharing), proto nemùe nastavovat oprávnìní.
+ :c2 Administrátor musí nejdøíve zapnout slubu "File Permission".
+ :c3 V souborovém systému FAT32 nelze nastavovat oprávnìní pro soubory a sloky.
+ :c4 Administrátor musí nejdøíve deaktivovat funkcionalitu "rychlé pøepínaní uivatelù" (Fast User Switching).
+:c3 ok ex
+--
+
+			<p>Windows XP: Administrátor nainstaloval Windows XP SP2 z originálního nemodifikovaného média na pevnı disk naformátovanı jako NTFS. Nyní se mu nedaøí nastavit oprávnìní pro soubory a sloky na tomto disku, protoe ve vlastnostech souboru (vybral nìjakı soubor/sloku na pevném disku) nevidí záloku Security.</p>
+<p>Jaká je nejpravdìpodobnìjší pøíèina problému? [právì jedna správnì]</p>
+ :c1 Oprávnìní pro soubory a sloky nelze definovat ve vlastnostech souboru/sloky ale pouze pomocí GPO.
+ :c2 V rámci NTFS nelze definovat oprávnìní pro soubory a sloky. Toto lze pouze je-li souborovı systém typu FAT32.
+ :c3 Administrátor musí nejdøíve deaktivovat funkcionalitu "rychlé pøepínaní uivatelù" (Fast User Switching).
+ :c4 Administrátor nevypnul "zjednodušené sdílení souborù" (Use Simple File Sharing).
+:c4 ok ex
+--
+
+			<p>Windows 7: Uivatel hlásí nefungující "internet" na  notebooku, na kterı si nainstaloval Windows 7. Ve své domácí síti pouívá kabelovı router (ethernet)  s DHCP serverem (IPv4) - tato sí je pøipojena do Internetu. A pomocí bezdrátového pøipojení WiFi se pøipojuje na sí, kde s kamarády hraje hry - tato sí však není pøipojena k internetu. Po pøipojení kabelu do routeru v domácí síti, Windows7 hlásí, e není pøístup k internetu (neidentifikovatelná sít) a skuteènì pøístup k internetu vùbec nefunguje. Uivatel zadal do pøíkazového øádku pøíkaz "ipconfig" a dostal následující vıpis:</p>
+
+<p>Wireless LAN adapter Wireless Network Connection:
+Connection-specific DNS Suffix  . : Belkin
+Link-local IPv6 Address . . . . . : fe80::bd79:4f27:2169:c541%12 <br>
+IPv4 Address. . . . . . . . . . . : 192.168.2.3
+Subnet Mask . . . . . . . . . . . : 255.255.255.0
+Default Gateway . . . . . . . . . : 192.168.2.1
+ 
+Ethernet adapter Local Area Connection:
+Connection-specific DNS Suffix  . :
+Link-local IPv6 Address . . . . . : fe80::f936:8fd7:6dbd:7eda%11
+Autoconfiguration IPv4 Address. . : 169.254.126.218
+Subnet Mask . . . . . . . . . . . : 255.255.0.0
+Default Gateway . . . . . . . . . :
+ 
+Tunnel adapter isatap.Belkin:
+Media State . . . . . . . . . . . : Media disconnected
+Connection-specific DNS Suffix  . : Belkin
+ 
+Tunnel adapter Teredo Tunneling Pseudo-Interface:
+Media State . . . . . . . . . . . : Media disconnected
+Connection-specific DNS Suffix  . :
+ 
+Tunnel adapter isatap.{70D58E99-0458-4479-8651-3B7656451439}:
+Media State . . . . . . . . . . . : Media disconnected
+Connection-specific DNS Suffix  . :</p>
+<p>Vyberte všechna pravdivá tvrzení, které na základì tìchto informací mùete urèit: [alespoò jedna správnì]</p>
+ :c1 Uivatel má na ethernetovém pøipojení IP adresu, která odpovídá adresaci APIPA. Pravdìpodobnì neobdrel IP adresu z DHCP serveru.
+ :c2 Uivatel nezapojil kabel do ethernetového pøipojení.
+ :c3 Uivatel je odpojen od všech bezdrátovıch sítí.
+ :c4 Pøipojení k internetu nefunguje.
+:c1:c4 ok ex
+--
+
+			<p> Windows 7: Technologie nazvaná "DirectAccess" v OS Windows 7 umoòuje: <span class="Apple-style-span" style="font-family: Arial, sans-serif; font-size: 13px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; ">[alespoò jedna správnì]</span></p>
+ :c1 Pøístup do interní sítì podobnì jako VPN, ale bez nutnosti explicitního vytvoøení spojení iniciovaného uivatelem.
+ :c2 Šifrování dat na úrovni souborového systému.
+ :c3 Zjednodušuje klonování systému tím, e umoòuje vloit více rùznıch obrazù instalaèního disku do jednoho souboru.
+ :c4 Umoòuje programùm pøímı pøístup do pamìti jádra OS (zvıšení stability systému).
+:c1 ok ex
+--
+
+			<p>Windows XP: Vyberte správné tvrzení o spánku (Hibernate) a úsporném reimu (Standby) v systému Windows XP. [právì jedna správnì]</p>
+ :c1 V pøípadì reimu spánku se uloí obsah RAM na pevnı disk a poèítaè se vypne. V pøípadì úsporného reimu systém vypne monitor, pevnı disk a další zaøízení, udruje však napájení pamìti RAM.
+ :c2 V pøípadì úsporného reimu se uloí obsah RAM na pevnı disk a poèítaè se vypne. V pøípadì reimu spánku systém vypne monitor, pevnı disk a další zaøízení, udruje však napájení pamìti RAM.
+ :c3 V pøípadì úsporného reimu se uloí obsah RAM pamìti na pevnı disk, ale zároveò se udruje napájení pamìti RAM. V pøípadì reimu spánku systém vypne monitor, pevnı disk a další zaøízení, udruje však napájení pamìti RAM.
+ :c4 V pøípadì reimu spánku se uloí obsah RAM pamìti na pevnı disk, ale zároveò se udruje napájení pamìti RAM. V pøípadì úsporného reimu systém vypne monitor, pevnı disk a další zaøízení, udruje však napájení pamìti RAM.
+:c1 ok ex
+--
+
+			<p>Windows XP: Administrátor sítì nainstaloval novou aplikaci na nìkolik stávajících PC a nyní potøebuje zajistit, aby všichni uivatelé, kteøí se pøihlašují na tyto PC, mìli zástupce k nové aplikaci na ploše (uivatelé si nemohou vypnout zobrazování ikon na ploše). V síti nejsou pouívány roaming profily a uivatelé se pøihlašují na rùzné poèítaèe podle toho, jestli jsou zrovna volné (nemají svùj "vlastní" poèítaè). Vyberte nejjednodušší zpùsob jak dostat ikonu nové aplikace na plochu uivatelù. [právì jedna správnì]</p>
+ :c1 Editovat obsah profilu "Default User" na všech PC s novou aplikací a vloit zástupce do adresáøe Desktop.
+ :c2 Editovat obsah profilu "All Users" na všech PC s novou aplikací a vloit zástupce do adresáøe Desktop.
+ :c3 V snap-in Computers and Users vybrat všechny poèítaèe s novou aplikací a v záloce Desktop Settings pøidat zástupce k aplikaci.
+ :c4 V snap-in Computers and Users vybrat všechny uivatele a v záloce Desktop Settings pøidat zástupce k aplikaci.
+:c2 ok ex
+--
+
+			<p>Windows XP: Vyberte <strong>ne</strong>pravdivé tvrzení o síovém modelu pracovní skupina (Workgroup). [právì jedna správnì]</p>
+ :c1 Všechny poèítaèe musí bıt ve stejné místní síti nebo podsíti.
+ :c2 Uivatelské úèty jsou uloeny v Active Directory na doménovém øadièi.
+ :c3 ádnı z poèítaèù nemá kontrolu nad jinım poèítaèem.
+ :c4 Pracovní skupiny jsou jednoduché na vytvoøení.
+:c2 ok ex
+--
+
+			<p>Windows XP: K èemu slouí soubor %systemroot%\system32\drivers\etc\hosts? [právì jedna správnì]</p>
+ :c1 K uloení konfiguraèních informací hostitelskıch ovladaèù systémovıch zaøízení.
+ :c2 K uloení konfiguraèních informací protokolu IP.
+ :c3 Mapuje hostname na IP adresy, obsah tohoto souboru je naèten do cache pamìti pro pøeklad DNS názvù (DNS client resolver cache).
+ :c4 Pomocí tohoto souboru se aktivuje lokální DNS server. Do souboru se zapisují IP adresy ostatních DNS serverù na které se pøeposílají dotazy.
+:c3 ok ex
+--
+
+			<p>Windows XP: Jaké typy záloh oznaèí soubor za zálohovanı/archivovanı: [alespoò jedna správnì]</p>
+ :c1 Kopie (Copy)
+ :c2 Pøírùstková (Incremental)
+ :c3 Rozdílová (Differential)
+ :c4 Normální (Normal)
+:c2:c4 ok ex
+--
+
+			<p> Windows XP: Vyberte pravdivé tvrzení o pøiøazení písmen a cest k diskùm na jednom PC v jedné instanci OS. [alespoò jedna správnì]</p>
+ :c1 Nelze pøiøadit více písmen stejné jednotce.
+ :c2 Nelze pøiøadit stejné písmeno více jednotkám.
+ :c3 Lze pøiøadit více cest jedné jednotce.
+ :c4 Lze pøiøadit více písmen stejné jednotce.
+:c1:c2:c3 ok ex
+--
+
+			<p>Windows XP: Administrátor sítì vytvoøil na jednom z poèítaèù lokální uivatelskı úèet "xtest" bez hesla, tento uivatel je èlenem skupin Users, Power Users a Remote Desktop Users. Pod tímto uivatelem se lze bezproblémovì pøihlásit lokálnì. Administrátor dále aktivoval pøipojení pomocí vzdálené plochy (Remote Desktop), ale stále se mu nedaøí pøihlásit se pomocí vzdálené plochy pod uivatelem xtest na tento poèítaè.</p>
+<p>Ovìøil, e pøipojení k síti je v poøádku a poèítaè pøijímá spojení - pøi pøihlášení z jiného PC se mu zobrazí pøihlašovací obrazovka vzdáleného poèítaèe, ale nelze se pøihlásit pod uivatelem xtest. Jaká je nejpravdìpodobnìjší pøíèina problému? [právì jedna správnì]</p>
+ :c1 Uivatel xtest není èlenem skupiny Administrators - pouze èlenové této skupiny mohou pøistupovat k poèítaèi pomocí vzdálené plochy.
+ :c2 Uivatel xtest nemá definované heslo (má prázdné heslo) - ve vıchozím nastavení neumoòuje systém vzdálené pøihlášení uivatelùm s prázdnım heslem.
+ :c3 Není vytvoøena vıjimka ve firewallu pro slubu vzdálené plochy.
+ :c4 Administrátor nespustil slubu "Vzdálená plocha" (Remote Desktop) - v pøípadì, e je tato sluba vypnuta, nelze se pøihlásit pomocí vzdálené plochy.
+:c2 ok ex
+--
+
+			<p>Windows XP: Administrátor vytvoøil uivatele "xklokangutan" a nastavil mu èlenství pouze a jenom v tìchto skupinách: Users a Power Users. Zároveò vytvoøil novı soubor "test.txt" a definoval pro nìho tato NTFS oprávnìní (jiná ne tato tam nejsou):</p>
+<p>Users: Read - Allow
+xklokangutan: Modify - Allow
+Power Users: Modify - Allow</p>
+<p>Uivatel xklokangutan mùe bezproblémovì èíst a mìnit soubor test.txt. Administrátor jeho uivatelskı úèet ale omylem smazal, aby svùj omyl  napravil, rychle vytvoøil uivatele se jménem xklokangutan znovu avšak tentokrát ho pøidal pouze do skupiny Users. Nic dalšího u Administrátor udìlat nestihnul a šel rovnou domù a spát. Jaké bude chování systému pøi pøístupu uivatele xklokangutan k souboru test.txt  (heslo neøešíme) [alespoò jedna správnì]</p>
+ :c1 Xklokangutan nemùe soubor mìnit.
+ :c2 Xklokangutan mùe soubor mìnit.
+ :c3 Xklokangutan mùe soubor èíst.
+ :c4 Xklokangutan nemùe soubor èíst.
+:c1:c3 ok ex
+--
+
+			<p> Windows XP: Uivatel pouívající na všech PC stejnı roaming (cestovní) profil, ve vıchozí konfiguraci, se pøihlásil na poèítaè A a vytvoøil na ploše soubor test.txt do kterého napsal text "poèítaè A".Potom se pøihlásil na poèítaè B a na ploše vytvoøil soubor test.txt do kterého napsal text "poèítaè B". Nejprve se odhlásí z poèítaèe B a potom z A. (obojí se provedlo úspìšnì). Vyberte pravdivá tvrzení o pøíštím pøihlášení: [alespoò jedna správnì]</p>
+ :c1 Pøi pøíštím pøihlášení bude mít na ploše soubor test.txt s textem "poèítaè A"
+ :c2 Pøi pøíštím pøihlášení bude mít na ploše soubor test.txt s textem "poèítaè B"
+ :c3 Pøi pøíštím pøihlášení nebude mít soubor test.txt na ploše vùbec.
+ :c4 Pøi pøíštím pøihlášení bude mít na ploše oba dva soubory (na zaèátek konfliktních souborù se pøidává hodnota %computername%).
+:c1 ok ex
+--
+
+			<p>Windows XP: V poèítaèi se nacházejí dva diskové svazky oznaèené písmeny C a D. Pro sloku "C:\Dokumenty" jsou nastavena NTFS oprávnìní následujícím zpùsobem : Everyone: Full Control - Allow, dìdìní tohoto oprávnìní je nastaveno na hodnotu "This Folder, Subfolders and Files". <br />
+Pro sloku D:\NoveDokumenty jsou nastavena NTFS oprávnìní takto: Everyone: Read & Execute - Allow, Users: Full Control - Allow, obì mají nastaveno dìdìní na hodnotu "This Folder, Subfolders and Files". Jaká oprávnìní budou mít soubory v pøípadì zkopírovaní obsahu z C:\Dokumenty\*.* do D:\NoveDokumenty? [právì jedna správnì]</p>
+ :c1 Soubory zdìdí oprávnìní ze sloky NoveDokumenty.
+ :c2 Soubory si ponechají pùvodní nastavení oprávnìní ze sloky Dokumenty.
+ :c3 Dojde ke spojení oprávnìní takto: Everyone: Full Control - Allow; Users: Full Control - Allow
+ :c4 ádná z uvedenıch není správnì.
+:c1 ok ex
+--
+
+			<p> Multi OS: Vyberte pravdivá tvrzení o task scheduler (plánovaè úloh) v rùznıch verzích OS Windows. [alespoò jedna správnì]</p>
+ :c1 V systému Windows XP lze jen za pomoci integrovanıch nástrojù v GUI definovat spuštìní scheduled tasku jako reakci na nìjakı Event (událost) (z Event logu).
+ :c2 V systému Windows Vista lze jen za pomoci integrovanıch nástrojù v GUI definovat spuštìní scheduled tasku jako reakci na nìjakı Event (událost) (z Event logu).
+ :c3 V systému Windows 7 lze jen za pomoci integrovanıch nástrojù v GUI definovat spuštìní scheduled tasku jako reakci na nìjakı Event (událost) (z Event logu).
+ :c4 Kadı scheduled task (naplánovaná úloha) je vdy spouštìn pod úètem právì pøihlášeného uivatele.
+:c2:c3 ok ex
+--
+
+			<p>Windows XP: V systému je 50 uivatelù a dva Administrátoøi. Administrátor vytvoøil sloku "Shared" a definoval NTFS oprávnìní takto (ádná jiná oprávnìní ne tato nejsou definována): Administrators: Full Control - Allow, zároveò tuto sloku nasdílel pod jménem "Shared" a definoval následující oprávnìní pro sdílení "Everyone: Read - Allow". Vyberte všechna pravdivá tvrzení o pøístupu do této sloky. [alespoò jedna správnì]</p>
+ :c1 V pøípadì pøístupu pomocí sdílené sloky (pøes sí - \\nazevpc\shared) mohou všichni èlenové skupiny Everyone pouze èíst.
+ :c2 V pøípadì pøístupu pomocí sdílené sloky (pøes sí - \\nazevpc\shared) mohou všichni èlenové skupiny Administrators pouze èíst.
+ :c3 V pøípadì lokálního pøístupu (uivatel je pøihlášen lokálnì) mohou všichni èlenové skupiny Administrators pouze èíst.
+ :c4 V pøípadì lokálního pøístupu (uivatel je pøihlášen lokálnì) mohou všichni èlenové skupiny Everyone pouze èíst.
+:c2 ok ex
+--
+
+			<p>Windows 7: K èemu slouí technologie AppLocker v operaèním systému Windows 7? [alespoò jedna správnì]</p>
+ :c1 Umoòuje povolit/zakázat urèité aplikace na základì rùznıch politik v rámci Windows 7.
+ :c2 Pro úspìšné provozování je nejprve nutné dokonèit fázi "Learning Mode" ve kterém AppLocker zaznamenává techniku psaní na klávesnici.
+ :c3 Umonuje vyvolat nìjakou akci (spustit skript, odhlásit uivatele...) v reakci na rozpoznání uivatele, jeho styl psaní se vıraznì liší od nauèeného vzorku.
+ :c4 Pro úspìšné provozování není nejprve nutné dokonèit fázi "Learning Mode" ve kterém AppLocker zaznamenává techniku psaní na klávesnici.
+:c1 ok ex
+--
+
+			<p>Windows XP: Vyberte pravdivé tvrzení o EFS v systému Windows XP (Encrypted File System): [právì jedna správnì]</p>
+ :c1 Umoòuje šifrování pouze celého disku.
+ :c2 K pouívání vyaduje TPM modul nebo USB klíè (pøístupnı pøi startu systému).
+ :c3 Lze pouívat spoleènì s NTFS kompresí.
+ :c4 Klíè symetrické kryptografie je odlišnı pro kadı soubor.
+:c4 ok ex
+
+
+--
+
+			<p>Windows XP: Jaké typy záloh <strong>ne</strong>oznaèí soubor za zálohovanı/archivovanı: [alespoò jedna správnì]</p>
+ :c1 Kopie (Copy)
+ :c2 Pøírùstková (Incremental)
+ :c3 Rozdílová (Differential)
+ :c4 Normální (Normal)
+:c1:c3 ok ex
+
+--
+
+			<p>Windows XP: Administrator vytvoøil sloku C:\Temp na poèítaèi PC1 a definoval pro ni následující NTFS oprávnìní (ádná jiná oprávnìní tam nejsou):
+CREATOR OWNER: Full Control
+Users: Read - Allow, Write - Allow
+
+zároveò tuto sloku nasdílel pod jménem "Temp" a definoval následující oprávnìní pro sdílení:
+Everyone: Full Control - Allow
+
+Uivatel xpepa má vytvoøen na poèítaèi PC1 úèet a je èlenem uivatelské skupiny Users. Pøistoupil z poèítaèe PC2, pomocí úètu PC1\xpepa, do sdílené sloky "\\PC1\Temp" a vytvoøil zde adresáø "Pepa".
+Uivatel xtonda má vytvoøen na poèítaèi PC1 úèet a je èlenem uivatelské skupiny Users. Pøistoupil z poèítaèe PC2, pomocí úètu PC1\xtonda, do sdílené sloky "\\PC1\Temp" a vytvoøil zde adresáø "Tonda".
+Uivatel xpepa potom znovu pøistoupit z PC2, pomocí úètu PC1\xpepa, do sdílené sloky  "\\PC1\Temp\Tonda" a vytvoøil zde soubor "PepaUvnitrTondy.txt"
+Uivatel xtonda potom znovu pøistoupit z PC2, pomocí úètu PC1\xtonda, do sdílené sloky  "\\PC1\Temp\Pepa" a vytvoøil zde soubor "TondaUvnitrPepy.txt"
+
+Vyberte všechna pravdivá tvrzení: [alespoò jedna správnì]
+ :c1 V pøípadì pøístupu pøes sdílenou sloku (\\PC1\Temp), mùe uivatel xpepa pøejmenovat adresáø  "Pepa".
+ :c2 V pøípadì pøístupu pøes sdílenou sloku (\\PC1\Temp), mùe uivatel xtonda smazat adresáø  "Pepa".
+ :c3 V pøípadì pøístupu pøes sdílenou sloku (\\PC1\Temp\Tonda), mùe uivatel xtonda upravit obsah souboru "PepaUvnitrTondy.txt".
+ :c4 V pøípadì pøístupu pøes sdílenou sloku (\\PC1\Temp\Tonda), mùe uivatel xtonda smazat soubor "PepaUvnitrTondy.txt".
+:c1:c3:c4 ok ex
+--
+
+			<p>Windows XP: Máme sloku "C:\Dokumenty" a na ní nastavena NTFS oprávnìní následujícím zpùsobem (ádná jiná oprávnìní tam nejsou):
+Everyone: Full Control - Allow, dìdìní tohoto oprávnìní je nastaveno na hodnotu "This Folder, Subfolders and Files".
+
+Dále máme sloku "C:\NoveDokumenty" a na ní nastavena NTFS oprávnìní následujícím zpùsobem  (ádná jiná oprávnìní tam nejsou):
+Administrators: Full Control - Allow, dìdìní tohoto oprávnìní je nastaveno na hodnotu "This Folder, Subfolders and Files".
+
+Ve sloce  "C:\Dokumenty" je umístìn soubor "hesla.txt" kterı má nastaven NTFS oprávnìní takto (ádná jiná oprávnìní tam nejsou):
+Users: Full Control - Allow; zrušeno zaškrtnutí políèka "Include inheritable permissions from this  object's parent" 
+
+Vyberte pravdivé tvrzení [právì jedna správnì]</p>
+ :c1 Po zkopírování souboru hesla.txt z C:\Dokumenty do C:\NoveDokumenty zdìdí novı soubor oprávnìní ze sloky C:\NoveDokumenty.
+ :c2 Po zkopírování souboru hesla.txt z C:\Dokumenty do C:\NoveDokumenty bude mít novı soubor pùvodní oprávnìní (Users:Full Control - Allow).
+ :c3 Po pøemístìní souboru hesla.txt z C:\Dokumenty do C:\NoveDokumenty zdìdí soubor oprávnìní ze sloky C:\NoveDokumenty.
+ :c4 Po pøemístìní souboru hesla.txt z C:\Dokumenty do C:\NoveDokumenty zdìdí soubor oprávnìní ze sloky C:\Dokumenty.
+:c1 ok ex
+--
+
+

@@ -1,0 +1,10 @@
+1. Nakresli + popis CMOS invertor
+2. Nakresli zapojenie a nastavenie maximalneho poctu zariadeni SCSI na narrow SCSI
+3. Popis rezimy INTEL 64
+4. Rozdiel 
+a - x1 a x16 u pci express
+b - dvd-r a dvd+r
+5. Hallov jav - popis vzorec - veliciny, jednotky, nakres klavesnice
+6. NAND vs NOR, popis kazdu, rozdiel
+7. L1 cache u 80486DX, nakres
+8. Synteza zvuku - najdi najmensiu vzorkovaciu frekvenciu pri signali zlozenom z ciastocnych signaloch

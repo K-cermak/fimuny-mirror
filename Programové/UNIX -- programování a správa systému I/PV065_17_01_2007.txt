@@ -1,0 +1,42 @@
+1)Z adresare smi smazat vlastnik soubor pokud
+ma pravo write v adresari
+vzdy
+.
+2)Madatory locking je
+
+3)Nepodminene pozastaveni procesu je signal
+
+4)
+static int pole[100]
+int main()
+{int pole2[100]
+}
+
+v polozce DATA bude zabrana pamet
+
+5)V multiprocesorovych aplikacich nejlepe vyuzije strojovy potencial
+spinlock
+semafor,
+read-copy-update
+
+6)pri zavolani sluzby jadra se stane co
+
+7)otazka na FS
+
+8)pojmenovanou rouru otevru prikazem
+
+9)otazka na linkovani za behu
+
+10)jak proces zabrani odswapovani svych stranek na disk
+
+11)
+
+fd1 = open(soubor,O_WRONLY)
+fd2 = open(soubor,O_WRONLY)
+
+write(fd1,"blabla")
+write(fd2,"blabla")
+
+co bude v souboru zapsano
+
+12) Jak vypisu posledni 10 znaku v souboru?

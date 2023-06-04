@@ -1,0 +1,41 @@
+Pøeètìte si nejprve peèlivì celé zadání a dobøe si rozvrhnìte práci na jednotlivıch èástech.
+Vzhledem k èasovému limitu *2 hodiny* mùe bıt vhodné nìkteré kroky dìlat paralelnì na rùznıch serverech.
+
+Dbejte na zabezpeèení systému a dodrujte zásadu nejmenších nutnıch oprávnìní.
+
+a) Nakonfigujte DHCP server, tak aby pøidìloval IPv4 na lokálním adaptéru (tj. ten, kterı není pøipojen do internetu).
+   Naše interní sí, pro kterou konfigurujete DHCP server, bude mít maximálnì 8192 klientù, zvolte minimální monou velikost
+   masky podsítì a pouíjte IPv4 vhodnou pro privátní adresu.
+
+b) Zajistìte, aby prvních 10 IPv4 adres z rozsahu nebylo pøidìlováno - budou slouit pro ruèní pøidìlení.
+
+c) Zajistìte, aby pouze a jenom jeden klient (libovolnı) dostal vdy v DHCP odpovìdi navíc i DHCP-option 0x42 odpovídající
+   NTP serveru tik.cesnet.cz
+
+d) Otestuje pøidìlování IP adres na klientském stroji, DHCP server musí pøidìlovat IP adresy pøi odevzdání!
+
+e) Zprovoznìte novou doménu v Active Directory a pøipojte do ní _všechny_ poèítaèe, které máte pøidelené. Zvolte vhodné pojmenování domény.
+
+f) Zajistìte, aby DHCP server nepøidìloval IPv4 adresy jinım, ne vám pøidìlenım poèítaèùm.
+
+- Jakmile vyprší èasovı limit, pøevezme vyuèující vaše RDP pøipojení a probìhne ohodnocení vašeho nastavení.
+
+-------------------------------------------------------------------------------------------------------------
+
+Na skúške dostane kadı 3 nové stroje, take konfiguráciu robíte v podstate od nuly.
+
+Správne riešenie bolo:
+
+a) Maska 18 bitov take 255.255.192.0 (2^13 = 8192 adries klientov ale 2 adresy treba necha pre sie a broadcast take preto 18 bitov a nie 19)
+
+b) Potom pridelovanı rozsah narpíklad 10.0.0.11 - 10.0.63.254
+
+c) Buï to spravíte cez rezerváciu alebo sa dá vytvori aj DHCP Policy, tam nastavíte identifikáciu pod¾a MAC adresy no a potom pri options
+   zaškrtnete 42 NTP server.
+
+d) Po inštalácii AD správne nakonfigurovanı DHCP server prestane fungova, je nutné spravi autorizáciu, take right click na názov
+   domény v DHCP mmc konzoli a tam authorize. Potom by u mali by zelené fajoèky pri ikonkách IPv4 a IPv6.
+
+e) No tak to viete spravi :D
+
+f) A toto sa nejak špeciálne neriešilo. Po inštaláci AD bude DHCP server pridelova IP adresy **asi** iba èlenom domény.

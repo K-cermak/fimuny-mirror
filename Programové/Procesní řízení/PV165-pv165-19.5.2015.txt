@@ -1,0 +1,4 @@
+1. Popsat BPM notaci na vlastnim prikladu 
+2. Popsat CPI + priklad
+3. Nakreslit a popsat Workflow reference model
+4. Popsat administrativni proces

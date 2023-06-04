@@ -1,0 +1,13 @@
+jedina skupina
+6 otazek
+2 body za spravnou odpoved, 1 za castecnou, 0 za spatnou
+6 bodu na E
+
+1) Spread spectrum - schema, popis
+2) DAMA-PRMA - priklad ze slajdu
+3) DS-1 - popis ramce hlasove hovoru, proc je prenosova rychlost prave 1,544 Mbps
+4) Samoopravny CRC (3,1) a sekvence bitu, rekonstrujte puvodni sekvenci
+5) ? - pokud nekdo vite, doplnte prosim
+6) Manchester pro danou sekvenci
+
+... by lubik

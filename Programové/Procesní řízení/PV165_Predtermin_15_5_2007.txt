@@ -1,0 +1,9 @@
+1/ Z ceho se sklada definice procesu? Uvedte priklady.
+
+2/ Jak se vyjadruji naklady procesu?
+
+3/ Poppiste notaci nastroje, ktery jste pouzili pro sestrojeni procesni mapy ve vasem projektu. Uvedte priklad procesni mapy s XOR a AND.
+
+4/ Popiste WF referencni model a jeho casti.
+
+5/ Popiste produkcni WF.

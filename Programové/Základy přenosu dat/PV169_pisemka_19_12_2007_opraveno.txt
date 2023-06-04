@@ -1,0 +1,9 @@
+Dovolil sem si opravit a doplnit mensi nedostatky predchoziho zadani
+
+1) rozdeleni spektra, schema + popis strucny popis jednotlivych zarizeni -> 9 rozprostrovani spektra (slide 4)
+2) Popsat slotted ALOHA - vyhody a nevyhody -> 8 multiplexing (slide 41)
+3) DAMA-TDMA - nakreslit a popsat -> 8 multiplexing (slide 46)
+4) Priklad na CRC, zadana data, klic G a vypocist FCS ... pomoci polynomu -> 6 mechanismy digitalni komunikace (slide 19<...)
+5) doplnit prubeh signalu (01001100011) do NRZ-L,Manchesteru atd. -> 5 kodovani signalu (slide 14)
+6) Sirka pasma je 1MHz, prenos data 10Mb/s. Kolik je signalovych urovni. 
+   Jaka bude sirka pasma, pokud chceme stejnou datovou rychlost u binarniho signalu -> 3 prenos dat (slide 42<...)

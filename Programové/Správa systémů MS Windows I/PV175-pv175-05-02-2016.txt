@@ -1,0 +1,229 @@
+1. Zlozka C:\ABC, Users: Modify Allow, zaroven obsahuje opravnenia pre zdielanie: Users: Read Allow, Administrator zlozku skopiroval do C:\DEF
+
+a/ nova zlozka je zdielana
+b/ nova zlozka zdedi opravnenia zavedeneho kontajneru
+c/ zlozka ABC musi byt pristupna iba pre citanie
+d/ zlozka ABC musi byt pristupna ku citaniu a ku zmene
+e/ zlozka ABC nebude po skopirovani zdielana
+
+Spravne: b, c
+
+Zdielanie sa nekopiruje; pri kopirovani vznika novy objekt, cize vzdy dedi opravnenia zavedeneho kontajneru; vypnut je to mozne az po skopirovani alebo priamo na cielovej zlozke musi byt nastavene, ze neaplikuje ziadne opravnenia na podriadene objekty; opravnenia sa komuluju dohromady a aplikuje sa to najviac restriktivne
+
+
+2. Vyberte spravne tvrdenia:
+
+a/ Users sa da vlozit do skupiny Administrators
+b/ Skupinu Administrators lze smazat
+c/ skupinu Everyone lze vlozit do skupiny Users
+d/ skupinu Users lze prejmenovat
+e/ skupinu Administrators lze prejmenovat
+
+Spravne: c, d, e
+
+Obmedzenie klientskych Win, skupiny do seba nejde vkladat; everyone je identita, to je mozne; built-in skupiny nejde zmazat no je mozne ich premenovat
+
+
+3. Zabezpecit PC proti selhani jednoho disku, tak aby nedoslo ku strate ziadnych dat:
+
+a/ 2 disky, pomocom dynamic disk vyrobim mirrored volume
+b/ 2 disky, pomocou dynamic disk vyrobim spanned volume
+c/ 2 disky, pomocou dynamic disk vyrobim stripped volume
+d/ 3 disky, pomocom storage spaces vytvorim three-way mirror
+
+Spravne: a
+
+three-way mirror potrebuje minimalne 5 diskov
+
+
+4. Mam zlozku X do ktorej som umiestnil subor A. Potom si uzivatel B v danej zlozke vytvoril hard link B-hard a symlink B-soft na moj subor A. Opravnenie pre X: Everyone: FC Allow. Potom administrator pridaval v tomto poradi opravnenia:
+
+A - Everyone: FC Allow
+B-hard - Everyone: FC Deny
+B-soft - Everyone: FC Deny
+
+skopiroval subor A v danej zlozke - C-kopie
+
+a/ obsah suboru A nebude mozne citat
+b/ obsah suboru B-hard bude mozne citat
+c/ obsah suboru B-soft nebude mozne citat
+d/ obsah suboru C-kopie bude mozne citat
+e/ obsah suboru C-kopie nebude mozne citat
+
+Spravne: a, c, d
+
+hard link ma nastavene Deny a to ma prednost; kopia dedi opravnenia nadradenej zlozky
+
+
+5. PowerShell - skript ktory zmazal z danej zlozky vsetky subory a zlozky ktore neboli modifikovane viac ako 10 dni; Get-ChildItem; Uloha bola rozhodnut ktore moznosti spravia to iste.
+
+
+6. Vyberte pravdive tvrdenia o rozdieloch medzi BIOS a UEFI
+
+a/ Win 8 podporuje UEFI len v 64 bit OS
+b/ Win 8 poporuje zavedie UEFI bez BIOS emulace
+c/ pre zavedenie OS z disku pri UEFI musi byt puzite GPT
+d/ MBR obsahuje partition table
+e/ 
+
+Spravne: a, b, c, d
+
+posledna moznost bola nejaka hlupost
+
+
+7. Cestovny (Roaming) profil. Uzivatel modifikuje prvy.txt na PC A a potom na PC B. subor druhy.txt na PC B a potom na PC A. Potom sa odhlasi.
+
+a/ Pri dalsom prihlaseni bude mat prvy.txt z PC B a druhy.txt z PC A. 
+
+porovnavaju sa casove razitka
+
+
+8. Mame na disku definovane hard diskove kvoty a zaroven sa pouziva NTFS komprese:
+
+a/ dojde k uspore dostupneho miesta pre uzivatela
+b/ nedojde k uspore dostupneho miesta pre uzivatela
+c/ nie je mozne skomprimovane subory sifrovat pomocou EFS
+d/ je mozne skomprimovane subory sifrovat pomocou EFS
+
+Spravne: b, c
+
+Win rezervuje miesto pre skomprimovany subor ale aj pre jeho dekompresiu
+
+
+9. Urcite minimalne NTFS opravnenia pre zlozku Public tak aby vsetci uzivatelia boli schopni vytvarat nove subory a zlozky v zlozke Public a aby ostatny uzivatelia nemohli v tychto novo vytvorenych zlozkach vyrvarat nove subory; vsetci su schopni upravovat a mazat iba tie subory a zlozky ktore sami vytvorili
+
+a/ Users: Read & Execute Allow, Users: Read Allow
+b/ Users: Write Allow (This folder only)
+c/ CREATOR OWNER: Modify Allow (Subfolders and files only)
+d/ CREATOR OWNER: Modify Allow (This folder only)
+
+Spravne: b, c
+
+a/ nie pretoze minimalne nutne; CREATOR OWNER len pre novo vytvorene podzlozky a subory, nema zmysel na konkretnom objekte, pokial niekto nieco vytvory vramci objektu, tak novy vlastnik ziska opravnenia podla tohoto vzoru;
+
+
+10. Obmena na ot·zku: Na co sl˙ûi technolÛgia ReadyBoost?
+a/ Zr˝chluje systÈm vyberanÌm neaktÌvnych sluûieb a ich vypÌnanÌm
+b/ Pred vypnutÌm systÈmu overÌ, Ëi ho bude moûnÈ znovu spustiù, ak n·jde chybu, pok˙si sa ju automaticky opraviù
+c/ MÙûe zr˝chliù poËÌtaË vyuûitÌm ˙loûnÈho priestoru na v‰Ëöine USB flash kariet a pam‰ùov˝ch kariet
+d/ Upravuje spÙsob zmeny ËasovÈho razÌtka "Last Access Time"
+e/ Zv‰Ëöuje dostupn˙ fyzick˙ pam‰ù OS deduplikovanÌm d·t v pam‰ti
+
+Spr·vne: c
+
+popis v slajdoch, ostatne moznosti nedavali zmysel
+
+
+11. Aky je rozdiel medzi CREATOR OWNER a OWNER RIGHTS
+
+a/ ziadny, funckce je stejna
+b/ pomocou OWNER RIGHTS je mozne obmedzit implicitne DACL opravnenie vlastnika objektu, teda odobrat mu opravnenie menit opravnenia
+c/ OWNER RIGHTS je mozne aplikovat iba na zlozky
+d/ ziadna z uvedenych moznosti
+
+Spravne: b
+
+OWNER RIGHTS funguje tak, ze ked nastavime v tom okamihu zacne obmedzovat toho vlastnika, CREATOR OWNER iba na zlozky
+
+
+12. Vyberte pravdive tvrdenie:
+
+a/ Win8, rozdelenie disku MBR, pouziva UEFI
+b/ Win nie je mozne zaviest z disku v rezime 4K Native
+c/ Win7 nieco
+d/ ziadna moznost nie je spravna
+
+Spravne: d
+
+UEFI vyzaduje GPT;
+
+
+13. Uzivatel zo skupiny Administrators chce spustat nejaky program bez UAC dialogu
+
+a/ ziadna moznost nie je spravna
+b/ digitalne podpisat
+c/ pridat do nejakej zlozky UACSafeLocations
+d/ vytvorit manifest k suboru
+e/ nastavit UAC integrity level na high
+
+Spravne: a
+
+jedine ako sa da toto dosiahnut je vypnut UAC alebo sa prihlasit ako built-in Admin
+
+
+14. Uzivatel A zasifroval subor pomocou EFS a dal ho na USB, ktory dal uzivatelovi B. Co potrebuje uzivatel B aby sa dostal k datam na USB ?
+
+a/ heslo A do Win
+b/ heslo A do win a privatny kluc uzivatela A
+c/ NTFS sifrovanie nie je mozne pouzit na USB
+d/ Ziadna odpoved nie je spravna
+
+Spravne: b
+
+
+15. Kde su fyzicky ulozene GPO
+
+a/ %systemroot%\System32\GroupPolicy
+b/ C:\Windows\PolicyDefinitions
+c/ Ziadna odpoved nie je spravne
+
+Spravne: a
+
+GPO su v %systemroot%\System32\GroupPolicy a %systemroot%\System32\GroupPolicyUsers
+
+
+16. co je vystupom kodu v jazyku PS:
+
+bolo tam nieco ako $array == @<1,2,3,4,5,6,7,8,9>
+echo $array[4..5]
+
+2 veci: dvojite = a <> namiesto () v poli
+
+Spravne bolo "neco jineho"
+
+
+17. Mam 3 sluzby: S1(Automatic) zavisi na S3(Manual) a S2(Disabled) zavisi tiez na S3
+
+a/ spusti vsetky 3
+b/ nespusti ziadnu
+c/ iba S1
+d/ iba S1 a S2
+e/ ziadna moznost nie je spravne
+
+Spravne: e
+
+spusti S1 a S3
+
+
+18. Smajdalf clenom Administrators a chce spustat regedit: GPO 
+
+a/ ziadna moznost nebola spravne
+
+19. Ktora edice Win 8.1 neexistuje:
+
+a/ Win 8.1
+b/ Win 8.1 Pro
+c/ Win 8.1 Pro N
+d/ Win 8.1 Enterprise
+e/ Win 8.1 Enterprise N
+f/ Ziadna moznost nie je spravne
+
+Spravne: f
+
+
+20. Mame uzivatela xtest, je v skupine Studenti, ktory chce modifikovat nejaky subor no obdrzi hlasku o nedostatocnych opravneniach, su vidiet nasledujuce zdedene opravnenia:
+
+Administrators: nieco
+Users: Read & Execute Allow, Read Allow
+Everyone: Write Deny
+Studenti: Modify Allow
+CREATOR OWNER: nieco asi
+
+a/ pridam xtest do skupiny Administrators
+b/ pridat pre xtest: Write Allow
+c/ nastavym xtest ako vlastnika suboru
+d/ ziadna moznost nie je spravne
+
+Spravne: b
+
+problem je Everyone: Write Deny; pridanim do Administrators sa nic nezmeni stale Write Deny; b/ je spravne pretoze explicitne opravenie prebije to zdenene Deny; vlasnik moze prava menit, to neznamena, ze sa nanho nevstahuju

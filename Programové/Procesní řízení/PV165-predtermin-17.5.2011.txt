@@ -1,0 +1,3 @@
+No, predtermin byl trochu hekticky, odlozeny o hodinu, ale jinak dobry :-)
+
+3 jednoduche otazecky - notace BPMN + priklad, nakreslit a popsat referencni model WF, popsat produktovy WF.

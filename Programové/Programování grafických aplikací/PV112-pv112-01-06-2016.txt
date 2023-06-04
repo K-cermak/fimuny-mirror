@@ -1,0 +1,7 @@
+1) Ma vliv poradi vrcholu na zobrazeni polygonu? Vysvetlit pojem face culling a jak se nastavuje.
+2) Vysvetlit (definovat) homogenni souradnice, k cemu nam jsou? Popsat zakladni (afinni) transformace (i maticemi).
+3) Rastarizace - co to je, vysvetlit princip. Co je to fragment?
+4) Vertex Array Object - co to je a jak se pouziva?
+5) Obrazek konvicky - urcit, jake slozky (amb., dif., spec. - tohle nebylo uvedeno, ale pro porozumeni me formulace otazky :D) pri Phongove modelu jsou pritomny a jak jsou nejspise nastaveny?
+
+Kazda za 10 bodu, na pruchod alespon 30/50

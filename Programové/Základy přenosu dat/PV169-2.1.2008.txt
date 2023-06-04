@@ -1,0 +1,8 @@
+PV169 - zkouška 2.1.2008
+
+1. nakreslit a popsat schéma spread spectrum
+2. DAMA - TDMA schéma
+3. slotted Aloha - popsat, napsat výhody a nevýhody
+4. pøíklad na CRC, mìla se vypoèítat 2-bitová hodnota FCS pøiložená ke zpráve 10011 a klíè byl x^4 + x^2 + 1, ale zdálo se je chybné zadání, jelikož pøíklad více lidem nevycházel
+5. nakreslit kódovaní dané bitové posloupnosti v NRZ-L, NRZI, Bipolar-AMI, pseudoternary, Manchester, Differencial Manchester
+6. vypoèítat poèet signálových prvkù pøi pøenosové rychlosti 10 Mb/s a šíøce pásma 1Mhz (výsledek je 32) a ále vypoèítat šíøku pásma u binárního signálu pøi pøenosové rychlosti 10 Mb/s (výsledek je 5 Mhz)

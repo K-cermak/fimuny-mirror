@@ -1,0 +1,10 @@
+1. vystupni smerove charakteristiky mikrofonu
+2. symetrická kabeláž + výhody + XLR konektor
+3. Motion vector
+4. stabilizace
+5. diskutujte udp vs tcp pri multimedialnim prenosu
+6. VBR  - kde se pouziva
+7. psychoaukusticky model - vyuziti / definice
+8. pupila - co to je,kde se pouziva
+9. mozne chyby pri prevodu zvuku na dig. signal
+10.1 èip / 3 èip kamera . srovnat, výhody / nevýhody, charakteristika

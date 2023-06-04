@@ -1,0 +1,16 @@
+27.5.2013
+Otázky Organizácia súborov:
+
+Máme zdroj Z generujúci správy nad abecedu A,B,C,D s pravdepodobnostami vıskytu znakov 0.5, 0.25, 0.125, 0.125 a správu
+zakódovanú Hufmanovım kódovaním.
+Urèite entropiu-neurèitos zdroja správ.
+Dokáte e pre správu s danou pravdepodobnosou vıskytu znakov
+je kódovanie optimálne.
+
+Urèite ko¾ko k¾úèov sa nachádza v 16-árnom vyh¾adávacom strome, prièom pri vyh¾adávaní je maximálny poèet operácií 4.
+
+Zostrojte vıslednı B-strom, ktorı vznikne po vloení k¾úèov 3,1,5,8,7,12,9,6
+
+Máme tabu¾ku s 13 riadkami, lineárne hašovanie, hašovaciu funkciu K mod 13, a dané k¾úèe
+
+Napíšte vıznam sluieb otvorenie a zatvorenie súboru.

@@ -1,0 +1,12 @@
+Kazda otazka 8-10b, na prejdenie 50%+
+
+1. zivotopis nejakeho typka, trebalo vpisat meno
+2. z coho a preco sa vyvinuli prve operacne systemy+ priklady prvych OS
+3. hlavne crty 2.generacie pocitacov + priklady
+4. vplyv Zuseho a popisat Z1-Z4
+5. Historia WWW + prvy prehliadac
+6. popisat historiu pamati
+7. Popisat na co bol urceny dalnopis, dierne stitky. Ake mali problemy
+8. Charakteristiky Ethernetu a Alohanetu, porovnanie
+9. Co bol Fortran a na co sa pouzival
+10. Komentovat Moore's Law pre procesory a pamate

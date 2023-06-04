@@ -1,0 +1,29 @@
+PV112 Zkouška 14.6 2015
+
+1. Kvadriky
+
+2. Jak pracují shadery (obecnì, bez pøíkazù)
+
+3. Antialiasing
+
+4. Face culling
+
+5. Praktický pøíklad, byla ukázka z kódu kreslení trojúhelníka a gluLookAt, mìli jsme urèit, zda bude trojúhelník vidìt a proè.
+
+
+
+PV112 Zkouška 22.6 2015
+
+1. Jaké známì 2 druhy projekce? Pøíkazy (mùžou být i z rozšiøujících knihoven)
+
+2. uniform, varying, attribute, const v shaderech
+
+3. Pipelining
+
+4. Blending
+
+5. a) Uvést translaèní matici pro zadanou translaci (1,-3,5) a scaling matici pro zadaný scale (27x vìtší na ose y
+   b) Co dìlá glLoadIdentity()?
+
+
+E bylo za 30b, otázky po 10b

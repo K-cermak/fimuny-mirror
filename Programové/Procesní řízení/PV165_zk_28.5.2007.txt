@@ -1,0 +1,5 @@
+1. Co popisuje standard XPDL?
+2. Co je to kriticka cesta projektu (resp. procesu)? Jak se stanovi?
+3. Popiste notaci procesni mapy zakreslene pomoci UML diagramu aktivit. Nakreslete jednoduchy priklad s vetvenim AND a XOR.
+4. Jake informace se prenasi pres WAPI 1 mezi PDT a WES?
+5. CO je tzv. kolaborativni workflow? Charakterizujte jeho procesy. Uvedte priklad takoveho procesu.

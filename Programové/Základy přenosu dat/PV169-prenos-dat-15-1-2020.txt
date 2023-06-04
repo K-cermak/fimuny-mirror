@@ -1,0 +1,13 @@
+1. Jak se změní maximální rychlost přenosu dat, pokud se dvakrát zvýší šířka pásma?
+(Nyquistova věta - dvakrát se zvýší.)
+
+2. Zakresli kódování bitů (zadaná posloupnost) v NRZ-I, dif. Manchesteru a AMI
+
+3. CSMA nonpersistent varianta
+
+4. Příklad na Nyquistovu větu - QAM kódování
+(M=4)
+
+5. Jaká je doba tvrání přenosu 1 milionu bitů na vzdálenost 5000 km, pokud je rychlost signálu 2*(10**8), použité kódování Go-Back-N s ARQ okno velikosti 7, 1 rámec má 1000 bitů, pošle se rychlostí 1Mbit/s.
+
+6. Popiš Hammingovy kódy (n,k).

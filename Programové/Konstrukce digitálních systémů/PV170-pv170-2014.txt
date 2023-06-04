@@ -1,0 +1,4 @@
+Necelá polovina bodů je z příkladů procvičovaných během semestru - úplně ty samé, zbytek je za návrh detekčního obvodu - diagram přechodů, zakódování, K. mapy, menší hrstka bodů za náčrt obvodu. Pozor, test je na 2 skupiny, ta smolnější (A?) měla detektor 2z5, ten zabere dost času, tak nechat na konec!
+K úspěšnému složení je zapotřebí myslím alespoň polovina bodů, při konzultaci se dá leccos dohádat, ovšem chce to vlastní iniciativu a psí oči. Účast na přednáškách silnou výhodou (málo lidí - tvůj xicht si zapamatuje rychle). :)
+
+P.S. Obhajoba projektu z PB170 se PV170 vůbec netýká, tedy jinak, žádná se nekoná.

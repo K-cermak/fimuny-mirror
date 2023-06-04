@@ -1,0 +1,921 @@
+=========================================================================================
+DOPORUÈOVAL BYCH TOTO POUÍT JAKO KONTROLU, NE JAKO PRIMÁRNÍ STUDIJNÍ MATERIÁL
+-tak jsem to aspoò dìlal já s pùvodní verzí (která mìla nìkdy ne zcela správné odpovìdi)
+-ale ani tato pravdìpodobnì není bez chyby
+-monoho odpovìdí bylo pøevzato z pøedchozí verze
+-jaro 2007, 240 otázek
+=========================================================================================
+
+Co jsou a jak fungují tokeny zaloené na hodinách? Jaké jsou jejich bezpeènostní nedostatky?
+Bıvají souèástí autentizaèních kalkulátorù. Generují kód jedineènı pro danı pøístroj a èas. tento kód umí (musí umìt) spoèítat i autentizaèní server. Problém s platností èasovıch rámcù a se synchronizací hodin.
+
+Popiš struènì Shamirùv protokol bez klíèù (Shamir's no-key protocol).
+=technika pøenosu klíèe bez pøedchozí znalosti nìjakého tajemství (pøedešlého klíèe atd.). Zaloen na komutativní symetrické šifre E. Kadá strana má svùj klíè Ka, Kb (A nezná Kb, B nezná Ka).
+A -> B: Eka(X)
+A <- B: Ekb(Eka(X))
+A -> B: Ekb(X)
+Nyní obì strany sdílí X. Problémem je existence komutativní symetrické šifry. Tento problém nebyl zatím v praxi vyøešen.
+
+Byly pro hašovací algoritmus SHA-256 ji nalezeny (a veøejnì publikovány) kolize?
+Ne
+
+Diskutujte velikost matice pøístupovıch práv.
+Mùe bıt dvoj(objekty,subjekty) nebo trojrozmìrná (tøetím rozmìrem je program -> pro konkrétní subjekt,program,objekt jsou definována pøístupová práva). Pø.:
+(Alice,editor,úèetní data) má práva {r}
+(Alice,editor,log soubory) má práva {}
+Velikost obou matic je velká natolik, e se nevyplatí ji takto ukládat. Pøistupuje se pak k ukládání po objektech(seznamY pøístupovıch práv) nebo po subjektech (seznamY pøístupovıch oprávnìní).
+
+Co je to "sandbox" a k èemu se pouívá?
+=jedna z metod spouštìní nedùvìryhodného kódu. Je to omezené prostøedí, ve kterém nemá kód k urèitım prostøedkùm (pø aplety Javy staené z webu se neukládají na disk a smí komunikovat pouze s pùvodním serverem)
+
+Jaké chyby mohou biometrické systémy udìlat?
+problém ivosti vzorku (je vzorek od ivé odoby?, pochází skuteènì od osoby, která jej pøedkládá?(problém silikonovıch a jinıch náhraek))
+vysoké FAR(false acceptance rate), FRR(false rejection rate)
+existence FTA(fail to acquire), FTE(fail to enroll)
+
+Je moné pomocí zaruèeného elektronického podpisu zaloeného na kvalifikovaném certifikátu vydaném akreditovanım poskytovatelem certifikaèních slueb zajistit integritu zprávy:
+ano, zprávu je moné modifikovat, ale modifikace bude detekována
+
+Jaké bezpeènostní principy podporuje protokol SSL/TLS?
+autentizace stran-pomocí certifikátù a protokolu vızva-odpovìï
+integrita a autenticita dat-pomocí autentizaèních kódù(MAC)
+dùvìrnost dat-po úvodní inicializaci("handshake") je vytvoøen/ustaven sym klíè šifrující všechnu následnou komunikaci
+
+Umoòuje zaruèenı elektronickı podpis identifikovat autora podepsané zprávy?
+Ano
+
+Jakı je rozdíl mezi transportním a tunelovacím reimem IPsec?
+V TRANSPORTNÍM REIMU není šifrována reálná IP hlavièka. end-to-end(point-to-point)=koncové zaøízení-to koncové zaøízení
+V TUNELOVACÍM REIMU je šifrována i reálná IP hlavièka. Tunelovací reim probíhá vdy firewall-firewall zašifrovaná hlavièka je nahrazena novou vygenerovanou.
+
+K bezpeènému uloení soukromého klíèe mùeme pouít:
+èipovou kartu
+soubor na disku, chránìnı heslem
+bezpeènı HW modul pro PCI sbìrnici
+PDA chránìné otiskem prstu
+
+K èemu slouí a na jakém principu je zaloena pasivní autentizace
+u elektronickıch pasù?
+Pasivní a aktivní autentizace je podobná metodám SDA a DDA ve specifikaci EMV(metody na detekci padìlanıch/falešnıch karet s èipem). -> pasivní autentizace (povinná) zabraòuje vytváøení novıch(falešnıch) èipovıch karet-pasù, aktivní autentizace (nepovinná) zabraòuje i kopírování ji vzniklıch èipovıch karet-pasù. Princip:
+1. Všechna data (v podobì hašù) jsou digitálnì podepsána vydávající autoritou a uloena v souboru EF.SO(D) na èipu
+2. Pro ovìøení podpisu je tøeba mít k dispozici (koøenovı) certifikát vydavatele (certifikaèní øetìzec, vedoucí ke koøenovému certifikátu, je uloen na èipu-v pase)
+http://www.ics.muni.cz/zpravodaj/articles/534.html
+
+Co je potøeba zajistit pro spolehlivé nasazení poøadovıch èísel (sekvencí) jako vhodnıch èasovì promìnnıch parametrù?
+obì strany musí dlouhodobì udrovat aktuální-poslední pouitou hodnotu
+
+Uveïte pøíklad elektronického podpisu, kterı není digitálním podpisem.
+podpis emailu
+
+K èemu slouí protokol Oakley?
+Je souèástí IPsec a je zaloen na protokolu Diffie-Hellman,ale odstraòuje jeho hlavní nedostatky - absence autentizace, neodolnost vùèi útoku man-in-the-middle. Odolnı taky proti útokùm pøehráním(pomocí èasovıch parametrù), útokùm typu DoS(pomocí tzv. cookies)
+
+Co je to prahová hodnota (threshold) u biometrickıch systémù?
+Threshold - A predefined number, often controlled by a biometric system administrator, which establishes the degree of correlation necessary for a comparison to be deemed a match.
+http://www.findbiometrics.com/Pages/glossary.html
+=hranice shody registraèního vzorku a aktuálnì snímaného vzorku=kdy se aktuálnì snímanı vzorek ještì povauje za dostaèující k autentizaci/identifikaci.
+
+Pøi jakıch útocích se vyuívá narozeninového paradoxu?
+pøi útocích na klíèované hašovací funkce - na vlastnost bezkoliznosti(silné i slabé)
+
+K èemu slouí protokol ssh?
+slouí k pøihlášení klienta(uivatele) k serveru
+
+K èemu slouí steganografie? Uveïte pøíklad pouití.
+Steganografie se narozdíl od kryptografie nesnaí pøevést zprávu do tvaru nesrozumitelného pro tøetí stranu, ale snaí se utajit samotnou existenci zprávy. Èasto se kombinuje s kryptografií. Napøíklad v bezpeènostním SW pro šifrování dat je umonìno vytváøet virtuální šifrované disky, v rámci tìchto virtuálních diskù je mono vytváøet další viditelné i neviditelné šifrované disky. Je pak doporuèeno aby uivatel vytvoøil šifrovanı disk, do nìj uloil privátnì vyhlíející obsah a obsah kterı potøebuje opravdu zabezpeèit uloil do skrytého disku. Pøi muèení by pak byl nucen vyzradit heslo k šifrovanému disku, ale útoèník by na skrytı disk nepøišel.
+
+Jak silná je autentizace poèítaèù pomocí ethernetovıch MAC adres?
+hodnì slabá - ethernetové adresy nejsou tajné a lze ji i snadno zmìnit
+
+Je kryptografická hašovací funkce SHA-512 v souèasné dobì povaována za bezpeènou?
+Ano
+
+Co je cílem autentizace uivatele (se zøetelem na oprávnìné i neoprávnìné potenciální uivatele).
+Provést ovìøení identity(autentizaci):
+co nejjednodušeji pro oprávnìné (autorizované) uivatele
+co nejsloitìji pro neoprávnìné (neautorizované) uivatele
+
+Pokud pro rozbalení šifrovaného zip souboru zadávám heslo, jedná se o:
+autorizaci
+
+K èemu slouí a jakı je princip Encapsulated Security Payload (ESP) záhlaví v IPSec?
+zajišuje integritu a autenticitu dat a dùvìrnost, brání útokùm pøehráním. Je pouit symetrickı šifrovací klíè
+
+Máte strany A a B, sdílející jeden tajnı symetrickı klíè. Jak byste provedli autentizaci
+strany A vùèi stranì B, tak aby protokol byl odolnı vùèi útokùm odposlechem a pøehráním?
+k..sym. klíè
+B->A: Ek(nB)
+A->B: Ek(nA,nB,"B")
+
+K èemu slouí a jakı je princip Authenticated Header (AH) záhlaví v IPSec?
+zajišuje integritu a autenticitu dat, chrání pøed útoky pøehráním. Je pouit MAC se sekvenèním èíslem
+
+Prùkopníkem/ky v oblasti asymetrické kryptografie byl/i:
+Diffie,Hellman,Rivest
+
+Co je to FTA (fail to acquire) u biometrickıch systémù?
+neschopnost získat aktuálnì snímanı vzorek - èili to patí jen pro ji REGISTROVANÉ uivatele
+http://209.85.135.104/search?q=cache:2qG3himE_6UJ:www.authenti-corp.com/iris06/report/IRIS06_draft_report_v0-40p_20070331.doc+FTE,+FTA&hl=cs&ct=clnk&cd=8&gl=cz
+
+Je IPsec povinnı pro IPv4?
+Ne
+
+Na èem závisí úspìšnost útoku hroubou silou (na soubor s haši hesel)?
+na vozrci:) : (èas platnosti x poèet odhadù za jednotku èasu)/velikost abecedy^delka hesla
+
+Je dobrá kryptografická hašovací funkce prostá:
+Ne
+:-/	http://cs.wikipedia.org/wiki/Prost%C3%A1_funkce
+
+Uveïte pøíklad fyzického øízení pøístupu.
+ochrana offline uloenıch archivních kopií dat
+
+Co je to cyklickı záznam jako datovı typ u èipovıch karet?
+Pokud dorazíme na konec souboru, zaène se automaticky pøemazávat od zaèátku. Vhodné napø. pro logy.
+
+Co je to dedicated file (DF) u èipovıch karet?
+nìco jako adresáø pøi nahlíení na strukturu dat na èipu jako na strukturu dat na disku
+
+Jakı je rozdíl mezi modelem Bell-LaPadula a Biba (u MLS systémù)?
+jsou to vzájemné inverze(model Biba je inverzí Bell-LaPaduly)
+Bell-LaPadula zajišuje dùvìrnost
+model Biba zajišuje integritu
+
+Jaké máme monosti pøi spouštìní nedùvìryhodného kódu?
+autentizace kódu - napø Microsoft Authenticode
+speciální jazky neumoòující škodlivou èinnost - JavaScript
+kontrolní programy, které pøed spuštìním kontrolují kód na škodlivou èinnost(heuristiky antivirovıch programù)
+spuštìní kódu s minimálními pøístupovımi právy -unixovı nobody
+sandbox - applety Javy
+
+Jak zajištujeme integritu veøejného klíèe?
+pomocí certifikátu veøejného klíèe (veøejnı klíè je spjat s danım uivatelem, pravost uivatele i tohoto veøejného klíèe zajišuje certifikaèní autorita)
+
+Co je a k èemu slouí èasová analıza (u èipovıch karet)?
+=jeden z logickıch útokù na èipové karty. Vuívá toho, e èas potøebnı ke zpracování operace závisí na známém vstupu, známém pouitém algoritmu a na datech uloenıch na kartì. Pomocí známıch vìcí tak mùeme odvodit data na kartì.
+
+Uveï dvì vıhody a dvì nevıhody volitelého øízení pøístupu.
+jednoduchost->malá reie,flexibilita (dál velká vyjadøovací schopnost)
+
+Algoritmus RSA:
+je jedním z prvních asymetrickıch algoritmù, ale stále se pouívá
+za bezpeènou délku klíèe se povauje alespoò 2048 bitù
+
+Seøaïte následující biometrické technologie podle pøesnosti:
+otisky prstù, oèní duhovka, rozpoznání oblièeje, verifikace podpisu.
+NEJPØESNÌJŠÍ oèní duhovka, otisk prtu, rozpoznání oblièeje, verifikace podpisu NEJMÉNÌ PØESNÉ
+
+Co je to CVV/CVC u platebních karet?
+poøípadì ještì CID
+jedná se o èísla na èipové kreditní kartì která se pouívají pro nákup pøes internet
+CVV(VISA), CVC(MasterCard), CID(American Express)
+https://secure.cybertime.net/cvvcvccid_number.html
+
+Jakım typùm útokù se snaí zabránit aktivní autentizace u elektronickıch pasù?
+Pasivní a aktivní autentizace je podobná metodám SDA a DDA ve specifikaci EMV(metody na detekci padìlanıch/falešnıch karet s èipem). -> aktivní autentizace (nepovinná) zabraòuje jednoduchému ètení dat z karty a tudí zabraòuje kopírování ji vzniklıch èipovıch karet-pasù.
+
+Seznam pøístupovıch oprávnìní (capabilities) popisuje práva jednoho:
+subjektu
+
+Co to jsou markanty otisku prstu, co víš o biometrice otisku prstu?
+Markanty jsou vıznamné prvky v otisku prstu (zaèátek,konec èáry, rozbíhání èar...)
+rychlost 1ms a 2s, FAR pod 0,1% pøi FRR asi 5%, èteèky jsou optické,silikonové(kapacitní), ultrazvukové
+
+ACL (Access Control List) se vztahuje k jednomu:
+objektu
+
+Existují èipové karty s 32-bitovımi procesory?
+Ano
+
+Jakı je rozdíl mezi jednoduchou a diferenciální vıkonovou analızou (SPA vs. DPA)?
+SPA - utocnik primo sleduje spotrebu proudu v systemu.Tímto postupem je mozno napr. identifikovat vetsí bloky instrukcí, které se treba i opakují (cykly DESu, operace RSA atd.). Pri vyssím rozlisení mohou bıt rozpoznány jednotlivé instrukce. Tato analıza muze bıt pouzita napr. na zlomení implementací RSA, protoze odhalí rozdíly mezi operacemi násobení a umocnování. Podobne, mnoho implementací DESu má viditelné rozdíly mezi operacemi permutace a posun, takze mohou bıt rozlomeny. Cipovıch karet, jez jsou citlivé na tuto analızu je velké mnozství, ale není zvlást obtízné postavit zarízení, která jsou proti tomuto útoku odolná. 
+DPA-DPA je mnohem vıkonnejsím útokem nez SPA a je mnohem obtíznejsí jí zabránit. Zatímco SPA útoky pouzívají primárne vizuální prohlízení pro identifikaci relevantních vıkonovıch zmen, tak DPA útoky pouzívají statistickou analızu a techniky pro korekci chyb pro získání informací, jez mají vztah k soukromım klícum.DPA se skládá ze dvou fází. Shromázdení dat a analıza dat. Sbírání dat pro DPA muze bıt provedeno vzorkováním príkonu zarízení behem kryptografickıch operací, jak uz bylo popsáno. Pro DPA je potreba posbírat mnozství (stovky az tisíce) kryptografickıch operací, jez pouzívají cílovı soukromı klíc. http://www.fit.vutbr.cz/~cvrcek/cards/karty.html.en
+
+K èemu se pouívá CRC?
+Detekce chyb, k zajištìní integrity dat. Poskytuje ochranu pouze proti NEúmyslné zmene dat
+
+Co je to slovníkovı útok?
+Útok hádání hesel podle databáze (slovníku) èastıch hesel, klasického slovníku, etc...
+
+Co znamená klasifikace uivatelù a objektù (dat) v MLS?
+rozdìlení uivatelù do kategorií podle dùvìryhodnosti(kadı uivatel má pak 1. poèáteèní bezp. úroveò(tzv. clearance), 2.pøihlašuje se s aktuální bezpeènostní úrovní)
+klasifikace objektù do tøíd(U,C,S,TS) podle dùvernosti
+
+Jakı je rozdíl mezi fyzickımi a logickımi útoky na èipové karty?
+pøi fycizkém útoku dochází ke znièení nebo poškození karty(invazivní-preparace èipu...; semiinvazivní - pouití elektromagnetického záøení rùznıch vlnovıch délek). Fyzickı útok vyaduje speciální zaøízení,vybavení a znalosti.
+pøi logickém se útoku je potøeba znát detailní znalosti o struktuøe karty,útokem se karta nepoškozuje
+
+Co je to master file (MF) u èipovıch karet?
+Koøenovı adresáø-poèáteènì se pracuje s ním pak se pøistupuje k niším vrstvám
+
+Co je to referenèní monitor (u øízení pøístupu)?
+Referenèní monitor je mezièlánek, kterı kontroluje kadı pøístup subjektu k objektu vùèi zásadám bezpeènostní politiky.
+
+Jakı je rozdíl mezi aktivními a pasivními RFID tagy?
+pasivní-bez baterie,levnìjsí,mensí,skoro neomezena zivotnost
+aktivní-s baterií-mohou šíøit vlastní signál,draší,ivotnost 5 let
+
+Jakı je rozdíl mezi komerèními a forenzními biometrickımi systémy?
+Komerèní - automatické, nízká pøesnost, nekvalitní registrace mùe bıt provedena znova, uchováváme pouze zpracované charakteristiky, vısledek v sekundách, není nutná odborná znalost systému, miniaturizace, cena je dùleitá
+Forenzní - nutná profesionální obsluha, vyšší pøesnost, registrace nemùe bıt provedena, uchováváme zpracované charakteristiky i pùvodní biometrické vzory, vısledek a dny, nutná odbornost systému a principu funkce, na velikosti nezáleí, cena je vysoká ale není pro nás hlavní faktor.  
+
+Co je to bezpeènostní oprávnìní (clearance) u MLS (MultiLevel Systems) systémù?
+jedna ze dvou bezpeènostních úrovení uivatele(druhá-aktuální bezp. úroveò). Uivatel s aktuální bezp. úrovní má pøístup pouze k objektùm nepøevyšujícím danou úroveò bezp. oprávnìní(clearance).
+
+Jaká biometrická data jsou ukládána v souèasné dobì do Èeskıch
+elektronickıch pasù?
+pouze oblièej(fotka)
+http://www.ics.muni.cz/zpravodaj/articles/534.html (kapitola 3 - biometrické pasy, 4. odstavec)
+
+Jsou obvykle v OS ukládána hesla šifrovanì nebo hašovanì?
+hašovanì
+
+Byly pro hašovací algoritmus MD5 ji nalezeny (a veøejnì publikovány) kolize?
+Ano
+
+Je rychlejší kryptografie symetrická nebo asymetrická:
+symetrická
+
+Uveïte pøíklad protokolu typu zero-knowledge (nejen jméno, ale i princip).
+identifikaèní Feige-Fiat
+Dùvìryhodná tøetí strana T zvolí tajné prvoèísla p,q a zveøejní n=p.q
+A volí tajné s (nesoudìlná(spol.dìl.=1 :) 1 <= s <= n-1) a spoèítá veøejnı klíè v=s^2 mod n
+A se autentizuje vùèi B:
+A->B x=r^2 mod n
+B->A e=0 nebo 1
+A->B y=r.s^e mod n
+Opakujeme t-krát, pst podvádìní je 2^-t
+
+Jakı je rozdíl a k èemu slouí autentizace zákazníka a autorizace platby?
+Souèástí autorizace platby je autentizace zákazníka-ten pouije minimálnì dvou faktorovou autentizaci(token=karta,tajemství=PIN/heslo) + podpis
+NEVÍM JISTÌ
+
+Jakı je rozdíl mezi Key Distribution center a Key Translation center?
+Key distribution center sám generuje klíèe pro jednotlivé "sessions". Key translation center pouze distribuuje klíèe,které dostalo od jedné z komunikujících stran klientù.
+
+Co to jsou polyinstance (u databázovıch MLS systémù) a jak vznikají?
+Chráníme existenci informace na vyšší úrovni. Uivatel na niší úrovni chce vytvoøit soubor, kterı ji existuje, buï mu to povolíme nebo zakáeme. Pokud mu to zakáeme odhalíme existenci chránìné informace. Pokud mu to povolíme vznikne soubor se stejnım oznaèením ale rùznım vıznamem na rùznıch úrovních zabezpeèení. U DB je to nertiviální problém - øeší se zatajením (místo samotné informace je uvedena jen vıše dvìrnosti) nebo smyšlenım pøíbìhem (informace v db sice je,ale je nepravdivá/nepøesná)
+
+Co je to FAR (false acceptance rate) u biometrickıch systémù?
+poèet nesprávnıch pøijetí. Uivatel kterı by se nemìl dostat do systému se do nìj dostane. Èím vyšší FAR, tím menší bezpeènost systému. Nepøímo závislé na FRR.
+
+Jak je rozdíl mezi certifikaèní a registraèní autoritou?
+registraèní autorita je jen jakısi pomocník cert. autority. RA je nepovinnou slokou,pøijímá ádosti o registrace uivatelù,ovìøuje pravdivost údajù,pøedává certifikát k podpisu certifikaèní autoritì, podepsanı cert. pøedá klientovi
+
+Splòuje digitální podpis poadavky kladené na zaruèenı elektronickı podpis?
+EL. PODPIS musí splòovat:
+jednoznaènì spojen s podepisující osobou - ANO
+umoòuje identifikace podepisující osoby ve vztahu k datové zprávì - ANO
+byl vytvoøen pomocí prostøedkù, které podepisující osoba musí udret pod svou vıhradní kontrolou - ANO
+podpis je k datové zprávì pøipojen tak, e je mono zjistit následnou zmìnu dat - ANO
+digitální podpis splòuje poadavky kladené na el. podpis
+
+Jakı je vztah mezi ACL (Access Control List) a ACE (Access Control Element) u øízení pøístupu?
+ACL je seznam poloek. Jeden ACL se vztahuje k jednomu objektu. Jedna poloka seznamu je ACE. ACE mùe bıt buï subjekt nebo skupina subjektù (v unixu group)
+
+Jaké hašovací funkce se pouívají pod OS UNIX pro ukládání hesel uivatelù?
+MD5 - heslo a 255 znakù, sùl a 8 znakù. V minulosti upravenı DES algoritmus.
+
+Co je to "race condition"? Uveïte pøíklad.
+Operace "ovìøení práv" a "pouití práv" nejsou atomické, mùe docházet ke kolizím. Zneuitelné u aplikací s vyšším oprávnìním SUID/SGID, cgi webové aplikace.
+
+Jak jsou vyuity reimy procesoru (Rings of protection) pro bezpeènost?
+Øízení pøístupu na úrovni HW, nìkolik reimù èinnosti s rùznımi právy jak pro objekty tak pro subjekty. Mìnit ring je mono jenom v reimu 0 (operaèní systém).
+
+K èemu slouí clustering (dìlení) databáze u biometrické identifikace?
+Protoe je identifikace nároènı proces, provedeme rozdìlení databáze a v jednotlivıch databázích pak hledáme paralelnì.
+
+Co víš o PIN managementu u èipovıch karet?
+Piny jsou uloeny v samostatnıch souborech "elementary files". Práva pøístupu jsou uloeny v hlavièkách souborù. pøístupová prava pak dávají monost mìnit piny v souborech. Poèet pokusù na zadání PINu je omezen. Po pøekroèení limitu dojde k zablokování souboru. Obvykle se pouívá další pin (u SIM karet PUK)pro odblokování, pøi zablokování i tohoto pinu je pak obvykle karta znehodnocena.
+
+Popiš struènì protokol Diffie-Hellman a typickı útok na tento protokol.
+=asymetrickı protokol na ustavení klíèe-tajemství.
+Spoleèné prvoèíslo p, generátor alfa v Zp. A volí tajné x, B volí tajné y.
+A -> B: alfa^x mod p
+A <- B: alfa^y mod p
+A a B sdílí K=alfa^xy mod p
+Typickı útok man-in-the-middle:
+A: alfa^xy' mod p
+B: alfa^x'y mod p
+E: alfa^xy' mod p, alfa^x'y mod p
+
+Pokud zadávám jméno a heslo a systém ovìøuje, zda je správné, jedná se o:
+*autentizaci
+
+S èipovou kartou se komunikuje:
+*seriovì
+
+K èemu slouí skupinová politika (Group policy) pod OS Windows?
+=implementace seznamu pøístupovıch práv(ACL) i seznamu pøístupovıch oprávnìní(capabilities) v OS Windows. Skupinová politika napøíklad mùe omezit spouštìt aplikace jen urèité skupinì,pøestoe práva nastavená pro "obecné" uivatele jsou nastavena jinak.
+
+Jsou hesla zaloená na frázích obtínìji uhodnutelná ne naivnì zvolená hesla? (2body)
+*Ano
+
+Popiš struènì princip protokolù s nulovım rozšíøením znalostí (zero-knowledge).
+strana se autentizuje tak,e ukáe znalost tajemství bez odhalení tohoto tajemství(nebo informací které by k nìmu vedly)
+
+Je tøeba k ovìøení MAC (Message Authentication Code) znát tajná data?
+*Ano
+
+Uveï aspoò 3 problémy víceúrovòovıch systémù MLS.
+špatná interoperabilita - kompatibilita (rùzné stupnì dùvìrnosti a dùvìryhodnosti v rùznıch zemích)
+nìkdy pøíliš striktní klasicikace
+vıvoj MLS bıvá komplikovanı a drahı
+nároèná administrace,uivatel je pøi své práci pøíliš omezován
+
+K èemu slouí SystemAudit atribut pøi nastavování pøístupovıch práv pod OS Windows?
+SystemAudit is a system security ACE which is used to keep a log of security events (such as who accesses which files) and to generate and log security audit messages.
+http://www.microsoft.com/technet/archive/ntwrkstn/reskit/security.mspx
+[tak hruba uprostøed stránky (nadpis Audit Determination) je i docela dobré povídání o prùbìhu procesuvyuívající SystemAudit]
+
+Bezpeènost algoritmu RSA je zaloena na:
+*nesnadnosti rozkladu èísla na prvoèísla
+
+K èemu slouí v UNIXu funkce "crypt"?
+Nyní u k nièemu. Pouívala se ke kryptování hesla, pouíval se upravenı algoritmus DES. 7bitové znaky, max. 8 znakù, dva znaky sùl.
+
+Co je to speficikace EMV (v oblasti bankovních plateb) a co definuje?
+=standard, na kterém se dohodly 3 velké spolèenosti s kreditními kartami (Europay,MasterCard,VISA), tudé je to specifikace popisující poadavky na èipové kraty a platební terminály. Je definován ve 4 samostatnıch dokumentech:
+ - aplikaènì nezávislé poadavky na èip. karty a platební terminály(elektromechanické charakteristiky,pøenosové protokoly,struktura souborù,..)
+ - bezpeènostní poadavky
+ - poadavky na jednotlivé aplikace
+ - povinné,doporuèené a volitelné poadavky na platební terminály
+
+Pøi digitálním podepisování zprávy podepisujeme:
+*haš zprávy
+
+Pøi kombinaci asymetrického šifrování a digitálního podpisu:
+*nejprve podepisujeme a pak šifrujeme
+
+Co víš o dynamice psaní na klávesnici jako biometrické metodì?
+zkoumá se èas stisknutí klávesy a èas MEZI stiknutím klávesy, nevyaduje spec. HW, monost kontinuální autentizace, pouívají se algoritmy na principu srovnávání vzorkù(pattern matching) nebo na principu neuronovıch sítí(neural networks)
+
+Uveïte tøi typy pøístupovıch práv nastavitelnıch pod OS Windows (kromì rwx).
+append data/create folders (=append-only),read attributes,write attributes,read extended attributes,write extended attributes, read permissions, change permissions,...
+
+Poskytují MAC (Message Authentication Code) ochranu pøed úmyslnou modifikací dat?
+*Ano
+
+Co je to trojskı kùò?
+=typ viru. Je to program, kterı kromì legitimní (pro uivatele uiteèné) èinnosti, provádí další skrytou èinnost (napø. logování kláves k získání hesel apod.)
+
+Je algorimus RSA stále chránìn patentem?
+*Ne
+
+Jakı je rozdíl mezi šifrováním a hašováním hesel?
+Šifrováním hesel si moc nepomùeme z pohledu bezpeènosti (stejnì musíme nìkam uloit klíè), ale máme pøístup k nezašifrovanım heslùm. Hašování hesel je bezpeènejší, ale z hašovanıch hesel nezískáme hesla v pùvodní podobì.
+
+Uveïte vlastnosti kryptografickıch hašovacích funkcí.
+Jednosmìrnost - pro libovolné x mùeme spoèítat h(x), v rozumném èase nejsme schopni najít pro h(x) korespondující x.
+bezkoliznost slabá,silná
+
+Jaké monosti autentizace klienta vùèi serveru podporuje protokol ssh?
+souborem .rhosts nebo /etc/hosts.equiv 
+souborem .rhosts nebo /etc/hosts.equiv  s pouitím RSA autentizace klienta-poèítaèe
+RSA autentizace klienta-uivatele
+Heslo
+
+Jaké je vhodné pouití biometrickıch dat pøi vytváøení digitálního podpisu?
+Biometriku mùeme pouít jako autentizaèní metodu pro pøístup k privátnímu klíèi.
+
+Jakı je rozdíl mezi verifikací uivatele a identifikací uivatele?
+U verifikace/autentizace uivatel pøedkládá svoji identitu a my pouze oveøíme zda jde o nìj, u identifikace se snaíme rozpoznat o koho jde (najít v databázi odpovídající identitu).
+Co je to "vıpoèetní bezpeènost"?
+
+K èamu slouí a jakı je rozdíl mezi autentizací èipu a autentizací terminálu
+u rozšíøeného øízení pøístupu v oblasti elektronickıch pasù?
+Pøi autentizaci èipu se autentizuje èip terminálu, pøi autentizaci terminálu se terminál autentizuje èipu - cílem je pøesvìdèit pas, e èteèka-terminál má pøístup k citlivım datùm. Obì autentizaèní metody jsou souèástí ROZŠÍØENÉHO øízení pøístupu(BSI)
+Autentizace èipu: terminál získá z pasu jeho veøejnı klíè(DH(p)),terminál vygeneruje doèasnı sdílenı pár klíèù (DH(s))  zašle jej pasu zašifrovanı pomocí DH(p), èip vytvoøí stabilní sdílenı klíè z DH(s) a ustaví se novı šifrovanı kanál
+Autentizace terminálu - cílem je pøesvìdèit èip, e terminál-èteèka má pøístup k citlivım (biometrickım) údajùm. Terminál pøedkládá certifikaèná øetìzec vedoucí a k CV - ten je uloen v pase. Po úspìšném ovìøení èip v pase získá práva terminálu a tudí ví, k èemu terminál mùe pøistupovat.
+
+Jaké jsou bezpeènostní problémy bezkontaktních èipovıch karet?
+Protoe je moné je èíst i na dálku, mùe útoèník provést útok na kartu z dálky, napø. nasnímání ISIC kterı mam v kapse kalhot. -> operace mohou bıt provádìny bez vìdomí uivatele
+
+Co je to narozeninovı paradox?
+Pravdìpodobnost e dva lidé v místnosti mají stejné datum narození je neèekanì vysoká a prudce roste s poètem lidí: 23 - 50%, 30 - 70%. Vyuívá se ke zjištìní míry bezkoliznosti - slabé(pro jednoho konkrétního èlovìka hledáme toho, kterı by mìl narozeniny ve stejnı den) i silné (hledám dva naprosto libovolné lidi se stejnım datem narození)
+
+Co víš o certifikaèní autoritì (pro veøejné klíèe)?
+registrace uivatelù, kteøí vyuívají certifikát
+vydávání certifikátù k veøejnım klíèùm
+odvolávání platnosti certifikátù -> vytváøení a zveøejòování zneplatnìlıch certifikátù CRL (Certificate Revocation List)
+vytváøení a zveøejòování seznamu certifikátù
+správa klíèù po dobu jejich platnosti (ivotního cyklu)
+dodatkové sluby –napø. poskytováníèa sovıch razítek (time-stamping)
+
+Co je to FTE (fail to enroll) u biometrickıch systémù?
+neschopnost se zaregistrovt - uivateli není mono sejmout registraèní vzorek - nelze ho zaøadit do db (a tedy ani pozdìji identifikovat nebo autentizovat)
+
+Co je key recovery?
+Obnova privátního klíèe (zapomeneme heslo, zamìstnavatel potøebuje privátní klíè zamìstnance, kterı odešel a odmítá sdìlit heslo). Proto je dùleité mít 1 pár klíèù k (de)šifrovaní a druhı pár k podepisování a k ovìøování podpisu
+
+Jakı je rozdíl mezi slabou a silnou bezkolizností kryptografickıch hašovacích funkcí?
+Silná - v rozumném èase nenajdeme libovolnou dvojici x a x' pro které platí h(x)=h(x')
+Slabá - v rozumném èase nenajdeme ke konkrétnímu x x' pro které platí h(x)=h(x')
+
+Poskytují digitální podpisy ochranu pøed úmyslnou modifikací dat?
+*Ano
+
+Co je to elementary file (EF) u èipovıch karet?
+soubor obsahující PINy
+
+Jaká vstupní zaøízení se pouívají pro následující biometrické systémy:
+otisky prstù, oèní duhovka, rozpoznání oblièeje, verifikace podpisu
+otisky prstù - optické,silikonové(kapacitní) nebo ultrazvukové èteèky
+oèní duhovka - èernobílá kamera ve vzdálenosti desítek cm
+rozpoznání oblièeje - kamera
+verifikace podpisu - tablet nebo specializované zaøízení
+
+Jaké jsou nevıhody tokenù (jako autentizaèní metody pro autenzizaci uivatelù)?
+Co kdy se token rozbije, ztratí, cena tokenù (cena vıroby/padìlání), èasto potøebujeme èteèku, nebo speciální obsluhu.
+
+Jakı je rozdíl mezi statickou a dynamickou autentizací dat (specifikace EMV)?
+Jakım útokùm mùe jaká autentizace zabránit?
+Statická - detekuje pouze neautorizovanou zmìnu dat po personalizaci karty, pouívají se dva páry klíèù: soukromı a veøejnı klíè vydavytele karty a certifikaèní autority
+dynamická - detekuje i padìlané/duplikované karty, je zde pouit ještì jeden pár klíèù: veøejnı a soukromı klíè karty.
+(poslední pøednáška)
+
+Uveïte 2 typy atributù souborù souborového systému ext2/ext3.
+a,i :)
+a - lze data pouze pøidávat (vhodné pro logovací soubory)
+i - soubor nelze nijak zmìnit
+
+Je podle zákona nutné pro ochranu soukromého klíèe odpovídajícího kvalifikovanému certifikátu veøejného klíèe vydaného akreditovanım poskytovatelem certifikaèních slueb pouít èipovou kartu nebo podobné bezpeèné zaøízení?
+*Ne
+
+Co je a k èemu slouí certifikát veøejného klíèe?
+=potvrzení tøetí dùvìryhodnou stranou, e danı veøejnı klíè vlastní ovìøená osoba. uivatel, kterı obdrel podepsanou zprávu má jistotu, e klíè je opravdu od dané osoby -> klíèem podepsaná zpráva je opravdu od dané osoby
+
+Je autentizace stran v protokolu SSL zaloena na prezentaci X.509 certifikátù a ovìøení pøístupu k odpovídajícímu soukromému klíèi:
+*Ano
+
+Lze operace asymetrické kryptrografie provádìt i na èipovıch kartách?
+ano, ale je potøeba specifickıch koprocesorù, protoe asymetrická kryptografie je vıpoèetnì nároènìjší ne sym.
+
+Co je to kontinuální autentizace? Uveïte pøíklad.
+autentizace bìhem práce - neustále po urèitıch intervalech, èili NE jednorázovì. Pø.: biometrika psaní na klávesnici
+
+Pokud pøed pøístupem k souboru OS ovìøuje má pøístupová práva, jedná se o:
+*autorizaci
+
+Co víš o ekonomice padìlání tokenù?
+Cena tokenu má bıt nízká, naproti tomu, cena padìlání jednoho tokenu má bıt pokud mono co nejvyšší. Také je potøeba nejakım zpùsobem zajistit aby èlovek kterı ji umí vyrobit jeden token nezaèal levnì tokeny vyrábìt stejnì jako vırobce.
+Dál je potøeba motivace útoèníka("aby se mu to vyplatilo"), de-motivace("jakı je trest za padìlání", nehledì na trestné èiny vzniklé pouitím padìlaného tokenu) a také jak dlouho a kolik tokenù je potøeba u sebe mít
+
+Co je to postranní kanál (covert channel)? Uveïte pøíklad.
+Mechanizmus primárnì neurèenı pro komunikaci, kterı mùe bıt takto zneuit pro komunikaci mezi úrovnìmi zabezpeèení. Zamykání souborù, èas posledního pøístupu k souboru, aktuální zátì procesoru, pozice hlavièky na disku.
+Jakı je rozdíl mezi identifikací, autentizací, autentifikací a autorizací uivatele?
+
+Co se to seznam pøístupovıch oprávnìní (capabilities)?
+jedna poloka v matici pøístupovıch práv ukládánıch po subjektech.
+(Máme matici pøístupovıch práv ukládanou po subjektech=seznam subjektù, ke kadému subjektu existuje seznam pøístupovıch oprávnìní.) seznam pøístupovıch oprávnìní je seznam tıkající se jednoho subjektu.
+
+Uveïte pøíklad fyzického útoku na èipovou kartu.
+preparace èipu(invaz.), ètení pamìti èipu(invaz.), ozáøení èipu(semi)
+
+Jaká biometrická data mohou bıt uloeba v elektronickıch pasech (obecnì celosvìtovì)?
+nutné biometriky pro celosvìtovou pouitelnost: pouze oblièej - fotka (pravdìpodobnì není odpovìï na otázku)
+jaká vùbec pøipadají v úvahu: oblièej,otisk prstu,duhovka
+
+Co je to a k èemu slouí CRL?
+Certifikate Revocation List - seznam revokovanıch-zneplatnìnıch certifikátù (kdy vyprší doba jejich platnosti nebo pøi odhalení podvodu)
+
+Jmenuj 2 biometrické technologie zaloené na fyziologickıch a 2 na behaviorálních charakteristikách uivatele.
+fyziologické - otisk prstu, geom. ruky
+behaviorální - dynamika chùze, dynamika psaní na klávesnici
+
+Zvate následující autentizaèní protokol vyuívající symetrickou kryptografii a popište struènì
+- alespoò dva moné bezpeènostní problémy tohoto protokolu;
+- a stanovte pøedpoklady, za kterıch se tìmto problémum lze vyhnout.
+A -> B: IDA, IDB, EncryptedKeyAB{RandomValueN}
+B -> A: IDB, IDA, EncryptedKeyAB{RandomValueN,TimeStamp}
+-----------
+odraz - nastavit silnou granuralitu
+pøehrání - zabezpeèit hodiny A proti neautorizované modifikaci
+
+Jaké jsou vıhody a nevıhody pøidìlení pøístupového hesla kadému objektu (jako metody øízení pøístupu)?
+vıhody - právo k pøístupu má jen subjekt zající heslo,jednoduché øešení
+nevıhody - nelze zjistit, kdo všechno má právo k pøístupu; heslo musí bıt dostupné->musí se uchovávat v otevøeném tvaru nebo se slabım maskováním
+
+Jakı je u ssh rozdíl mezi Server key a Host key?
+Server key - generovanı kadou hodinu
+host key   - dlouhodobı
+(!v pøedchozích materiálech je to naopak!)
+
+K èemu slouí a jak funguje metoda „chaffing and winnowing“ (oddìlení zrn od plev)?
+pøídavná funkce k MAC algortimu. Ten zajišuje obecnì jen integritu. s pouitím „chaffing and windowing“ se zajišuje i dùvìrnost. Zpráva se rozdìlí na jednotlivé bity a posílá se po bitech. Dùvìrnost spoèívá v tom, e se vdy posílají oba typy bitu (0 i 1), a to v náhodném poøadí, pøièem ke správnému bitu je pøidìlen správnı MAC a ke špatnému bitu špatnı MAC. Jen uivatel, vlastnící sdílenı klíè k hašovací funkci je schopen porovnat haše obou bitù a rozhodnout, kterı je ten správnı. Kontrola tedy probíhá po bitech. Je to zldouhavé, ale existují i efektivnìjší metody.
+
+Vyjmenuj a struènì popiš (jak se liší zpùsobem pouití aj.) alespoò tøi druhy hesel.
+Náhodná hesla(náhodnì generovaná)	tìce se pamatují, tìce se prolamují
+Hesla zaloená na frázích		lehko se pamatují, tìce se prolamují
+Naivnì volená hesla			lehko se pamatují, lehko se prolamují
+
+K èemu slouí MAC (Message Authentication Code)?
+k zajištìní integrity dat(ne dùvernosti, alespoò v "základní verzi" bez metody typu "chaffing and windowing")
+
+Jaká je typická velikost pamìti EEPROM dnešních dobrıch èipovıch karet?
+*10 kB
+*100 kB
+
+Máte strany A a B, strana A vygenerovala asymetrickı klíè a veøejnou èást klíèe bezpeènım zpùsobem pøedala stranì B.
+Jak byste provedli autentizaci strany A vùèi stranì B, tak aby protokol byl odolnı vùèi útokùm odposlechem a pøehráním?
+B->A: h(r),"B", Pa(r,"B")
+A->B: r
+
+Jakı je rozdíl mezi genotypickımi a fenotypickımi biometrickımi charakteristikami?
+zaloené na genetice - DNA
+fenotypické - ovlivnìné prostøedím,vıvojem (otisk prstu)
+
+K èemu se pouívá tzv. "CAPTCHA"?
+=autentizace obrázkem, pouívá se k rozpoznání subjektù-uivatelù od pøístrojù
+napø. pøi zabránìní hromadného posílání SMS pøes internet.
+
+Co je zjistitelnost narušení u hardwarovıch prvkù?
+systém, u kterého jakákoliv neautorizovaná zmìna zanechává zjistitelné stopy
+
+Uveïte pøíklad klasifikace objektu v modelu Bell-LaPadula.
+TS - top secret, S - secret, C - classified, U - unclassified
+
+Co je to rozšíøené øízení pøístupu (EAC)? Jak EAC pracuje?
+Extended Access Control-je bezpeènìjší variantou ne základná øízení pøístupu, protoe kryptografickı klíè se u EAC nezískává z MRZ(jako u BAC) ale jinım-bezpeènìjším zpùsobem. Zajišuje ochranu citlivıch dat jako jsou biometrické údaje(otisk prstu,duhovka) Princip:
+  Zemì A vytvoøí (základní-koøenovou) certifikaèní autoritu CV(Country veryfying)-ta urèuje vydávání certifikátù pro "cizí zìmì", které tak budou mít pøístup k citlivım biometrikám( (i) kvùli tomu rošíøené øízení pøístupu pøece existuje). Koøenovı certifikát CV dané certifikaèní autority je pak uloen v pase.
+  "Cizí zemì" (zemì,které chtìjí povolit pøístup k biometrickım údajùm v pasech zemì A) zøizují DV certifikaèní autoritu (Documet Veryfying), která je certifikována(ustavena,podepsána,povolena) od CV certifikaèní autority zemì A. DV certifikaèní autorita pak vydává koncové certifikáty inspekèním zaøízením(èteèkám).
+  Pøi komunikaci pasu a inspekèního zaøízení pas pøeète koncovı certifikát inspekèního zaøízení a zkontroluje, zda DV certifikaèní autorita (která podepsala certifikát koncového zaøízení) je certifikována CV certifikaèní autoritou zemì, ze které pochází pas - neboli: zda se shoduje koøenovı certifikát CV CA v pasu CV CA odvozenı z inspekèního zaøízení. Jestli ano, inspekèní zaøízení pak má pøístup k citlivım biometrickım údajùm.
+
+Jmenuj alespoò dva bezpeènostní principy, které sám o sobì nezajistí protokol SSL/TLS.
+autentizace stran - zajištìno pomocí certifikátù a protokolu vızva-odpovìï
+integrita a autenticita dat - zajištìno autentizaèními kódy (MAC)
+
+Co je to test ivosti (u biometrickıch systémù) a k èemu slouí?
+=test,kterı ukáe, jednak zda pøedkládanı orgán pochází od ivé osoby a jednak zda tento orgán pochází skuteèenì od osoby, která jej pøedkládá(problém silikonovıch a jinıch náhraek otiskù prstù)
+
+Co jsou a jak fungují autentizaèní kalkulátory? Jaké jsou jejich bezpeènostní nedostatky?
+Token s malou klávesnicí pro zadání vstupu a displayem pro zobrazení hesla. Obvykle protokol vızva-odpovìï. Vloíme vstup(klíè a vızvu), kalkulátor nám vrátí aktuální pøístupové heslo.
+
+K èamu slouí a jak funguje aktivní autentizace u elektronickıch pasù?
+aktivní autentizace u elektronickıch pasù je funkènì podobná offline dynamické autentizaci dat ve specifikaci EMV. Èili, na rozdíl od pasivní autentizace je zde jeden asymetrickı pár klíèù. Pøi pasivní autentizaci se data snadno mohou kopírovat a tomu právì zabraòuje aktivní autentizace právì pouitím asymetrického páru klíèe.Princip:
+Soukromı klíè je uloen v èipu, bez monosti jeho pøímého získání(èip je fyzicky bezpeènı).Veøejnı klíè je uloen v DG15
+(tzn. je digitálnì podepsán(certifikátem vydavatele)). Protokol vızva-odpovìï pak slouí k ovìøení, zda má pas soukromı klíè (jestlie ne,pas je bez soukromého klíèe, kterı nemohl bıt pøi kopírování zkopírován-> pas je duplikát/flazifikát). Pøeète se veøejnı klíè pasu a ovìøí se jeho podpis pomocí veøejného klíèe vydávající autority. Pasu se pošle náhodné èíslo, pas náhodné èíslo doplní o svou náhodnou èást a podepíše(soukromım klíèem). Pak se ovìøí digitální podpis na základì veøejného klíèe pasu. (na rozdíl od pasivní autentizace, aktivní není povinná)
+
+Jakım zpùsobem je vhodné vytváøet bezpeèná hesla?
+Pomocí frází. Pomocí nejakého klíèe pøevedeme delší frázi (vìtu, øíkanku, etc...) na heslo. Napø. první písmena, èárka, pøechod mezi velkımi a malımi písmeny, èíslovky jsou èísla.
+
+Jaké jsou nevıhody/omezení pamìti EEPROM (u èipovıch karet)?
+nízkı poèet pøepsání, pomalost
+The disadvantages of EEPROM are that it is relatively slow (10 milliseconds to save a byte of data), and, it will wear out after something like 1,000,000changes at one spot.
+http://www.patentstorm.us/patents/5519653-description.html
+http://66.102.9.104/search?q=cache:8UUesgJ6-sAJ:marwww.in2p3.fr/~levansuu/projets_es2i/Parallax/stamps%2520in%2520class%2520website/downloads/em2.pdf+%22disadvantages+of+EEPROM%22&hl=cs&ct=clnk&cd=6&gl=cz
+
+Proè jsou tokeny vhodné pro autentizaci uivatelù?
+Èasto levnìjší agenda ne pøi pouití hesel. Ztráta tokenu se lehce odhalí, narozdíl od prozrazení hesla. Tokeny se dají vìtšinou pripnout ke klíèùm, nebo vloit do penìenky, co jsou pøedmety u kterıch si uivatelé hlídají jejich bezpeènost.
+
+Je moné z digitálního podpisu vìrohodnì zjistit èas podepsání zprávy?
+*Ne
+
+Jak (kam) je moné uloit biometrickı registraèní záznam (šablonu)?
+Biometrické registraèní záznamy se neukládají z dùvodu rozsáhlosti. Ukládají se jenom markanty. Duhovka se pøevádí na pole hodnot 1 0, u otisku prstù si pamatujeme vıznamné èásti èar. Šablony pak mají "rozumné velikosti" (9B,20KB,96B,...)
+
+Uveï a rozeber 3 problémy biometrickıch autentizaèních systémù.
+Závislost na nìjakém konkrétním orgánu, uivatelé s poškozenım, chybìjícím orgánem nemùou danou biometriku pouívat (souvisí s FTE,FTA).
+Lidské tìlo se mìní v èase, od provedení registrace dochází ke zmìnám.
+Problém FAR a FRR, biometriky nejsou 100% pøesné a musíme dìlat kompromis mezi FRR a FAR.vysoká FRR=vysokı poèet nespokojenıch uivatelù, vysoká FAR=málo bezpeènı systém
+
+Co je odpovìï na narušení u hardwarovıch prvkù? Jaká je typická odpovìï na narušení?
+chránìná èást na narušení nìjakım zpùsobem reaguje. Napøíklad vymazáním všech dat,odpojení od zdroje energie
+
+Popiš struènì rozdíl mezi volitelnım a povinnım øízením pøístupu.
+Povinnı systém rozhoduje nezávisle na vùli uivatelù kdo bude mít k èemu pøístup. Volitelná - majitelé objektù rozhodují jaké budou mít tyto objekty pøístupová práva.
+
+Byly pro hašovací algoritmus SHA-1 ji nalezeny (a veøejnì publikovány) kolize?
+*Ne
+
+Co je a k èemu slouí vıkonová analıza (u èipovıch karet)?
+Zkoumáme spotøebu proudu karty v èase. Rùzné operace provádìné na kartì zpùsobují rùznou spotøebu(sèítání-násobení-umocòování jsou diametrálnì odlišné). Pokud je karta nekorektnì navrena, mùeme rozpoznat rùzné køivky pøi zadání správného a špatného pinu a mùe se nám povést vypnout kartu pøed tím ne zaznamená špatnì zadanı pin a sníí èítaè pokusù. Tímto zpùsobem mùeme ve velice krátkém èase vyzkoušet všechny moné kombinace.
+
+Jakı je základní rozdíl mezi proudovou a blokovou šifrovací funkcí?
+Proudová šifra zpracovává vstup bajt po bajtu, bit po bitu. Mùe zpracovávat správu libovolné velikosti. Bloková šifra pracuje po blocích, zašifrovanı blok má stejnou velikost jako pùvodní, bloky musí bıt dostateènì veliké, aby nebylo mono vytvoøit kompletní slovník.
+
+K èemu slouí autentizaèní agent u ssh?
+Agent má v sobì uloeny klíèe, které jsou chránìny heslem. Pøi pøihlašování pak nemusíme pøedkládat jednotlivé klíèe, dìlá to za nás agent.
+
+K èemu slouí SUID/SGID programy v UNIXu?
+Sticky bit, program s nastavenım SUID se spustí s právy vlastníka, program s nastavenım SGID se spustí s právy skupiny.
+
+Jakı je rozdíl mezi dvourozmìrnou a tøírozmìrnou maticí pøístupovıch práv?
+U dvourozmìrné máme dva rozmìry - subjekt/objekt. U tøírozmìrné pøidáváme další rozmìr a tím je program. Napø. mùeme povolit pøístup k /etc/passwd pomocí programu passwd, ale nechceme aby si nekdo /etc/passwd prohlíel, tak zakáeme pøístup pomocí textového editoru.
+
+Jak funguje øízení pøístupu k souborùm na èipové kartì?
+Pøístupová práva jsou uloeny v hlavièkách souborù. Základním ochrannım prvkem je vdy pin. Po urèitém poètu špatnì zadanıch pinù dojde k zablokování souboru. Pøistupuje se ke kartì pomocí datové struktury podobné té na disku(Master File, Dedicated File, Elementary file)
+
+Popište, jak mùe fungovat autentizace obrazovou informací.
+1.vybírá se obrázek z nìkolika monıch
+2.vybírá se obrázek z nìkolika monıch, pøièem nabízené obrázky jsou znaènì deformovány pro ztíení odkoukání
+3.vybírá se nìkolik obrázkù z nìkolika monıch
+
+Co je token? Uveï pøíklad.
+Nìco co uivatel má. Klíè, obèanka, èipová karta, USB token.
+
+Je kryptografická hašovací funkce MD5 v souèasné dobì povaována za bezpeènou?
+*Ne
+
+K èemu slouí ROC (receiver operating curve) (u biometrickıch systémù)?
+Vyjadøuje pomìr mezi FAR a FRR u jednotlivıch biometrik.
+
+Diskutujte bezpeènost autetizace pomocí bezkontaktních ISIC karet s jedinaènım identifikátorem.
+soukromí - problém sledování a inventarizace, ochrana tagù proti neautorizovanému ètení
+autentizace - problém snadného falšování/padìlání identifikátorù->ochrana èteèek proti kartám s padìlanım identifikátorem
+
+Kdo provádí akreditaci CA podle zákona o elektronickıch podpisech?
+*Ministrestvo informatiky
+
+Co je to separace oprávnìní, uveï pøíklad.
+K vykonání urèité transakce potøebujeme souhlas více osob (velká bankovní transakce). Podpora a na úrovni aplikaèního SW.
+
+Poskytují CRC ochranu pøed úmyslnou modifikací dat?
+*Ne
+
+Uveï pøíklad algoritmu typu vızva-odpovìï zaloeného na asymetrické kryptografii.
+B -> A: h(r),"B",Pa(r,"B")	Pa-veøejnı klíè A
+A -> B: r
+
+Provádí protokol SSL autentizaci serveru?
+defaultnì ne
+*defaultnì ano
+
+Co víš o POSIX ACL (Access Control Lists)?
+Implementace ACL pro posix systémy (Linux, Unix). Pøíkazy getfacl, setfacl.
+ - nastavení kromì základních práv (ACL_USER_OBJ,AC"_GROUP_OBJ,ACL_OTHER) také ještì další
+ - je moné pøidávat vıjimky pro uivatele (ACL_USER) a skupiny (ACL_GROUP) a také nastavovat masku (ACL_MASK), která dále mùe omezovat pravá udìlená uivatelùm ACL_USER a skupinám ACL_GROUP,ACL_GROUP_OBJ - vlastníka se netıká.
+ - nastavení defaultního ACL pro nevì vytvoøené adresáøe
+
+Co je to autentizovanı protokol pro ustavení klíèe?
+Pøed samotnım ustavením klíèe dojde k autentizaci stran, èím se vyhneme útoku man in the middle.
+
+Co je to PIN?
+Èíselnı pøístupovı kód (heslo), obvykle 3-5 cifer. Pouívá se u zaøíení kde na kompletní klávesnici není místo, nebo z ekonomickıch dùvodù není vhodné na zaøízení umístit plnou klávesnici.
+
+Co jw to princip nejmenších privilegií?
+Uivatel má pouze ta oprávnìní, které nutnì potøebuje. Na zaèátku mají uivatelé minimální práva a podle potøeby se jim práva pøidávají. V momentì kdy uivatel nepotøebuje pøístup k objektu je mu právo odebráno.
+
+Jaká je typická velikost pamìti ROM (pro OS karty) dnešních dobrıch èipovıch karet?
+*100 kB
+*10 kB
+
+Jaká je typická velikost pamìti RAM dnešních dobrıch èipovıch karet?
+*10 kB
+*1 kB
+
+Jaké jsou dvì základní vıhody "solení" hesel?
+2 stejná hesla mají rùznı haš, krátké heslo je tíeji uhodnutelné
+
+Uveïte pøíklad autentizace poèítaèù pomocí adresy.
+pomocí ethernetové adresy, pomocí IP adresy (obì jsou málo dùvìryhodné a nebezpeèné)
+
+Co je to segmentové adresování a èemu se vyuívá pøi øízení pøístupu na úrovni procesoru a OS?
+Adresování pomocí segment+offset. Segment mùe mìnit pouze OS(referenèní monitor).
+
+Jakı je rozdíl mezi bezpeènostní karet s magnetickım proukem a èipovıch karet.
+Magnetickı prouek - pouhé datové uloištì, jednoduše kopírovatelné
+èipové  - èip je nesnadno preparovatelnı-rozebratelnı, mùe mít vlastní interní logiku (procesor), kterou nemùeme jednoduše zkopírovat. ovšem nové problém s bezkontaktními kartami
+
+Jaké hašovací funkce se pouívají pod OS Windows pro ukládání hesel uivatelù?
+Lan Manager (LM) - nerozlišuje velikost písmen, heslo max. 14 dìlené na poloviny
+NTLM - zaloeno na MD4 v unicode, ukládaní do obou z dùvodu kompatibility - sníení bezpeènosti.
+
+Co je to FRR (false rejection rate) u biometrickıch systémù?
+poèet nesprávnıch odmítnutí, uivatel kterı by mìl bıt pøijat byl odmítnut. Èím vyšší, tím nespokojenìjší uivatele. Nepøímo závislé na FAR.
+
+Uveï pøíklad protokolu pro pøenos klíèe zaloeného na asymetrické kryptografii
+A -> B: Pb(Sa(k))
+
+Pro digitální podepsání zprávy je potøeba mít k dispozici:
+*soukromı klíè
+
+Co je to klíèovaná hašovací funkce?
+=hašovací funkce, která navíc vyuívá sdíleného tajemstí-symetrického klíèe. Jednosmìrnost zajišuje, e se ji nikdo k danım datùm nedostane - ani pøíjemce. Na druhou stranu pokud má pøíjemce k dispozici daná data, pouze on jako vlastník klíèe je schopen ovìøit, zda pøijatı haš se shoduje s hašem, kterı si vytovøil sám. Tudí je tak schopen urèit, zda je odesílatel odpravdu ten, za koho se vydává.
+
+Jakım typùm útokù se snaí zabránit rozšíøené øízení pøístupu (EAC) u elektronickıch pasù?
+snadnému kopírování dat z pasu a snadému pøístupu k biometrickım údajùm
+
+Co je to solení hesel?
+K heslu pøidáváme sùl - náhodnı øetìzec znakù. Prodluujeme tak heslo a zaruèíme tím e dvì stejné hesla budou mít rùznou zašifrovanou/hašovanou hodnotu a také to, e krátké heslo nebude snáze uhodnutelné
+
+Co je to víceúrovòovı systém (MLS)?
+Systém s povinnım øízením pøístupu. Úrovnì oprávnìní pro subjekty a objekty v systému. Subjekt s oprávnìním má pøístup pouze k objektùm se stejnım nebo niším oprávnìním.
+
+Uveïte 2 pøíklady kryptografickıch hašovacích funkcí.
+SHA-1, MD5
+
+Zdùvodni struènì, proè jsou hesla zaloená na frázích obtínìji uhodnutelná ne naivnì zvolená hesla.
+Hesla zaloena na frázích se sloitostí blíí náhodnım heslùm (nìkdy jsou i lepší) a jejich jednoduchost na zapamatování se blíí naivnì zvolenım heslùm.
+
+Je IPsec povinnı pro IPv6?
+*Ano
+
+Jakı je rozdíl mezi biometrickou identifikací a verifikací?
+Verifikace, známe identitu, pouze ovìøujeme. Identifikace, identitu neznáme, porovnáváme se záznamy a snaíme se identitu zjistit.
+
+Co si víš o generování kryptografickıch klíèù z biometrickıch dat?
+Nevhodné - biometrika není tajná, biometriky se mìní.
+
+Co je odolnost vùèi narušení u hardwarovıch prvkù?
+Speciální odolnost èásti systému vùèi nìjakému typu narušení. Èip zalitı v epoxidu. Pøi rozebrání se rozpadající token,..
+
+Co je to X.509?
+Standard pro certifikáty veøejnıch klíèù. (podpis CA pro jím vydanı veøejnı klíè)
+
+Proè není CRC dostateènı pro autentizaci dat?
+protoe není jednosmìrnı, neboli - z dat lze získat snadno CRC a z CRC lze snadno získat data
+
+Je moné pro vıpoèet MAC (Message Authentication Code) pouít klíèovanou hašovací funkci?
+*Ano
+
+Bezpeènost algoritmu DSA je zaloena na:
+*nesnadnosti odmocòování èísel ve zbytkové grupì
+
+Jakı je rozdíl mezi on-line a off-line slovníkovım útokem?
+On-line útoèník zkouší slovníkovı útok pøímo na slubu.
+Off-line, útoèník útoèí pøímo na soubor se zašifrovanımi/hašovanımi hesly.
+
+Co je to princip noninterference (u MLS systémù)?
+Akce uivatele s vyšší bezpeènostní úrovní nijak neovlivní, to co vidí uivatel na niší bezp. úrovni
+
+Jaké jsou dva základní problémy související s vyuitím èasovıch razítek?
+Problém synchronizace a zabezpeèení hodin - komunikující poèítaèe potøebují mít synchronizované hodiny a zabezpeèené tak, aby  nemohly bıt zmìnìny útoèníkem.
+Problém platnosti - èasové razítko má obvykle dobu platnosti, v této dobì pak ale mùe dojít k útoku pøehráním(spíše odrazem)
+
+Co je a k èemu slouí kroscertifikace (køíové ovìøení CA)?
+øeší problém existence víc koøenovıch-primárních certifikaèních autorit. Tyto autority na nejvyšší úrovni si vzájemnì ovìøí své certifikáty.
+
+Jakı je rozdíl mezi protokoly HTTP a HTTPS?
+HTTPS je sluba šifrovaná neboli HTTPS vyuívá protokol vyšší úrovnì SSL/TLS
+
+Je moné MAC (Message Authentication Code) vytvoøit pomocí symetrické šifrovací funkce?
+*Ano
+
+Jakı je rozdíl mezi elektronickou znaèkou a elektronickım podpisem?
+Elektronická znaèka je urèena pro právnícké osoby a základním rozdílem je e u elektronického podpisu se pøedpokládá e se podepisovanı seznámil s obsahem podepisovaného dokumentu. U elektronické znaèky toto neplatí, elektronická znaèka je urèena hlavnì pro automatické podepisování.
+
+Jakı je vztah matice pøístupovıch práv a seznamu pøístupovıch práv (ACL)?
+mnoina (NE JEDINİ) ACL, tedy mnoina Access Control Listù, je matice pøístupovıch práv ukládaná po objektech. Jeden ACL-jeden seznam pøístupovıch práv je jednou polokou v matici.
+
+Máte strany A a B, strana A vygenerovala asymetrickı klíè a veøejnou èást klíèe bezpeènım zpùsobem pøedala stranì B.
+Jak byste provedli autentizaci strany B vùèi stranì A, tak aby protokol byl odolnı vùèi útokùm odposlechem a pøehráním?
+A->B: nA
+B->A: Pa(nB,nA,"A")
+
+Jakı je rozdíl mezi biometrikou zaloenou na snímání oèní sítnice a oèní duhovky?
+duhovka - FAR témìø nulové pøi FRR asi 3%, pohodlnìjší, ryclhejší(10^6 srovnání za s)
+sítnice - FAR témìø nulové ovšem vyoské FRR, uivatelsky nepøíjemné
+
+Co je to EER (equal error rate) u biometrickıch systémù?
+Hodnota u které se FAR = FRR. Tudí je to stav, kdy pravdìpodobnost nesprávného odmítnutí uivatele je stejná jako pravdìpodobnost nesprávného pøijetí. 
+
+Co je to tzv. Libanonská smyèka (jako útok vùèi bankomatùm)?
+Jednoduchá smyèka zastrèená do èteèky bankomatu, uivatel vloí kartu, ta zajede dovnitø, smyèka zabrání detekci karty, ta ale nevyjede ani ven. Uivatel odejde pro kartu do poboèky a útoèník jednoduše vytáhne smyèku i s kartou.
+
+Je SIM karta èipová karta?
+*Ano
+
+Jakım typùm útokù se snaí zabránit základní øízení pøístupu (BAC) u elektronickıch pasù?
+zabránit neoprávnìnému ètení pasu bez vìdomí dritele.
+http://66.102.9.104/search?q=cache:vAD994d9ebIJ:www.tapmag.cz/semin/pdf/qas_07/4_Holenda_Mayer.pdf+BAC,+%22Basic+Access+Control%22&hl=cs&ct=clnk&cd=6&gl=cz
+
+Uveïte pøíklad logického útoku na èipovou kartu.
+vıkonová, èasová analıza
+
+Co je to tøífaktorová autentizace? Uveï pøíklad.
+autentizace pomocí 3 rùznıch metodik, napø.: token(karta s èipem),tajemství(PIN),biometrika(otisk prstu)
+=jedna z monıch variant budoucích kreditních karet
+
+K èemu slouí MS Authenticode?
+Autentizace spustitelnıch souborù. Zajištìní integrity a autenticity dat-jejich pùvodu-známe autora dat
+
+Algoritmy asymetrické kryptografie jsou novìjší ne algoritmy symetrické kryptografie:
+*øádovì o tisíce let
+
+Proti jakému druhu útoku nepomùe pouhé hašování hesla pøi vzdálené autentizaci v poèítaèové síti a jak lze tomuto útoku zabránit?
+Hašování hesla nepomùe v pøípadì útoku pøehráním. Útoku mùeme zabránit tím e budeme k heslu pøidávat dodateèné údaje, náhodné èíslo, timestamp a a tento celek budeme hašovat.
+
+Uveï pøíklad algoritmu typu vızva-odpovìï zaloeného na symetrické kryptografii.
+B->A: rB
+A->B: rA,hK(rA,rB,"B")
+B->A: hK(rB,rA,"A")		hK je Mac algoritmus
+
+K èemu slouí a jak funguje selektivní blokování RFID tagù?
+identifikátory RFID tagù jsou rozdìleny dle 1.bitu na veøejné a soukromé. Blokující (aktivní) RFID tag "ruší" ètení soukromıch identifikátorù.
+
+Uveï dvì vıhody a dvì nevıhody povinného øízení pøístupu.
+vıhody-systém sám pøidìluje práva všem objektum,subjektùm->lepší kontrola,zajištìní bezpeènosti,odolnost vùèi trojskım koòùm
+nevıhody - sloitost->velká reie,uivatel je èasto a pøíliš omezován,malá vyjadøovací schopnost
+
+Co je to pøeteèení zásobníku ("buffer overflow")? K èemu jej lze zneuít?
+je to jedna z chyb,které mohou bıt zneuity v øízení pøístupu. Kód øízení pøístupu(referenèní monitor,viz otázka co je to referenèní monitor) není vdy bezchybnı. Pøi nedostateèné kontrole nedùvìryhodného vstupu mùe dojít k pøeteèení a tím napø. ke špatnému ovìøení pøístupovıch práv.
+
+Jakı je vztah mezi maticí pøístupovıch práv a seznamem pøístupovıch oprávnìní (capabilities)?
+mnoina (NE JEDINİ seznam) seznamù, je matice pøístupovıch práv ukládaná po subjektech. Jeden seznam pøístupovıch oprávnìní je jednou polokou v matici.
+
+Jaké vlastnosti mají data, u kterıch jsme ovìøili autenticitu (dat)?
+logicky: ovìøili jsme jejich pùvod
+podle slidù(pøednáška 1,str 23): ovìøení pùvodu a integrita
+NEVÍM
+
+Vyjmenuj 2 vıhody a 2 nevıhody centralizované a decentralizované správy øízení pøístupu.
+vıhody
+Centralizovaná - konzistentnost, pøísné øízení
+Decentralizovaná - snadno dosaitelná vysoká odpovìdnost, jednodušší pro malé skupiny poèítaèù
+nevıhody
+Centralizovaná - tìkopádné, vysoká reie
+Decentralizovaná - tìká kontrola konzistence, chybí pøehled o stavu
+
+Uveï pøíklad protokolu pro pøenos klíèe zaloeného na symetrické kryptografii.
+Shamirùv no-key protokol, nebo:
+B->A: nB		nB...náhodné nebo sekvenèní èíslo
+A->B: Ek(rA,nB,"B")
+
+K èemu mohou slouit HW tokeny?
+k autentizaci(e-commerce,vstup do zabezpeèené místnosti,autorizace platby,vıber hotovosti z bankomatu)/identifikaci(el. pasy) uivatelù, souèást dvou- nebo tøífaktorové autentizace,uchovávání citlivıch dat(zejm. kryptografické klíèe)
+
+Jakı je rozdíl mezi aktivním a pasivním útoèníkem?
+pasivní - odposlouchává,analyzuje
+aktivní - sám modifikuje nebo vytváøí zprávy
+
+Co znamená vlastnost "úplnost" u protokolù typu zero-knowledge.
+Všechny poctivé strany vdy dosáhnou úspìšného vısledku
+
+Pro ovìøení digitálního podpisu je tøeba mít k dispozici patøiènı:
+*veøejnı klíè
+
+Zvate následující autentizaèní protokol vyuívající symetrickou kryptografii a popište struènì
+- alespoò dva moné bezpeènostní problémy tohoto protokolu;
+- a stanovte pøedpoklady, za kterıch se tìmto problémum lze vyhnout.
+A -> B: IDA, IDB, RandomValueN, Hashed{SharedSecretAB XOR RandomValueN}
+B -> A: IDB, IDA, Hashed{SharedSecretAB}
+----
+man-in-the-middle,Pøehráním,odraz
+øešení: u obou problémù pøidání nA,nB,tA,tB (radší víc ne málo:)
+
+Popiš struènì princip protokolu typu vızva-odpovìï.
+Strana A pošle stranì B vızvu. Na vızvu zareaguje strana B takovım zpùsobem aby strana A mohla ovìøit autenticitu strany B.(útoèník odposlechem vızvy i odpovìdi moc nezíská, B se mùe pøesvìdèit o Alicinì identitì bez získání jejího tajemství)
+
+Vysvìtli princip ss-vlastnosti (NRU - no read up) a *-vlastnosti (NWD - no write down) víceúrovòovıch systémù (MLS).
+NRU - základní bezpeènostní vlastnost,musí ji dodrovat všechny subjekty
+=subjekty nesmìjí èíst data na vyšší úrovni a nesmìjí vytváøet tajnìjší data ne pro jaké mají poèáteèní oprávnìní
+NWD - dùvìryhodné subjekty mohou NWD porušit
+=subjekt mùe èíst ménì nebo stejnì tajná data jako je jeho aktuální bezp. úroveò, zapisovat jen stejnì tajná data jako je jeho akt. bezp. úroveò a pøidávat jen stejnì tajná nebo tajnìjší data ne je jeho akt. bezp. úroveò
+
+K èemu slouí veøejnı klíè v asymetrické kryptografii?
+*k zašifrovaní zprávy pro konkrétního pøíjemce
+*k oveøení digitálního podpisu zprávy
+
+Co je to Kerckhoffùv princip?
+Znalost kryptografického protokolu (algoritmu) nesmí zpùsobit narušení jeho bezpeènosti. Dùvìrnost dat není zaloena na utajení principu algoritmu,ale na nìjakém tajemství-typicky klíè.
+  
+Jaké znáš biometrické technologie snímající èásti oka, co o nich víš (chybovost, smysluplné pouití)?
+Metody snímající èásti oka jsou obecnì velice pøesné, pro FAR blíící se nule dosahujeme velice nízkıch FRR.
+Oèní duhovka - snímáme èernobílou kamerou ze vzdálenosti desítek cm.
+Oèní sítnice - snímáme speciálním zaøíením, pomìrnì nepøíjemná metoda, ale pøesnìjší ne oèní duhovka, ovšem relativnì vysoké FRR
+
+Jakım zpùsobem se ukládají a srovnávají hesla pøi autentizaci uivatelù v OS typu Unix?
+Hashovaní pomocí MD5. Heslo a 255 znakù. Sùl a 8 znakù. Ukládáme ve tvaru $1$sùl$haš. Hesla ukládame do /etc/shadow a do /etc/passwd
+
+Jakı je vztah mezi pasivní a aktivní autentizací u elektronickıch pasù a statickou/dynamickou autentizací dat u EMV?
+Jsou si velice podobné:
+pasivní autentizace el. pasù ~ statická autentizace dat
+aktivní autentizace el. pasù ~ dynamická autentizace dat
+(viz otázky
+K èemu slouí a na jakém principu je zaloena pasivní autentizace u elektronickıch pasù?
+Jakım typùm útokù se snaí zabránit aktivní autentizace u elektronickıch pasù?
+K èamu slouí a jak funguje aktivní autentizace u elektronickıch pasù?
+Jakı je rozdíl mezi statickou a dynamickou autentizací dat (specifikace EMV)?
+)
+SDA (Static Data Authentication) versus DDA (Dynamic Data Authentication)
+Since the EMV specification allows for a transaction to occur with an EMV terminal off-line – meaning the terminal is
+not connected to the bank host – there needs to be a method of authenticating the card and cardholder. SDA utilizes
+cheaper chip technology, but as the name suggests, the data exchange with the terminal is static – i.e. there are no RSA
+cryptography capabilities on the card. Additionally, cardholder verification is performed without encrypting the PIN.
+DDA on the other hand, uses more complex chip technology that is able to perform public key cryptographic processes to
+provide a higher level of transaction security – and the PIN is encrypted during cardholder verification. For additional
+reference, the EMV2000 specification detailed an extra level of security – referred to as CDA or Combined DDA and
+Application Cryptogram. In this case, along with the usual DDA function during an off-line transaction, the transaction
+cryptogram is included.
+http://www.keycorp.net/NR/rdonlyres/1D17FE28-AAA4-45F1-AF2B-E34F66990D40/0/WhitePaper_Silicon_Trust_EMV_Migration_and_MULTOS.pdf
+http://www.bkm.com.tr/en/cip4.html
+
+Jak pracuje øízení pøístupu zaloené na rolích (RBAC)?
+je to samostatná kategorie øízení pøístupu - ani povinné ani volitelné.
+Je zaloeno na pøidìlování rolí uivatelùm,1 uivatel mùe mít i více rolí(student FI, uèitel ESF,uèitel FI). Role znamenají práva k provedená urèitıch akcí. Tato práva mohou bıt specifikována velic jemnì, jemnìji ne pomocí ACL. Ovšem ve sloitì strukturované oragnizaci je tìké vytvoøit jasnı systém rolí, jím odpovídajících práv a rozdìlení uivatelnù do rolí.
+
+Co je to základní øízení pøístupu (BAC) u elektronickıch pasù? Jak BAC pracuje?
+je to jednodušší a ménì bezpeèné øízení pøístupu k el. pasùm. Pøi komunikaci se èteèkou jsou sice data šifrována, ale klíè lze odvodit z MRZ(strojovì èitelné zóny). Princip:
+Z MRZ se zíká èíslo pasu,datum narození,datum vypršení platnosti; toto dále hašujeme pomocí SHA-1 a generujeme dva 3DES-2 klíèe; pak autentizujeme a ustavíme symetrickı klíè. Následná komunikace je šifrovaná. V praxi ovšem malá entropie(míra informaèní vydatnosti, nebo také neurèitosti).
+
+Co víš o bezpeènosti biometrickıch autentizaèních systémù?
+Bezpeènost záleí na pouité technologii a konkrétním nastavení pomìru FAR a FRR. Èím vyšší false acceptance rate, tim niší bezpeènost. Biometriky nejsou tajné, ale mohou to bıt citlivé informace->problém ochrany soukromí.
+
+Jaké typy èasovì promìnnıch parametrù znáš?
+Náhodné èísla, èasová známka, poøadové èíslo.
+
+Uveïte pøíklad vyití digitálního vodoznaku (watermark).
+= vloení ochrannıch informací(typicky obrázku) do dat: elektronické publikace, inzerce, digitální knihovny, reportáe, multimediální umìlecké vıtvory a ji ve formì textù, zvukù, obrázkù nebo videoklipù)
+pøíklad: logo televize pøi digitální vysílání
+http://www.elektrorevue.cz/clanky/01047/index.html

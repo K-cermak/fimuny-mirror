@@ -1,0 +1,9 @@
+8 otazek
+1. referencni workflow model 
+2. metamodel procesu
+3. DFD
+4. administrativni workflow
+5. produkcni workflow
+6. BPMN na prikladu
+7. personalni audit
+8. CPI

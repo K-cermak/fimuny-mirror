@@ -1,0 +1,7 @@
+1. OpenGL jakožto stavový automat.
+2. Popište homogenní souøadnice a jejich použití pro perspektivní projekce ve 3D.
+3. Vysvìtlete globální a lokální pøístup k transformacím. Uveïte pøíklady.
+4. Popište „Blending“ v OpenGL, zpùsob výpoètu barev, používané funkce a
+   èasto používané parametry. Ukažte použití na pøíkladu. Popište rozdíly ve 2D
+   a 3D.
+5. Program asi tak na 1.5 A4 a je potøeba urèit, které øádky jsou zbyteènì a co program vykreslí.

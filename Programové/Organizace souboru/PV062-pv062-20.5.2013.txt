@@ -1,0 +1,8 @@
+20.5.2013
+
+- odvodit minimalnu aritu m-arneho stromu, aby bolo zarucene najdenie zaznamu max. v 4 krokoch medzi 64000 klucami
+- napisat bin. kod slova MAMAMAMASO v Huf. kode a zistit kompresny zisk, ak sa povodne kodovalo so 7 b/znak
+- znaky A,B,C,D s pravdep. vyskytu v sprave 0.125, 0.5, 0.25, 0.125. vyratat entropiu zdroja a ci S-F kodovanie generuje optimalny kod pre dane pravdepodobnosti
+- napisat priebeh budovania B-stromu pre kluce 8,5,1,7,3,12,9,6
+- mame 13-riadkovu tabulku a hodnoty klucov 14,28,12,27,31,38. kvadratickym adresovanim naplnit tabulku, ak plati: pozicia = kluc mod 13
+- popisat implementaciu bitovej mapy

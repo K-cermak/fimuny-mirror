@@ -1,0 +1,33 @@
+﻿PV169 zaklady prenosu dat zk 16.1.2012 (3.termin) 
+
+1. utlum 10dB, vykon vysilace 5W, jaký je vykon prijmace ??
+
+G=10*log(P2/P1) pouzivame DESITKOVY logaritmus
+G=-10
+P1=5
+
+-10=10*log(P2/5)
+-1=log(P2/5) !! -1=log(0.1) !!
+0.1=P2/5
+
+P2=0.5W
+
+2. zakodovani 100000000100001 v B8ZS
+
++00000000->+000+-0-+
+-00000000->-000-+0+-
+
+3.DS-1 ramec, proc ma velikost 193b a rychlost 1.544Mb/s
+
+193=8*24+1=multiplexujeme 24 kanalu, vzorky se koduji po 8 bitech + 1 synchronizacni bit
+1.544=kazdych 125 mikrosekund vysleme ramec, tedy 8000-krat za sekundu * 193 (velikost jednoho ramce)
+
+4. co je to Hammingova vzdalenost, jaka musi byt nejmensi ham.vzdalenost pokud chceme opravovat 3-bitové chyby
+
+d=5, detekujeme 4-bitove chyby, opravujeme 3 az 1-bitove chyby
+
+5. ADSL
+
+6. explicitni rezervace (reservation aloha)
+
+@by Jerry and Majo

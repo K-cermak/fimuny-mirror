@@ -1,0 +1,345 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sk" lang="sk"> 
+
+	<head> 
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+
+		<title> 
+
+			PV120 - Informační právo - zozbierané testové otázky
+		</title> 
+		<style type="text/css">
+                        body {font-family: Arial; font-size:13px;}
+			ol {margin:0px; padding: 0 0 0 30px;}
+			p  {margin-bottom: 0; border-top: 1px solid #d2d2d2; padding-top:7px;}
+			ul {list-style-type:none; margin:0; padding:0px;}
+			ul li {padding-left:20px;}
+			.y {background: url('http://www.neomezeny-webhosting.cz/css/ok.png') no-repeat 0px 0px;}
+			.n {background: url('http://webdesign.skrabalek.cz/images/ico/no.png') no-repeat;}
+		</style>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://mktgdept.com/js/jquery-shuffle.js?v0.0.1"></script>
+
+
+		<script type="text/javascript">
+		$(function() {
+			$("#runtest").click(function() {
+				$(".y").prepend('<input type="checkbox" value="1"/>');
+				$(".n").prepend('<input type="checkbox" value="0"/>');
+				$(".n").removeClass('n').addClass('nn');
+				$(".y").removeClass('y').addClass('yy');
+				$("ol>li").append("<button type='button'>Zkontrolovat odpověď</button>");
+				$("button").click(function() {
+				    var el = $(this).parent();
+				    $("li", el).each(function() {
+				        var check = $("input[type='checkbox']", this);
+				        if ((check.val() == 1 && check.attr("checked")) || (check.val() == 0 && !check.attr("checked"))) {
+				            $(this).css("color", "#080"); 
+				        } else {
+				            $(this).css("color", "#B00"); 
+				        }
+				    });
+				    $(".nn", el).addClass('n');
+				    $(".yy", el).addClass('y');
+				});
+				$("#runtest").remove();
+				
+				$("ol > li").shuffle();
+
+				$("ol li").each(function() {
+				  $(this).find("ul li").shuffle();
+				});
+			});
+		});
+		</script>
+
+	</head>
+<body>
+
+<p>Súhrn všetkých testových otázok týkajúcich sa predmetu PV120, ktoré boli do dnešného dňa - 24.5.2011 - nahraté na fi.muny.cz (vrátane prepisu fotiek).
+Termín 24.5.2011 neobsahoval nič, čo tu nie je.</p>
+<p>Skúška bude vo forme testu, kde Vašou úlohou bude označiť výroky ako pravdivé alebo nepravdivé. Za zlú odpoveď sa body nestrhávajú.</p>
+<p><strong>Nespoliehajte sa na správnosť ohodnotenia jednotlivých odrážok!</strong> Snažil som sa to vo vlastnom záujme dohľadať v zákonoch čo najlepšie, ale pri niektorých bodoch som si fakt nebol istý. Prevažná väčšina by mala byť správne, ale za nič neručím.</p>
+
+<p>
+Pokud se chcete otestovat, spusťte test. Správně zodpovězená odpověď bude označena zelenou barvou textu, špatná červenou.
+<button type="button" id="runtest">Spustit test</button>
+</p>
+
+<ol>
+<li>
+<p>Listina základních práv a svobod zaručuje</p>
+<ul>
+	<li class="y">listovní tajemství písemností uchovávaných v soukromí</li>
+	<li class="y">listovní tajemství písemností zasílaných poštou</li>
+	<li class="y">tajemství zpráv podávaných telefonem</li>
+	<li class="y">tajemství zpráv podávaných elektronickou poštou</li>
+	<li class="y">právo na zachování dobré pověsti</li>
+	<li class="n">právo na ochranu obchodního tajemství</li>
+	<li class="y">právo na ochranu jména</li>
+	<li class="y">právo na ochranu před neoprávněným shromaždováním osobních údajů</li>
+</ul>
+</li>
+<li>
+<p>Obrazové a zvukové záznamy týkající se fyzické osoby mohou být pořízeny</p>
+<ul>
+	<li class="y">s jejím souhlasem</li>
+	<li class="n">bez jejího souhlasu</li>
+	<li class="y">k účelům úředním na základě zákona</li>
+	<li class="y">na základě "zpravodajské licence"</li>
+</ul>
+</li>
+<li>
+<p>Po smrti fyzické osoby přísluší uplatňovat právo na</p>
+<ul>
+	<li class="y">ochranu její osobnosti jejím dětem</li>
+	<li class="n">ochranu její osobnosti jejím dědicům</li>
+	<li class="n">náhradu škody způsobené neoprávněným zásahem do práva na ochranu osobnosti dětem</li>
+	<li class="y">náhradu škody způsobené neoprávněným zásahem do práva na ochranu osobnosti dědicům</li>
+</ul>
+</li>
+<li>
+<p>Písemnosti osobní povahy mohou být použity</p>
+<ul>
+	<li class="y">se souhlasem osoby, která je vytvořila</li>
+	<li class="n">bez souhlasu osoby, která je vytvořila</li>
+	<li class="y">k účelům úředním na základě zákona</li>
+	<li class="n">na základě "zpravodajské licence"</li>
+</ul>
+</li>
+<li>
+<p>Obchodní tajemství</p>
+<ul>
+	<li class="y">je vždy předmětem práv náležejících k podniku</li>
+	<li class="n">patří vždy do majetku obchodní společnosti</li>
+	<li class="y">jedná se o autorská práva a technické vynálezy</li>
+	<li class="n">je zaznamenáno u Úřadu průmyslového vlastnictví</li>
+	<li class="y">zahrnuje tehcnické licence a autorská práva naležející k podniku</li>
+	<li class="n">registruje se u Úřadu průmyslového vlastnictví</li>
+</ul>
+</li>
+<li>
+<p>Při porušení nebo ohrožení práva na obchodní tajemství má dotknutý právo na</p>
+<ul>
+	<li class="y">odstranění závadného stavu</li>
+	<li class="n">zaplacení pokuty</li>
+	<li class="y">zadostiučinění</li>
+	<li class="y">vydáni bezdůvodného obohacení</li>
+</ul>
+</li>
+<li>
+<p>Majetková autorská práva</p>
+<ul>
+	<li class="y">jejich držitelem může být pouze fyzická osoba způsobilá k právním úkonům, která dílo vytvořila</li>
+	<li class="n">obecně trvají 50 let po smrti autora</li>
+	<li class="y">nelze se jich vzdát a jsou nepřevoditelná</li>
+	<li class="y">po smrti autora přecházeji jeho dědice</li>
+</ul>
+</li>
+<li>
+<p>Osobnostní autorská práva</p>
+<ul>
+	<li class="y">autorem může být pouze fyzická osoba způsobilá k právním úkonům</li>
+	<li class="y">o zveřejnění díla rozhoduje autor</li>
+	<li class="y">autorství je nepřevoditelné a autor se jej nemůže vzdát</li>
+	<li class="n">smrtí autora přechází autorská práva na dědice</li>
+</ul>
+</li>
+<li>
+<p>Omezení autorského práva</p>
+<ul>
+	<li class="y">pro osobní potřebu může být vždy dílo užito bez svolení autora</li>
+	<li class="y">citace cizího díla nejsou zásahem do autorských práv</li>
+	<li class="y">nevýdělečné užití díla při školních představních není zásahem do autorských práv</li>
+	<li class="n">majetková práva ke školnímu dílu vykonáva škola</li>
+</ul>
+</li>
+<li>
+<p>Počítačový program</p>
+<ul>
+	<li class="y">je chráněn stejně jako literární dílo</li>
+	<li class="n">myšlenky, princípy a přípravné koncepční materiály jsou chráněny jako součást počítačového programu</li>
+	<li class="y">oprávněný uživatel počítačového programu v něm smí opravovat chyby</li>
+	<li class="n">uživatel počítačového programu nesmí zhotovovat jeho záložní kopie</li>
+</ul>
+</li>
+<li>
+<p>Zaměstnanecký vztah</p>
+<ul>
+	<li class="y">veškerá práva k dílům vykonává zaměstnanec</li>
+	<li class="y">po zániku právnické osoby bez právního nástupce přecházejí práva na autora</li>
+	<li class="n">při zhotovení počítačového programu na objednávku má autor právo na přiměřenou dodatečnou odměnu</li>
+	<li class="y">počítačové programy se považují za zaměstnanecká díla i tehdy, byla-li autorem vytvořena na objednávku</li>
+</ul>
+</li>
+<li>
+<p>Při porušení autorského práva má autor právo se domáhat</p>
+<ul>
+	<li class="y">odstranění následků neoprávněných zásahů do autorského práva</li>
+	<li class="n">zaplacení pokuty</li>
+	<li class="y">zadostiučinění</li>
+	<li class="y">vydání neoprávněného obohacení</li>
+</ul>
+</li>
+<li>
+
+<p>Právo průmyslového vlastnictví chráni</p>
+<ul>
+	<li class="n">autorská díla</li>
+	<li class="y">biotechnologické vynálezy</li>
+	<li class="n">obchodní tajemství</li>
+	<li class="y">zlepšovací návrhy</li>
+</ul>
+</li>
+<li>
+<p>Vynálezy</p>
+<ul>
+	<li class="y">patentovatelné jsou jen nové vynálezy</li>
+	<li class="y">patentovatelné jsou jen průmyslově využitelné vynálezy</li>
+	<li class="y">patent nemůže být nikdy udělen na počítačový program</li>
+	<li class="y">právo k patentu má jeho autor</li>
+</ul>
+</li>
+<li>
+<p>Zánik patentu</p>
+<ul>
+	<li class="n">majitel patentu je povinnen vynález prakticky využívat</li>
+	<li class="n">patent může být zrušen, pokud jej majitel nevyužívá</li>
+	<li class="y">patent zaniká, uplyne-li doba jeho platnosti</li>
+	<li class="y">patent zaniká, nezaplatí-li majitel poplatky za udržování platnosti patentu</li>
+</ul>
+</li>
+<li>
+<p>Databáze</p>
+<ul>
+	<li class="n">se považuje za souborné autorské dílo</li>
+	<li class="n">majetkové autorské právo k databázi trvá 15 let od jejího pořizení</li>
+	<li class="n">může být neomezeně vytěžována jen, je-li veřejně přístupná</li>
+	<li class="n">může být neomezeně vytěžována pro osobní potřebu uživatele</li>
+</ul>
+</li>
+<li>
+<p>Správce je povinnen</p>
+<ul>
+	<li class="y">prokázat souhlas subjektu údajů po celou dobu zpracovávání</li>
+	<li class="y">informovat subjekt údajů, kdo a jakým způsobem bude údaje zpracovávat</li>
+	<li class="y">informovat subjekt údajů, komu mohou být jeho údaje zpřístupněny</li>
+	<li class="n">pravidelně jednou ročně zaslat subjektu údajů ... zpracovávaných</li>
+</ul>
+</li>
+<li>
+<p>Bez souhlasu subjektu údajů může správce zpracovávat osobní údaje</p>
+<ul>
+	<li class="y">jestliže provádí zpracování upravené zvlášním zákonem</li>
+	<li class="y">jestliže provádí zpracování nezbytné pro dodržení právní povinnosti správce</li>
+	<li class="y">je-li to nezbytné k ochraně životně důležitých zájmu subjektu údajů</li>
+	<li class="y">pokládá-li to za nezbytné k ochrane svých zájmu</li>
+	<li class="y">na základě písemné smlouvy se subjektem údajů</li>	
+</ul>
+</li>
+<li>
+<p>Citlivé údaje může správce zpracovat</p>
+<ul>
+	<li class="y">jestliže je zpracování nezbytné pro zajištení a uplatnění právnich nároků</li>
+	<li class="y">pokládá-li to za nezbytné k ochraně životně důležitých zájmu subjektu údajů</li>
+	<li class="n">pokládá-li to za nezbytné k ochrane svých zájmu</li>
+	<li class="y">na základě písemné smlouvy se subjektem údajů</li>	
+</ul>
+</li>
+<li>
+<p>Při porušení povinností při zpracování osobních údajů má subjekt údajů právo domáhat se</p>
+<ul>
+	<li class="y">odstranění následků takového jednání</li>
+	<li class="y">zaplacení pokuty</li>
+	<li class="y">zadostučinění</li>
+	<li class="y">vydání bezdůvodného obohacení</li>	
+</ul>
+</li>
+<li>
+<p>Zaměstnanci správce</p>
+<ul>
+	<li class="n">musí uzavřít dohodu o ochraně zpracovávaných dat</li>
+	<li class="y">mohou zpracovávat osobní údaje pouze v rozsahu stanoveným  správcem</li>
+	<li class="y">mají doživotní povinnost mlčenlivosti o zpracovávných informacích</li>
+	<li class="y">mají doživotní povinnost mlčenlivosti o bezpečnostních opatřeních, jejichž zveřejnění by ohrozilo zabezpečení osobních údajů</li>
+</ul>
+</li>
+<li>
+<p>Podle zákona o svobodném přístupu k informacím jsou</p>
+<ul>
+	<li class="y">povinnými subjekty státní orgány</li>
+	<li class="y">povinnými subjekty všichni, kdo hospodaří s veřejnými prostředky</li>
+	<li class="y">žadateli fyzické osoby způsobilé k právním úkonům</li>
+	<li class="y">žadateli veškeré právnické osoby</li>
+</ul>
+</li>
+<li>
+<p>Podle zákona o svobodném přístupu k informacím nesmí být poskytnuty informace, které jsou</p>
+<ul>
+	<li class="y">utajovanými informacemi</li>
+	<li class="y">obchodním tajemstvím</li>
+	<li class="n">osobními údaji</li>
+	<li class="n">informacemi o rozhodnutíc orgánů státní správy</li>
+</ul>
+</li>
+<li>
+<p>Informace vyžádaná podle zákona o svobodném přístupu k informacím se předá</p>
+<ul>
+	<li class="y">zveřejněním na úřední desce</li>
+	<li class="y">zveřejněním dálkovým přístupem (Internet)</li>
+	<li class="y">odkazem na zveřejněnou informaci</li>
+	<li class="y">písemně</li>
+</ul>
+</li>
+<li>
+<p>Osobní údaje</p>
+<ul>
+	<li class="y">určitelnou osobou je osoba, o níž je známo jméno, příjmení, bydliště a datum narození</li>
+	<li class="y">citlivým údajem je příslušnost k politické straně nebo hnutí</li>
+	<li class="y">osobní údaj může být anonymizován</li>
+	<li class="n">údaje o osobě se dělí na osobní a neosobní</li>
+</ul>
+</li>
+<li>
+<p>Při neoprávněném zveřejnění osobních údajů má subjekt údajů právo žádat</p>
+<ul>
+	<li class="y">odstranění způsobených škod</li>
+	<li class="y">zaplacení pokuty</li>
+	<li class="y">zadostiučinění</li>
+	<li class="y">vydání bezdůvodného obohacení</li>
+</ul>
+</li>
+<li>
+
+<p>Utajované informace mohou být poskytovány organizaci, která</p>
+<ul>
+	<li class="y">je administrativně bezpečná</li>
+	<li class="y">není v likvidaci či v konkursu</li>
+	<li class="y">má certifikovaný vnitřní informační systém</li>
+	<li class="y">vypracovala bezpečnostní projekt</li>
+</ul>
+</li>
+<li>
+<p>Trestné činy v souvislosti s utajovanými informacemi</p>
+<ul>
+	<li class="n">projednávají vojenské soudy</li>
+	<li class="y">vyzvedačství může být trestáno vyjimečným trestem</li>
+	<li class="y">ohrožení utajované informace je trestné, i když je spácháno z nedbalosti</li>
+	<li class="n">vyzvedačství utajované informace v kategorií "Vyhrazené" je přestupkem</li>
+</ul>
+</li>
+<li>
+<p>V souvislosti s ochranou utajovaných informací...</p>
+<ul>
+	<li class="y">dodržovat nutná omezení stanovená vládou</li>
+	<li class="y">podrobit se bezpečnostní prověrce</li>
+	<li class="y">odevzdat nalezenou utajovanou informaci</li>
+	<li class="y">zachovávat mlčenlivost o utajovaných informacích</li>
+</ul>
+</li>
+
+
+</ol>
+
+</body>

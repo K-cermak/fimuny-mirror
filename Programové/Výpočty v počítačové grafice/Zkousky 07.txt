@@ -1,0 +1,9 @@
+Tak tendle pøedmìt bìžel letos poprvé (jako 07) tak vam popíšu dojmy. Písemka má pìt otázek, 4 jsou pøesnì ty které vyuèující vystavil a (pravdìpodobnì) budou stejné i v budoucnu.
+
+Pátá otázka (ta byla zatím v písemce vždy) je nìjaká praktická matematická úloha na probranou látku. Co si pamatuji tak za nás co jsem se dozvìdìl od spolužákù tam bylo
+
+
+1)Máte zadanou rovinu z a vektor v a za pomocí HOusehoderovy matice spocitejte vektor v', vektor odrazeny od roviny z.
+2)Máte zadané quaterniony p, q a koeficient h a pomocí nich spoètìte sférickou lineární interpolaci.
+
+tak hodnì zdaru, neni to nejlehèí ale udìlat se to dá.

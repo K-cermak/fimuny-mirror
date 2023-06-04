@@ -1,0 +1,8 @@
+grafika rozhrani zk-16.6.2011
+
+1.popište syntax OpenGl + pøiklad
+2.vypoèet svìtelnìho modelu
+3.co je to frame buffer+ mazani obecneho bufferu
+4.popište projection transformatiom + výpoèet fovy.
+5.program na 1.5 A4 ma nìco vykreslovat(popsáno) nedìla to proè?co je v programu zbyteène?
+ dat si pozor ze kdyz je napsane ze ma byl osvetleni tak pri nastaveni textur musi byl GL_MODULATE, kdyz se ma textura opakovat tak musi byt GL_REPEAT , kdyz ma byt stínování ploché tak musí být GL_FLAT a další hromada vìcí.

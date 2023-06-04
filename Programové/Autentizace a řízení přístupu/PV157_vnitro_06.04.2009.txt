@@ -1,0 +1,114 @@
+
+
+
+		=== BEZ VYZNAÈENÝCH SPRÁVNÝCH ODPOVÌDÍ ===
+
+1. IP spoofing oznaèuje:
+Zachycení IP adresy odesílatele i pøíjemce.
+Zachycení IP odesílatele.
+Podvržení IP adresy pøíjemce.
+Podvržení IP adresy odesílatele.
+
+2. Pro pojem výpoèetní bezpeènost platí následující tvrzení.
+Výsledek nároèného výstupu je podepsaný, z dùvodu zaruèení integrity
+Ani jedno z uvedených tvrzení neplatí
+Algoritmus jako takový nemusí být považován za neprolomitelný, dosud pouze nebyl nalezen efektivní zpùsob øešení/výpoètu
+Èasová nároènost prolomení urèitého algoritmu mnohonásobnì pøevyšuje dostupný výpoèetní výkon
+
+3. Pro bezpeèné používání digitálního podpisu
+špatnìJe nutné zajistit integritu privátního klíèe
+Je nutné zajistit integritu veøejného klíèe
+Je nutné udržet privátní klíè v tajnosti
+Je nutné udržet veøejný klíè v tajnosti
+
+4. Jaká je nevýhoda digitálního podepisování provádìného až po zašifrování dat
+Žádná, naopak výhodou je možnost snadné verifikace podpisu ještì pøed dešifrováním
+Výrazné urychlení kryptoanalýzy
+Žádná, naopak, výhodou je možnost nìkolikanásobného podepsání zašifrovaných dat
+Možnost snadného odstranìní digitálního podpisu
+
+5. Co znamená pojem elektronický podpis ve smyslu zákona o elektronickém podpisu?
+Takový pojem zákon neobsahuje
+To stejné, co digitální podpis
+Ruènì psaný podpis
+Libovolná identifikující informace pøipojená ke zprávì
+
+6. Jak eliminujeme útoky hrubou silou na PINy?:
+Školením uživatelù
+Omezením poètu pokusù o zadání PINu
+Pravidelnou zmìnou hodnoty PINu
+
+7. Jaký je vztah mezi chybovou analýzou a útoky na a pøes API?
+Každý útok na a pøes API je nezbytnou souèástí chybové analýzy.
+Chybová analýza s útoky na a pøes API nijak nesouvisí.
+špatnìAPI mnohdy obsahuje èetné chyby hodné dùkladné analýzy.
+špatnìChybová analýza je nezbytná souèást každého útoku na a pøes API.
+
+8. V dobrých autentizaèních protokolech se typicky
+Heslo neposílá vùbec
+Heslo posílá v hašované podobì
+Heslo posílá v otevøené podobì
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		=== S VYZNAÈENÍM SPRÁVNÝCH ODPOVÌDÍ ===
+
+1. IP spoofing oznaèuje:
+Zachycení IP adresy odesílatele i pøíjemce.
+Zachycení IP odesílatele.
+Podvržení IP adresy pøíjemce.
+*Podvržení IP adresy odesílatele.
+
+2. Pro pojem výpoèetní bezpeènost platí následující tvrzení.
+Výsledek nároèného výstupu je podepsaný, z dùvodu zaruèení integrity
+Ani jedno z uvedených tvrzení neplatí
+*Algoritmus jako takový nemusí být považován za neprolomitelný, dosud pouze nebyl nalezen efektivní zpùsob øešení/výpoètu
+*Èasová nároènost prolomení urèitého algoritmu mnohonásobnì pøevyšuje dostupný výpoèetní výkon
+
+3. Pro bezpeèné používání digitálního podpisu
+špatnìJe nutné zajistit integritu privátního klíèe
+*Je nutné zajistit integritu veøejného klíèe
+*Je nutné udržet privátní klíè v tajnosti
+Je nutné udržet veøejný klíè v tajnosti
+
+4. Jaká je nevýhoda digitálního podepisování provádìného až po zašifrování dat
+Žádná, naopak výhodou je možnost snadné verifikace podpisu ještì pøed dešifrováním
+Výrazné urychlení kryptoanalýzy
+Žádná, naopak, výhodou je možnost nìkolikanásobného podepsání zašifrovaných dat
+*Možnost snadného odstranìní digitálního podpisu
+
+5. Co znamená pojem elektronický podpis ve smyslu zákona o elektronickém podpisu?
+Takový pojem zákon neobsahuje
+To stejné, co digitální podpis
+Ruènì psaný podpis
+*Libovolná identifikující informace pøipojená ke zprávì
+
+6. Jak eliminujeme útoky hrubou silou na PINy?:
+Školením uživatelù
+*Omezením poètu pokusù o zadání PINu
+Pravidelnou zmìnou hodnoty PINu
+
+7. Jaký je vztah mezi chybovou analýzou a útoky na a pøes API?
+Každý útok na a pøes API je nezbytnou souèástí chybové analýzy.
+*Chybová analýza s útoky na a pøes API nijak nesouvisí.
+špatnìAPI mnohdy obsahuje èetné chyby hodné dùkladné analýzy.
+špatnìChybová analýza je nezbytná souèást každého útoku na a pøes API.
+
+8. V dobrých autentizaèních protokolech se typicky
+*Heslo neposílá vùbec
+*Heslo posílá v hašované podobì
+Heslo posílá v otevøené podobì

@@ -1,0 +1,38 @@
+1.========
+
+Zdroj zprávy Z generuje zprávy vyjádøené abecedou (1,2,3,4).
+Jednotlivé prvky teto abecedy se vyskytují ve zpravách s pravdìpodobnosti
+po øadì (1/4, 1/2, 1/8, 1/8) a jsou kódované do binární abecedy Eliasovým
+kódem urèitého typu (C2).
+
+-urèete entropii zdroje Z
+-urèete prùmìrnou délku kódovaných slov generovaných zdrojem Z
+-zdùvodnìte, zda použitý kód je èi není optimální
+
+2.========
+
+Komprese LZ77:
+
+MAMAMAMASO - slovník má dílku 8 znakù, okno délky 4 znaky.
+
+3.========
+
+Kolik úrovní musí mít úplný binární strom s 64 uzly?
+
+4.========
+
+Definujte B strom a uvést jeho pøíklady...
+
+5.========
+
+Litwinova hešování - ABCDE
+Pøeplní C, dynamické D.
+
+6.========
+
+Pokud soubor chápeme jako abstraktní datový typ (ADT), pak uvést pøíklady
+následující typù operací s ADT.
+
+-konstruktory
+-modifikátory
+-inspektory

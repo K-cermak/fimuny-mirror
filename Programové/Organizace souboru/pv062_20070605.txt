@@ -1,0 +1,24 @@
+PV062 Organizace souborù - 5.6.2007
+
+6 otázek, za každou 0-2 body, hodnocení 12-10 A, 9 B, 8 C, 7 D, 6 E, 5-0 F
+
+Hashovací funkce do prostoru 13 øádkù je m = k mod 13, kolize se øeší kvadratickým prùchodem. Do jakých pozic padnou vyjmenované prvky (èísla)?
+
+Pìt kapes. K jaké zmìnì dojde pøi pøeteèení kapsy C, pokud minulé pøeteèení bylo øešeno prostøednictvím kapsy D?
+
+Kolik procent z pamìti pøidìlené invertovaném souboru z 0,5 M záznamù o délce 1 KB zabere index realizovaný prostøednictvím bitové mapy, jestliže používaný klíè mùže nabývat 10 rùzných hodnot?
+
+Definujte následující termíny: dotaz nad souborem, jednosmìrný dotaz nad souborem, ortogonální dotaz nad souborem, ortogonální dotaz nad souborem s úplnou intervalovou shodou, ortogonální dotaz nad souborem s èásteènou intervalovou shodou
+
+Sestavte strom B+ ze (šesti) vyjmenovaných prvkù (èísel).
+
+Jaké budou kódy (šesti) jednotlivých písmen v Huffmanovì kódování pøi daném rozložení pravdìpodobností?
+rozložení: 0,05 0,15 0,15 0,20 0,20 0,25 [nìco na ten zpùsob]
+
+Odpovìï - kódy (až na homomorfismus):
+00
+10
+11
+010
+0110
+0111

@@ -1,0 +1,845 @@
+Proti obecným OR (Onion Routing) sítím přináší TOR navíc
+ - podporu šifrování dat proudovou šifrou se symetrickým klíčem. 
+ - poskytuje téměř real-time anonymní spojení pro různé služby. 
+ * adresářové servery s informacemi o jednotlivých routerech. 
+ * podporu skrytých služeb a míst setkání.
+
+Při podpisu s obnovou dat platí:
+ - Podepisovaná data nejsou součástí podpisu, je nutné je obnovit nezávislým
+   komunikačním kanálem. 
+ - Podepisovaná data lze z podpisu obnovit při znalosti soukromého klíče. 
+ * Podpis obsahuje i podepisovaná data. 
+ * Podepisovaná data mohou být obnovena kýmkoli, kdo vlastní příslušný veřejný
+   klíč.
+
+Která z těchto tvrzení jsou správná?
+ - Biometrická data jsou tajná. 
+ * Biometriky v ideálním případě určují identitu člověka přesně a lze tak
+   spojovat jednotlivě jeho činy. 
+ - Jeden vzorek lze využít jen v jednom systému. 
+ * Některé biometriky hodně o subjektu vypovídají.
+
+Základní metody autentizace uživatelů jsou založeny na něčem, 
+ - co nelze jednoduše zničit 
+ * jsem 
+ * znám
+
+Řešení pro odesílání anonymních e-mailů jsou založena na:
+ * remailerech, u kterých rozlišujeme několik typů (tříd) 
+ - využití účtu na freemailu (Seznam) 
+ - anycastových sítích, remailerech a mixech 
+ - anonymity před příjemcem lze dosáhnout velmi těžko 
+ * broadcastových sítích, remailerech a mixech
+
+Co to je pozitivní kompromitace statistické databáze?
+ - Nesmysl 
+ * Opak částečné kompromitace (imho diskutabilní – pozn. autor)
+ - Kompromitace se zametením stop 
+ - Opak negativní kompromitace 
+ * Výsledkem zpřesněného dotazu je nenulový počet odpovědí
+
+Projekt AN.ON poskytuje stejné služby jako
+ - Mixmaster. 
+ - Mixminion. 
+ * Onion routing. 
+ * TOR.
+
+K čemu se používají systémy řízení identity (IMS)?
+ - Systém pro správu veřejných klíčů s identifikátory 
+ - K dlouhodobé archivaci odcizených identifikačních průkazů 
+ * K návrhu a správě atributů identity
+
+Výraz script kiddies označuje:
+ - Hackera, který píše skripty a odhaluje nové zranitelnosti systému. Má částečné
+   informace o systému. 
+ * Útočníka, který nemá dostatek znalostí o systému a využívá běžně dostupné
+   předpřipravené nástroje na známé zranitelnosti, často způsobem pokus-omyl. 
+ - Útočníka, který je schopen kreativně odhalovat nové zranitelnosti i bez
+   znalostí o systému.
+
+Jaká rizika s sebou nese zasílání platebních karet a PINů poštou?
+ - Platební karta je skrze obálku vystavena tzv. napěťovým a teplotním útokům. 
+ * Poštovní obálku lze během doručování ztratit. 
+ * PIN může být skrze neporušenou obálku nepozorovaně přečten. 
+ - Libovolná platební karta může být skrze neporušenou obálku snadno zkopírována.
+
+Jak ověříme pravost certifikátu vydaného důvěryhodnou certifikační autoritou?
+ - Ověříme, zda je haš certifikátu shodná s haší uvedenou v certifikátu. 
+ - Využijeme meta-certifikátu certifikační autority. 
+ - Ověříme zda se shoduje název certifikační autority s názvem uvedeným na daném
+   certifikátu. 
+ * Ověříme zda je certifikát podepsán danou certifikační autoritou.
+
+Pravidla přístupu do počítačové sítě (FI) MU
+ - uživatel smí kopírovat programové vybavení jen pro potřeby svého ročníku 
+ - v případě nutnosti je povoleno rekonfigurovat PC, které je pod správou CVT FI 
+ * je zakázáno odposlouchávat provoz a vytvářet kopie poštovních zpráv 
+ * je zakázáno pracovat pod cizí identitou 
+ * je povoleno používat pouze legální software 
+ - v počítačových učebnách a na počítačích FI je možné hrát pouze 
+   legálně zakoupené hry
+
+Jaké jsou základní vlastnosti kvalitativní analýzy rizik?
+ * Výstup není v nějaké konkrétní hodnotě, např. v určité částce 
+ * Postup je do značné míry automatizovatelný 
+ - Výstup je lehce srozumitelný 
+ - Postup není automatizovatelný 
+ * Výstup je nesrozumitelný 
+ - Výstup je v nějaké konkrétní hodnotě, např. v určité částce
+
+Protokoly SSL/TLS
+ * vyžadují zajištění vhodného systému správy (kryptografických) klíčů 
+ - nepředstavují zvýšené nároky na výpočetní výkon komunikujících stran 
+ * se chovají k protokolům aplikační vrstvy OSI modelu transparentně 
+ - není vhodné používat ve starších operačních systémech pro 32bitové procesory 
+ - není snadné integrovat do již existujících aplikací
+
+Jaké byly důvody (a motivace) pro zavedení kritérií bezpečnosti?
+ * Potřeba minimalizace nákladů na individuální ohodnocení 
+ - Snazší a rychlejší vývoj implicitně bezpečných systémů 
+ - Jednalo se o chytrý marketingový tah výrobců špatně zabezpečených operačních
+   systémů 
+ * Usnadnění specifikace požadavků na návrh a vývoj 
+ - Standardizace kryptografických primitiv
+
+PIN je u kreditních karet vyžadován, aby
+ - celý systém plateb kartami vypadal bezpečněji (ve skutečnosti však bezpečnost
+   vůbec nezvedá - je zde jen pro psychologický efekt) 
+ * člověk, který kartu zcizí, ji nemohl snadno použít k platbám 
+ * karta po okopírování šla obtížněji zneužít 
+ - karta šla hůře okopírovat 
+ - zajistil absolutní ochranu peněz před jakýmkoli útokem na bezpečnost karty
+
+Která z těchto tvrzení jsou správná?
+ - Biometriky po analýze s využitím kryptografie o subjektu zprávy vypovídají. 
+ - Biometrická data jsou tajná. 
+ * Žádná z těchto odpovědi není správná. 
+ - Jeden vzorek lze využít jen v jednom systému.
+
+Pod pojmem riziko rozumíme:
+ - pravděpodobnost odhalení zranitelnosti. 
+ * pravděpodobnost uplatnění hrozby. 
+ - rozsah dopadu uplatnění hrozby. 
+ - existenci zranitelnosti v systému a přítomnost útočníka, který ji může využít.
+
+Remailer je
+ * služba pro anonymní posílání a příjem e-mailů 
+ - část poštovního serveru, která se stará o opakování neúspěšných pokusů 
+ - veřejný poštovní server (považovaný za chybně nakonfigurovaný)
+
+Pokud má hašovací funkce vlastnost silné bezkoliznosti, znamená to, že:
+ * Je výpočetně neproveditelné nalézt dva libovolné navzájem různé vstupy
+   takové, aby byly výsledné haše pro oba vstupy stejné.
+ - Nelze nalézt dva navzájem různé vstupy takové, aby byly výsledné
+   haše pro oba vstupy stejné.
+ - Je výpočetně neproveditelné nalézt k danému vstupu jiný vstup tak, aby
+   byly výsledné haše pro oba vstupy stejné.
+ - Nelze nalézt dva navzájem různé vstupy takové, aby byly výsledné haše
+   pro oba vstupy stejné na alespoň 1/2 pozic.
+
+Jaký způsob předání veřejného klíče je považován za důvěryhodný:
+ - vystavení na klíčový server.
+ - zaslání emailem s paralelním umístěním na webovou stránku.
+ * ověření otisku klíče telefonem.
+ * osobní předání na USB disku.
+ * zaslání důvěryhodným zprostředkovatelem.
+
+Jak pracuje technika minimálního rozsahu dotazu ve statistických databázích?
+ - Žádná taková technika neexistuje.
+ - Pro vyhodnocení dotazu může být použito méně záznamů než je stanovená
+   minimální mez, ale pouze za zvláštních bezpečnostních opatření (např.
+   podpis dohody o mlčenlivosti).
+ - Žádná taková technika se ve statistických databázích nepoužívá.
+ * Pro vyhodnocení dotazu nesmí být použito méně záznamů než je 
+   stanovená minimální mez.
+
+Mezi obvyklé bezpečnostní politiky patří:
+ * Systémová bezpečnostní politika
+ * Celková bezpečnostní politika
+ - Interaplikační bezpečnostní politika
+ - Integrovaná bezpečnostní politika
+ - Horizontální bezpečnostní politika
+
+Cibulové schéma používané např. v Onion Routing
+ * využívá symetrické i asymetrické kryptografie
+ - kryptografie se nepoužívá vůbec, není potřeba
+ - používá pouze asymetrickou kryptografii
+ - používá pouze symetrickou kryptografii, protože je rychlejší
+
+Čipová kreditní karta bez mag. proužku
+ * obvykle obsahuje malý procesor
+ - obvykle neobsahuje procesor, přestože se jí tradičně říká "čipová"
+ * skýtá obvykle vyšší bezpečnost než karta s mag. proužkem (bez čipu)
+ - skýtá obvykle nižší bezpečnost než karta s mag. proužkem (bez čipu)
+
+Pod pojmem slabá integrita dat rozumíme
+ - Data nesmí bez svolení autorizované osoby změnit svůj stav vůbec
+ - Data nesmí být bez svolení autorizované osoby zpracovávána na sémantické úrovni
+ * Data nesmí bez svolení autorizované osoby nepozorovaně změnit svůj stav
+
+Jaké jsou základní vlastnosti kvantitativní analýzy rizik?
+ - Výstup není v nějaké konkrétní hodnotě, např. v určité částce
+ * Výstup je v nějaké konkrétní hodnotě, např. v určité částce
+ * Výstup je lehce srozumitelný
+ - Postup je plně automatizovatelný
+ - Výstup je nesrozumitelný
+ * Postup není automatizovatelný
+
+Jaký je rozdíl mezi termíny security a safety?
+ - Je to to samé, čeština používá jen jeden termín - bezpečnost
+ * Security - stav ochrany IS proti ztrátám; safety - nedojde k
+   ohrožení lidského života
+ - Safety - stav ochrany IS proti ztrátám; security - nedojde k ohrožení
+   lidského života
+
+V případě, že nespokojení uživatelé jsou "menší zlo" než neoprávnění uživatelé, 
+nastavíme biometrický systém tak, že bude mít FAR (False Acceptance Rate) a FRR (False Rejection Rate):
+ - nízkou hodnotu FRR a nízkou hodnotu FAR.
+ * vysokou hodnotu FRR a nízkou hodnotu FAR.
+ - vysokou hodnotu FAR a nízkou hodnotu FRR.
+ - vysokou hodnotu FRR a vysokou hodnotu FAR.
+
+Pojmem tranzitivita důvěry označujeme:
+ * důvěru cizího uživatele X v náš veřejný klíč, pokud mu (našemu klíči, pozn. autora)
+   důvěřuje uživatel Y, kterému (uživateli Y, pozn. autora) důvěřuje uživatel X.
+ * důvěru ve veřejný klíč uživatele X, kterému důvěřuje uživatel Y,
+   kterému důvěřujeme my.
+ - takový termín neexistuje.
+ - důvěru uživatele X v náš veřejný klíč, pokud my důvěřujeme jeho
+   veřejnému klíči.
+ - důvěru v propagaci našeho veřejného klíče od uživatele X na uživatele Y.
+
+Pod pojmem silná integrita dat rozumíme
+ - Data nesmí bez svolení autorizované osoby nepozorovaně změnit svůj stav
+ - Data nesmí být bez svolení autorizované osoby zpracovávána na sémantické
+   úrovni
+ * Data nesmí bez svolení autorizované osoby změnit svůj stav vůbec
+
+Je lepší používat TOR nebo Mixminion?
+ - Jednoznačně Mixminion.
+ - Jednoznačně TOR.
+ - Ani jedno, ani druhé.
+ * Zaleží na tom, co chceme dělat.
+
+Které dvě z těchto biometrických technik bývají obvykle nejlevnější s ohledem
+na celkové náklady na nasazení u koncových uživatelů, resp. jejich pracovních stanic?
+ - vzor oční sítnice
+ - DNA
+ * dynamika psaní na klávesnici
+ * otisk prstu
+
+Autentizace protokolem s nulovým rozšířením znalostí (zero-knowledge)
+ - zabrání prokazující se straně, aby se dozvěděla, jak zní tajemství,
+   které vlastní ověřovatel
+ - zabrání ověřovateli, aby se zároveň autentizoval prokazující se straně
+ * zabrání ověřovateli, aby se dozvěděl tajemství, které vlastní
+   prokazující se strana
+ - sdělí ověřovateli pouze počet nul v tajném klíči prokazující se strany
+ * zabrání ověřovateli, aby se mohl později neoprávněně vydávat za
+   prokazující se stranu
+
+Co je cílem zajištění důvěrnosti dat?
+ - Zamezit změně sémantického obsahu dat neautorizovanými osobami
+ - Utajit existenci sémantiky dat před nedůvěryhodnými osobami
+ * Zabránit zjištění sémantického obsahu dat neutorizovanými osobami
+
+Povinnosti správce osobních údajů:
+ * shromažďovat osobní údaje odpovídající pouze stanovenému účelu a
+   v rozsahu nezbytném pro naplnění stanoveného účelu
+ * uchovávat data pouze po dobu nezbytnou k jejich zpracování
+ - vkládat falešné záznamy, aby v případě krádeže dat nebylo možné snadno
+   posoudit jejich validitu
+ - archivovat data kódovaně, není-li řečeno jinak
+
+Která z těchto tvrzení, pokud mluvíme o biometrických systémech, jsou
+správná?
+ - Proces verifikace je náročnější než proces identifikace. 
+ * Proces identifikace je náročnější než proces verifikace. 
+ * Na začátku procesu identifikace není identita známa. 
+ - Na začátku procesu identifikace je identita známa.
+
+Autentizace je
+ * všechny ostatní možnosti jsou nepravdivé 
+ - proces nezbytný pro ustavení šifrované komunikace u bezdrátového spojení 
+ - volitelná (ale obvykle přítomná) fáze procesu prokazování identity 
+ - překlep - správně je "autorizace"
+
+Které z tvrzení o anonymitní množině neplatí
+ * nezáleží na chování uživatelů v dané skupině 
+ - pro určení velikosti anonymitní množiny se užívá entropie 
+ * velikost anonymitní množiny je smysluplný ukazatel 
+ - záleží i na kontextových informacích v systému
+
+Jakým způsobem je počítána analýza rizik metodou ALE (Annual Loss
+Expentancy)
+ * ALE=SLExARO, kde SLE=Single Loss Expentancy a ARO=Annualized Rate of
+   Occurence 
+ - ALE=SLO/ARE, kde SLO=Single Loss of Opportunity a ARE=Annualized Rate of
+   Executions 
+ - ALE=SLE/ARO, kde SLE=Single Loss Expentancy a ARO=Annualized Rate of Occurence 
+ - ALE=SLOxARE, kde SLO=Single Loss of Opportunity a ARE=Annualized Rate of
+   Executions 
+ - ALE=SLE+ARO, kde SLE=Single Loss Expentancy a ARO=Annualized Rate of Occurence 
+ - ALE=SLO+ARE, kde SLO=Single Loss of Opportunity a ARE=Annualized Rate of
+  Executions
+
+Co je nejčastější příčinou bezpečnostních incidentů?
+ - Vliv přírody, zdrojů. 
+ - Záměrný útok (sabotáž) zaměstnanců (i bývalých). 
+ * Chyby (neúmyslné). 
+ - Vnější útočníci. 
+ - Škodlivý software.
+
+Mezi bezpečnostní požadavky podle standardu pro hodnocení kryptografických
+modulů FIPS 140-1/2 patří:
+ * Služby a autentizace 
+ * Rozhraní modulu 
+ - Elektromagnetická rezonance 
+ * Správa klíčů 
+ * Metody pro zmírnění jiných útoků 
+ - Flexibilita modulu
+
+Která z uvedených tvrzení jsou pravdivá?
+ - Symetrická kryptografie se využívá pouze pro šifrování, zatímco asymetrická
+   pouze k podepisování. 
+ * Symetrická kryptografie využívá jeden klíč sdílený mezi dvěma a více
+   uživateli. 
+ - Teoreticky lze použít asymetrickou kryptografii i k šifrování, ale v praxi se
+   toho nevyužívá. 
+ - Pokud chceme využít asymetrickou kryptografii k šifrování, musí zůstat oba
+   klíče utajeny.
+
+Odmítnutí služby (Denial of Service) je
+ * útok, který uvede server do stavu, kdy není schopen reagovat na požadavky 
+ - stav, kdy server zjistí nedostatečnou autorizaci uživatele k operaci 
+ - stav, kdy server včas zjistí útok a zamítne další komunikaci s útočníkem 
+ - útok, kdy zpracování požadavku na webovém serveru nevyhnutelně skončí s HTTP
+   chybou 500
+
+Cílem projektu Eternity server je
+ - poskytnout trvalé úložiště dat s operacemi uložit, nalézt a smazat 
+ - navrhnout službu, která je odolná vůči útoku typu Denial of Service 
+ * poskytnout trvalé úložiště dat 
+ * vytvořit datové úložiště, které je odolné vůči výpadkům
+
+K bezpečným metodám autentizace klienta bance v systému internetového
+bankovnictví patří prokázání se
+ - heslem, které si klient zvolil při zakládání účtu 
+ - kódem získaným vložením rodného čísla či uživatelského hesla do autentizační
+ - "kalkulačky" 
+ - rodným číslem 
+ * osobním klíčem uloženým bezpečně na čipové kartě, USB flashdisku či SD
+   kartě 
+ * kódem získaným vložením výzvy (challenge) bankovního systému do autentizační
+   "kalkulačky"
+
+Důvěryhodnost dat?
+ - Utajení obsažené informace. 
+ * Data jsou v nezměněné podobě tak, jak byla vytvořena. 
+ * Technicky se realizuje např. pomocí digitálního podpisu. 
+ - Data získaná od důvěryhodného zdroje.
+
+Základní metody autentizace uživatelů jsou založeny na něčem, co
+ - smím 
+ * mám 
+ * vím
+
+Jak pracuje technika náhodného výběru ve statistických databázích?
+ * Výsledek dotazu je vyhodnocen na základě náhodně vybraných záznamů ze všech
+   existujících záznamů v databázi. 
+ - Výsledek dotazu je vyhodnocen na základě mírně poupravených záznamů, které jsou
+   náhodně vybrány ze všech existujících záznamů v databázi. 
+ - Výsledek dotazu je zaokrouhlen na hodnotu náhodně vybraného záznamu. 
+ - Výsledek dotazu je zcela náhodný a nepředvídatelný. 
+ - Žádná taková technika neexistuje.
+
+Jak pracuje technika maximálního rozsahu dotazu ve statistických databázích?
+ * Žádná taková technika neexistuje. 
+ - Pro vyhodnocení dotazu nesmí být použito více záznamu než je stanovená
+   maximální mez. 
+ - Pro vyhodnocení dotazu může být použito pouze menší množství záznamů než je
+   stanovená maximální mez.
+
+Bezpečnostní politika je
+ - dokument schválený členem představenstva a stanovující přesná pravidla pro
+ - zajištění technických i lidských zdrojů pro využití IT pro zajištění cílů
+   organizace 
+ * soubor pravidel specifikující účinný způsob uplatňování opatření potřebných 
+   k dosažení požadované minimální úrovně rizik 
+ - soubor opatření a mechanizmů potřebných k dosažení požadované minimální
+   úrovně prevence a detekce zranitelností 
+ - dokument schválený vrcholovým managementem a specifikující využití IT pro
+   zajištění cílů organizace
+
+Kerckhoffsův princip v současnosti neplatí:
+ - Protože dokážeme účinně utajovat šifrovací algoritmy. 
+ - Jelikož současné délky klíčů neumožňují efektivní útoky hrubou silou. 
+ * Nesmysl, Kerckhoffsův princip platí i v současnosti. 
+ - Anžto dokážeme hrubou silou prolomit klíče o délce větší než 80 bitů.
+
+Které z následujících pojmů se vztahují ke Společným kritériím (CC).
+ - Profil prokazatelné bezpečnosti (Provable Protection Profile, PPP)
+ - Specifikace síťové bezpečnosti (Network Security Target, NST)
+ - Subjekt hodnocení (Subject of Evaluation, SOE)
+ * Specifikace bezpečnosti (Security Target, ST)
+ * Profil bezpečnosti (Protection Profile, PP)
+ * Předmět hodnocení (Target of Evaluation, TOE)
+
+Která z těchto tvrzení jsou správná?
+ * Se snížením FAR se zvyšuje FRR.
+ - Se zvýšením FAR se zvyšuje FRR.
+ - Se snížením FAR se snižuje FRR.
+ * Se zvýšením FAR (False Acceptance Rate) se snižuje FRR (False Reject Rate).
+
+Mezi bezp. funkce systémů pro ochranu inf. soukromí patří:
+ - identita
+ - nezjistitelnost
+ * pseudonymita
+ * anonymita
+ * nepozorovatelnost
+ * nespojitelnost
+
+Které z následujících metod lze využít k analýze rizik?
+ - Metoda ARO (Annualized Rate of Occurence)
+ * Meroda CRAMM (CCTA Risk Analysis and Management Method)
+ - Metoda RSA (Risk System Analysis)
+ * Metoda ALE (Annual Loss Expentancy)
+ - Metoda AES (Advanced Evaluation Standard)
+
+Nespojitelnost (podle Společných kritérií) zajišťuje možnost opakovaného použití zdrojů:
+ - tak, že identita uživatele zůstane skryta specifickým uživatelům, 
+   pro specifické operace bez prozrazení identity uživatele, ale v případě
+   potřeby lze identitu zpětně zjistit
+ - tak, že pouze administrátoři uvidí, že ve skutečnosti toto použití
+   inicioval tentýž uživatel
+ * tak, že ostatní si tato použití nebudou schopni spojit bez prozrazení
+   identity uživatele
+
+Pod pojmem hybridní kryptosystémy rozumíme například
+ - Data jsou před šifrováním algoritmem symetrické kryptografie hašována,
+   šifrována je pouze výsledná haš
+ - Data jsou před podpisem zašifrována algoritmem asymetrické kryptografie
+ * Data jsou šifrována náhodným symetrickým klíčem, ten je šifrován veřejným
+   klíčem příjemce
+
+Pod pojmem symetrická kryptografie rozumíme:
+ * Kryptografie s využitím stejného klíče pro šifrování i dešifrování.
+ - Kryptografie s takovým algoritmem, jehož všechny operace splňují matematickou
+   vlastnost symetrie nad danou grupou.
+ - Kryptografie s takovým algoritmem, který umožňuje komukoli symetricky ověřit
+   pravost podpisu.
+ - Kryptografie s využitím klíče, který je na binární úrovni symetrický.
+
+Co je výsledkem hodnocení systému podle Společných kritéríí (CC)?
+ * Diskrétní hodnocení (ano/ne) daných požadavků na hodnocený systém
+ - Popis, jakým způsobem je v hodnoceném systému dosaženo daných vlastností
+ - Subjektivní (ze strany hodnotitele) hodnocení bezpečnosti systému
+ - Sada doporučení, jak hodnocený systém zabezpečit
+
+Mezi vlastnosti Onion Routingu (OR) rozhodně patří
+ - závislost na specializovaném hardwaru
+ - využívá se zejména v privátních sítích
+ * zpoždění komunikace by měla být co nejmenší
+ * aplikace mohou s OR fungovat bez nutnosti jejich modifikace
+ - neumožňuje komunikaci klient-server
+
+Které tvrzení je správné:
+ * TLS/SSL "Handshake" protokol slouží k ustavení zabezpečeného spojení, "Record"
+   protokol představuje základní vrstvu.
+ - "Record" protokol dovoluje předávat/ukládat nezabezpečená data pro potřeby
+   vlády USA, podle §708, odstavce 17 zákona o vnitřní bezpečnosti.
+ - Použití TLS/SSL "Handshake" protokolu je volitelné v závislosti na požadavcích
+   klienta a serveru.
+ - Při TLS/SSL "Handshake" se povinně kontrolují certifikáty obou stran.
+ - Při TLS/SSL "Handshake" se provádí autentizace uživatele heslem.
+
+Co jsou (z pohledu uživatele) dvě nejméně bezpečné součásti dnešních platebních systémů?
+ * Platební terminál
+ * Čipová karta s magnetickým proužkem
+ - Bankomat
+ - Čipová karta
+
+Typické operace na firewallu jsou
+ - hašovat
+ * zakázat
+ - porovnat
+ * povolit
+
+Šifrování v PGP probíhá tak, že se data šifrují
+ - symetricky, symetrický klíč se zašifruje soukromým klíčem příjemce a přiloží k datùm
+ - asymetricky, klíče se zašifrují veřejným klíčem příjemce a přiloží k datům
+ * symetricky, symetrický klíč se zašifruje veřejným klíčem příjemce a přiloží k datùm
+ - asymetricky, klíče se zašifrují soukromým klíčem příjemce a přiloží k datùm
+
+Chybovost biometrických systémù vyjádřená pomocí FRR (False Rejection Rate) je:
+ - Podíl počtu akceptovaných pokusů o přihlášení legitimních uživatelů 
+   ku počtu všech pokusů o verifikaci legitimních uživatelù.
+ - Podíl počtu všech pokusů o přihlášení legitimních i nelegitimních uživatelů
+   ku počtu všech pokusù o přihlášení legitimních uživatelů.
+ - Podíl počtu akceptovaných pokusů o přihlášení legitimních uživatelů
+   ku počtu odmítnutých pokusů o přihlášení legitimních uživatelů.
+ * Podíl počtu odmítnutých pokusů o přihlášení legitimních uživatelů ku počtu všech pokusů o přihlášení.
+
+Jaké jsou faktory přímo ovlivňující pravděpodobnost neoprávněného (vy)užití informací?
+ * Úroveň bezpečnostních mechanizmů.
+ - Výše trestu těm, kdo s daty neoprávněně manipuluje.
+ - Výše trestu těm, kdo data hlídali a zajistili restriktivní manipulaci.
+ - Výše trestu těm, kdo data neohlídali a spolupodíleli se na jejich úniku.
+ - Kódování dat.
+
+Podle českého zákona o e-podpisu (227/2000) je zaručený elektronický podpis:
+ - Elektronický podpis, který je proveden nad zaručeně korektními daty
+ - Nic takového dle českého zákona neexistuje
+ * Elektronický podpis, který je jednoznačně spojen s podepisující osobou
+ - Elektronický podpis, který je připojen ke zprávě tak, aby ho bylo možné zaručeně ověřit
+Typické operace na firewallu jsou
+ - hašovat
+ * přeložit
+ - změnit
+ * zakázat
+
+Je vůbec možné, aby mělo vnější prostředí (teplota atp.) nějaký vliv na bezpečnost čipových karet?
+ - ne, není to možné
+ * ano, je to možné
+
+Bylo by možné spolehlivě autentizovat studenta MU na základě trojice celých čísel výška[cm] : váha[kg] : věk[roky]?
+ - Ano, jde o fyzickou vlastnost (biometrika).
+ * Ne, MU studentů příliš mnoho, aby toto bylo spolehlivé.
+ - Ano, jde o údaje cizím lidem neznámé.
+
+Zákon o ochraně osobních údajů:
+ - vztahuje se na zabezpečení zpracovávaných osobních údajů v případě automatizovaných prostředků dodávaných ze zemí mimo EU
+ - nevztahuje se na data poskytovaná dobrovolně státním institucím
+ * nevztahuje se na zpracování osobních údajů, které provádí fyzická osoba výlučně pro osobní spotřebu
+ * vztahuje se na veškeré zpracování osobních údajù, ať k němu dochází automatizovaně nebo jinými prostředky
+ * nevztahuje se na nahodilé shromažďování osobních údajů, pokud tyto údaje nejsou dále zpracovávány, nebo pokud nejsou pro podnikání
+
+Pod pojmem prokazatelná zodpovědnost rozumíme
+ * Za veškeré své činy v systému jsou uživatelé zodpovědní vůči majiteli dat
+ - Uživatelé se musí před použitím systému autentizovat vůči jeho majiteli
+ - U každé činnosti lze jednoznačně prokázat, kdo je za ni zodpovědný.
+ - Uživatelé systému jsou zodpovědní za činy, které lze jednoznačně prokázat
+
+Magnetický proužek standardní platební karty obsahuje:
+ - údaje o částce, kterou držitel této karty naposledy vybral nebo platil
+ * údaje o kartě
+ - údaje o posledních 3-5 transakcích s kartou
+ * údaje o majiteli
+
+Problém živosti pro vstupní zařízení spočívá v tom, že:
+ * Vstupní zařízení není schopno určit, zda vzorek je od živé osoby.
+ - Žádná z těchto odpovědí není správná.
+ - Vstupní zařízení není schopno určit, zda vzorek je právě od osoby, která stojí u vstupního zařízení.
+ - Osoba, která se přihlašuje u vstupního zařízení není schopná určit kam její vzorek bude přeposlán.
+
+Digitální podpis v PGP probíhá tak, že se
+ - vytvoří haš zprávy, který se podepíše veřejným klíčem odesílatele
+ - zpráva se podepisuje přímo klíčem dle volby uživatele
+ * vytvoří haš zprávy, který se podepíše soukromým klíčem odesílatele
+ - vytvoří haš zprávy, který se podepíše veřejným klíčem příjemce
+ - vytvoří haš zprávy, který se podepíše soukromým klíčem příjemce
+
+Nespojitelnost nezohledňuje identitu uživatele ale
+ - Rozsah služeb a zdrojů, které jsou v systému aktuálně využívané
+ - Jeho pseudonymitu a nesledovatelnost
+ * Rozsah služeb a zdrojů, které byly použity jedním uživatelem
+ - Rozsah služeb a zdrojů, které byly použity různými uživateli
+
+Pokud neautorizovaná osoba zjistí sémantický obsahu chráněných dat, jedná se o narušení
+ - prokazatelné zodpovědnosti
+ - dostupnosti
+ - integrity
+ * důvěrnosti
+
+Zabezpečení provozu na úrovni IP dosáhnu pokud zvolím:
+ - IPv4s
+ - PGP
+ * IPv6
+ * IPsec
+ - Stunnel
+
+Bezpečnost je založena především na
+ - správném nastavení bezpečnosti sítě i koncových stanic
+ - aktualizovaném antiviru a správně nastaveném firewallu, příp. i využití PGP
+ - dohodě s uživateli
+ * prevenci, detekci a reakci na možné problémy
+
+Komu v platebních systémech poskytují současné tokeny nejnižší ochranu?
+ - Bankám
+ - Provozovatelům sítě bankomatů (v případě, že provozovatelem není přímo banka)
+ - Obchodníkům
+ * Zákazníkům
+
+Co je to "Security through obscurity"?
+ * Víra, že pouze dobře utajený algoritmus je bezpečný
+ - Souhrnný název pro bezpečnostní mechanizmy vybudované na teorii složitosti
+
+Pro komunikaci mezi jednotlivými Onion Routery (OR) platí
+ - komunikace se šifruje pomocí asymetrické kryptografie.
+ - topologie uzlů připomíná hvězdici s pevně daným středem.
+ * seznam přeposlaných paketů se ukládá.
+ * komunikace se šifruje pomocí šifry se symetrickým klíčem.
+ * každý OR odstraní vrstvu paketu dešifrováním.
+
+Které dvě z těchto biometrických technik jsou nejpohodlnější pro uživatele?
+ - vzor oční sítnice
+ - EKG
+ * vzor oční duhovky
+ * srovnání tváře
+
+Protokoly SSL/TLS umožňují
+ - komunikovat anonymně
+ * kontrolu integrity přenášených dat
+ * autentizaci komunikujících stran (klient i server)
+ - autentizaci jen a pouze jedné strany
+ - zajistit nepopiratelnost
+
+Pro osobní údaje dle české legislativy platí:
+ - dozor nad osobními údaji provádí Policie ČR
+ * jedná se o jakýkoliv údaj týkající se určeného nebo určitelného subjektu údajů.
+ - zpracovávání osobních údajů je zakázáno, vyjma případů pro osobní potřebu
+ * o osobní údaj se nejedná, pokud je třeba ke zjištění identity subjektu údajů 
+   nepřiměřené množství času nebo materiálních prostředků
+ * jde-li na základě jednoho či více osobních údajů přímo či nepřímo zjistit 
+   identitu subjektu, považuje se subjekt údajů za určený nebo určitelný
+
+Podle čeho je určen počet kol/rund u algoritmu Rijndael.
+ - Délka zprávy
+ * Délka klíče
+ - Inicializační vektor
+ - Délka bloku
+ - Inicializační vektor a délka bloku
+ - Délka klíče a bloku
+
+Kdy je dosažen EER (Equal Error Rate) v biometrických systémech?
+ - Nastavení prahové hodnoty, pro kterou je FAR/FRR rovno 0.8.
+ - Nastavení prahové hodnoty, pro kterou je FRR roven 1.
+ * Nastavení prahové hodnoty, pro kterou FRR a FAR jsou stejné.
+ - Nastavení prahové hodnoty, pro kterou je FRR/FAR rovno 0.8.
+
+Co je to veřejný pseudonym?
+ * Např. telefonní číslo ve Zlatých stránkách 
+ - Pseudonym používaný uvnitř veřejně nedostupného systému
+ - Je znám veřejnosti za poplatek
+ - Pseudonym použitelný pouze na veřejnosti
+ * Je veřejně znám od počátku, např. v seznamu osob
+
+Místa setkání a skryté služby TORu je/jsou:
+ * služba, která umožňuje anonymní provoz např. webového serveru.
+ - místa, kde se setkávají pouze anonymní uživatelé.
+ * je služba umožňující serveru kontrolovat anonymní příchozí požadavky.
+ - místa, kde uživatelé získavají anonymitu tak, že to ostatní nevidí.
+
+Pokud existuje v systému zranitelnost a existuje útočník, který ji může využít, výsledný stav je nazýván:
+ - útok 
+ - zranitelnost 
+ * hrozba 
+ - riziko
+
+Poskytuje TOR testování integrity přenášených dat?
+ * Ano, je to obrana proti tagging útokům. 
+ * Ano, je to vylepšení oproti původnímu návrhu Onion Routing systémů. 
+ - Ne, proč bychom něco takového potřebovali, stačí zaručená anonymita. 
+ - Ano, je to obrana proti mig-in-the-middle útokům.
+
+V případě, že neoprávnění uživatelé jsou "menší zlo" než nespokojení uživatelé,
+nastavíme biometrický systém tak, že bude mít FAR (False Acceptance Rate) a FRR (False Rejection Rate):
+ - vysokou hodnotu FRR a vysokou hodnotu FAR. 
+ - nízkou hodnotu FRR a nízkou hodnotu FAR. 
+ * vysokou hodnotu FAR a nízkou hodnotu FRR. 
+ - vysokou hodnotu FRR a nízkou hodnotu FAR.
+
+Systém detekce průniku (IDS)
+ * je možné použít v síti i na počítači 
+ - poskytuje lepší ochranu než firewall 
+ - je možné použít buď v síti nebo na počítači 
+ - má smysl používat pouze jako síťový prvek, kdy detekuje a informuje o probíhajícím útoku
+
+Anonymita (podle Společných kritérií) zajišťuje možnost použití zdrojů nebo služeb systému tak, že:
+ - specifikované entity jsou schopny určit skutečné uživatelské jméno spojene se specifikovanými subjekty, operacemi, objekty 
+ * identita uživatele zůstane skryta specifickým uživatelům, pro specifické operace 
+ - identita uživatele zůstane skryta, ale v případě potřeby ji lze zpětně zjistit
+
+Pretty Good Privacy (PGP) umožňuje
+ - odeslat, přijmout a odpovědět na anonymní e-mail 
+ - anonymně přistupovat k webu 
+ * šifrovat a dešifrovat data 
+ - chránit počítač před zneužitím 
+ * digitálně podepsat data a ověřit podpis
+
+Firewall je
+ * umělá překážka před potenciálně nebezpečným okolím 
+ - software pro detekci a blokaci podezřelých aktivit v systému 
+ - spolehlivou ochranou před zneužitím počítačů ve vnitřní síti
+
+Systémy měnící tok a výskyt dat na komunikačním kanálu se nazývají
+ - mutexy 
+ - minmaxy 
+ * anonymitní 
+ * mixy 
+ - minixy
+
+Chybovost biometrických systémů vyjádřená pomocí FTE (Fail to Enroll) je:
+ - Podíl počtu uživatelů, které systém neverifikoval, ku počtu všech pokusů uživatelů o přihlášení do systému. 
+ * Žádná z těchto odpovědi není správná. 
+ - Podíl počtu uživatelů, které systém zaregistroval na více než jeden pokus, ku počtu všech uživatelů systému. 
+ - Podíl počtu uživatelů, které systém zaregistroval, ku počtu uživatelů systému, které systém nezaregistroval.
+
+Jaký je v dnešních platebních systémech pro zákazníka největší bezpečnostní problém?
+ - Banky už v 90. letech zavrhly používání bezpečného protokolu SET (Secure Electronic Transaction). 
+ * Současný systém funguje tak, že zákazníkovi nezaručuje vazbu mezi zobrazovanou a potvrzovanou transakcí. 
+ - Napěťové útoky jsou snadnou a efektivní cestou jak obejít bezpečnostní mechanizmy čipu na platební kartě. 
+ - Zákazníci sami se chovají nezodpovědně.
+
+Kerckhoffsův princip říká, že:
+ - Klíč není třeba utajovat, pokud použitý algoritmus je také tajný 
+ - Klíč není třeba utajovat, pokud je použitý algoritmus veřejně znám 
+ * Použitý algoritmus je veřejně znám, utajován je pouze klíč 
+ - Použitý algoritmus je přístupný pouze autorizovaným osobám, klíč je utajován
+
+Které z následujích bodů lze zařadit mezi obecné principy pro bezpečnost IT?
+ * Usilujte o jednoduchost. 
+ - Nepoužívejte klíče s délkou < 128 bitů. 
+ - Nikdy nezveřejňujte kritické bezpečnostní algoritmy. 
+ * Externí zdroje pokládejte za nebezpečné. 
+ * Fyzicky nebo logicky oddělte kritické zdroje.
+
+Co je to perturbační technika používaná ve statistických databázích?
+ * Technika stavějící např. na zaokrouhlování mezivýsledků dotazů. 
+ * Přidávání pseudonáhodného "šumu" k množině záznamů, na jejichž základě se vyhodnotí dotaz. 
+ - Žádná taková technika neexistuje. 
+ - Pro vyhodnocení dotazu nesmí být použito více záznamu než je stanovená maximální (perturbační) mez. 
+ * Technika umožňující zjistit konzistentní, ale ne spolehlivé odpovědi na sérii podobných dotazů. 
+ - Pro vyhodnocení dotazu může být použito pouze menší množství záznamů než je stanovená maximální (perturbační) mez.
+
+Které z následujících možností obsahují relevantní bezpečnostní funkce systémů pro ochranu inf. soukromí?
+ - neslučitelnost, nepozorovatelnost, anonymita, pseudonymita 
+ - nezjistitelnost, nespojitelnost, anonymita, identita 
+ - nespojitelnost, nepozorovatelnost, anonymita, pseudonymita, identita 
+ * nespojitelnost, nepozorovatelnost, anonymita, pseudonymita
+
+Klasické odemykání zámku na dveřích klíčem
+ - nespadá pod autentizaci (klíč není ani něco, co znám, vím, ani něco, co "jsem") 
+ - spadá pod autentizační procedury, ale jen když klíč do zámku pasuje 
+ * spadá pod autentizační procedury
+
+Nepozorovatelnost (podle Společných kritérií) zajišťuje možnost
+použití zdrojů nebo služeb systému tak, že:
+ - ostatní uživatelé systému nemohou pozorovat používání daného zdroje nebo
+   služeb, ale v případě potřeby lze toto chování zpětně spojit s konkrétním uživatelem
+ - uživatelé nejsou zodpovědní za své chování v systému
+ - ostatní uživatelé, s výjimkou administrátorů, nemohou pozorovat
+   používání daného zdroje nebo služeb
+ * specifikované entity nejsou schopny pozorovat specifikované operace
+   prováděné specifikovanými entitami na specifikovaných objektech
+ * ostatní uživatelé (ani administrátoři) systému nemohou pozorovat
+   používání daného zdroje nebo služeb
+ - specifikované entity jsou schopny pozorovat specifikované operace
+   prováděné specifikovanými entitami na nespecifikovaných objektech
+
+Ke zneužitím mobilního telefonu operátorem patří:
+ * poloha mobilního telefonu může být sledována
+ * SMS posílané z mobilu na mobil mohou být jednoduše ukládány
+ - žádná z těchto odpovědí není správná, protože celá komunikace je bezpečně šifrována
+
+Mezi bezpečnostní požadavky podle standardu pro hodnocení 
+kryptografických modulů FIPS 140-1/2 patří:
+ * Bezpečnost O/S
+ - Testování GUI modulu
+ * Rozhraní modulu
+ * Služby a autentizace
+ - Odolnost vůči lidskému faktoru
+ * Fyzická bezpečnost
+
+PIN je u kreditních karet vyžadován, aby
+ - zajistil absolutní ochranu peněz před jakýmkoli útokem na bezpečnost karty
+ * karta po okopírování šla obtížněji zneužít
+ * člověk, který kartu zcizí, ji nemohl snadno použít k platbám
+ - celý systém plateb kartami vypadal bezpečněji (ve skutečnosti však
+   bezpečnost vůbec nezvedá - je zde jen pro psychologický efekt)
+ - karta šla hůře okopírovat
+
+IEEE - principy SW inženýra stanoví např.
+ * vykonávat svou činnost v souladu s veřejným zájmem
+ - zastávat pouze takové pozice, na které má nárok a schopnosti
+ - povinnost žít čestně, zdravě a podle pravidel IEEE tak, aby na něj mohla
+   být společnost hrdá
+ * zajistit čestnost a nezávislost ve svých odborných odhadech
+ - povinnost používat pouze software, za který nebylo prokazatelným způsobem zaplaceno
+
+Digitální podpis zajišťuje
+ - Důvěrnost podepisovaných dat
+ * Integritu podepisovaných dat
+ - Obnovu privátního klíče při jeho ztrátě
+ - Autorizaci podepisovaných dat
+
+Pro zajištění prokazatelné zodpovědnosti (accountability)?
+ - Je prováděna archivace dat pro udržení schopnosti správy účtu.
+ * Je na začátku práce v systému obvykle prováděna autentizace nebo identifikace.
+ * Je prováděna archivace dat umožňujících propojení činnosti s
+   konkrétní osobou tak, že daná osoba se nemůže zříci zodpovědnosti za svoji činnost.
+ - Ja na začátku práce v systému obvykle prováděno dešifrování dat pro práci s účtem.
+
+Onion Routing systémem označujeme
+ * systém poskytující své služby pro různé protokoly
+ - systém fungující po vrstvách (např. TCP/IP)
+ - rezistentní systém pro anonymitní komunikační sítě
+ * systém pro anonymní komunikaci při použití veřejné sítě
+
+Mezi základní pravidla bezpečnostního modelu Bell-LaPadula patří:
+ - Procesy nesmějí číst/zapisovat data z/do nižsí úrovně.
+ * Procesy nesmějí zapisovat data do nížší úrovně.
+ - Procesy nesmějí číst data na nižší úrovni.
+ - Procesy nesmějí zapisovat data do vyšší úrovně.
+ * Procesy nesmějí číst data na vyšší úrovni.
+
+
+Citlivé osobní údaje dle české legislativy vypovídají mj. o:
+ - majetkových poměrech státních úředníků 
+ - postoji k trestné činnosti jiných 
+ * sexuální orientaci
+
+Bezpečnostní politika zahrnuje
+ * Požadavky, pravidla a postupy určující způsob ochrany a zacházení s hodnotami společnosti 
+ - Specifikaci technologických opatření kterými budou prosazovány bezpečnostní požadavky společnosti 
+ - Seznam konkrétních osob, které mají povoleno přistupovat k citlivým datům společnosti
+ 
+Obvykle nejméně bezpečným bodem během průběhu autentizace v internetovém bankovnictví je:
+ * autentizace banky 
+ - autentizace klienta 
+ - autentizace počítače klienta
+ 
+Pod pojmem asymetrická kryptografie rozumíme
+ - Kryptografie s využitím klíče, který je výstupem kvalitní hašovací funkce. 
+ - Kryptografie s algoritmem, který je opakem symetrické kryptografie a nepoužívá žádný klíč. 
+ * Kryptografie s využitím dvojice soukromého a veřejného klíče. 
+ - Nic z ostatních uvedených možností.
+ 
+Mezi bezpečnostní požadavky podle standardu pro hodnocení kryptografických modulů FIPS 140-1/2 patří:
+ * Metody pro zmírnění jiných útoků 
+ * Správa klíčů 
+ * Služby a autentizace 
+ * Rozhraní modulu 
+ - Flexibilita modulu 
+ - Elektromagnetická rezonance
+ 
+Poskytuje TOR testování integrity přenášených dat?
+ - Ne, proč bychom něco takového potřebovali, stačí zaručená anonymita. 
+ * Ano, je to obrana proti tagging útokům. 
+ * Ano, je to vylepšení oproti původnímu návrhu Onion Routing systémů. 
+ - Ano, je to obrana proti mig-in-the-middle útokům.
+
+Analýza a hodnocení hrozeb zahrnuje:
+ * Rozvahu, co všechno by mělo být chráněno. 
+ * Vyhodnocení, jaké hrozby hrozí ochraňovaným hodnotám. 
+ - Pravidla a postupy, určující způsob ochrany a zacházení s ochraňovanými hodnotami. 
+ - Techniky pro implementaci bezpečnostních funkcí chránících ochraňované hodnoty.
+ 
+Mezi bezp. funkce systémů pro ochranu inf. soukromí nepatří:
+ - pseudonymita 
+ - nepozorovatelnost 
+ * integrita 
+ - nespojitelnost 
+ * neslučitelnost 
+ * identita
+

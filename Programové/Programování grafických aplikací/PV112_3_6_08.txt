@@ -1,0 +1,13 @@
+Pisemka 3.6.2008 PV112-Programovani grafickych aplikaci
+
+cas 75min, za kazdou otazku 10b, na E myslim stacilo 30b
+
+1. modelovaci transformace
+
+2. blending
+
+3. sprava menu v GLUTu
+
+4. OpenGL related APIs
+
+5. Ze zdrojoveho kodu poznat co program vykresluje a urcit ktere radky jsou v programu zbytecne. Presnou strukturu si bohuzel nepamatuju, ale byly pouzity rotace, translace, osvetleni, materialy, display listy, stencil a depth buffer.

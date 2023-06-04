@@ -1,0 +1,10 @@
+1. Co je to mikrofon?
+2. Jaky je rozdil mezi zoomem a transfokatorem?
+3. Jak se prevadi audio signal na PCM?
+4. Co je to progresive download a kde se vyuziva? Vyhody, nevyhody.
+5. Je waveletova komprese vhodna pro live strem video? Proc?
+6. Jaka je analogie vzorkovani a kvantovani audia pouzivana pro videosignaly? Da se bez pouziti video-kompresi nejak usetrit misto n disku?
+7. Jake druhy snimku se pouzivaji u MPEG kompresnich formatu?
+8. Co to je chromaticka vada u objektivu?
+9. ni boha
+10. Popiste typickou komunikaci mezi stream-serverem a klientem. Co je to SETUP faze?

@@ -1,0 +1,30 @@
+pv176 jaro 2013, prvy termin 
+Zadani prakticke:
+
+Pøeètìte si nejprve peèlivì celé zadání a dobøe si rozvrhnìte práci na jednotlivıch èástech. Vzhledem k èasovému limitu *2 hodin* mùe bıt vhodné nìkteré kroky dìlat paralelnì na rùznıch serverech.
+
+1.èást 10 bodù
+
+a) Nakonfigujte DHCP server, tak aby pøidìloval IPv4 adresy na lokálním adaptéru (tj. ten, kterı není pøipojen do internetu). Naše interní sí, pro kterou konfigurujete DHCP server, bude mít maximálnì 511 klientù, zvolte minimální monou velikost masky podsítì a pouíjte IP vhodnou pro privátní adresu. Zajistìte, aby byl (pouze na této lokální síti) pomocí DHCP nastaven time server na time.fi.muni.cz 
+
+b) Zajistìte, aby prvních 20 IP adres z rozsahu nebylo pøidìlováno - budou slouit pro ruèní pøidìlení.
+
+c) Na druhı WS nainstalujte DHCP server, tak aby byl zálohou prvního DHCP serveru. Rozdìlte rozsah pøidìlovanıch adres v pomìru 70:30.
+
+d) Zajistìte aby W7 klient dostal z DHCP serveru pøidìlenou *vdy* stejnou IP adresu.
+
+e) Otestuje pøidìlování IP adres na klientském stroji, DHCP server musí pøidìlovat IP adresy pøi odevzdání! 
+
+2.èást 20 bodù
+
+a) Nainstalujte AD pomocí pøiloeného souboru v ISu, soubor je nutné pøedem upravit. Jako jméno domény zvolte tvar ZK01[fakultnilogin].local
+
+b) Vytvoøte 500 testovacích uivatelù, které umístìte do OU Test. Uivatelé musí mít definováno jméno, pøíjmení, adresu, mobilní telefonní èíslo, logon name a heslo. Kadá z uvedenıch hodnot musí bıt unikátní. Všechny úèty musí bıt aktivní (enabled).
+
+[nápovìda pro PS: Import-module ActiveDirectory , get-command *ad*, get-help <prikaz>]
+
+c) Zajistìte, aby se v pøípadì umístìní jakéhokoliv poèítaèe do OU "PC\Student" nainstalovala aplikace KeePass 2.19 pomocí GPO. MSI instalátor naleznete v ISu. Pøedpokládejte instalaci do vícejazyèného prostøedí (OS jsou CZ, EN, SK) aplikace se má nainstalovat i do jiné jazykové verze OS. Pokud je úèet poèítaèe pøemístìn jinam, je poadována odinstalace aplikace. Instalaèní sloka musí bıt umístìòa v rámci DFS, pøístupná i v pøípadì selhání jednoho serveru a automaticky replikovaná na druhı server.
+
+d) Dodrujte zásadu nejmenších nutnıch oprávnìní.
+
+e) Vytvoøte druhı DC ve stejné doménì a pøeveïte na nìj roli RID master.

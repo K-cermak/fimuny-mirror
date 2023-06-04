@@ -1,0 +1,131 @@
+Ak najdete chybu (a ste si na 100% isti), tak ju prosim upravte, nahrajte novu verziu a povedzte adminovi, aby staru zmazal.
+
+Na vypis smerovacej tabulky jadra sluzi prikaz:
+arp
+bgb
+*netstat
+ifconfig
+
+Ktory nasledujuci RAID ulozi najviac dat na disky s rovnakou velkostou:
+RAID1
+*RAID0
+RAID5
+RAID10
+RAID6
+
+Ktora technika sluzi proti vypadku dvoch diskov naraz?
+RAID1
+RAID0
+RAID5
+RAID10
+*RAID6
+
+Kde su ulozene data nezavisle na architekture, t.j. informace o casovych zonach a pod.?
+/var/run
+/usr/lib
+/var/opt
+*/usr/share
+
+Co nedokaze System V init:
+spustenie sluzby viacnasobne
+spustanie sluzieb podla urovne behu systemu
+*restart sluzby sposobi restart inej sluzby
+
+Kde je ulozeny riadiaci subor initu v System V:
+*/etc/inittab
+/etc/initdefault
+/etc/init.d
+/etc/init
+
+Funkcia, ktora sa da pouzit na zasifrovanie hesla:
+encode
+*crypt
+crack
+SHM-512
+
+Co sa pridava k heslu pri sifrovani na stazenie slovnikoveho utoku:
+*sol
+pernik
+medovnik
+hash
+
+Do soketu /dev/log zalogujeme pomocou kniznicnej funkcie:
+log
+putLog
+*syslog
+open
+
+V protokole TCP su data organizovane:
+ako jeden prud v kazdom smere
+*ako dva prudy v kazdom smere
+(jeden prud data, druhy prud out-of-band data)
+
+Kde sa nachadzaju subory jadra a zavadaca systemu?
+/kernel
+*/boot
+/sbin
+/lib
+
+Ktorym prikazom vypiseme vsetky prekrocene kvoty?
+quotacheck
+quotaon
+edquota
+*repquota
+
+Aky prikaz pouzijeme ak mame nekonzistentne informacie o kvotach a chceme ich dostat do konzistentneho stavu?
+*quotacheck
+quotaon
+edquota
+repquota
+
+Co vsetko sa da pouzit pri zisteni L3 adresy ak pozname adresu L2?
+ARP
+RARP
+*RARP,BootP,DHCP
+ARP,BootP,DHCP
+
+Aky sa vola prikaz opacny k dump?
+core
+*restore
+crash
+neexistuje
+
+Na multihoming sa pouziva protokol:
+*SCTP
+DCCP
+CSLIP
+SMTP
+
+Na zistenie mena uzivatela k existujucemu tcp spojeniu sa pouzije:
+TCP wrapper
+*protokol ident
+
+Pri autentizacii snimkom odtlacku prsta pouzivame:
+kerberos
+*modul PAM
+
+Ako nastavime prava dynamicky vznikajucemu zariadeniu?
+prihlasime sa na terminal
+*nastavenim v udev
+
+Co je to drawable?
+*bitmapa, alebo okno
+cast grafickeho rozhrania
+
+Syslog demon pouziva /dev/log ktory je:
+soket prudovy
+*soket datagramovy
+
+Co je to display v terminologii X window systemu:
+*Xserver
+Xklient
+
+Kedy dostaneme chybovu spravu "time limit exceeded"?
+*TTL sa dostane na nulu
+router drzi paket prilis dlho
+
+Vyhodou IPv6 oproti IPV4 pri zistovani L2 adresy pri znamej L3  je:
+*netreba pouzit "vsesmerove" vysielanie
+
+Ako sa nazyva smerovanie podla ineho kluca nez je adresny prefix?
+*policy routing

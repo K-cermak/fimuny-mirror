@@ -1,0 +1,7 @@
+1. Vysvetlite, preèo Stop - and - wait potrebuje dva acknoledgmenty.
+odpoveï: neprijaty acknoledgment znamená resending rámcu po time-oute. Prijímaè nemá ako zisti, e rámec, ktorı príde je opakovanı u prijatı a prijíme ho ako novı. 
+2. nakreslite schému èasovo multiplexovaného spojenia pomocou riadiacej jednotky. Vysvetlite fungovanie. Odpoveï je na slajdoch. Je to ten rebríèek s preklápacou páèkou a RAM jednotkou. Fungovanie nei je popísané v slajdoch, ale dá sa intuitívne popísa.
+3. Ak je bitová rıchlos štvornásobná od Baudovej, navrhnite vhodné QAM a zakreslite. Ja som dal 4-QAM so štyroma bodkami, jedna amplitúda a štyri fázy. Ale malo by myslím 16 - QAM
+4. ak je signál matematicky zapísanı ako sin(t) = 400*sin(Pí*5000*t + pí/4), aká je frekvencia, amplitúda, fázovı posun. Vzorce sú opä v slajdoch. amplitúda je 400 Voltov, frekvencia 5000/2 = 2500 Hz, fázovı posun 45 stupòov.
+5. Vysvetlite, preèo ASCII samoopravnı kód potrebuje 11 bitov. 7 + 4 redundantné bity. Chekc slajdy - Hammingov kód
+6. Diff manchester - zakreslite, ako sa zakóduje daná bitová frekvencia. povedzme 110101001001. Slajdy majú jasne zakreslené. 0 znamená inverziu, 1 znamená pokraèovanie bez inverzie. 

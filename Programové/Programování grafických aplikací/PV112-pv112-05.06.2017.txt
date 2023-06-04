@@ -1,0 +1,8 @@
+1. Popište druhy grafických primitiv. 
+2. Jak se vytváøí shader programy? Není tøeba vìdìt pøíkazy, ale popsat co se dìje v každém kroku.
+3. Co je to Vertex Buffer Object? Popsat a jak se vytvoøí? 
+4. Blending. Rovnice míchání barev.
+5. Napištì homogenní transformaèní matice které:
+   a) posunou (translace) objekt o vektor (1, -8, 10)
+   b) zvìtší objekt 11krát na ose y
+   c) orotují objekt okolo osy z o 135 stupòù

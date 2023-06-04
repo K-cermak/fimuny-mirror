@@ -1,0 +1,14 @@
+Skuska 11.1.2019
+otazky, co si pamatam, nepresne znenie (a poradie):
+
+1. Vypocitat max ryhlost prenosu pri pasme sirky 4kb/s a S/R 31
+
+2. Nakreslit kodovanie dat 100000000 v HDB3
+
+3. Vypocitat dlzku kodoveho slova, ak datove ma 11b a chceme opravovat 1 chybu
+
+4. Zistit FRC - zadanz polynom a postupnost bitov
+
+5. Popisat riadeny pristup k mediu poll/select
+
+6. Vyznam a popisat bit stuffing pri bitovo orientovanych protkolov

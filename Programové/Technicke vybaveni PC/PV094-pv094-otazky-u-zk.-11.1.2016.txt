@@ -1,0 +1,9 @@
+1. Nakreslete a popište zpùsob fungování invertoru technologie TTL
+2. Nakreslete blokové schéma procesoru Intel Core i7 pouužívající technologii QPI
+3. Nakreslete a popište pøenos dat (komunikaci) sériového portu
+4. Nakreslete a popištì prùøez kabelem IEEE1394
+5. Vysvìtlete pojmy: a) tRAS
+		     b) Socket services
+6. Vysvìtlete rozdíl mezi technologiemi PMR a AMR u pevných diskù. 
+7. Jaký bude datový tok za 4 sekundy na jedné cestì v PCIe 2.0, pokud datový tok je 5.0GT/s?
+8. Nakreslete a popište princip sublimaèní tiskárny. Vysvìtlete.

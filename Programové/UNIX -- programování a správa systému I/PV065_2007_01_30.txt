@@ -1,0 +1,18 @@
+1) Fce alloca vraci ukazatel na?
+2) Funkce longjump vraci jaky ukazatel?
+3) Prikaz ld zpracovava jake soubory?
+4) Kdyz mam 8KB blok a hierarchie i-uzlu jako na prednasce , jaka je max. velikost filesystemu?
+5) Jakou funkci si nadefunuji co se zavola za funkce pri prikazu exit?
+6) Ktera fce cte data z nesouvisleho datoveho prostoru?
+7) Jaka funkce odstrani tabulku symbolu?
+8) Demand paging?
+9) Na ktere adrese zacina vykonavani threadu po zavolani pthread_create?
+10) Jak se zamkne zapis do pameti?
+11) Otazka na ACL
+12) Realne a efektivni je 1 a 1, ulozene je 2. Spousti se  execem soubor, ktery nema nastaven set-UID bit. A vlastni ho uzivatel 3.
+13) Co se neda pomoci fcntl? (pohybovat se po souboru)
+14) Jak se meni skupina u souboru?
+15) Co udela rename kdyz prenasi soubory mezi svazky?
+16) Funkce fsync provede co?
+17) Otazka na sigaction a jeho flag.
+

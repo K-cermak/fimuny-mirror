@@ -1,0 +1,5 @@
+1. Entropia zdroja pre písmená V,U,X,Y,Z s pravdep. 1/16, 1/8, 1/2, 1/4, 1/16
+2. LZ77 - "hopsa hejsa hopsa hejsa"
+3. Ako vyzerá hašovanie ak sa kapsa B zlúèi s kapsou E
+4  Výpoèet arity stromu pre 10 000 k¾úèov a håbku 2
+5. Mapa suboru

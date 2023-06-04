@@ -1,0 +1,16 @@
+1. Popiste zakladne ciele zefektivnenia prenosovej kapacity
+   a) riadenim datoveho spoja
+   b) multiplexingom
+2. Opisat funkcnost jednotlivych vrstiev ISO RM OSI modelu (aplikacna,
+   prezenacna, relacna, transportna, spojov, sietova, fyzicka)
+3. a) Kolko signalovych prvkov musi byt pre rychlost dat 10 mb/s a sirku
+      pasma 1 MHz?
+   b) Aka sirka pasma je potrebna pri tej istej prenosovej rychlosti
+      binarneho signalu?
+4. Nakreslite signalovy priebeh pre danu postupnost binarneho kodu
+   NRZ-L, NRZ-I, Bipolar AMI, Pseudoternary, Manchester, Dif. Manchester
+5. Prijmac prijal nejaky signal, traja ucastnici (kazdy ma vlastny kod),
+   Vypocitat kto posielal data a co posielal (Priklad na CDMA DSSS)
+6. a) A vyslal ramce 0, 1, 2; B prijal 0, 2. Nakreslite schema prenosu,
+      predpokladany ramec HDLC
+   b) A vyslal ramce 4, 5; 5 ramec sa stratil, tiez nakreslit, tiez HDLC

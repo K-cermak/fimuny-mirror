@@ -1,0 +1,29 @@
+PV169 - Zaklady prenosu dat 
+ 
+11.01.2019 11:00 D1 
+4. termin 
+
+Popis skusky: "ISIC, tuzka/pero, 90 minut, pisemna zkouska." 
+Bodovanie: A 12-10, B 9, C 8, D 7, E 6, F 5-0 
+ 
+1) V pevne telefonnej linke so sirkou pasma 4kHz je 
+pomer signalu a sumu SNR = 31. Aku najvyssiu rychlost 
+mozno touto linkou prenasat data? Ktoru digitalnu 
+modulaciu mozno pouzit? 
+ 
+2) Vyjadrite tvar signalu generovanzy datovim prudom 
+100000000 pre kod HDB3. 
+ 
+3) Odvodte FCS zabepecujuce data 10011 ak CRC kod 
+definuje polynom ( x^2 + x + 1 ). 
+ 
+4) Datove slovo musi mat 11 bitov. Ukazte aku dlzku 
+musi mat prenasane kodove slovo Hammingeovho kodu ak 
+sa pozaduje oprava 1-bit chyb. 
+ 
+5) Zdovodnite pouzivanie techniky bit stuffing pri 
+vytvarani ramcov bitovo orientovanych protokolov 
+a vysvetlite ich princip. 
+ 
+6) Vysvetlite princip riadenia pristupu k mediu 
+vyberom a vyzvou, Poll/Select. 

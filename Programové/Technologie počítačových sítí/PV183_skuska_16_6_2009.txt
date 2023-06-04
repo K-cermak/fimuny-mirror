@@ -1,0 +1,11 @@
+- zpocitat vystupni vykon, zadane vstupne napatie, impedancia siete, utlm
+- Zakódovat 11001001 v PSK, kde se používá
+- Prvky ISDN sítì, charakteristika, zakreslit
+- Rozdíl mezi asynchroním a synchroním xDSL
+- Rozdíl mezi S/UTP a S/STP
+- Rozdiel Hub a Switch
+- Rozdíl mezi 100BaseT a 100BaseVG
+- K èemu je RARP
+- technika FHSS, nakreslit
+- TCP segment, ako su identifikovane koncove aplikacie
+- Adresa 138.120.65.148/21 (asi) a napsat adresu sítì, broadcast, první a poslední uzel

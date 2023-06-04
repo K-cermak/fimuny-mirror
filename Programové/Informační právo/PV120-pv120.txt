@@ -1,0 +1,239 @@
+      Listina základních práv a svobod zaručuje
+
+ANO   listovní tajemství písemností uchovávaných v soukromí
+ANO   listovní tajemství písemností zasílaných poštou
+ANO   tajemství zpráv podávaných telefonem
+ANO   tajemství zpráv podávaných elektronickou poštou
+ANO   právo na zachování dobré pověsti
+NE    právo na ochranu obchodního tajemství
+ANO   právo na ochranu jména
+ANO   právo na ochranu před neoprávněným shromaždováním osobních údajů
+
+
+      Obrazové a zvukové záznamy týkající se fyzické osoby mohou být pořízeny
+
+ANO   s jejím souhlasem
+NE    bez jejího souhlasu
+ANO   k účelům úředním na základě zákona
+ANO   na základě "zpravodajské licence"
+
+
+      Po smrti fyzické osoby přísluší uplatňovat právo na
+
+ANO   ochranu její osobnosti jejím dětem
+NE    ochranu její osobnosti jejím dědicům
+NE    náhradu škody způsobené neoprávněným zásahem do práva na ochranu osobnosti dětem
+ANO   náhradu škody způsobené neoprávněným zásahem do práva na ochranu osobnosti dědicům
+
+
+      Písemnosti osobní povahy mohou být použity
+
+ANO   se souhlasem osoby, která je vytvořila
+NE    bez souhlasu osoby, která je vytvořila
+ANO   k účelům úředním na základě zákona
+NE    na základě "zpravodajské licence"
+
+
+      Obchodní tajemství
+
+ANO   je vždy předmětem práv náležejících k podniku
+NE    patří vždy do majetku obchodní společnosti
+ANO   jedná se o autorská práva a technické vynálezy
+NE    je zaznamenáno u Úřadu průmyslového vlastnictví
+ANO   zahrnuje tehcnické licence a autorská práva naležející k podniku
+NE    registruje se u Úřadu průmyslového vlastnictví
+
+
+      Při porušení nebo ohrožení práva na obchodní tajemství má dotknutý právo na
+
+ANO   odstranění závadného stavu
+NE    zaplacení pokuty
+ANO   zadostiučinění
+ANO   vydáni bezdůvodného obohacení
+
+
+      Majetková autorská práva
+
+ANO   jejich držitelem může být pouze fyzická osoba způsobilá k právním úkonům, která dílo vytvořila
+NE    obecně trvají 50 let po smrti autora
+ANO   nelze se jich vzdát a jsou nepřevoditelná
+ANO   po smrti autora přecházeji jeho dědice
+
+
+      Osobnostní autorská práva
+
+ANO   autorem může být pouze fyzická osoba způsobilá k právním úkonům
+ANO   o zveřejnění díla rozhoduje autor
+ANO   autorství je nepřevoditelné a autor se jej nemůže vzdát
+NE    smrtí autora přechází autorská práva na dědice
+
+
+      Omezení autorského práva
+
+ANO   pro osobní potřebu může být vždy dílo užito bez svolení autora
+ANO   citace cizího díla nejsou zásahem do autorských práv
+ANO   nevýdělečné užití díla při školních představních není zásahem do autorských práv
+NE    majetková práva ke školnímu dílu vykonáva škola
+
+
+      Počítačový program
+
+ANO   je chráněn stejně jako literární dílo
+NE    myšlenky, princípy a přípravné koncepční materiály jsou chráněny jako součást počítačového programu
+ANO   oprávněný uživatel počítačového programu v něm smí opravovat chyby
+NE    uživatel počítačového programu nesmí zhotovovat jeho záložní kopie
+
+
+      Zaměstnanecký vztah
+
+ANO   veškerá práva k dílům vykonává zaměstnanec
+ANO   po zániku právnické osoby bez právního nástupce přecházejí práva na autora
+NE    při zhotovení počítačového programu na objednávku má autor právo na přiměřenou dodatečnou odměnu
+ANO   počítačové programy se považují za zaměstnanecká díla i tehdy, byla-li autorem vytvořena na objednávku
+
+
+      Při porušení autorského práva má autor právo se domáhat
+
+ANO   odstranění následků neoprávněných zásahů do autorského práva
+NE    zaplacení pokuty
+ANO   zadostiučinění
+ANO   vydání neoprávněného obohacení
+
+
+      Právo průmyslového vlastnictví chráni
+
+NE    autorská díla
+ANO   biotechnologické vynálezy
+NE    obchodní tajemství
+ANO   zlepšovací návrhy
+
+
+      Vynálezy
+
+ANO   patentovatelné jsou jen nové vynálezy
+ANO   patentovatelné jsou jen průmyslově využitelné vynálezy
+ANO   patent nemůže být nikdy udělen na počítačový program
+ANO   právo k patentu má jeho autor
+
+
+      Zánik patentu
+
+NE    majitel patentu je povinnen vynález prakticky využívat
+NE    patent může být zrušen, pokud jej majitel nevyužívá
+ANO   patent zaniká, uplyne-li doba jeho platnosti
+ANO   patent zaniká, nezaplatí-li majitel poplatky za udržování platnosti patentu
+
+
+      Databáze
+
+NE    se považuje za souborné autorské dílo
+NE    majetkové autorské právo k databázi trvá 15 let od jejího pořizení
+NE    může být neomezeně vytěžována jen, je-li veřejně přístupná
+NE    může být neomezeně vytěžována pro osobní potřebu uživatele
+
+
+      Správce je povinnen
+
+ANO   prokázat souhlas subjektu údajů po celou dobu zpracovávání
+ANO   informovat subjekt údajů, kdo a jakým způsobem bude údaje zpracovávat
+ANO   informovat subjekt údajů, komu mohou být jeho údaje zpřístupněny
+NE    pravidelně jednou ročně zaslat subjektu údajů ... zpracovávaných
+
+
+      Bez souhlasu subjektu údajů může správce zpracovávat osobní údaje
+
+ANO   jestliže provádí zpracování upravené zvlášním zákonem
+ANO   jestliže provádí zpracování nezbytné pro dodržení právní povinnosti správce
+ANO   je-li to nezbytné k ochraně životně důležitých zájmu subjektu údajů
+ANO   pokládá-li to za nezbytné k ochrane svých zájmu
+ANO   na základě písemné smlouvy se subjektem údajů
+
+
+      Citlivé údaje může správce zpracovat
+
+ANO   jestliže je zpracování nezbytné pro zajištení a uplatnění právnich nároků
+ANO   pokládá-li to za nezbytné k ochraně životně důležitých zájmu subjektu údajů
+NE    pokládá-li to za nezbytné k ochrane svých zájmu
+ANO   na základě písemné smlouvy se subjektem údajů
+
+
+      Při porušení povinností při zpracování osobních údajů má subjekt údajů právo domáhat se
+
+ANO   odstranění následků takového jednání
+ANO   zaplacení pokuty
+ANO   zadostučinění
+ANO   vydání bezdůvodného obohacení
+
+
+      Zaměstnanci správce
+
+NE    musí uzavřít dohodu o ochraně zpracovávaných dat
+ANO   mohou zpracovávat osobní údaje pouze v rozsahu stanoveným  správcem
+ANO   mají doživotní povinnost mlčenlivosti o zpracovávných informacích
+ANO   mají doživotní povinnost mlčenlivosti o bezpečnostních opatřeních, jejichž zveřejnění by ohrozilo zabezpečení osobních údajů
+
+
+      Podle zákona o svobodném přístupu k informacím jsou
+
+ANO   povinnými subjekty státní orgány
+ANO   povinnými subjekty všichni, kdo hospodaří s veřejnými prostředky
+ANO   žadateli fyzické osoby způsobilé k právním úkonům
+ANO   žadateli veškeré právnické osoby
+
+
+      Podle zákona o svobodném přístupu k informacím nesmí být poskytnuty informace, které jsou
+
+ANO   utajovanými informacemi
+ANO   obchodním tajemstvím
+NE    osobními údaji
+NE    informacemi o rozhodnutíc orgánů státní správy
+
+
+      Informace vyžádaná podle zákona o svobodném přístupu k informacím se předá
+
+ANO   zveřejněním na úřední desce
+ANO   zveřejněním dálkovým přístupem (Internet)
+ANO   odkazem na zveřejněnou informaci
+ANO   písemně
+
+
+      Osobní údaje
+
+ANO   určitelnou osobou je osoba, o níž je známo jméno, příjmení, bydliště a datum narození
+ANO   citlivým údajem je příslušnost k politické straně nebo hnutí
+ANO   osobní údaj může být anonymizován
+NE    údaje o osobě se dělí na osobní a neosobní
+
+
+      Při neoprávněném zveřejnění osobních údajů má subjekt údajů právo žádat
+
+ANO   odstranění způsobených škod
+ANO   zaplacení pokuty
+ANO   zadostiučinění
+ANO   vydání bezdůvodného obohacení
+
+
+      Utajované informace mohou být poskytovány organizaci, která
+
+ANO   je administrativně bezpečná
+ANO   není v likvidaci či v konkursu
+ANO   má certifikovaný vnitřní informační systém
+ANO   vypracovala bezpečnostní projekt
+
+
+      Trestné činy v souvislosti s utajovanými informacemi
+
+NE    projednávají vojenské soudy
+ANO   vyzvedačství může být trestáno vyjimečným trestem
+ANO   ohrožení utajované informace je trestné, i když je spácháno z nedbalosti
+NE    vyzvedačství utajované informace v kategorií "Vyhrazené" je přestupkem
+
+
+      V souvislosti s ochranou utajovaných informací...
+
+ANO   dodržovat nutná omezení stanovená vládou
+ANO   podrobit se bezpečnostní prověrce
+ANO   odevzdat nalezenou utajovanou informaci
+ANO   zachovávat mlčenlivost o utajovaných informacích
+
+

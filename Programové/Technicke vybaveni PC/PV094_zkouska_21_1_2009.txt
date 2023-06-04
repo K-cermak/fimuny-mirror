@@ -1,0 +1,9 @@
+PV094 - 21.1.09
+1. 4x4 EEPROM
+2. vysvetlete: Intel virtualization technology, Enhanced Intel SpeedStep Technology, rapid execution engine, Exucution trace cache
+3. režimy EEEI 1394 
+4. SATA 4 kanaly; velikost nahravky steroefoni, hloubka 16b, frekvence 20kHZ, delka 3min. 
+5. masky CRT
+6. opticka myš
+7. sublimacni tiskarna
+8. 5mT, 0,1um2

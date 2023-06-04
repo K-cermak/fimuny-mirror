@@ -1,0 +1,27 @@
+Skuska z pv169 3. termin 18.1.2017.
+Bolo 6 otazok, kazda za max 2 body, 6 bodov na Ecko.
+Cas ucenia: ~8 hodin.
+
+V tento semester boli otazky viac prakticke a menej teoreticke, oproti poslednym rokom.
+Odporucam prejst vypracovane otazky na fi muny a slajdy prejst s porozumenim. Na prednasky som nechodil ani nepozeral.
+
+1. ak sa zvysi 2 krat sirka pasma, ako sa zmeni teoreticka prenosova rychlost
+-- to je ten vzorec C = 2 * B * log2(M)
+
+2. kodovanie 1000110 (myslim) v NRZ, NRZ-I, AMI, Differential Manchester
+-- v slajdoch
+
+3. popiste vlastnostni hammingovych kodov (n, k)
+-- v slajdoch, bolo to taketo otvorene, bolo treba spomenut typy detekcie chyb
+   a kolko chyb sa da kedy opravit, dmin >= 3 a tak
+
+4. protokol ARQ Go-Back-N (Sliding Window) s velkostou okna 7 a rychlostou prenosu 1 Mbit/s
+   posielate 1 Mbit na vzdialenost 5000km s tym ze signal sa siri 2*10^8 m/s
+   mali ste vypocitat cas prenosu dat ak sa pakety nestratia ani neni ziadny time overhead na vysielaci/prijmaci
+-- no uprimne, takyto priklad myslim nie je v slajdoch, treba selsky rozum a znalost protokolu
+
+5. sirka pasma je 25 kHz, pouzivame qam-16, aka bude rychlost prenosu ak zdvojnasobime sirku pasma
+-- rovnaky vzorec ako v otazke 1., C = 2 * (25 000 * 2) * log2(16)
+
+6. popiste CSMA-non persistent variantu
+-- v slajdoch

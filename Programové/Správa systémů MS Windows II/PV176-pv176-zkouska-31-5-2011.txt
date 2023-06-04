@@ -1,0 +1,62 @@
+Látka se vztahuje na Windows Server 2008 R2 a Windows 7
+
+prvních 10 tipovacích (bez postihu) / dalších 10 s postihem -1 bod
+
+1) k èemu slouží pøíkaz SIEZE v NTDSUTIL konzoli
+ - 1 správná - násilné pøevzetí nìjaké FSMO role v pøípadì výpadku pvùdoního serveru
+2) Vyberte !nesprávné! tvrzení o KCC
+ - 1 správná - nic takového v AD neexistuje
+3) Jak funguje loopback processing v módu Merge
+ - 1 správná - nejdøíve se udìlá seznam pravidel pro uživatele, pak pro poèítaè a ty se dají na konec seznamu pro uživatele
+4) Pravdivé tvrzení / co poskytuje DHCP integrovaný do AD
+ - 2 správné - možnost nastavit autoritativní DHCP
+             - vyšší bezpeènost (právì díky autoritativním DHCP)
+5) Jaké výhody má multi-master mód v AD
+ - 2 správné - snadná administrace (na libovolném DC)
+             - rozložení zátìže mezi všechny DC
+6) vyberte !neplatné! tvrzení o Hyper-V technologii
+ - 2 správné - nìco o správì rychlosti procesorù a teooretickému zdvojnásobení výkonu
+             - každý virtuální poèítaè potøebuje svùj fyzický disk
+7) jaké existují partitiony nebo tak nìco
+ - 1 správná - Schema, Domain, Configuration, Aplication (šlo vyluèovací metodou - neexistuje Replication)
+8) jak fungují SRV (service) záznamy v DNS
+ - 1 správná - mapují služby na konkrétní poèítaèe
+9) Pravdivá tvrzení o WSUS (windows server update service)
+ - 3 správné - stahuje updaty z webu microsoftu
+             - zkratka znamená windows server update service
+             - funguje jako upstream / downstream server
+10) Které možnosti instalace softwaru nelze použít
+ - 1 správná - varianta Publish (publikované) pøi konfiguraci poèítaèe
+11) Jak vypadá správné FDN pro uživatel "jméno pøíjmení"
+ - 1 správná - "jméno pøíjmení" bylo v jednom kontejneru a bad.example.com bylo rozdìleno do 3 kontejnerù
+12) co lze nastavit ve snap-in konzoli pro GPO
+ - 2 správné - Block Inheritance
+             - Enforce
+13) Kolik FSMO rolí bude ve 3 forestech, každý se 3 doménami
+ - 1 správná - 33 (3x2 forestové + 3x3x3 doménové)
+14) Který typ skupin neexistuje
+ - 1 správná - doménová globální skupina
+15) Co udìlá, když dáme èást GPO jako disabled (computer/user configuration)
+ - 1 správná - rychlejší start poèítaèe (nestahují se disabled politiky)
+16) Jakým pøíkazem vynutíme okamžité stažení a aplikování politik na poèítaèi
+ - 1 správná - GPUPDATE /FORCE
+17) !Neplatné! tvrzení o AD
+ - 1 správná - položky AD se ukládají do složky SYSVOL
+18) Na které úrovni nejde aplikovat GPO
+ - 1 správná - nejde aplikovat na Forest
+19) Kam mohou patøit úèty poèítaèù v AD
+ - 1 správná - úèet poèítaèe mùže být v libovolné OU (ale jen 1), mùže být v neomezeném poètu skupin
+20) Jaký je MINIMÁLNÍ poèet DC a Global catalogù v AD Forestu se 3 stromy a v nich postupnì 1,2,5 doménami
+ - 1 správná - 8 doménových øadièù a 1 global catalog
+ 
+ 
+PRAKTICKÁ ÈÁST ( 0-40 bodù )
+ - losovaná otázka - vìtšinou vìci ze cvièení a domácích úkolù, ale pøišlo mi, že ne všechny vìci se dìlaly na každém cvièení :-(
+ 
+ - pøidat DNS záznam pro nìjakou službu / poèítaè
+ - instalace child domény
+ - kompletní zprovoznìní DFS za úèelem instalace programù pomocí MSI balíkù a instalace jednoho
+ - správa Sites (nastavení replikace)
+ - nastavení pravidel updatù pro WSUS (šlo pøes GPO)
+ 
+ atd. prostì všechno co se dìlalo

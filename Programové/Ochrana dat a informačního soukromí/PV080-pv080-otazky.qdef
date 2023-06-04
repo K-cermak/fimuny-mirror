@@ -1,0 +1,1108 @@
+<p>&#160;Co je to "původně neveřejný" pseudonym?</p>
+ :c1 Pseudonym, který původně nebyl veřejný, ale v některých případech může být zveřejněn.
+ :c2 Pseudonym, který musí být po druhém použití zveřejněn.
+ :c3 Pseudonym původně neurčený pro veřejnost, který ale neschválil Úřad pro ochranu osobních údajů.
+ :c4 Pseudonym, který musí být při druhém použití zveřejněn.
+:c1 ok ex
+--
+<p>&#160;K bezpečným metodám autentizace klienta bance v systému internetového bankovnictví</p>
+<div>patří prokázání se</div>
+ :c1 osobním klíčem uloženým bezpečně na čipové kartě, USB flashdisku či SD kartě.
+ :c2 kódem získaným vložením rodného čísla či uživatelského hesla do autentizační "kalkulačky".
+ :c3 rodným číslem.
+ :c4 heslem, které si klient zvolil při zakládání účtu.
+ :c5 kódem získaným vložením výzvy (challenge) bankovního systému do autentizační
+"kalkulačky".
+:c1:c5 ok ex
+--
+<p>&#160;Digitální podpis v PGP probíhá tak, že se</p>
+ :c1 vytvoří haš zprávy, který se podepíše veřejným klíčem příjemce
+ :c2 zpráva se podepisuje přímo klíčem dle volby uživatele
+ :c3 vytvoří haš zprávy, který se podepíše veřejným klíčem odesílatele
+ :c4 vytvoří haš zprávy, který se podepíše soukromým klíčem odesílatele
+ :c5 vytvoří haš zprávy, který se podepíše soukromým klíčem příjemce
+:c4 ok ex
+--
+<p>&#160;Autentizaci obecně</p>
+ :c1 může někdy provádět člověk samostatně (bez pomoci počítače nebo čipové karty)
+ :c2 může někdy provádět počítač nebo čipová karta samočinně (bez pomoci člověka)
+ :c3 musí pokaždé provádět počítač nebo čipová karta ve spolupráci s člověkem (počítač nebo karta sama nestačí)
+ :c4 musí pokaždé provádět člověk ve spolupráci s počítačem nebo čipovou kartou (člověk sám nestačí)
+:c1:c2 ok ex
+--
+<p>&#160;Jaká rizika s sebou nese zasílání platebních karet a PINů poštou?</p>
+ :c1 Libovolná platební karta může být skrze neporušenou obálku snadno zkopírována.
+ :c2 Poštovní obálku lze během doručování ztratit.
+ :c3 PIN může být skrze neporušenou obálku nepozorovaně přečten.
+ :c4 Platební karta je skrze obálku vystavena tzv. napěťovým a teplotním útokům.
+:c2:c3 ok ex
+--
+<p>&#160;Odmítnutí služby (Denial of Service) je</p>
+ :c1 útok, kdy zpracování požadavku na webovém serveru nevyhnutelně skončí s HTTP chybou 500.
+ :c2 útok, který uvede server do stavu, kdy není schopen reagovat na požadavky.
+ :c3 stav, kdy server včas zjistí útok a zamítne další komunikaci s útočníkem.
+ :c4 stav, kdy server zjistí nedostatečnou autorizaci uživatele k operaci.
+:c2 ok ex
+--
+<p>&#160;Proxy servery jsou na Internetu</p>
+ :c1 zbytečné, pouze zpomalují rychlost dat a jsou snadno zneužitelné.
+ :c2 často způsobem jak obejít lokální bezpečnostní politiku.
+ :c3 zdrojem všeho zla, patřily by zakázat.
+ :c4 zaručeným prostředkem anonymního využívání Internetových zdrojů.
+ :c5 důležité, rozumí aplikačním protokolům, umožňují anonymizaci.
+:c2:c5 ok ex
+--
+<p>&#160;Které z následujících možností obsahují jen relevantní bezpečnostní funkce systémů pro</p>
+<div>ochranu inf. soukromí?</div>
+ :c1 nespojitelnost, nepozorovatelnost, anonymita, pseudonymita, identita.
+ :c2 identita, nepozorovatelnost, anonymita, pseudonymita.
+ :c3 nezjistitelnost, nespojitelnost, anonymita, pseudonymita.
+ :c4 nespojitelnost, nepozorovatelnost, anonymita, pseudonymita.
+:c4 ok ex
+--
+<p>&#160;Jaké jsou základní vlastnosti kvantitativní analýzy rizik?</p>
+ :c1 Výstup je nesrozumitelný.
+ :c2 Výstup je v nějaké konkrétní hodnotě, např. v určité částce.
+ :c3 Výstup je lehce srozumitelný.
+ :c4 Postup je plně automatizovatelný.
+ :c5 Výstup není v nějaké konkrétní hodnotě, např. v určité částce.
+ :c6 Postup není automatizovatelný.
+:c2:c3:c6 ok ex
+--
+<p>&#160;Jaké jsou základní vlastnosti kvalitativní analýzy rizik?</p>
+ :c1 Výstup je nesrozumitelný
+ :c2 Výstup je v nějaké konkrétní hodnotě, např. v určité částce
+ :c3 Postup je do značné míry automatizovatelný
+ :c4 Výstup je lehce srozumitelný
+ :c5 Výstup není v nějaké konkrétní hodnotě, např. v určité částce
+ :c6 Postup není automatizovatelný
+:c1:c3:c5 ok ex
+--
+<p>&#160;Čipová kreditní karta bez mag. proužku</p>
+ :c1 obvykle neobsahuje procesor, přestože se jí tradičně říká "čipová".
+ :c2 skýtá obvykle vyšší bezpečnost než karta s mag. proužkem (bez čipu).
+ :c3 obvykle obsahuje malý procesor.
+ :c4 skýtá obvykle nižší bezpečnost než karta s mag. proužkem (bez čipu).
+:c2:c3 ok ex
+--
+<p>&#160;Při podpisu s obnovou dat platí:</p>
+ :c1 Podepisovaná data lze z podpisu obnovit při znalosti soukromého klíče.
+ :c2 Podepisovaná data nejsou součástí podpisu, je nutné je obnovit nezávislým komunikačním kanálem.
+ :c3 Podepisovaná data mohou být obnovena kýmkoli, kdo vlastní příslušný veřejný klíč.
+ :c4 Podpis obsahuje i podepisovaná data.
+:c3:c4 ok ex
+--
+<p>&#160;Která z následujících tvrzení platí:</p>
+ :c1 integrita zaručuje důvěrnost.
+ :c2 důvěrnost zaručuje integritu.
+ :c3 neplatí ani jedno tvrzení.
+ :c4 silná integrita zaručuje důvěrnost.
+ :c5 prokazatelná zodpovědnost vyžaduje důvěrnost.
+:c3 ok ex
+--
+<p>&#160;Poskytuje TOR testování integrity přenášených dat?</p>
+ :c1 Ne, proč bychom něco takového potřebovali, stačí zaručená anonymita.
+ :c2 Ano, je to obrana proti tagging útokům.
+ :c3 Ano, je to vylepšení oproti původnímu návrhu Onion Routing systémů.
+ :c4 Ano, je to obrana proti mig-in-the-middle útokům.
+:c2:c3 ok ex
+--
+<p>&#160;Co patří mezi cíle bezpečnostní politiky?</p>
+ :c1 Identifikovat ochraňované prostředky firmy.
+ :c2 Přenést odpovědnost na třetí strany.
+ :c3 Eliminovat všechny útočníky.
+ :c4 Minimalizace (kontrola) rizik.
+ :c5 Stanovení strategie pro použití bezpečnostních funkcí.
+:c4:c5 ok ex
+--
+<p>&#160;Protože standard GSM obsahoval bezpečnostní chyby,</p>
+ :c1 byl navržen protokol 3GSM.
+ :c2 začalo se v některých zemích používat GSM šifrování SMS zpráv (hlasová data se už tak těžko zpracovávají).
+ :c3 začalo se v některých zemích používat GSM šifrování hlasových přenosů a SMS zpráv.
+ :c4 byl navržen protokol 4GSM, ve kterém se šifruje novou symetrickou šifrou SHA-3.
+:c1 ok ex
+--
+<p>&#160;V případě, že nespokojení uživatelé jsou "menší zlo" než neoprávnění uživatelé, nastavíme</p>
+ :c1 biometrický systém tak, že bude mít FAR (False Acceptance Rate) a FRR (False Rejection Rate):
+ :c2 nízkou hodnotu FRR a nízkou hodnotu FAR.
+ :c3 vysokou hodnotu FRR a vysokou hodnotu FAR.
+ :c4 vysokou hodnotu FRR a nízkou hodnotu FAR.
+ :c5 vysokou hodnotu FAR a nízkou hodnotu FRR.
+:c4 ok ex
+--
+<p>&#160;Zákon o ochraně osobních údajů:</p>
+ :c1 nevztahuje se na zpracování osobních údajů, které provádí fyzická osoba výlučně pro osobní spotřebu.
+ :c2 vztahuje se na veškeré zpracování osobních údajů, ať k němu dochází automatizovaně nebo jinými prostředky.
+ :c3 nevztahuje se na nahodilé shromažďování osobních údajů, pokud tyto údaje nejsou dále zpracovávány, nebo pokud nejsou pro podnikání.
+ :c4 vztahuje se na zabezpečení zpracovávaných osobních údajů v případě automatizovaných prostředků dodávaných ze zemí mimo EU.
+ :c5 nevztahuje se na data poskytovaná dobrovolně státním institucím.
+:c1:c2:c3 ok ex
+--
+<p>&#160;Pod pojmem symetrická kryptografie rozumíme:</p>
+ :c1 Kryptografie s využitím stejného klíče pro šifrování i dešifrování.
+ :c2 Kryptografie s takovým algoritmem, jehož všechny operace splňují matematickou vlastnost symetrie nad danou grupou.
+ :c3 Kryptografie s takovým algoritmem, který umožňuje komukoli symetricky ověřit pravost podpisu.
+ :c4 Kryptografie s využitím klíče, který je na binární úrovni symetrický.
+:c1 ok ex
+--
+<p>&#160;Systém detekce průniku (IDS)</p>
+ :c1 je možné použít buď v síti nebo na počítači
+ :c2 je možné použít v síti i na počítači
+ :c3 poskytuje lepší ochranu než firewall
+ :c4 má smysl používat pouze jako síťový prvek, kdy detekuje a informuje o probíhajícím útoku.
+:c2 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Chybovost biometrických systémů vyjádřená pomocí FAR</span></p>
+<div>(False Acceptance Rate) je:</div>
+ :c1 Podíl počtu neúspěšně provedených pokusů o podvod ku počtu úspěšně provedených pokusů o přihlášení do systému.
+ :c2 Podíl počtu úspěšně provedených pokusů o podvod ku počtu všech pokusů o podvod.
+ :c3 Podíl počtu úspěšně provedených pokusů o podvod ku počtu všech pokusů o přihlášení do systému.
+ :c4 Podíl počtu neúspěšně provedených pokusů o podvod ku počtu všech pokusů o podvod.
+:c3 ok ex
+--
+<p>&#160;Chybovost biometrických systémů vyjádřená pomocí FTE (Fail to Enroll) je:</p>
+ :c1 Podíl počtu uživatelů, které systém zaregistroval na více než jeden pokus, ku počtu všech uživatelů systému.
+ :c2 Podíl počtu uživatelů, které systém neverifikoval, ku počtu všech pokusů uživatelů o přihlášení do systému.
+ :c3 Podíl počtu uživatelů, které systém zaregistroval, ku počtu uživatelů systému, které systém nezaregistroval.
+ :c4 Žádná z těchto odpovědi není správná.
+:c4 ok ex
+--
+<p>&#160;Chybovost biometrických systémů vyjádřená pomocí FRR (False Rejection Rate) je:</p>
+ :c1 Podíl počtu akceptovaných pokusů o legitimních legitimních uživatelů ku počtu odmítnutých pokusů o přihlášení legitimních uživatelů
+ :c2 Podíl počtu všech pokusů o přihlášení legitimních i nelegitimních uživatelů ku počtu všech pokusů o přihlášení legitimních uživatelů.
+ :c3 Podíl počtu akceptovaných pokusů o přihlášení legitimních uživatelů ku počtu všech pokusů o verifikaci legitimních uživatelů.
+ :c4 Podíl počtu odmítnutých pokusů o přihlášení legitimních uživatelů ku počtu všech pokusů o přihlášení.
+:c4 ok ex
+--
+<p>&#160;Digitální podpis zajišťuje</p>
+ :c1 Komprimaci podepisovaných dat.
+ :c2 Platnost podepisovaných dat.
+ :c3 Důvěrnost podepisovaných dat.
+ :c4 Autentizaci podepisovaných dat.
+:c4 ok ex
+--
+<p>&#160;Digitální podpis zajišťuje</p>
+ :c1 Integritu podepisovaných dat.
+ :c2 Obnovu privátního klíče při jeho ztrátě.
+ :c3 Důvěrnost podepisovaných dat.
+ :c4 Autorizaci podepisovaných dat.
+:c1 ok ex
+--
+<p>&#160;Pokud má hašovací funkce vlastnost silné bezkoliznosti, znamená to, že:</p>
+ :c1 Nelze nalézt dva navzájem různé vstupy takové, aby byly výsledné haše pro oba vstupy stejné.
+ :c2 Je výpočetně neproveditelné nalézt k danému vstupu jiný vstup tak, aby byly výsledné haše pro oba vstupy stejné.
+ :c3 Je výpočetně neproveditelné nalézt dva libovolné navzájem různé vstupy takové, aby byly výsledné haše pro oba vstupy stejné.
+ :c4 Nelze nalézt dva navzájem různé vstupy takové, aby byly výsledné haše pro oba vstupy stejné na alespoň 1/2 pozic.
+:c3 ok ex
+--
+<p>&#160;Pokud má hašovací funkce vlastnost slabé bezkoliznosti, znamená to, že:</p>
+ :c1 Nelze nalézt dva navzájem různé vstupy takové, aby byly výsledné haše pro oba vstupy stejné na alespoň 1/2 pozic.
+ :c2 Je výpočetně neproveditelné nalézt k danému vstupu jiný vstup tak, aby byly výsledné haše pro oba vstupy stejné.
+ :c3 Nelze nalézt dva navzájem různé vstupy takové, aby byly výsledné haše pro oba vstupy stejná.
+ :c4 Je výpočetně neproveditelné nalézt dva libovolné navzájem různé vstupy takové, aby byly výsledné haše pro oba vstupy stejné.
+:c2 ok ex
+--
+<p>&#160;Které z následujících pojmů se vztahují ke Společným kritériím (CC).</p>
+ :c1 Subjekt hodnocení (Subject of Evaluation, SOE)
+ :c2 Profil bezpečnosti (Protection Profile, PP)
+ :c3 Specifikace síťové bezpečnosti (Network Security Target, NST)
+ :c4 Předmět hodnocení (Target of Evaluation, TOE)
+ :c5 Specifikace bezpečnosti (Security Target, ST)
+ :c6 Profil prokazatelné bezpečnosti (Provable Protection Profile, PPP)
+:c2:c4:c5 ok ex
+--
+<p>&#160;Citlivé osobní údaje dle české legislativy vypovídají o:</p>
+ :c1 zdravotním stavu.
+ :c2 postoji k trestné činnosti rodinných příslušníků.
+ :c3 majetkových poměrech státních úředníků.
+ :c4 sexuální orientaci.
+:c1:c4 ok ex
+--
+<p>&#160;Základní metody autentizace uživatelů jsou založeny na něčem, co</p>
+ :c1 vím.
+ :c2 smím.
+ :c3 mám.
+:c1:c3 ok ex
+--
+<p>&#160;Z jakého důvodu se doporučuje podepisovat vlastní veřejný klíč privátním klíčem:</p>
+ :c1 pro zvýšení entropie veřejného klíče.
+ :c2 pro zajištění jeho integrity.
+ :c3 nedoporučuje se.
+ :c4 pro zvýšení jeho důvěryhodnosti o vyšší počet podpisů.
+ :c5 pro zarovnání délky veřejného klíče na hodnotu dělitelnou délkou veřejného modula.
+:c2 ok ex
+--
+<p>&#160;V případě nepozorovatelnosti (unobservability) je ochraňovanou hodnotou?</p>
+ :c1 Informace o překročení přiděleného procesorového času pro použití nabízených zdrojů a služeb.
+ :c2 Informace o přihlášených uživatelích.
+ :c3 Informace o použití zdrojů a služeb.
+ :c4 Informace o aplikovaných bezpečnostních opatřeních systému (např. nastavení pravidel firewallu).
+:c3 ok ex
+--
+<p>&#160;Proti obecným OR (Onion Routing) sítím přináší TOR navíc</p>
+ :c1 poskytuje téměř real-time anonymní spojení pro různé služby.
+ :c2 podporu šifrování dat proudovou šifrou se symetrickým klíčem.
+ :c3 adresářové servery s informacemi o jednotlivých routerech.
+ :c4 podporu skrytých služeb a míst setkání.
+:c3:c4 ok ex
+--
+<p>&#160;Která z uvedených tvrzení jsou pravdivá?</p>
+ :c1 Symetrická kryptografie se využívá pouze pro šifrování, zatímco asymetrická pouze k podepisování.
+ :c2 Pokud chceme využít asymetrickou kryptografii k šifrování, musí zůstat oba klíče utajeny.
+ :c3 Teoreticky lze použít asymetrickou kryptografii i k šifrování, ale v praxi se toho nevyužívá.
+ :c4 Symetrická kryptografie využívá jeden klíč sdílený mezi dvěma a více uživateli.
+:c4 ok ex
+--
+<p>&#160;Co je to odvození (inference)?</p>
+ :c1 Odvozením získáváme nepřímý přístup k informacím bez přímého přístupu k datům, která tyto informace reprezentují.
+ :c2 Odvození nových informací se stejnou citlivostí zpracováním a analýzou skupiny informaci určité citlivosti.
+ :c3 Opak agregace.
+ :c4 Odvození informací o vyšší citlivosti zpracováním a analýzou skupiny informací o nižší citlivosti.
+ :c5 Odvození nových informací s nižší citlivostí zpracováním a analýzou skupiny informací o vyšší citlivosti.
+:c1:c4 ok ex
+--
+<p>&#160;Pod pojmem dostupnost dat rozumíme</p>
+ :c1 Data by měla být dostupná i neautorizované osobě v případě kritické události.
+ :c2 Průběh autentizace osoby pro práci s daty a službami by měl být dostupný i lidem se sníženou pracovní schopností.
+ :c3 Uživatelé by měly mít přístup k datům a službám co nejméně komplikovaný.
+ :c4 Autorizovaní uživatelé by měly mít přístup k datům a službám co nejméně komplikovaný.
+:c4 ok ex
+--
+<p>&#160;Systémy měnící tok a výskyt dat na komunikačním kanálu se nazývají</p>
+ :c1 mixy.
+ :c2 anonymitní.
+ :c3 mutexy.
+ :c4 minixy.
+ :c5 minmaxy.
+:c1:c2 ok ex
+--
+<p>&#160;Bezpečnostní politika zahrnuje</p>
+ :c1 Specifikaci technologických opatření kterými budou prosazovány bezpečnostní požadavky společnosti
+ :c2 Seznam konkrétních osob, které mají povoleno přistupovat k citlivým datům společnosti.
+ :c3 Požadavky, pravidla a postupy určující způsob ochrany a zacházení s hodnotami společnosti.
+:c3 ok ex
+--
+<p>&#160;Protokoly SSL/TLS</p>
+ :c1 není snadné integrovat do již existujících aplikací.
+ :c2 se chovají k protokolům aplikační vrstvy OSI modelu transparentně.
+ :c3 není vhodné používat ve starších operačních systémech pro 32bitové procesory.
+ :c4 nepředstavují zvýšené nároky na výpočetní výkon komunikujících stran.
+ :c5 vyžadují zajištění vhodného systému správy (kryptografických) klíčů.
+:c2:c5 ok ex
+--
+<p>&#160;Základní metody autentizace uživatelů jsou založeny na něčem, co</p>
+ :c1 nelze jednoduše zničit.
+ :c2 znám.
+ :c3 jsem.
+:c2:c3 ok ex
+--
+<p>&#160;Co je to perturbační technika používaná ve statistických databázích?</p>
+ :c1 Žádná taková technika neexistuje.
+ :c2 Pro vyhodnocení dotazu nesmí být použito více záznamu než je stanovená maximální (perturbační) mez.
+ :c3 (perturbační) mez.
+ :c4 Technika stavějící např. na zaokrouhlování mezivýsledků dotazů.
+ :c5 Technika umožňující zjistit konzistentní, ale ne spolehlivé odpovědi na sérii podobných dotazů.
+ :c6 Přidávání pseudonáhodného "šumu" k množině záznamů, na jejichž základě se vyhodnotí dotaz.
+:c4:c5:c6 ok ex
+--
+<p>&#160;Která z těchto tvrzení jsou správná?</p>
+ :c1 Se zvýšením FAR se zvyšuje FRR.
+ :c2 Se snížením FAR se zvyšuje FRR.
+ :c3 Se zvýšením FAR (False Acceptance Rate) se snižuje FRR (False Reject Rate).
+ :c4 Se snížením FAR se snižuje FRR.
+:c2:c3 ok ex
+--
+<p>&#160;Co je výsledkem hodnocení systému podle Společných kritéríí (CC)?</p>
+ :c1 Popis, jakým způsobem je v hodnoceném systému dosaženo daných vlastností
+ :c2 Subjektivní (ze strany hodnotitele) hodnocení bezpečnosti systému
+ :c3 Sada doporučení, jak hodnocený systém zabezpečit
+ :c4 Diskrétní hodnocení (ano/ne) daných požadavků na hodnocený systém
+:c4 ok ex
+--
+<p>&#160;Pod pojmem hybridní kryptosystémy rozumíme například</p>
+ :c1 Data jsou před podpisem zašifrována algoritmem asymetrické kryptografie.
+ :c2 Data jsou šifrována náhodným symetrickým klíčem, ten je šifrován veřejným klíčem příjemce.
+ :c3 Data jsou před šifrováním algoritmem symetrické kryptografie hašována, šifrována je pouze výsledná haš.
+:c2 ok ex
+--
+<p>&#160;Mezi bezpečnostní požadavky podle standardu pro hodnocení kryptografických modulů</p>
+<div>FIPS 140-1/2 patří:</div>
+ :c1 Fyzická bezpečnost
+ :c2 Rozhraní modulu
+ :c3 Bezpečnost O/S
+ :c4 Testování GUI modulu
+ :c5 Služby a autentizace
+ :c6 Odolnost vůči lidskému faktoru
+:c1:c2:c3:c5 ok ex
+--
+<p>&#160;Bezpečnost je založena především na</p>
+ :c1 prevenci, detekci a reakci na možné problémy
+ :c2 správném nastavení bezpečnosti sítě i koncových stanic
+ :c3 aktualizovaném antiviru a správně nastaveném firewallu, příp. i využití PGP
+ :c4 dohodě s uživateli
+:c1 ok ex
+--
+<p>&#160;Mezi bezpečnostní požadavky podle standardu pro hodnocení kryptografických modulů FIPS 140-1/2</p>
+<div>patří:</div>
+ :c1 Elektromagnetická rezonance
+ :c2 Správa klíčů
+ :c3 Služby a autentizace
+ :c4 Rozhraní modulu
+ :c5 Flexibilita modulu
+ :c6 Metody pro zmírnění jiných útoků
+:c2:c3:c4:c6 ok ex
+--
+<p>&#160;Cibulové schéma používané např. v Onion Routing</p>
+ :c1 využívá symetrické i asymetrické kryptografie
+ :c2 používá pouze asymetrickou kryptografii
+ :c3 používá pouze symetrickou kryptografii, protože je rychlejší
+ :c4 kryptografie se nepoužívá vůbec, není potřeba
+:c1 ok ex
+--
+<p>&#160;Která z těchto tvrzení, pokud mluvíme o biometrických systémech, jsou správná?</p>
+ :c1 Proces identifikace je náročnější než proces verifikace.
+ :c2 Na začátku procesu verifikace není identita známa.
+ :c3 Na začátku procesu verifikace je identita známa.
+ :c4 Proces verifikace je náročnější než proces identifikace.
+:c1:c3 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Co je cílem zajištění důvěrnosti dat?</span></p>
+<div>&#160;</div>
+ :c1 Utajit existenci sémantiky dat před nedůvěryhodnými osobami
+ :c2 Zamezit změně sémantického obsahu dat neautorizovanými osobami
+ :c3 Zabránit zjištění sémantického obsahu dat neutorizovanými osobami
+:c3 ok ex
+--
+<p>&#160;Autentizace je</p>
+ :c1 překlep - správně je "autorizace"
+ :c2 volitelná (ale obvykle přítomná) fáze procesu prokazování identity
+ :c3 všechny ostatní možnosti jsou nepravdivé
+ :c4 proces nezbytný pro ustavení šifrované komunikace u bezdrátového spojení
+:c3 ok ex
+--
+<p>&#160;Systém detekce průniku (IDS)</p>
+ :c1 je možné použít buď v síti nebo na počítači
+ :c2 má smysl používat pouze jako síťový prvek, kdy detekuje a informuje o probíhajícím útoku
+ :c3 je možné použít v síti i na počítači
+ :c4 poskytuje lepší ochranu než firewall
+:c3 ok ex
+--
+<p>&#160;Které tvrzení je správné:</p>
+ :c1 Při TLS/SSL "Handshake" se povinně kontrolují certifikáty obou stran.
+ :c2 "Record" protokol dovoluje předávat/ukládat nezabezpečená data pro potřeby vlády
+ :c3 USA, podle §708, odstavce 17 zákona o vnitřní bezpečnosti.
+ :c4 TLS/SSL "Handshake" protokol slouží k ustavení zabezpečeného spojení,
+ :c5 "Record" protokol představuje základní vrstvu.
+ :c6 Při TLS/SSL "Handshake" se provádí autentizace uživatele heslem.
+ :c7 Použití TLS/SSL "Handshake" protokolu je volitelné v závislosti na požadavcích klienta a serveru.
+:c4 ok ex
+--
+<p>&#160;Podle čeho je určen počet kol/rund u algoritmu Rijndael.</p>
+ :c1 Délka bloku
+ :c2 Délka klíče a bloku
+ :c3 Inicializační vektor
+ :c4 Inicializační vektor a délka bloku
+ :c5 Délka zprávy
+ :c6 Délka klíče
+:c6 ok ex
+--
+<p>&#160;Pseudonymita (podle A.Pfitzmanna - mixy) znamená:</p>
+ :c1 Používání pseudonymu jako identifikátoru (ID)
+ :c2 Bytí anonymním s možností zpětného zjistění skutečné identity
+ :c3 Bytí anonymním pouze vůči uživatelům systému, nikoli vůči administrátorům
+:c1 ok ex
+--
+<p>&#160;Pod pojmem slabá integrita dat rozumíme</p>
+ :c1 Data nesmí bez svolení autorizované osoby změnit svůj stav vůbec
+ :c2 Data nesmí bez svolení autorizované osoby nepozorovaně změnit svůj stav
+ :c3 Data nesmí být bez svolení autorizované osoby zpracovávána na sémantické úrovni
+:c2 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Co jsou (z pohledu uživatele) dvě nejméně bezpečné součásti dnešních platebních</span></p>
+<div>systémů?</div>
+ :c1 Čipová karta s magnetickým proužkem
+ :c2 Bankomat
+ :c3 Platební terminál
+ :c4 Čipová karta
+:c1:c3 ok ex
+--
+<p>&#160;Jaký je v dnešních platebních systémech pro zákazníka největší bezpečnostní problém?</p>
+ :c1 Banky už v 90. letech zavrhly používání bezpečného protokolu SET (Secure Electronic Transaction).
+ :c2 Napěťové útoky jsou snadnou a efektivní cestou jak obejít bezpečnostní mechanizmy čipu na platební kartě.
+ :c3 Současný systém funguje tak, že zákazníkovi nezaručuje vazbu mezi zobrazovanou a potvrzovanou transakcí.
+ :c4 Zákazníci sami se chovají nezodpovědně.
+:c3 ok ex
+--
+<p>&#160;Co je to kritický dotaz ve statistické databázi?</p>
+ :c1 Dotaz, který databáze nesmí vyhodnotit, neboť by tím došlo ke zjištění informací o jednotlivci nebo malé skupině osob.
+ :c2 Dotaz, jehož vyhodnocení trvá dlouhou dobu a vyžaduje veškerou výpočetní sílu databáze, která se v tím může stát nedostupnou pro ostatní dotazy.
+ :c3 Sekvence složená z legitimních dotazů na statistickou databázi s cílem získat informace o jednotlivci nebo malé skupině osob.
+ :c4 Dotaz, který může být položen pouze v okamžiku, kdy v databázi neprobíhají žádné aktualizace dat.
+:c1:c3 ok ex
+--
+<p>&#160;Pro anonymitní komunikační sítě platí:</p>
+ :c1 dosažená anonymita je aplikačně nezávislá
+ :c2 obsah posílaných zpráv není mezi uzly šifrován
+ :c3 mohou být náchylné vůči analýze provozu
+ :c4 vstupy nelze jednoduše spojit s výstupy
+:c3:c4 ok ex
+--
+<p>&#160;Projekt AN.ON poskytuje stejné služby jako</p>
+ :c1 Mixmaster
+ :c2 Onion routing.
+ :c3 Mixminion.
+ :c4 TOR
+:c2:c4 ok ex
+--
+<p>&#160;Které z následujících metod lze využít k analýze rizik?</p>
+ :c1 Metoda AES (Advanced Evaluation Standard)
+ :c2 Metoda ALE (Annual Loss Expentancy)
+ :c3 Metoda ARO (Annualized Rate of Occurence)
+ :c4 Metoda BPA (Business Process Analysis)
+ :c5 Metoda RSA (Risk System Analysis)
+:c2:c4 ok ex
+--
+<p>&#160;Certifikát veřejného klíče (nař. X.509) vydaný důvěryhodnou certifikační autoritou umožňuje</p>
+ :c1 Získat veřejný klíč konkrétního uživatele
+ :c2 Zabránit ztrátě privátního klíče
+ :c3 Ověřit identitu předkladatele veřejného klíče
+ :c4 Získat přístup k šifrovaným datům konkrétního uživatele v kritické situaci oprávněnou organizací
+:c1:c3 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Který z následujících protokolů brání tomu, aby se ten komu jednou prokážete znalost tajné informace</span></p>
+<div>nemohl později vydávat za vás:</div>
+ :c1 protokol, založený na důkazu nulového rozšíření znalosti (zero-knowledge).
+ :c2 protokol, který používá šifrování pro zabezpečení přenosu autentizačních dat.
+ :c3 protokol typu výzva-odpověď (challenge-response), který využije asymetrickou kryptografii jen pro podpis, nikoliv ale pro šifrování.
+:c1 ok ex
+--
+<p>&#160;Jak ověříme pravost certifikátu vydaného důvěryhodnou certifikační autoritou?</p>
+ :c1 Využijeme meta-certifikátu certifikační autority.
+ :c2 Ověříme zda se shoduje název certifikační autority s názvem uvedeným na daném certifikátu.
+ :c3 Ověříme zda je certifikát podepsán danou certifikační autoritou.
+ :c4 Ověříme, zda je haš certifikátu shodná s haší uvedenou v certifikátu.
+:c3 ok ex
+--
+<p>&#160;Pokud existuje v systému zranitelnost a existuje útočník, který ji může využít, výsledný stav je nazýván:</p>
+ :c1 hrozba
+ :c2 zranitelnost
+ :c3 útok
+ :c4 riziko
+:c1 ok ex
+--
+<p>&#160;Pojmem tranzitivita důvěry označujeme:</p>
+ :c1 důvěru cizího uživatele X v náš veřejný klíč, pokud mu důvěřuje uživatel Y, kterému kterým důvěřuje uživatel X.
+ :c2 důvěru uživatele X v náš veřejný klíč, pokud my důvěřujeme jeho veřejnému klíči. takový termín neexistuje.
+ :c3 důvěru ve veřejný klíč uživatele X, kterému důvěřuje uživatel Y, kterému důvěřujeme my.
+ :c4 důvěru v propagaci našeho veřejného klíče od uživatele X na uživatele Y.
+:c1:c3 ok ex
+--
+<p>&#160;Proč platební karty s čipem mají magnetický proužek?</p>
+ :c1 Kvůli zpětně kompatibilitě.
+ :c2 Čip provádí kryptografické operace nad daty uloženými na magnetickém proužku.
+ :c3 Žádná z těchto odpovědí není správná.
+:c1 ok ex
+--
+<p>&#160;Kdy je dosažen EER (Equal Error Rate) v biometrických systémech?</p>
+ :c1 Nastavení prahové hodnoty, pro kterou je FAR/FRR rovno 0.8.
+ :c2 Nastavení prahové hodnoty, pro kterou je FRR/FAR rovno 0.8.
+ :c3 Nastavení prahové hodnoty, pro kterou FRR a FAR jsou stejné.
+ :c4 Nastavení prahové hodnoty, pro kterou je FRR roven 1.
+:c3 ok ex
+--
+<p>&#160;Povinnosti správce osobních údajů:</p>
+ :c1 archivovat data kódovaně, není-li řečeno jinak
+ :c2 uchovávat data pouze po dobu nezbytnou k jejich zpracování
+ :c3 shromažďovat osobní údaje odpovídající pouze stanovenému účelu a v rozsahu nezbytném pro naplnění stanoveného účelu.
+ :c4 vkládat falešné záznamy, aby v případě krádeže dat nebylo možné snadno posoudit jejich validitu
+:c2:c3 ok ex
+--
+<p>&#160;Povinnosti spravce osobnich udaju:</p>
+ :c1 vkladat falesne zaznamy, aby v pripade kradeze dat nebylo mozne snadno posoudit jejich validitu
+ :c2 neposkytovat data tretim stranam pred sepsanim Smlouvy o poskytnuti osobnich datech
+ :c3 stanovit prostredky a zpusob zpracovavani osobnich udaju
+ :c4 archivovat data kodovane, nenili urceno jinak
+:c3 ok ex
+--
+<p>&#160;Která technika není platná pro anonymitní komunikační sítě:</p>
+ :c1 přeuspořádávání zpráv v rámci uzlu
+ :c2 šifrování zpráv mezi uzly algoritmem RSA s délkou klíče závislou na počtu uzlů
+ :c3 pozastavování přijatých zpráv
+ :c4 v čase nedeterministické odesílání přijatých zpráv
+ :c5 využívání minixů pro přeposílání zpráv
+:c2:c5 ok ex
+--
+<p>&#160;K čemu se používají systémy řízení identity (IMS)?</p>
+ :c1 Systém pro správu veřejných klíčů s identifikátory
+ :c2 K návrhu a správě atributů identity
+ :c3 K dlouhodobé archivaci odcizených identifikačních průkazů
+:c2 ok ex
+--
+<p>&#160;Mezi obvykla bezpecnostni politiky patri:Interaplikační bezpečnostni politika</p>
+ :c1 Interaplikační bezpečnostni politika
+ :c2 Integrovana bezpecnostni politika
+ :c3 Horizontalní bezpecnostni politika
+ :c4 Celkova bezpecnostni politika
+ :c5 Systemova bezpecnostni politika
+:c4:c5 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Problém živosti pro vstupní zařízení</span></p>
+<div>spočívá v tom, že:</div>
+ :c1 Žádná z těchto odpovědi není správná.
+ :c2 Vstupní zařízení není schopno určit, zda vzorek je právě od osoby, která stojí u vstupního zařízení.
+ :c3 Vstupní zařízení není schopno určit, zda vzorek je od živé osoby.
+ :c4 Osoba, která se přihlašuje u vstupního zařízení není schopná určit kam její vzorek bude přeposláno.
+:c3 ok ex
+--
+<p>&#160;Pokud neautorizovaná osoba zjistí sémantický obsahu chráněných dat, jedná se o narušení</p>
+ :c1 důvěrnosti
+ :c2 integrity
+ :c3 dostupnosti
+ :c4 prokazatelné zodpovědnosti
+:c1 ok ex
+--
+<p>&#160;Obvykle nejmene bezpecnym bodem behem prubehu autentizace v internetovem bankovnictvi je:</p>
+ :c1 autentizace banky
+ :c2 autentizace pocitace klienta
+ :c3 autentizace klienta
+:c1 ok ex
+--
+<p>&#160;Cílem projektu Eternity server je</p>
+ :c1 navrhnout službu, která je odolná vůči útoku typu Denial of Service
+ :c2 poskytnout trvalé úložiště dat
+ :c3 poskytnout trvalé úložiště dat s operacemi uložit, nalézt a smazat
+ :c4 vytvořit datové úložiště, které je odolné vůči výpadkům
+:c2:c4 ok ex
+--
+<p>&#160;Jaký je v dnešních platebních systémech pro zákazníka největší bezpečnostní problém?</p>
+ :c1 Zákazníci sami se chovají nezodpovědně.
+ :c2 Banky už v 90. letech zavrhly používání bezpečného protokolu SET (Secure Electronic Transaction).
+ :c3 Napěťové útoky jsou snadnou a efektivní cestou jak obejít bezpečnostní mechanizmy čipu na platební kartě.
+ :c4 Současný systém funguje tak, že zákazníkovi nezaručuje vazbu mezi zobrazovanou a potvrzovanou transakcí.
+:c4 ok ex
+--
+<p>&#160;PGP umožňuje nastavit úroveň důvěry pro konkrétní veřejný klíč. Toto nastavení se používá pro:</p>
+ :c1 filtrování zpráv, které mohou být poslány danému uživateli.
+ :c2 indikaci důvěry v původ dat podepsaných vlastníkem odpovídajícího privátního klíče
+ :c3 indikaci důvěry v původ dat podepsaných daným veřejným klíčem.
+ :c4 kontrolu skupiny lidí, které může být distribuován náš veřejný klíč.
+ :c5 indikaci důvěry v klíč na základě jeho bitové velikosti.
+:c2 ok ex
+--
+<p>&#160;Která z těchto tvrzení jsou správná?</p>
+ :c1 Kopírování měřených biologických charakteristik člověka není sice triviální, ale ani nemožné.
+ :c2 Biometrická data jsou tajná.
+ :c3 Biometriky po analýze s využitím kryptogragie o subjektu zprávy vypovídají.
+ :c4 Biometriky v ideálním případě určují identitu člověka přesně a lze tak spojovat jednotlivě jeho činy.
+:c1:c4 ok ex
+--
+<p>&#160;Existuje nějaký útok na službu TOR, který sníží anonymitu uživatelů?</p>
+ :c1 Ano, existuje útok, který může snížit anonymitu uživatelů.
+ :c2 Ano, existuje útok, který stoprocentně "odanonymizuje" všechny uživatele.
+ :c3 Ne, TOR je navržen tak, aby odolal všem znamým i neznámým typům útoků.
+ :c4 Ne, žádný takový útok zatím není znám.
+:c1 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Která z těchto tvrzení, pokud mluvíme o biometrických systémech,</span></p>
+<div>jsou správná?</div>
+ :c1 Proces verifikace je náročnější než proces identifikace.
+ :c2 Na začátku procesu verifikace není identita známa.
+ :c3 Na začátku procesu verifikace je identita známa.
+ :c4 Proces identifikace je náročnější než proces verifikace.
+:c3 ok ex
+--
+<p>&#160;Kerckhoffsův princip v současnosti neplatí:</p>
+ :c1 Anžto dokážeme hrubou silou prolomit klíče o délce větší než 80 bitů.
+ :c2 Jelikož současné délky klíčů neumožňují efektivní útoky hrubou silou.
+ :c3 Protože dokážeme účinně utajovat šifrovací algoritmy.
+ :c4 Nesmysl, Kerckhoffsův princip platí i v současnosti.
+:c4 ok ex
+--
+<p>&#160;Kerckhoffsův princip říká, že:</p>
+ :c1 Použitý algoritmus je veřejně znám, utajován je pouze klíč.
+ :c2 Klíč není třeba utajovat, pokud je použitý algoritmus veřejně znám.
+ :c3 Použitý algoritmus je přístupný pouze autorizovaným osobám, klíč je utajován.
+ :c4 Klíč není třeba utajovat, pokud použitý algoritmus je také tajný.
+:c1 ok ex
+--
+<p>&#160;Projekt AN.ON poskytuje stejné služby jako</p>
+ :c1 Onion routing.
+ :c2 Mixmaster.
+ :c3 Mixminion.
+ :c4 TOR.
+:c1:c4 ok ex
+--
+<p>&#160;Co je to statistická databáze?</p>
+ :c1 Databáze, která umožňuje získávat statistické informace o jednotlivcích.
+ :c2 Databáze, která obsahuje informace o jednotlivcích, ale povoluje pouze statistické dotazy, tj. nedovolí získat informace o jednotlivcích.
+ :c3 Databáze, která je dohledována Českým statistickým úřadem.
+:c2 ok ex
+--
+<p>&#160;Analýza a hodnocení hrozeb zahrnuje:</p>
+ :c1 Rozvahu, co všechno by mělo být chráněno.
+ :c2 Pravidla a postupy, určující způsob ochrany a zacházení s ochraňovanými hodnotami.
+ :c3 Techniky pro implementaci bezpečnostních funkcí chránících ochraňované hodnoty.
+ :c4 Vyhodnocení, jaké hrozby hrozí ochraňovaným hodnotám.
+:c1:c4 ok ex
+--
+<p>&#160;Bezpečnostní politika je</p>
+ :c1 Dokument schválený vrcholovým managementem a specifikující využití IT pro zajištění cílů organizace.
+ :c2 Soubor opatření a mechanizmů potřebných k dosažení požadované minimální úrovně prevence a detekce zranitelností.
+ :c3 Dokument schválený členem představenstva a stanovující přesná pravidla pro zajištění technických i lidských zdrojů pro využití IT pro zajištění cílů organizace.
+ :c4 Soubor pravidel specifikující účinný způsob uplatňování opatření potřebných k dosažení požadované minimální úrovně rizik.
+:c4 ok ex
+--
+<p>&#160;Klasické odemykání zámku na dveřích klíčem</p>
+ :c1 spadá pod autentizační procedury.
+ :c2 nespadá pod autentizaci (klíč není ani něco, co znám, vím, ani něco, co "jsem").
+ :c3 spadá pod autentizační procedury, ale jen když klíč do zámku pasuje.
+:c1 ok ex
+--
+<p>&#160;Jakým způsobem je prováděna analýza rizik metodou CRAMM?</p>
+ :c1 Infrastrukturní přístup: identifikace a ocenění hodnot zohledňující zejména investice a rizika infrastruktury
+ :c2 Nestrukturovaný přístup: vytvoření tabulky rizik a zranitelností na základě spirálového modelu.
+ :c3 Nestrukturovaný přístup: inkrementální odhad hrozeb a zranitelností hodnot na základě rozšířeného spirálového modelu.
+ :c4 Strukturovaný přístup: i. identifikace a ocenění hodnot; ii. odhad hrozeb a zranitelností hodnot; iii. výběr vhodných protiopatření.
+ :c5 Strukturovaný přístup: i. odhad hrozeb a zranitelností hodnot; ii. naprogramování vhodných protiopatření.
+ :c6 Adhoc přístup: odhad hrozeb a zranitelností hodnot na základě běžného seznamu aktiv (metoda lze paralelizovat).
+:c4 ok ex
+--
+<p>&#160;Pro emailové zprávy posílané pomocí systému Mixminion platí</p>
+ :c1 jsou anonymní.
+ :c2 je možné na ně v určitém časovém rámci odpovědět
+ :c3 uživatel specifikuje cestu po síti.
+ :c4 odpovědi jsou v systému doručovány odlišně od normálních emailů.
+ :c5 hlavičky mailů nejsou modifikovány.
+ :c6 jsou pseudonymní.
+:c1:c2:c3 ok ex
+--
+<p>&#160;Tvrzení "Využití služby pro neautorizovaný přístup" by mohlo označovat</p>
+ :c1 riziko.
+ :c2 zranitelnost.
+ :c3 hrozbu.
+ :c4 útok.
+ :c5 bezpečnostní politiku.
+:c3 ok ex
+--
+<p>&#160;Podezřelé chování v síti zjistíte</p>
+ :c1 antivirovým programem.
+ :c2 honeypotem.
+ :c3 antispyware programem.
+ :c4 IDS.
+ :c5 firewallem.
+:c2:c4:c5 ok ex
+--
+<p>&#160;Jaký je rozdíl mezi termíny security a safety?</p>
+ :c1 Je to to samé, čeština používá jen jeden termín - bezpečnost
+ :c2 Safety - stav ochrany IS proti ztrátám; security - nedojde k ohrožení lidského života
+ :c3 Security - stav ochrany IS proti ztrátám; safety - nedojde k ohrožení lidského života
+:c3 ok ex
+--
+<p>&#160;Proč platební karty s čipem mají magnetický proužek?</p>
+ :c1 Čip provádí kryptografické operace nad daty uloženými na magnetickém proužku.
+ :c2 Kvůli zpětně kompatibilitě.
+ :c3 Žádná z těchto odpovědí není správná.
+:c2 ok ex
+--
+<p>&#160;Co je to agregace dat?</p>
+ :c1 Seskupování (osobních) dat do rozsáhlých databází.
+ :c2 Odvozování nových (typicky citlivějších) informací, na základě zpracování informací s nižší úrovní citlivosti.
+ :c3 "Pročišťování" velkých databází.
+ :c4 Zálohování dat jako obrana proti živelným pohromám.
+:c1 ok ex
+--
+<p>&#160;Pod pojmem asymetrická kryptografie rozumíme</p>
+ :c1 Kryptografie s algoritmem, který je opakem symetrické kryptografie a nepoužívá žádný klíč.
+ :c2 Kryptografie s využitím klíče, který je výstupem kvalitní hašovací funkce.
+ :c3 Kryptografie s využitím dvojice soukromého a veřejného klíče.
+ :c4 Nic z ostatních uvedených možností.
+:c3 ok ex
+--
+<p>&#160;Ke zneužitím mobilního telefonu operátorem patří:</p>
+ :c1 SMS posílané z mobilu na mobil mohou být jednoduše ukládány.
+ :c2 poloha mobilního telefonu může být sledována.
+ :c3 žádná z těchto odpovědí není správná, protože celá komunikace je bezpečně šifrována.
+:c1:c2 ok ex
+--
+<p>&#160;Co jsou (z pohledu uživatele) dvě nejméně bezpečné součásti dnešních platebních systémů?</p>
+ :c1 Čipová karta s magnetickým proužkem
+ :c2 Platební terminál
+ :c3 Bankomat
+ :c4 Čipová karta
+:c1:c2 ok ex
+--
+<p>&#160;Které dvě z těchto biometrických technik jsou nejpřesnější?</p>
+ :c1 dynamika podpisu
+ :c2 vzor oční duhovky
+ :c3 hlas
+ :c4 vzor oční sítnice
+:c2:c4 ok ex
+--
+<p>&#160;Protokoly SSL/TLS umožňují</p>
+ :c1 kontrolu integrity přenášených dat.
+ :c2 komunikovat anonymně.
+ :c3 zajistit nepopiratelnost.
+ :c4 autentizaci komunikujících stran (klient i server).
+ :c5 autentizaci jen a pouze jedné strany.
+:c1:c4 ok ex
+--
+<p>&#160;Zvolte správnou hierarchii podle druhu pseudonymu (ve směru zvyšující se anonymity a nespojitelnosti).</p>
+ :c1 Pseudonym osoby >pseudonym rolevztahu>pseudonym vztahu >pseudonym role >pseudonym transakce.
+ :c2 Pseudonym osoby >pseudonym role a pseudonym vztahu >pseudonym rolevztahu>pseudonym transakce.
+ :c3 Pseudonym transakce >pseudonym rolevztahu>pseudonym role a pseudonym vztahu > pseudonym osoby.
+ :c4 Pseudonym osoby >pseudonym transakce >pseudonym role a pseudonym vztahu > pseudonym rolevztahu.
+ :c5 Pseudonym osoby >pseudonym rolevztahu>pseudonym role >pseudonymvztahu >pseudonym t transakce.
+:c2 ok ex
+--
+<p>&#160;Která z těchto tvrzení jsou správná?</p>
+ :c1 Biometriky po analýze s využitím kryptografie o subjektu zprávy vypovídají.
+ :c2 Jeden vzorek lze využít jen v jednom systému.
+ :c3 Žádná z těchto odpovědi není správná.
+ :c4 Biometrická data jsou tajná.
+:c3 ok ex
+--
+<p>&#160;Co znamená pojem důvěrnost dat?</p>
+ :c1 Utajení obsažené informace.
+ :c2 Zajištění integrity dat.
+ :c3 Data jsou v nezměněné podobě tak, jak byla vytvořena.
+:c1 ok ex
+--
+<p>&#160;Místa setkání a skryté služby TORu je/jsou:</p>
+ :c1 místa, kde uživatelé získavají anonymitu tak, že to ostatní nevidí.
+ :c2 služba, která umožňuje anonymní provoz např. webového serveru.
+ :c3 místa, kde se setkávají pouze anonymní uživatelé.
+ :c4 je služba umožňující serveru kontrolovat anonymní příchozí požadavky.
+:c2:c4 ok ex
+--
+<p>&#160;Pretty Good Privacy (PGP) umožňuje</p>
+ :c1 šifrovat a dešifrovat data
+ :c2 digitálně podepsat data a ověřit podpis
+ :c3 anonymně přistupovat k webu
+ :c4 odeslat, přijmout a odpovědět na anonymní e-mail
+ :c5 chránit počítač před zneužitím
+:c1:c2 ok ex
+--
+<p>&#160;Je lepší používat TOR nebo Mixminion?</p>
+ :c1 Jednoznačně TOR.
+ :c2 Ani jedno, ani druhé.
+ :c3 Zaleží na tom, co chceme dělat.
+ :c4 Jednoznačně Mixminion.
+:c3 ok ex
+--
+<p>&#160;Remailer je</p>
+ :c1 služba pro anonymní posílání a příjem e-mailů.
+ :c2 je část poštovního serveru, která se stará o opakování neúspěšných pokusů.
+ :c3 veřejný poštovní server (považovaný za chybně nakonfigurovaný).
+:c1 ok ex
+--
+<p>&#160;Autentizace protokolem s nulovým rozšířením znalostí (zero-knowledge)</p>
+ :c1 zabrání ověřovateli, aby se mohl později neoprávněně vydávat za prokazující se stranu.
+ :c2 zabrání prokazující se straně, aby se dozvěděla, jak zní tajemství, které vlastní ověřovatel.
+ :c3 zabrání ověřovateli, aby se dozvěděl tajemství, které vlastní prokazující se strana
+ :c4 sdělí ověřovateli pouze počet nul v tajném klíči prokazující se strany.
+ :c5 zabrání ověřovateli, aby se zároveň autentizoval prokazující se straně.
+:c1:c3 ok ex
+--
+<p>&#160;Jaké byly důvody (a motivace) pro zavedení kritérií bezpečnosti?</p>
+ :c1 Standardizace kryptografických primitiv.
+ :c2 Jednalo se o chytrý marketingový tah výrobců špatně zabezpečených operačních systémů.
+ :c3 Usnadnění specifikace požadavků na návrh a vývoj.
+ :c4 Snazší a rychlejší vývoj implicitně bezpečných systémů.
+ :c5 Potřeba minimalizace nákladů na individuální ohodnocení.
+:c3:c5 ok ex
+--
+<p>&#160;Pro konzervativní kontrolu certifikátu veřejného klíče platí:</p>
+ :c1 Nic z ostatních uvedených možností.
+ :c2 Klíč považujeme za platný, dokud nejsme přesvědčeni o opaku.
+ :c3 Klíč považujeme za zneplatněný, pokud standard X.509 nestanoví jinak.
+ :c4 Klíč považujeme za neplatný, dokud nejsme přesvědčeni o opaku.
+:c4 ok ex
+--
+<p>&#160;Pro liberální kontrolu certifikátu veřejného klíče platí:</p>
+ :c1 Klíč považujeme za platný, dokud nejsme přesvědčeni o opaku.
+ :c2 Klíč považujeme za neplatný, dokud nejsme přesvědčeni o opaku.
+ :c3 Klíč považujeme za zneplatněný, pokud standard X.509 nestanoví jinak.
+ :c4 Nic z ostatních uvedených možností.
+:c1 ok ex
+--
+<p>&#160;Jak pracuje technika náhodného výběru ve statistických databázích?</p>
+ :c1 Výsledek dotazu je vyhodnocen na základě náhodně vybraných záznamů ze všech existujících záznamů v databázi.
+ :c2 Žádná taková technika neexistuje.
+ :c3 Výsledek dotazu je zaokrouhlen na hodnotu náhodně vybraného záznamu.
+ :c4 Výsledek dotazu je vyhodnocen na základě mírně poupravených záznamů, které jsou náhodně vybrány ze všech existujících záznamů v databázi.
+ :c5 Výsledek dotazu je zcela náhodný a nepředvídatelný.
+:c1 ok ex
+--
+<p>&#160;Pro zajištění prokazatelné zodpovědnosti (accountability)?</p>
+ :c1 Je na začátku práce v systému obvykle prováděno dešifrování dat pro práci s účtem.
+ :c2 Je na začátku práce v systému obvykle prováděna autentizace nebo identifikace.
+ :c3 Je prováděna archivace dat pro udržení schopnosti správy účtu.
+ :c4 Je prováděna archivace dat umožňujících propojení činnosti s konkrétní osobou tak, že daná osoba se nemůže zříci zodpovědnosti za svoji činnost.
+:c2:c4 ok ex
+--
+<p>&#160;Šifrování v PGP probíhá tak, že se data šifrují</p>
+ :c1 asymetricky, klíče se zašifrují soukromým klíčem příjemce a přiloží k datům.
+ :c2 asymetricky, klíče se zašifrují veřejným klíčem příjemce a přiloží k datům.
+ :c3 symetricky, symetrický klíč se zašifruje soukromým klíčem příjemce a přiloží k datům.
+ :c4 symetricky, symetrický klíč se zašifruje veřejným klíčem příjemce a přiloží k datům.
+:c4 ok ex
+--
+<p>&#160;Typické operace na firewallu jsou</p>
+ :c1 hašovat
+ :c2 xorovnat
+ :c3 zakázat
+ :c4 povolit
+ :c5 prelozit
+:c3:c4 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Které dvě z těchto biometrických technik bývají obvykle nejlevnější s ohledem na celkové</span></p>
+<div>náklady na nasazení u koncových uživatelů, resp. jejich pracovních stanic?</div>
+ :c1 otisk prstu.
+ :c2 vzor oční sítnice.
+ :c3 dynamika psaní na klávesnici.
+ :c4 DNA.
+:c1:c3 ok ex
+--
+<p>&#160;Co řeší Zákon o ochraně osobních údajů?</p>
+ :c1 vztahuje se na osobní údaje, které zpracovávají státní orgány, orgány územní samosprávy, jiné orgány veřejné moci, jakož i fyzické a právnické osoby, není-li stanoveno jinak.
+ :c2 upravuje právo na ochranu osobních údajů u jedinců se záznamem v trestním rejstříku po dobu výkonu trestu.
+:c1 ok ex
+--
+<p>&#160;Magnetický proužek standardní platební karty obsahuje:</p>
+ :c1 údaje o majiteli.
+ :c2 údaje o posledních 3-5 transakcích s kartou.
+ :c3 údaje o kartě.
+ :c4 údaje o částce, kterou držitel této karty naposledy vybral nebo platil.
+:c1:c3 ok ex
+--
+<p>&#160;Jak pracuje technika maximálního rozsahu dotazu ve statistických databázích?</p>
+ :c1 Pro vyhodnocení dotazu může být použito pouze menší množství záznamů než je stanovená maximální mez.
+ :c2 Žádná taková technika neexistuje.
+ :c3 Pro vyhodnocení dotazu nesmí být použito více záznamu než je stanovená maximální mez.
+:c2 ok ex
+--
+<p>&#160;Výraz script kiddies označuje:</p>
+ :c1 Útočníka, který je schopen kreativně odhalovat nové zranitelnosti i bez znalostí o systému
+ :c2 Hackera, který píše skripty a odhaluje nové zranitelnosti systému. Má částečné informace o systému.
+ :c3 Útočníka, který nemá dostatek znalostí o systému a využívá běžně dostupné předpřipravené nástroje na známé zranitelnosti, často způsobem pokus-omyl.
+:c3 ok ex
+--
+<p>&#160;Pravidla přístupu do počítačové sítě (FI) MU</p>
+ :c1 v případě nutnosti je povoleno rekonfigurovat PC, které je pod správou CVT FI.
+ :c2 je zakázáno odposlouchávat provoz a vytvářet kopie poštovních zpráv.
+ :c3 je povoleno provozovat vlastní herní server jen po 22:00.
+ :c4 je třeba volit si dobrá hesla, nezjišťovat hesla jiných.
+ :c5 v počítačových učebnách a na počítačích FI je možné hrát pouze legálně zakoupené hry.
+ :c6 uživatel smí poskytovat jen takové programové vybavení a datové soubory, k nimž vlastní platnou licenci
+:c2 ok ex
+--
+<p>&#160;Co je to profil bezpečnosti (Protection Profile, PP)?</p>
+ :c1 Cílová kombinace komponent jasně profilujících konkrétní hodnocený systém.
+ :c2 Implementačně nezávislá skupina bezpečnostních požadavků určité skupiny předmětu hodnocení.
+ :c3 Implementačně nezávislá skupina bezpečnostních požadavků schválená příslušnou národní autoritou (v ČR NBÚ).
+ :c4 Předmět hodnocení, který již musí být definován formálním profilačním jazykem.
+ :c5 Cílová kombinace komponent spojených s konkrétním produktem nebo systémem.
+ :c6 Produkt nebo systém (či jeho část), který je předmětem hodnocení.
+:c2 ok ex
+--
+<p>&#160;Co je to "Security through obscurity"?</p>
+ :c1 Víra, že pouze dobře utajený algoritmus je bezpečný.
+ :c2 Souhrnný název pro bezpečnostní mechanizmy vybudované na teorii složitosti.
+:c1 ok ex
+--
+<p>&#160;Co je nejčastější příčinou bezpečnostních incidentů?</p>
+ :c1 Chyby (neúmyslné).
+ :c2 Vliv přírody, zdrojů.
+ :c3 Záměrný útok (sabotáž) zaměstnanců (i bývalých).
+ :c4 Vnější útočníci.
+ :c5 Škodlivý software
+:c1 ok ex
+--
+<p>&#160;Které z tvrzení o anonymitní množině neplatí</p>
+ :c1 velikost anonymitní množiny je smysluplný ukazatel.
+ :c2 nezáleží na chování uživatelů v dané skupině.
+ :c3 záleží i na kontextových informacích v systému.
+ :c4 pro určení velikosti anonymitní množiny se užívá entropie.
+:c1:c2 ok ex
+--
+<p>&#160;Onion Routing systémem označujeme</p>
+ :c1 systém poskytující své služby pro různé protokoly.
+ :c2 rezistentní systém pro anonymitní komunikační sítě.
+ :c3 systém pro anonymní komunikaci při použití veřejné sítě.
+ :c4 systém fungující po vrstvách (např. TCP/IP).
+:c1:c3 ok ex
+--
+<p>&#160;Zabezpečení provozu na úrovni IP dosáhnu pokud zvolím:</p>
+ :c1 IPsec
+ :c2 Stunnel
+ :c3 PGP
+ :c4 IPv6
+ :c5 IPv4s
+:c1:c4 ok ex
+--
+<p>&#160;Které z těchto tvrzení je správné, pokud mluvíme o kartách s čipem?</p>
+ :c1 Čip je schopen provádět výpočet a autentizovat se pomocí důkazu nulového rozšíření znalosti.
+ :c2 Lze snadno vytvořit kopii čipu, ale ne současně čipu a magnetického proužku.
+ :c3 Dodatečným mechanizmem ochrany čipu je magnetický proužek.
+ :c4 Bez techniky velmi náročného rozebrání čipu a jeho analýzy není možné vytvořit kopii.
+:c1:c4 ok ex
+--
+<p>&#160;Které z následujích bodů lze zařadit mezi obecné principy pro bezpečnost IT?</p>
+ :c1 Nepoužívejte klíče s délkou < 128 bitů.
+ :c2 Usilujte o jednoduchost
+ :c3 Externí zdroje pokládejte za nebezpečné.
+ :c4 Fyzicky nebo logicky oddělte kritické zdroje.
+ :c5 Nikdy nezveřejňujte kritické bezpečnostní algoritmy.
+:c2:c3:c4 ok ex
+--
+<p>&#160;Pod pojmem riziko rozumíme:</p>
+ :c1 existenci zranitelnosti v systému a přítomnost útočníka, který ji může využít.
+ :c2 pravděpodobnost uplatnění hrozby.
+ :c3 pravděpodobnost odhalení zranitelnosti.
+ :c4 rozsah dopadu uplatnění hrozby.
+:c2 ok ex
+--
+<p>&#160;Řešení pro odesílání anonymních e-mailů jsou založena na:</p>
+ :c1 anonymity před příjemcem lze dosáhnout velmi těžko.
+ :c2 anycastových sítích, remailerech a mixech.
+ :c3 remailerech, u kterých rozlišujeme několik typů (tříd).
+ :c4 broadcastových sítích, remailerech a mixech.
+ :c5 využití účtu na freemailu (Seznam).
+:c3:c4 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Při podpisu bez obnovy dat platí:<br />
+</span></p>
+ :c1 Po provedení podpisu jsou původní data smazána a nelze je obnovit.
+ :c2 Podpis neobsahuje podepisovaná data.
+ :c3 Před provedením podpisu je nutné obnovit podepisovaná data, po provedení podpisu to již bez znalosti soukromého klíče není možné.
+ :c4 Nepodepisují se přímo původní data, ale jejich haš – otisk.
+:c2:c4 ok ex
+--
+<p>&#160;Pro komunikaci mezi jednotlivými Onion Routery (OR) platí</p>
+ :c1 seznam přeposlaných paketů se ukládá.
+ :c2 topologie uzlů připomíná hvězdici s pevně daným středem.
+ :c3 komunikace se šifruje pomocí asymetrické kryptografie.
+ :c4 každý OR odstraní vrstvu paketu dešifrováním.
+ :c5 komunikace se šifruje pomocí šifry se symetrickým klíčem.
+:c1:c4:c5 ok ex
+--
+<p>&#160;Jaký způsob předání veřejného klíče je považován za důvěryhodný:</p>
+ :c1 ověření otisku klíče telefonem.
+ :c2 osobní předání na USB disku.
+ :c3 zaslání emailem s paralelním umístěním na webovou stránku.
+ :c4 vystavení na klíčový server.
+ :c5 zaslání důvěryhodným zprostředkovatelem.
+:c1:c2:c5 ok ex
+--
+<p>&#160;Britská medicínská asociace nařizuje při zakládání nového záznamu pacienta, aby:</p>
+ :c1 Na seznamu přístupů k záznamu byl pouze pacient, další lékaře přidává primář oddělení.
+ :c2 Na seznamu přístupů k záznamu byl pouze ošetřující lékař a pacient.
+ :c3 Na seznamu přístupů do další návštěvy lékaře nebyl nikdo z administrativního personálu.
+:c2 ok ex
+--
+<p>&#160;Britská medicínská asociace nařizuje při práci se záznamy pacientů:</p>
+ :c1 Implementaci opatření zamezujících agregaci dat.
+ :c2 Zaznamenávání veškerých modifikací provedených se záznamy pro potřeby auditu.
+ :c3 Nutnost informovat pacienta (na jeho žádost) o aktuálním stavu seznamu přístupů k jeho záznamu.
+ :c4 Nutnost informovat rodinné příslušníky pacienta (na jejich žádost) o aktuálním stavu seznamu přístupů k jeho záznamu.
+:c1:c2:c3 ok ex
+--
+<p>&#160;PIN je u kreditních karet vyžadován, aby</p>
+ :c1 karta po okopírování šla obtížněji zneužít
+ :c2 celý systém plateb kartami vypadal bezpečněji (ve skutečnosti však bezpečnost vůbec nezvedá - je zde jen pro psychologický efekt)
+ :c3 člověk, který kartu zcizí, ji nemohl snadno použít k platbám karta šla hůře okopírovat
+ :c4 zajistil absolutní ochranu peněz před jakýmkoli útokem na bezpečnost karty
+:c1:c3 ok ex
+--
+<p>&#160;Tvrzení "Systém je chráněn sdíleným heslem" by mohlo označovat</p>
+ :c1 bezpečnostní politiku
+ :c2 útok
+ :c3 hrozbu
+ :c4 riziko
+ :c5 zranitelnost
+:c5 ok ex
+--
+<p>&#160;Citlivé osobní údaje dle české legislativy vypovídají mj. o:</p>
+ :c1 národnostním, rasovém nebo etnickém původu
+ :c2 postoji k trestné činnosti rodinných příslušníků
+ :c3 politických postojích
+ :c4 postoji k trestné činnosti jiných
+:c1:c3 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Bezpečnost použití těchto zařízení pro autentizaci je porovnatelná s bezpečností použití čipových karet</span></p>
+<div>pro stejný účel:</div>
+ :c1 žádná z těchto odpovědi není správná
+ :c2 heslo dlouhé alespoň 8 znaků a vytvořené náhodně ze sady min. 95 znaků
+ :c3 autentizační kalkulačka
+ :c4 certifikovaný USB disk
+:c3 ok ex
+--
+<p>&#160;Mezi vlastnosti Onion Routingu (OR) rozhodně patří</p>
+ :c1 zpoždění komunikace by měla být co nejmenší
+ :c2 využívá se zejména v privátních sítích
+ :c3 závislost na specializovaném hardwaru
+ :c4 neumožňuje komunikaci klient-server
+ :c5 aplikace mohou s OR fungovat bez nutnosti jejich modifikace
+:c1:c5 ok ex
+--
+<p>&#160;Mezi vlastnosti Onion Routingu (OR) rozhodně nepatří</p>
+ :c1 využívá se zejména v privátních sítích.
+ :c2 mezi jednotlivými OR se předávají šifrovaná data.
+ :c3 umožňuje spojení klient-server.
+ :c4 výběr následujícího komunikačního uzlu je nezávislý na uživateli.
+ :c5 komunikační cesta je definována při sestavení komunikačního kanálu.
+:c4 ok ex
+--
+<p>&#160;Pro osobní údaje dle české legislativy platí:</p>
+ :c1 jde-li na základě jednoho či více osobních údajů přímo či nepřímo zjistit identitu subjektu, považuje se subjekt údajů za určený nebo určitelný .
+ :c2 jedná se o jakýkoliv údaj týkající se určeného nebo určitelného subjektu údajů.
+ :c3 zpracovávání osobních údajů je zakázáno, vyjma případů pro osobní potřebu .
+ :c4 dozor nad osobními údaji provádí Policie ČR .
+ :c5 o osobní údaj se nejedná, pokud je třeba ke zjištění identity subjektu údajů nepřiměřené množství času nebo materiálních prostředků.
+:c1:c2:c5 ok ex
+--
+<p>&#160;Které dvě z těchto biometrických technik jsou nejpohodlnější pro uživatele?</p>
+ :c1 EKG
+ :c2 srovnání tváře
+ :c3 vzor oční duhovky
+ :c4 vzor oční sítnice
+:c2:c3 ok ex
+--
+<p>&#160;Jakým způsobem je počítána analýza rizik metodou ALE (Annual Loss Expentancy)</p>
+ :c1 ALE=SLOxARE, kde SLO=Single Loss of Opportunity a ARE=Annualized Rate of Executions
+ :c2 ALE=SLO/ARE, kde SLO=Single Loss of Opportunity a ARE=Annualized Rate of Executions
+ :c3 ALE=SLO+ARE, kde SLO=Single Loss of Opportunity a ARE=Annualized Rate of Executions
+ :c4 ALE=SLE/ARO, kde SLE=Single Loss Expentancy a ARO=Annualized Rate of Occurence
+ :c5 ALE=SLExARO, kde SLE=Single Loss Expentancy a ARO=Annualized Rate of Occurence
+ :c6 ALE=SLE+ARO, kde SLE=Single Loss Expentancy a ARO=Annualized Rate of Occurence
+:c5 ok ex
+--
+<p>&#160;<span class="Apple-style-span" style="font-size: 24px; ">Bylo by možné spolehlivě autentizovat studenta MU na základě trojice celých</span></p>
+<div>čísel výška[cm] : váha[kg] : věk[roky]?</div>
+ :c1 Ano, jde o údaje cizím lidem neznámé.
+ :c2 Ne, MU studentů příliš mnoho, aby toto bylo spolehlivé.
+ :c3 Ano, jde o fyzickou vlastnost (biometrika).
+:c2 ok ex
+--
+<p>&#160;Která z těchto tvrzení jsou správná?</p>
+ :c1 Biometrická data jsou tajná.
+ :c2 Některé biometriky hodně o subjektu vypovídají.
+ :c3 Biometriky v ideálním případě určují identitu člověka přesně a lze tak spojovat jednotlivě jeho činy.
+ :c4 Jeden vzorek lze využít jen v jednom systému.
+:c2:c3 ok ex
+--
+<p>&#160;Digitální pseudonym je řetězec bitů, který:</p>
+ :c1 je unikátní jako ID (s velmi velkou pravděpodobností)
+ :c2 je konstruován přesně v souladu s pravidly stanovenými Úřadem pro ochranu osobních údajů
+ :c3 je použitelný pro autentizaci jeho vlastníka a předmětů zájmu (např. odeslaných zpráv)
+ :c4 by měl být nerozlišitelný od náhodného šumu
+ :c5 si jeho držitel musí bezpodmínečně zapamatovat
+:c1:c3 ok ex
+--
+<p>&#160;Provoz v anonymitní síti</p>
+ :c1 je pro zachování určité míry anonymity nepodstatný
+ :c2 je pro zachování určité míry anonymity důležitý
+ :c3 neobsahuje falešné zprávy
+ :c4 je často zaměňován za falešné zprávy
+ :c5 je často obohacován o falešné zprávy
+:c2:c5 ok ex

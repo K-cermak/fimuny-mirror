@@ -1,0 +1,4 @@
+1) notace BPMN na příkladu
+2) vysvětlit CPI + příklad
+3) nakreslit a popsat referenční model workflow
+4) co to je administrativní proces, popsat účastníky a procesy

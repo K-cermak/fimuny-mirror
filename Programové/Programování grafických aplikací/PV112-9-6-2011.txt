@@ -1,0 +1,12 @@
+Zkouška PV112, 9.6.2011, otázky po 10ti bodech, na E potøeba 30 bodù
+
+1.  Popište kompletní syntax pøíkazù OpenGL a uveïte pøíkla
+2. Popište „Transformace projekce“, uveïte pøíkazy pro práci s nimi a pøíklady 
+použití. Vysvìtlete výpoèet „fovy“. Nápovìda: ??(GLdouble left,GLdouble right, 
+GLdouble bottom,GLdouble top, GLdouble near, GLdouble far), ??(GLdouble 
+fovy, GLdouble aspect, GLdouble zNear, GLdouble zFar).
+3. Uveïte, jakým zpùsobem probíhá výpoèet barev v osvìtlovacím modelu 
+OpenGL.
+4.Co to je Frame Buffer? Z èeho se skládá? Popište obecný zpùsob mazání 
+bufferù v OpenGL.
+5. program - najít chyby a zbyteèné øádky

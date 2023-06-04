@@ -1,0 +1,14 @@
+1) Zdroj Z generuje znaky {a,b,c,d s} pravděpodobností {1/4, 1/2, 1/8, 1/8} a kóduje je popořadě na kódová slova {110, 0, 1110, 1111}.
+	Určete entropii zdroje Z.
+	Určete průměrnou délku kódového slova.
+	Určete zda-li je kód prefixový. Pokud ano, určete zda je optimální.
+
+2) Sestavte 3-ární B strom ze zadaných vyhledávacích klíču 1,2,3,4,5,6,7,8
+
+3) Určete kolik klíčů může být maximálně v 4-árním vyhledávacím stromu.
+
+4) Rozdíl mezi primárním a sekundárním indexem. Může být některý z nich řídký?
+
+5) MAMAMAMASO zákodujte podle Bentleyho. Určete zisk proti kódování 7 bitovým ASCII
+
+6) Hašování do prostoru 13 řádků (m = k mod 13), kolize se řeší lineárním průchodem.

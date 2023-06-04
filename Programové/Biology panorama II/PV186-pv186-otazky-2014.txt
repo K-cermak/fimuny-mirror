@@ -1,0 +1,216 @@
+Jedná se o vypracování všech doposavad zveřejněných otázek s doplněnými otázkami z jarního semestru 2014
+Otázky, které se v různých bězích předmětu v drobných variacích opakovaly jsem sloučil a zobecnil
+Otázky se podobně jako u PV184 dělí na 3 části -- Multiple choice, ANO / NE a psací
+Pokud chcete pomoci budoucím generacím, tak materiál doplňte otázkami z vašeho běhu :-)
+
+1. Hormon melatonin, jaka je jeho funkce u savcu?
+  U savců a vyšších živočichů je melatonin důležitým hormonem ovlivňujícím (cirkadiánní a cirkanuální) bioritmy, spánek a bdění a činnost pohlavních žláz.
+
+2. Rentgen vymyslel Wilhelm Conrad Roentgen?
+  ANO
+
+3. Inzulin je produkovan v: (Kure nadledvin, dren nadledvin, slinivka)?
+  Ve slinivce břišní
+
+4. Mezi zakladni techniky analyzy DNA NEpatri: (PCR, western blotting, flurescencni in situ hybridizace)?
+  Western Blotting
+
+5. Vyjmenuj 3 prirodni halucinogeny:
+  Konopí (THC)
+  Lysohlávka (Psylocibin)
+  Paličkovice nachová (LSD)
+
+6. Vyjmenuj alespon jedno lidske onemocneni zpusobene zmenou poctu chromosomu:
+  Dawnův syndrom
+
+7. Vyjmenuj alespon 3 vnejsi karcinogeny:
+  UV záření            (Fyzikální vnější karcinogen)
+  Heterocyklické aminy (Chemický vnější karcinogen)
+  Onkogenní viry       (Biologický vnější karcinogen)
+
+8. Folikuly stimulujici hormon je produkovan u zen i muzu?
+  ANO -- Ženy: Podporuje růst folikulů a tvorbu estrogenu
+         Muži: Podporuje spermatogenezi
+
+9. Preimplantacni vysetreni pri umelem oplodneni se provadi nejcasteji pomoci: (vysetreni plodove vody, odebranim bunek z embrya, jeste jedna moznost)?
+  Odebráním buněk z embria
+
+10. Mezi tridy imunoglobulinu nepatri: (IgA, IgE, IgH)?
+  IgH
+
+11. Co je kreatinin?
+  Odpadní produkt produkovaný ve svalech při spalování bílkovin
+
+12. Jakakoli latka podana v dostatecne velkem mnozstvi muze byt jedem?
+  ANO ~ Paracelsus
+
+13. Endorfiny a enkefaliny jsou produkovany pouze v mozku?
+  NE -- Endorfiny znikají v mozku, slinivce břišní, placentě a pravděpodobně i v dalších tkáních
+
+14. Technika PCR se provadi behem cyklicky se menici teploty?
+  ANO
+
+15. Vyjmenuj 3 znaky maligni bunky:
+  Soběstačnost v produkci růstových signálů
+  Necitlivost k signálům zastavujícím buněčný cyklus
+  Poškození apoptózy (řízená smrt buňky)
+  Neomezený replikační potenciál
+  Posílení aniogeneze (proces tvorby krevních cév v okolí nádoru)
+  Tvorba metastáz (druhotná nádorová ložiska)
+
+16. Jaky je rozdil mezi mutagenitou a karcinogenitou:
+  Mutageny jsou látky zvyšující pravděpodobnost vzniku genetické mutace
+  Karcinogeny jsou látky zvyšující pravděpodobnost vzniku takové genetické mutace, která má za následek rakovinu
+
+17. Jake jsou v lidskem tele profesionalni fagocyty?
+  Granulocyty
+  Monocyty
+  Makrofágy
+
+18. Zlucove barvivo vznika rozkladem albuminu?
+  NE, rozkladem cholesterolu
+
+19. Vysvetlete pojem antigen:
+  Makromolekulární látka, kterou imunitní systém rozpoznává jako cizí a která je schopna indukovat imunitní odpověď
+
+20. Ktery vitamin neni rozpustny v tucich: (A,E,H)?
+  H -- Vitamíny rozpustné v tucích: A, D, E, K
+       Vitamíny rozpustné ve vodě: B-komplex, C
+
+21. Pocitacova emisni tomografie se NEpouziva ke sledovani: (zanetu, nadoru, funkce mozku)?
+  Zánětu
+
+22. Pocitacova tomografie pouziva: (mikrovlnne zareni, gama, rentgen)?
+  Rentgen
+
+23. Co je cholesterol a jake druhy rozeznavame?
+  Látka podobná tukům -- LDL: Usazuje cholesterol na stěnách tepen a tím snižuje jejich vnitřní průměr
+                         HDL: Vrací přebytek cholesterolu do jater, čímž brání jeho usazování v tepnách
+
+24. Jaký je rozdíl mezi plazmou a sérem?
+  Sérum na rozdíl od plazmy neobsahuje srážlivé faktory
+
+25. Co je angiografie?
+  Snímání cév, žil a srdečních komor s pomocí kontrastních látek
+
+26. Jaký je nejhojnější iont ICT (intracelulárního protředí)?
+  K+
+
+27. Co jsou to nádorové supresory?
+  Skupina cca 40 genů (antionkogenů), jejichž produkty (např. protein p53) zpomalují rychlost množení buněk
+
+28. Co je zánět?
+  Fylogeneticky nejstarší typ obranné a reparační reakce
+  Odpověď organismu na porušení integrity
+  Cílem je: 1) Lokalizovat poškození
+            2) Odstranit poškozující agens
+            3) Regenerovat poškozenou tkáň
+
+29. Uveďte příklady míst, kde lidé zničili přírodu a mělo to vliv na jejich populaci?
+  Velikonoční ostrov -- Populace dramaticky klesla následkem odlesňování
+  Írák -- Podle jedné z hypotéz místní populace vyčerpala svou surovinovou základnu
+
+30. Vyjmenuj 3 vysoce toxické látky:
+  Rtuť, Olovo (Těžké kovy), Kyanid
+
+31. Vyjmenujte fytohormony (rostlinné hormony):
+  Auxiny -- Růstové hormony
+  Brasseinosteroidy: -- Brassinolid, Castasteron, Dolicholid
+    Indukují kvetení, zrání plodu, klíčení semen, tvorbu a růst kořenů, růst pylových láček    
+  Giberlíny -- Stimulují mitózu, růst internodií a květů
+  Kyselina absicová -- Zpomaluje růst rostliny a připravuje ji na období vegetačního klidu
+  Etylén -- Podporuje dozrávání plodů
+
+32. Kdy se projeví AR (autosomálně recesivní) dědičné onemocnění?
+  Jen když potomek získá zasaženou alelu od obou rodičů
+
+33. Proč je u potomků příbuzných vyšší výskyt AR (autosomálně recesivních) dědičných onemocnění?
+  Příbuzní často přenášejí alely týchž onemocnění, díky čemuž stoupá pravděpodobnost, že potomek získá od rodičů obě zasažené alely.
+
+34. Jaká je funkce hormonů?
+  Ovlivňují metabolismus, růst a rozmnožování
+
+35. Proč je při RTG srdce vysoká ionizační zátěž
+  Je třeba udělat velké množství snímků, protože srdeční sval je neustále v pohybu
+
+36. Je X-vázané dědičné onemocnění častější u mužů, než u žen?
+  ANO -- Ženy jsou většinou jen přenašečky
+
+37. Vypište chromozomální aberace
+  Delece -- Část chromozomu chybí
+  Duplikace -- Část chromotomu přebývá
+  Inverze -- Část chromozomu se převrátila
+  Inzerce -- Část chromozomu se přesunula na jiný chromozom
+  Translokace -- Došlo k prohození částí dvou chromozomů
+
+38. Je normální biosféra stabilní?
+  ANO -- Krajina nezasažená člověkem má značnou schopnost seberegulace
+
+39. Jsou všechny mutace škodlivé?
+  NE -- Mutace mohou vést ke zlepšení určitých vlastností
+
+40. Cystická fibróza způsobuje smrt nositele?
+  ANO -- 90% postižených umírá v mládí na plicní selhání
+
+41. Hormony v buňce působí až po navázání na receptor?
+  ANO
+
+42. Co je LD50?
+  Označení pro dávku látky podané testovaným jedincům, která způsobí úhyn 50 % testovaných živočichů do 24 hodin od expozice
+  Obecné značení pro LD (smrtelnou dávku) je následovné: LDXy, kde X -- kolik procent z testovaných zvířat po podání dávky uhynulo
+                                                                   y -- druh zvířat na kterých byl test proveden
+  Dávka se běžně udává na jednotku hmotnosti látky na jednotku hmotnosti těla zvířete (nejběžněji mg/kg)
+
+43. Jaké znáte druhy diabetes?
+  1)  IDDM (Typ 1, Juvenilní) -- Poškozeny buňky produkující inzulín
+  2) NIDDM (Typ 2, Stařecký)  -- Chybějící odezva na inzulín
+  3) Těhotenský
+
+44. GABA (kyselina gama-aminomáselná) vzniká v mozku?
+  ANO
+
+45. Umí viriony obalit sami sebe do modifikované formy jedné z buněčných membrán napadené buňky?
+  ANO -- Viz PV185 / Viry
+  
+46. Sestávají sliny z 50% z vody?
+  NE -- Z 99%
+
+47. Uveď alespoň dva příklady využití genetických modifikací u zvířat.
+  1) Využití v lékařství (produkce lidských bílkovin nutných pro léčbu chorob)
+  2) Zvýšení růstových schopností (prasata, skot, ovce, lososi, ...)
+  3) Zvýšení odolnosti vůči chorobám (odolnost kura proti chřipkovým virům typu A)
+
+48. Jaká rizika se sledují u geneticky modifikovaných potravin?
+  1) Výskyt signálních a selekčních genů
+  2) Toxické účinky
+  3) Alergenní účinky
+  4) Nutriční účinky
+  5) Patogenita
+
+49. Jaká kyselina je produkována v žaludku?
+  HCl -- Kyselina chlorovodíková
+
+50. Ústí slinivka břišní do dvanáctníku?
+  ANO
+
+51. Jaká je funkce pepsinu v žaludku?
+  Štěpí bílkoviny na peptidy
+
+52. Který z uvedených enzymů má silné antibakteriální účinky účinky? (Amyláza, Lysozym, Mucin)
+  Lysozym (Mucin není ani enzym)
+
+53. Z čeho se skládají priony (RNA, DNA, bílkoviny)
+  Bílkoviny
+
+54. Vyžaduje virus chřipky reverzní transkripci?
+  NE -- Chřipka není retrovirem (Viz PV185 / Viry)
+
+55. Jaké jsou dva hlavní cíle ekotoxikologie?
+  1) Poznání interakcí mezi živými organismy a chemickými / toxickými látkami v prostředí na všech úrovních
+  2) Využití poznatků pro racionální ochranu živých organismů, jejich populací, společenstev a ekosystémů před chemickým znečištěním
+
+56. Je Louis Pasteur objevitelem imunizace?
+  ANO (Viz PV185 / Viry)
+
+Je lipofekce metoda vnesení DNA do buňky?
+  ANO

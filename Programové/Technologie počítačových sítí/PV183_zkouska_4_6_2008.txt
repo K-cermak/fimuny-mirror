@@ -1,0 +1,20 @@
+Technologie pocitacovych siti - 4.6.2008
+
+1. Neco vypocitat
+
+2. a) modalni disperze
+   b) MAU (v Ethernet)
+   c) balun
+   d) piconet
+
+3. Komunikace v siti 10Broad36 + typy + obrazek
+
+4. Pristupova metoda v siti IEEE 802.11 s obrazkem
+
+5. Zakodujte 1111001001 podle FSK. Kde se FPK pouziva?
+
+6. 10BaseFL
+
+7. ISDN referencni body
+
+8. ARP + na jakem urovni pracuje v OSI

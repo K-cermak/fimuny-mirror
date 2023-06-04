@@ -1,0 +1,17 @@
+﻿PV062 Organizace souborů - zkouška 25. 5. 2010
+
+1. Zdroj vysílá zprávy z abecedy {1, 5, 6, 9} s pravděpodobnostmi popořadě 1/4, 1/2, 1/8, 1/8 v Eliasově kódování typu 1.
+Určete entropii zdroje.
+Určete průměrnou délku zprávy.
+Je zakódování optimální? Zdůvodněte.
+
+2. Soubor jako abstraktní datový typ (ADT). Uveďte konstruktory, inspektory, modifikátory.
+
+3. V algoritmu LZ77 zakódujte MAMAMAMASO. Jaký bude výstup?
+
+4. Do tabulky o 13 řádcích vkládáte ukazatele na data organizovaná hešovaným indexem s lineárním řešením kolizí. Na kterých řádcích tabulky budou ukazatele na které hodnoty? h = k mod 13 (Uvedeno šest konkrétních hodnot, z toho dvě kolidovaly.)
+
+5. Kolik úrovní má binární vyhledávací strom o 64 uzlech?
+
+6. Jaké procento z celkové paměti přidělené souboru zabere jeho index? Soubor obsahuje 0,5M záznamů, velikost záznamu je 1 KB. Index je bitová mapa, indexovaný atribut může nabývat 10 různých hodnot.
+

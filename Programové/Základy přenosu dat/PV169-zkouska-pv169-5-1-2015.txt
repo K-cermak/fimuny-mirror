@@ -1,0 +1,7 @@
+Zadání PV169 2. termín (5.1.2015):
+1. Vysvětlete princip fungování ADSL a architekturu zapojení modemu?
+2. Vypočítejte frame check sequence CRC kódu ke zprávě 10011, je zadán dělitel x^2 + x^1 + 1
+3. Popište formát rámců T1, proč mají 193 bitů a proč je rychlost přenosu 1,544Mbs?
+4. Vysvětlete metodu získání přístupu k médiu CSMA, naléhající varianta s pravděpodobností P?
+5. Popište techniku řízení přístupu k médiu CDMA?
+6. Popište fungování bitově orientovaného protokolu na přenos rámců bit stuffing?

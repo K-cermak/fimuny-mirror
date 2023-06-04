@@ -1,0 +1,10 @@
+PV169, 12.1.2018 (celkove 3. termin)
+
+1. Jak se zmeni rychlost prenosu pri zdvojnasobeni SNR?
+2. Diagram prenosu Stop-and-Wait: a) 4 ramce bezchybne; b) 4 ramce, ale potvrzeni druheho se ztrati.
+3. Nakresli tvar proudu 100000000 v B8ZS.
+4. Vytvor checksum pro 4567 a BA98 (sestnactkova soustava).
+5. Navrhni Hamminguv kod (5,2) /nepresna formulace/.
+6. Vysvetli sirku sliding window na strane vysilajiciho v Go-Back-N.
+
+(cisla otazek mozna jinak)

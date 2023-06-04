@@ -1,0 +1,55 @@
+PV157 Autentizace a řízení přístupu - polosemestrální písemka 1.4.2014
+8 otázek celkem za 30 bodů
+Všechny odpovědi správně. Správně = *
+
+1.Integrita dat znamená
+- Data nebyla neautorizovaně změněna pouze v průběhu přenosu nezabezpečeným kanálem
+- Data nebyla autorizovaně předána
+* Data nebyla neautorizovaně změněna
+- Data v původní podobě lze obnovit i přesto, že byla modifikována
+
+2.Které z uvedených možností autentizace klienta vůči serveru podporuje protokol ssh?
+* Jména počítačů uvedená v souborech .rhosts nebo hosts.equiv.
+- Využitím protokolu pro nulové rozšíření znalosti.
+* RSA autentizaci klienta.
+- Heslem uživatele bez autentizace serveru.
+
+3.Ukládání hesel lze realizovat
+* Šifrovaně
+- Hlasovaně
+* V otevřené podobě
+- Impulzně
+* Hašovaně
+
+4.Co je to semi-invazivní časová analýza?
+* Žádná z výše uvedených odpovědí.
+- Druh semi-invazivního útoku zneužívající u mnohých čipových karet možnost ovlivnění vstupního hodinového cyklu.
+- Speciální semi-invazivní útok na autentizační kalkulátor s hodinami.
+- Metrika sloužící k určení a vyhodnocení efektivnosti semi-invazivních útoků.
+
+5.Komerční biometrická řešení oproti forenzním nabízí
+- Vyšší přesnost.
+* Možnost opakovaného vytvoření nedostatečně kvalitních registračních vzorků.
+- Uchování zpracovaných charakteristik včetně biometrických vzorků.
+* Plně automatizované systémy.
+
+6."Solení" hesel
+* Pomůže vyřešit situaci, kdy mají uživatelé stejná hesla
+* Zajistí delší efektivní heslo
+- Je dnes již jen velmi zřídka používaná technika
+- Je dodatečná technika při ukládání hesel pro určitou formu identifikace
+
+7.U dynamiky podpisu je důležitý
+* Čas potřebný pro provedení podpisu.
+- Aretačně-dynamický tablet.
+* Pořadí jednotlivých tahů pera.
+- Výsledný podpis.
+
+8.IP spoofing označuje:
+- Zachycení IP odesílatele.
+* Podvržení IP adresy odesílatele.
+- Podvržení IP adresy příjemce.
+- Zachycení IP adresy odesílatele i příjemce.
+
+Pokud vám udělalo radost, že někdo poskytl otázky z minulých let, pokuste se prosím udělat radost i příštím studentům. :)
+Děkuji.

@@ -1,0 +1,6 @@
+1.utlum 10dB vysílaè=5W, pøijímaè=?
+2.zakodovat 100000000100001 8BZS
+3.proè má rámec 193 bit a proè je rychlost 1,544Mb/s (nevzpomenu si u jaky technologie...)
+4.ADSL, proè má øádovì Mb/s, když tel. linka má desitky kB/s
+5.Hammingonova vzdalenost, samooprava 3bit chyb
+6.øízení pøístupu k médiu Rezervation aloha (Explicitní rezervace)

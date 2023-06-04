@@ -1,0 +1,115 @@
+1	Kerckhoffsův princip v současnosti neplatí:
+Jelikož současné délky klíčů neumožňují efektivní útoky hrubou silou.
+Protože dokážeme účinně utajovat šifrovací algoritmy.
+Anžto dokážeme hrubou silou prolomit klíče o délce větší než 80 bitů.
+*Nesmysl, Kerckhoffsův princip platí i v současnosti.
+
+2.	 	Problém živosti pro vstupní zařízení spočívá v tom, že:
+*Žádná z těchto odpovědi není správná.
+Vstupní zařízení není schopno určit, zda vzorek je právě od osoby, která stojí u vstupního zařízeni.
+Vstupní zařízení není schopno určit počet živých osob ve svém perimetru.
+Osoba, která se přihlašuje u vstupního zařízení není schopná určit kam její vzorek bude přeposlán.
+
+3.	 	Jaké jsou základní vlastnosti kvalitativní analýzy rizik?
+*Výstup není v nějaké konkrétní hodnotě, např. v určité částce
+Výstup je lehce srozumitelný
+Výstup je v nějaké konkrétní hodnotě, např. v určité částce
+*Výstup je nesrozumitelný
+Postup není automatizovatelný
+*Postup je do značné míry automatizovatelný
+
+4.	 	Analýza a hodnocení hrozeb zahrnuje:
+Techniky pro implementaci bezpečnostních funkcí chránících ochraňované hodnoty.
+*Vyhodnocení, jaké hrozby hrozí ochraňovaným hodnotám.
+Pravidla a postupy, určující způsob ochrany a zacházení s ochraňovanými hodnotami.
+*Rozvahu, co všechno by mělo být chráněno.
+
+5.	 	Pravidla přístupu do počítačové sítě (FI) MU
+uživatel smí poskytovat jen takové programové vybavení a datové soubory, k nimž vlastní platnou licenci
+je povoleno provozovat vlastní herní server jen po 22:00
+v počítačových učebnách a na počítačích FI je možné hrát pouze legálně zakoupené hry
+*je zakázáno odposlouchávat provoz a vytvářet kopie poštovních zpráv
+*je třeba volit si dobrá hesla, nezjišťovat hesla jiných
+v případě nutnosti je povoleno rekonfigurovat PC, které je pod správou CVT FI
+
+6.	 	Digitální podpis v PGP probíhá tak, že se
+zpráva se podepisuje přímo klíčem dle volby uživatele
+vytvoří haš zprávy, který se podepíše veřejným klíčem příjemce
+vytvoří haš zprávy, který se podepíše veřejným klíčem odesílatele
+*vytvoří haš zprávy, který se podepíše soukromým klíčem odesílatele
+vytvoří haš zprávy, který se podepíše soukromým klíčem příjemce
+
+7.	 	Proti obecným OR (Onion Routing) sítím přináší TOR navíc
+*adresářové servery s informacemi o jednotlivých routerech.
+podporu šifrování dat proudovou šifrou se symetrickým klíčem.
+poskytuje téměř real-time anonymní spojení pro různé služby.
+*podporu skrytých služeb a míst setkání.
+2
+8.	 	V případě, že neoprávnění uživatelé jsou "menší zlo" než neoprávnění uživatelé, nastavíme biometrický systém tak, že bude mít FAR (False Acceptance Rate) a FRR (False Rejection Rate):
+nízkou hodnotu FRR a nízkou hodnotu FAR.
+vysokou hodnotu FRR a vysokou hodnotu FAR.
+*vysokou hodnotu FAR a nízkou hodnotu FRR.
+vysokou hodnotu FRR a nízkou hodnotu FAR.
+
+9.	 	Bezpečnostní politika zahrnuje
+Specifikaci technologických opatření kterými budou prosazovány bezpečnostní požadavky společnosti
+Seznam konkrétních osob, které mají povoleno přistupovat k citlivým datům společnosti
+*Požadavky, pravidla a postupy určující způsob ochrany a zacházení s hodnotami společnosti
+
+10.	 	Existuje nějaký útok na službu TOR, který sníží anonymitu uživatelů?
+*Ano, existuje útok, který může snížit anonymitu uživatelů.
+Ano, existuje útok, který stoprocentně "odanonymizuje" všechny uživatele.
+Ne, žádný takový útok zatím není znám.
+Ne, TOR je navržen tak, aby odolal všem znamým i neznámým typům útoků.
+2
+11.	 	Povinnosti správce osobních údajů:
+vkládat falešné záznamy, aby v případě krádeže dat nebylo možné snadno posoudit jejich validitu
+neposkytovat data třetím stranám před sepsáním Smlouvy o poskytnutí osobních dat
+*stanovit prostředky a způsob zpracování osobních údajů
+archivovat data kódovaně, není-li řečeno jinak
+
+12.	 	Která z uvedených tvrzení jsou pravdivá?
+Symetrická kryptografie se využívá pouze pro šifrování, zatímco asymetrická pouze k podepisování.
+Pokud chceme využít asymetrickou kryptografii k šifrování, musí zůstat oba klíče utajeny.
+Teoreticky lze použít asymetrickou kryptografii i k šifrování, ale v praxi se toho nevyužívá.
+*Symetrická kryptografie využívá jeden klíč sdílený mezi dvěma a více uživateli.
+
+13.	 	Mezi obvyklé bezpečnostní politiky patří:
+Interaplikační bezpečnostní politika
+Integrovaná bezpečnostní politika
+Horizontální bezpečnostní politika
+*Celková bezpečnostní politika
+*Systémová bezpečnostní politika
+
+14.	 	Typické operace na firewallu jsou
+hašovat
+*zakázat
+*povolit
+xorovnat
+
+15.	 	Nepozorovatelnost (podle A.Pfitzmanna - mixy) znamená:
+Že pravděpodobnost spojení prvků v systému je stejná před a po (prů)běhu nějaké posloupnosti událostí v systému.
+Stav, kdy ostatní uživatelé nemohou pozorovat využívání zdrojů systému
+*Stav (daných) předmětů zájmu, kdy nejsou odlišitelné od jiných předmětů zájmu
+
+16.	 	Obvykle nejméně bezpečným bodem během průběhu autentizace v internetovém bankovnictví je:
+*autentizace banky
+autentizace počítače klienta
+autentizace klienta
+
+17.	 	Základní metody autentizace uživatelů jsou založeny na něčem, co
+nemám
+*jsem
+*znám
+
+18.	 	Protokoly SSL/TLS umožňují
+komunikovat anonymně
+*kontrolu integrity přenášených dat
+autentizaci jen a pouze jedné strany
+zajistit nepopiratelnost
+*autentizaci komunikujících stran (klient i server)
+
+19.	 	Proč platební karty s čipem mají magnetický proužek?
+Čip provádí kryptografické operace nad daty uloženými na magnetickém proužku.
+Žádná z těchto odpovědí není správná.
+*Kvůli zpětně kompatibilitě.

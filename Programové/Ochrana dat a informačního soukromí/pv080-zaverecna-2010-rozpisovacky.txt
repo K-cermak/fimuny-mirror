@@ -1,0 +1,21 @@
+Toto su rozpicovacie otazky ku zaverecnej skuske ochrany dat a blabla
+Boli v obehu asi 3-4 verzie, tak ich niekto doplnte ak si pamatate:
+
+tu su dve z nich
+
+Varianta A
+Otazka 1: Popiste Kerckhoffsuv princip (algoritmus verejny, sifra neverejna)
+Otazka 2: Aky je rozdiel medzi el. podpisom a el. znackou (???)
+Otazka 3: Je 128-bitovy kluc pre asymetricke sifrovanie RSA dostatocne bezpecny (nie je, 
+netreba vynalozit neprimerane prostriedky a cas atd)
+
+Variant B
+Otazka 1: Co je to X.509
+Otazka 2: Co je to pseudonym? ake jeho typy poznas? 
+a aky je vztah medzi identitou a vlastnikem?
+
+Variant C
+
+Variant D
+
+to be continued... musime si pomahat ;)

@@ -1,0 +1,12 @@
+1) proè jsou potøeba dvì rùzné kladné potvrzovací odpovìdi v protokolu Stop-and-Wait
+
+2) proè má kódové slovo ASCII znaku 11 bitù 
+
+3) nakreslete konstalaèní diagram pro QAM, aby byla bitová rychlost 4* vìtší než baudová 
+
+4) nakreslete a vysvìtlete pøepínaè na bázi multiplexingu se sbìrnicí 
+
+5) zakódujte danou posloupnost do diferenciálního Manchesteru
+
+6) signál je zadán s(t) = 10*(5000 * PI - PI/4), urèete amplitudu, frekvenci a fázový 
+   posuv ve stupních	

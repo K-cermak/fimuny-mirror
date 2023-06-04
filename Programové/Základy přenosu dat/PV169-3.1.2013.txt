@@ -1,0 +1,20 @@
+ADSL
+	na twisted pair, 256 FDM kanálů s šířkou pásma 4 KHz, kanál 0 = hlas; 1-5 oddělovací; 6-30 upstream, 31-255 down 13. 5 MBps teoretická max.
+
+HBD3 převod
+	Namísto 0000 přijde 000V nebo B00V, střídá se znaménko violation mezi po sobě následujícími nahrazeními
+
+sliding window, proč nemůže mít šířku > 2^k - 1, když je šířka rámce k
+	netušenka	
+
+rts/cts, popsat princip a ilustrovat, jak řeší problém skrytého terminálu
+	- request to send & clear to send, obrázek a kdy se co děje
+
+signál a šum s nějakou voltáží, šířka pásma 4 kHz, vypočítat maximální propustnost
+	(Shanonova věta)
+	myslím, že je třeba s/n umocnit na druhou, když není zadáno výkonem (Watty), ale napětím
+
+časový multiplex 4 kanálů s kapacitami 2b
+	- toto zadání mi přišlo 
+
+

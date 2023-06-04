@@ -1,0 +1,17 @@
+PV169 - 7. ledna 2014 (10:00)
+
+Jaka jse velikost okna u sliding windows a Go-Back-N a proc (2^k - 1)
+
+prevest na b8zs 11000000001100000010
+
+protokol CSMA/CA
+
+blokovy kod
+- v ramci detekovana chyba
+- v ramci detekovana chyba a lze opravit
+- v ramci detekovana chyba a nelze opravit
+- chyba nebyla detekovana (ale je tam)
+
+amplitudova a frekvencni modulace u dig. signalu (ktere z nich je rychlejsi nebo tak nejak)
+
+TDMA - vysvetlit princip

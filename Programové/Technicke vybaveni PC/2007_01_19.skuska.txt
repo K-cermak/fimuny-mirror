@@ -1,0 +1,9 @@
+1. Zakreslit DRAM 2x8, 1 obvod detailne nakreslit a napisat ako pracuje [nacitanie z pamate, zapis do pamate]
+2. Vypisat vsetky strankovacie rezimy procesoru Pentium III
+3. vysvetlite pojmy: hot swap, Server Socket
+4. Nakreslite a popiste seriovy prenost dat, jeho parametre a charakteristicke hodnoty.
+5. Nakreslite a popiste modulacie harddisku na fyzicke ukladanie dat.
+6. Zvukova synteza - druhy, a nakreslit zapojenie repro 7.1
+7. Waheltova trubica [co to dokelu je?! :-D]
+   co vznikne z bielej po odobrani modreho kanala?
+8. Nakreslite a popiste prierez FireWire kabla

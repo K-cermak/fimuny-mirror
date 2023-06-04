@@ -1,0 +1,10 @@
+Otázky ze zkoušky pøedmìtu PV062 dne 20 kvìtna 2013 v 8.00:
+
+1) MAMAMAMASO - huffman a porovnani proti klasickemu kodovani s pevnym poctem bitu na delku slova (napr. ASCII) 
+2) implementace indexu pomoci bitove mapy
+3) vypocet arity m-arniho stromu pri 64000klicich a max delkou hledani 4
+4) vkladani do Bstromu
+5) serie indexu a reseni vyskytu radku pri radek indexu: m = 13 mod K (podle mne stejny pøiklad jako ve slajdech)
+6) vypocet entropie pro 1/2 1/4 1/8 1/8 a jestli je optimalni ci ne
+
+Osobnì doporuèuji projet rámcovì slidy a projít si typové pøíklady. Pøeji hodnì zdaru! Hondráš

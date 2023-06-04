@@ -1,0 +1,1370 @@
+Generátory passcode slouí pro
+ - Urychlení generování sekvenèních èísel
+ * Bezpeèné uloení dlouhodobıch klíèù
+ * Realizaci challenge-response (vızva-odpovìï) protokolu
+ - Personalizaci elektronickıch pasù
+
+Èeskı elektronickı pas druhé generace s autentizací èipu:
+ - Lze naklonovat snadno, pokud známe data z MRZ
+ * Nelze snadno naklonovat (vyaduje získání soukromého klíèe pasu, kterı nelze z pasu vyèíst) a proto klonovaní èeského asu zatím nebylo veøejnì  pøedvedeno.
+ - Lze naklonovat jen pokud spolupracuje skuteènı dritel pasu a zná svùj PIN
+
+Jakı typ pamìtí je typicky pouíván u souèasnıch èipovıch karet?
+ - DRAM
+ * SRAM
+ - GRAM
+ * EEPROM
+
+Které z následujících dìlení modelù øízení pøístupu není pouíváno:
+ * øízené pravidly / náhodné
+ - seznam pøístupovıch oprávnìní (capabilities) / seznam pøístupovıch práv (ACL)
+ * synchronní / asynchronní
+ * symetrické / asymetrické
+ - volitelné / povinné
+ - centralizované / decentralizované
+
+Komerèní biometrická øešení oproti forenzním nabízí
+ * plnì automatizované systémy.
+ * monost opakovaného vytvoøení nedostateènì kvalitních registraèních vzorkù.
+ - vyšší pøesnost.
+ - uchování zpracovanıch charakteristik vèetnì biometrickıch vzorkù.
+
+Slabá bezkoliznost u hašovacích funkcí znamená
+ * Pro dané x nejsme schopni v rozumném èase najít y!=x tak, e h(x)=h(y)
+ - Pro dané x nejsme schopni v rozumném èase najít y!=x tak, e h(x)=y
+ - Pro dané x nejsme schopni v rozumném èase najít y!=x tak, e x=h(y)
+ - V rozumném èase nejsme schopni nalézt x, y (x=y) tak, e h(x)!=h(y)
+
+Z jakıch šifrovacích algoritmù se obvykle tvoøí hašovací funkce?
+ - Asymetrická šifra
+ - Hašovací funkci nelze vytvoøit z ádného šifrovacího algoritmu
+ - Proudová symetrická šifra
+ * Bloková symetrická šifra
+
+Biometriky jsou
+ * automatizované metody identifikace nebo ovìøení identity.
+ * zaloeny na opakovatelnì mìøitelnıch fyziologickıch nebo behaviorálních vlastnostech èlovìka.
+ - zaloeny na neopakovatelnì mìøitelnıch fyziologickıch nebo behaviorálních vlastnostech èlovìka.
+ - i metody identifikace pomocí èipové karty obsahující vzorky èlovìka.
+
+V tiketu pouívaném v systému Kerberos se objevuje:
+ * Identifikátor alespoò jedné ze stran
+ - Soukromı klíè
+ - Náhodná vızva
+ * Èasové razítko
+
+Øízení pøístupu, pøi nìm vlastník rozhoduje o pøístupech ke svım souborùm, se nazıvá:
+ - Princip maximálních privilegií.
+ - Flexibilní øízení pøístupu.
+ * Volitelné øízení pøístupu.
+ - Povinné øízení pøístupu.
+
+Útok na èipové karty pomocí èasové analızy vyuívá:
+ * Délka operace v závislosti na vykonané vìtvi kódu.
+ * Délka operace v závislosti na zpracovávanıch datech.
+ - Závislost prùbìhu odbìru proudu na provádìné instrukci.
+ - Závislost prùbìhu odbìru proudu na zpracovávanıch datech.
+
+Mezi vlastnosti (axiomy) modelu Bell-LaPadula patøí
+ * procesy nesmìjí zapisovat data do niší úrovnì
+ * procesy nesmìjí èíst data na vyšší úrovni
+ - procesy nesmìjí èíst data z niší úrovnì
+
+Nìmeckı elektronickı pas druhé generace s autentizací èipu:
+ - Lze naklonovat snadno, pokud známe data z MRZ
+ * Nelze snadno naklonovat (vyaduje získání soukromého klíèe pasu, kterı nelze z pasu vyèíst).
+ - Lze naklonovat jen pokud spolupracuje skuteènı dritel pasu a zná svùj PIN
+
+Soubor /etc/shadow obsahuje
+ - Informaci o délce hesla
+ - Datum a èas posledního úspìšného pøihlášení do systému
+ - Poèet neúspìšnıch pokusù o zadání hesla
+ * Haše hesel uivatelù
+ - Informaci o tom, e haše hesel jsou v souboru /etc/passwd
+
+Snímaèe otiskù prstù jsou
+ - inkoustové (tryskové)
+ * kapacitní
+ - polyadické
+ * optické
+
+Která z uvedenıch tvrzení jsou pravdivá:
+ - Autentizace pomocí IP adresy mùe bıt pouita pouze v kombinaci s MAC adresou.
+ - Autentizace pomocí IP adresy je vıraznì bezpeènìjší ne autentizace pomocí MAC adresy.
+ - Autentizace pomocí IP adresy je vıraznì ménì bezpeèná ne autentizace pomocí MAC adresy.
+ * Autentizace pomocí IP adresy není spolehlivá, protoe IP mùe bıt zmìnìna.
+
+Protokol Kerberos zajišuje
+ * Autentizaci
+ - Aprobaci
+ - Autokracii
+ - Akumulaci
+
+Pro statickou autentizaci dat (SDA) platí, e:
+ * Potvrzuje pravost pouze statickıch dat uloenıch v èipové kartì.
+ * Je provádìna pouze platebním terminálem (èip pouze zasílá data)
+ - Øeší problém padìlání/duplikace karet
+ - Potvrzuje pravost statickıch dat uloenıch v èipové kartì, ale i dynamickıch dat zaslanıch terminálem
+ - Je provádìna pouze èipovou kartou (terminál pouze zasílá data)
+ - Potvrzuje pravost statickıch uloenıch v èipové kartì, ale i dynamickıch dat zaslanıch èipem
+
+V souèasnıch SIM (Subscriber Identity Module) kartách pro GSM sítì je uloen:
+ - Statická aplikaèní data a veøejnı certifikát operátora
+ - Asymetrickı klíè
+ * Symetrickı klíè
+ - Statická aplikaèní data podepsána soukromım klíèem karty
+
+Jaká technologie pøihlašování do systému e-bankovnictví (a autorizace transakcí) je nejbezpeènìjší (z nabízenıch moností)?
+ * Pouití autentizaèního kalkulátoru s PINem
+ - Pouití hesla zadaného èásteènì na klávesnici a èásteènì na virtuální klávesnici
+ - Pouití šifrované autentizaèní SMS (tj. s vyuitím SIM Toolkitu)
+ - Pouití klientského certifikátu, kterı je uloen na èipové kartì s pøístupem chránìnım PINem
+
+Která z následujících tvrzení jsou platná pro protokol SSL/TLS?
+ - Implicitnì je autentizace serveru i klienta vypnuta.
+ * SSL/TLS protokol neprovádí elektronické podepisování dat.
+ - Implicitnì je autentizace serveru a klienta povinná.
+ * Implicitnì je autentizace serveru povinná, autentizace klienta je volitelná.
+
+Která z uvedenıch tvrzení o uivatelovì PINu jsou pravdivá (pøi standardním nastavení karty)?
+ * Pøi zmìnì nezablokovaného PINu je tøeba zadat starı i novı uivatelskı PIN.
+ - Pøi zmìnì nezablokovaného PINu staèí zadat novı uivatelskı PIN.
+ - Pøi zmìnì zablokovaného PINu je tøeba zadat starı i novı uivatelskı PIN.
+ * Pøi zmìnì zablokovaného PINu je tøeba zadat odblokovací PIN a novı uivatelskı PIN.
+
+Praktické problémy biometrik jsou
+ * uivatelé s poškozenımi èi chybìjícími orgány.
+ * legislativa a správa charakteristik.
+ - nízké FRR (nespokojení uivatelé z dùvodu èastého odmítnutí).
+ - nízké FAR (aplikace s nízkou úrovní bezpeènosti).
+
+Autentizace dat znamená
+ - Toté co integrita
+ * Potvrzení, e data nebyla neautorizovanì zmìnìna od doby vytvoøení
+ * Potvrzení, e data pochází od urèitého subjektu
+ - Data nemohl odeslat nikdo jinı ne jejich pùvodce
+
+Jaké kryptografické techniky lze vyuít pro implementaci autentizace èipu (jako souèást EAC) u elektronickıch pasù?
+ - SHA-1 a 3DES
+ * Diffie-Hellman
+ - SHA-1 a DSA
+ - Fiat-Shamir
+ - PGP
+ - SHA-2 a AES
+
+Detekcí narušení se u èipovıch karet myslí:
+ - Po narušení jsou stopy narušení obtínì odstranitelné.
+ - Odolnost proti pokusùm o zjištìní robustnosti vùèi fyzickım útokùm.
+ * Vlastnost èásti systému umoòující detekovat fyzickı útok.
+ - Pøi zjištìní narušení je automaticky provedena chránìnou èásti obranná akce.
+
+Odpovìdí na narušení se u èipovıch karet myslí:
+ * Automatická akce provedená chránìnou èástí pøi detekci pokusu o narušení.
+ - Po úspìšném provedení narušení jsou stopy narušení odstranìny.
+ - Vlastnost èásti systému umoòující detekovat fyzickı útok.
+ - Akce provedená bezpeènostním administrátorem po zjištìní pokusu o narušení.
+
+Bìné komerèní biometrické zaøízení
+ - je vybaveno detekcí prùniku nebo má zvıšenou odolnost proti prùniku.
+ - typicky dobøe šifruje pøenášená data pomocí kvalitních algoritmù.
+ * se neautentizuje vùèi dalším komunikujícím.
+
+Které z uvedenıch reimù nepodporuje IPsec:
+ - Transportní reim.
+ * Dynamickı virtuální reim.
+ - Tunelovací reim.
+ * Pøekladovı reim.
+
+Kterı z vırokù o autentizaci na základì dynamiky psaní na klávesnici je pravdivı?
+ * Mìøí se èas stlaèení klávesy a èas mezi stisky kláves.
+ * Uivatele je mono autentizovat kontinuálnì.
+ * K autentizaci staèí bìná klávesnice.
+ * Algoritmy pracují na principu srovnávání vzorù (pattern matching) nebo neuronovıch sítí (neural networks).
+
+Na jakém problému je zaloena bezpeènost RSA
+ - Obchodní cestující
+ - Eliptické køivky
+ * Faktorizace èísel
+ - Diskrétní logaritmus
+
+Jednosmìrnost u kryptografickıch hašovacích funkcí znamená
+ - V rozumném èase nejsme schopni najít x, y tak, aby h(x)=h(y)
+ * Pro dané y nelze v rozumném èase najít x tak, aby h(x)=y
+ - Pro dané h(y) nelze v rozumném èase najít x tak, aby h(x)=h(y)
+ - Pro dané y lze v rozumném èase najít x tak, aby h(x)=y
+
+Které z uvedenıch kategorií èipovıch karet podle technologie komunikace rozlišujeme?
+ - Hybridní karty.
+ * Bezkontaktní karty.
+ * Konktaktní karty.
+ - Polymorfní karty.
+
+Na jakém druhu kryptografie je zaloena základní verze Kerbera?
+ - Hybridní
+ * Symetrická
+ - Asymetrická
+
+Biometrické charakteristiky se dìlí na
+ - geotypické
+ * genotypické
+ - biomatické
+ * fenotypické
+
+Aktualizace klíèe se vzájemnou autentizací protokolem AKEP2 (Authenticated Key Exchange
+ - Protocol 2) je zaloena na:
+ - Generátorech passcode
+ * Algoritmu MAC (Message Authentication Code)
+ - Digitálních podpisech
+ - Bezklíèovıch kryptografickıch hašovacích funkcích
+
+Jaká primární autentizaèní metoda slouí k automatizované verifikaci identity pøedkladatele pasu?
+ - Znalost tajemství (v tomto pøípadì PINu) zakódovaného v MRZ
+ - Znalost tajemství ovìøená pomocí protokolu vızva-odpovìï
+ - V èipu zakódovanı 128bitovı identifikátor (platnı typicky 10 let)
+ * Biometriky (oblièej, otisk prstu, duhovka)
+
+Které protokoly umoòují vytvoøení sdíleného tajemství?
+ * Protokoly pro ustavení klíèe
+ * Protokoly implementované v Kerberu
+ - Zero-knowledge protokoly (protokoly s nulovım rozšíøením znalostí)
+ - Silné autentizaèní protokoly
+
+Pro ovìøení japonského elektronického pasu na èeskıch hranicích je tøeba:
+ - CSCA certifikát ÈR, kterı je tøeba pøedem získat diplomatickımi prostøedky
+ - CSCA certifikát Japonska, kterı si dritel pasu mùe pøinést na CD nebo USB flash disku
+ * CSCA certifikát Japonska, kterı je tøeba pøedem získat diplomatickımi prostøedky
+ * DS certifikát, kterı je moné vyèíst z pasu
+ - CSCA certifikát Japonska, kterı je moné vyèíst z pasu
+ - DS certifikát, kterı kterı si dritel pasu musí pøinést na CD nebo USB flash disku
+
+Co je to narozeninovı paradox?
+ * Lze jej ilustrovat faktem, e v sále s 23 lidmi je pravdìpodobnost stejného data narození dvou lidí vìtší ne 50 %
+ - Situace, kdy se zaèátkem rokù rodí víc muù ne en
+ - Pravdìpodobnost nalezení stejného data narození k pevnì zvolenému datu je pøi 23 lidech vìtší ne 50 %
+ * Statisticky podloená vysoká úspìšnost nalezení kolize
+
+Které z uvedenıch kategorií èipovıch karet podle technologie uchování a práce s daty rozlišujeme?
+ * Pamìové karty se speciální logikou.
+ - Karty s magnetickım proukem.
+ * Pamìové karty.
+ * Procesorové karty.
+
+Oèní duhovka je snímána pomocí
+ - ultrafialového paprsku.
+ * èernobílé kamery.
+ - kvalitní barevné kamery.
+ - laserového paprsku s tøídou bezpeènosti 1.
+
+Mezi chyby biometrickıch systémù patøí
+ - ARR (Acceptance Rejection Rate)
+ - EDR (Error Disqualification Rate)
+ * FAR (False Acceptance Rate)
+ * FRR (False Rejection Rate)
+
+Jaké jsou monosti prevence padìlání tokenù?
+ * Modifikace dostupného vybavení (modifikace vybranıch barev u kopírky, vkládání identifikátoru).
+ - Utajení všech informací nutnıch ke konstrukci tokenu.
+ * Utajení nìkterıch informací nutnıch ke konstrukci tokenu.
+ - Èestné prohlášení všech uivatelù systému.
+ * Kontrola a licence souvisejících ivností.
+ * Omezení dostupnosti potøebného vybavení.
+
+Digitální podpis ovìøíme pomocí
+ * Veøejného klíèe podepisující osoby
+ - Soukromého klíèe podepisující osoby
+ - Privátního klíèe podepisující osoby
+ * Certifikátu veøejného klíèe podepisující osoby
+ - Klíèe sdíleného s podepisující osobou
+
+Které èasovì promìnné parametry se pouívají v kryptografickıch protokolech?
+ - Monoliticky rostoucí sekvence
+ - Náhodná komplexní èísla
+ - Náhodné sekvence
+ - Náhodná èasová razítka
+ * Náhodná èísla
+ * Èasová razítka
+
+Èasová razítkaK èemu slouí soubor .rhosts?
+ * K nastavení adres poèítaèù s povolenım pøihlášením bez další autentizace .
+ - Uchování informací o adresách autentizovanıch poèítaèù pøipojenıch k serveru.
+ - K uchování uivatelù s právem èíst (read).
+ - K uchování RSA klíèe(ù) serveru.
+
+Digitální podpis mùe vytvoøit
+ - Pouze osoba vlastnící sdílenı klíè
+ * Pouze osoba vlastnící soukromı klíè
+ - Pouze osoba vlastnící veøejnı klíè
+ - Pouze osoba vlastnící certifikovanı klíè
+
+Které biometrické charakteristiky bıvají nazıvány také dynamickımi?
+ - fyziologické
+ - genotypické
+ * behaviorální
+ - fenotypické
+
+Které z uvedenıch útokù na èipové karty nepatøí mezi fyzické útoky?
+ - Preparace èipu
+ * Odbìrová analıza
+ - Ozaøování èipu
+ * Èasová analıza
+
+Jakı je u ssh rozdíl mezi Server key a Host key?
+ - Server key je krátkodobı klíè pouitı pro odvození Host key.
+ * Host key je dlouhodobı klíè.
+ * Server key je krátkodobı klíè pouitı pro vlastní autentizaci serveru.
+ - Host key je krátkodobı klíè pouitı pro vlastní autentizaci serveru.
+
+Co nepatøí mezi mechanizmy zabraòující jednodušším útokùm na e-bankovnictví s autentizací pouze na základì hesla? 
+ * Anonymizovanı login
+ - testy délky a kvality hesla
+ - Virtuální klávesnice pro zadávání hesla
+ * SSH certifikáty
+ - Personalizovanı login
+ - SSL certifikáty
+
+Jaké typy záznamù lze pouívat na èipové kartì?
+ * Nestrukturovaná data.
+ - Exponenciální záznam s pevnou délkou.
+ * Lineární záznamy s pevnou nebo variabilní délkou.
+ * Cyklické záznamy.
+
+Biometrické technologie mohou bıt zaloeny na nìkterém z tìchto typù charakteristik:
+ * fyziologickı
+ - morální
+ - environmentální
+ * behaviorální
+ - chemoterapickı
+
+Co je to zaruèenı elektronickı podpis
+ * Jednoznaènì ovìøitelnı podpis
+ - Podpis, kterı má záruky srovnatelné jako elektronickı podpis
+ - Elektronickı podpis, za kterı se dokáeme nìjak dùvìryhodnì zaruèit
+ * Podpis vytoøenı pomocí kryptografickıch prostøedkù
+
+Která tvrzení platí pro elektronickou znaèku 
+ * Elektronické znaèky jsou jednoznaènì spojené s oznaèující osobou a umoòují její identifikaci prostøednictvím kvalifikovaného systémového certifikátu
+ * Technologicky jde o toté co zaruèenı elektronickı podpis
+ - Ovìøení elektronické znaèky je obtínìjší ne ovìøení elektronického podpisu
+ * Elektronická znaèka je ke zprávì pøipojena tak, e je moné detekovat následné zmìny ve zprávì
+
+Co je to Chaffing and winnowing
+ * Pro kadı bit zprávy vytvoøíme dvì zprávy (správnı, chybnı MAC), pøíjemce si ponechá zprávu se správnım MAC
+ - Zprávu rozdìlíme na jednotlivé bity a ty šifrujeme z vyuitím MAC kadı zvláš
+ - Kadı bit zprávy zkopírujeme nìkolikrát za sebe, aby se pøedešlo chybám v dùsledku chybovosti MAC komunikaèního kanálu
+ * "Oddìlení zrna od plev"
+
+Jaké jsou obecné nevıhody tokenù?
+ - Cena tokenù je pøíliš vysoká pro komerèní vyuití.
+ * Bez tokenu není autorizovanı uivatel rozpoznán.
+ - Ztráta tokenu vede vìtšinou ke kompromitaci celého systému.
+ * Ke kontrole je obvykle tøeba speciální èteèka nebo vycvièená osoba.
+
+V dobrıch autentizaèních protokolech se typicky 
+ * Heslo posílá v hašované podobì
+ * Heslo neposílá vùbec
+ - Heslo posílá v otevøené podobì
+
+Proces pouití biometrik pro autentizaci zahrnuje
+ * registraci
+ * verifikaci
+ - degustaci
+ - demonstraci
+
+Decentralizovaná správa øízení pøístupu k objektu znamená
+ - klíè (totonı) od budovy má víc lidí
+ * pøístupová práva nastavují pøíslušní vlastníci jednotlivıch objektù
+ - obtínou komunikaci mezi driteli jednotlivıch èástí pøístupového hesla èi jiného tokenu
+ - pro pøístup k objektu je tøeba shromádit hesla èi jiné tokeny rozdistribuované mezi více lidí
+ - øízení pøístupu provádí více autorizaèních systémù zaráz
+
+Co je to semi-invazivní èasová analıza?
+ - Druh semi-invazivního útoku zneuívající u mnohıch èipovıch karet monost ovlivnìní vstupního hodinového cyklu.
+ - Speciální semi-invazivní útok na autentizaèní kalkulátor s hodinami.
+ * ádná z vıše uvedenıch odpovìdí.
+ - Metrika slouící k urèení a vyhodnocení efektivnosti semi-invazivních útokù.
+
+Útok na èipové karty pomocí indukce chyb je zaloen na:
+ * Vyuití chybného bìhu algoritmu po prudkém ovlivnìní vnìjších podmínek k získání tajnıch dat.
+ * Vyuití indukce chyb po prudkém ovlivnìní vnìjších podmínek k testování zmìny chování algoritmu.
+ - Jako první krok útoku je provedeno fyzického poškození.
+ - Vyuití opravnıch kódù pro automatické odstranìní chyby po prudkém ovlivnìní vnìjších podmínek.
+
+Jaké jsou hlavní vıhody biometrik
+ * rychlé a (relativnì) pøesné vısledky.
+ * nemùeme je ztratit, zapomenout nebo pøedat jiné osobì.
+ - jsou tajné.
+ - jednoduchá správa vzorkù.
+
+Jakı mechanismus je pouit pro zajištìní bezpeènosti v autentizaèní hlavièce IPsec?
+ * Message Authentication Code se sekvenèním èíslem.
+ - Diffie-Hellman autentizace bez klíèù.
+ - Message Authentication Code s náhodnım èíslem.
+ - Digitální podpis vyuívající RSA nebo DSA.
+
+Co patøí mezi bezpeènostní problémy pouívání bankovních karet s èipem?
+ * Monost odpozorování PINu na frekventovanıch místech.
+ - Špatná prùkaznost nelegitimní autorizace platby pomocí PINu.
+ - Velká obtínost kopírování karty.
+ - Vıpoèetní vıkon nepostaèuje pro kryptografické zabezpeèení transakcí.
+
+Na co není vıhodné pouít biometriky 
+ * na autentizaci dat.
+ - na ochranu pøístupu k tajnému klíèi.
+ - na doplòkovou formu autentizace.
+
+Na jaké vrstvì funguje protokol SSL/TLS?
+ * mez aplikaèní a datovou vrstvou
+ - na linkové vrstvì
+ - na síové vrstvì
+ - na datové vrstvì
+
+Jaké vlastnosti má základní øízení pøístupu (BAC) u elektronickıch pasù? 
+ * Tajnı klíè lze získat z dat v MRZ
+ * Umoòuje ustavení sdíleného symetrického klíèe
+ - Tajnı klíè lze získat pouze z dat uloenıch v èipu
+ - Umoòuje explicitní autorizace pro pøístup k citlivım datùm
+
+Úspìšné odposlechnutí citlivıch dat ze sbìrnice platebního terminálu mùe vést: 
+ - K pøeètení citlivıch iformací banky (sdílené tajné klíèe uloené v terminálu)
+ * K modifikaci nepodepsaného seznamu podporovanıch verifikaèních metod (CVM)
+ * K získání pøesné kopie dat na magnetickém prouku
+ * K získání PINu
+ - K narušení anonymity jednotlivıch komunikujících stran
+ - K modifikaci podepsaného seznamu podporovanıch verifikaèních metod (CVM)
+
+Autentizace v soudobıch systémech e-bankovnictví je vıhradnì
+ - Tøífaktorová
+ * ádná z dalších odpovìdí není správnì
+ - Dvoufaktorová
+ - Jednofaktorová
+
+Forenzní øešení biometrik popisují tyto vıroky
+ - vısledek identifikace je získán obvykle za 1s èi rychleji.
+ - miniaturizace zaøízení je jedním z hlavním cílù.
+ * pro pouívání je nutná odborná znalost systému.
+ * cena je vysoká, ale s tím se poèítá.
+
+Soubor /etc/passwd mùe obsahovat
+ - Datum a èas posledního úspìšného pøihlášení do systému
+ - Poèet zbıvajících neúspìšnıch pokusù o zadání hesla
+ * Haše hesel uivatelù
+ - Informaci o délce hesla
+ * Informaci o tom, e haše hesel jsou v souboru /etc/shadow
+
+Pro autentizaci obrazovou informací platí
+ - Uivatel musí správnì vybarvit pøedloenı obrázek
+ - Uivatel musí do systému nahrát správnı obrázek
+ - Uivatel musí systému slovnì popsat obrázek slouící k autentizaci
+ * Uivatel musí vybrat správnı obrázek nebo jeho èást
+
+Na èem podle specifikace EMV závisí dohoda autentizaèní metody uivatele?
+ - Rozhodnutí pøísluší plnì platebnímu terminálu
+ * Na prioritnì uspoøádaném seznamu podporovanıch verifikaèních metod (CVM)
+ - Na tom, zdali má bıt provádìna transakce online èi offline
+ - Na konkrétní implementaci statické, dynamické èi kombinované autentizace dat
+
+Pro bezpeèné pouívání digitálního podpisu
+ - Je nutné zajistit integritu privátního klíèe
+ * Je nutné zajistit integritu veøejného klíèe
+ * Je nutné udret privátní klíè v tajnosti
+ - Je nutné udret veøejnı klíè v tajnosti
+
+V souèasnıch èeskıch elektronickıch pasech musí bıt uloeny soubory obsahující: 
+ - Kvalifikovanı certifikát dritele pasu (vydanı akreditovanou CA)
+ - Haš soukromého klíèe èipu, zajišující integritu daného klíèe
+ * Digitálnì podepsané haše všech tzv. DG souborù
+ * Barevnou fotografii dritele pasu (formát JPEG/JPG2000) a otisky prstù (komprese WSQ)
+
+Co je vyadováno pro autentizaci transakce pøi offline verifikaci se šifrováním PINu?
+ * Originální PIN nutnı pro verifikaci, kterı musí bıt bezpeènì uloen v èipu
+ * Fyzicky i prostøedím dobøe zabezpeèenı PINpad
+ - Úspìšné probìhnutí automatické správy rizik
+ * Novı RSA pár klíèù pro šifrování PINù
+
+Jaké jsou obecné vıhody tokenù?
+ * Rychlé zjištìní ztráty.
+ * Mohou zpracovávat a pøenášet další informace.
+ - Nikdy je nelze zneuít po náhodném nálezu.
+ * Vìtšinou nejsou jednoduše -  kopírovatelné.
+
+Která z následujících tvrzení jsou platná pro protokol SSL/TLS? !!!
+ - Autentizace komunikujících stran je zaloena na symetrické kryptografii.
+ * Po prùbìhu Handshake protokolu je komunikace šifrována symetrickım klíèem.
+ * SSL/TLS protokol zajišuje integritu a autenticitu dat.
+ - Po úvodní Handshake protokolu je komunikace šifrována veøejnım klíèem pøíjemce.
+
+Jaké jsou typické velikosti pamìtí u souèasnıch èipovıch karet?
+ - < 100KB RAM, < 100KB ROM, > 1MB EEPROM
+ - > 256KB RAM, ~100KB ROM, < 100KB EEPROM
+ - ~128KB RAM, ~512KB ROM, ~512KB EEPROM
+ * < 10KB RAM, ~100KB ROM, < 100KB EEPROM
+
+Z jakého dùvodu se pouívá Server key namísto Host key pro vlastní autentizaci u SSH?
+ - Zrychlení procesu autentizace klienta vùèi serveru.
+ - Pro zajištìní kompatibility s protokolem telnet.
+ * Ochrana dlouhodobého klíèe Host key pøed kompromitováním.
+ - Zrychlení procesu autentizace serveru vùèi klientovi.
+
+Které z protokolù se v souèasnosti v bìnıch aplikacích vyuívají více?
+ * Challenge-response protokoly (protokoly vızva-odpovìï)
+ - Zero-knowledge protokoly (protokoly s nulovım rozšíøením znalostí)
+
+Biometrická data pøi opakovaném mìøení kvalitním zaøízením
+ - jsou vdy shodná na 99 % a víc.
+ * nejsou nikdy shodná na 100 %.
+ - nejsou nikdy shodná na 100 % a na otisky prstù.
+ - jsou typicky shodná na 100 %.
+
+IP spoofing oznaèuje:
+ - Podvrení IP adresy pøíjemce.
+ - Zachycení IP adresy odesílatele i pøíjemce.
+ - Zachycení IP odesílatele.
+ * Podvrení IP adresy odesílatele.
+
+Která z uvedenıch tvrzení o autentizaèních kalkulátorech jsou pravdivá?
+ * Pøístup k vyuití kalkulátoru mùe bıt chránìn PINem.
+ * Pracují na principu protokolu vızva/odpovìï s vyuitím tajné informace.
+ - Kalkulátor nelze zneuít i pøi znalosti PINu.
+ * Vızva je zadávána manuálnì nebo automaticky naètena z vhodného média.
+
+Odolností vùèi narušení se u èipovıch karet myslí:
+ - Automatická akce provedená chránìnou èástí pøi zjištìní pokusu o narušení.
+ - Vlastnost èásti systému umoòující detekovat fyzickı útok.
+ * Vlastnost èásti systému chránìné proti neautorizované modifikaci podstatnì lépe ne zbylá èást systému.
+ - Ochrana proti útoku rušením radiového signálu (RFID).
+
+Proè je u tokenù zaloenıch na hodinách potøeba øešit otázku posuvu hodin?
+ - Pravım dùvodem je pøechod na letní/zimní èas a pøestupné roky.
+ - ádná z vıše uvedenıch odpovìdí.
+ * Nutnost synchronizace drobnıch odchylek mezi serverem a tokenem.
+
+Matice pøístupovıch práv
+ - je reprezentace standardních pøístupovıch práv v unixovıch OS (RWX-RWX-RWX)
+ - zaznamenává pro kadı objekt a kadı subjekt údaje o èase, trvání, ... pøístupu daného subjektu k danému objektu
+ * má alespoò dva rozmìry - subjekt a objekt
+ - mùe mít i tøi rozmìry - subjekt, objekt a uivatel
+ * definuje pøinejmenším to, jaká pøístupová práva mají jednotlivé subjekty k jednotlivım objektùm
+
+Které z uvedenıch útokù na èipové karty nepatøí mezi logické útoky?
+ - Èasová analıza
+ - Útok pøes aplikaèní rozhraní
+ * Ozaøování èipu
+ * Preparace èipu
+
+Autentizace pomocí verifikace hlasu probíhá typicky
+ * pomocí bìného mikrofonu.
+ - pomocí soustavy mikrofonù rozmístìnıch ve vzdálenosti cca 0,5 m ve 4 smìrech.
+ - v samostatné odhluènìné komoøe, pro odstranìní okolního šumu.
+ * vyuitím telefonu.
+
+Které z uvedenıch typù autentizaèních kalkulátorù se pouívají v IT bezpeènosti?
+ * Kalkulátor s hodinami.
+ * Kalkulátor s tajnou informací.
+ * Kalkulátor bez vstupní klávesnice.
+ - Kalkulátor s vestavìnım budíkem (z angl. embedded alarm).
+
+Pro ss-vlastnost modelu Bell-LaPadula platí: 
+ - je povaována za nebezpeènou a není doporuèováno ji pouívat
+ * úèelem je ochránit dùvìrnost citlivıch dat
+ - procesy nesmìjí zapisovat data do niší úrovnì
+ - zachovává integritu dat
+ * procesy nesmìjí èíst data na vyšší úrovni
+
+Které z vırokù o autentizaci na základì rozpoznání oblièeje nejsou pravdivé?
+ - Autentizaci komplikuje osvìtlení a pozadí.
+ * Pøesnost se v posledních 5 letech pøíliš nezlepšila.
+ - Jedná se o velice vıpoèetnì nároènou metodu autentizace.
+ - Autentizaci komplikuje zmìna úèesu, náušnice a brıle.
+
+"Solení" hesel
+ * Pomùe vyøešit situaci, kdy mají uivatelé stejná hesla
+ * Zajistí delší efektivní heslo
+ - Je dodateèná technika pøi ukládání hesel pro urèitou formu identifikace
+ - Je dnes ji jen velmi zøídka pouívaná technika
+
+Útok na èipové karty pomocí odbìrové analızy vyuívá: 
+ * Závislost prùbìhu odbìru proudu na ukládanıch datech do pamìti EEPROM.
+ - Data získaná odbìrem vzorku pamìti EEPROM.
+ * Závislost prùbìhu odbìru proudu na zpracovávanıch datech.
+ * Závislost prùbìhu odbìru proudu na provádìné instrukci.
+
+Co je to CVV2?
+ - Druhı kontrolní souèet uloenı na magnetickém prouku (slouí k detekci dvoubitovıch a opravì jednobitovıch chyb)
+ * Hodnota vytištìná na zadní stranì karty (slouící jako dodateènı zabezpeèovací mechanizmus pro platby kartou pøes Internet)
+
+Pokud ukládáme hesla šifrovanì
+ * Musíme vìøit administrátorovi
+ - Musíme znát (jako uivatelé) šifrovací klíè
+ - Nesmí bıt pouit šifrovací algoritmus DSA
+ * Šifrovací klíè musí bıt pøístupnı autentizaèní slubì
+
+Jak eliminujeme útoky hrubou silou na PINy?: 
+ - Pravidelnou zmìnou hodnoty PINu
+ * Omezením poètu pokusù o zadání PINu
+ - kolením uivatelù
+
+Pro pojem vıpoèetní bezpeènost platí následující tvrzení. 
+ - Vısledek nároèného vıstupu je podepsanı, z dùvodu zaruèení integrity
+ * Èasová nároènost prolomení urèitého algoritmu mnohonásobnì pøevyšuje dostupnı vıpoèetní vıkon
+ * Algoritmus jako takovı nemusí bıt povaován za neprolomitelnı, dosud pouze nebyl nalezen efektivní zpùsob øešení/vıpoètu
+ - Ani jedno z uvedenıch tvrzení neplat
+
+K èemu slouí autentizaèní agent u ssh?
+ - K autentizaci dat pøenášenıch mezi serverem a uivatelem.
+ * Opakované poadavky vyadující heslo øeší agent po prvním zadání automaticky.
+ - Automaticky autentizuje server vùèi uivateli bez nutnosti zadávat opakovanì heslo.
+ - Autentizaèní agent se u ssh nepouívá, nebo je pouita asymetrická kryptografie.
+
+Mezi metody volitelného øízení pøístupu patøí: 
+ - Hašování dat.
+ - Pøihlašování doplòkovou biometrikou.
+ * Seznamy pøístupovıch práv.
+ - Bell-LaPadula.
+
+k èemu slouí MAC (Message authentication code)
+ * K zajištìní dùvìrnosti
+ * K zajištìní integrity
+ - K ovìøení zprávy síové karty
+ * K detekci chyb pøi pøenosu dat
+ - K transformaci hašovací funkce
+
+Pøi kombinaci šifrování veøejnım klíèem a podpisu dokumentu se doporuèuje operace provést v následujícím poøadí:
+ - Podpis, šifrování, podpis
+ - Šifrování, podpis, šifrování
+ - Šifrování, podpis
+ - Napoøadí operací nezáleí
+ * Podpis, šifrování
+
+Základní bezpeènostní problémy RFID jsou: 
+ * Interference
+ - Idempotence
+ - Nepolapitelnost
+ * Autentizace
+ * Soukromí
+ - Nepopiratelnost
+
+U dynamiky podpisu je dùleitı 
+ - aretaènì-dynamickı tablet.
+ * èas potøebnı pro provedení podpisu.
+ * poøadí jednotlivıch tahù pera.
+ - vıslednı podpis.
+
+Zero-knowledge protokoly (protokoly s nulovım rozšíøením znalostí) umoòují, poctivım
+ - stranám vdy dosáhnout úspìšného vısledku. Tato vlastnost se nazıvá:
+ - Èásteèné uspokojení (partial satisfaction)
+ * Úplnost (completeness)
+ - Korektnost (soundness)
+ - Úplné uspokojení (complete satisfaction)
+
+Základní fakta o biometrickıch systémech jsou:
+ * kopírování biometrik nemusí bıt triviální, ale není obtíné.
+ * biometrická data mohou bıt velmi citlivé informace.
+ - biometrická data jsou tajná.
+
+Které z uvedenıch moností nezajišuje protokol IPsec?
+ * Ochranu proti analıze šifrovaného provozu na síové vrstvì.
+ - Integrita a autentizace pùvodu dat.
+ * Nepopiratelnost pøijetí dat.
+ - Dùvìrnost dat, ochrana proti pøehrání.
+
+U autentizace pomocí hesel
+ * Musíme øešit aspekt zapamatovatelnosti vs. bezpeènosti
+ - Musíme øešit aspekt bezpeènosti bez ohledu na zapamatovatelnost
+ - Musí uivatel prokázat, e si dokáe zapamatovat alespoò 10 náhodnì zvolenıch symbolù
+
+Jaké bezpeènostní problémy lze identifikovat v soudobém bankovnictví? 
+ - Pouití pouze asymetrické kryptografie v kombinaci s hašovacími funkcemi (pouze pro podpisy)
+ * Dodateèné autorizaèní SMS zprávy jen u nìkterıch operací e-bankovnictví
+ * Nedostateèné zabezpeèení platebních terminálù
+ - Pouití autentizaèních kalkulátorù
+ * Social engineering napø. pøi telefonním hovoru
+ * Zasílání embosované karty poštou a nedostateènì zabezpeèené doruèování PINu a hesla
+
+Pravdìpodobnost, e se nepoctivı útoèník mùe úspìšnì vydávat za jinou stranu je u zero-knowledge protokolù (protokoly s nulovım rozšíøením znalostí) mizivá. Tato vlastnost se nazıvá:
+ - Èásteèné uspokojení (partial satisfaction)
+ * Korektnost (soundness)
+ - Úplné uspokojení (complete satisfaction)
+ - Úplnost (completeness)
+
+Které biometrické charakteristiky bıvají nazıvány také statickımi?
+ - fenotypické
+ - behaviorální
+ * fyziologické
+ - genotypické
+
+Která z uvedenıch tvrzení o tokenech zaloenıch na hodinách jsou pravdivá: 
+ - Token s hodinami nelze pouít bez pøítomnosti klávesnice.
+ * Autentizaèní hodnota je vygenerována na základì aktuálního èasu a tajné informace.
+ - Pøístup k vyuití tokenu s hodinami musí bıt vdy chránìn PINem.
+ * Je potøeba øešit otázku synchronizace hodin mezi serverem a tokenem.
+ 
+Mezi obecné vıhody tokenù nepatøí: 
+ - Obtíná kopírovatelnost.
+ - Snadné zjištìní ztráty.
+ * Snadná detekce a odpovìï na narušení.
+ * Monost zpracovávání informací.
+
+Pro vztah øízení pøístupu a autentizace platí:
+ - jedná se o dva naprosto nesouvisející pojmy
+ - jde o ekvivalentní termíny
+ - øízení pøístupu je obvyklou podmínkou pro autentizaci
+ * autentizace je obvyklou podmínkou pro øízení pøístupu
+
+Které z níe uvedenıch typù protokolù existují? 
+ * Autentizaèní protokoly bez ustavení klíèe
+ - Zero-knowledge protokoly (protokoly s nulovım rozšíøením znalostí) pro ustavení klíèe.
+ * Autentizované protokoly pro ustavení klíèe
+ * Protokoly pro ustavení klíèe
+ * Neautentizované protokoly pro ustavení klíèe
+
+Èím je dáno, e komunikace s RFID tagem musí probíhat pouze na pøímou viditelnost? 
+ - Pouitımi kryptografickımi mechanizmy
+ * Pouitou vlnovou délkou
+ * Pouitım frekvenèním pásmem
+ - Mnostvím pøenášenıch dat
+
+Které z pøíkladù autentizace poèítaèù jsou moné: 
+ * Privátním klíèem asymetrické kryptografie.
+ ?Kombinace IP, MAC, GUID (global unique identifier).
+ ? Kombinace IP adresy a tajného klíèe symetrické kryptografie.
+ * Tajnım klíèem symetrické kryptografie.
+
+Která z následujících tvrzení jsou platná pro protokol SSL/TLS? !!!
+ - SSL/TLS protokol nezajišuje dùvìrnost dat.
+ - Implicitnì je autentizace serveru a klienta je povinná.
+ * Autentizace komunikujících stran je zaloena na asymetrické kryptografii.
+ * SSL/TLS protokol umoòuje vzájemnou autentizaci serveru a klienta.
+
+Mezi nejslibnìjší technologie v oblasti identifikace v poèítaèovıch systémech pomocí biometrik nepatøí
+ - otisk prstu.
+ * tvar ruky.
+ - ovìøení mluvèího.
+ - snímání oèní duhovky.
+ * DNA.
+
+Která z tvrzení jsou platná pro termín "separace oprávnìní" pøi øízení pøístupu
+ - tıká se rozlišení procesù autentizace a autorizace
+ - ádní dva uivatelé systému nesmìjí mít nikdy stejná oprávnìní
+ * oznaèuje stav, kdy je k provedení operace nutnı souhlas více osob
+ - tento termín neexistuje
+ - vyjadøuje skuteènost, e se jednotlivé úrovnì oprávnìní nesmí pøekrıvat
+
+Která z následujících tvrzení platí pro princip nejmenších privilegií:
+ * ádnı uivatel nemá pøístup k objektùm, které nepotøebuje
+ * k objektu nemají pøístup uivatelé, kteøí jej nezbytnì nepotøebují
+ - uivatelé systému mají na poèátku nejvyšší moná oprávnìní
+ - oznaèuje stav, kdy je k provedení operace nutnı souhlas více osob
+ - pøístup k souboru má pouze uivatel s menšími privilegii ne administrátor
+
+Pokud pøi kontrole japonského pasu na èeskıch hranicích není k dispozici CSCA certifikát Japonska: 
+ - nic se nedìje protoe není vùbec potøeba
+ - lze alternativnì pouít CSCA certifikát Èeské republiky
+ - lze ovìøit platost dat v pasu, jen pokud haše DG souborù odpovídají obsahu DG souborù
+ * nelze ovìøit platnost dat v èipu pasu
+
+Markanta v oblasti biometrik znamená:
+ * Vıznamnı bod v otisku prstu.
+ - Vırazné poškození dané biometriky u konkrétního uivatele.
+ - Zpracovanı obraz oèní duhovky se zvıraznìnımi pøechody.
+ - Biometrická technologie s vıznamnì vysokou hodnotou EER.
+
+Zajistit autentizaci digitálních dat a zpráv lze 
+ - Pomocí klasického (ruèního) podpisu
+ * Pomocí zaruèeného elektronického podpisu
+ * Pomocí MAC
+ * Pomocí klíèované hašovací funkce
+ - Pomocí parciálnì zaruèeného elektronického podpisu
+
+Které z uvedenıch typù karet se pouívají v IT bezpeènosti?
+ * Kontaktní karty s èipem.
+ - Karty s bezkontaktním magnetickım proukem.
+ * Bezkontaktní karty s èipem.
+ * SIM karty v mobilních telefonech.
+
+Proti jakım útokùm brání protokol ssh?
+ - Odposlech hesla a pozdìjší pøehrání (na uivatelovì PC)
+ - Analıza šifrovaného provozu na síové vrstvì
+ * Odposlech hesla a pozdìjší pøehrání (na síové vrstvì)
+ * DNS/IP/Routing spoofing
+
+Která z tvrzení o mechanismu SUID platí: 
+ - pøidìluje se konkrétním uivatelùm pøi vytváøení úètù
+ - umoòuje kontrolovatelné spouštìní zavirovanıch programù bez ID
+ * mùe pøidìlovat administrátorská práva konkrétním procesùm
+ - propùjèuje skupinu vlastníka souboru tomu, kdo jej spouští
+ * propùjèuje identitu vlastníka souboru tomu, kdo jej spouští
+
+Zjistitelností narušení se u èipovıch karet myslí: 
+ * Po narušení jsou stopy narušení obtínì odstranitelné.
+ - Pøi zjištìní narušení je automaticky provedena chránìnou èástí obranná akce.
+ - Odolnost proti pokusùm o zjištìní robustnosti vùèi fyzickım útokùm.
+ - Vlastnost èásti systému umoòující reagovat na fyzickı útok.
+ 
+Které z uvedenıch reimù podporuje IPsec:
+ - Pøekladovı reim.
+ * Transportní reim.
+ * Tunelovací reim.
+ - Dynamickı virtuální reim.
+
+Jaké jsou nevıhody autentizace hašovanım heslem?
+ - Pøíliš snadná transformace na zero-knowledge protokoly (protokoly s nulovım rozšíøením znalostí)
+ * Útok pøehráním
+ ? Monost impersonace
+ - Náchylnost ke slovníkovému útoku
+
+PIN je
+ - Osobnì sdílená informace
+ - Kombinace èísel a písmen (A-F) pro potøeby autentizace
+ - Veøejnì známá informace
+ * Kombinace èísel pro potøeby autentizace
+
+K èemu slouí CRC (Cyclic redundancy check)
+ - K ovìøení autenticity dat
+ - Ke kompresi dat
+ - K zašifrování dat
+ * K detekci chyb pøi pøenosu dat
+
+Co zajišujeme pouitím náhodnıch èísel?
+ - Odolnost proti uváznutí a stárnutí
+ * Aktuálnost
+ - Nezvratnost
+ - Stálost a stabilitu
+ * Èerstvost
+ * Jedineènost
+
+Èeho lze dosáhnout zopakováním zero-knowledge protokolu (protokol s nulovım rozšíøení znalostí)?
+ - Zvıšení bezpeènosti - zvıší se záruka, e nedojde k rozšíøení ádnıch znalostí
+ * Zvıšení bezpeènosti - sníí se pravdìpodobnost, e nepoctivı útoèník se mùe úspìšnì vydávat za jinou stranu
+ - Nièeho - ke spolehlivé autentizaci staèí 1 kolo protokolu
+ - Nièeho - nezvıší se záruka, e nedojde k rozšíøení ádnıch znalostí
+
+Co je klonování elektronického pasu:
+ - Jedná se o neautoriované ètení pasu bez znalosti dat z MRZ
+ - Jedná se o neautorizovanou zmìnu dat v èipu, která je detekovatelná díky ovìøení digitálního podpisu.
+ - Jedná se o opakované vyuití náhodného identifikatoru èipu vyuívaného pro nízkoúrovòovou komunikaci pomocí ISO 14443
+ * Jedná se o kopii souborù z jednoho pasu do jiného
+
+Která z následujících tvrzení snímání geometrie ruky jsou pravdivá?
+ - Snímaèe snímají 2D snímky ruky shora, zespodu a ze stran (dohromady 4 snímky, u špièkovıch zaøízení i 5-6).
+ - Snímaèe snímají 2D snímky ruky mikrokamerami ve fixaèních kolících.
+ * Snímaèe snímají zjednodušenı 3D náhled ruky.
+ - Tvar ruky je jedineènı (ve skupinách o tisících uivatelù).
+ * Tvar ruky není jedineènı (ve skupinách o tisících uivatelù).
+
+Kterı z následujících protokolù je souèásti SSL/TLS protokolu?
+ - Kerberos protokol.
+ * Record Layer protokol.
+ - IPSec protokol.
+ * Handshake protokol.
+
+O RBAC (Role Based Access Control) je moné øíci, e:
+ * jednotlivım uivatelùm jsou pøiøazovány odpovídající role
+ - jedná se o nadstavbu BAC pouitého u elektronickıch pasù
+ - jde o zastaralı koncept ochrany soukromí
+ - místo rolí se v moderních operaèních systémech pouívá stránkování
+ * nejde ani o volitelné, ani povinné øízení pøístupu
+ - existuje standardizovaná metodika øazení uivatelù do jednotlivıch rolí
+
+Integrita dat znamená
+ - Data v pùvodní podobì lze obnovit i pøesto, e byla modifikována
+ - Data nebyla neautorizovanì zmìnìna pouze v prùbìhu pøenosu nezabezpeèenım kanálem
+ * Data nebyla neautorizovanì zmìnìna
+ - Data nebyla autorizovanì pøedána
+
+Digitálnì podepisujeme 
+ * Pouze haš podepisovaného dokumentu
+ - V pøípadì malıch dokumentù celou zprávu, v pøípadì velkıch dokumentù jejich haš
+ - Vdy pøímo celı dokument
+
+Pøi pouívání digitálního podpisu pouíváme
+ - Digitální klíè
+ * Privátní a veøejnı klíè
+ - Sdílené symetrické klíèe mezi všemi komunikujícími partnery
+ - Digitální peèetì
+
+Jakı je vztah mezi chybovou analızou a útoky na a pøes API? 
+ * Chybová analıza s útoky na a pøes API nijak nesouvisí.
+ - API mnohdy obsahuje èetné chyby hodné dùkladné analızy.
+ - Chybová analıza je nezbytná souèást kadého útoku na a pøes API.
+ - Kadı útok na a pøes API je nezbytnou souèástí chybové analızy.
+
+Èeskı elektronickı pas s aktivní autentizací:
+ - Lze naklonovat snadno, pokud známe data z MRZ
+ * Nelze snadno naklonovat (vyaduje získání soukromého klíèe pasu, kterı nelze z pasu vyèíst) a proto klonovaní èeského asu zatím nebylo veøejnì pøedvedeno.
+ - Lze naklonovat jen pokud spolupracuje skuteènı dritel pasu a zná svùj PIN
+
+Jak zajistíme integritu veøejného klíèe
+ - Utajením soukromé èásti veøejného klíèe
+ - Pomocí klíèované hašovací funkce
+ - Èásteènım utajením veøejného klíèe
+ - Pomocí párového privátního klíèe
+ * Pomocí certifikátu veøejného klíèe
+
+Úspìšnost útoku hrubou silou se dá odhadnout podle vzorce
+ - (velikost abecedy * délka hesla)/(poèet odhadù za jednotku èasu)^(èas platnosti)
+ * (èas platnosti * poèet odhadù za jednotku èasu)/(velikost abecedy)^(délka hesla)
+ - (délka hesla * poèet odhadù za jednotku èasu)/(velikost abecedy)^(èas platnosti)
+ - (poèet odhadù za jednotku èasu * délka hesla)/(èas platnosti)^(velikost abecedy)
+
+Proè musíme povolit urèitou variabilitu mezi registraèním vzorkem a pozdìji získanımi biometrickımi daty?
+ - Z dùvodu moné transplantace orgánu, aby i po ní bylo snímání moné.
+ - Protoe buòky mají pøirozenou tendenci obnovovat se a tudí mohou vznikat malé odlišnosti.
+ * Protoe biometrická data nejsou nikdy 100 % shodná.
+ - Pokud je registraèní vzorek nasnímám opravdu kvalitnì, tak variabilita nemusí bıt povolena.
+
+K èemu se pouívá CAPTCHA
+ * K odlišení uivatelù od robotù
+ - K odlišení chytrıch robotù od robotù první generace
+ - K testu uivatelù, zda chtìjí luštit text v obrázku a opisovat jej
+ - Je to dynamicky se mìnící designovı prvek www stránek
+
+Nìmeckı elektronickı pas první generace bez aktivní autentizace: 
+ - Nelze snadno naklonovat (vyaduje získání soukromého klíèe pasu, kterı nelze z pasu vyèíst).
+ - Lze naklonovat jen pokud spolupracuje skuteènı dritel pasu a zná svùj PIN
+ * Lze naklonovat snadno, pokud známe data z MRZ
+
+Které z uvedenıch moností jsou proveditelnımi útoky pøi provedení autentizace prostøednictvím .rhosts
+ * Vrácení podvrené IP adresy po dotazu na DNS server.
+ - Útok hrubou silou.
+ * Uvedení nepøedpokládaného loginu uivatele.
+ * IP spoofing.
+
+Pro dynamickou autentizaci dat (DDA) platí, e:
+ * Øeší problém padìlání/duplikace karet
+ - Potvrzuje pravost pouze statickıch dat uloenıch v èipové kartì.
+ * Je provádìna platebním terminálem i èipem
+ - Potvrzuje pravost statickıch uloenıch v èipové kartì, ale i dynamickıch dat zaslanıch èipem
+ - Je provádìna pouze èipovou kartou (terminál pouze zasílá data)
+ * Potvrzuje pravost statickıch dat uloenıch v èipové kartì, ale i dynamickıch dat zaslanıch terminálem
+
+Zaruèenı elektronickı podpis
+ - Autorizuje podepisující osobu ve vztahu k datové zprávì
+ * Umoòuje identifikaci podepisující osoby ve vztahu k datové zprávì
+ - Je spojen s dostateènou finanèní zárukou
+ * Umoòuje detekci zmìn ve zprávì, ke které je pøipojen
+ * Je jednoznaènì spojen s podepisující osobou
+ * Je jednoznaènì ovìøitelnı
+
+Které z následujících nejsou hašovací funkce
+ * RSA
+ - MD5
+ - SHA-1
+ * AES
+ - MD4
+ * RC4
+
+Které protokoly zaruèují urèitou míru jistoty o identitì jiné strany? 
+ - Protokoly pro ustavení klíèe
+ * Autentizaèní protokoly
+ * Zero-knowledge protokoly (protokoly s nulovım rozšíøením znalostí)
+ * Protokoly implementované v Kerberu
+
+Volitelné øízení pøístupu 
+ * v urèitıch pøípadech nezabrání neoprávnìnému zveøejnìní dùvìrnıch dat
+ - zavádí striktní hierarchii èlenìní dùvìryhodnosti dat
+ - zavádí striktní hierarchii èlenìní bezpeènosti dat
+
+Které èasovì konstantní parametry se pouívají v kryptografickıch protokolech?
+ * ádné z uvedenıch
+ - V omezeném èase monoliticky rostoucí sekvence (zabraòují tzv. borcení èasové osy)
+ - XOR hodnotou "-1" pro modifikaci náhodné vızvy (tzv. keksík)
+ - Komplexní èísla s fixní imaginární i reálnou slokou
+ - Sekvenèní èíslo (jeho hodnota závisí na implementaci)
+ - Náhodná èasová razítka (platná po urèitou dobu - typicky nìkolik desítek hodin)
+
+Co patøí mezi bezpeènostní problémy pouívání bankovních karet pouze s magnetickım proukem?
+ - Autentizaèní podpis je souèástí karty.
+ - Malá odolnost proti chybové analıze.
+ * Relativnì jednoduše se kopírují.
+ * Pøítomnı hologram se obtínì automatizovanì kontroluje.
+
+Mezi nevıhody ACL (seznam pøístupovıch práv) patøí: 
+ - je pomocí nich obtíné zjistit všechny subjekty, ke kterım má danı objekt pøístup
+ * je pomocí nich obtíné zjistit všechny objekty, ke kterım má danı uivatel pøístup
+ - je pomocí nich obtíné zjistit všechny subjekty, které mají k danému uivateli pøístup
+ - malá reie a tvrdá vyjadøovací schopnost
+
+Které z uvedenıch moností autentizace klienta vùèi serveru podporuje protokol ssh? 
+ * RSA autentizaci klienta.
+ - Vyuitím protokolu pro nulové rozšíøení znalosti.
+ * Stroje uvedené v souborech .rhosts nebo hosts.equiv.
+ - Heslem uivatele bez autentizace serveru.
+
+Která z uvedenıch tvrzení pro Encapsulated Security Payload (ESP) nejsou pravdivá?
+ * ESP nemá zajištìnu integritu a autenticitu dat, zajišuje pouze dùvìrnost dat.
+ - ESP zajišuje integritu, autenticitu a dùvìrnost dat.
+ * ESP zajišuje obranu proti analıze šifrovaného provozu na úrovni síové vrstvy.
+ * ESP zajišuje integritu, autenticitu a dùvìrnost dat, nezajišuje však obranu proti útoku pøehráním.
+
+Co znamená pojem elektronickı podpis ve smyslu zákona o elektronickém podpisu?
+ - Takovı pojem zákon neobsahuje
+ - To stejné, co digitální podpis
+ - Ruènì psanı podpis
+ * Libovolná identifikující informace pøipojená ke zprávì
+
+Jaká jsou platná tvrzení pro aktivní autentizaci elektronickıch pasù? 
+ - Pro autentizaci je pouit zero-knowledge protokol (Fiat-Shamir), kterı zároveò ovìøí, zda má pas k dispozici soukromı klíè
+ * Soukromı klíè je uloen v èipu, bez monosti jeho pøímého získání
+ - Veøejnı klíè je uloen ve èteèce el. pasù a je digitálnì podepsán
+ - Protokol vızva-odpovìï lze pouít pouze pokud èip neumoòuje efektivní implementaci zero-knowledge protokolu
+
+Jaká je nevıhoda digitálního podepisování provádìného a po zašifrování dat
+ - ádná, naopak vıhodou je monost snadné verifikace podpisu ještì pøed dešifrováním
+ - Vırazné urychlení kryptoanalızy
+ * Monost snadného odstranìní digitálního podpisu
+ - ádná, naopak, vıhodou je monost nìkolikanásobného podepsání zašifrovanıch dat
+
+Silná bezkoliznost u hašovacích funkcí znamená
+ - V rozumném èase nejsme schopni nalézt x, y (x=y) tak, e h(x)!=h(y)
+ - V rozumném èase nejsme schopni nalézt x, y (x=y) tak, e h(x)=h(y)
+ * V rozumném èase nejsme schopni nalézt x, y (x!=y) tak, e h(x)=h(y)
+ - V rozumném èase nejsme schopni nalézt x, y (x!=y) tak, e h(x)!=h(y)
+
+Jaká technologie PINmailerù je bezpeènìjší pøi útocích prosvícením?
+ - Laserovı tisk
+ * Prùklepovı tisk
+
+K prvkùm hardwarové podpory øízení pøístupu patøí napø.
+ - tzv. zero address: pokud se proces pokusí pøistupovat k nulové adrese, co bıvá známkou chyby, je násilnì zastaven
+ - tzv. poštovní adresování: pamì je rozdìlena na oblasti, aby OS mohl chránit pamì kontrolovou znalosti tajného PSÈ (tzv. ZIP code)
+ * zákaz pøístupu všem procesùm kromì OS do adres pamìti niších ne jistá hranice (tzv. fence address)
+ - randomizace adres haldy (heap), na kterıch se alokují dynamické promìnné bìících programù
+ * existence nìkolika úrovní oprávnìní (tzv. rings) definujících pøístupnost rùznıch registrù a strojovıch instrukcí programovému kódu
+
+Které z uvedenıch odpovìdí jsou pravdivé?
+ * Cena vıroby jednoho kusu tokenu klesá pøi vırobì mnohakusové série.
+ - Cena padìlání typicky nezávisí na poètu padìlanıch kusù.
+ - Cena padìlání jednoho kusu klesá pøi uplatnitelnosti mnohakusové série padìlku.
+ - Relativní cena padìlání se zvyšuje s kadım dalším padìlkem.
+
+Jaké jsou pouívané algoritmy pøi digitálním podepisování 
+ - CBC
+ - AES
+ * DSA
+ * RSA
+ * El-Gamal
+
+Pøi hašování hesel pro autentizaci uivatelù pomocí hesel:
+ * Ukládáme pouze haš hesla a rekonstrukce otevøené podoby není moná
+ - Ukládáme pouze haš hesla s moností rekonstrukce hesla v otevøené podobì
+ * Pøi ukládání mùeme vyuít techniky "solení"
+
+Mezi skryté kanály (covert channels) patøí: 
+ ? èítaè vadnıch sektorù (Bad Blocks Counter, BBC)
+ * zaplnìní disku
+ - kanál èásteènì autorizovaného pøenosu dat sbìrnice MAC
+ * aktuální zátì procesoru
+ - aktuální uzel v síti (Current Network Node, CNN)
+
+Chybovost biometrickıch systémù zavisí na:
+ * Schopnosti a motivaci uivatelù.
+ * Nastavení systému.
+ * Typu snímaèe.
+ * Okolním prostøedí.
+
+Útok na hesla mùe bıt
+ * Slovníkovı
+ * Pomocí sociálního inenırství
+ - Matrixovou metodou
+ * Hrubou silou
+ * Na základì urèitıch znalostí o uivateli
+
+Protokoly vızva-odpovìï mohou bıt zaloeny na: 
+ * klíèované hašovací funkci
+ * symetrickém šifrování
+ * digitálním podpisu
+ * MAC kódu, resp. funkci
+
+Základní techniky zajištìní soukromí u RFID tagù jsou: 
+ * Selektivní blokování tagù
+ * Deaktivace èi rušení RFID tagu
+ - Kryptografické metody pro zajištìní soukromí pomocí soukromıch klíèù asymetrické kryptografie (s potenciální moností vyuití hybridního šifrování)
+ - Vyuití protokolù zajišujících anonymitu jednotlivıch stran
+ - Dùsledné utajení existence RFID tagu
+ * Zmìna jedineèného identifikátoru
+
+Vhodná tajná informace pro autentizaci je
+ - Rodné pøíjmení matky
+ - Tel. èíslo, pokud není uvedeno ve Zlatıch stránkách
+ * Heslo
+ * PIN
+ * Fráze (passphrase)
+
+Mezi reálnì pouívané biometrické technologie patøí
+ - dynamika pohybu hlavy
+ * otisk prstu
+ * srovnání oblièeje
+ - geometrie (tvaru) nohy
+ - vzor oèní panenky
+
+Mezi problémy pøi správì víceúrovòovıch systémù (MLS) typicky patøí:
+ - nestabilita aplikací vyuívajících MLS
+ - nevhodné chování procesù
+ * nároèná administrace
+ - neexistující nástroje pro administraci
+ * propojování jednotlivıch MLS systémù
+ * obtíná/nejednoznaèná klasifikace dat
+
+Co nezajišuje protokol ssh?
+ - Autentizaci uivatele.
+ * Ochranu proti analıze provozu.
+ * Ochranu proti distribuovanému odmítnutí sluby.
+ - Autentizaci serveru.
+
+Pøístupová hesla mùeme rozlišit na
+ * Jednorázová
+ - Veøejná
+ - Pùvodnì neveøejná
+ * Skupinová
+ * Unikátní pro danou osobu
+ - Jednocestná
+
+Dynamická autentizace dat (DDA) se liší oproti statické autentizaci dat (SDA) tím, e: 
+ - vyaduje èip s dostateènou pamìovou kapacitou, ale nevyaduje koprocesor
+ * vyaduje novı unikátní pár RSA klíèù
+ - vyaduje novı unikátní pár AES klíèù
+ * vyaduje, aby byl veøejnı klíè podepsán a uloen spoleènì se statickımi aplikaèními daty
+ - vyaduje bezpeènì uloenı certifikát umoòující kartì ovìøit pravost platebního terminálu
+ * vyaduje èip s kryptografickım koprocesorem
+
+Souèasné èipové karty:
+ - Umoòují pouze provádìní kryptografickıch operací asymetrické kryptografie.
+ - Neumoòují provádìní kryptografickıch operací.
+ * Umoòují provádìní kryptografickıch operací symetrické a asymetrické kryptografie s vyuitím koprocesoru.
+ - Umoòují pouze provádìní kryptografickıch operací symetrické kryptografie.
+
+Fyzickou bezpeèností se u èipovıch karet myslí: 
+ - Ochrana proti hloubkové odbìrové analıze na úrovni procesoru.
+ - Ochrana proti fyzickému zkoušení PINu hrubou silou.
+ - Fyzická pøekáka kolem èipu karty ztìující neutorizovanı pøístup.
+ * Odolnost proti útokùm vyadujícím fyzickı pøístup ke kartì.
+
+Mezi základní nedostatky pøi snímání oblièeje nepatøí
+ * nasazené kontaktní èoèky.
+ - pestré a barevné pozadí.
+ - nasazená èepice.
+ - zavøené oèi.
+
+Jaké vlastnosti má Shamirùv protokol bez klíèù (Shamir’s no-key protocol) 
+ * Nevyaduje ádné ustavení sdílenıch klíèù
+ * Vyaduje komutativní šifrovací algoritmus
+ - Funguje obzvláštì dobøe (a prokazatelnì bezpeènì) jen pøi pouití One-Time Pad
+ - Prokazuje, e P!=NP
+ - Umoòuje vzájemnou autentizaci
+
+Co je to heslo zaloené na frázi?
+ - Heslo, které obsahuje pouze malá písmena
+ - Heslo zaloené na veøejnì známé frázi, aby si jej všichni snadno zapamatovali
+ - Heslo, které lze jednoduše pøeèíst
+ * Pomùcka pro zapamatování sloitého hesla
+
+Jaké vlastnosti mají magneto-optické èipové karty?
+ - Umoòují snímání èárovıch kódù zobrazovanıch na monitoru pøi vstupu do internetového bankovnictví a jejich okamité zpracování v èipu.
+ * ádná z vıše uvedenıch odpovìdí.
+ - Poskytují magneto-optické rozhraní pro vysokorychlostní a prokazatelnì bezpeènı pøenos dat.
+ - Neumoòují provádìní kryptografickıch operací i pøesto, e obsahují sofistikovanìjší magneto-optickı prouek.Kadá z dvou komunikujících stran má svùj symetrickı klíè. 
+
+Kolik zpráv se vymìní ve Shamirovì protokolu bez klíèù, aby obì strany sdílely stejnı klíè?
+ - 2
+ - 4
+ * 3
+ - ádná z tìchto odpovìdi není správná
+
+Útok na èipové karty pøes aplikaèní rozhraní (API) je zaloen na:
+ * Vyuití chyby v návrhu rozhraní.
+ ? Nezamıšleném dopadu zpracování útoèníkem zaslanıch specifickıch vstupních dat.
+ - Nedostupnosti aplikaèního rozhraní vnitønímu prostøedí karty.
+ - Vyuití indukce chyb do zpracování dat zaslanıch pøes aplikaèní rozhraní.
+
+Které politiky øízení pøístupu existují a pouívají se:
+ - asystematické øízení pøístupu
+ * volitelné øízení pøístupu
+ * povinné øízení pøístupu
+ - biometrické øízení provozu
+ - skryté øízení pøístupu
+
+Ukládání hesel lze realizovat
+ * Hašovanì
+ - Impulznì
+ * V otevøené podobì
+ * Šifrovanì
+ - Hlasovanì
+
+Jaká je správná sekvence operací pøi ovìøování PINu odolná proti pøerušení napájení?
+ - Zvıšení èítaèe, test èítaèe pokusù vìtší ne 0, ovìøení korektnosti PINu, zvıšení èítaèe pøi dobrém PINu.
+ * Test èítaèe pokusù vìtší ne 0, sníení èítaèe, ovìøení korektnosti PINu, zvıšení èítaèe pøi dobrém PINu.
+ - Test èítaèe pokusù vìtší ne 0, zvıšení èítaèe, ovìøení korektnosti PINu, zvıšení èítaèe pøi dobrém PINu.
+ - Test èítaèe pokusù vìtší ne 0, ovìøení korektnosti PINu, sníení èítaèe pøi špatném PINu.
+
+Co je to hašovací funkce?
+ - Funkce, která mapuje libovolnì velkı vstup na vıstup s délkou 128, 192, 256 nebo 512 bitù
+ * Funkce, která mapuje libovolnì velkı vstup na vıstup fixní délky a není prostá
+ - Funkce, která mapuje libovolnì velkı vstup na vıstup fixní délky a je prostá
+ - Funkce, která mapuje vstup fixní délky na vıstup variabilní délky (podle entropie vstupu)
+ - Šifrovací funkce se schopností deprese vstupních dat
+
+Chybové hlášení o zmìnì integritního souètu veøejného klíèe serveru u SSH mùe bıt 
+ - zpùsobeno
+ * Zmìnou dlouhodobého klíèe serveru jeho administrátorem
+ - Chybìjícím záznamem veøejného klíèe v souboru známıch serverù
+ * Podvrením serveru útoèníkovım strojem
+ ? Zmìnou souboru s veøejnım klíèem serveru na uivatelovì PC
+
+Které z uvedenıch moností zajišuje protokol IPsec?
+ - Nepopiratelnost pøijetí dat.
+ * Dùvìrnost dat, ochrana proti útoku pøehráním.
+ * Autentizace a integrita pùvodu dat.
+ * Podporu správy klíèù.
+
+Testování ivosti obvykle nemá následující dopady
+ * nepøíjemné pocity brnìní v oblasti testovaného vzorku.
+ - zvıšenı poèet nesprávnıch odmítnutí.
+ - zvıšení ceny zaøízení.
+ - vyšší náklady na vıvoj a vırobu.
+
+Pøi autentizaci tajnou informací je nutné dodret
+ * Tajnou informaci musí vìdìt jen oprávnìnı uivatel
+ - Tajnou informaci musíme sdìlit administrátorovi pro pøípadnì admin. zásahy v našem systému
+ - Z tajné informace se musí nejprve vytvoøit inicializaèní vektor
+ * Prostor, ze kterého vybíráme hodnotu tajné informace musí bıt rozsáhlı
+
+Která z uvedenıch tvrzení o øízení pøístupu k datùm na èipovıch kartách jsou pravdivá? 
+ - Data jsou uchována na magnetickém prouku a pøed pouitím v èipu kontrolována.
+ * Kadı soubor má pøiøazenu hlavièku s pøístupovımi právy.
+ - Data na kartì nemohou bıt po zápisu nikdy ètena ani mìnìna.
+ * Zaloeno pøedevším na øízení pøístupu k souborùm.
+
+Co je to odpovìï na narušení?
+ - ádná z vıše uvedenıch odpovìdí.
+ - Sluba internetového bankovnictví umoòující automaticky detekovat a upozornit na aktivní nebezpeènı software v poèítaèi.
+ - Reakce nechránìné èásti systému na potencionální útok.
+ * Reakce chránìné èásti systému na probíhající pokus o útok.
+
+Z hlediska lidské pamìti je vhodné volit
+ * Sloitá, ale snadno zapamatovatelná hesla
+ * Jednoduchá a jednoduše zapamatovatelná hesla
+ - Obtínì zapamatovatelná hesla a kadı mìsíc nutit uivatele ke zmìnì
+ * Hesla zaloená na frázích
+
+PIN je
+ - s obvodním bankéøem sdílená informace 
+ * nejèastìji volen v hodnotách 1234, 0000, 0007 nebo 1111 
+ * doplòkovım bezpeènostním mechanismem pro operace s bankomatem 
+ - nastaven bankou jako haš hesla internetového bankovnictví 
+
+Která z následujících tvrzení o èipovıch kartách jsou pravdivá?
+ * Bezkontaktní èipová karta potøebuje anténu pro komunikaci i získávání energie. 
+ * Komunikaci mezi èteèkou a bezkontaktní èipovou kartou lze odposlechnout. 
+ - Kontaktní èipová karta má vlastní zdroj energie a komunikuje se èteèkou pøímo. 
+ - U bezkontaktní èipové karty je zajištìno autorizované smazání dat pøi vıpadku napájecího napìtí.
+
+Dodateèná autorizace citlivıch/vıznamnıch operací se provádí obvykle:
+ - autorizací této operace klíèem z koøenového certifikátu 
+ - reputaèním systémem bankovního dozorce 
+ * oddìlenım (separátním) kanálem 
+ * s pouitím dalšího autorizaèního kroku 
+ - SSL certifikátem s tzv. extended validation (EV)  
+
+Pro urychlení poèítaèovıch systémù vyuívajících digitální podpis
+ - se èasto pouívá podchlazování ochrannıch komponent èipovıch karet 
+ * obvykle vyuíváme hašovací funkce pro reprezentaci podepisovanıch dat 
+ - pouívají obì strany identickı privátní klíè 
+ * u èipovıch karet bıvají pouity kryptografické koprocesory 
+ - lze vyuít prokazatelnou odpovìdnost metodou Monte Carlo
+
+Pro *-vlastnost modelu Bell-LaPadula platí:
+ - je povaována za nebezpeènou a není doporuèováno ji pouívat 
+ * procesy nesmìjí èíst data na vyšší úrovni 
+ * procesy nesmìjí zapisovat data do niší úrovnì 
+ - není komplementární k ss-vlastnosti modelu Bell-LaPadula 
+ - zachovává integritu dat 
+ * úèelem je ochránit dùvìrnost citlivıch dat
+
+Hybridní èipová karta
+ * pracuje se dvìma rùznımi èipy
+ - je nyní vıhradní technologií pro bankovní karetní operace
+ * poskytuje monost komunikace pøes kontaktní i bezkontaktní rozhraní
+ - je zaloena na vyuití kombinace asymetrické a symetrické kryptografie
+
+Token s generátorem jednorázovıch hesel lze povaovat za mechanismus dvoufaktorové autentizace:
+ - jen pokud se jím vygenerované heslo dá pouít právì ve dvou autentizaèních systémech
+ - jen pokud se heslo generuje na základì dvou faktorizaèních problémù
+ * pokud se uivatel musí autentizovat vùèi tokenu pøed jeho pouitím svım heslem
+ * pokud se uivatel musí autentizovat vùèi tokenu pøed jeho pouitím svım PINem
+
+Matici pøístupovıch práv:
+
+Subjekt 	/etc/passwd 	/etc/shadow 	/etc/profile
+
+zriha 	            {r} 	    {} 	            {r}
+
+matyas     	    {r} 	    {} 	           {r,w}
+
+root 	           {r,w} 	    {r} 	   {r,w}
+
+nobody 	            {r} 	     {} 	    {r}
+ 
+
+mùeme do formy seznamu pøístupovıch práv (ACL) pøepsat následovnì:
+ *
+  /etc/passwd: [zriha: {r}, matyas: {r}, root: {r,w}, nobody: {r}]
+  /etc/shadow: [root: {r}]
+  /etc/profile: [zriha: {r}, matyas: {r,w}, root: {r,w}, nobody: {r}]
+ - 
+  /etc/passwd: [zriha: {w,x}, matyas: {w,x}, root: {x}, nobody: {w,x}]
+  /etc/shadow: [root: {w,x}]
+  /etc/profile: [zriha: {w,x}, matyas: {x}, root: {x}, nobody: {w,x}]
+ -
+  /etc/passwd: [zriha: {w}, matyas: {w}, root: {x}, nobody: {w}]
+  /etc/shadow: [root: {w}]
+  /etc/profile: [zriha: {w}, matyas: {x}, root: {x}, nobody: {w}]
+ - 
+  zriha: [/etc/passwd: {r}, /etc/profile: {r}]
+  matyas: [/etc/passwd: {r}, /etc/profile: {r,w}]
+  root: [/etc/passwd: {r,w}, /etc/shadow: {r}, /etc/profile: {r,w}]
+  nobody: [/etc/passwd: {r}, /etc/profile: {r}]
+ -
+  zriha: [/etc/passwd: {w}, /etc/profile: {w}]
+  matyas: [/etc/passwd: {w}, /etc/profile: {w,x}]
+  root: [/etc/passwd: {w,x}, /etc/shadow: {w}, /etc/profile: {w,x}]
+  nobody: [/etc/passwd: {w}, /etc/profile: {w}]
+ -
+  zriha: [/etc/passwd: {w,x}, /etc/profile: {w,x}]
+  matyas: [/etc/passwd: {w,x}, /etc/profile: {x}]
+  root: [/etc/passwd: {x}, /etc/shadow: {w,x}, /etc/profile: {x}]
+  nobody: [/etc/passwd: {w,x}, /etc/profile: {w,x}]
+
+Pro autentizaci v sítích GSM se pouívá:
+ * èipová karta
+ - jednostranná autentizace sítì
+ - nestranná autentizace (odpovìï - vızva)
+ - jednostranná autentizace prodejce kuponu
+ * jednostranná autentizace zákazníka (subscriber)
+
+Pro bezpeènostní úrovnì modelu Bell-LaPadula L1=(TS,{obrana,ekonomika}) a L2=(S,{obrana}) platí:
+ - L1 a L2 jsou neporovnatelné
+ * L1 dominuje L2
+ - L2 dominuje L1
+ - L1 a L2 jsou neporovnatelné, pokud neplatí exkluzivita *-vlastnosti
+
+Mezi techniky pro zajištìní soukromí v autentizaèních systémech patøí:
+ - uloení podepsanıch hašù do EF.SO_D elektronickıch pasù 
+ * pravidelná zmìna identifikátoru èipu 
+ - maskování prvních 5 bajtù strojovì èitelné zóny elektronickıch pasù 
+ * pasivní rušení (Faradayova klec) èipu
+
+Offline verifikace karetní transakce:
+ - se pouívá jen v zemích Eurozóny (zemì platící eurem) 
+ - je povolena jen pøi biometrické autentizaci uivatele 
+ - vyaduje pøiblíení pasu s èipem podporujícím DDA k PINpadu 
+ * se dnes ji v bankomatech neprovádí 
+ * je zakalkulovaná v systému øízení rizik a provádí se pro sníení transakèních nákladù 
+ * se za urèitıch podmínek provádí v PINpadu
+
+Terminologickı nesmysl je:
+ - zajištìní integrity dat pomocí hašovací funkce 
+ - kryptografické hašovací funkce mají bıt rychlé a jednosmìrné 
+ * vodotisk hesla /etc/shadow 
+ - zaruèenı elektronickı podpis zaloenı na kvalifikovaném certifikátu 
+ * kryptace sdíleného souboru s ufopornem 
+ * kryptoanalıza zakryptovaného souboru

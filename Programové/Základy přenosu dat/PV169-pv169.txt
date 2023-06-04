@@ -1,0 +1,13 @@
+1. Ktory signal ma vacsiu sirku pasma?
+100 kHz Sinusovy signal s amplitudou 10 mV alebo 200 kHz Cosinusovy signal s amplitudou 5 mV
+
+2.Sirka pasma je 1 MHz. Aka je bitova rychlost pri pouziti : NRZI, Manchester, 2B1Q
+
+3. Blokovy kod  (5,2). (Bola uvedena presna tubulka)
+Kolko bitov je mozne detekovat a kolko je mozne opravit?
+
+4.Vysvetlite princip MSK (Minimum Shifting Keying).
+
+5.Stanice A,B,C,D,E. Kazdej stanici treba pridelit identifikacnu rozprestieraciu postupnost CDMA.
+
+6.Vysvetlit princip casoveho multiplexu pri prepinanych okruhoch. (Nieco take)

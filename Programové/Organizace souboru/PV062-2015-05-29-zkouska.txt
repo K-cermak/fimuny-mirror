@@ -1,0 +1,13 @@
+Zkouška z PV062 Organizace souborů
+29. 5. 2015
+
+1) V kódování Elias C1 a C2 zapiště číslo 48.
+2) Zapište proud výstupních kódových slov LZ78 pro text: PACIPACIPACICKY.
+3) Kolik maximálně klíčů může obsahovat vyhledávací strom arity 10 s hloubkou 3?
+4) Faginovo hašování - popište, jak vypadá situace, kdy globální délka v adresáři kapes je 2 a první dvě kapsy mají lokální délku 1. Kapacita kapes je 2.
+5) Trie index, kde se vyskytují slova: <vyjmenovaných asi 6 podobných slov>.
+6) Popište způsob alokace paměti pro soubory na unix systémech.
+
+Snad jsem si to zapamatoval správně a někomu to pomůže :-)
+Třeba ten Trie index jsem zatím v žádných otázkách neviděl.
+Tak good luck.

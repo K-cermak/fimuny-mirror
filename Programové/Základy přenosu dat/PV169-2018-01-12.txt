@@ -1,0 +1,16 @@
+PV169 Základy prenosu dat 
+Skúška 12.1.2018
+
+1. Ak sa zvýši Signal to Noise Ration SNR, aký to bude mať vplyv na bitovú prenosovú rýchlosť.
+
+2. Príklad na B8ZS. Zakódovať 100000000
+
+3. Hammingov kód pre (5, 2) ?
+
+4. Stop and Wait diagramy, ak sa prenášajú 4 rámca. Timeout na potvrdenie je 6ms. Nakresli diagramy komunikácie keď,
+a) prenost prebehne v poriadku a potvrdenia prídu do 4ms.
+b) 2. potvrdenie sa stratí
+
+5. Napísať kontrolný súčet pre 2 slová zadané hexadecimálne. (Prvé bolo 6789?)
+
+6. Zdôvodniť veľkost Sliding Window pre Go Back N 

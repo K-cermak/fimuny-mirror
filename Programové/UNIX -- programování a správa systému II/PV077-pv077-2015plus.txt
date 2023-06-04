@@ -1,0 +1,41 @@
+﻿Nové otázky 9.6.2015 - parafrázované, uvedena pouze správná odpověď, některé bez odpovědi.
+Jestli jste našli chybu nebo víte odpověď na nezodpovězenou otázku, vložte upravenou verzi a požádejte administrátora o smazání této verze.
+-------------------------------------------------------------
+Dva počítače jsou připojené do Ethernetu a zároveň přímo přes druhé rozhraní. Jakým konfiguračním trikem se můžeme vyhnout konfiguraci směrování
+    v celé síti? => 
+
+Jak lze ovlivnit chování socketu při uzavírání? => setsockopt(SO_LINGER)
+
+Jak je možné nastavit diskovou kvótu na počet i-uzlů? => pro každý svazek a každého uživatele zvlášť
+
+Který souborový systém obsahuje informace o zařízeních, jejich topologii, použitých ovladačích a další? => SysFS
+
+Fragment IP datagramu: => může být dále fragmentován
+
+Kde obvykle bývají umístěny konfigurační soubory? => /etc
+
+Okna v X Window systému: => jsou uspořádané do stromové struktury (můžou mít podokna)
+
+Více než jeden soubor možno zabalit do archivu programem: => ar
+
+NAT špatně prochází protokoly: => 
+
+Na sledování procesů v Solaris slouží systém: => DTrace
+
+Dvě běžící instance ping(8) na tom samém stroji odesílající na stejnou adresu: => rozlišují pakety pomocí pole identification
+
+Která IP adresa nepatří mezi privátní: => 127.0.0.1
+
+Seznam uživatelů přihlášených v okamžiku havárie systému je monžé zistit v souboru: => wtmp
+
+Program na mazání starých souborů v adresářích pro dočasné soubory se jmenuje: => tmpwatch
+
+Program mkswap na Linuxu: => zapisuje signaturu swapovacího prostoru a bitmapu vadných bloků
+
+Ukládána hesla na Unixu jsou zakódována pomocí: => jednosměrné funkce
+
+Na pravé straně kterého DNS záznamu nesmí být doménové jméno? => A (nebyla tam možnost AAAA, což je odpovídajúcí záznam u IPv6)
+
+Protokoly linkové (2.) vrstvy jsou: => PPP, 802.11, ? (poslední si nepamatuji)
+
+Která konfigurace RAID uloží nejvíc dat na disky stejné velikosti? => RAID5 (zbylé možnosti: RAID1, 10 a 6 - nebyla tam RAID0, která je kapacitně nejefektivnější)

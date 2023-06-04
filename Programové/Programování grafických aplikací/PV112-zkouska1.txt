@@ -1,0 +1,17 @@
+PV112 - Computer Graphics API. Zadání zkoušky z 2.6.2022
+
+Každá otázka za 10 bodů, E > 25b
+
+1. Co to je Texture Wrapping, k čemu se používá, jaké typy existují
+2. Homogenní souřadnice
+    - Jak jsou, co jsou, k čemu se používají v OpenGL
+    - Převod z Kartézských souřadnic na Homogenní
+    - Zapište bod na směrové přímce (1.5, 2, 4) procházející bodem počátku 
+    [0, 0, 0] , který leží v nekonečnu. Vysvětlete.
+3. Obrázek ohně (nějaký particle effect) - jak byste postupovali při vytváření
+    tohoto efektu v OpenGL/GLSL. Nemusíte psát kód, stačí všeobecný postup.
+4. Příklad na syntax jazyka GLSL - 4 kusy kódu, otázka jestli se zkompiluje a
+    jak se vyhodnotí proměnná.
+5. Dva obrázky konvice s Phong a Toon osvětlením + kód k Phongovu osvětlení.
+    Jak by se musel upravit kód pro dosažení Toon osvětlení? Můžete počítat
+    s hranicemi intenzit 0.25, 0.5, 0.75.

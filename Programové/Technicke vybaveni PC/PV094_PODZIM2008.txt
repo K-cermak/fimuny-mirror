@@ -1,0 +1,61 @@
+1.pisemka PV094:
+
+1. dram 2*4
+2. laserova tiskarna
+3. dvd ram- cteni, zapis
+4. prurez FireWire kabelu
+5. prace pc s analogovymi signaly
+6. seriovy prenos dat
+7. aktivni lcd displej
+8. fyzicke ulozeni dat na pevny disk
+
+2.pisemka PV094:
+
+1. prom 2x8
+2. stránkování Pentium II
+3. ATA-2
+4. USB
+5. magnetorezistivní hlava
+6. CD-R
+7. syntéza zvuku, repro 7.1
+8. pojmy SLI, alfa blending
+
+3.pisemka PV094:
+
+1. 4x4 EEPROM
+2. vysvetlete: Intel virtualization technology, Enhanced Intel SpeedStep
+Technology, rapid execution engine, Exucution trace cache
+3. režimy EEEI 1394
+4. SATA 4 kanaly; velikost nahravky steroefoni, hloubka 16b, frekvence 20kHZ,
+delka 3min.
+5. masky CRT
+6. opticka myš
+7. sublimacni tiskarna
+8. 5mT, 0,1um2
+
+4.pisemka PV094:
+
+1. 2x2 bunky aktivneho LCD plus vysvetlit princip na jednej
+2. strankovacie rezimy Pentia III
+3. a) rozdiel medzi single-ended a differential SCSI
+   b) Wehneltovy valec - na co sluzi
+4. a) RAS a CAS
+   b) CAS latency
+5. SPP (Centronic) popis komunikacie medzi tlaciarnou a PC
+6. Magnetoopticky zapis a citanie
+7. Drop on Demand - druhy plus nakres a fungovanie
+8. tam bol nejaky analogovy zvukovy signal na jednom obrazku uz vysledne pozicie
+a na druhom z coho to vzniklo - jednotlive amplitudy, a bolo treba vyratat
+minimalnu frekvenciu (touto otazkou som si neni isty)
+
+5.pisemka PV094:
+
+1. Invertor v CMOS technologii a popiste funkci
+2. L1 cache v 80486DX
+3. Vysvetlit rozdil NOR flash a NAND flash
+4. Nakresletit rozhrani NarroW SCSI, jeho zapojeni (maxim.pocet)
+5. a) rozdil x1 link a x16 link
+   b) rozdil DVD-R a DVD+R
+6. vysvetlit pojem remanence a koercitivní síla
+7. Hallova sonda - bezkontaktni klavesnice
+8. Princip barevneho plasmoveho displeje plus funkce

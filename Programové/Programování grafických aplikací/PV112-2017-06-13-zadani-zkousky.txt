@@ -1,0 +1,7 @@
+PV112 - Programování grafických aplikací. Zadání zkoušky z 13.6.2017.
+
+1. Color buffer, depth buffer, stencil buffer, double-buffering. Co to je a k čemu se to používá.
+2. Homogenní souřadnice - co to je + převod souřadnic z Euklidovského prostoru do homogenních. Napsat matice pro základní afinní transformace.
+3. Phongův osvětlovací model - stručně popište jeho tři složky.
+4. Vertex buffer object a vertex array object.
+5. Byly dány dva obrázky prstenců, jeden z nich se viditelně víc leskl. Otázka - v jakých atributech se liší použité materiály a jakou hodnotu tyto atributy pravděpodobně mají?

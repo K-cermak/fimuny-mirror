@@ -1,0 +1,155 @@
+Otázky 1-10 práve jedna správne, 11-20 aspoò jedna správne, správna odpoveï +5, nesprávna -2
+Komentoval to na konci pomerne rıchlo, take som väèšinu odôvodnení nepochytil, plus niektoré otázky sú formulované tak trochu improvizovane z k¾úèovıch slov, nechyta za slovíèka, dôleitá je pointa. (niekto nahral tento termín aj ofotenı v JPGèkach, tak keï to viete preèíta, malo by to by to isté)
+
+1. Ako sa v Power Shelli vyhodnotí príkaz: $var = 4,3+2
+a) 6,3
+b) string "4,3+2"
+c) pole (array) [4,3,2]
+d) iadna z inıch odpovedí nie je správna
+
+Správne: c
+Èiarka z toho robí pole, ako desatinná èiarka sa pouíva bodka a aby to bol string, musel by by v 'úvodzovkách'.
+
+
+2. Èo je moné pre zálohu a obnovu dát vo Win8.1?
+a) Urobi súbor .bkf (kompatibilita s win XP)
+b) Vytvori obraz VHDX
+c) Nejaká záloha pomocou hardlinkov
+d) iadna iná monos nie je správna
+
+Správne: b
+
+
+3. Obmena na otázku s txt súbormi v zlokách A, AB, ABC a ich dedení, kadá má iné explicitné práva, pıta sa, v ktorej zloke pôjde/nepôjde súbor èíta.
+
+
+4. Ako je moné obís zobrazovanie UAC dialógového okna pre program?
+a) Prida programu digitálne podpísanı certifikát
+b) Prida cestu "local policies/security configuration/UAC safe locations" (prida ju ku UAC nastaveniam pre program alebo tak nieèo)
+c) Poui príkaz "icacls %nazevprogramu.exe% setintegritylevel high"
+d) Nastavi level UAC na Never Notify
+e) Vytvori "manifest" k programu
+
+Správne: d 
+Cesta v b neexistuje ani iadna iná, ak by bola, narušila by ochranu
+
+
+5. Je nastavené "password must meet complexity requirements" a uívate¾ "Top_1 Nejvic Bobr" si nastavil heslo "pot.opa-3230120". Èo sa stane?
+a) Nepodarí sa to, lebo heslo musí obsahova viac ako 1 špeciálny symbol
+b) Nepodarí sa to, lebo heslo obsahuje èas uívate¾ského mena
+c) Nepodarí sa to, lebo uívate¾ nemôe ma v mene èiarku, medzeru alebo špeciálny znak okrem "_", "-" alebo "."
+d) iadna z odpovedí nie je správna
+
+Správne: d 
+Domáca úloha 3, ale tentoraz bodka medzi pot a opa odstraòuje podobnos s "Top" (ktorá nie je case sensitive), preto b nie. A-èko dokonca neplatilo u len pre to, lebo omylom nechal v mene dva špeciálne znaky, ale iadna taká podmienka nie je aj tak, viï: http://technet.microsoft.com/en-us/library/cc786468(v=ws.10).aspx
+
+
+6. Obmena na otázku so Šmajdalfom a GPO, pre rôzne nastavenia user specific / non-administrators / administrators / local policy object mu zakazovali / povo¾ovali / nemenili prístup.
+
+
+7. Róbert si zašifroval pomocou EFS súbor tetovani_na_hlave.txt a dal ho na USB k¾úè Elene(asi?:D), èo ona potrebuje získa, aby ho rozšifrovala?
+a) Heslo Róberta do jeho Windows úètu uívate¾a
+b) Heslo pre zašifrovanie súboru
+c) Róbertov k¾úè skopírovanı ako súbor z (cesta ku k¾úèu u Róberta)
+d) Situácia nenastane, keïe EFS nie je moné poui spolu s USB
+e) iadna z vymenovanıch nie je správna
+
+Správne: e
+
+
+8. Obmena na otázku s uívate¾om xtest, ktorı chce èíta súbor s rôznymi právami, ktoré sú aj tak prebité cez everyone: write deny, znova nebola iadna odpoveï správna.
+
+
+9. Obmena na otázku o pravdivıch tvrdeniach pre hibernation / sleep / hybrid / fast startup na Win8.1U1. Správne hibernation uloí RAM na pevnı disk a vypne, sleep vypne grafickı vıstup, pevnı disk atï ale udruje RAM, fast startup odhlási uívate¾ov a hibernuje jadro. Medzi monosami bola aj "iadna iná nie je správna".
+
+
+10. Akı je rozdiel medzi CREATOR OWNER a OWNER RIGHTS
+a) CREATOR OWNER sa môe poui iba na zloky
+b) Pomocou CREATOR OWNER je moné obmedzi DACL oprávnenia vlastníctva objektov (odobra oprávnenia meni oprávnenia)
+c) iaden, funkcionalita je rovnaká
+d) iadna z uvedenıch odpovedí
+
+Správne: a
+
+______
+
+11. Obmena na otázku: Na èo slúi technológia ReadyBoost?
+a) Zrıch¾uje systém vyberaním neaktívnych sluieb a ich vypínaním
+b) Pred vypnutím systému overí, èi ho bude moné znovu spusti, ak nájde chybu, pokúsi sa ju automaticky opravi
+c) Môe zrıchli poèítaè vyuitím úloného priestoru na väèšine USB flash kariet a pamäovıch kariet
+d) Upravuje spôsob zmeny èasového razítka "Last Access Time"
+e) Zväèšuje dostupnú fyzickú pamä OS deduplikovaním dát v pamäti
+
+Správne: c
+
+
+12. Èo platí pre základné disky, dynamické disky, storage spaces? (nie som si istı presnou formuláciou a slovíèkami)
+a) Dynamické disky podporujú MBR
+b) Základnı disk podporuje monos ma jeden oddiel cez viac diskov
+c) V jednom disku je moné rozdeli oddiely na základnı, dynamickı a storage spaces.
+d) Storage spaces vedia urobi ilúziu dostupnosti viac miesta
+e) GPT disky môu ma max 2TB
+f) iadna iná odpoveï nebola správna
+
+Správne: a,d
+
+
+13. Uívate¾ má na základe diskovıch kvót 10 MB miesta, ktoré tvrdenia sú pravdivé?
+a) Ak si vytvorí zástupcu na ¾ubovo¾nı 2MB súbor, príde o tieto 2MB, ostane mu teda 8MB
+b) Ak si vytvorí hardlink na ¾ubovo¾nı 2MB súbor, príde o tieto 2MB, ostane mu teda 8MB
+c) Ak si vytvorí symlink na ¾ubovo¾nı 2MB súbor, príde o tieto 2MB, ostane mu teda 8MB
+d) Ak si vytvorí kópiu na ¾ubovo¾nı 2MB súbor, príde o tieto 2MB, ostane mu teda 8MB
+
+Správne: d
+Symlink a zástupca odkazujú na pôvodnı súbor, hardlink odkazuje na rovnaké dáta ako pôvodnı súbor, jedine kópia duplikuje dáta.
+
+
+14. Obmena na otázku o pravdivosti tvrdení o premenovávaní a mazaní Administrators a Users, tentokrát navyše ešte správna monos "Autheticated users sú predvolene v skupine Users"
+
+
+15. Obmena na otázku s xklokangutanom, ktorı si urobí súbor, ale admin ho omylom vymae, tak urobí nového xklokangutana, tentoraz ešte ale aj spustí príkaz "net localgroup xklokangutan "OWNER RIGHTS" /ADD", tento príkaz je ale chybnı a neurobí niè, a teda stále pozeráme na nového xklokangutana ako na nového uívate¾a bez akıchkoåvek inıch ako defaultnıch Users práv.
+
+
+16. Obmena na otázku, èo urobí v powershelli skript "function f(){ $file = dir c:/nieèo $length = $file.length }, prièom správne znova nebola iadna, keïe niè nespúšalo funkciu, len chcelo rovno vypisova hodnoty.
+
+
+17. Èo platí pre UEFI vo Win8.1U
+a) Podporuje UEFI Class 3
+b) Má predpoklady k rıchlejšiemu prebudeniu zo spánku ne BIOS
+c) Je iba v Pro a Enterprise edíciách
+d) iadna z inıch moností nie je správna
+
+Správne: a,b
+
+
+18. V zloke TEMP sú práva:
+Users - Read and execute allow
+Users - Write allow (This folder only)
+OWNER RIGHTS - Write allow
+Uívate¾ Fritol je èlenom Users, urobil si v TEMP zloku "The Hobbit The Battle of Five Armies 2014 CAM AAC x254 SSDD". Èo platí?
+a) Uívate¾ Fritol je vlastníkom zloky "The Hobbit The Battle of Five Armies 2014 CAM AAC x254 SSDD".
+b) Inı uívate¾ zo skupiny Users nemôe vloi súbor "titulky.srt" do zloky "The Hobbit The Battle of Five Armies 2014 CAM AAC x254 SSDD".
+c) Uívate¾ Fritol nemôe modifikova NTFS práva vnútri zloky "The Hobbit The Battle of Five Armies 2014 CAM AAC x254 SSDD".
+d) Inı uívate¾ zo skupiny Users nemôe premenova zloku "The Hobbit The Battle of Five Armies 2014 CAM AAC x254 SSDD".
+e) Uívate¾ Fritol nemôe zmaza súbory v zloke "The Hobbit The Battle of Five Armies 2014 CAM AAC x254 SSDD".
+
+Správne: a,b,c,d,e
+Áno, ten názov sa tam opakoval v kadej monosti cez nieko¾ko riadkov. V e mono bolo e nemôe zmaza ani komplet celú zloku, nie som si istı.
+
+
+19. Obmena na otázku o dvoch uívate¾och prihlásenıch naraz, vyuívajúcich roaming profil, uívate¾ A a potom B vytvorí prvni.txt, uívate¾ B a potom A vytvorí druhy.txt, odhlási sa A, potom B, pıtalo sa komu budú patri - prvni.txt patril B, druhy.txt patril A.
+
+
+20. Akı príkaz môeme poui, aby sme mohli ¾ubovo¾ne meni NTFS?
+a) net use
+b) calc
+c) icacls
+d) mkdir
+e) bcdedit
+
+Správne: c
+
+
+Celkovo hlavne otázky z minulıch rokov s nejakou tou odpoveïou navyše (podobne ako na prvom termíne, kde len tak do otázky o diskovıch kvótach hodil otázku, èi na Win7 môe by RAID5 (nie :D)), celkovo by to malo ís na pár pokusov zvládnu. Na prvom termíne pravidelne dáva otázku mimo obsahu predmetu, napr. "ko¾ko cvík/prednášok tıdenne mal predmet".
+
+A tentoraz nepúšal pred skúškou iadnu hudbu :(

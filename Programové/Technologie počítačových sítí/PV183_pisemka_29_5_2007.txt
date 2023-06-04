@@ -1,0 +1,12 @@
+Otázky nejsou v pøesném poøadí, ale ádná nechybí.
+
+1) rozdíl mezi synchroním a asynchroním xDSL
+2) routovací tabulky pro 4 PC z obrázku 4 podsítí (v kadé oznaèenı jeden PC a napsána jeho IP) pøipojené k centrálnímu síovému prvku (s 4 IP pro kadı slot) do hvìzdy.
+3) co je to PSK, zašifrujte vzorek 11001001 a kde se PSK pouívá
+4) co je to FHSS, obrázek a kde se to pouívá
+5) popsat rámec z 802.3
+6) popsat základní prvky v síti ISDN
+7) vypoèítat pøíènou admitanci; zadána frekvence, indukènost, délka kabelu, kapacita, odpor, hodnotu dielektrika
+8) nakreslit a popsat základní strukturu pøi posílání dat pøes optickı kabel (obrázek s sdruovaèem, modulátorem, ...)
+
+A vám to dopadne líp ne mì ;-)

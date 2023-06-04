@@ -1,0 +1,17 @@
+1. Popiste kodovanie MTL-3
+	*prednaska Digitalni vysilani strana 29-31/ slides 30-32
+
+2. Popiste pojem Hammingov kod, Hammingova vzdialenost, aku ma schopnost detekcie a opravy vzniknutych chyb?
+	*odpoved v suhrne otazok z predoslych rokov
+
+3. CSMA perzistentni
+	*odpoved v suhrne otazok z predoslych rokov
+
+4. Kvadraturni aplitudova modulace taka, aby sa bitova rychlost rovnala 3-nasobku Baudovej rychlosti.
+	*prednaska Analogove vysilani strana 40.../ slide 41...
+
+5. Rozdiel v pristupe k mediu vyuzivanim technik Polling/Select.
+	*prednaska MAC, øízení pøístupu k médiu strana 38/ slide 39
+
+6. Velkost ramcov vysielaca pre Sliding Window, Selective Reject
+	*prednaska Øízení datového spoje, HDLC strana 60/ slide 61

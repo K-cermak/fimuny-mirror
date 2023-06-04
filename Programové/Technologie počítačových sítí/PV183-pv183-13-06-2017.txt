@@ -1,0 +1,12 @@
+1.) Priklad na vypocitanie priecnej admitacie
+2.) K comu sluzia hodnoty poli Sequence Number a Acknowledgment Number v hlavicke TCP
+3.) Popiste pristupovu metodu pouzivanu v FDDI
+4.) Na akych vrstvach OSI pracuju tieto zariadenia:
+    a.) Repeater
+    b.) Router
+    c.) Bridge
+    d.) Gateway
+5.) Popiste ochranne mechanizme siete SONET v nekruhovej topologii
+6.) Zakodujte dany vzorok v MLT-3 a kde sa pouziva
+7.) Vymenujte verzie Gigabit Ethernetu + typy medii pre jednotlive verzie
+8.) Popiste a nakreslite ramec 802.3 (treba uviest aj velkosti jednotlivych poli)

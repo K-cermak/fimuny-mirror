@@ -1,0 +1,36 @@
+PV094 - Technické vybavení poèítaèù, podzim 2010
+------------------------------------------------
+
+Písemka 19. 1. 2011 (2. termín)
+-------------------------------
+1. Nakreslit pamì» PROM 2x4 realizovanou pomocí multiemitorových tranzistorù, popsat funkci jedné pamì»ové buòky. (2 b)
+2. Princip stránkování u Pentia II se stránkou 4 kB + nakreslit (2 b)
+3. Nakreslit pøipojení maximálního poètu zaøízení k rozhraní EIDE/ATA-2 a popsat, jak jsou tato zaøízení nastavena, uvést 3 pøíklady mo¾ných zaøízení (2 b)
+4. Jaké kódování se pou¾ívá pro pøenos dat pøes USB + zakódovat zadanou posloupnost bitù a nakreslit prùbìh signálu (nìco jako jako 1101011111111011, podstatných je >6 jednièek uvnitø :) (2 b)
+5. GMR hlava - nakreslit, popsat ètení a zápis (2 b)
+6. Nakreslit prùøez médiem CD-R, popsat, jak probíhá zápis a ètení (2 b)
+7.	a) Jaké jsou zpùsoby syntézy zvuku + popis (1 b)
+	b) Rozdíl mezi single-ended a differential SCSI (1 b)
+8. Vysvìtlit pojmy
+	a) Advanced Smart Cache (1 b)
+	b) Intel Turbo Boost (1 b)
+	
+
+Písemka 24. 1. 2011 (3. termín)
+-------------------------------
+1. Nakreslit schéma pamìti EEPROM 16b (4x4 buòky) a popsat funkci pamì»ové buòky (2 b)
+2. Nakreslit prùøez barevnou CRT obrazovkou vèetnì møí¾ek a popsat, jak funguje (2 b)
+3. Vysvìtlit pojmy (po 0,5 b)
+	a) Enhanced Intel Speedstep Technology
+	b) Intel Virtualization Technology
+	c) Rapid Execution Engine
+	d) Execution Trace Cache
+4.	a) Nakreslit schéma (+ popis) a napsat maximální poèet SATA zaøízení, které mohu pøipojit, mám-li k dispozici 4 kanály (1 b)
+	b) Jakou velikost v bajtech bude mít zvukový soubor o délce 2 minuty, vzorkovací frekvence 20 kHz, stereo, 16 bitù na vzorek? (1 b)
+5. Nakreslit a popsat, jak funguje optická my¹. (2 b)
+6. Nakreslit a popsat, jak funguje sublimaèní tiskárna. (2 b)
+7. Máme elementární magnet s plochou 8 um^2 a indukcí 12 mT, jaký bude indukèní tok? (2 b) (ty èísla jsem si asi vymyslel, ale to je snad jedno :)
+8. Jaké jsou re¾imy pøenosu dat u IEEE1394 + popsat jejich vlastnosti (2 b)
+
+P. S. Doporuèuju dát si pozor na materiály, ze kterých se uèíte. Tøeba u vypracovaných otázky z 12. 1. 2010 (DOC) jsou myslím sem tam nìjaké chyby, otázky z 11. 1. 2010 (PDF) se mi zdály OK, jen schéma u otázky s cache 486 by mìlo být jiné - to, co tam je, popisuje zøetìzené zpracování instrukcí.
+

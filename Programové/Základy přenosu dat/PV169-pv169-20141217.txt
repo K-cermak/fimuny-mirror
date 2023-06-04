@@ -1,0 +1,19 @@
+1. Priklad na b8zs, dana postupnost bitov, zapisat ako bude vyzerat signal
+ODPOVED prezentacia 3. Digitální vysílání strana 35
+
+2. Blokovy kod, popisat v akych situaciach  vieme, ze nenastala chyba, v akych dokaze detekovat a opravit chybu, v akych len detekovat a v akych akceptuje chybne slovo 
+ODPOVED prezentacia 9. Chybové řízení strana 28 + popisat co to je hamingova vzdialenost zo strany 26,27
+
+3. preco frekvencna modifikacia nedosahuje taku bitovu rychlost ako amplitudova 
+ODPOVED treba to porovnat na priklade, kde su rovnake podmienky, prezentacia 4. Analogové vysílání strana cca 12 a 18
+
+4. Popisat algoritmus fungovania CSMA/CA 
+ODPOVED 11. MAC, řízení přístupu k médiu algoritmus na strane 23
+
+5. Ako funguje rezervacne TDMA
+ODPOVED 11. MAC, řízení přístupu k médiu strana 30
+
+6. Aka je velkost sliding window v GoBackN ARQ a preco
+ODPOVED 10. Řízení datového spoje, HDLC popis na strane 48 a obrazky na strane 49
+
+slajdy su tu http://www.fi.muni.cz/usr/staudek/vyuka/commsys/PV169.xhtml

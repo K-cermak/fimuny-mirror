@@ -1,0 +1,61 @@
+Doporucuju (text + ukoly na konci kapitol): 
+- Stevens, W. Richard. Advanced programming in the UNIX environment.
+
+- The Linux Programming Interface: A Linux and UNIX System Programming Handbook
+
+---------------------------------------------------------------------------
+Otazky jsou hodne zhruba...
+---------------------------------------------------------------------------
+
+static int i = 10;
+main(){
+...
+}
+
+Kde bude po zkompilovani programu promenna i?
+-> sekce data (protoze je inicializovana, navic staticka)
+(dalsi moznosti: bss, text,...)
+
+---------------------------------------------------------------------------
+fork() - jaka je navratova hodnota?
+- 0, -1, kladne cislo (0 potomkovi, kladne cislo rodici, -1 chyba)
+
+-------------------------------------------------------------------------
+cim se vyznacuje proces cislo 0:
+- ze nesmi byt zablokovan
+(dalsi: ze jsou vsechny procesy jeho potomky, ...)
+
+--------------------------------------------------------------------------
+struktura stat - kde je ulozeno o jaky typ souboru jde: 
+- st_mode
+(dalsi: st_dev,...)
+--------------------------------------------------------------------------
+Jak se zjisti velikost objektoveho souboru:
+- objdump
+(dalsi: nm, ...)
+--------------------------------------------------------------------------
+RCU - co vyuziva:
+- pametovou barieru
+(dalsi: read-modify-write, atomicke instrukce,..)
+--------------------------------------------------------------------------
+proces ktery pozadoval stranku, ale ta nebyla dostupna, se dostal do stavu:
+- neprerusitelne cekani
+(dalsi: runnable/prostor jadra/uzivatelsky prostor/zombie)
+--------------------------------------------------------------------------
+cim se zjisti max delka souboru:
+- pathconf
+(dalsi: sysconf - odsud se ziskavaji informace o celem systemu, ne o konkretnich moznostech souboru (muzou byt ruzne filesystemy),...)
+--------------------------------------------------------------------------
+Koho/co prebiji LANG?
+- nastaveni konkretnich kategorii
+(dalsi: LC_COLLATE, LC_CTYPE, LC_ALL)
+--------------------------------------------------------------------------
+Udalostne rizene programovani vyuziva:
+- poll, select
+(dalsi: read, write; exec, fork; ...)
+--------------------------------------------------------------------------
+Co vytvari pgm ld?
+- spustitelny soubor
+(dalsi: zkompilovany, zdrojovy,...)
+--------------------------------------------------------------------------
+

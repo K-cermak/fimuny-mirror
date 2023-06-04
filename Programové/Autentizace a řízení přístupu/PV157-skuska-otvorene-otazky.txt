@@ -1,0 +1,7 @@
+PV157 Autentizace a řízení přístupu
+skúška - 22.5.2018 - otvorené otázky
+
+1) Statická autentizácia dát u EMV.
+2) Výkonová analýza u čipových kariet.
+3) Časové razítka.
+4) Výhody a nevýhody autentizácie heslom.

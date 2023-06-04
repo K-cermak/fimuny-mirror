@@ -1,0 +1,17 @@
+1. Zdroj generuje spravy (1,2,3,4), s pravdepodobnostami 1/4 , 1/2 , 1/8 , 1/8  kodovane binarne.
+	a) entropia
+	b) primerna dlzka slov 
+	c) porovnat ci je optimalne zvolene kodovanie
+
+2. Zakodovat postupnost znakov MAMAMAMASO Huffmanovym kodovanim a zistit kompresny pomer vzhladom na kodovanie 7bitove v ASCI II.
+
+3. mali sme vytvorit tabulku hodnot ako sa budu ukladat pri hashovani.podmienka bola tusim  k mod 13 ,a mali sme pouzit kvadraticke riesenie kolizii.
+
+4. Kolko prvkov moze obsahovat 4-narny strom s hlbkov 4.
+
+5. Vyhladavaci 3-narny strom z cisel 8,7,6,5,4,3,2,1
+
+6. to bola teoreticka ale neviem co... 
+
+
+dufam ze som si dobre spomenul a ze sa to niekomu bude hodit... 

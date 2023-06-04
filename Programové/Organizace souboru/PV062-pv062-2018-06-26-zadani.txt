@@ -1,0 +1,5 @@
+1. Hodnotu 50 vyjádřete v Eliasově kódu C1. Hodnotu 50 vyjádřete v Eliasově kódu C2
+2. ABRAKADABRA LZ77 Velikost porhližecího okna 4 znaky, aktuální okno 3 znaky
+3. Hašovaný index záznamů s hodnotami klíčového atributu K generovanými v pořadí {14,28,12,27,31,38} je umístěný v tabulce s 13 řádky. Ve kterých řádcích indexu budou pozice ukazatelů odpovídajících záznamů, pokud se použilo lineární hašování a hašovací funkce  "řádek indexu" = K mod 13
+4. Nakreslený B-strom a co se stane když postupně odstraníme zadaná čísla.
+5. Popište RAID 0+1 a RAID 1+0 

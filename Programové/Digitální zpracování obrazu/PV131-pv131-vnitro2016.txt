@@ -1,0 +1,15 @@
+VNITRO podzim 2016
+
+1.uloha - binarny obrazok - spravit na nom median filter
+
+2.uloha - uloha na fourierku, zadane nejake hodnoty z frekvencnej domeny, 
+mali sme dopocitat ostatne (vyuzitie znalosti, ze su komplementarne, co plati
+pre prostredny prvok, co nema dvojicu)
+
+3.uloha - vypocitat interpolaciu (najblizsi sused a linearna)
+
+4.uloha - dost divne zadana transformacia, trebalo z toho vydedukovat co vlastne 
+chcu, ale nieco na styl otocenia okolo bodu o niekolko stupnov, ale nebolo 
+to klasicky tak trivialne
+
+5.uloha - definovat a dokazat distributivitu diskretnej konvolucie

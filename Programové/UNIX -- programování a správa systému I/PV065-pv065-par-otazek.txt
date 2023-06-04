@@ -1,0 +1,132 @@
+Aká přístupová práva má proces běžící pod UID C a GID B k souboru vlastněnému uživatelem A a skupinonu B
+s nasledujúcim ACL: u::rwx,g::rwx,o::--x,u:C:rwx,g:D:-wx,m::m-x?
+*čtení a provádení (je omezneo hodnotou masky)
+čtení a zápis
+čtení, zápis, provádení
+jen čtení
+jen provádení
+
+Textový popis chyby služby jádra (napr. za účelom vypsání do grafického dialogu) muže program získat pomocí
+zkopírovaní textu z globální proměnné errno a jeho překladu například pomocí gettext
+*funkce strerror(3): výsledek je pak vrácen v jazyce podle aktuálních locales
+funkce perror(3): která rovnou překládá do nastaveného jazyka
+funkce strerror(3): výsledek je pak dobré přeložit do jazyka podle aktuálních localec napr. pomocí gettext
+
+Operace při níž jedním voláním jádra provedeme zápis do souboru nebo čtení ze souboru, přičemž
+zapisovaná nebo čtená data nejsou v paměti procesu v souvislé oblasti, se nazývá
+read-ahead
+delayed branch
+*scatter-gather I/O
+pretty printing
+on-demand listing
+
+Typ souboru (běžný adresář, zařízení, symbolický link, atd) lze zjistit ze struktury stat z položjy
+*st_mode
+st_ftype
+žádná z ostatních možností neplatí
+st_dev
+st_nlink
+
+Mějme úsek programu
+static int odpoved = 42;
+int cislo;
+main(int argc, char **argv) {
+	float pi = 3.14159;
+	static char otazka[256];
+[...]
+Proměnná pi bude v paměti běžícího procesu umístená v části
+BSS
+text
+data
+*zásobník
+v žádné sekci
+
+Služba jádra readlink(2)
+*čte obsah souboru typu symbolický link
+zpřístupňuje obsah souboru, na který ukazuje symbolický link
+je emulovatelná pomocí open(), read() a close()
+čte obsah zadaného adresáře
+čte stav linky síťové karty
+
+Sekvencí volání open(name, ...) a unlink(name) se vytvoří
+prázdný soubor v pracovním adresáři 
+nic z ostatních možností - tato sekvenci je neplatná
+*anonymní dočasný soubor
+soubor na ramdisku
+prázdný soubor v adresáři name
+
+Která z činností není typická pri inicializaci systémového démona (procesu, běžícího na pozadí)?
+Ostatní činnosti realizuje napr. knihovní funkce daemon(3):
+otevření deskriptoru 0, 1 a 2
+vytvoření potomka s tím, že rodič skonči
+vytvoření své vlastní session
+*otevření spojení na DNS server
+
+
+Služba jádra fsync zapíše na disk modifikované buffery
+jednoho souboru, metadata však ne
+jednoho svazku
+*jednoho souboru, včetně metadat
+celého systému (všech svazku)
+
+SLAB alokátor není výhodný pro použití typu
+alokace běžící paralelně na více CPU
+alokece bloku, které jsou již v cache CPU
+*alokace bloku proměnné velikosti
+alokace snadno uvolnitelných objektu
+alokace objektu které potřebují konstruktor
+
+
+Volání poll() je oproti select() výhodnejší při
+velkých číslech a menším počtu deskriptoru
+při soucasné aktivite většího množství deskriptoru
+při hlášení příchodu signálu
+při velkém počtu deskriptoru obecně
+*při opakovaném volání
+
+Nepojmenovaná roura se otevírá pomocí
+join()
+mknod()
+mkfifo()
+open()
+*neotevírá se, je otevřena při vytvoření
+
+Pokud má adresář nastavený set-gid bit, znamená to, že
+*nově vytvářené soubory získaji GID podle adresáře
+nově vytvářené soubory získaji GID podle podle efektivního GID procesu
+přistup k souborum v adresáři bude povolen jen procesum se stejným efektivním GID
+jako má adresář
+procesy budou přistupovat k souborum v tomto adresáři s opravněním GID adresáře
+
+
+Pomocí služby fcntl() nemužeme měnit 
+počet zámku na souboru
+flag FD_CLOEXEC
+počet deskriptoru pod kterými je daný i-uzel dostupný
+zpusob zápisu podle flagu O_APPEND
+*umístení ukazovátka pozice v souboru
+
+
+Pro návratovou hodnotu z funkce malloc(3) platí
+obsahuje adresu nového paměťového bloku, který není s ostatními vlákny téhož procesu
+*žádná z ostatních možností
+obsahuje adresu nového paměťového bloku, zarovnanou pro libovolný typ proměnné
+obsahuje adresu nového paměťového bloku, který muže být stejne velký nebo větší než je parametr
+funkce malloc
+obsahuje adresu nového paměťového bloku, který je inicializován nulami
+
+Advisory locking znamená, že
+lze zamykat vždy jen celý soubor
+dva procesy nemohou vytvořit zámek nad stejným souborem
+*existence zámku nebrání operaci čtení nebo zápisu 
+soubor muže zamknout jen jeho vlastník
+
+znenie cca
+while((c=getopt(argc, argv, ”ab:--”))!=-1)?
+znamená, že:
+*prepínač po b bude povinný
+prepínač po b bude nepovinný
+prepíače a a b sú povinné
+po -- bude nasledovať prepínač
+
+Čo robí ccl?

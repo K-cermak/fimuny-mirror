@@ -1,0 +1,15 @@
+1) Znaky z Abecedy {2,5,8,10} generovane Zdrojom s pravdepodobnostami: {1/4, 1/2, 1/8, 1/8}; znaky su kodovane BINARNE
+- urcite entropiu Zdroja
+- je zvoleny kod optimalny? zdovodnite
+- urcite dlzku kodu znaku (blokovy kod) tak, aby bol kod jednoznacne dekodovatelny
+
+2) Huffmanovo kodovanie: OKOLOKOLEM + vypisanie ziskanych kodovych slov pre jednotlive znaky
+
+3) m-arny strom s aritou 100, vyskou h=3 - urcit MAXIMALNY pocet klucov
+
+4) primarny a sekundarny index + urcit, ktory z nich moze byt riedky
+
+5) LITWINove hashovanie (nepamatam si presne zadanie, ale bolo 5 znakov A|B|C|D|E a bolo potrebne vyriesit pretecenie
+do znaku B a potom zaznamenanie niecoho dynamickeho do C)
+
+6) definovat index-sekvencny pristup k organizacii suborov + priklad

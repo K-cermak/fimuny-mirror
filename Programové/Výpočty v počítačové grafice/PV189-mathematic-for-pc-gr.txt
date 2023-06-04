@@ -1,0 +1,9 @@
+mathematic for pc graf. 15-6-2011 zk
+otázky veøejnì dostupné 38 otázek z toho 4 + 1 poèítací
+
+1.trojdùkaz dokažete vìty:jestliže vektor V1,V2,V3...Vn tvoøi ortogon. množinu...
+2.jak funguje skládání rotací pomocí quartermionu?
+3.otázka zaèínající NASTINTE DUKAZ VETY: necht q je jednotkovy...slovnì objasnìte její význam
+4.popište hlavní myšlenku a aplikace pca.
+5,prakticky priklad na otazku jakym zpusobem souvisi nasobeni quartemionu  a rotace,
+ dostali jste zadane o kolik stupnu mate rotovat kolem osy o, quartemion q. 

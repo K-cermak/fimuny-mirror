@@ -1,0 +1,14 @@
+2.2.2007
+
+1. Vysvetlit pojmy link a lane u sbernice PCIe.
+2. Jak probiha strankovani v chranenem rezimu u procesoru 80486DX (nakres, slovni popis).
+3. Popsat a vystvetlit cteni a zapis u magnetooptickeho disku.
+4. Invertor v technologii CMOS (nakres, slovni popis).
+5. Je dan disk vyuzivajici technologii ZBR, ktery ma 4 plotny a je rozdeloen do zon, ktere maji nasledujici pocet sektoru: 1024, 900, 800, 720, 652. Celkovy pocet stop je 2048.(tuto otazku si uplne presne nepamatuju)
+   a) jaka je prenosova ryhclost tohoto disku v MB
+   b) jaka je kapacita tohoto disku v GB
+6. Jaky je princip funkce klasvesnic zalozenych na technologii hallovych sond (nakres, vzorec Hallova jevu s popisem jednotlivych velicin)
+7. a) Co je to GART a kde se pouziva
+   b) Co je to SLI a kde se pouziva
+8. Nákres zapojení (maximalniho poctu) zarizeni, ktere je mozne pripojit pomoci sbernice narrow SCSI. Uvedte alespon 4 zarizeni, ktere je mozne pomoci teto sbernice pripojit.
+

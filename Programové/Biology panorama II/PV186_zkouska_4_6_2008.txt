@@ -1,0 +1,22 @@
+Otázky nejsou ve správném poøadí, jinak by mìly být ale kompletní.
+
+
+1) Je dán vodiè se R=Z=100 ohmù, délka 1km, útlum -20dB/km, výstupní výkon 2mW. Jakou hodnotu musí mít napìtí vstupního signálu?
+
+2) Nakreslete a popište zapojení nejménì 3 poèítaèù v síti 100BaseFL
+
+3) Co je to:
+	a) modální disperze
+	b) balun
+	c) MAU (Ethernet)
+	d) piconet
+
+4) Vypište pøístupové body podle standardu ISDN, urèete mezi kterými zaøízeními se nachází
+
+5) Popište pøístupovou metodu v sítích IEEE 802.11, zakreslete èasový diagram
+
+6) Zakódujte pomosí FSK 1111001001, øeknìte, kde se tato metoda používá
+
+7) Popište komunikaci v síti 10Broad36, nakreslete obrázek
+
+8) Co je to ARP, k èemu slouží, jak funguje, do které vrstvy patøí

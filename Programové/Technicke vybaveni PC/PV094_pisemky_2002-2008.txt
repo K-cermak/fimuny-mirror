@@ -1,0 +1,93 @@
+GENERACE POÈÍTAÈÙ
+-Nakreslete a popište invertor v technologii CMOS
+
+PROCESORY INTEL
+-L1 cache procesoru 80486 - velikost, schéma práce.
+-Nakreslete a popište prinicip Branch Prediction u Pentia.
+-Nakreslete a popište princip strankování procesoru Intel Pentium II
+-Vypištì všechny stránkovací reimy procesoru Pentium III
+-Charakterizujte rozdíl mezi Pentiem III 600 a Pentiem III 600EB
+-Co je Exeucution trace cache?
+-Co je Rapid exucution engine?
+-Vyjmenujte a popište všechny reimy procesoru EM64T
+
+PAMÌTI
+-Nakreslete PROM 4X4
+-Nakreslete EEPROM 4x4
+-Nakreslete DRAM 2x8
+-K èemu slouí signály CAS a RAS pøi práci s pamìtí?
+-Co je CAS latency (CL)?
+
+SBÌRNICE
+-Vysvìtlete pojmy link a lane u sbìrnice PCIe
+
+MAGNETICKİ ZÁZNAM
+-Uveïte vztahy mezi velièinami, jejich jednotky a druhy magnetickıch materiálù podle permeability
+-Spoèítejte magnetickı tok z indukce a prùøezu
+-Popište hysterezi feromagnetickıch materiálù. Nakeslete a popištì hysterezní krivku
+-Popište a nakreslete modulace disku pro fyzické ukladání dat
+
+PEVNÉ DISKY
+-Urèete pøenosovou rychlost a kapacitu podrobnì popsaného disku vyuívajícího ZBR
+-Nakreslete a popište zpùsoby mapování na pevném disku
+-Nakreslete a popište zápis a ètení z magnetického média
+-Nakreslite a popiste GMR hlavu a princip jejího ètení
+
+ROZHRANÍ DISKÙ
+-Nakreslete a popište zapojení maximálního poètu zaøízení k EIDE (ATA-2), uveïte pøíklady takovıch zaøízení
+-Nakreslete a popište zapojení 4 zaøízení SATA, uveïte pøíklady takovıch zaøízení
+-Nakreslete a popište zapojení maximálního poètu zaøízení narrow SCSI, uveïte pøíklady takovıch zaøízení
+-Charakterizujte rozdíl Single ended a differencial SCSI
+
+GRAFICKÉ KARTY
+-Nakreslete a popištì blokové schéma SVGA karty
+-Co je to grafickı akcelerátor?
+-Co je alfa-blending?
+-Jak se dosahuje zvıšení rychlosti mezi AGP 1x a AGP 2x, 4x
+?
+-co je GART a kde se to uívá?
+
+IO KARTA
+-Nakreslite a popište sériovı pøenost dat, jeho parametry a charakteristické hodnoty
+-Zakreslete a popište graf komunikace PC s tiskárnou pøes SPP LPT. Jaké jsou další varianty paralelního portu?
+
+ZVUKOVÁ KARTA
+-Popište pøevod analogového zvuku na digitální a parametry pøenosu
+-Za 340ms probìhnou 4 periody. Pøi jaké frekveci bude tento zvukovı signál plnì urèen?
+-Stereo, 16 bitová hloubka, jedna minuta, 10kHz - délka souboru?
+-Popište rùzné zpùsoby syntézy zvuku.
+-Nakreslete a popište zapojení reprosoustavy 7.1
+
+ZOBRAZOVACÍ JEDNOTKY
+-K èemu slouí Wehneltùv válec? 
+-Jaké jsou typy masek u CRT obrazovek?
+-Co vznikne z bílé po odebrání modrého kanálu?
+-Nakreslete a popište schéma LCD displeje 2x2
+-Vysvìtlete rozdíl mezi klasickımi pasivními LCD displeji a DSTN pasivními displeji
+
+KLÁVESNICE A MYŠ
+-Nakreslete a popište klavesnici s Hallovımi sondami
+-Nakreslete a popište optickou myš
+
+PCMCIA, USB A FIREWIRE
+-Vysvìtlete Hot-swap a Socket Services
+-Popište jaké kódování pouívá USB
+-Zakódujte zadanı bitovı vzorek dle kódování USB
+-Zakreslete prùøez kabelem FireWire
+-Vymenujte a popište reimy pøenosu FireWire
+
+EXTERNÍ PAMÌOVÁ MÉDIA
+-Popište ètení a zápis magnetooptickeho disku
+-Popište zpùsob vyroby medii CDROM (Audio CD)
+-Popište rozdíl mezi CD-ROM mechanikami CAV (Constant Angular Velocity) a CLV (Constant Linear Velocity)
+-Nakreslete a popište prùøez médiem CD-R
+-Popište zpùsob zapisování dat na CD-RW
+
+TISKÁRNY
+-Nakreslete a popište Drop on Demand inkoustové tiskárny (obì)
+-Nakreslete a popište laserovou tiskárnu
+-Nakreslete a popište sublimaèní tiskárnu
+
+NENÍ V TEXTU (Technologie rozšíøené po roce 2005)
+-Co je to SLI (Scalable Link Interface) a kde se pouívá?
+-Co je Intel virtualization technology?

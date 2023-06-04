@@ -1,0 +1,98 @@
+PV077 - programování a správa systému II - sesbírané otázky 2016
+(Kodovani souboru: UTF-8)
+
+tiskový démon SysV
+ *lpsched
+  lp
+  lpr
+  cups
+
+příkaz k logování z příkazové řádky
+ *logger
+  syslog
+
+crontabulka 0 12 * * 1-5 znamená
+ *pracovní dny v poledne
+  pracovní dny dvanáct minut po půlnoci
+
+skript řídící start ssh v sysvinitu
+ */etc/init.d/sshd
+
+x klient dekorující okna
+ *window manager
+  desktop manager
+  session manager
+
+/etc obsahuje převážně
+ *konfigurační soubory
+  binární soubory
+
+Co je to X klient
+ *program žádající po X serveru svoje vykreslení
+ program vykreslující podle požadavků
+
+změna hesla v PAM může proběhnout
+ *ve fázi password
+  ve fázi account
+  ve fázi auth
+
+zkopírování kvót od jiného uzivatele
+ *edquota
+  copyquota
+  repquota
+
+protokoly 4. (transportní) vrstvy
+ *TCP, UDP, SCTP
+  IPv4, IPv6
+  HTTP, FTP
+
+fe80::/10 je prefix pro
+ *link-local adresy
+  zpětnovazebné adresy
+
+autotunelování ipv6
+  (netuším)
+
+při plné frontě na rozhraní (portu) posílá router
+ *ICMP source quench
+  ICPM port unreachable
+  ICMP host unreachable
+
+kontrolní součet TCP se počítá z
+  *TCP hlavičky, IP pseudohlavičky, dat
+
+resolvování nezávislé na 3. vrstvě
+ *getaddrinfo
+  gethostbyname
+  getnameinfo
+  getpeername
+
+pravdivé tvrzení o BGP
+ *je to distance-vector protokol
+
+autentizace v PPP
+  prokazuje se server klientovi
+  prokazuje se klient serveru
+ *prokazují se oba navzájem
+  protokol nepodporuje autentizaci
+
+NAT špatně prochází protokoly
+ *FTP
+
+zobecněním DNS záznamu MX je záznam
+ *SRV
+  PTR
+
+nesouvisející aplikace můžou v Linuxu komunikovat přes RPC rozhraní zvané
+(možná, že v zadání bylo ještě "na stejném počítači")
+ ?portmapper   -- klíčové slovo RPC, ale je spíše do sítě
+ ?session dbus -- přes dbus skutečně běžně komunikují, taky vzdálené volání
+  system dbus
+
+filesystém se tvoří programem
+ *mkfs
+
+hesla v /etc/passwd jsou zašifrována
+ *jednocestnou funkcí
+  symetrickou šifrou
+  asymetrickou šifrou

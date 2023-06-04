@@ -1,0 +1,21 @@
+1. Vypocitat vstupne napetie:
+Odpor - 100ohm
+vystupny vykon - 1mW
+utlm - -20dB
+ 
+*spravny vysleodk 1V 
+
+2. WIFI MIMO 802.11n
+
+3. IPv6 a IPv 4 looback 
+vediet cely tvar looback v IPv6
+
+4.FSK kde sa pouziva a previest 100110111
+
+5. ISDN ake ma kanaly a naco sluzia
+
+6. ARP HTYPE a PTYPE? Co to je
+
+7. 10BaseFL nakreslit PC a popisat 
+
+8. Senzorove siete. Popisat kde sa pouzivaju ako funguju.

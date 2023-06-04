@@ -1,0 +1,13 @@
+Otázky zkouška Technické vybavení počítačů - PV094 28. 1. 2014
+
+1. Popište rozdíl mezi CD-ROM mechanikami CAV (Constant Angular Velocity) a CLV (Constant Linear Velocity)?
+2. Co je Exeucution trace cache? 
+   Co je Rapid execution engine? 
+3. Velikost zvukového záznamu (zadán počet kanálů, bitová hloubka, časový úsek, frekvence vzorkování)?
+4. Co je to SLI (Scalable Link Interface) a kde se používá? 
+5. Nakreslete a popište optickou myš?
+6. Nakreslete EEPROM 4x4 + detail buňky a popište princip funkce?
+7. Nakreslete a popište průřez FireWire (IEEE 1394) kabelu + režimy přenosu?
+8. Otázka o dvoucestné cache paměti 
+   256 řádků, komunikuje s RAM po 128 bytech, procesor ma 32 bitvou sběrnici a adresuje po bytech.
+   Jaká bude velikost TAG u cache a jaká bude velikost celé cache paměti.

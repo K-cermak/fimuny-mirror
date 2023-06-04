@@ -1,0 +1,10 @@
+Otázky jsou parafrázovány. Uváděl jsem jen ty zákeřnější a ty, které se již nenacházejí v souborech "PV077_odpovednik_jaro2008.txt" a "PV077_zkouska_17.6.09.txt".
+
+Jaké z uvedených protokolů jsou transportními protokoly? (UDP, TCP, SCTP)
+V jaké fázi PAM autentizace lze měnit autentizační mechanismy? (password)
+Pro zápis do syslogu z příkazové řádky slouží ...? (logger)
+Adresy v rozsahu fe80::/10 jsou ...? (Lokální adresy)
+Jakou ICMP zprávu využívá program traceroute? (Time limit exceeded)
+Co znamená záznam 0 12 * * 1-5 ... v crontabulce? (Příkaz se provede každý všední den v poledne)
+S jakou jemností lze nastavit grace period před uplatněním soft limitu diskových kvót? (Pro jednotlivé filesystémy)
+Jakým příkazem zašleme úlohu k tisku v tiskovém subsystému BSD? (lpr)
